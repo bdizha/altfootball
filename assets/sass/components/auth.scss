@@ -1,0 +1,108 @@
+.section-login,
+.section-register,
+.section-forgot-password{
+  background: $color_white;
+  form {
+    background: transparent;
+    box-shadow: none;
+    padding: 28px 0;
+  }
+
+  .vYJ4Q {
+    position: relative;
+    background: url(/assets/img/auth-logo.png) $color_green center no-repeat;
+
+  }
+
+  @media screen and (min-width: 846px) {
+    .vYJ4Q {
+      width: 50%;
+      height: 100vh;
+      float: right
+    }
+  }
+
+  @media screen and (max-width: 846px) {
+    .vYJ4Q {
+      height: 0;
+      padding-bottom: 56.25%
+    }
+  }
+
+  @media screen and (max-width: 846px) {
+    .PRK0X {
+      height: 500px
+    }
+  }
+
+  @media screen and (max-width: 508px) {
+    .PRK0X {
+      height: 250px
+    }
+  }
+
+  @media screen and (min-width: 846px) {
+    .PRK0X {
+      width: 50%;
+      height: 100vh;
+      float: left;
+      padding-right: 92px;
+      padding-top: 64px
+    }
+  }
+
+
+
+  @media screen and (max-width: 846px) {
+    ._3MmWw {
+      margin:28px auto;
+      width: 100%;
+      max-width: 612px;
+      margin-left: auto;
+      margin-right: auto
+    }
+  }
+
+  @media screen and (max-width: 846px) and (max-width:656px) {
+    ._3MmWw {
+      margin-left:0;
+      margin-right: 0;
+      padding-left: 22px;
+      padding-right: 22px
+    }
+  }
+
+  @media screen and (max-width: 846px) and (max-width:846px) {
+    ._3MmWw {
+      padding-left:14px;
+      padding-right: 14px
+    }
+  }
+
+  @media screen and (min-width: 846px) {
+    ._3MmWw {
+      width:100%;
+      max-width: 378px;
+      float: right;
+      padding-left: 14px
+    }
+  }
+
+  .bWRAm {
+    font-size: 44px;
+    line-height: 44px
+  }
+
+  @media screen and (max-width: 508px) {
+    .bWRAm {
+      font-size:28px;
+      line-height: 28px
+    }
+  }
+
+  ._2pUFC {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+}

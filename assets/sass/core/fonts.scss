@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,700,700italic,900);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,500,700');
+
+@font-face {
+  font-family: DriveTribe;
+  font-style: normal;
+  src: local("DriveTribe"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-condensed.woff2") format("woff2"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-condensed.woff") format("woff"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-condensed.ttf") format("ttf"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-condensed.eot") format("eot")
+}
+
+@font-face {
+  font-family: DriveTribe;
+  font-weight: 700;
+  src: local("DriveTribe"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-condensed-bold.woff2") format("woff2"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-condensed-bold.woff") format("woff"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-condensed-bold.ttf") format("ttf"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-condensed-bold.eot") format("eot")
+}
+
+@font-face {
+  font-family: DriveTribe Condensed;
+  src: local("DriveTribe Condensed"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-extra-condensed.woff2") format("woff2"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-extra-condensed.woff") format("woff"),url("https://assets.drivetribe.com/node-v2.3.3-12-gceece1d9/uniform-extra-condensed.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "Averta";
+  font-weight: 900;
+  src: url(../fonts/Averta_900.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Averta";
+  font-weight: 700;
+  src: url(../fonts/Averta_700.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Averta";
+  font-weight: 500;
+  src: url(../fonts/Averta_500.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Averta";
+  font-weight: 400;
+  src: url(../fonts/Averta_400.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Averta";
+  font-weight: 300;
+  src: url(../fonts/Averta_300.ttf) format("truetype");
+}

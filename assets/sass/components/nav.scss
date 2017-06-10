@@ -1,0 +1,121 @@
+.navbar-redwood {
+  background: #fff;
+  border: none;
+  -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
+  border-radius: 0;
+  margin-bottom: 0px;
+
+  .nav {
+    color: $color_light;
+    font-family: $font_sans;
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .nav a {
+    font-size: 14px;
+    font-weight: 700;
+    color: $color_light_blue;
+    letter-spacing: .1em;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    -webkit-backface-visibility: hidden;
+    margin: 10px 0px 10px 20px;
+    height: 40px;
+    &.join{
+      padding: 10px 40px;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      border: 2px solid $color_light_blue;
+      border-radius: 0;
+      &:hover,
+      &:focus {
+        border: 2px solid $color_green;
+        background: $color_green;
+        color: $color_white;
+        &:before {
+          opacity: 0;
+        }
+      }
+    }
+    &:before {
+      position: absolute;
+      left: 0;
+      bottom: calc(50% - 18px);
+      width: 100%;
+      height: 4px;
+      background: $color_green;
+      content: '';
+      transition: all 100ms ease;
+      opacity: 0;
+    }
+    &:hover,
+    &:focus {
+      color: $color_green;
+      background: transparent;
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+
+  .nav .active a {
+    color: $color_green;
+    font-weight: 700;
+    position: relative;
+    &:before {
+      bottom: calc(50% - 18px);
+      height: 4px;
+      background: $color_green;
+      opacity: 1;
+    }
+  }
+
+  .navbar-brand {
+    color: $color_light_blue;
+    font-weight: 900;
+    font-size: 32px;
+    height: 60px;
+    padding: 10px 15px 8px;
+    letter-spacing: -.05em;
+  }
+
+  .navbar-form {
+    margin-top: 13px;
+    position: absolute;
+    left: 50%;
+    margin-left: -126px;
+  }
+
+  .search {
+    border-radius: 0;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    transition: width 220ms ease;
+    background: #F4F4F4;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: DriveTribe,Helvetica,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    &:focus,
+    &:active {
+      border: 1px solid $color_green;
+    }
+  }
+  .search.grow {
+    width: 300px;
+  }
+}
+
+.navbar-toggle {
+  background: $color_light_blue;
+  margin-top: 14px;
+
+  .icon-bar {
+    background: $color_white;
+  }
+}
+

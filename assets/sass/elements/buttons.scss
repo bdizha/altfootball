@@ -1,0 +1,30 @@
+.btn {
+	padding: 18px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 700;
+	letter-spacing: 1.14px;
+	text-transform: uppercase;
+	color: $color_white;
+	background-color: $color_light_blue;
+	border: none;
+	-ms-box-shadow: 0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);
+	box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+	border-radius: 0;
+	&.btn-blue{
+		background-color: $color_light_blue;
+	}
+	&:hover,
+	&:focus{
+		background-color: $color_white;
+		color: $color_green;
+		outline: none;
+	}
+	&.btn-primary{
+		&:hover,
+		&:focus{
+			background-color: $color_green;
+			color: $color_white
+		}
+	}
+}

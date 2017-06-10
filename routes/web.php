@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/fb/{slug}', function () {
+    return view('fanbase.show');
+});
+
+Route::get('/u/{slug}', function () {
+    return view('fan.show');
+});
