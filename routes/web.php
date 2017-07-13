@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+
+Route::get('/p/{slug}', 'PostController@show')->name("post.show");
 
 Route::get('/fb/{slug}', function () {
     return view('fanbase.show');

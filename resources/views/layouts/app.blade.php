@@ -46,13 +46,13 @@
 <body>
 
 <div id="root">
-    <div data-reactroot="" data-reactid="1" data-react-checksum="-1619817881">
-        <div data-reactid="2"><!-- react-empty: 3 -->
-            <div data-reactid="4">
-                <div data-reactid="5">
-                    <header class="_3XXLi" data-reactid="6">
-                        <nav class="R1XAV" id="header" data-reactid="7">
-                            <div class="_2H55B" data-reactid="8"><a class="" href="/" data-reactid="9">
+    <div data-reactroot="" data-react-checksum="-1619817881">
+        <div><!-- react-empty: 3 -->
+            <div>
+                <div>
+                    <header class="_3XXLi">
+                        <nav class="R1XAV" id="header">
+                            <div class="_2H55B"><a class="" href="/">
                                     <img src="/images/logo.png" alt="AltFootball">
                                 </a>
                                 <form class="ra77F" action="" data-reactid="18">

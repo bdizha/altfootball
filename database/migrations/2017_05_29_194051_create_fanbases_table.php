@@ -15,9 +15,9 @@ class CreateFanbasesTable extends Migration
     {
         Schema::create('fanbases', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 24);
+            $table->string('name', 24)->nullable();
             $table->string('slug', 48);
-            $table->string('image', 255);
+            $table->string('image', 255)->nullable();
             $table->string('description', 96);
             $table->integer('user_id')->unsigned();
             $table->enum('access', ['public', 'private'])->default("public");
