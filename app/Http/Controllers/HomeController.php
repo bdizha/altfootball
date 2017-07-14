@@ -17,7 +17,7 @@ class HomeController extends Controller
      */
     protected function index(Request $request)
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(20);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(100);
 
         return view('welcome', ['posts' => $posts]);
     }
