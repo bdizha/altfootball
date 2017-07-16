@@ -14,10 +14,8 @@
 Route::get('/', 'HomeController@index');
 
 Route::get('/p/{slug}', 'PostController@show')->name("post.show");
-
-Route::get('/fb/{slug}', function () {
-    return view('fanbase.show');
-});
+Route::get('/fb/{slug}', 'FanbaseController@show')->name("fanbase.show");
+Route::get('/t/{slug}', 'TagController@show')->name("tag.show");
 
 Route::get('/u/{slug}', function () {
     return view('fan.show');

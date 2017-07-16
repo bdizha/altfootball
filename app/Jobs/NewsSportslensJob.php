@@ -7,9 +7,8 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class News90MinJob extends NewsJob
+class NewsSportslensJob extends NewsJob
 {
-
     protected $domain = "";
     protected $url = "";
 
@@ -20,8 +19,8 @@ class News90MinJob extends NewsJob
      */
     public function __construct()
     {
-        $this->domain = "http://www.90min.com";
-        $this->url = "http://www.90min.com/top-stories?page=";
+        $this->domain = "http://sportslens.com";
+        $this->url = "http://sportslens.com/page/";
     }
 
     /**
@@ -34,33 +33,33 @@ class News90MinJob extends NewsJob
 
         $client = new Client();
 
-        foreach (range(1, 3) as $page) {
+        foreach (range(1, 200) as $page) {
 
             $crawler = $client->request('GET', $this->url . $page);
-            $crawler->filter('.feedpage-article__metadata')->each(function (Crawler $node, $i) {
-                $link = $node->filter('a.feedpage-article__title')->attr("href");
+            $crawler->filter('.latestPost')->each(function (Crawler $node, $i) {
+                $link = $node->filter('.front-view-title a')->attr("href");
 
                 if (!empty($link)) {
 
-                    $url = $this->domain . $link;
+                    $url = $link;
                     $p = Post::where("external_url", $url)->first();
                     $client = new Client();
                     $data = $client->request('GET', $url);
 
                     $user = array();
 
-                    if ($node->filter('a.feedpage-article__author-link')->count()) {
+                    if ($data->filter('.thecontent')->count()) {
 
-                        $author = $node->filter('a.feedpage-article__author-link')->text();
+                        $author = $data->filter('.postauthor .author a')->text();
 
                         $nameArr = explode(" ", $author);
 
                         if (!empty($nameArr[1])) {
 
                             $user['first_name'] = $nameArr[0];
-                            $user['last_name'] = $nameArr[1];
+                            $user['last_name'] = "&nbsp;";
                             $user['nickname'] = $nameArr[0];
-                            $user['email'] = strtolower($nameArr[0]) . "@gmail.com";
+                            $user['email'] = strtolower($nameArr[0]) . "@soccerlens.com";
                             $user['password'] = bcrypt($user['email']);
 
                             $u = User::where("email", $user['email'])->first();
@@ -81,32 +80,33 @@ class News90MinJob extends NewsJob
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
-                            if ($data->filter('.post-cover__media')->count() &&
-                                $data->filter('.post-metadata__date')->count() &&
-                                $data->filter('.post-content p')->count()
+                            if ($data->filter('.thecontent img')->count() &&
+                                $data->filter('.post-info .date')->count()
                             ) {
 
-                                $post['image'] = $data->filter('.post-cover__media')->attr("src");
-                                $post['title'] = $data->filter('.post-article__post-title__title')->text();
-                                $post['date'] = $data->filter('.post-metadata__date')->text();
+                                $post['image'] = $data->filter('.thecontent img')->attr("data-layzr");
+                                $post['title'] = $data->filter('.single-title')->text();
+                                $post['date'] = $data->filter('.post-info .date')->text();
                                 $post['created_at'] = Carbon::parse($post['date']);
 
                                 $content = "";
                                 $summary = "";
-                                $data->filter('.post-content p')->each(function (Crawler $node, $i) use (&$content, &$summary){
+                                $data->filter('.thecontent p')->each(function (Crawler $node, $i) use (&$content, &$summary){
                                     if ($i == 0) {
                                         $summary = str_limit($node->text(), 250);
                                     }
                                     $content .= "<p>{$node->html()}</p>";
                                 });
 
-                                $post['content'] = str_replace("<p><br></p>", "", $content);
+                                $content = str_replace("<p><br></p>", "", $content);
+                                $post['content'] = str_replace("<p><span style=\"background-color: initial; font-size: 1em;\"><br></span></p>", "", $content);
                                 $post['summary'] = $summary;
 
                                 if (empty($p->id)) {
-                                    Post::create($post);
+                                    $p = Post::create($post);
 
-                                    echo 'Inserted post: ' . $post['title'] . "\n";
+                                    echo 'Inserted post: ' . $p->slug . "\n";
+
                                 } else {
                                     $p->title = $post['title'];
                                     $p->created_at = Carbon::parse($post['date']);

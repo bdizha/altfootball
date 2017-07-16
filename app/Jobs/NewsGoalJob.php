@@ -34,7 +34,7 @@ class NewsGoalJob extends NewsJob
 
         $client = new Client();
 
-        foreach (range(1, 100) as $page) {
+        foreach (range(1, 2) as $page) {
 
             $crawler = $client->request('GET', $this->url . $page);
             $crawler->filter('.module-section-archive .story')->each(function (Crawler $node, $i) {
@@ -94,10 +94,10 @@ class NewsGoalJob extends NewsJob
 
                                 $content = "";
                                 $data->filter('.article-text p')->each(function (Crawler $node, $i) use (&$content) {
-                                    $content .= "<p>{$node->text()}</p>";
+                                    $content .= "<p>{$node->html()}</p>";
                                 });
 
-                                $post['content'] = $content;
+                                $post['content'] = str_replace("<p><br></p>", "", $content);
 
                                 if (empty($p->id)) {
                                     Post::create($post);

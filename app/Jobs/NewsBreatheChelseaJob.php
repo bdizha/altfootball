@@ -1,17 +1,20 @@
 <?php
 
 namespace App\Jobs;
+
+use App\Fanbase;
+use App\FanbasePost;
 use App\Post;
 use App\User;
 use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class News90MinJob extends NewsJob
+class NewsBreatheChelseaJob extends NewsJob
 {
-
     protected $domain = "";
     protected $url = "";
+    protected $fanbase_id;
 
     /**
      * Create a new job instance.
@@ -20,8 +23,9 @@ class News90MinJob extends NewsJob
      */
     public function __construct()
     {
-        $this->domain = "http://www.90min.com";
-        $this->url = "http://www.90min.com/top-stories?page=";
+        $this->fanbase_id = 5;
+        $this->domain = "https://www.breathechelsea.com";
+        $this->url = "https://www.breathechelsea.com/category/";
     }
 
     /**
@@ -32,26 +36,33 @@ class News90MinJob extends NewsJob
     public function handle()
     {
 
+        $sections = [
+            "latest-news",
+            "general-gossip",
+            "transfer-gossip"
+        ];
+
         $client = new Client();
 
-        foreach (range(1, 3) as $page) {
+        foreach ($sections as $section) {
 
-            $crawler = $client->request('GET', $this->url . $page);
-            $crawler->filter('.feedpage-article__metadata')->each(function (Crawler $node, $i) {
-                $link = $node->filter('a.feedpage-article__title')->attr("href");
+            $crawler = $client->request('GET', $this->url . $section . "/");
+
+            $crawler->filter('.status-publish')->each(function (Crawler $node, $i) {
+                $link = $node->filter('.entry-title a')->attr("href");
 
                 if (!empty($link)) {
 
-                    $url = $this->domain . $link;
+                    $url = $link;
                     $p = Post::where("external_url", $url)->first();
                     $client = new Client();
                     $data = $client->request('GET', $url);
 
                     $user = array();
 
-                    if ($node->filter('a.feedpage-article__author-link')->count()) {
+                    if ($data->filter('.et_pb_extra_column_main')->count()) {
 
-                        $author = $node->filter('a.feedpage-article__author-link')->text();
+                        $author = $data->filter('.post-meta .url')->text();
 
                         $nameArr = explode(" ", $author);
 
@@ -60,7 +71,7 @@ class News90MinJob extends NewsJob
                             $user['first_name'] = $nameArr[0];
                             $user['last_name'] = $nameArr[1];
                             $user['nickname'] = $nameArr[0];
-                            $user['email'] = strtolower($nameArr[0]) . "@gmail.com";
+                            $user['email'] = strtolower($nameArr[0]) . "@breathechelsea.com";
                             $user['password'] = bcrypt($user['email']);
 
                             $u = User::where("email", $user['email'])->first();
@@ -81,32 +92,32 @@ class News90MinJob extends NewsJob
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
-                            if ($data->filter('.post-cover__media')->count() &&
-                                $data->filter('.post-metadata__date')->count() &&
-                                $data->filter('.post-content p')->count()
+                            if ($data->filter('.post-thumbnail img')->count() &&
+                                $data->filter('.post-meta .updated')->count()
                             ) {
 
-                                $post['image'] = $data->filter('.post-cover__media')->attr("src");
-                                $post['title'] = $data->filter('.post-article__post-title__title')->text();
-                                $post['date'] = $data->filter('.post-metadata__date')->text();
+                                $post['image'] = $data->filter('.post-thumbnail img')->attr("src");
+                                $post['title'] = $data->filter('.entry-title')->text();
+                                $post['date'] = $data->filter('.post-meta .updated')->text();
                                 $post['created_at'] = Carbon::parse($post['date']);
 
                                 $content = "";
                                 $summary = "";
-                                $data->filter('.post-content p')->each(function (Crawler $node, $i) use (&$content, &$summary){
+                                $data->filter('.et_pb_text_inner p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
                                     if ($i == 0) {
                                         $summary = str_limit($node->text(), 250);
                                     }
                                     $content .= "<p>{$node->html()}</p>";
                                 });
 
-                                $post['content'] = str_replace("<p><br></p>", "", $content);
+                                $content = str_replace("<p><br></p>", "", $content);
+                                $post['content'] = $content;
                                 $post['summary'] = $summary;
 
                                 if (empty($p->id)) {
-                                    Post::create($post);
+                                    $p = Post::create($post);
+                                    echo 'Inserted post: ' . $p->slug . "\n";
 
-                                    echo 'Inserted post: ' . $post['title'] . "\n";
                                 } else {
                                     $p->title = $post['title'];
                                     $p->created_at = Carbon::parse($post['date']);
@@ -114,11 +125,23 @@ class News90MinJob extends NewsJob
 
                                     echo "updated::: {$p->slug} \n";
                                 }
+
+                                $fb = FanbasePost::where("post_id", $p->id)
+                                    ->where("fanbase_id", $this->fanbase_id)
+                                    ->first();
+
+                                if (empty($fb->id)) {
+                                    FanbasePost::create([
+                                        'post_id' => $p->id,
+                                        'fanbase_id' => $this->fanbase_id
+                                    ]);
+                                }
                             }
                         }
                     }
                 }
             });
+
         }
     }
 }

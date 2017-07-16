@@ -1,0 +1,1 @@
+<a class="_1k5bL _1SLoN" href="/t/{{ $tag->slug }}">{{ $tag->content }}</a>

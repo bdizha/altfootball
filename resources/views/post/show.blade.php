@@ -38,14 +38,17 @@
                             <!-- react-empty: 2271 -->
                         </div>
                         <div class="_1pPnu _2Nd08">
-                            <div class=""><span class="_1NHvQ _3Xf-w"><a class=""
-                                                                         href="/u/xS8p-ACcQJqX0PjzbeGEhw?iid=ao-9QaOTRYCaZvdgojHFvQ"><!-- react-text: 2276 -->Tony Hsieh
-                                        <!-- /react-text --><!-- react-empty: 2277 --></a><span><span><!-- react-text: 2280 --> posted in
-                                            <!-- /react-text --><br></span>
+                            <div class="">
+                                <span class="_1NHvQ _3Xf-w">
+                                    <a class="" href="/u/xS8p-ACcQJqX0PjzbeGEhw?iid=ao-9QaOTRYCaZvdgojHFvQ">
+                                        {{ $post->user->nickname }}
+                                    </a>
+                                    <span>
+                                <span>
+                            posted in <br></span>
                             <a class="_1XNRF"
-                               href="/t/grand-tour-nation-AseFq3ulThG-Xqs2ymBwWQ?iid=ao-9QaOTRYCaZvdgojHFvQ">
-                                <!-- react-text: 2283 -->GRAND TOUR NATION
-                                <!-- /react-text -->
+                               href="/fb/{{ $post->fanbase()->slug }}">
+                                {{ $post->fanbase()->name }}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                      class="_1z7Hy">
                                     <g fill="none" fill-rule="evenodd">
@@ -76,14 +79,11 @@
                     <div class="_1l_wG _29Okg"><a class="_2Oo2A rF2QA"
                                                   href="/p/hammond-enjoys-night-out-after-Lag4Ra_iR6WLzgJC0dSaxQ#comments"><span
                                     class="_35FcZ"><!-- react-text: 2299 -->Comments<!-- /react-text --><span
-                                        class="_3HP-Q"><!-- react-text: 2301 --> (<!-- /react-text -->
-                                    <!-- react-text: 2302 -->1<!-- /react-text --><!-- react-text: 2303 -->)
+                                        class="_3HP-Q"><!-- react-text: 2301 --> (1)
                                     <!-- /react-text --></span></span></a>
                         <div class="_8m6WC rF2QA"><span class="_35FcZ">Repost</span></div>
                         <button class="_3yFg8 rF2QA">
-                            <div class="_1_VaP"><span class="_35FcZ">Bumps</span><span class="_3HP-Q"><!-- react-text: 2310 -->(
-                                    <!-- /react-text --><!-- react-text: 2311 -->26<!-- /react-text -->
-                                    <!-- react-text: 2312 -->)<!-- /react-text --></span>
+                            <div class="_1_VaP"><span class="_35FcZ">Bumps</span><span class="_3HP-Q">(23)</span>
                                 <svg width="24" height="23" viewBox="-3 -3 23 24">
                                     <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75L13.5 0zm-.1 1.87l3.1 2.58V8.3L9 14.55 1.5 8.3V4.45l3.1-2.58L9 4.8l4.4-2.93z"
                                           fill="#000" fill-rule="evenodd" opacity="1" class="outline"
@@ -196,7 +196,7 @@
                     <p class="_25BgE">
                         <span><span>{{ $post->summary }}</span></span>
                     </p>
-                    {!! $post->content !!}
+                    {!! $post->getHtmlContent() !!}
                 </div>
                 <div class="_3VSm9 _3bVUr _2GMT0">
                     <div class="_24kFo">
@@ -223,14 +223,16 @@
                                                         <div class="N3r_f">
                                                             <div class="_38L6D" style="padding-bottom: 100%;">
                                                                 <img src="https://drivetribe.imgix.net/Dz1UnOWMTGWOkOWPFwZMCg?w=200&amp;h=200&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                                                        class="_214e9 b00q8" width="60" height="60">
+                                                                     class="_214e9 b00q8" width="60" height="60">
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </a>
                                                 <div class="zv5pR E6O3i">
-                                                    <a class="_3f32u _38OvA" href="/u/97Fkkg8BQEWbWOafC27KgQ">IdiotUKDrivers Exposed</a>
-                                                    <a class="O0stn _38OvA" href="/t/idiot-uk-drivers-exposed-HqIRvJ7kRLSnHn3-IrlX9w">
+                                                    <a class="_3f32u _38OvA" href="/u/97Fkkg8BQEWbWOafC27KgQ">IdiotUKDrivers
+                                                        Exposed</a>
+                                                    <a class="O0stn _38OvA"
+                                                       href="/t/idiot-uk-drivers-exposed-HqIRvJ7kRLSnHn3-IrlX9w">
                                                         IDIOT UK DRIVERS EXPOSED
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                              viewBox="0 0 18 18" class="_1z7Hy">
@@ -284,33 +286,11 @@
                     <div id="fb-root"></div>
                     <div class="_3G-jr">Like us on facebook</div>
                     <div class="_3Z0E3">
-                        <svg width="40" height="40" viewBox="0 0 40 40" class="_1aThB">
-                            <g fill="none" fill-rule="evenodd">
-                                <path fill="#000" d="M0 0h40v40H0z M2.5 2.5h35v35h-35z"></path>
-                                <path fill="#000" data-hover-invert="true"
-                                      d="M22.8 9.75v3.7c0 2.66-1.63 4.2-4.17 4.2H14.9V5.62h3.8c2.53 0 4.1 1.48 4.1 4.13zm-4.2 5.75c1.15 0 1.8-.7 1.8-2.03v-3.7c0-1.3-.65-2-1.8-2h-1.25v7.73h1.25z"></path>
-                                <path fill="#000" data-hover-invert="true" id="activity-blinker"
-                                      d="M24.36 18.5h8.6v1.52h-8.6"></path>
-                                <path fill="#000" data-hover-invert="true"
-                                      d="M11.02 33.85H8.58v-9.83h-2.5v-2.2h7.46v2.2h-2.52"></path>
-                                <path fill="#000" data-hover-invert="true"
-                                      d="M18.55 29.47h-1.32v4.37h-2.4V21.82h3.8c2.38 0 4 1.6 4 3.82 0 1.38-.7 2.55-1.85 3.17l2.1 5.05h-2.72l-1.6-4.38zm-.2-1.85c1.1 0 1.85-.8 1.85-1.86 0-1.07-.7-1.86-1.84-1.86h-1.1v3.7h1.08v.02z"></path>
-                                <path fill="#000" data-hover-invert="true"
-                                      d="M28.58 21.82c2.1 0 3.42 1.3 3.42 3.06 0 1.18-.6 2.14-1.6 2.67 1.15.52 1.86 1.6 1.86 2.92 0 1.9-1.47 3.37-3.7 3.37h-4.28V21.82h4.3zm-.56 4.97c.96 0 1.56-.67 1.56-1.56 0-.9-.58-1.52-1.53-1.52H26.7v3.07h1.32zm.1 5.16c1.05 0 1.72-.74 1.72-1.73 0-1-.65-1.68-1.7-1.68H26.7v3.4h1.42z"></path>
-                            </g>
-                        </svg>
-                        <div class="_3GhRl"><a class="zzDw5" href="https://www.facebook.com/drivetribe/" rel="nofollow">DRIVETRIBE</a>
+                        <img src="/images/logo.png" alt="AltFootball" class="_1aThB">
+                        <div class="_3GhRl"><a class="zzDw5" href="https://www.facebook.com/drivetribe/" rel="nofollow">ALTFOOTBALL</a>
                             <div class="fb-like _1kDAA fb_iframe_widget"
-                                 data-href="https://www.facebook.com/drivetribe/" data-layout="button"
-                                 data-action="like" data-size="large" data-width="83" fb-xfbml-state="rendered"
-                                 fb-iframe-plugin-query="action=like&amp;app_id=516295178554349&amp;container_width=80&amp;href=https%3A%2F%2Fwww.facebook.com%2Fdrivetribe%2F&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;size=large&amp;width=83">
-                                <span style="vertical-align: top; width: 0px; height: 0px; overflow: hidden;"><iframe
-                                            name="f3b45735ca1ca74" width="83px" height="1000px" frameborder="0"
-                                            allowtransparency="true" allowfullscreen="true" scrolling="no"
-                                            title="fb:like Facebook Social Plugin"
-                                            src="https://www.facebook.com/v2.9/plugins/like.php?action=like&amp;app_id=516295178554349&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FXBwzv5Yrm_1.js%3Fversion%3D42%23cb%3Df115abd648142%26domain%3Ddrivetribe.com%26origin%3Dhttps%253A%252F%252Fdrivetribe.com%252Ff12b681f816edb4%26relation%3Dparent.parent&amp;container_width=80&amp;href=https%3A%2F%2Fwww.facebook.com%2Fdrivetribe%2F&amp;layout=button&amp;locale=en_US&amp;sdk=joey&amp;size=large&amp;width=83"
-                                            style="border: none; visibility: visible; width: 0px; height: 0px;"></iframe></span>
-                            </div>
+                                 data-href="https://www.facebook.com/altfootballdotcom" data-layout="button"
+                                 data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
                         </div>
                     </div>
                 </div>

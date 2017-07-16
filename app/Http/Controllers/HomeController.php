@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Fanbase;
 use App\Post;
+use App\Tag;
+use App\TagPost;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -17,8 +20,18 @@ class HomeController extends Controller
      */
     protected function index(Request $request)
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(100);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(24);
+        $bases = Fanbase::orderBy('id', 'asc')->take(6)->get();
 
-        return view('welcome', ['posts' => $posts]);
+        $tags = Tag::withCount('posts')
+            ->orderBy("posts_count", "DESC")
+            ->take(12)
+            ->get();
+
+        return view('welcome', [
+            'posts' => $posts,
+            'bases' => $bases,
+            'tags' => $tags
+        ]);
     }
 }
