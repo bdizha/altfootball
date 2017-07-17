@@ -12,6 +12,7 @@ class NewsGoalJob extends NewsJob
     
     protected $domain = "";
     protected $url = "";
+    protected $fanbase_id;
 
     /**
      * Create a new job instance.
@@ -20,6 +21,7 @@ class NewsGoalJob extends NewsJob
      */
     public function __construct()
     {
+        $this->fanbase_id = 4;
         $this->domain = "http://www.goal.com";
         $this->url = "http://www.goal.com/en-za/news/4639/premier-league/archive/";
     }
@@ -100,7 +102,7 @@ class NewsGoalJob extends NewsJob
                                 $post['content'] = str_replace("<p><br></p>", "", $content);
 
                                 if (empty($p->id)) {
-                                    Post::create($post);
+                                    $p = Post::create($post);
 
                                     echo 'Inserted post: ' . $post['title'] . "\n";
                                     Log::notice('Inserted post: ' . $post['title']);

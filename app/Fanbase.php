@@ -21,11 +21,12 @@ class Fanbase extends Model
         'slug'
     ];
 
-    public function getInitials() {
+    public function getInitials()
+    {
         $nameArray = explode(" ", $this->name);
         $initials = "";
-        foreach($nameArray as $part){
-            if(ctype_alnum($part)){
+        foreach ($nameArray as $part) {
+            if (ctype_alnum($part)) {
                 $initials .= strtoupper($part[0]);
             }
 
@@ -44,8 +45,14 @@ class Fanbase extends Model
         return $this->name;
     }
 
-    public function user() {
+    public function user()
+    {
         return $this->hasOne('App\User', 'id', 'user_id');
+    }
+
+    public function posts()
+    {
+        return $this->belongsToMany(Post::class, 'fanabses_posts');
     }
 
     public function getImage($dimensions = "width=400&height=400")

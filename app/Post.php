@@ -46,17 +46,23 @@ class Post extends Model
         return $this->hasOne('App\User', 'id', 'user_id');
     }
 
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class, 'tags_posts');
+    }
+
+    public function fanbases()
+    {
+        return $this->belongsToMany(Fanbase::class, 'fanbases_posts');
+    }
+
     /**
      * The fanbase to which the post belongs
      */
     public function fanbase()
     {
-        $fanbasePost = FanbasePost::where("post_id", $this->id)->first();
-
-        if(empty($fanbasePost->id)){
-            return new Fanbase();
-        }
-        return $fanbasePost->fanbase;
+        foreach($this->fanbases as $fanbase)
+        return $fanbase;
     }
 
     public function getHtmlContent()

@@ -1,3 +1,4 @@
+<?php $fanbase = $post->fanbase() ?>
 <div class="p32Iu">
     <div class="_3bxb0">
         <div class="_2WwnI">
@@ -6,43 +7,41 @@
                     <a href="{{ $post->slug }}">
                         <div class="_1yAXU">
                             <div style="padding-bottom:100%;" class="_38L6D">
-                                <img alt="{{ $post->user->first_name }}"
-                                     src="{{ $post->image }}" class="_214e9 b00q8"
-                                     width="32" height="32"/>
+                                <img alt="{{ $post->user->first_name }}" src="{{ $post->image }}" class="_214e9 b00q8" width="32" height="32"/>
                             </div>
                         </div>
                     </a>
                     <span class="_1NHvQ _3Xf-w" data-reactid="146">
-                                    <a href="/{{ $post->user->nickname }}">
-                                       {{ $post->user->nickname }}
-                                        <svg
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                width="18" height="18"
-                                                viewBox="0 0 18 18" class="_1z7Hy"
-                                                data-reactid="149">
-                                          <g fill="none"
-                                             fill-rule="evenodd"
-                                             data-reactid="150">
-                                             <path
-                                                     fill="#64c431"
-                                                     d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
-                                                     data-reactid="151"></path>
-                                             <path
-                                                     fill="#FFF"
-                                                     d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
-                                                     data-reactid="152"></path>
-                                          </g>
-                                       </svg>
-                                    </a>
-                                    <span>
-                                       <span>
-                                           posted in <br>
-                                       </span>
-                                       <a class="_1XNRF" href="/fb/c8KJMqmTRo-z4v4sDHGtXw?iid=RO3aO8AmThi5FWCI23bHSg">
-                                         QUIZ NATION
-                                       </a>
-                                    </span>
-                                 </span>
+                        <a href="/u/{{ $post->user->slug }}">
+                           {{ $post->user->nickname }}
+                            <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="18" height="18"
+                                    viewBox="0 0 18 18" class="_1z7Hy"
+                                    data-reactid="149">
+                              <g fill="none"
+                                 fill-rule="evenodd"
+                                 data-reactid="150">
+                                 <path
+                                         fill="#64c431"
+                                         d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
+                                         data-reactid="151"></path>
+                                 <path
+                                         fill="#FFF"
+                                         d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
+                                         data-reactid="152"></path>
+                              </g>
+                           </svg>
+                        </a>
+                        <span>
+                           <span>
+                               posted in <br>
+                           </span>
+                           <a class="_1XNRF" href="/fb/{{ $fanbase->slug }}">
+                             {{ $fanbase->name }}
+                           </a>
+                        </span>
+                     </span>
                 </div>
                 <div class="_3qkzJ">
                     <p class="_2B25b">
@@ -80,9 +79,9 @@
                 <h2 class="_2DyJ3 _3duUm">{{ $post->title }}</h2>
             </a>
             <h3 class="_2hvwD _3VB1o _3duUm _2L6V9">
-                                                <span>
-                                                    <span>{{ $post->summary }}</span>
-                                                </span>
+                <span>
+                    <span>{{ $post->summary }}</span>
+                </span>
             </h3>
             <a class="_2hvwD _1kgtA"
                href="{{ route('post.show', ['slug' => $post->slug]) }}">
@@ -92,12 +91,12 @@
         <div class="_35O2p _29Okg">
             <a class="_2Oo2A rF2QA"
                href="{{ route('post.show', ['slug' => $post->slug]) }}#comments">
-                                              <span class="_35FcZ">
-                                                Comments
-                                                 <span class="_3HP-Q">
-                                                     (34)
-                                                 </span>
-                                              </span>
+              <span class="_35FcZ">
+                Comments
+                 <span class="_3HP-Q">
+                     (34)
+                 </span>
+              </span>
             </a>
             <div class="_8m6WC rF2QA"><span class="_35FcZ">Repost</span>
             </div>

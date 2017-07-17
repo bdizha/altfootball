@@ -30,7 +30,8 @@ class Tag extends Model
         return $this->content;
     }
 
-    public function posts() {
-        return $this->hasMany('App\TagPost', 'tag_id', 'id');
+    public function posts()
+    {
+        return $this->belongsToMany(Post::class, 'tags_posts');
     }
 }

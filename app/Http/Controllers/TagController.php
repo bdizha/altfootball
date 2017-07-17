@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Tag;
-use App\Post;
 use App\Fanbase;
+use App\Post;
+use App\Tag;
 
 class TagController extends Controller
 {
@@ -12,7 +12,13 @@ class TagController extends Controller
     {
         $tag = Tag::where('slug', '=', $slug)->first();
 
-        $posts = Post::orderBy("created_at", "DESC")->take(24)->get();
+        $posts = Post::whereHas('tags', function ($query) use ($tag) {
+            $query->where('tags.id', $tag->id);
+        })
+            ->orderBy("posts.created_at", "DESC")
+            ->take(24)
+            ->get();
+
         $bases = Fanbase::orderBy('id', 'asc')->take(6)->get();
 
         return view('tag.show', [

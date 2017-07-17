@@ -11,6 +11,7 @@ class NewsSportslensJob extends NewsJob
 {
     protected $domain = "";
     protected $url = "";
+    protected $fanbase_id;
 
     /**
      * Create a new job instance.
@@ -19,6 +20,7 @@ class NewsSportslensJob extends NewsJob
      */
     public function __construct()
     {
+        $this->fanbase_id = 8;
         $this->domain = "http://sportslens.com";
         $this->url = "http://sportslens.com/page/";
     }

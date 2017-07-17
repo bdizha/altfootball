@@ -4,19 +4,17 @@
 
 @section('content')
     <article>
-        <!-- react-empty: 2252 -->
         <div class="j-W_D _1iE2V">
             <div class="_1veAI _1iE2V">
                 <div class="_1lNSv _3Vb-u">
-                    <a class="_2kQCw" href="/t/grand-tour-nation-AseFq3ulThG-Xqs2ymBwWQ?iid=ao-9QaOTRYCaZvdgojHFvQ">
-                        <div class="_1Gyo9 e_0uO" data-initials="GTN"></div>
+                    <a class="_2kQCw" href="/fb/{{ $post->fanbase()->slug }}">
+                        <div class="_1Gyo9 e_0uO" data-initials="{{ $post->fanbase()->getInitials() }}"></div>
                         <p class="_3FTXM wcqil">
-                            <!-- react-text: 2259 -->GRAND TOUR NATION
-                            <!-- /react-text -->
+                            {{ $post->fanbase()->name }}
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                  class="G0duV">
                                 <g fill="none" fill-rule="evenodd">
-                                    <path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                    <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                     <path fill="#FFF"
                                           d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                                 </g>
@@ -35,12 +33,11 @@
                                          class="_214e9 b00q8" width="60" height="60">
                                 </div>
                             </div>
-                            <!-- react-empty: 2271 -->
                         </div>
                         <div class="_1pPnu _2Nd08">
                             <div class="">
                                 <span class="_1NHvQ _3Xf-w">
-                                    <a class="" href="/u/xS8p-ACcQJqX0PjzbeGEhw?iid=ao-9QaOTRYCaZvdgojHFvQ">
+                                    <a class="" href="/u/{{ $post->user->nickname }}">
                                         {{ $post->user->nickname }}
                                     </a>
                                     <span>
@@ -52,7 +49,7 @@
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                      class="_1z7Hy">
                                     <g fill="none" fill-rule="evenodd">
-                                        <path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                        <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                         <path fill="#FFF"
                                               d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                                     </g>
@@ -62,12 +59,9 @@
                             </span>
                             </div>
                             <div class="_3qkzJ">
-                                <p class="_2B25b"><span class="_2jvdf">6 hours ago</span></p>
+                                <p class="_2B25b"><span class="_2jvdf">{{ $post->getDate() }}</span></p>
                                 <p class="TATrW">
-                                    <!-- react-text: 2292 -->17.9K
-                                    <!-- /react-text -->
-                                    <!-- react-text: 2293 -->Views
-                                    <!-- /react-text -->
+                                    17.9K Views
                                 </p>
                             </div>
                         </div>
@@ -76,11 +70,12 @@
             </div>
             <div class="_1Fx1P _1iE2V _1Ov3j">
                 <div class="_1-sfe CDTi0">
-                    <div class="_1l_wG _29Okg"><a class="_2Oo2A rF2QA"
-                                                  href="/p/hammond-enjoys-night-out-after-Lag4Ra_iR6WLzgJC0dSaxQ#comments"><span
-                                    class="_35FcZ"><!-- react-text: 2299 -->Comments<!-- /react-text --><span
-                                        class="_3HP-Q"><!-- react-text: 2301 --> (1)
-                                    <!-- /react-text --></span></span></a>
+                    <div class="_1l_wG _29Okg">
+                        <a class="_2Oo2A rF2QA" href="/p/{{ $post->slug }}#comments"><span
+                                    class="_35FcZ">Comments<span
+                                        class="_3HP-Q">
+                                    (1)
+                                </span></span></a>
                         <div class="_8m6WC rF2QA"><span class="_35FcZ">Repost</span></div>
                         <button class="_3yFg8 rF2QA">
                             <div class="_1_VaP"><span class="_35FcZ">Bumps</span><span class="_3HP-Q">(23)</span>
@@ -117,13 +112,9 @@
                 </div>
                 <div class="_1Xbrb _9fE1R NasRD">
                     <div class="_1QuY4">
-                        <h2><!-- react-text: 2329 -->LIKE <!-- /react-text --><!-- react-text: 2330 -->GRAND TOUR NATION
-                            <!-- /react-text --><!-- react-text: 2331 -->?<!-- /react-text --></h2></div>
+                        <h2>LIKE {{ $post->fanbase()->name }}?</h2></div>
                     <div class="_2KK_J _1yV5F _1MC-v _1h78h">
-                        <!-- react-text: 2333 -->JOIN
-                        <!-- /react-text -->
-                        <!-- react-text: 2334 -->DRIVETRIBE
-                        <!-- /react-text -->
+                        JOIN ALTFOOTBALL
                     </div>
                 </div>
             </div>
@@ -138,12 +129,13 @@
             <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
                 <div>
                     <div class="undefined _2-_Re _378qt">
-                        <a class="_23nwS" href="/t/grand-tour-nation-AseFq3ulThG-Xqs2ymBwWQ?iid=ao-9QaOTRYCaZvdgojHFvQ">
-                            <div class="_1Gyo9 Ofajv" data-initials="GTN"></div>
+                        <a class="_23nwS" href="/fb/{{ $post->fanbase()->slug }}">
+                            <div class="_1Gyo9 Ofajv" data-initials="{{ $post->fanbase()->getInitials() }}"></div>
                         </a>
                         <h2 class="_3mNJn">{{ $post->title }}</h2>
-                        <div class="_mHwf _29Okg"><a class="_2Oo2A rF2QA"
-                                                     href="/p/hammond-enjoys-night-out-after-Lag4Ra_iR6WLzgJC0dSaxQ#comments"><span
+                        <div class="_mHwf _29Okg">
+                            <a class="_2Oo2A rF2QA"
+                               href="/p/hammond-enjoys-night-out-after-Lag4Ra_iR6WLzgJC0dSaxQ#comments"><span
                                         class="_35FcZ"><!-- react-text: 2347 -->Comments<!-- /react-text --><span
                                             class="_3HP-Q"><!-- react-text: 2349 --> (<!-- /react-text -->
                                         <!-- react-text: 2350 -->1<!-- /react-text --><!-- react-text: 2351 -->)
@@ -237,7 +229,7 @@
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                              viewBox="0 0 18 18" class="_1z7Hy">
                                                             <g fill="none" fill-rule="evenodd">
-                                                                <path fill="#5B9EEC"
+                                                                <path fill="#64c431"
                                                                       d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                                                 <path fill="#FFF"
                                                                       d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
@@ -257,10 +249,7 @@
                             <div>
                                 <h2>Never miss a post</h2></div>
                             <div class="_3OD4J _1yV5F _1MC-v _1h78h">
-                                <!-- react-text: 2436 -->Join
-                                <!-- /react-text -->
-                                <!-- react-text: 2437 -->GRAND TOUR NATION
-                                <!-- /react-text -->
+                                Join {{  $post->fanbase()->name }}
                             </div>
                         </div>
                     </div>
@@ -287,10 +276,12 @@
                     <div class="_3G-jr">Like us on facebook</div>
                     <div class="_3Z0E3">
                         <img src="/images/logo.png" alt="AltFootball" class="_1aThB">
-                        <div class="_3GhRl"><a class="zzDw5" href="https://www.facebook.com/drivetribe/" rel="nofollow">ALTFOOTBALL</a>
+                        <div class="_3GhRl">
+                            <a class="zzDw5" href="https://www.facebook.com/altfootballdotcom/" rel="nofollow">ALTFOOTBALL</a>
                             <div class="fb-like _1kDAA fb_iframe_widget"
                                  data-href="https://www.facebook.com/altfootballdotcom" data-layout="button"
-                                 data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                                 data-action="like" data-size="small" data-show-faces="false" data-share="false">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -322,14 +313,7 @@
                     </form>
                 </div>
                 <div class="_2uxNN">
-                    <!-- react-text: 2479 -->Comments
-                    <!-- /react-text -->
-                    <!-- react-text: 2480 -->(
-                    <!-- /react-text -->
-                    <!-- react-text: 2481 -->1
-                    <!-- /react-text -->
-                    <!-- react-text: 2482 -->)
-                    <!-- /react-text -->
+                    Comments(2)
                 </div>
                 <ul class="_1RyqV">
                     <li class="gEjmr undefined" id="Q7vohQ8NRNaao-z5jHb7Lw">
@@ -347,24 +331,19 @@
                             <a class="" href="/u/VQGdkNIxR7qogKbB766sCg">
                                 <div class="_25jNX _3kBjx">
                                     <div class="N3r_f">
-                                        <div class="_38L6D" style="padding-bottom: 100%;"><img alt=""
-                                                                                               role="presentation"
-                                                                                               src="https://graph.facebook.com/1804949303115986/picture?type=square&amp;width=200&amp;height=200"
-                                                                                               class="_214e9 b00q8"
-                                                                                               width="60" height="60">
+                                        <div class="_38L6D" style="padding-bottom: 100%;">
+                                            <img alt=""
+                                                 role="presentation"
+                                                 src="https://graph.facebook.com/1804949303115986/picture?type=square&amp;width=200&amp;height=200"
+                                                 class="_214e9 b00q8"
+                                                 width="60" height="60">
                                         </div>
                                     </div>
                                     <!-- react-empty: 2496 -->
                                 </div>
                             </a>
                             <a class="_1lUs3" href="/u/VQGdkNIxR7qogKbB766sCg">
-                                <!-- react-text: 2498 -->Stephen
-                                <!-- /react-text -->
-                                <!-- react-text: 2499 -->
-                                <!-- /react-text -->
-                                <!-- react-text: 2500 -->Mcknight
-                                <!-- /react-text -->
-                                <!-- react-empty: 2501 -->
+                                Stephen Mcknight
                             </a>
                         </div>
                         <p class="_2OqId"><span><span>glad he got a night out hamster.</span></span>
@@ -373,8 +352,7 @@
                             <div class="_1aSFb">2 hours ago</div>
                             <div class="_22SkP">
                                 <button>
-                                    <!-- react-text: 2509 -->Reply
-                                    <!-- /react-text -->
+                                    Reply
                                 </button>
                             </div>
                         </div>
@@ -389,119 +367,80 @@
             <div>
                 <div class="_2H69I">YOU MIGHT ALSO LIKE_</div>
                 <div class="_9T4R2">
-                    <div class="_1XEbE">
-                        <div class="">
-                            <div class="_38L6D" style="padding-bottom: 50%;"><img alt="" role="presentation"
-                                                                                  src="https://drivetribe.imgix.net/EvnK1MnsQ-qltY9zkjodSg?w=900&amp;h=450&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                                                                  class="_214e9 b00q8" width="500"
-                                                                                  height="250"></div>
-                        </div>
-                        <div class="_1wjeD">
-                            <div class="grsTy">Someone's Built A Lego Six Speed Manual Gearbox - And It Works!</div>
-                        </div>
-                        <a class="ZE8ka"
-                           href="/p/someones-built-a-lego-six-speed-RqFjXHODSi--kGWpNFkTQQ?iid=EPPkMeO3Tq2t852A4Gdwfg"></a>
-                        <div class="zFsq3 _1iE2V _2ilqp">
-                            <a class="" href="/u/ITER3thTSRms-_1v_EGIzQ">
-                                <div class="_25jNX _3Y-3q" style="width: 40px; height: 40px;">
-                                    <div class="N3r_f">
-                                        <div class="_38L6D" style="padding-bottom: 100%;"><img alt=""
-                                                                                               role="presentation"
-                                                                                               src="https://graph.facebook.com/10211334260702431/picture?type=square&amp;width=100&amp;height=100"
-                                                                                               class="_214e9 b00q8"
-                                                                                               width="40" height="40">
+                    @foreach($siblingPosts as $post)
+                        <div class="_1XEbE">
+                            <div class="">
+                                <div class="_38L6D" style="padding-bottom: 50%;">
+                                    {!! $post->getImage() !!}
+                                </div>
+                            </div>
+                            <div class="_1wjeD">
+                                <div class="grsTy">{{ $post->title }}</div>
+                            </div>
+                            <a class="ZE8ka"
+                               href="/p/{{ $post->slug }}"></a>
+                            <div class="zFsq3 _1iE2V _2ilqp">
+                                <a class="" href="/u/{{ $post->user->slug }}">
+                                    <div class="_25jNX _3Y-3q" style="width: 40px; height: 40px;">
+                                        <div class="N3r_f">
+                                            <div class="_38L6D" style="padding-bottom: 100%;">
+                                                <img alt=""
+                                                     role="presentation"
+                                                     src="https://graph.facebook.com/10211334260702431/picture?type=square&amp;width=100&amp;height=100"
+                                                     class="_214e9 b00q8"
+                                                     width="40" height="40">
+                                            </div>
                                         </div>
                                     </div>
-                                    <!-- react-empty: 2529 -->
-                                </div>
-                            </a>
-                            <div class="_2bDpH">
-                                <p class="_2nWjU _31dto KTIgi"><a class="_2XyXQ"
-                                                                  href="/u/ITER3thTSRms-_1v_EGIzQ?iid=EPPkMeO3Tq2t852A4Gdwfg">Alex
-                                        Harrington</a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-                                         class="_1z7Hy _1NCGm RyyhO">
-                                        <g fill="none" fill-rule="evenodd">
-                                            <path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                            <path fill="#FFF"
-                                                  d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                        </g>
-                                    </svg>
-                                </p>
-                                <div class="_1HPk2"><a class="_25LcG"
-                                                       href="/t/grand-tour-nation-AseFq3ulThG-Xqs2ymBwWQ?iid=EPPkMeO3Tq2t852A4Gdwfg">GRAND
-                                        TOUR NATION</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="_1XEbE">
-                        <div class="">
-                            <div class="_38L6D" style="padding-bottom: 50%;"><img alt="" role="presentation"
-                                                                                  src="https://drivetribe.imgix.net/eUrdpoZNTM2CNEQhVRQ04Q?w=900&amp;h=450&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                                                                  class="_214e9 b00q8" width="500"
-                                                                                  height="250"></div>
-                        </div>
-                        <div class="_1wjeD">
-                            <div class="grsTy">This is what happens if you tailgate - Who's in the wrong?</div>
-                        </div>
-                        <a class="ZE8ka"
-                           href="/p/this-is-what-happens-if-you-tailgate-EZC72nfhTMmk2qogwaIpaA?iid=Dg5piptNRG-h0b-nnJiTqw"></a>
-                        <div class="zFsq3 _1iE2V _2ilqp">
-                            <a class="" href="/u/ITER3thTSRms-_1v_EGIzQ">
-                                <div class="_25jNX _3Y-3q" style="width: 40px; height: 40px;">
-                                    <div class="N3r_f">
-                                        <div class="_38L6D" style="padding-bottom: 100%;"><img alt=""
-                                                                                               role="presentation"
-                                                                                               src="https://graph.facebook.com/10211334260702431/picture?type=square&amp;width=100&amp;height=100"
-                                                                                               class="_214e9 b00q8"
-                                                                                               width="40" height="40">
-                                        </div>
+                                </a>
+                                <div class="_2bDpH">
+                                    <p class="_2nWjU _31dto KTIgi">
+                                        <a class="_2XyXQ" href="/u/ITER3thTSRms-_1v_EGIzQ?iid=EPPkMeO3Tq2t852A4Gdwfg">
+                                            {{ $post->user->nickname }}
+                                        </a>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                             viewBox="0 0 18 18"
+                                             class="_1z7Hy _1NCGm RyyhO">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                                <path fill="#FFF"
+                                                      d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                            </g>
+                                        </svg>
+                                    </p>
+                                    <div class="_1HPk2">
+                                        <a class="_25LcG" href="/fb/ {{ $post->fanbase()->slug }}">
+                                            {{ $post->fanbase()->name }}
+                                        </a>
                                     </div>
-                                    <!-- react-empty: 2552 -->
                                 </div>
-                            </a>
-                            <div class="_2bDpH">
-                                <p class="_2nWjU _31dto KTIgi"><a class="_2XyXQ"
-                                                                  href="/u/ITER3thTSRms-_1v_EGIzQ?iid=Dg5piptNRG-h0b-nnJiTqw">Alex
-                                        Harrington</a>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-                                         class="_1z7Hy _1NCGm RyyhO">
-                                        <g fill="none" fill-rule="evenodd">
-                                            <path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                            <path fill="#FFF"
-                                                  d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                        </g>
-                                    </svg>
-                                </p>
-                                <div class="_1HPk2"><a class="_25LcG"
-                                                       href="/t/grand-tour-nation-AseFq3ulThG-Xqs2ymBwWQ?iid=Dg5piptNRG-h0b-nnJiTqw">GRAND
-                                        TOUR NATION</a></div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div>
-                <div class="_2H69I">EXPLORE MORE TRIBES_</div>
+                <div class="_2H69I">EXPLORE MORE FANBASES_</div>
                 <div class="_1z1Ga">
+                    @foreach($fanbases as $base)
                     <a class="_1mWot _2uakq _2cP6X" href="/t/grand-tour-nation-AseFq3ulThG-Xqs2ymBwWQ">
                         <div class="ZD12l _1iE2V _16e0f">
                             <div class="_1KG3g">
-                                <div class="gzgzI">GTN</div>
+                                <div class="gzgzI">{{ $base->getInitials() }}</div>
                             </div>
                             <div class="_2lssz">
-                                <div class="_38L6D" style="padding-bottom: 100%;"><img alt="" role="presentation"
-                                                                                       src="https://drivetribe.imgix.net/dgzDMW3gSoW42OikhRZa7Q?w=400&amp;h=400&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                                                                       class="_214e9 b00q8" width="220"
-                                                                                       height="220"></div>
+                                <div class="_38L6D" style="padding-bottom: 100%;">
+                                    {!! $base->getImage() !!}
+                                </div>
                             </div>
                         </div>
                         <div class="_1KQuz _1-YRL">
-                            <h3 class="_2o06m _1oBl0"><span class="_1QEWe"><!-- react-text: 2575 -->GRAND TOUR NATION
-                                    <!-- /react-text --><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                            <h3 class="_2o06m _1oBl0">
+                                <span class="_1QEWe">{{ $base->name }}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                              viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
                                                                                                          fill-rule="evenodd"><path
-                                                    fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
+                                                    fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
                                                     fill="#FFF"
                                                     d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg></span>
                             </h3>
@@ -511,54 +450,7 @@
                             </div>
                         </div>
                     </a>
-                    <a class="_1mWot _2uakq _2cP6X" href="/t/home-of-f1-EC7I1ndzRTGRrhY3k5J0GQ">
-                        <div class="ZD12l _1iE2V _16e0f">
-                            <div class="_1KG3g">
-                                <div class="gzgzI">F1</div>
-                            </div>
-                            <div class="_2lssz">
-                                <div class="_38L6D" style="padding-bottom: 100%;"><img alt="" role="presentation"
-                                                                                       src="https://drivetribe.imgix.net/WnMBdwCxR5OLrHAnyps0kg?w=400&amp;h=400&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                                                                       class="_214e9 b00q8" width="220"
-                                                                                       height="220"></div>
-                            </div>
-                        </div>
-                        <div class="_1KQuz _1-YRL">
-                            <h3 class="_2o06m _1oBl0"><span class="_1QEWe"><!-- react-text: 2595 -->HOME OF F1
-                                    <!-- /react-text --><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                             viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
-                                                                                                         fill-rule="evenodd"><path
-                                                    fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
-                                                    fill="#FFF"
-                                                    d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg></span>
-                            </h3>
-                            <div class="_1TvPX">
-                                <div class="_1Ct87"><span><span class="CrE3q">34.4K</span><span> bumps</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <a class="_1mWot _2uakq _2cP6X" href="/t/wheelie-good-stuff-DpkKiG0-SWCiHoGrds66XA">
-                        <div class="ZD12l _1iE2V _16e0f">
-                            <div class="_1KG3g">
-                                <div class="gzgzI">WGS</div>
-                            </div>
-                            <div class="_2lssz">
-                                <div class="_38L6D" style="padding-bottom: 100%;"><img alt="" role="presentation"
-                                                                                       src="https://drivetribe.imgix.net/FYMD5lJfT1uFXL0esyxoPA?w=400&amp;h=400&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                                                                       class="_214e9 b00q8" width="220"
-                                                                                       height="220"></div>
-                            </div>
-                        </div>
-                        <div class="_1KQuz _1-YRL">
-                            <h3 class="_2o06m _1oBl0"><span class="_1QEWe"><!-- react-text: 2615 -->WHEELIE GOOD STUFF
-                                    <!-- /react-text --><!-- react-empty: 2616 --></span></h3>
-                            <div class="_1TvPX">
-                                <div class="_1Ct87"><span><span class="CrE3q">5.4K</span><span> bumps</span></span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
+                    @endforeach
                 </div>
             </div>
         </div>

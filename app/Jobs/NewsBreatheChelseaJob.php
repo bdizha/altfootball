@@ -35,11 +35,10 @@ class NewsBreatheChelseaJob extends NewsJob
      */
     public function handle()
     {
-
         $sections = [
-            "latest-news",
-            "general-gossip",
-            "transfer-gossip"
+            "news",
+            "transfer-gossip",
+            "transfer-centre"
         ];
 
         $client = new Client();
@@ -126,16 +125,13 @@ class NewsBreatheChelseaJob extends NewsJob
                                     echo "updated::: {$p->slug} \n";
                                 }
 
-                                $fb = FanbasePost::where("post_id", $p->id)
-                                    ->where("fanbase_id", $this->fanbase_id)
-                                    ->first();
+                                FanbasePost::where("post_id", $p->id)
+                                    ->delete();
 
-                                if (empty($fb->id)) {
-                                    FanbasePost::create([
-                                        'post_id' => $p->id,
-                                        'fanbase_id' => $this->fanbase_id
-                                    ]);
-                                }
+                                FanbasePost::create([
+                                    'post_id' => $p->id,
+                                    'fanbase_id' => $this->fanbase_id
+                                ]);
                             }
                         }
                     }

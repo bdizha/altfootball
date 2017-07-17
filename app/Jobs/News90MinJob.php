@@ -12,6 +12,7 @@ class News90MinJob extends NewsJob
 
     protected $domain = "";
     protected $url = "";
+    protected $fanbase_id;
 
     /**
      * Create a new job instance.
@@ -20,6 +21,7 @@ class News90MinJob extends NewsJob
      */
     public function __construct()
     {
+        $this->fanbase_id = 7;
         $this->domain = "http://www.90min.com";
         $this->url = "http://www.90min.com/top-stories?page=";
     }
@@ -104,7 +106,7 @@ class News90MinJob extends NewsJob
                                 $post['summary'] = $summary;
 
                                 if (empty($p->id)) {
-                                    Post::create($post);
+                                    $p = Post::create($post);
 
                                     echo 'Inserted post: ' . $post['title'] . "\n";
                                 } else {
@@ -113,6 +115,17 @@ class News90MinJob extends NewsJob
                                     $p->save();
 
                                     echo "updated::: {$p->slug} \n";
+                                }
+
+                                $fb = FanbasePost::where("post_id", $p->id)
+                                    ->where("fanbase_id", $this->fanbase_id)
+                                    ->first();
+
+                                if (empty($fb->id)) {
+                                    FanbasePost::create([
+                                        'post_id' => $p->id,
+                                        'fanbase_id' => $this->fanbase_id
+                                    ]);
                                 }
                             }
                         }
