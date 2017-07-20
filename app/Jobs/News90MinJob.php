@@ -3,6 +3,7 @@
 namespace App\Jobs;
 use App\Post;
 use App\User;
+use App\FanbasePost;
 use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;

@@ -46,6 +46,11 @@ class User extends Authenticatable
         return 'slug';
     }
 
+    public function fanbases()
+    {
+        return $this->belongsToMany(Fanbase::class, 'users_fanbases');
+    }
+
     /**
      * Create a string based on the first and last name of a person.
      */

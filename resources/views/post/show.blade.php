@@ -37,7 +37,7 @@
                         <div class="_1pPnu _2Nd08">
                             <div class="">
                                 <span class="_1NHvQ _3Xf-w">
-                                    <a class="" href="/u/{{ $post->user->nickname }}">
+                                    <a class="" href="/u/{{ $post->user->slug }}">
                                         {{ $post->user->nickname }}
                                     </a>
                                     <span>
@@ -221,11 +221,12 @@
                                                     </div>
                                                 </a>
                                                 <div class="zv5pR E6O3i">
-                                                    <a class="_3f32u _38OvA" href="/u/97Fkkg8BQEWbWOafC27KgQ">IdiotUKDrivers
-                                                        Exposed</a>
+                                                    <a class="_3f32u _38OvA" href="/u/{{ $post->user->slug }}">
+                                                        {{ $post->user->nickname }}
+                                                    </a>
                                                     <a class="O0stn _38OvA"
-                                                       href="/t/idiot-uk-drivers-exposed-HqIRvJ7kRLSnHn3-IrlX9w">
-                                                        IDIOT UK DRIVERS EXPOSED
+                                                       href="/fb/{{ $post->fanbase()->slug }}">
+                                                        {{ $post->fanbase()->name }}
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                              viewBox="0 0 18 18" class="_1z7Hy">
                                                             <g fill="none" fill-rule="evenodd">
@@ -423,7 +424,7 @@
                 <div class="_2H69I">EXPLORE MORE FANBASES_</div>
                 <div class="_1z1Ga">
                     @foreach($fanbases as $base)
-                    <a class="_1mWot _2uakq _2cP6X" href="/t/grand-tour-nation-AseFq3ulThG-Xqs2ymBwWQ">
+                    <a class="_1mWot _2uakq _2cP6X" href="/fb/{{ $base->slug }}">
                         <div class="ZD12l _1iE2V _16e0f">
                             <div class="_1KG3g">
                                 <div class="gzgzI">{{ $base->getInitials() }}</div>

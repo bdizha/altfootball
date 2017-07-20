@@ -99,13 +99,14 @@ class NewsGoalJob extends NewsJob
                                     $content .= "<p>{$node->html()}</p>";
                                 });
 
-                                $post['content'] = str_replace("<p><br></p>", "", $content);
+                                $content = str_replace("<p><br></p>", "", $content);
+                                $post['content'] = str_replace("<p></p>", "", $content);
 
                                 if (empty($p->id)) {
                                     $p = Post::create($post);
 
                                     echo 'Inserted post: ' . $post['title'] . "\n";
-                                    Log::notice('Inserted post: ' . $post['title']);
+//                                    Log::notice('Inserted post: ' . $post['title']);
 
                                 } else {
                                     $p->title = $post['title'];

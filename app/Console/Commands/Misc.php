@@ -2,9 +2,7 @@
 
 namespace App\Console\Commands;
 
-use App\Post;
-use App\Tag;
-use App\TagPost;
+use App\UserFanbase;
 use App\FanbasePost;
 use Illuminate\Console\Command;
 
@@ -41,22 +39,18 @@ class Misc extends Command
      */
     public function handle()
     {
+        $fanbasesPosts = FanbasePost::get();
 
-        $urls = [
-            'sportslens.com' => 8,
-            'www.90min.com' => 7,
-            'www.goal.com' => 4,
-            'chelsea.com' => 5
-        ];
+        foreach ($fanbasesPosts as $fanbasePost) {
+            echo "Fanbasing ::: " . $fanbasePost->post->slug . "\n";
 
-        foreach ($urls as $url => $fanbaseId) {
-            $posts = Post::where("external_url", "like", "%{$url}%")->get();
+            $userFanbase = UserFanbase::where("user_id", $fanbasePost->post->user_id)
+                ->where("fanbase_id", $fanbasePost->fanbase_id)->first();
 
-            foreach ($posts as $post) {
-                echo "Fanbasing ::: " . $post->slug . "\n";
-                FanbasePost::create([
-                    "post_id" => $post->id,
-                    "fanbase_id" => $fanbaseId
+            if(empty($userFanbase)){
+                UserFanbase::create([
+                    "user_id" => $fanbasePost->post->user_id,
+                    "fanbase_id" => $fanbasePost->fanbase_id
                 ]);
             }
         }

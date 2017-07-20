@@ -50,9 +50,14 @@ class Fanbase extends Model
         return $this->hasOne('App\User', 'id', 'user_id');
     }
 
+    public function users()
+    {
+        return $this->belongsToMany(User::class, 'users_fanbases');
+    }
+
     public function posts()
     {
-        return $this->belongsToMany(Post::class, 'fanabses_posts');
+        return $this->belongsToMany(Post::class, 'fanbases_posts');
     }
 
     public function getImage($dimensions = "width=400&height=400")
