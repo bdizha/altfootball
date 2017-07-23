@@ -25,7 +25,7 @@
     <meta property="al:android:app_name" content="ALTFOOTBALL">
     <meta property="al:android:package" content="com.drivetribe">
     <meta name="apple-itunes-app" content="app-id=1164159977">
-    <title> @yield('title')</title>
+    <title> @yield('title') | ALTFOOTBALL</title>
     <link data-react-helmet="true" rel="canonical" href="http://altfootball.dev">
     <link data-react-helmet="true" rel="next" href="/feed/page/2">
     <meta data-react-helmet="true" property="twitter:title" name="twitter:title" content="ALTFOOTBALL">
@@ -109,7 +109,8 @@
         </div>
     </div>
 </div>
-
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/js/af.js"></script>
 <script>
     window.serverPerf = {
         router: 418,

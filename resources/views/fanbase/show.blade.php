@@ -1,10 +1,11 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title', $fanbase->name)
 
 @section('content')
     <!-- react-empty: 43 -->
-    <div class="_2q1KC" data-reactid="44">
+    <div class="_2q1KC" style="background: url({{ $fanbase->getCover() }}) #000827; background-size: cover;">
+        <div class="_3asg6" style="position:absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0, 8, 39,0.7);"></div>
         <div class="_3asg7 _38P1C" data-reactid="45">
             <h1 class="_1xaT_ SqxHJ" data-reactid="46">
                 {{ $fanbase->name }}
@@ -23,11 +24,11 @@
         <div class="IEF7x _38P1C" data-reactid="53">
             <div class="_1bRKx" data-reactid="54">
                 <nav class="_3GkHt _1R2o8" data-reactid="55">
-                    <a class="zxDoM _3rBNC _2sG6-" href="/t/jeremy-clarksons-tribe-PgtD-TRMTVSO3dJmDa8Lkw"
+                    <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}"
                        data-reactid="56">
                         <!-- react-text: 57 -->Posts<!-- /react-text -->
                     </a>
-                    <a class="_3UwsA zxDoM _3rBNC" href="/t/jeremy-clarksons-tribe-PgtD-TRMTVSO3dJmDa8Lkw/discussions"
+                    <a style="display: none;" class="_3UwsA zxDoM _3rBNC" href="/f/{{ $fanbase->slug }}"
                        data-reactid="58">
                         <!-- react-text: 59 -->Discussions<!-- /react-text --><span class="_2-WMb _2aPX0"
                                                                                     data-reactid="60"><span
@@ -73,7 +74,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <a class="_37ior" href="/u/ZN5myMarSjy490WcuDnCpQ" data-reactid="82">
+                        <a class="_37ior" href="/u/{{ $fanbase->user->slug }}" data-reactid="82">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                  class="_1z7Hy" data-reactid="84">
                                 <g fill="none" fill-rule="evenodd" data-reactid="85">
@@ -89,15 +90,16 @@
                 <div class="_3vhE-" data-reactid="88">
                     <div class="_1bRKx" data-reactid="89">
                         <nav class="_3GkHt _1R2o8" data-reactid="90">
-                            <a class="zxDoM _3rBNC _2sG6-" href="/t/jeremy-clarksons-tribe-PgtD-TRMTVSO3dJmDa8Lkw"
+                            <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}"
                                data-reactid="91">
-                                <!-- react-text: 92 -->Posts<!-- /react-text -->
+                                Posts
                             </a>
                             <a class="_3UwsA zxDoM _3rBNC"
-                               href="/t/jeremy-clarksons-tribe-PgtD-TRMTVSO3dJmDa8Lkw/discussions" data-reactid="93">
-                                <!-- react-text: 94 -->Discussions<!-- /react-text --><span class="_2-WMb _2aPX0"
-                                                                                            data-reactid="95"><span
-                                            class="_1a2gI" data-reactid="96">28</span></span>
+                               href="/f/{{ $fanbase->slug }}?page=discussions">
+                                Discussions
+                                <span>
+                                    <span class="_2-WMb _2aPX0" class="_1a2gI" data-reactid="96">{{ rand(1, 40) }}</span>
+                                </span>
                             </a>
                         </nav>
                     </div>
@@ -158,25 +160,20 @@
                 <div class="_3p0RC" data-reactid="119">
                     <div class="_1OwiL _126V6" data-reactid="120">
                         <div class="zFsq3 _1iE2V _3jt-p" data-reactid="121">
-                            <a class="" href="/u/ZN5myMarSjy490WcuDnCpQ" data-reactid="122">
+                            <a class="" href="/u/{{ $fanbase->user->slug }}" data-reactid="122">
                                 <div class="_25jNX _3Y-3q" style="width:35px;height:35px;" data-reactid="123">
                                     <div class="N3r_f" data-reactid="124">
-                                        <div style="padding-bottom:100%;" class="_38L6D" data-reactid="125"><img alt=""
-                                                                                                                 role="presentation"
-                                                                                                                 src="https://drivetribe.imgix.net/DVwk9x0iRNyGShAKwUwQSw?w=100&amp;h=100&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                                                                                                 class="_214e9 b00q8"
-                                                                                                                 width="35"
-                                                                                                                 height="35"
-                                                                                                                 data-reactid="126">
+                                        <div style="padding-bottom:100%;" class="_38L6D" data-reactid="125">
+                                            {!! $fanbase->user->getImage() !!}
                                         </div>
                                     </div>
-                                    <!-- react-empty: 127 -->
                                 </div>
                             </a>
                             <div class="RDrYv _2bDpH" data-reactid="128">
                                 <p class="_2nWjU _2YnA3 KTIgi" data-reactid="129">
-                                    <a class="_2XyXQ" href="/u/ZN5myMarSjy490WcuDnCpQ" data-reactid="130">Jeremy
-                                        Clarkson</a>
+                                    <a class="_2XyXQ" href="/u/{{ $fanbase->user->slug }}">
+                                        {{ $fanbase->user->getName() }}
+                                    </a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          class="_1z7Hy _1NCGm" data-reactid="131">
                                         <g fill="none" fill-rule="evenodd" data-reactid="132">
@@ -188,8 +185,9 @@
                                         </g>
                                     </svg>
                                 </p>
-                                <div class="_1HPk2 TzCC1" data-reactid="135"><span
-                                            data-reactid="136">Tribe Leader</span></div>
+                                <div class="_1HPk2 TzCC1">
+                                    <span>Fanbase Leader</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -202,16 +200,16 @@
                                       d="M6.7 1.5C8 1.5 9 2.5 9 4c0 1.3-1 2.4-2.3 2.4-1.4 0-2.5-1-2.5-2.4s1-2.5 2.5-2.5M9.2 7c1-.7 1.4-1.8 1.4-3 0-2.2-1.8-4-4-4-2 0-4 1.8-4 4 0 1.2.7 2.3 1.5 3-2 1-3.5 3-4 5.8 0 .4.2.8.6.8.4 0 .8-.2 1-.6.4-3 2.6-5 5-5 2.5 0 4.7 2 5.2 5 0 .4.4.7.8.7.5 0 .8-.5.7-1-.5-2.6-2-4.7-4-5.7m4.8 0c.6-.8 1-1.7 1-2.7 0-2.2-1.8-4-4-4-.5 0-.8.4-.8.8 0 .5.3 1 .8 1 1.3 0 2.4 1 2.4 2.3 0 1-.4 1.7-1.2 2.2-.4.2-.5.6-.3 1 .3.2.5.4.8.4 1.8.5 3.3 2.4 3.7 4.6 0 .4.4.6.7.6h.2c.4 0 .7-.4.6-.8C17.5 10 16 8 14.2 7"
                                       data-reactid="141"></path>
                             </svg>
-                            <span class="_2OsaV" data-reactid="142">520.2K</span>
+                            <span class="_2OsaV" data-reactid="142">{{ rand(1, 100) }}K</span>
                         </a>
                         <div class="nXDDw _2Ngcr" data-reactid="143">
                             <svg width="24" height="23" viewBox="-3 -3 23 24" data-reactid="144">
                                 <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75L13.5 0zm-.1 1.87l3.1 2.58V8.3L9 14.55 1.5 8.3V4.45l3.1-2.58L9 4.8l4.4-2.93z"
                                       fill="#000" fill-rule="evenodd" opacity="1" data-reactid="145"></path>
-                                <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75" fill="#F71700" fill-rule="evenodd"
+                                <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75" fill="#00AFFF" fill-rule="evenodd"
                                       opacity="0" data-reactid="146"></path>
                             </svg>
-                            <span class="_2OsaV" data-reactid="147">137.2K</span>
+                            <span class="_2OsaV" data-reactid="147">{{ rand(1, 100) }}K</span>
                         </div>
                         <div class="nXDDw" data-reactid="148">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15"
@@ -227,7 +225,7 @@
                                           data-reactid="153"></path>
                                 </g>
                             </svg>
-                            <span class="_2OsaV" data-reactid="154">18.6M</span>
+                            <span class="_2OsaV" data-reactid="154">{{ rand(1, 11) }}M</span>
                         </div>
                     </div>
                     <div class="DZpu2" data-reactid="155">
@@ -360,7 +358,7 @@
                                         </g>
                                     </svg>
                                 </div>
-                                <a class="_37ior" href="/u/ZN5myMarSjy490WcuDnCpQ" data-reactid="221">
+                                <a class="_37ior" href="/u/{{ $fanbase->user->slug }}" data-reactid="221">
                                     <!-- react-text: 222 -->Jeremy Clarkson<!-- /react-text -->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          class="_1z7Hy" data-reactid="223">

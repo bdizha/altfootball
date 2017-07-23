@@ -25,7 +25,7 @@
                     <div class="_1ht8_">
                         <div class="_3FaZ4">
                             @foreach($bases as $k => $base)
-                                <a class="_38Ked" href="/fb/{{ $base->slug }}">
+                                <a class="_38Ked" href="/f/{{ $base->slug }}">
                                     <div class="_271kZ">
                                         <div class="">
                                             <div class="_38L6D" style="padding-bottom: 100%;">

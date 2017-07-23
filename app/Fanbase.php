@@ -18,7 +18,17 @@ class Fanbase extends Model
         'name',
         'description',
         'image',
+        'cover',
         'slug'
+    ];
+
+    protected $covers = [
+        "http://www.realmadrid.com/img/galeria-marca/_he27686.jpg",
+        "http://www.realmadrid.com/img/galeria-marca/_he18519.jpg",
+        "http://www.realmadrid.com/img/galeria-marca/_he27677.jpg",
+        "http://www.realmadrid.com/img/galeria-marca/_1rm2197.jpg",
+        "http://www.realmadrid.com/img/galeria-marca/_1rm2220.jpg",
+        "http://www.realmadrid.com/img/galeria-marca/_1rm2228.jpg"
     ];
 
     public function getInitials()
@@ -67,5 +77,14 @@ class Fanbase extends Model
         } catch (\Exception $e) {
             return "";
         }
+    }
+
+    public function getCover()
+    {
+        if (empty($this->cover)) {
+            $this->cover = $this->covers[rand(0, count($this->covers))];
+            $this->save();
+        }
+        return $this->cover;
     }
 }

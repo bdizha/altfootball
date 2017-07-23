@@ -41,10 +41,10 @@ class FetchContent extends Command
      */
     public function handle()
     {
-//        dispatch(new NewsBreatheChelseaJob());
-//        dispatch(new NewsSportslensJob());
-        dispatch(new News90MinJob());
         dispatch(new NewsGoalJob());
+        dispatch(new NewsSportslensJob());
+        dispatch(new News90MinJob());
+        dispatch(new NewsBreatheChelseaJob());
     }
 }
 

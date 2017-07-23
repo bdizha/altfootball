@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateViewsTable extends Migration
+class CreatePostsViewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateViewsTable extends Migration
      */
     public function up()
     {
-        Schema::create('views', function (Blueprint $table) {
+        Schema::create('posts_views', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
-        });
 
-        Schema::dropIfExists('views');
+        });
+        Schema::dropIfExists('posts_views');
     }
 
     /**
@@ -28,6 +27,6 @@ class CreateViewsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('views');
+        Schema::dropIfExists('posts_views');
     }
 }

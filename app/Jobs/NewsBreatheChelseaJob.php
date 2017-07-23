@@ -98,7 +98,7 @@ class NewsBreatheChelseaJob extends NewsJob
                                 $post['image'] = $data->filter('.post-thumbnail img')->attr("src");
                                 $post['title'] = $data->filter('.entry-title')->text();
                                 $post['date'] = $data->filter('.post-meta .updated')->text();
-                                $post['created_at'] = Carbon::parse($post['date']);
+                                $post['created_at'] = Carbon::parse($this->cleanUpDate($post['date']));
 
                                 $content = "";
                                 $summary = "";

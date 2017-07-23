@@ -14,13 +14,12 @@ class BaseSeeder extends Seeder
     public function run()
     {
         $bases = [
-
             [
-                "first_name" => "Sport",
-                "last_name" => "Lens",
-                "name" => "Sportlens",
-                "description" => "For the fans and for the players",
-                "image" => "https://www.adorama.com/alc/wp-content/uploads/2013/08/shutterstock_152803373-2.jpg"
+                "first_name" => "Chelsea",
+                "last_name" => "Football",
+                "name" => "The Chelsea football club",
+                "description" => "A place for all Chelsea enthusiasts around the globe to enjoy.",
+                "image" => "http://ak.c.ooyala.com/V1MDlyNjE6pvM3qsb-TEsj6BQqbpSuo2/promo300808043"
             ]
         ];
 

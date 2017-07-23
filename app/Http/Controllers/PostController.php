@@ -23,6 +23,10 @@ class PostController extends Controller
                 ->orderBy('id', 'asc')->take(3)->get();
         }
 
+        $post->views += 1;
+        $post->save();
+
+
         return view('post.show', [
             'post' => $post,
             'siblingPosts' => $siblingPosts,

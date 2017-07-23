@@ -39,7 +39,7 @@
             <div class="GLLyX">
                 <div class="_323ok _3Xaa0">
                     @foreach($bases as $base)
-                    <a class="_2_Gw9" data-initials="{{ $base->getInitials() }}" href="/fb/{{ $base->slug }}"
+                    <a class="_2_Gw9" data-initials="{{ $base->getInitials() }}" href="/f/{{ $base->slug }}"
                        data-reactid="75">
                         <div class="_204wR">
                             <div style="padding-bottom:100%;" class="_38L6D">

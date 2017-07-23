@@ -5,6 +5,7 @@ namespace App;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use MartinBean\Database\Eloquent\Sluggable;
+use Illuminate\Support\Facades\Redis;
 
 class Post extends Model
 {
@@ -17,6 +18,7 @@ class Post extends Model
      */
     protected $fillable = [
         'title',
+        'credit',
         'external_url',
         'summary',
         'image',
@@ -51,6 +53,11 @@ class Post extends Model
         return $this->belongsToMany(Tag::class, 'tags_posts');
     }
 
+    public function views()
+    {
+        return $this->belongsToMany(View::class, 'tags_posts');
+    }
+
     public function fanbases()
     {
         return $this->belongsToMany(Fanbase::class, 'fanbases_posts');
@@ -73,9 +80,14 @@ class Post extends Model
     public function getImage($dimensions = "width=370&height=208")
     {
         try {
-            return file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
+            $image = Redis::get('post:image:' . $this->id);
+            if(empty($image)){
+                $image = file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
+                Redis::set('post:image:' . $this->id, $image);
+            }
+            return $image;
         } catch (\Exception $e) {
-            return "";
+//           dd($e);
         }
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Jobs;
 use App\Post;
+use App\FanbasePost;
 use App\User;
 use Carbon\Carbon;
 use Goutte\Client;
@@ -92,7 +93,7 @@ class NewsGoalJob extends NewsJob
                                 $post['title'] = $data->filter('.article-header img')->attr("alt");
                                 $post['date'] = $data->filter('.module-article-body time')->text();
                                 $post['summary'] = str_limit($data->filter('p.leading')->text(), 250);
-                                $post['created_at'] = Carbon::parse($post['date']);
+                                $post['created_at'] = Carbon::parse($this->cleanUpDate($post['date']));
 
                                 $content = "";
                                 $data->filter('.article-text p')->each(function (Crawler $node, $i) use (&$content) {
@@ -114,6 +115,17 @@ class NewsGoalJob extends NewsJob
                                     $p->save();
 
                                     echo "updated::: {$p->slug} \n";
+                                }
+
+                                $fb = FanbasePost::where("post_id", $p->id)
+                                    ->where("fanbase_id", $this->fanbase_id)
+                                    ->first();
+
+                                if (empty($fb->id)) {
+                                    FanbasePost::create([
+                                        'post_id' => $p->id,
+                                        'fanbase_id' => $this->fanbase_id
+                                    ]);
                                 }
                             }
                         }

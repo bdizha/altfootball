@@ -23,6 +23,8 @@ class HomeController extends Controller
         $posts = Post::orderBy('created_at', 'desc')->paginate(24);
         $bases = Fanbase::orderBy('id', 'asc')->take(6)->get();
 
+//        dd($posts[0]);
+
         $tags = Tag::withCount('posts')
             ->orderBy("posts_count", "DESC")
             ->take(12)

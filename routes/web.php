@@ -14,7 +14,11 @@
 Route::get('/', 'HomeController@index');
 
 Route::get('/p/{slug}', 'PostController@show')->name("post.show");
-Route::get('/fb/{slug}', 'FanbaseController@show')->name("fanbase.show");
+Route::get('/f/{slug}', 'FanbaseController@show')->name("fanbase.show");
+Route::get('/f/{slug}/discussions', 'FanbaseController@discussions')->name("fanbase.show");
 Route::get('/fanbases', 'FanbaseController@index')->name("fanbase.index");
+Route::get('/fanbases/yours', 'FanbaseController@yours')->name("fanbase.yours");
 Route::get('/t/{slug}', 'TagController@show')->name("tag.show");
 Route::get('/u/{slug}', 'FanController@show')->name("fan.show");
+Route::get('/u/{slug}/followers', 'FanController@followers')->name("fan.followers");
+Route::get('/u/{slug}/following', 'FanController@followers')->name("fan.following");

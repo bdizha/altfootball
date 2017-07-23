@@ -3,6 +3,7 @@
 namespace App\Jobs;
 use App\Post;
 use App\User;
+use App\FanbasePost;
 use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
@@ -35,11 +36,14 @@ class NewsSportslensJob extends NewsJob
 
         $client = new Client();
 
-        foreach (range(1, 200) as $page) {
+        foreach (range(1, 3) as $page) {
 
-            $crawler = $client->request('GET', $this->url . $page);
-            $crawler->filter('.latestPost')->each(function (Crawler $node, $i) {
-                $link = $node->filter('.front-view-title a')->attr("href");
+//            $crawler = $client->request('GET', $this->url . $page);
+
+            $posts = Post::where("external_url", "like", "%sportslens%")->get();
+
+            foreach ($posts as $post) {
+                $link = $post->external_url;
 
                 if (!empty($link)) {
 
@@ -88,7 +92,7 @@ class NewsSportslensJob extends NewsJob
 
                                 $post['image'] = $data->filter('.thecontent img')->attr("data-layzr");
                                 $post['title'] = $data->filter('.single-title')->text();
-                                $post['date'] = $data->filter('.post-info .date')->text();
+                                $post['date'] = $this->cleanUpDate($data->filter('.post-info .date')->text());
                                 $post['created_at'] = Carbon::parse($post['date']);
 
                                 $content = "";
@@ -104,6 +108,8 @@ class NewsSportslensJob extends NewsJob
                                 $post['content'] = str_replace("<p><span style=\"background-color: initial; font-size: 1em;\"><br></span></p>", "", $content);
                                 $post['summary'] = $summary;
 
+//                                dd($post);
+
                                 if (empty($p->id)) {
                                     $p = Post::create($post);
 
@@ -116,11 +122,22 @@ class NewsSportslensJob extends NewsJob
 
                                     echo "updated::: {$p->slug} \n";
                                 }
+
+                                $fb = FanbasePost::where("post_id", $p->id)
+                                    ->where("fanbase_id", $this->fanbase_id)
+                                    ->first();
+
+                                if (empty($fb->id)) {
+                                    FanbasePost::create([
+                                        'post_id' => $p->id,
+                                        'fanbase_id' => $this->fanbase_id
+                                    ]);
+                                }
                             }
                         }
                     }
                 }
-            });
+            }
         }
     }
 }

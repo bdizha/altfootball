@@ -345,7 +345,7 @@ button {
   line-height: 14px;
   text-align: left;
   padding: 22px 40px;
-  background-color: #000827;
+  background: #000827;
   color: #fff;
   cursor: pointer;
   svg {
@@ -3103,7 +3103,7 @@ button {
 }
 
 ._1RYG9 {
-  background-color: #f4f4f4;
+  background: url(/images/repeat-white-logo.png) #f4f4f4;
   padding-top: 35px;
   padding-bottom: 64px;
   min-height: 100vh;
@@ -3942,7 +3942,7 @@ button {
 }
 
 ._3VSm9 {
-  background-color: #000827;
+  background: #000827;
   color: #f8f8f8;
   z-index: 1;
   padding-bottom: 88px;
@@ -4120,7 +4120,7 @@ button {
 }
 
 ._175AS {
-  background-color: #000827;
+  background: url(/images/repeat-logo.png) #000827;
   padding: 22px;
   color: #f8f8f8;
   overflow: hidden;
@@ -5313,7 +5313,7 @@ button {
 }
 
 ._1S3Ei {
-  background-color: #000827;
+  background: url(/images/repeat-logo.png) #000827;
   cursor: default;
 }
 
@@ -9993,8 +9993,9 @@ div._3bqe5 {
 ._1zwKC {
   width: 100%;
   max-width: 1236px;
-  margin-left: auto;
+  margin-left: -44px;
   margin-right: auto;
+  margin-top: 88px;
   ._1gLAu {
     max-width: 716px;
     padding-left: 35px;
@@ -10083,9 +10084,8 @@ div._3bqe5 {
 }
 
 ._11QMn {
-  background-color: #f4f4f4;
   margin-bottom: 72px;
-  background-color: #000827;
+  background: url(/images/repeat-logo.png) #000827;
   color: #f8f8f8;
 }
 
@@ -11086,7 +11086,7 @@ div._3bqe5 {
 }
 
 ._1-0JF {
-  background-color: #000827;
+  background: url(/images/repeat-logo.png) #000827;
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
@@ -11285,7 +11285,7 @@ div._3bqe5 {
 }
 
 .GLLyX {
-  background: #000827;
+  background: url(/images/repeat-logo.png) #000827;
   position: relative;
 }
 
@@ -12793,7 +12793,7 @@ div._3bqe5 {
 }
 
 .GKLAB {
-  background: #000827;
+  background: url(/images/repeat-logo.png) #000827 repeat;
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -13775,7 +13775,7 @@ div._3bqe5 {
 }
 
 ._33vOG ._2LIIc {
-  background-color: #000827;
+  background: url(/images/repeat-logo.png) #000827;
   color: #fff;
 }
 
@@ -14126,7 +14126,7 @@ div._3bqe5 {
 }
 
 .C116H ._1k78U {
-  background-color: #000827;
+  background: url(/images/repeat-logo.png) #000827;
   color: #fff;
 }
 
@@ -14831,7 +14831,6 @@ div._3bqe5 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-left: 14px;
   > span {
     font-family: DriveTribe, Helvetica, sans-serif;
     font-weight: 700;
@@ -16488,8 +16487,7 @@ nav._1R2o8 {
 ._2q1KC {
   position: relative;
   height: 164px;
-  background-image: url("https://drivetribe.imgix.net/A1izJbViTfKDWt1ad8n8YA");
-  background-size: cover;
+  background: url(/images/repeat-logo.png) #000827;
 }
 
 @media screen and (max-width: 1158px) {
@@ -17498,7 +17496,7 @@ nav._1R2o8 {
 }
 
 ._1fDUg, .b9xa- {
-  background: #f71700;
+  background: #00AFFF;
 }
 
 ._1fDUg svg, .b9xa- svg {

@@ -31,4 +31,31 @@ class NewsJob implements ShouldQueue
     {
         //
     }
+
+    public function cleanUpDate($string){
+        $months = [
+            "Jan" => "January",
+            "Feb" => "February",
+            "Mar" => "March",
+            "Apr" => "April",
+            "May" => "May",
+            "Jun" => "June",
+            "Jul" => "July",
+            "Aug" => "August",
+            "Sep" => "September",
+            "Oct" => "October",
+            "Nov" => "November",
+            "Dec" => "December"
+        ];
+
+        $date = $string;
+
+        foreach($months as $abbr => $month){
+            $date = str_replace($month, $abbr, $date);
+            $date = str_replace(",", " ", $date);
+            $date = str_replace("  ", " ", $date);
+        }
+
+        return trim($date);
+    }
 }

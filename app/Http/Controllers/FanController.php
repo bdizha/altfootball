@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Fanbase;
 use App\Post;
 use App\User;
-use App\Fanbase;
 
 class FanController extends Controller
 {
@@ -20,8 +20,8 @@ class FanController extends Controller
             ->get();
 
         $fanbases = Fanbase::whereHas('users', function ($query) use ($fan) {
-                $query->where('users.id', $fan->id);
-            })
+            $query->where('users.id', $fan->id);
+        })
             ->orderBy("fanbases.name", "ASC")
             ->take(12)
             ->get();
@@ -30,6 +30,36 @@ class FanController extends Controller
             'fan' => $fan,
             'posts' => $posts,
             'fanbases' => $fanbases
+        ]);
+    }
+
+    public function followers($slug)
+    {
+        $fan = User::where('slug', '=', $slug)->first();
+
+        $followers = User::orderBy("first_name", "ASC")
+            ->orderBy("last_name", "ASC")
+            ->take(24)
+            ->get();
+
+        return view('fan.fans', [
+            'fan' => $fan,
+            'fans' => $followers
+        ]);
+    }
+
+    public function following($slug)
+    {
+        $fan = User::where('slug', '=', $slug)->first();
+
+        $following = User::orderBy("first_name", "ASC")
+            ->orderBy("last_name", "ASC")
+            ->take(24)
+            ->get();
+
+        return view('fan.fans', [
+            'fan' => $fan,
+            'fans' => $following
         ]);
     }
 }

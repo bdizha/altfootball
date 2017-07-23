@@ -92,7 +92,7 @@ class News90MinJob extends NewsJob
                                 $post['image'] = $data->filter('.post-cover__media')->attr("src");
                                 $post['title'] = $data->filter('.post-article__post-title__title')->text();
                                 $post['date'] = $data->filter('.post-metadata__date')->text();
-                                $post['created_at'] = Carbon::parse($post['date']);
+                                $post['created_at'] = $this->cleanUpDate(Carbon::parse($post['date']));
 
                                 $content = "";
                                 $summary = "";

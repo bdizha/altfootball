@@ -23,6 +23,9 @@ class FanbaseController extends Controller
     {
         $fanbase = Fanbase::where('slug', '=', $slug)->first();
 
+        $fanbase->views += 1;
+        $fanbase->save();
+
         $posts = Post::whereHas('fanbases', function ($query) use ($fanbase) {
             $query->where('fanbases.id', $fanbase->id);
         })

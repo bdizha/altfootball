@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('title', 'Discover Fanbases')
 
 @section('content')
     <div class="">
@@ -24,7 +24,7 @@
                             <div class="">
                                 <div class="_2eSI4">
                                     @foreach($fanbases as $k => $fanbase)
-                                        <a class="_12L63 _1qe7q" href="/fb/{{ $fanbase->slug }}">
+                                        <a class="_12L63 _1qe7q" href="/f/{{ $fanbase->slug }}">
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
@@ -36,7 +36,7 @@
                                                 <div class="_3hQ2Q">{{ str_pad(++$k, 2, 0, STR_PAD_LEFT) }}</div>
                                                 <h3 class="_2BMyH">
                                                     {{ $fanbase->name }}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
                                                 </h3>
                                                 <p class="_1gZlE">{{ $fanbase->description }}</p><span class="_3es_m _2e1-n _1geYT">View Tribe</span></div>
                                             <div class="_3DEPd _2oYlQ">
@@ -65,7 +65,7 @@
                             <div class="">
                                 <div class="_2eSI4">
                                     @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 undefined" href="/fb/{{ $fanbase->slug }}">
+                                    <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3ta8l">
                                             <div class="">
                                                 <div class="_38L6D" style="padding-bottom: 100%;">
@@ -103,7 +103,7 @@
                             <div class="">
                                 <div class="_2eSI4">
                                     @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 undefined" href="/fb/{{ $fanbase->slug }}">
+                                    <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3ta8l">
                                             <div class="">
                                                 <div class="_38L6D" style="padding-bottom: 100%;">
@@ -114,7 +114,7 @@
                                         <div class="_2iRjb">
                                             <h3 class="_2BMyH">
                                                 {{ $fanbase->name }}
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
                                             </h3>
                                             <p class="_1gZlE">{{ $fanbase->description }}</p>
                                         </div>
@@ -144,7 +144,7 @@
                             <div class="">
                                 <div class="_2eSI4">
                                     @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 _1qe7q" href="/fb/{{ $fanbase->slug }}">
+                                    <a class="_12L63 _1qe7q" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3ta8l">
                                             <div class="">
                                                 <div class="_38L6D" style="padding-bottom: 100%;">
@@ -184,7 +184,7 @@
                             <div class="">
                                 <div class="_2eSI4">
                                     @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 undefined" href="/t/bmw-sports-KurFstMwQ-y5t-tPNd2Y3A">
+                                    <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3ta8l">
                                             <div class="">
                                                 <div class="_38L6D" style="padding-bottom: 100%;">
@@ -222,7 +222,7 @@
                             <div class="">
                                 <div class="_2eSI4">
                                     @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 undefined" href="/fb/{{ $fanbase->slug }}">
+                                    <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3ta8l">
                                             <div class="">
                                                 <div class="_38L6D" style="padding-bottom: 100%;">

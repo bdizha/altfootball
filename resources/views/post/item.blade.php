@@ -7,7 +7,7 @@
                     <a href="{{ $post->slug }}">
                         <div class="_1yAXU">
                             <div style="padding-bottom:100%;" class="_38L6D">
-                                <img alt="{{ $post->user->first_name }}" src="{{ $post->image }}" class="_214e9 b00q8" width="32" height="32"/>
+                                {!! $post->user->getImage("width=32&height=32") !!}
                             </div>
                         </div>
                     </a>
@@ -37,7 +37,7 @@
                            <span>
                                posted in <br>
                            </span>
-                           <a class="_1XNRF" href="/fb/{{ $fanbase->slug }}">
+                           <a class="_1XNRF" href="/f/{{ $fanbase->slug }}">
                              {{ $fanbase->name }}
                            </a>
                         </span>
@@ -48,7 +48,7 @@
                         <span class="_2jvdf">{{ $post->getDate() }}</span>
                     </p>
                     <p class="TATrW">
-                        100.2K Views
+                        {{ ++$post->views }}K Views
                     </p>
                 </div>
             </div>
@@ -98,13 +98,13 @@
                  </span>
               </span>
             </a>
-            <div class="_8m6WC rF2QA"><span class="_35FcZ">Repost</span>
+            <div class="_8m6WC rF2QA"><span class="_35FcZ">Forward</span>
             </div>
             <button class="_3yFg8 rF2QA" data-reactid="191">
                 <div class="_1_VaP" data-reactid="192">
-                    <span class="_35FcZ">Bumps</span>
+                    <span class="_35FcZ">Dribbles</span>
                     <span class="_3HP-Q">
-                                                        (35)
+                                                        ({{ rand(2, 400) }})
                                                      </span>
                     <svg width="24" height="23" viewBox="-3 -3 23 24"
                          data-reactid="198">
@@ -112,13 +112,13 @@
                               fill="#000" fill-rule="evenodd" opacity="1"
                               class="outline" data-reactid="199"></path>
                         <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75"
-                              fill="#F71700" fill-rule="evenodd" opacity="0"
+                              fill="#00AFFF" fill-rule="evenodd" opacity="0"
                               class="heart" data-reactid="200"></path>
                     </svg>
                 </div>
             </button>
         </div>
-        <ul class="_8vnW9" data-reactid="201">
+        <ul class="_8vnW9" style="display: none;">
             <li class="gEjmr _2F2p0 undefined" id="ARl9VNCtSQi5LIXaPTxdMw"
                 data-reactid="202">
                 <div class="mkIC1" data-reactid="203">
