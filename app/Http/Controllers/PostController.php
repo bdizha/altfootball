@@ -4,10 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Fanbase;
 use App\Post;
+use Illuminate\Http\Request;
+
 
 class PostController extends Controller
 {
-    public function show($slug)
+    public function show(Request $request, $slug)
     {
         $fanbases = [];
         $post = Post::where('slug', '=', $slug)->first();
@@ -26,9 +28,11 @@ class PostController extends Controller
         $post->views += 1;
         $post->save();
 
+        $url = $request->fullUrl();
 
         return view('post.show', [
             'post' => $post,
+            'url' => $url,
             'siblingPosts' => $siblingPosts,
             'fanbases' => $fanbases,
             'trendingPosts' => $trendingPosts

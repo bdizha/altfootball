@@ -3,45 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="dns-prefetch" href="https://assets.drivetribe.com">
+    <link rel="dns-prefetch" href="https://images.altfootball.com">
     <meta name="theme-color" content="#ffffff">
     <meta name="msapplication-navbutton-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="ALTFOOTBALL">
     <link rel="stylesheet" type="text/css" href="/css/af.css">
-    <link rel="icon" type="image/png" href="https://assets.drivetribe.com/v2.3.3-150-g4badbfe0/favicon.png">
-    <link rel="icon" type="image/png" href="https://assets.drivetribe.com/v2.3.3-150-g4badbfe0/android-favicon.png"
+    <link rel="icon" type="image/png" href="http://altfootball.dev/images/logo.png">
+    <link rel="icon" type="image/png" href="http://altfootball.dev/images/logo.png"
           sizes="192x192">
-    <link rel="apple-touch-icon" href="https://assets.drivetribe.com/v2.3.3-150-g4badbfe0/apple-touch-icon.png">
-    <meta name="fb:app_id" property="fb:app_id" content="516295178554349">
+    <link rel="apple-touch-icon" href="http://altfootball.dev/images/logo.png">
+    <meta name="fb:app_id" property="fb:app_id" content="1932873593602036">
     <meta name="og:locale" property="og:locale" content="en_US">
     <meta name="og:ttl" property="og:ttl" content="345600">
     <meta name="og:site_name" property="og:site_name" content="ALTFOOTBALL">
     <meta name="twitter:site" property="twitter:site" content="@ALTFOOTBALL">
     <meta name="twitter:creator" property="twitter:creator" content="@ALTFOOTBALL">
-    <meta property="al:ios:url" content="drivetribe:///">
+    <meta property="al:ios:url" content="altfootball:///">
     <meta property="al:ios:app_store_id" content="1164159977">
     <meta property="al:ios:app_name" content="ALTFOOTBALL'">
-    <meta property="al:android:url" content="drivetribe:///">
+    <meta property="al:android:url" content="altfootball:///">
     <meta property="al:android:app_name" content="ALTFOOTBALL">
-    <meta property="al:android:package" content="com.drivetribe">
+    <meta property="al:android:package" content="com.altfootball">
     <meta name="apple-itunes-app" content="app-id=1164159977">
-    <title> @yield('title') | ALTFOOTBALL</title>
-    <link data-react-helmet="true" rel="canonical" href="http://altfootball.dev">
-    <link data-react-helmet="true" rel="next" href="/feed/page/2">
-    <meta data-react-helmet="true" property="twitter:title" name="twitter:title" content="ALTFOOTBALL">
-    <meta data-react-helmet="true" property="og:title" name="og:title" content="ALTFOOTBALL">
-    <meta data-react-helmet="true" property="og:url" name="og:url" content="http://altfootball.dev">
-    <meta data-react-helmet="true" property="description" name="description"
-          content="The digital home for all the motoring tribes under the sun founded by Jeremy Clarkson, Richard Hammond and James May.">
-    <meta data-react-helmet="true" property="twitter:description" name="twitter:description"
-          content="The digital home for all the motoring tribes under the sun founded by Jeremy Clarkson, Richard Hammond and James May.">
-    <meta data-react-helmet="true" property="og:description" name="og:description"
-          content="The digital home for all the motoring tribes under the sun founded by Jeremy Clarkson, Richard Hammond and James May.">
-    <meta data-react-helmet="true" property="twitter:image" name="twitter:image"
-          content="https://drivetribe.imgix.net/d_4H2NHORq6x_p9B8DfK4A">
-    <meta data-react-helmet="true" property="og:image" name="og:image"
-          content="https://drivetribe.imgix.net/d_4H2NHORq6x_p9B8DfK4A">
-    <meta data-react-helmet="true" property="og:type" name="og:type" content="website">
+    @yield('meta')
 </head>
 <body>
 <div id="fb-root"></div>

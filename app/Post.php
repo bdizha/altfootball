@@ -4,8 +4,8 @@ namespace App;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use MartinBean\Database\Eloquent\Sluggable;
 use Illuminate\Support\Facades\Redis;
+use MartinBean\Database\Eloquent\Sluggable;
 
 class Post extends Model
 {
@@ -68,8 +68,8 @@ class Post extends Model
      */
     public function fanbase()
     {
-        foreach($this->fanbases as $fanbase)
-        return $fanbase;
+        foreach ($this->fanbases as $fanbase)
+            return $fanbase;
     }
 
     public function getHtmlContent()
@@ -81,13 +81,36 @@ class Post extends Model
     {
         try {
             $image = Redis::get('post:image:' . $this->id);
-            if(empty($image)){
+            if (empty($image)) {
                 $image = file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
                 Redis::set('post:image:' . $this->id, $image);
             }
             return $image;
         } catch (\Exception $e) {
-//           dd($e);
         }
+    }
+
+    public function getMeta($url)
+    {
+        $image = "";
+
+        preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getImage(), $imageParts, PREG_SET_ORDER);
+
+        if(!empty($imageParts[3][2])){
+            $imageParts = explode(" ", $imageParts[3][2]);
+        }
+
+        if(!empty($imageParts[0])){
+            $image = $imageParts[0];
+        }
+
+        $meta = [
+            "url" => $url,
+            "title" => $this->title,
+            "description" => $this->summary,
+            "image" => $image
+        ];
+
+        return $meta;
     }
 }

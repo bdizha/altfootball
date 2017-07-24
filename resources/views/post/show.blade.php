@@ -2,9 +2,13 @@
 
 @section('title', 'Altfootball')
 
+@section('meta')
+    @include('includes.meta', $post->getMeta($url))
+@endsection
+
 @section('content')
-    <?php $comments = rand(1, 23) ?>
-    <?php $tackles = rand(1, 2777) ?>
+    <?php $tackles = rand(1, 23) ?>
+    <?php $Dribbles = rand(1, 2777) ?>
     <article>
         <div class="j-W_D _1iE2V">
             <div class="_1veAI _1iE2V">
@@ -71,19 +75,19 @@
             <div class="_1Fx1P _1iE2V _1Ov3j">
                 <div class="_1-sfe CDTi0">
                     <div class="_1l_wG _29Okg">
-                        <a class="_2Oo2A rF2QA" href="/p/{{ $post->slug }}#comments">
+                        <a class="_2Oo2A rF2QA" href="/p/{{ $post->slug }}#tackles">
                             <span class="_35FcZ">
-                                Comments
+                                Tackles
                             </span>
                             <span class="_3HP-Q">
-                                ({{ $comments }})
+                                ({{ $tackles }})
                             </span>
                         </a>
                         <div class="_8m6WC rF2QA"><span class="_35FcZ">Forward</span></div>
                         <button class="_3yFg8 rF2QA">
                             <div class="_1_VaP">
-                                <span class="_35FcZ">TACKLES</span>
-                                <span class="_3HP-Q">({{ $tackles }})</span>
+                                <span class="_35FcZ">Dribbles</span>
+                                <span class="_3HP-Q">({{ $Dribbles }})</span>
                                 <svg width="24" height="23" viewBox="-3 -3 23 24">
                                     <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75L13.5 0zm-.1 1.87l3.1 2.58V8.3L9 14.55 1.5 8.3V4.45l3.1-2.58L9 4.8l4.4-2.93z"
                                           fill="#000" fill-rule="evenodd" opacity="1" class="outline"
@@ -95,24 +99,18 @@
                         </button>
                     </div>
                     <div class="_3o2ca">
-                        <button class="_2Q0fU p1Di1">
+                        <a class="_2Q0fU p1Di1" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
                                 <path fill="#FFF" fill-rule="evenodd"
                                       d="M4.16 0c1.83 0 2.6.22 2.6.22l-.37 1.84s-.6-.15-1.16-.15c-.57 0-1.07.17-1.07.66v1.4h2.3l-.15 1.8H4.16V12H1.45V5.76H0v-1.8h1.45v-1.2c0-.53.01-1.35.46-1.86C2.4.37 3.04 0 4.16 0"></path>
                             </svg>
-                        </button>
-                        <button class="_2Q0fU _3cqrr">
+                        </a>
+                        <a class="_2Q0fU _3cqrr" href="https://twitter.com/intent/tweet?url={{ urlencode($url) }}" target="_blank">
                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
                                 <path fill="#FFF" fill-rule="evenodd"
                                       d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
                             </svg>
-                        </button>
-                        <button class="_2Q0fU _23g2_">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">
-                                <path fill="#666" fill-rule="evenodd"
-                                      d="M2.88 1.44a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path>
-                            </svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="_1Xbrb _9fE1R NasRD">
@@ -129,7 +127,7 @@
                         {!! $post->getImage("width=1236&height=695") !!}
                     </div>
                 </div>
-                <p class="_2cAm4">CREDIT: <a href="http://{{ $post->credit }}">{{ $post->credit }}</a></p>
+                <p class="_2cAm4">CREDIT: <a target="_blank" href="http://{{ $post->credit }}">{{ $post->credit }}</a></p>
             </div>
             <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
                 <div>
@@ -140,19 +138,19 @@
                         <h2 class="_3mNJn">{{ $post->title }}</h2>
                         <div class="_mHwf _29Okg">
                             <a class="_2Oo2A rF2QA"
-                               href="/p/hammond-enjoys-night-out-after-Lag4Ra_iR6WLzgJC0dSaxQ#comments">
+                               href="/p/hammond-enjoys-night-out-after-Lag4Ra_iR6WLzgJC0dSaxQ#tackles">
                                 <span class="_35FcZ">
                                     COMMENTS
                                     <span class="_3HP-Q">
-                                         ({{ $comments }})
+                                         ({{ $tackles }})
                                     </span>
                                 </span>
                             </a>
                             <div class="_8m6WC rF2QA"><span class="_35FcZ">Forward</span></div>
                             <button class="_3yFg8 rF2QA">
                                 <div class="_1_VaP">
-                                    <span class="_35FcZ">TACKLES</span>
-                                    <span class="_3HP-Q"> ({{ $tackles }})</span>
+                                    <span class="_35FcZ">Dribbles</span>
+                                    <span class="_3HP-Q"> ({{ $Dribbles }})</span>
                                     <svg width="24" height="23" viewBox="-3 -3 23 24">
                                         <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75L13.5 0zm-.1 1.87l3.1 2.58V8.3L9 14.55 1.5 8.3V4.45l3.1-2.58L9 4.8l4.4-2.93z"
                                               fill="#000" fill-rule="evenodd" opacity="1" class="outline"></path>
@@ -170,24 +168,24 @@
                                 </svg>
                             </button>
                             <div class="fHCTs _3o2ca">
-                                <button class="_2Q0fU p1Di1">
+                                <a class="_2Q0fU p1Di1" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
                                         <path fill="#FFF" fill-rule="evenodd"
                                               d="M4.16 0c1.83 0 2.6.22 2.6.22l-.37 1.84s-.6-.15-1.16-.15c-.57 0-1.07.17-1.07.66v1.4h2.3l-.15 1.8H4.16V12H1.45V5.76H0v-1.8h1.45v-1.2c0-.53.01-1.35.46-1.86C2.4.37 3.04 0 4.16 0"></path>
                                     </svg>
-                                </button>
-                                <button class="_2Q0fU _3cqrr">
+                                </a>
+                                <a class="_2Q0fU _3cqrr" href="https://twitter.com/intent/tweet?url={{ urlencode($url) }}" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
                                         <path fill="#FFF" fill-rule="evenodd"
                                               d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
                                     </svg>
-                                </button>
-                                <button class="_2Q0fU _23g2_">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">
-                                        <path fill="#666" fill-rule="evenodd"
-                                              d="M2.88 1.44a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path>
-                                    </svg>
-                                </button>
+                                </a>
+                                {{--<button class="_2Q0fU _23g2_">--}}
+                                    {{--<svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">--}}
+                                        {{--<path fill="#666" fill-rule="evenodd"--}}
+                                              {{--d="M2.88 1.44a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path>--}}
+                                    {{--</svg>--}}
+                                {{--</button>--}}
                             </div>
                         </div>
                     </div>
@@ -197,7 +195,7 @@
                         <span><span>{{ $post->summary }}</span></span>
                     </p>
                     {!! $post->getHtmlContent() !!}
-                    <div id="comments" class="jwlFt _1zwKC">
+                    <div id="tackles" class="jwlFt _1zwKC">
                         <div class="_1gLAu _1iE2V">
                             <div class="_1-sfe">
                                 <div>
@@ -242,7 +240,7 @@
                                     </form>
                                 </div>
                                 <div class="_2uxNN">
-                                    Comments({{ $comments }})
+                                    Tackles({{ $tackles }})
                                 </div>
                                 <ul class="_1RyqV" style="display: none;">
                                     <li class="gEjmr undefined" id="Q7vohQ8NRNaao-z5jHb7Lw">
@@ -449,7 +447,7 @@
                                     <div class="_1Ct87">
                                         <span>
                                             <span class="CrE3q">{{ rand(10, 100) }}K</span>
-                                            <span>TACKLES</span>
+                                            <span>Dribbles</span>
                                         </span>
                                     </div>
                                 </div>

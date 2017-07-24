@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- react-empty: 43 -->
-    <div class="_2q1KC" style="background: url({{ $fanbase->getCover() }}) #000827; background-size: cover;">
+    <div class="_2q1KC" style="background: url({{ $fanbase->getCover() }}) rgba(0, 8, 39,.96); background-size: cover;">
         <div class="_3asg6" style="position:absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(0, 8, 39,0.7);"></div>
         <div class="_3asg7 _38P1C" data-reactid="45">
             <h1 class="_1xaT_ SqxHJ" data-reactid="46">

@@ -90,9 +90,9 @@
         </div>
         <div class="_35O2p _29Okg">
             <a class="_2Oo2A rF2QA"
-               href="{{ route('post.show', ['slug' => $post->slug]) }}#comments">
+               href="{{ route('post.show', ['slug' => $post->slug]) }}#tackles">
               <span class="_35FcZ">
-                Comments
+                Tackles
                  <span class="_3HP-Q">
                      (34)
                  </span>
