@@ -13,6 +13,12 @@
 
 Route::get('/', 'HomeController@index');
 
+// Authentication Routes
+Auth::routes();
+
+Route::get('/unverified', 'Auth\RegisterController@unverified')->name("auth.unverified");
+Route::get('/activate/{token}', 'Auth\RegisterController@activate')->name("auth.activate");
+Route::resource('profile', 'ProfileController');
 Route::get('/p/{slug}', 'PostController@show')->name("post.show");
 Route::get('/f/{slug}', 'FanbaseController@show')->name("fanbase.show");
 Route::get('/f/{slug}/discussions', 'FanbaseController@discussions')->name("fanbase.show");

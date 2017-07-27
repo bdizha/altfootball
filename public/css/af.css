@@ -769,6 +769,11 @@ button {
   overflow-y: auto;
 }
 
+._2V52z.active {
+  opacity: 1;
+  transform: translateX(0%) translateZ(0px);
+}
+
 ._359eg {
   border-bottom: 1px solid #f4f4f4;
   padding: 18px 0;
@@ -1013,12 +1018,23 @@ button {
 }
 
 ._1u7op {
-  color: #00AFFF;
+  color: #f71700;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
   margin: 9px 0;
+}
+
+form ._1u7op {
+  color: #ffb03b;
+  margin: 0;
+  margin-top: -10px;
+  display: block;
+}
+
+form .M13JP {
+  margin-top: 22px;
 }
 
 ._1AUhk,
@@ -1052,6 +1068,7 @@ button {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background: rgba(122, 214, 31, 0.3);
 }
 
 .vf_FQ {
@@ -4523,7 +4540,7 @@ button {
 }
 
 ._175AS {
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96);
+  background: url(/images/repeat-logo.png) #000827;
   padding: 22px;
   color: #f8f8f8;
   overflow: hidden;
@@ -5813,7 +5830,7 @@ button {
 }
 
 ._1S3Ei {
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96);
+  background: url(/images/repeat-logo.png) #000827;
   cursor: default;
 }
 
@@ -5972,7 +5989,7 @@ button {
 }
 
 .p5bDW {
-  border-color: #00AFFF;
+  border-color: #f71700;
 }
 
 ._2WyvV {
@@ -6037,6 +6054,8 @@ button {
 .vYJ4Q {
   background: #141C3E;
   position: relative;
+  background: url(/images/login-bg.jpg) no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 846px) {
@@ -6164,8 +6183,12 @@ button {
   text-transform: none;
   border: 2px solid rgba(0, 8, 39, 0.96);
   padding: 14px;
-  margin: 44px 0 22px;
+  margin: 22px 0px;
   width: 100%;
+}
+
+._12n1y:first-child {
+  margin-top: 44px;
 }
 
 @media screen and (max-width: 508px) {
@@ -10888,7 +10911,7 @@ div._3bqe5 > div {
 
 ._11QMn {
   margin-bottom: 72px;
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96);
+  background: url(/images/repeat-logo.png) #000827;
   color: #f8f8f8;
 }
 
@@ -11975,7 +11998,7 @@ div._3bqe5 > div {
 }
 
 ._1-0JF {
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96);
+  background: url(/images/repeat-logo.png) #000827;
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
@@ -12199,7 +12222,7 @@ div._3bqe5 > div {
 }
 
 .GLLyX {
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96);
+  background: url(/images/repeat-logo.png) #000827;
   position: relative;
 }
 
@@ -13222,7 +13245,7 @@ div._3bqe5 > div {
   font-size: 14px;
   line-height: 14px;
   color: rgba(0, 8, 39, 0.96);
-  width: 248px;
+  width: 100%;
   padding-top: 18px;
   padding-bottom: 18px;
   display: block;
@@ -13242,9 +13265,23 @@ div._3bqe5 > div {
   border: 2px solid #3b5998;
 }
 
+.MAYYh.active,
+.MAYYh:focus,
+.MAYYh:hover {
+  color: #FFFFFF;
+}
+
 ._1ssnS {
-  border: 2px solid rgba(0, 8, 39, 0.96);
+  background-color: #64c431;
   margin-bottom: 14px;
+  border: 0;
+  color: #FFFFFF;
+}
+
+._1ssnS.active,
+._1ssnS:focus,
+._1ssnS:hover {
+  color: #FFFFFF;
 }
 
 ._27HZP {
@@ -13264,12 +13301,13 @@ div._3bqe5 > div {
 }
 
 .O93cc {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 44px;
+  line-height: 44px;
   margin-bottom: 18px;
+  margin-top: 44px;
 }
 
 @media screen and (max-width: 508px) {
@@ -13291,6 +13329,68 @@ div._3bqe5 > div {
   color: #ccc;
 }
 
+._35zqi,
+.d3Gx3 {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+._35zqi {
+  margin: 18px 0;
+  padding: 18px 0;
+  margin-bottom: 35px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+._35zqi li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 9px;
+  line-height: 18px;
+}
+
+._35zqi li svg {
+  position: absolute;
+  top: 2px;
+  left: 0;
+}
+
+._3U2Oj {
+  transform: scale(0.7);
+  transform-origin: top left;
+}
+
+._3gymQ g,
+._3U2Oj g {
+  fill: #000;
+}
+
+._1fm2Z {
+  background: #fff;
+  z-index: 9;
+  position: fixed;
+  overflow-y: scroll;
+}
+
+._3GUPV {
+  perspective: 500px;
+}
+
+._2-WMb {
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f71700;
+  border-radius: 22px;
+  display: -ms-flexbox;
+  display: flex;
+  height: 22px;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  width: 22px;
+}
+
 .d3Gx3 {
   font-size: 14px;
   line-height: 18px;
@@ -13303,10 +13403,6 @@ div._3bqe5 > div {
     font-size: 12px;
     line-height: 14px;
   }
-}
-
-.xy5Fz {
-  float: right;
 }
 
 ._1fm2Z {
@@ -13830,7 +13926,7 @@ div._3bqe5 > div {
 }
 
 .GKLAB {
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96) repeat;
+  background: url(/images/repeat-logo.png) #000827 repeat;
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -13972,6 +14068,22 @@ div._3bqe5 > div {
 
 ._2KLml {
   margin-bottom: 35px;
+}
+
+._1A3CD {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  position: static;
+  overflow: auto;
+  transform: none;
+}
+
+._1A3CD.active {
+  position: absolute;
+  overflow: hidden;
+  transform: perspective(350px) translateZ(-25px);
 }
 
 ._3XXLi {
@@ -14911,7 +15023,7 @@ div._3bqe5 > div {
 }
 
 ._33vOG ._2LIIc {
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96);
+  background: url(/images/repeat-logo.png) #000827;
   color: #fff;
 }
 
@@ -15293,7 +15405,7 @@ div._3bqe5 > div {
 }
 
 .C116H ._1k78U {
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96);
+  background: url(/images/repeat-logo.png) #000827;
   color: #fff;
 }
 
@@ -17822,7 +17934,7 @@ nav._1R2o8 {
 ._2q1KC {
   position: relative;
   height: 164px;
-  background: url(/images/repeat-logo.png) rgba(0, 8, 39, 0.96);
+  background: url(/images/repeat-logo.png) #000827;
 }
 
 @media screen and (max-width: 1158px) {

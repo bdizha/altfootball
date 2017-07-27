@@ -19,9 +19,14 @@ elixir(function(mix) {
     mix.sass(path + '.scss');
 
     mix.scripts([
-        'vendor/collage-plus.js',
-        'vendor/zoom.js',
-        'jabbascripts.js',
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/knockout/build/output/knockout-latest.js',
+        'node_modules/knockout-mapping/dist/knockout.mapping.min.js',
+        'node_modules/knockout.validation/dist/knockout.validation.min.js'
+
+    ], 'public/js/vendors.js');
+
+    mix.scripts([
         path + '.js'
 
     ], 'public/js/' + path + '.js');

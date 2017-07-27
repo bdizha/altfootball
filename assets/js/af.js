@@ -1,4 +1,5 @@
 $(function () {
+
     setHeightFor("._3VSm9, ._1Q_Pu");
 
     var popupSize = {
@@ -39,4 +40,38 @@ function setHeightFor(selector) {
 var resizeTimer = null;
 $(window).bind('resize', function () {
     setHeightFor("._3VSm9, ._1Q_Pu");
+});
+
+$(function() {
+
+    ko.validation.rules.pattern.message = 'Invalid.';
+
+    ko.validation.init({
+        registerExtenders: true,
+        messagesOnModified: true,
+        insertMessages: true,
+        parseInputAttributes: true,
+        messageTemplate: null,
+        errorMessageClass: "_1u7op"
+    }, true);
+
+    var viewJoinModel = {
+        shouldShowJoinPopup: ko.observable(false),
+        nickname: ko.observable('').extend({ required: true }),
+        email: ko.observable('').extend({ email: true }),
+        canRegisterContinue: ko.observable(false),
+        showJoinPopup : function() {
+            this.shouldShowJoinPopup(true);
+        },
+        hideJoinPopup : function() {
+            this.shouldShowJoinPopup(false);
+        },
+        enableRegisterContinue: function(){
+            this.canRegisterContinue(viewJoinModel.errors().length === 0);
+        }
+    };
+
+    viewJoinModel.errors = ko.validation.group(viewJoinModel);
+
+    ko.applyBindings(viewJoinModel);
 });

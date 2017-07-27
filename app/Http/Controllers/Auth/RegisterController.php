@@ -3,9 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use App\Traits\CaptureIpTrait;
+use Illuminate\Http\Request;
+use App\Notifications\SendActivationEmail;
 
 class RegisterController extends Controller
 {
@@ -19,7 +23,6 @@ class RegisterController extends Controller
     | provide this functionality without requiring any additional code.
     |
     */
-
     use RegistersUsers;
 
     /**
@@ -27,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/unverified';
 
     /**
      * Create a new controller instance.
@@ -48,9 +51,8 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
+            'nickname' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255'
         ]);
     }
 
@@ -62,10 +64,60 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+        $ipAddress = new CaptureIpTrait;
+        $user = User::where("email", $data["email"])->first();
+
+        if(empty($user->id)){
+            $user = User::create([
+                'nickname' => $data['nickname'],
+                'email' => $data['email'],
+                'password' => bcrypt($data['email']),
+                'token'             => str_random(64),
+                'ip_address' => $ipAddress->getClientIp()
+            ]);
+        }
+
+        $this->sendNewActivationEmail($user, $user->token);
+
+        return $user;
+    }
+
+    /**
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function unverified()
+    {
+        if (Auth::guard()->check()) {
+            $user = Auth::user();
+            return view('auth.unverified', ['user' => $user]);
+        }
+        else{
+            $this->redirectPath('/register');
+        }
+    }
+
+    /**
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function activate(Request $request, $token)
+    {
+        $user = User::where("token", $token)->first();
+        if(empty($user->id)){
+            $this->redirectPath('/register');
+        }
+        else{
+            $user->is_active = true;
+            $user->save();
+
+            $this->guard()->login($user);
+
+            return redirect('/profile/create');
+        }
+    }
+
+    public function sendNewActivationEmail(User $user, $token) {
+        $user->notify(new SendActivationEmail($token));
     }
 }

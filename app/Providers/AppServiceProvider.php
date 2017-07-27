@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Auth;
+use Blade;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +15,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        Blade::directive('isActive', function () {
+            if (Auth::guard()->check()) {
+                $user = Auth::user();
+                return $user->is_active;
+            }
+
+            return false;
+        });
     }
 
     /**

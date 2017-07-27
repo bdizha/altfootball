@@ -26,6 +26,8 @@ class User extends Authenticatable
         'image',
         'cover',
         'website',
+        'is_active',
+        'token',
     ];
 
     protected $sluggable = [

@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "knockout": "^3.4.2",
+    "knockout-mapping": "^2.6.0",
+    "knockout-popup-template": "^1.9.2",
+    "knockout.autocomplete": "^1.7.1",
+    "knockout.validation": "^2.0.3"
+  }
+}

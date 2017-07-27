@@ -9,8 +9,7 @@
     <meta name="apple-mobile-web-app-title" content="ALTFOOTBALL">
     <link rel="stylesheet" type="text/css" href="/css/af.css">
     <link rel="icon" type="image/png" href="http://altfootball.dev/images/logo.png">
-    <link rel="icon" type="image/png" href="http://altfootball.dev/images/logo.png"
-          sizes="192x192">
+    <link rel="icon" type="image/png" href="http://altfootball.dev/images/logo.png" sizes="192x192">
     <link rel="apple-touch-icon" href="http://altfootball.dev/images/logo.png">
     <meta name="fb:app_id" property="fb:app_id" content="1932873593602036">
     <meta name="og:locale" property="og:locale" content="en_US">
@@ -38,9 +37,9 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 <div id="root">
     <div>
-        <div><!-- react-empty: 3 -->
+        <div>
             <div>
-                <div>
+                <div class="_1A3CD" data-bind="css: { active: shouldShowJoinPopup }">
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
                             <div class="_2H55B"><a class="" href="/">
@@ -62,9 +61,33 @@
                                     <button type="reset" class="_1C5MC" data-reactid="23">Cancel</button>
                                 </form>
                             </div>
-                            <div class="_3BBJg" data-reactid="24"><a class="_13sKJ" href="/fanbases" data-reactid="25">FANBASES</a>
-                                <button class="BJ1bO" data-reactid="26">Sign in</button>
-                                <button class="_6UUFH" data-reactid="27">Join</button>
+                            <div class="_3BBJg" data-reactid="24">
+                                <a class="_13sKJ" href="/fanbases" data-reactid="25">FANBASES</a>
+                                @if(Auth::guard()->check() && Auth::user()->is_active)
+                                    <?php $user = Auth::user() ?>
+                                    <button class="_13sKJ">
+                                        <span class="T3zZE">Alerts</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" class="_8e7Ip">
+                                            <g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+                                                <path stroke-width="1.5" d="M13.85 9.37v2.26l1 2.34H.75l.97-2.37V6.81a6.06 6.06 0 0 1 12.13 0v2.56z"></path>
+                                                <path d="M10.76 14.3L7.8 17.25l-2.94-2.94"></path>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                    <a class="_3KPPV" href="/u/{{ $user->slug }}">
+                                        <div class="_1Bm3M">{{ $user->nickname }}</div>
+                                        <div class="_25jNX X4CNn">
+                                            <div class="N3r_f">
+                                                <div class="_38L6D" style="padding-bottom: 100%;">
+                                                    <img alt="" role="presentation" src="https://drivetribe.imgix.net/IoJw-6Y0TwiDcrnGGL2679?w=200&amp;h=200&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges" class="_214e9 b00q8" width="60" height="60">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                @else
+                                    <button class="BJ1bO" data-bind="click: showJoinPopup">Sign in</button>
+                                    <button class="_6UUFH" data-bind="click: showJoinPopup">Join</button>
+                                @endif
                             </div>
                         </nav>
                         <div class="_3GUPV -hkpO" data-reactid="28" style="transform: scaleY(0) translateZ(0px);">
@@ -89,11 +112,12 @@
                         @yield('content')
                     </div>
                 </div>
+                @include('auth.join')
             </div>
         </div>
     </div>
 </div>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="/js/vendors.js"></script>
 <script src="/js/af.js"></script>
 <script>
     window.serverPerf = {

@@ -10,7 +10,10 @@
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "martinbean/laravel-sluggable-trait": "^0.3.0",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "laravel/socialite": "^3.0",
+        "socialiteproviders/generators": "^2.0",
+        "laravelcollective/html": "^5.4"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
