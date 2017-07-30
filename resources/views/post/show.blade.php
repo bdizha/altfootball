@@ -14,7 +14,7 @@
             <div class="_1veAI _1iE2V">
                 <div class="_1lNSv _3Vb-u">
                     <a class="_2kQCw" href="/f/{{ $post->fanbase()->slug }}">
-                        <div class="_1Gyo9 e_0uO" data-initials="{{ $post->fanbase()->initials() }}"></div>
+                        <div class="_1Gyo9 e_0uO" data-initials="{{ $post->fanbase()->initials }}"></div>
                         <p class="_3FTXM wcqil">
                             {{ $post->fanbase()->name }}
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
@@ -133,7 +133,7 @@
                 <div>
                     <div class="undefined _2-_Re _378qt">
                         <a class="_23nwS" href="/f/{{ $post->fanbase()->slug }}">
-                            <div class="_1Gyo9 Ofajv" data-initials="{{ $post->fanbase()->initials() }}"></div>
+                            <div class="_1Gyo9 Ofajv" data-initials="{{ $post->fanbase()->initials }}"></div>
                         </a>
                         <h2 class="_3mNJn">{{ $post->title }}</h2>
                         <div class="_mHwf _29Okg">
@@ -425,7 +425,7 @@
                         <a class="_1mWot _2uakq _2cP6X" href="/f/{{ $base->slug }}">
                             <div class="ZD12l _1iE2V _16e0f">
                                 <div class="_1KG3g">
-                                    <div class="gzgzI">{{ $base->initials() }}</div>
+                                    <div class="gzgzI">{{ $base->initials }}</div>
                                 </div>
                                 <div class="_2lssz">
                                     <div class="_38L6D" style="padding-bottom: 100%;">
