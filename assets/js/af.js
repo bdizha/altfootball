@@ -47,31 +47,14 @@ $(function() {
     ko.validation.rules.pattern.message = 'Invalid.';
 
     ko.validation.init({
-        registerExtenders: true,
-        messagesOnModified: true,
         insertMessages: true,
-        parseInputAttributes: true,
-        messageTemplate: null,
-        errorMessageClass: "_1u7op"
+        decorateElement: true,
+        errorMessageClass: "_1u7op",
+        errorClass: '',
+        errorsAsTitle: true,
+        parseInputAttributes: false,
+        messagesOnModified: true,
+        decorateElementOnModified: true,
+        decorateInputElement: true
     }, true);
-
-    var viewJoinModel = {
-        shouldShowJoinPopup: ko.observable(false),
-        nickname: ko.observable('').extend({ required: true }),
-        email: ko.observable('').extend({ email: true }),
-        canRegisterContinue: ko.observable(false),
-        showJoinPopup : function() {
-            this.shouldShowJoinPopup(true);
-        },
-        hideJoinPopup : function() {
-            this.shouldShowJoinPopup(false);
-        },
-        enableRegisterContinue: function(){
-            this.canRegisterContinue(viewJoinModel.errors().length === 0);
-        }
-    };
-
-    viewJoinModel.errors = ko.validation.group(viewJoinModel);
-
-    ko.applyBindings(viewJoinModel);
 });

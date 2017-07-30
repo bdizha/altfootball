@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.fan', ['view' => 'show', 'id' => 'fan-show-view-template'])
 
 @section('title', $fan->getName())
 
@@ -10,6 +10,16 @@
                 <div class="_1jbho">
                     <div class="Cu7qw">
                         <div class="_1KeJ_">
+                            <button class="_32k0z" data-bind="click: openSettingsPopup">
+                                <div class="_13Js3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_13Js3">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="#000" d="M2.31 14.9l-1.03.63-.77 1.6.62.62 1.57-.8.38-.69 5.89-5.89-1.14-.99zM10.3 4.8L8.83 6.29l3.1 3.21 1.53-1.52 4.55-4.55L14.85.26 10.3 4.8zm0 1.8l4.26-4.26.43.44-4.26 4.26-.44-.43zm.99 1l4.26-4.26.44.43-4.27 4.27-.43-.44z"></path>
+                                            <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.75 16.51l-8.2-7.87-1.2-1.07A3.5 3.5 0 0 1 .85 3.43l1.97 1.9c1.61.04 2.4-.84 2.43-2.26L3.04.97A3.5 3.5 0 0 1 7.6 5.3l2.29 2.2 7.03 6.75-2.16 2.25z"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </button>
                             <div class="_25jNX">
                                 <div class="N3r_f">
                                     <div class="_38L6D" style="padding-bottom: 100%;">
@@ -140,4 +150,23 @@
             </div>
         </div>
     </div>
+@endsection
+
+@section('js')
+    <script type="text/javascript">
+        $(function() {
+            var viewFanShowModel = {
+                showSettingsPopup: ko.observable(false),
+                openSettingsPopup: function(){
+                    this.showSettingsPopup(!this.showSettingsPopup());
+                },
+                closeSettingsPopup: function(){
+//                    this.showSettingsPopup(false);
+                }
+            };
+
+            ko.applyBindings(viewFanShowModel, document.getElementById('fan-show-view-template'));
+        });
+
+    </script>
 @endsection

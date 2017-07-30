@@ -123,7 +123,7 @@
                             {!! $fanbase->getImage() !!}
                         </div>
                     </div>
-                    <div class="_2UPZy" data-initials="{{ $fanbase->getInitials() }}" data-reactid="106"></div>
+                    <div class="_2UPZy" data-initials="{{ $fanbase->initials }}" data-reactid="106"></div>
                 </div>
                 <div class="_2DLtu" data-reactid="107">
                     <button class="_2qvTq _1MC-v _1h78h _2yZ_n _8eFus" data-reactid="108">

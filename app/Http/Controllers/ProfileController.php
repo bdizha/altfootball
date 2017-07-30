@@ -7,11 +7,26 @@ use Auth;
 
 class ProfileController extends Controller
 {
-    public function Create(Request $request)
+    public function create(Request $request)
     {
         if (Auth::guard()->check()) {
             $user = Auth::user();
             return view('profile.create', ['user' => $user]);
         }
+        else{
+            return redirect('/');
+        }
+    }
+
+    public function store(Request $request)
+    {
+        $data = $request->all();
+        $user = Auth::user();
+
+        $user->first_name = $data['first_name'];
+        $user->last_name = $data['last_name'];
+        $user->save();
+
+        return redirect('/onboard/recommended');
     }
 }

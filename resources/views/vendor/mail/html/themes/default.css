@@ -6,8 +6,7 @@ body, body *:not(html):not(style):not(br):not(tr):not(code) {
 }
 
 body {
-    background-color: #f4f4f4;
-    color: #74787E;
+    color: rgba(0, 8, 39, 0.9);
     height: 100%;
     hyphens: auto;
     line-height: 1.4;
@@ -64,7 +63,7 @@ h3 {
 }
 
 p {
-    color: #74787E;
+    color: rgba(0, 8, 39, 0.9);
     font-size: 16px;
     line-height: 1.5em;
     margin-top: 0;
@@ -82,7 +81,6 @@ img {
 /* Layout */
 
 .wrapper {
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -119,9 +117,9 @@ img {
 /* Body */
 
 .body {
-    background-color: #FFFFFF;
     border-bottom: 1px solid #EDEFF2;
     border-top: 1px solid #EDEFF2;
+    background: url(http://altfootball.dev/images/repeat-white-logo.png) #FFFFFF;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -186,7 +184,7 @@ img {
 }
 
 .table td {
-    color: #74787E;
+    color: rgba(0, 8, 39, 0.9);
     font-size: 15px;
     line-height: 18px;
     padding: 10px 0;

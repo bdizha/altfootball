@@ -10,7 +10,7 @@ class FanbaseController extends Controller
 {
     public function index(Request $request)
     {
-        $fanbases = Fanbase::orderBy("fanbases.name", "SC")
+        $fanbases = Fanbase::orderBy("views", "DESC")
             ->take(24)
             ->get();
 

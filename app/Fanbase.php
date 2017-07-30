@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use MartinBean\Database\Eloquent\Sluggable;
+use Illuminate\Support\Facades\Redis;
 
 class Fanbase extends Model
 {
@@ -22,6 +23,8 @@ class Fanbase extends Model
         'slug'
     ];
 
+    protected $appends = ['resized', 'initials'];
+
     protected $covers = [
         "http://www.realmadrid.com/img/galeria-marca/_he27686.jpg",
         "http://www.realmadrid.com/img/galeria-marca/_he18519.jpg",
@@ -31,7 +34,7 @@ class Fanbase extends Model
         "http://www.realmadrid.com/img/galeria-marca/_1rm2228.jpg"
     ];
 
-    public function getInitials()
+    public function getInitialsAttribute()
     {
         $nameArray = explode(" ", $this->name);
         $initials = "";
@@ -73,10 +76,30 @@ class Fanbase extends Model
     public function getImage($dimensions = "width=400&height=400")
     {
         try {
-            return file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
+            $image = Redis::get('fanbase:image:' . $this->id);
+            if (empty($image)) {
+                $image = file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
+                Redis::set('fanbase:image:' . $this->id, $image);
+            }
+            return $image;
         } catch (\Exception $e) {
-            return "";
         }
+    }
+
+    public function getResizedAttribute()
+    {
+        $image = "";
+        preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getImage(), $imageParts, PREG_SET_ORDER);
+
+        if(!empty($imageParts[3][2])){
+            $imageParts = explode(" ", $imageParts[3][2]);
+        }
+
+        if(!empty($imageParts[0])){
+            $image = $imageParts[0];
+        }
+
+        return $image;
     }
 
     public function getCover()

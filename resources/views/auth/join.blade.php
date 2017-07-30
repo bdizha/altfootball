@@ -80,3 +80,19 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(function() {
+
+        var viewJoinModel = {
+            shouldShowJoinPopup: ko.observable(false),
+            showJoinPopup : function() {
+                this.shouldShowJoinPopup(true);
+            },
+            hideJoinPopup : function() {
+                this.shouldShowJoinPopup(false);
+            }
+        };
+
+        ko.applyBindings(viewJoinModel, document.getElementById('root'));
+    });
+</script>

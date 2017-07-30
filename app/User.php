@@ -95,4 +95,8 @@ class User extends Authenticatable
     {
         return str_replace("http://", "", $this->website);
     }
+
+    public function getJson(){
+        return $this->toJson();
+    }
 }

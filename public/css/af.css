@@ -507,6 +507,10 @@ button {
 }
 
 .ZZJJ0 {
+  display: none;
+}
+
+.ZZJJ0.active {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -977,6 +981,16 @@ button {
   transition: padding-bottom 0.15s linear;
 }
 
+._2Kdch ._1u7op {
+  position: absolute;
+  left: 0;
+  top: 45px;
+}
+
+._2CyDP ._2Kdch ._1u7op {
+  top: 62px;
+}
+
 ._16KIM {
   cursor: text;
   position: absolute;
@@ -1027,14 +1041,16 @@ button {
 }
 
 form ._1u7op {
-  color: #ffb03b;
   margin: 0;
-  margin-top: -10px;
   display: block;
 }
 
 form .M13JP {
   margin-top: 22px;
+}
+
+form._2rf1 ._1u7op {
+  margin-top: -10px;
 }
 
 ._1AUhk,
@@ -3454,12 +3470,6 @@ form .M13JP {
   }
 }
 
-@media screen and (min-width: 924px) {
-  ._1RYG9 {
-    margin: 0 22px;
-  }
-}
-
 @media screen and (min-width: 1236px) {
   ._1RYG9 {
     padding-top: 40px;
@@ -5353,7 +5363,7 @@ form .M13JP {
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 22px;
 }
 
@@ -5614,6 +5624,7 @@ form .M13JP {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 508px) {
@@ -5759,6 +5770,11 @@ form .M13JP {
   width: 52px;
   height: 52px;
   transition: all 0.1s linear;
+}
+
+.EbtUv img {
+  width: 52px;
+  height: 52px;
 }
 
 @media screen and (max-width: 846px) {
@@ -14078,10 +14094,21 @@ div._3bqe5 > div {
   position: static;
   overflow: auto;
   transform: none;
+  background: url(/images/repeat-white-logo.png) #FFFFFF;
 }
 
 ._1A3CD.active {
   position: absolute;
+  overflow: hidden;
+  transform: perspective(350px) translateZ(-25px);
+}
+
+._7jk98 {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
   overflow: hidden;
   transform: perspective(350px) translateZ(-25px);
 }
@@ -14140,6 +14167,11 @@ div._3bqe5 > div {
   display: flex;
   -ms-flex-pack: start;
   justify-content: flex-start;
+}
+
+._2H55B a img {
+  width: 52px;
+  height: 52px;
 }
 
 ._2H55B > *,
@@ -18081,10 +18113,9 @@ nav._1R2o8 {
 }
 
 ._3WhNf {
-  background-color: #f4f4f4;
   padding-bottom: 64px;
   min-height: 100vh;
-  margin: 0 22px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1210px) {
@@ -18096,7 +18127,6 @@ nav._1R2o8 {
 .ytyuy {
   -ms-flex-pack: justify;
   justify-content: space-between;
-  background-color: #f4f4f4;
 }
 
 @media screen and (max-width: 664px) {

@@ -5,7 +5,10 @@
     "knockout": "^3.4.2",
     "knockout-mapping": "^2.6.0",
     "knockout-popup-template": "^1.9.2",
+    "knockout-validations-extender": "^1.0.1",
     "knockout.autocomplete": "^1.7.1",
-    "knockout.validation": "^2.0.3"
+    "knockout.validation": "^2.0.3",
+    "ko-component-router": "^5.0.1",
+    "require": "^2.4.20"
   }
 }

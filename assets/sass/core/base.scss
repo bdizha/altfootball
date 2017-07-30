@@ -438,12 +438,15 @@ button {
 }
 
 .ZZJJ0 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: scroll;
-  padding: 44px 0;
-  z-index: 16;
+  display: none;
+  &.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: scroll;
+    padding: 44px 0;
+    z-index: 16;
+  }
 }
 
 ._1Vurz {
@@ -875,6 +878,19 @@ button {
   border-bottom: 1px solid rgba(0, 8, 39,.96);
   padding-right: 28px;
   transition: padding-bottom 0.15s linear;
+  ._1u7op{
+    position: absolute;
+    left: 0;
+    top: 45px;
+  }
+}
+
+._2CyDP{
+  ._2Kdch{
+    ._1u7op{
+      top: 62px;
+    }
+  }
 }
 
 ._16KIM {
@@ -928,13 +944,16 @@ button {
 
 form{
   ._1u7op {
-    color: #ffb03b;
     margin: 0;
-    margin-top: -10px;
     display: block;
   }
   .M13JP{
     margin-top: 22px;
+  }
+  &._2rf1{
+    ._1u7op {
+      margin-top: -10px;
+    }
   }
 }
 
@@ -3133,12 +3152,6 @@ form{
   }
 }
 
-@media screen and (min-width: 924px) {
-  ._1RYG9 {
-    margin: 0 22px;
-  }
-}
-
 @media screen and (min-width: 1236px) {
   ._1RYG9 {
     padding-top: 40px;
@@ -4888,7 +4901,7 @@ form{
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 22px;
 }
 
@@ -5127,6 +5140,7 @@ form{
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
+  display: inline-block;
 }
 
 @media screen and (max-width: 508px) {
@@ -5266,6 +5280,10 @@ form{
   width: 52px;
   height: 52px;
   transition: all 0.1s linear;
+  img{
+    width: 52px;
+    height: 52px;
+  }
 }
 
 @media screen and (max-width: 846px) {
@@ -13025,11 +13043,22 @@ div._3bqe5 {
   position: static;
   overflow: auto;
   transform: none;
+  background: url(/images/repeat-white-logo.png) #FFFFFF;
   &.active{
     position: absolute;
     overflow: hidden;
     transform: perspective(350px) translateZ(-25px);
   }
+}
+
+._7jk98{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  overflow: hidden;
+  transform: perspective(350px) translateZ(-25px);
 }
 
 ._3XXLi {
@@ -13080,6 +13109,15 @@ div._3bqe5 {
 ._2H55B, ._3BBJg {
   display: flex;
   justify-content: flex-start;
+}
+
+._2H55B{
+  a{
+    img{
+      width: 52px;
+      height: 52px;
+    }
+  }
 }
 
 ._2H55B > *, ._3BBJg > * {
@@ -16733,10 +16771,9 @@ nav._1R2o8 {
 }
 
 ._3WhNf {
-  background-color: #f4f4f4;
   padding-bottom: 64px;
   min-height: 100vh;
-  margin: 0 22px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1210px) {
@@ -16747,7 +16784,6 @@ nav._1R2o8 {
 
 .ytyuy {
   justify-content: space-between;
-  background-color: #f4f4f4;
 }
 
 @media screen and (max-width: 664px) {

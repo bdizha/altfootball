@@ -25,6 +25,8 @@
     <meta property="al:android:package" content="com.altfootball">
     <meta name="apple-itunes-app" content="app-id=1164159977">
     @yield('meta')
+    <script src="/js/vendors.js"></script>
+    <script src="/js/af.js"></script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -102,18 +104,16 @@
                         </div>
                     </div>
                 </div>
-                @include('auth.join')
             </div>
         </div>
     </div>
 </div>
-<script src="/js/vendors.js"></script>
-<script src="/js/af.js"></script>
 <script>
     window.serverPerf = {
         router: 418,
         render: 43
     };
 </script>
+@yield('js')
 </body>
 </html>
