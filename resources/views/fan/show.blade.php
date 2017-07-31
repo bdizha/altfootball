@@ -161,7 +161,7 @@
                     this.showSettingsPopup(!this.showSettingsPopup());
                 },
                 closeSettingsPopup: function(){
-//                    this.showSettingsPopup(false);
+                    this.showSettingsPopup(false);
                 }
             };
 

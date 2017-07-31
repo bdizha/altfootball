@@ -41,7 +41,8 @@
     <div id="{{ $id }}">
         <div>
             <div>
-                <div class="_1A3CD">
+                <div class="_1A3CD" data-bind="css: { active: showSettingsPopup }">
+                    <div class="_1V79j" data-bind="click: closeSettingsPopup, css: { active: showSettingsPopup }"></div>
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
                             <div class="_2H55B"><a class="" href="/">
@@ -115,25 +116,35 @@
                     </div>
                 </div>
                 @if(!empty($view) && $view == 'show')
-                    <div data-bind="if: showSettingsPopup">
-                        <div class="_1rglo"></div>
+                    <div class="_1L5ou" data-bind="css: { active: showSettingsPopup}">
                         <div>
-                            <div class="_1zDR7 undefined" style="transform-origin: center top 0px; top: 152px; bottom: auto; left: 504.5px; opacity: 1; transform: scaleX(1) scaleY(1) translateY(0px) translateZ(0px);">
-                                <div class="_3rM3S">
-                                    <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bWSPJ">
-                                            <g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
-                                                <path stroke-width="1.5" d="M5.65 9.07l-.58 3.78 3.78-.58 8.32-8.32-3.2-3.2-1.37 1.37z"></path>
-                                                <path d="M15.1 5.67l-3.02-3.03M9.3 11.5L6.26 8.46"></path>
-                                                <path stroke-width="1.5" d="M13.69 12.14v5.11H.75V4.31h5.04"></path>
-                                            </g>
-                                        </svg>
-                                        Edit Profile
-                                    </button><a class="_27Mgd _1VKWj _29zpU" href="/terms" style="opacity: 1; transform: translateY(0px) translateZ(0px);">Terms &amp; Privacy Policy</a>
-                                    <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
-                                        Get Help
-                                    </button><a class="_27Mgd _1VKWj _29zpU" href="/logout" style="opacity: 1; transform: translateY(0px) translateZ(0px);">Sign Out</a></div>
-                                <div class="rTjpd" style="transform: translateX(18.5px) rotate(45deg); top: -7px;"></div>
+                            <div class="_1rglo"></div>
+                            <div>
+                                <div class="_1zDR7" data-bind="css: { active: showSettingsPopup}">
+                                    <div class="_3rM3S">
+                                        <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bWSPJ">
+                                                <g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke-width="1.5" d="M5.65 9.07l-.58 3.78 3.78-.58 8.32-8.32-3.2-3.2-1.37 1.37z"></path>
+                                                    <path d="M15.1 5.67l-3.02-3.03M9.3 11.5L6.26 8.46"></path>
+                                                    <path stroke-width="1.5" d="M13.69 12.14v5.11H.75V4.31h5.04"></path>
+                                                </g>
+                                            </svg>
+                                            Edit Profile
+                                        </button><a class="_27Mgd _1VKWj _29zpU" href="/terms" style="opacity: 1; transform: translateY(0px) translateZ(0px);">Terms &amp; Privacy Policy</a>
+                                        <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
+                                            Get Help
+                                        </button>
+                                        <a class="_27Mgd _1VKWj _29zpU" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault();
+                                             document.getElementById('logout-form').submit();"
+                                           style="opacity: 1; transform: translateY(0px) translateZ(0px);">Sign Out</a>
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                                {{ csrf_field() }}
+                                            </form>
+                                        </div>
+                                    <div class="rTjpd" style="transform: translateX(18.5px) rotate(45deg); top: -7px;"></div>
+                                </div>
                             </div>
                         </div>
                     </div>

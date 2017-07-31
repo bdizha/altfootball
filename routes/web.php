@@ -17,6 +17,7 @@ Route::get('/', 'HomeController@index');
 Auth::routes();
 
 Route::get('/unverified', 'Auth\RegisterController@unverified')->name("auth.unverified");
+Route::get('/terms', 'AssetController@show')->name("asset.show");
 Route::get('/activate/{token}', 'Auth\RegisterController@activate')->name("auth.activate");
 Route::resource('profile', 'ProfileController');
 Route::get('/onboard/recommended', 'WelcomeController@index')->name("recommended");

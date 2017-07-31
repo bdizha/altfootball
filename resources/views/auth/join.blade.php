@@ -1,5 +1,5 @@
-<div class="_1L5ou _3Xaa0" data-bind="visible: shouldShowJoinPopup">
-    <div class="_1V79j" style="opacity: 0.6;"></div>
+<div class="_1L5ou _3Xaa0" data-bind="css: { active: shouldShowJoinPopup }">
+    <div class="_1V79j" data-bind="css: { active: shouldShowJoinPopup }"></div>
     <div class="_2V52z" data-bind="css: { active: shouldShowJoinPopup }">
         <div class="bHN0m">
             <button data-bind="click: hideJoinPopup" class="xy5Fz">

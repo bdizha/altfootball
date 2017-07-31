@@ -242,7 +242,7 @@
                                 <div class="_2uxNN">
                                     Tackles({{ $tackles }})
                                 </div>
-                                <ul class="_1RyqV" style="display: none;">
+                                <ul class="_1RyqV">
                                     <li class="gEjmr undefined" id="Q7vohQ8NRNaao-z5jHb7Lw">
                                         <button class="_2MdIb">
                                             <div class="_1_VaP">
@@ -269,7 +269,89 @@
                                                 Stephen Mcknight
                                             </a>
                                         </div>
-                                        <p class="_2OqId"><span><span>glad he got a night out hamster.</span></span>
+                                        <p class="_2OqId"><span><span>Ummm if Jose had used bad luck i would have created!! (Ohh and i have)-- So Klopp same applies, It wasnt bad luck. You have a squad to chose from. You can have the full quota or not. Injuries are part and parcel.
+
+Goals disallowed etc applies for and against your team. So turn off the bad luck wagon.</span></span>
+                                        </p>
+                                        <div class="BNBMP">
+                                            <div class="_1aSFb">2 hours ago</div>
+                                            <div class="_22SkP">
+                                                <button>
+                                                    Reply
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="gEjmr undefined" id="Q7vohQ8NRNaao-z5jHb7Lw">
+                                        <button class="_2MdIb">
+                                            <div class="_1_VaP">
+                                                <svg width="24" height="23" viewBox="-3 -3 23 24">
+                                                    <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75L13.5 0zm-.1 1.87l3.1 2.58V8.3L9 14.55 1.5 8.3V4.45l3.1-2.58L9 4.8l4.4-2.93z"
+                                                          fill="#000" fill-rule="evenodd" opacity="1" class="outline"></path>
+                                                    <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75" fill="#00AFFF"
+                                                          fill-rule="evenodd" opacity="0" class="heart"></path>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <div class="mkIC1">
+                                            <a class="" href="/u/VQGdkNIxR7qogKbB766sCg">
+                                                <div class="_25jNX _3kBjx">
+                                                    <div class="N3r_f">
+                                                        <div class="_38L6D" style="padding-bottom: 100%;">
+                                                            {!! $post->user->getImage() !!}
+                                                        </div>
+                                                    </div>
+                                                    <!-- react-empty: 2496 -->
+                                                </div>
+                                            </a>
+                                            <a class="_1lUs3" href="/u/VQGdkNIxR7qogKbB766sCg">
+                                                Stephen Mcknight
+                                            </a>
+                                        </div>
+                                        <p class="_2OqId"><span><span>What you ended up reporting here is not news worthy but for clicks.</span></span>
+                                        </p>
+                                        <div class="BNBMP">
+                                            <div class="_1aSFb">2 hours ago</div>
+                                            <div class="_22SkP">
+                                                <button>
+                                                    Reply
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="gEjmr undefined" id="Q7vohQ8NRNaao-z5jHb7Lw">
+                                        <button class="_2MdIb">
+                                            <div class="_1_VaP">
+                                                <svg width="24" height="23" viewBox="-3 -3 23 24">
+                                                    <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75L13.5 0zm-.1 1.87l3.1 2.58V8.3L9 14.55 1.5 8.3V4.45l3.1-2.58L9 4.8l4.4-2.93z"
+                                                          fill="#000" fill-rule="evenodd" opacity="1" class="outline"></path>
+                                                    <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75" fill="#00AFFF"
+                                                          fill-rule="evenodd" opacity="0" class="heart"></path>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <div class="mkIC1">
+                                            <a class="" href="/u/VQGdkNIxR7qogKbB766sCg">
+                                                <div class="_25jNX _3kBjx">
+                                                    <div class="N3r_f">
+                                                        <div class="_38L6D" style="padding-bottom: 100%;">
+                                                            {!! $post->user->getImage() !!}
+                                                        </div>
+                                                    </div>
+                                                    <!-- react-empty: 2496 -->
+                                                </div>
+                                            </a>
+                                            <a class="_1lUs3" href="/u/VQGdkNIxR7qogKbB766sCg">
+                                                Stephen Mcknight
+                                            </a>
+                                        </div>
+                                        <p class="_2OqId"><span><span>Hello, it's me and I'm here to comment on an article about Liverpool in an unthoughtful but provocative manner. I'm going to say something along the lines of how hugs and kisses don't make Liverpool champions and also refer to the fact that it wasn't bad luck when Klopp ran his squad into the ground over the Christmas period but his incompitence.
+
+I might also bring up the Southampton apology but I'll probably leave that for an article about their next botched transfer. I'll also mention about how painful it must be knowing that Coutinho is on the way out.
+
+I'll also throw in the odd sensible comment elsewhere on the website but since I can't seem to tear myself away from riling up Liverpool fans I'll be back for more.
+
+Thanks for listening.</span></span>
                                         </p>
                                         <div class="BNBMP">
                                             <div class="_1aSFb">2 hours ago</div>
