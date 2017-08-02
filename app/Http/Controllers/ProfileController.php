@@ -29,4 +29,24 @@ class ProfileController extends Controller
 
         return redirect('/onboard/recommended');
     }
+
+    public function update(Request $request)
+    {
+        $data = $request->all();
+        $user = Auth::user();
+
+        $user->first_name = $data['first_name'];
+        $user->last_name = $data['last_name'];
+        $user->bio = $data['bio'];
+        $user->website = $data['website'];
+        $user->save();
+
+        dd($request->ajax());
+
+        if($request->ajax()){
+            return true;
+        }
+
+        return redirect('/');
+    }
 }

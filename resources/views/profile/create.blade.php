@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="XU9RU eGwrR _2CyDP _3QApL" data-bind="css: { _1fTaL: focusedLastName }">
-                        <div class="_2Kdch _2hv_i p5bDW">
+                        <div class="_2Kdch _2hv_i">
                             <label class="_16KIM _2azBk">
                                 Last name
                                 <span class="_1AUhk">(required)</span>
@@ -69,12 +69,12 @@
             var data = {!! $user->toJson() !!};
 
             var viewProfileCreateModel = {
-                firstName: ko.observable(data.first_name).extend({
+                firstName: ko.observable(data.first_name ? data.first_name : '').extend({
                     required: {
                         message: 'First name is required.'
                     }
                 }),
-                lastName: ko.observable(data.last_name).extend({
+                lastName: ko.observable(data.last_name ? data.last_name : '').extend({
                     required: {
                         message: 'Last name is required.'
                     }
@@ -125,10 +125,15 @@
 
             viewProfileCreateModel.errors = ko.validation.group(viewProfileCreateModel);
 
-            viewProfileCreateModel.focusFirstName();
-            viewProfileCreateModel.blurFirstName();
-            viewProfileCreateModel.focusLastName();
-            viewProfileCreateModel.blurLastName();
+            if(viewProfileCreateModel.firstName().length > 0){
+                viewProfileCreateModel.focusFirstName();
+                viewProfileCreateModel.blurFirstName();
+            }
+
+            if(viewProfileCreateModel.lastName().length > 0){
+                viewProfileCreateModel.focusLastName();
+                viewProfileCreateModel.blurLastName();
+            }
 
             ko.applyBindings(viewProfileCreateModel, document.getElementById('profile-create-view-template'));
         });

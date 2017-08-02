@@ -41,8 +41,8 @@
     <div id="{{ $id }}">
         <div>
             <div>
-                <div class="_1A3CD" data-bind="css: { active: showSettingsPopup }">
-                    <div class="_1V79j" data-bind="click: closeSettingsPopup, css: { active: showSettingsPopup }"></div>
+                <div class="_1A3CD" data-bind="css: { active: showSettingsPopup() || showEditPopup() }">
+                    <div class="_1V79j" data-bind="click: closeSettingsPopup, css: { active: showSettingsPopup() || showEditPopup() }"></div>
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
                             <div class="_2H55B"><a class="" href="/">
@@ -115,6 +115,7 @@
                         @yield('content')
                     </div>
                 </div>
+                @include('fan.edit')
                 @if(!empty($view) && $view == 'show')
                     <div class="_1L5ou" data-bind="css: { active: showSettingsPopup}">
                         <div>
@@ -122,7 +123,7 @@
                             <div>
                                 <div class="_1zDR7" data-bind="css: { active: showSettingsPopup}">
                                     <div class="_3rM3S">
-                                        <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
+                                        <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="click: openEditPopup">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bWSPJ">
                                                 <g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
                                                     <path stroke-width="1.5" d="M5.65 9.07l-.58 3.78 3.78-.58 8.32-8.32-3.2-3.2-1.37 1.37z"></path>
@@ -131,7 +132,8 @@
                                                 </g>
                                             </svg>
                                             Edit Profile
-                                        </button><a class="_27Mgd _1VKWj _29zpU" href="/terms" style="opacity: 1; transform: translateY(0px) translateZ(0px);">Terms &amp; Privacy Policy</a>
+                                        </button>
+                                        <a class="_27Mgd _1VKWj _29zpU" href="/terms" style="opacity: 1; transform: translateY(0px) translateZ(0px);">Terms &amp; Privacy Policy</a>
                                         <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
                                             Get Help
                                         </button>

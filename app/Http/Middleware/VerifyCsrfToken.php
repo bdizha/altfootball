@@ -12,7 +12,8 @@ class VerifyCsrfToken extends BaseVerifier
      * @var array
      */
     protected $except = [
-        'profile.create',
-        'onboard.create'
+        'profile/store',
+        'onboard/store',
+        'profile/*'
     ];
 }
