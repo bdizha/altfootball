@@ -13,7 +13,7 @@
                 <span class="_1u7op">{{ $errors->first('email') }}</span>
             @endif
         </div>
-        <button class="M13JP _1geYT" type="submit" data-bind="enable: disabled">Continue</button>
+        <button class="M13JP _1geYT" type="submit" data-bind="enable: enabled">Continue</button>
         {!! Form::close() !!}
     </div>
 @endsection
@@ -33,7 +33,7 @@
                     }
                 }),
                 canRegisterContinue: ko.observable(false),
-                disabled: ko.observable(false),
+                enabled: ko.observable(true),
                 updateRegisterContinue: function(){
                     console.log(viewRegisterModel.errors().length);
                     this.canRegisterContinue(viewRegisterModel.errors().length === 0);
@@ -46,7 +46,7 @@
                     this.showAllMessages();
 
                     if(this.canRegisterContinue()){
-                        this.disabled(true);
+                        this.enabled(false);
                     }
                     return this.canRegisterContinue();
                 }

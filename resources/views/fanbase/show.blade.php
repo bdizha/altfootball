@@ -172,7 +172,7 @@
                             <div class="RDrYv _2bDpH" data-reactid="128">
                                 <p class="_2nWjU _2YnA3 KTIgi" data-reactid="129">
                                     <a class="_2XyXQ" href="/u/{{ $fanbase->user->slug }}">
-                                        {{ $fanbase->user->getName() }}
+                                        {{ $fanbase->user->name }}
                                     </a>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          class="_1z7Hy _1NCGm" data-reactid="131">

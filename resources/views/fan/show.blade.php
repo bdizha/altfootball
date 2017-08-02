@@ -1,6 +1,6 @@
 @extends('layouts.fan', ['view' => 'show', 'id' => 'fan-show-view-template'])
 
-@section('title', $fan->getName())
+@section('title', $fan->name)
 
 @section('content')
     <div class="" data-reactid="41">
@@ -285,7 +285,6 @@
                     });
                 },
                 submit: function () {
-                    console.log("testing");
                     viewFanShowModel.errors.showAllMessages();
 
                     if(this.canSave()){

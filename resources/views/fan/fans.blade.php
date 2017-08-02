@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Followers of ' . $fan->getName())
+@section('title', 'Followers of ' . $fan->name)
 
 @section('content')
     <div class="">
@@ -10,7 +10,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12">
                         <path fill-rule="evenodd" d="M7 12L0 6l7-6v1.86L2.16 6 7 10.14"></path>
                     </svg>
-                    {{ $fan->getName() }}'s profile
+                    {{ $fan->name }}'s profile
                 </a>
             </div>
             <div>

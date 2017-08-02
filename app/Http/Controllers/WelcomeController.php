@@ -74,6 +74,10 @@ class WelcomeController extends Controller
         $route = $data['route'];
 
         if ($route == 'featured') {
+
+            $user->is_onboarded = true;
+            $user->save();
+
             return redirect('/');
         } else {
             return redirect('/onboard/featured');

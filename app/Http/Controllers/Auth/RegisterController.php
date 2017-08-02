@@ -112,7 +112,7 @@ class RegisterController extends Controller
 
             $this->guard()->login($user);
 
-            return redirect('/profile/create');
+            return redirect($user->is_onboarded ? '/' : '/profile/create');
         }
     }
 

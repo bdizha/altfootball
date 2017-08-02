@@ -2403,6 +2403,22 @@ form._2rf1 ._1u7op {
   background-color: #f4f4f4;
 }
 
+._Kj1Z {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+._38FYQ {
+  width: 40px;
+  height: 40px;
+}
+
+._3RaY_ {
+  padding-left: 14px;
+}
+
 ._1FJkk {
   border: 1px solid #ccc;
   padding: 8px;
@@ -3490,7 +3506,7 @@ form._2rf1 ._1u7op {
 }
 
 ._1RYG9 {
-  background: url(/images/repeat-white-logo.png) #f4f4f4;
+  background: url(/images/repeat-white-logo.png) #FFFFFF;
   padding-top: 35px;
   padding-bottom: 64px;
   min-height: 100vh;
@@ -12271,8 +12287,21 @@ div._3bqe5 > div {
   height: 92px;
 }
 
+._3JzN1 {
+  margin-bottom: 14px;
+}
+
 ._3JzN1 div {
   color: #f8f8f8;
+}
+
+._13Iad {
+  color: #f8f8f8;
+  font-family: DriveTribe,Helvetica,sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
 }
 
 .GLLyX {

@@ -5,8 +5,9 @@ namespace App\Http\Controllers;
 use App\Fanbase;
 use App\Post;
 use App\Tag;
-use App\TagPost;
+use App\User;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class HomeController extends Controller
 {
@@ -21,19 +22,30 @@ class HomeController extends Controller
     protected function index(Request $request)
     {
         $posts = Post::orderBy('created_at', 'desc')->paginate(24);
-        $bases = Fanbase::orderBy('id', 'asc')->take(6)->get();
+        $fanbases = Fanbase::orderBy('id', 'asc')->take(6)->get();
 
-//        dd($posts[0]);
+        $date = Carbon::now()->subDays(7);
+
+        $popularPosts = Post::orderBy('views', 'desc')
+            ->where('created_at', '>=', $date)
+            ->take(3)->get();
 
         $tags = Tag::withCount('posts')
             ->orderBy("posts_count", "DESC")
             ->take(12)
             ->get();
 
+        $fans = User::withCount('posts')
+            ->orderBy("posts_count", "DESC")
+            ->take(4)
+            ->get();
+
         return view('welcome', [
             'posts' => $posts,
-            'bases' => $bases,
-            'tags' => $tags
+            'fanbases' => $fanbases,
+            'popularPosts' => $popularPosts,
+            'tags' => $tags,
+            'fans' => $fans
         ]);
     }
 }
