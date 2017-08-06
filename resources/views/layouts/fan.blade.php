@@ -136,14 +136,13 @@
                                         <a class="_27Mgd _1VKWj _29zpU" href="/terms" style="opacity: 1; transform: translateY(0px) translateZ(0px);">Terms &amp; Privacy Policy</a>
                                         <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
                                             Get Help
-                                        </button>
-                                        <a class="_27Mgd _1VKWj _29zpU" href="{{ route('logout') }}"
-                                           onclick="event.preventDefault();
-                                             document.getElementById('logout-form').submit();"
-                                           style="opacity: 1; transform: translateY(0px) translateZ(0px);">Sign Out</a>
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            <form id="fan-logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form>
+                                        </button>
+                                        <a class="_27Mgd _1VKWj _29zpU" href="{{ route('logout') }}"
+                                           onclick="event.preventDefault(); document.getElementById('fan-logout-form').submit();"
+                                           style="opacity: 1; transform: translateY(0px) translateZ(0px);">Sign Out</a>
                                         </div>
                                     <div class="rTjpd" style="transform: translateX(18.5px) rotate(45deg); top: -7px;"></div>
                                 </div>

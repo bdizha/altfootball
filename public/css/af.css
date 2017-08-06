@@ -2376,6 +2376,15 @@ form._2rf1 ._1u7op {
   resize: none;
 }
 
+._3fi2B {
+  border: 1px solid #ccc;
+  padding: 8px;
+  padding-left: 12px;
+  height: 44px;
+  margin-bottom: 0;
+  placeholder-color: #666;
+}
+
 ._26cuW {
   color: #00AFFF;
   font-family: DriveTribe, Helvetica, sans-serif;
@@ -8013,7 +8022,10 @@ form._2rf1 ._1u7op {
 .gEjmr {
   position: relative;
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
-  padding-bottom: 14px;
+  background: #FFFFFF;
+  padding: 22px;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
 }
 
 .gEjmr:last-child {
@@ -8031,6 +8043,46 @@ form._2rf1 ._1u7op {
   font-size: 14px;
   line-height: 18px;
   line-height: 22px;
+}
+
+.gEjmr ._3HYOY {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 0px;
+  width: 12px;
+  height: 19px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAMAAADp2asXAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACQUExURUxpccPDw9ra2m9vbwAAAAAAADExMf///wAAABoaGk9PT7q6uqurqwsLCycnJz4+PtDQ0JycnIyMjPf3915eXvz8/E9PT/39/RMTE4CAgAAAAJqamv////////r6+u/v7yUlJeXl5f///5ycnOXl5XNzc/Hx8f///xUVFf///+zs7P///+bm5gAAAM7Ozv///2fVensAAAAvdFJOUwCow1cBCCnqAhNAnY0WIDW2f2/hSeo99g1lBYT87vDXG8/6d8oL4sgM5szrkgl660OiZwAAAHRJREFUKM/ty7cSggAABNFVUQFzwizmjPz/39k4YuFWtm55bw7eHR6ny63+alnswT3/rIDzUSC7CrAziPYCJCsB+gbVkgDtVIDh+DsE9OTBpCtAbSBAZSEQNgWIygJ0RgJMDWYNAdYbAeKtAHODlkHIv997AkLqIVOXVU84AAAAAElFTkSuQmCC);
+}
+
+.gEjmr ._RG6wD {
+  background-color: rgba(0, 0, 0, 0.05);
+  display: block;
+  min-height: 50px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-left: 4px solid #00AFFF;
+  margin-bottom: 22px;
+}
+
+.gEjmr ._RG6wD ._TY7MN {
+  font-weight: 600;
+  line-height: 21px;
+  margin-left: 10px;
+  padding: 10px 0 0px;
+  font-size: 14px;
+  color: #00AFFF;
+}
+
+.gEjmr ._RG6wD ._MS1DF {
+  margin: 0 10px;
+  font-size: 12.6px;
+  overflow: hidden;
+  word-break: break-word;
+  padding-bottom: 10px;
 }
 
 ._2UOnH {
@@ -8094,10 +8146,7 @@ form._2rf1 ._1u7op {
   color: #666;
   font-size: 12px;
   line-height: 12px;
-  padding-top: 18px;
-  padding-bottom: 14px;
   list-style: disc;
-  border-bottom: 1px solid #f4f4f4;
 }
 
 ._1aSFb {
@@ -8145,8 +8194,8 @@ form._2rf1 ._1u7op {
 
 ._2MdIb {
   position: absolute;
-  right: 39px;
-  top: 9px;
+  right: 22px;
+  bottom: 22px;
   cursor: pointer;
   box-sizing: border-box;
   width: 18px;
@@ -10928,8 +10977,9 @@ div._3bqe5 > div {
 
 ._1RyqV {
   clear: both;
-  margin-top: 18px;
-  padding: 22px;
+  background: #F4f4f4;
+  margin: 0 -44px;
+  padding: 44px;
 }
 
 ._2uxNN {

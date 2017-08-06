@@ -41,7 +41,7 @@
     <div>
         <div>
             <div>
-                <div class="_1A3CD" data-bind="css: { active: shouldShowJoinPopup }">
+                <div class="_1A3CD">
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
                             <div class="_2H55B"><a class="" href="/">
@@ -114,7 +114,7 @@
                         @yield('content')
                     </div>
                 </div>
-                @include('auth.join')
+                {{--@include('auth.join')--}}
                 @if(!empty($view) && $view == 'fan')
                     <div>
                         <div class="_1rglo"></div>
@@ -149,5 +149,6 @@
         render: 43
     };
 </script>
+@yield('js')
 </body>
 </html>

@@ -39,8 +39,12 @@ function setHeightFor(selector) {
 // Reinitialize the gallery on browser resize.
 var resizeTimer = null;
 $(window).bind('resize', function () {
-    setHeightFor("._3VSm9, ._1Q_Pu");
+    applyHeights();
 });
+
+function applyHeights(){
+    setHeightFor("._3VSm9, ._1Q_Pu");
+}
 
 $(function() {
 

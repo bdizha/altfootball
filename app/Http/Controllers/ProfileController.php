@@ -40,7 +40,7 @@ class ProfileController extends Controller
         $user->bio = $data['bio'];
         $user->website = $data['website'];
         $user->save();
-        
+
         dd($request->ajax());
 
         if($request->ajax()){

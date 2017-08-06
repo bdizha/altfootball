@@ -28,7 +28,9 @@ class Post extends Model
         'slug'
     ];
 
-    public function getDate()
+    protected $appends = ['comments', 'published_at'];
+
+    public function getPublishedAtAttribute()
     {
         return Carbon::parse($this->created_at)->diffForHumans();
     }
@@ -41,6 +43,15 @@ class Post extends Model
     public function getSluggableString()
     {
         return $this->title;
+    }
+
+    public function getCommentsAttribute()
+    {
+        return Comment::where("type_id", $this->id)
+            ->orderBy('created_at', 'DESC')
+            ->with('user')
+            ->where('type', 'post')
+            ->get();
     }
 
     public function user()

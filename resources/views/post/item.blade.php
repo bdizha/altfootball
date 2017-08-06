@@ -45,7 +45,7 @@
                 </div>
                 <div class="_3qkzJ">
                     <p class="_2B25b">
-                        <span class="_2jvdf">{{ $post->getDate() }}</span>
+                        <span class="_2jvdf">{{ $post->published_at }}</span>
                     </p>
                     <p class="TATrW">
                         {{ ++$post->views }}K Views

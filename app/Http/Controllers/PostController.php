@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Fanbase;
 use App\Post;
+use Auth;
 use Illuminate\Http\Request;
 
 
@@ -25,12 +26,16 @@ class PostController extends Controller
                 ->orderBy('id', 'asc')->take(3)->get();
         }
 
+//        dd($post->comments->toArray());
+
         $post->views += 1;
         $post->save();
 
         $url = $request->fullUrl();
 
         return view('post.show', [
+            'comments' => json_encode($post->comments->toArray(), JSON_HEX_APOS),
+            'user' => json_encode(Auth::user()->toArray(), JSON_HEX_APOS),
             'post' => $post,
             'url' => $url,
             'siblingPosts' => $siblingPosts,

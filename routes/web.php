@@ -32,3 +32,4 @@ Route::get('/t/{slug}', 'TagController@show')->name("tag.show");
 Route::get('/u/{slug}', 'FanController@show')->name("fan.show");
 Route::get('/u/{slug}/followers', 'FanController@followers')->name("fan.followers");
 Route::get('/u/{slug}/following', 'FanController@followers')->name("fan.following");
+Route::post('/comment', 'CommentController@create')->name("comment.create");

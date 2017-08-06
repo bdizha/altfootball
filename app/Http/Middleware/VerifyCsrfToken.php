@@ -14,6 +14,7 @@ class VerifyCsrfToken extends BaseVerifier
     protected $except = [
         'profile/store',
         'onboard/store',
-        'profile/*'
+        'profile/*',
+        'comment',
     ];
 }

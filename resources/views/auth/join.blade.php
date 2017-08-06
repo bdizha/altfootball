@@ -93,6 +93,6 @@
             }
         };
 
-        ko.applyBindings(viewJoinModel, document.getElementById('root'));
+//        ko.applyBindings(viewJoinModel, document.getElementById('root'));
     });
 </script>

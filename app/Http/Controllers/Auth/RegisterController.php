@@ -110,7 +110,7 @@ class RegisterController extends Controller
             $user->is_active = true;
             $user->save();
 
-            $this->guard()->login($user);
+            $this->guard()->login($user, true);
 
             return redirect($user->is_onboarded ? '/' : '/profile/create');
         }
