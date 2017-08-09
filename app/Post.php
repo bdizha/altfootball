@@ -28,7 +28,7 @@ class Post extends Model
         'slug'
     ];
 
-    protected $appends = ['comments', 'published_at'];
+    protected $appends = ['comments', 'published_at', 'resized_image', 'square_image'];
 
     public function getPublishedAtAttribute()
     {
@@ -85,10 +85,38 @@ class Post extends Model
 
     public function getHtmlContent()
     {
-        return str_replace("height=", "", str_replace("width=", "", $this->content));
+        $searches = [
+            '<p><inline style="background-color: initial; font-size: 1em;"><br></inline></p>',
+            '<p><span style="background-color: initial; font-size: 1em;"><br></span></p>'
+        ];
+
+        $content = str_replace($searches, '', $this->content);
+        return str_replace("height=", "", str_replace("width=", "", $content));
     }
 
-    public function getImage($dimensions = "width=370&height=208")
+    public function getSquareImageAttribute()
+    {
+        $dimensions = 'width=100&height=100';
+        $image = Redis::get('post:image:square:' . $this->id);
+        if (!empty($image)) {
+            $data = file_get_contents($this->image);
+
+            $fileParts = explode('.', $this->image);
+
+            $fileExt = $fileParts[count($fileParts) - 1];
+
+            $filename = "/images/posts/" . md5($this->image) . ".{$fileExt}";
+
+            file_put_contents(public_path() . $filename, $data);
+
+            $image = file_get_contents("http://images.altfootball.dev?url=" . url('/') . $filename . "&" . $dimensions);
+            Redis::set('post:image:square:' . $this->id, $image);
+        }
+        return $image;
+    }
+
+
+    public function getResizedImageAttribute($dimensions = "width=370&height=208")
     {
         try {
             $image = Redis::get('post:image:' . $this->id);
@@ -105,7 +133,7 @@ class Post extends Model
     {
         $image = "";
 
-        preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getImage(), $imageParts, PREG_SET_ORDER);
+        preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getResizedImageAttribute(), $imageParts, PREG_SET_ORDER);
 
         if(!empty($imageParts[3][2])){
             $imageParts = explode(" ", $imageParts[3][2]);

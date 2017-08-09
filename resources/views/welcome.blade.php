@@ -49,7 +49,7 @@
                                     <a class="_pRC7 _46Jbt" data-initials="CC" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3BoA_" data-reactid="94">
                                             <div style="padding-bottom:100%;" class="_38L6D">
-                                                {!! $fanbase->getImage() !!}
+                                                <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
                                             </div>
                                         </div>
                                         <p class="_2mbtl" data-reactid="97">{{ $fanbase->name }}</p>
@@ -68,13 +68,13 @@
                                             <div class="WCfW6">
                                                 <div class="_1ZxE5">
                                                     <div style="padding-bottom:100%;" class="_38L6D">
-                                                        {!! $post->getImage() !!}
+                                                        {!! $post->square_image !!}
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="_2ll1m">
                                                 <span class="_3bbo_">
-                                                    {{ $post->title }}
+                                                    {{ str_limit($post->title, 60) }}
                                                 </span>
                                                 <span class="FMK9E">{{ str_limit($post->summary, 30) }}</span>
                                             </div>
@@ -92,7 +92,7 @@
                                         <div class="_25jNX" style="width:66px;height:66px;">
                                             <div class="N3r_f" data-reactid="167">
                                                 <div style="padding-bottom:100%;" class="_38L6D">
-                                                    {!! $fan->getImage() !!}
+                                                    {!! $fan->resized_image  !!}
                                                 </div>
                                             </div>
                                         </div>
@@ -113,7 +113,7 @@
                                data-reactid="75">
                                 <div class="_204wR">
                                     <div style="padding-bottom:100%;" class="_38L6D">
-                                        {!! $fanbase->getImage() !!}
+                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
                                     </div>
                                 </div>
                                 <p class="Dpcfa" data-reactid="79">{{ $fanbase->name }}</p>

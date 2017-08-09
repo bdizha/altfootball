@@ -755,7 +755,13 @@ button {
 }
 
 .b00q8 {
-  transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;}
+
+form{
+  .b00q8 {
+    max-height: 200px;
+    max-width: 200px;
+  }
 }
 
 ._2fsVB {
@@ -1849,7 +1855,7 @@ form{
 
 ._1nAwr {
   display: flex;
-  border: 1px solid #141C3E;
+  border: 1px solid rgba(20, 28, 62, 0.6);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2198,7 +2204,7 @@ form{
   border: 1px solid #ccc;
   padding: 8px;
   padding-left: 12px;
-  height: 44px;
+  height: auto;
   margin-bottom: 0;
   placeholder-color: #666;
 }
@@ -2341,8 +2347,8 @@ form{
 
 ._1PzVp {
   position: absolute;
-  top: -4px;
-  right: -4px;
+  top: 10px;
+  right: 10px;
   z-index: 16;
 }
 
@@ -4032,6 +4038,7 @@ form{
   color: #f8f8f8;
   z-index: 1;
   padding-bottom: 88px;
+  overflow: hidden;
   &._3K48E {
     padding: 18px 0;
   }
@@ -4088,7 +4095,6 @@ form{
 ._3bVUr {
   background-color: #f4f4f4;
   color: rgba(0, 8, 39,.96);
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), inset 0 -1px 0 0 #e6e6e6;
 }
 
 ._24kFo {
@@ -7057,7 +7063,7 @@ form{
 }
 
 .ivfOh {
-  padding-top: 14px;
+  padding-top: 44px;
   background-color: #fff;
   .ODDw0 {
     border-bottom: 1px solid #f4f4f4;
@@ -7140,6 +7146,11 @@ form{
   margin-top: 18px;
   &:hover ._2PRiK {
     display: block;
+  }
+  img{
+    width: 100%;
+    display: block;
+    margin-bottom: 14px;
   }
 }
 
@@ -7335,8 +7346,8 @@ form{
 
 ._1CwzX {
   position: absolute;
-  left: 9px;
-  top: 9px;
+  left: 0;
+  top: 14px;
 }
 
 @media screen and (max-width: 508px) {
@@ -7504,6 +7515,27 @@ form{
   font-size: 12px;
   line-height: 12px;
   list-style: disc;
+  position: relative;
+  ._2MdIb{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 18px;
+    height: 18px;
+  }
+}
+
+._78jku{
+  position: relative;
+}
+
+._55ghi{
+  display: none;
+  &._4c7v3{
+    display: block;
+  }
 }
 
 ._1aSFb {
@@ -7548,7 +7580,7 @@ form{
 ._2MdIb {
   position: absolute;
   right: 22px;
-  bottom: 22px;
+  top: 22px;
   cursor: pointer;
   box-sizing: border-box;
   width: 18px;
@@ -8974,12 +9006,11 @@ div._3bqe5 {
   min-width: 664px;
   padding: 44px;
   height: 100%;
-  background: $color_white;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #e6e6e6;
   div:first-child {
     margin-top: 0;
   }
   a{
+    color: $color_light_blue;
     &:hover,
     &:focus{
       color: $color_green;
@@ -10141,8 +10172,7 @@ div._3bqe5 {
   ._1zwKC {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding: 0;
   }
 }
 
@@ -10169,9 +10199,22 @@ div._3bqe5 {
 
 ._1RyqV {
   clear: both;
-  background: #F4f4f4;
-  margin: 0 -44px;
-  padding: 44px;
+  margin: 0;
+  padding: 0;
+  ._1RyqV{
+    padding: 22px 0 0;
+    margin: 0;
+    margin-right: -22px;
+    .gEjmr{
+      padding-bottom: 22px;
+      margin-bottom: 0;
+      box-shadow: none;
+      border-top: 1px solid #f4f4f4;
+      &:last-child{
+        padding-bottom: 0px;
+      }
+    }
+  }
 }
 
 ._2uxNN {
@@ -10223,7 +10266,7 @@ div._3bqe5 {
 ._11QMn {
   margin-bottom: 72px;
   background: url(/images/repeat-logo.png) rgba(0, 8, 39,1);
-  color: #f8f8f8;
+  color: $color_white;
 }
 
 @media screen and (min-width: 924px) {

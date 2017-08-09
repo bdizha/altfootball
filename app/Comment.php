@@ -16,26 +16,24 @@ class Comment extends Model
         'content',
         'user_id',
         'type_id',
-        'parent_id'
+        'type',
+        'image'
     ];
 
-    protected $appends = ['parent', 'published_at', 'is_replying'];
+    protected $appends = ['comments', 'published_at'];
 
     public function user()
     {
         return $this->hasOne('App\User', 'id', 'user_id');
     }
 
-    public function getParentAttribute()
+    public function getCommentsAttribute()
     {
-        return Comment::where("id", $this->parent_id)
+        return Comment::where("type_id", $this->id)
+            ->orderBy('created_at', 'DESC')
             ->with('user')
-            ->first();
-    }
-
-    public function getIsReplyingAttribute()
-    {
-        return false;
+            ->where('type', 'comment')
+            ->get();
     }
 
     public function getPublishedAtAttribute()

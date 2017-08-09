@@ -36,7 +36,7 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name'];
+    protected $appends = ['name', 'resized_image'];
 
     public function getNameAttribute()
     {
@@ -75,9 +75,8 @@ class User extends Authenticatable
         return sprintf('%s %s', $this->first_name, $this->last_name);
     }
 
-    public function getImage($dimensions = "width=300&height=300")
+    public function getResizedImageAttribute($dimensions = "width=300&height=300")
     {
-
         try {
             $image = Redis::get('fan:image:' . $this->id);
             if (empty($image)) {

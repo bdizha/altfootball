@@ -120,7 +120,7 @@
                 <div class="T1M_q" data-reactid="104">
                     <div class="LPTvp _3Xaa0 _1KXFt">
                         <div class="_23p6h">
-                            {!! $fanbase->getImage() !!}
+                            <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
                         </div>
                     </div>
                     <div class="_2UPZy" data-initials="{{ $fanbase->initials }}" data-reactid="106"></div>
@@ -164,7 +164,7 @@
                                 <div class="_25jNX _3Y-3q" style="width:35px;height:35px;" data-reactid="123">
                                     <div class="N3r_f" data-reactid="124">
                                         <div style="padding-bottom:100%;" class="_38L6D" data-reactid="125">
-                                            {!! $fanbase->user->getImage() !!}
+                                            {!! $fanbase->user->resized_image !!}
                                         </div>
                                     </div>
                                 </div>

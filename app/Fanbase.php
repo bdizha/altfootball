@@ -23,7 +23,7 @@ class Fanbase extends Model
         'slug'
     ];
 
-    protected $appends = ['resized', 'initials'];
+    protected $appends = ['resized_image', 'initials'];
 
     protected $covers = [
         "http://www.realmadrid.com/img/galeria-marca/_he27686.jpg",
@@ -86,7 +86,7 @@ class Fanbase extends Model
         }
     }
 
-    public function getResizedAttribute()
+    public function getResizedImageAttribute()
     {
         $image = "";
         preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getImage(), $imageParts, PREG_SET_ORDER);

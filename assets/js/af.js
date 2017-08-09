@@ -1,7 +1,5 @@
 $(function () {
 
-    setHeightFor("._3VSm9, ._1Q_Pu");
-
     var popupSize = {
         width: 780,
         height: 550
@@ -36,6 +34,12 @@ function setHeightFor(selector) {
     }
 }
 
+function adjustHeight(target, reference) {
+    if ($(this).width() > 1125 && $(target).height() < $(reference).height()) {
+        $(reference).attr("style", "height: " + ($(target).height()) + "px");
+    }
+}
+
 // Reinitialize the gallery on browser resize.
 var resizeTimer = null;
 $(window).bind('resize', function () {
@@ -43,7 +47,7 @@ $(window).bind('resize', function () {
 });
 
 function applyHeights(){
-    setHeightFor("._3VSm9, ._1Q_Pu");
+    adjustHeight('._1Q_Pu', '._3VSm9');
 }
 
 $(function() {

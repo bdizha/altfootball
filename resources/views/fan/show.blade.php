@@ -27,7 +27,7 @@
                             <div class="_25jNX">
                                 <div class="N3r_f">
                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                        {!! $fan->getImage() !!}
+                                        {!! $fan->resized_image !!}
                                     </div>
                                 </div>
                             </div>
@@ -110,7 +110,7 @@
                                             <div class="ZD12l _1iE2V">
                                                 <div class="_2lssz">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        {!! $fanbase->getImage() !!}
+                                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
                                                     </div>
                                                 </div>
                                             </div>

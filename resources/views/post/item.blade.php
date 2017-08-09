@@ -7,7 +7,7 @@
                     <a href="{{ $post->slug }}">
                         <div class="_1yAXU">
                             <div style="padding-bottom:100%;" class="_38L6D">
-                                {!! $post->user->getImage("width=32&height=32") !!}
+                                {!! $post->user->resized_image !!}
                             </div>
                         </div>
                     </a>
@@ -73,7 +73,7 @@
                data-reactid="172">
                 <div class="_25bvT">
                     <div style="padding-bottom:56.25%;" class="_38L6D">
-                        {!! $post->getImage() !!}
+                        {!! $post->resized_image !!}
                     </div>
                 </div>
                 <h2 class="_2DyJ3 _3duUm">{{ $post->title }}</h2>

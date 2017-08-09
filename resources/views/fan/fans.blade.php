@@ -36,7 +36,7 @@
                                     <div class="_25jNX _35OoN">
                                         <div class="N3r_f">
                                             <div class="_38L6D" style="padding-bottom: 100%;">
-                                                {!! $user->getImage() !!}
+                                                {!! $user->resized_image !!}
                                             </div>
                                         </div>
                                     </div>
