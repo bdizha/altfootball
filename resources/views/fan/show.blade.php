@@ -306,11 +306,7 @@
                             data : data,
                             type : 'PATCH',
                             contentType : 'application/json',
-                            processData: false,
-                            dataType: 'json',
-                            success: function(response, textStatus, jqXhr) {
-                                console.log("Responose:");
-                                console.log(response);
+                            success: function() {
                                 this.closeEditPopup();
                                 this.enabled(false);
                             }
