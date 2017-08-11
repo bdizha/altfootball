@@ -35,6 +35,9 @@ class NewsBreatheChelseaJob extends NewsJob
      */
     public function handle()
     {
+
+        echo ":::::: " . $this->domain . " ::::::\n";
+
         $sections = [
             "news",
             "transfer-gossip",

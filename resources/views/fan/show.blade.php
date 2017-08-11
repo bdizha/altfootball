@@ -51,23 +51,25 @@
                                                 d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg></span>
                             <p class="_14d4a" data-bind="text: bio"></p>
                             <a rel="nofollow" target="_blank" class="_30-Mx" data-bind="text: website" href="{{ $fan->website }}"></a>
-                            <div class="_2aOYp">
-                                <button class="b9xa- _8GOLs _1h78h undefined"><span>Follow</span><span class="_3xWuC"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="8" height="8"
-                                                viewBox="0 0 8 8"><path fill="#FFF" fill-rule="evenodd"
-                                                                        d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"></path></svg></span>
-                                </button>
-                                <button class="_32k0z">
-                                    <div class="_32tSU">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 3 17"
-                                             class="_32tSU">
-                                            <g fill="#000" fill-rule="evenodd">
-                                                <path d="M2.2.69a1.15 1.15 0 1 1-2.1.92A1.15 1.15 0 0 1 2.2.7M2.2 7.87a1.15 1.15 0 1 1-2.1.92 1.15 1.15 0 0 1 2.1-.92M2.2 15.04a1.15 1.15 0 1 1-2.1.93 1.15 1.15 0 0 1 2.1-.93"></path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </button>
-                            </div>
+                           <template id="follow-template">
+                               <div class="_2aOYp">
+                                   <button class="b9xa- _8GOLs _1h78h undefined"><span>Follow</span><span class="_3xWuC"><svg
+                                                   xmlns="http://www.w3.org/2000/svg" width="8" height="8"
+                                                   viewBox="0 0 8 8"><path fill="#FFF" fill-rule="evenodd"
+                                                                           d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"></path></svg></span>
+                                   </button>
+                                   <button class="_32k0z">
+                                       <div class="_32tSU">
+                                           <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 3 17"
+                                                class="_32tSU">
+                                               <g fill="#000" fill-rule="evenodd">
+                                                   <path d="M2.2.69a1.15 1.15 0 1 1-2.1.92A1.15 1.15 0 0 1 2.2.7M2.2 7.87a1.15 1.15 0 1 1-2.1.92 1.15 1.15 0 0 1 2.1-.92M2.2 15.04a1.15 1.15 0 1 1-2.1.93 1.15 1.15 0 0 1 2.1-.93"></path>
+                                               </g>
+                                           </svg>
+                                       </div>
+                                   </button>
+                               </div>
+                           </template>
                         </div>
                     </div>
                     <div class="GHC_I">
@@ -336,6 +338,34 @@
             if (viewFanShowModel.website().length > 0) {
                 viewFanShowModel.focusWebsite();
             }
+
+            var followViewModel = function(params) {
+                var self = this;
+                self.requesterId = ko.observable(params.requester_id);
+                self.requestedId = ko.observable(params.requested_id);
+                self.isActive = ko.observable(params.level);
+
+                self.save = function() {
+                    var fan = {
+                        requester_id: self.requesterId(),
+                        requested_id: self.requestedId(),
+                        is_active: self.isActive()
+                    };
+
+                    $.ajax("/fan", {
+                        data: ko.toJSON(comment),
+                        type: "post",
+                        contentType: "application/json",
+                        success: function(comment) {
+                        }
+                    });
+                };
+            };
+
+            ko.components.register('follow', {
+                viewModel: followViewModel,
+                template: { element: 'follow-template' }
+            });
 
             ko.applyBindings(viewFanShowModel, document.getElementById('fan-show-view-template'));
         });

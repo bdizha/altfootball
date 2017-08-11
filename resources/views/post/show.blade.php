@@ -609,18 +609,12 @@
 
                 self.saveComment = function(){
                     var comment = {
-                        user: self.currentUser(),
                         user_id: self.currentUser().id,
                         type_id: self.type_id(),
                         content: self.newCommentText(),
                         image: self.image(),
-                        published_at: 'a sec ago',
                         comments: []
                     };
-
-                    self.fileData({
-                        dataURL: ko.observable()
-                    });
 
                     self.newCommentText('');
 
@@ -657,6 +651,7 @@
                 self.canSubmitReply = ko.computed(function() {
                     return self.replyText().length > 0;
                 });
+
                 self.cancel = function(){
                     var allComments = $('._55ghi');
                     allComments.removeClass('_4c7v3');
@@ -668,13 +663,11 @@
 
                 self.saveReply = function(){
                     var reply = {
-                        user: self.currentUser(),
                         content: self.replyText(),
                         user_id: self.currentUser().id,
                         image: self.image(),
                         type: 'comment',
-                        type_id: self.comment().id,
-                        comments: []
+                        type_id: self.comment().id
                     };
 
                     self.replyText('');
@@ -694,17 +687,6 @@
             ko.components.register('reply-form', {
                 viewModel: replyFormViewModel,
                 template: { element: 'reply-form-template' }
-            });
-
-            var quotedViewModel = function(params) {
-                var self = this;
-
-                self.comment = ko.observable(params.comment);
-            };
-
-            ko.components.register('quoted', {
-                viewModel: quotedViewModel,
-                template: { element: 'quoted-template' }
             });
 
             ko.applyBindings();

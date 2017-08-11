@@ -116,12 +116,14 @@ class Post extends Model
     }
 
 
-    public function getResizedImageAttribute($dimensions = "width=370&height=208")
+    public function getResizedImageAttribute()
     {
+        $dimensions = "width=370&height=208";
         try {
             $image = Redis::get('post:image:' . $this->id);
-            if (empty($image)) {
+            if (!empty($image)) {
                 $image = file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
+
                 Redis::set('post:image:' . $this->id, $image);
             }
             return $image;

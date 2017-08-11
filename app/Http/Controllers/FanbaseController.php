@@ -38,4 +38,17 @@ class FanbaseController extends Controller
             'posts' => $posts
         ]);
     }
+
+    public function create(Request $request)
+    {
+        $data = $request->all();
+
+        if(!empty($data['image'])){
+            $data['image'] = $this->saveImageFile($data['image'], time());
+        }
+        $post = Fanbase::create($data);
+        $post['user'] = $data['user'];
+
+        return json_encode($post->toArray());
+    }
 }

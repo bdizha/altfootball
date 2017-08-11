@@ -26,8 +26,6 @@ class PostController extends Controller
                 ->orderBy('id', 'asc')->take(3)->get();
         }
 
-//        dd($post->comments->toArray());
-
         $post->views += 1;
         $post->save();
 
@@ -42,5 +40,18 @@ class PostController extends Controller
             'fanbases' => $fanbases,
             'trendingPosts' => $trendingPosts
         ]);
+    }
+
+    public function create(Request $request)
+    {
+        $data = $request->all();
+
+        if(!empty($data['image'])){
+            $data['image'] = $this->saveImageFile($data['image'], time());
+        }
+        $post = Post::create($data);
+        $post['user'] = $data['user'];
+
+        return json_encode($post->toArray());
     }
 }

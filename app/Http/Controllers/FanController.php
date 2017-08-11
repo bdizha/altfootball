@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Fanbase;
 use App\Post;
 use App\User;
+use Illuminate\Http\Request;
 
 class FanController extends Controller
 {
@@ -31,6 +32,27 @@ class FanController extends Controller
             'posts' => $posts,
             'fanbases' => $fanbases
         ]);
+    }
+
+    public function create(Request $request)
+    {
+        $data = $request->all();
+        $ids = [$data['requester_id'], $data['requested_id']];
+        
+        $fan = Fan::whereIn('requester_id', $ids)
+            ->where('requested_id', $ids)
+            ->first();
+
+        if(empty($fan->id)){
+            $data['is_active'] = true;
+            $fan::create($data);
+        }
+        else{
+            $fan->is_active = !$fan->is_active;
+            $fan->save();
+        }
+
+        return json_encode($fan->toArray());
     }
 
     public function followers($slug)

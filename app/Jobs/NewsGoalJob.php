@@ -35,6 +35,8 @@ class NewsGoalJob extends NewsJob
     public function handle()
     {
 
+        echo ":::::: " . $this->domain . " ::::::\n";
+
         $client = new Client();
 
         foreach (range(1, 2) as $page) {

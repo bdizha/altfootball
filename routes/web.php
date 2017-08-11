@@ -33,3 +33,6 @@ Route::get('/u/{slug}', 'FanController@show')->name("fan.show");
 Route::get('/u/{slug}/followers', 'FanController@followers')->name("fan.followers");
 Route::get('/u/{slug}/following', 'FanController@followers')->name("fan.following");
 Route::post('/comment', 'CommentController@create')->name("comment.create");
+Route::post('/fan', 'FanController@create')->name("fan.create");
+Route::post('/fanbase', 'FanbaseController@create')->name("fanbase.create");
+Route::post('/post', 'PostController@create')->name("post.create");
