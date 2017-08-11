@@ -31,7 +31,7 @@ Route::get('/fanbases/yours', 'FanbaseController@yours')->name("fanbase.yours");
 Route::get('/t/{slug}', 'TagController@show')->name("tag.show");
 Route::get('/u/{slug}', 'FanController@show')->name("fan.show");
 Route::get('/u/{slug}/followers', 'FanController@followers')->name("fan.followers");
-Route::get('/u/{slug}/following', 'FanController@followers')->name("fan.following");
+Route::get('/u/{slug}/following', 'FanController@following')->name("fan.following");
 Route::post('/comment', 'CommentController@create')->name("comment.create");
 Route::post('/fan', 'FanController@create')->name("fan.create");
 Route::post('/fanbase', 'FanbaseController@create')->name("fanbase.create");

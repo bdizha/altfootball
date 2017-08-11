@@ -16,5 +16,6 @@ class VerifyCsrfToken extends BaseVerifier
         'onboard/store',
         'profile/*',
         'comment',
+        'fan',
     ];
 }

@@ -12,7 +12,7 @@
                 <h2 class="_1UOSn _2TaIJ">Edit Profile</h2>
                 <div></div>
             </div>
-            {!! Form::open(['route' => ['profile.update', $fan->id], 'role' => 'form', 'method' => 'PATCH'] ) !!}
+            {!! Form::open(['route' => ['profile.update', $user->id], 'role' => 'form', 'method' => 'PATCH'] ) !!}
             <div class="_3e1iZ">
                 <label class="vwhZ_">Add your profile picture</label>
                 <div class="_3z2sH">

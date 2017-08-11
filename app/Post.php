@@ -98,7 +98,7 @@ class Post extends Model
     {
         $dimensions = 'width=100&height=100';
         $image = Redis::get('post:image:square:' . $this->id);
-        if (!empty($image)) {
+        if (empty($image)) {
             $data = file_get_contents($this->image);
 
             $fileParts = explode('.', $this->image);
@@ -121,7 +121,7 @@ class Post extends Model
         $dimensions = "width=370&height=208";
         try {
             $image = Redis::get('post:image:' . $this->id);
-            if (!empty($image)) {
+            if (empty($image)) {
                 $image = file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
 
                 Redis::set('post:image:' . $this->id, $image);

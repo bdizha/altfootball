@@ -40,8 +40,6 @@ function adjustHeight(target, reference) {
     }
 }
 
-// Reinitialize the gallery on browser resize.
-var resizeTimer = null;
 $(window).bind('resize', function () {
     applyHeights();
 });
@@ -65,6 +63,40 @@ $(function() {
         decorateElementOnModified: true,
         decorateInputElement: true
     }, true);
+
+    var FanFollowViewModel = function(params) {
+        var self = this;
+
+        self.fan = ko.observable(params.fan);
+
+        self.isActive = ko.observable(Boolean(params.fan.is_active));
+        self.isInactive = ko.observable(!Boolean(params.fan.is_active));
+
+        self.save = function() {
+
+            console.log(self.isActive() + ">>>>");
+            self.isActive(!self.isActive());
+            self.isInactive(!self.isInactive());
+
+            var fan = {
+                requester_id: self.fan().requester_id,
+                requested_id: self.fan().requested_id
+            };
+
+            $.ajax("/fan", {
+                data: ko.toJSON(fan),
+                type: "post",
+                contentType: "application/json",
+                success: function(fan) {
+                }
+            });
+        };
+    };
+
+    ko.components.register('follow', {
+        viewModel: FanFollowViewModel,
+        template: { element: 'follow-template' }
+    });
 });
 
 //# sourceMappingURL=af.js.map

@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Auth;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Redis;
@@ -36,7 +37,7 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name', 'resized_image'];
+    protected $appends = ['name', 'resized_image', 'is_self', 'fan'];
 
     public function getNameAttribute()
     {
@@ -67,6 +68,41 @@ class User extends Authenticatable
         return $this->belongsToMany(Fanbase::class, 'users_fanbases');
     }
 
+    public function requesters()
+    {
+        return $this->hasMany('App\Fan', 'requested_id', 'id');
+    }
+
+    public function requested()
+    {
+        return $this->hasMany('App\Fan', 'requester_id', 'id');
+    }
+
+    public function fans()
+    {
+        return Fan::where('requester_id', $this->id)
+            ->orWhere('requested_id', $this->id)
+            ->get();
+    }
+
+    public function followers()
+    {
+        $userId = $this->id;
+        return User::whereHas('requested', function ($query) use($userId) {
+            $query->where('requested_id', $userId);
+        })
+            ->get();
+    }
+
+    public function following()
+    {
+        $userId = $this->id;
+        return User::whereHas('requesters', function ($query) use($userId) {
+            $query->where('requester_id', $userId);
+        })
+            ->get();
+    }
+
     /**
      * Create a string based on the first and last name of a person.
      */
@@ -81,10 +117,10 @@ class User extends Authenticatable
             $image = Redis::get('fan:image:' . $this->id);
             if (empty($image)) {
 
-                if(empty($this->image)){
+                if (empty($this->image)) {
                     $u = User::where("image", "!=", "")->orderByRaw("RAND()")->first();
 
-                    if(!empty($u->image)){
+                    if (!empty($u->image)) {
                         $this->image = $u->image;
                         $this->save();
                     }
@@ -98,12 +134,43 @@ class User extends Authenticatable
         }
     }
 
+    public function getIsSelfAttribute()
+    {
+        return Auth::guard()->check() ? Auth::user()->id === $this->id : false;
+    }
+
+    public function getFanAttribute()
+    {
+        $user = Auth::user();
+
+        if (Auth::guard()->check() && $this->id != $user->id) {
+            $data = [
+                'requester_id' => $this->id,
+                'requested_id' => $user->id
+            ];
+
+            $ids = [$this->id, $user->id];
+            $fan = Fan::whereIn('requester_id', $ids)
+                ->whereIn('requested_id', $ids)
+                ->first();
+
+            if (empty($fan->id)) {
+                $fan = Fan::create($data);
+            }
+
+            return $fan;
+        }
+
+        return new Fan();
+    }
+
     public function getDomain()
     {
         return str_replace("http://", "", $this->website);
     }
 
-    public function getJson(){
+    public function getJson()
+    {
         return $this->toJson();
     }
 }

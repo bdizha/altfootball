@@ -16,9 +16,10 @@ class AlterFansTable extends Migration
         Schema::dropIfExists('fans');
 
         Schema::create('fans', function (Blueprint $table) {
+            $table->increments('id');
             $table->integer('requester_id')->unsigned();
             $table->integer('requested_id')->unsigned();
-            $table->boolean('is_active')->default(true);
+            $table->boolean('is_active')->default(false);
             $table->timestamps();
 
             $table->foreign('requester_id')

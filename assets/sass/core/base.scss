@@ -328,7 +328,7 @@ button {
     bottom: -8px;
     width: 100%;
     height: 8px;
-    background: #000;
+    background: rgba(0, 8, 39, 0.96);
   }
 }
 
@@ -393,7 +393,7 @@ button {
   color: #fff;
   &:hover {
     background: #fff;
-    color: #000;
+    color: rgba(0, 8, 39, 0.96);
   }
 }
 
@@ -604,7 +604,7 @@ button {
 }
 
 ._1VKWj {
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid rgba(0, 8, 39, 0.96);
   &:last-child {
     border-bottom: 0;
   }
@@ -1156,7 +1156,7 @@ form{
 }
 
 ._1fDUg {
-  background: #000;
+  background: rgba(0, 8, 39, 0.96);
 }
 
 ._13Js3 {
@@ -1264,6 +1264,7 @@ form{
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  margin-top: 14px;
   ._32k0z {
     cursor: pointer;
     width: 20px;
@@ -1513,7 +1514,7 @@ form{
 
 .YRuUa {
   position: absolute;
-  background: #000;
+  background: rgba(0, 8, 39, 0.96);
 }
 
 ._3WIsa {
@@ -2019,7 +2020,7 @@ form{
 
 ._5eW3b {
   position: absolute;
-  background: #000;
+  background: rgba(0, 8, 39, 0.96);
 }
 
 ._1NLPK {
@@ -2037,7 +2038,7 @@ form{
 }
 
 .mD41I img {
-  background: #000;
+  background: rgba(0, 8, 39, 0.96);
 }
 
 ._1sqoT {
@@ -2247,7 +2248,7 @@ form{
   display: flex;
   position: relative;
   &:hover {
-    background: #000;
+    background: rgba(0, 8, 39, 0.96);
     svg > path {
       stroke: #fff;
     }
@@ -2268,7 +2269,7 @@ form{
   &:hover {
     background: #fff;
     svg > path {
-      stroke: #000;
+      stroke: rgba(0, 8, 39, 0.96);
     }
   }
   svg {
@@ -2313,7 +2314,7 @@ form{
   color: rgba(0, 8, 39, 0.5);
   &:hover:enabled {
     background: #fff;
-    color: #000;
+    color: rgba(0, 8, 39, 0.96);
   }
 }
 
@@ -2864,7 +2865,7 @@ form{
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #000;
+  color: rgba(0, 8, 39, 0.96);
 }
 
 @media screen and (max-width: 508px) {
@@ -3851,7 +3852,7 @@ form{
 }
 
 .lOdRy {
-  background-color: #15243F;
+  background-color: #001b36;
 }
 
 ._1XrlP {
@@ -4152,7 +4153,7 @@ form{
 
 ._2Eh0V {
   margin-bottom: 12px;
-  background-color: #15243F;
+  background-color: #001b36;
   &:last-child {
     margin-bottom: 0;
   }
@@ -4213,7 +4214,7 @@ form{
 }
 
 ._175AS {
-  background: url(/images/repeat-logo.png) #14233c;
+  background: url(/images/repeat-logo.png) #021429;
   padding: 22px;
   color: #f8f8f8;
   overflow: hidden;
@@ -4614,7 +4615,7 @@ form{
 }
 
 ._2fax0 {
-  background: #000;
+  background: rgba(0, 8, 39, 0.96);
 }
 
 ._1fEnk {
@@ -4688,7 +4689,7 @@ form{
   cursor: pointer;
   user-select: none;
   &._393Hg {
-    background-color: #000;
+    background-color: rgba(0, 8, 39, 0.96);
   }
   > input {
     display: none;
@@ -4813,7 +4814,7 @@ form{
   margin-left: 0;
   ._1KQuz {
     border: none;
-    background: #15243F;
+    background: #001b36;
   }
   ._12Iv2 {
     display: none;
@@ -5411,7 +5412,7 @@ form{
 }
 
 ._1S3Ei {
-  background: url(/images/repeat-logo.png) #14233c;
+  background: url(/images/repeat-logo.png) #021429;
   cursor: default;
 }
 
@@ -5520,7 +5521,7 @@ form{
 }
 
 ._2azBk {
-  color: #000 !important;
+  color: rgba(0, 8, 39, 0.96) !important;
 }
 
 @media screen and (max-width: 846px) {
@@ -6271,7 +6272,7 @@ form{
 }
 
 .ADq5f {
-  color: #000;
+  color: rgba(0, 8, 39, 0.96);
 }
 
 ._3Cj2a {
@@ -6299,7 +6300,7 @@ form{
   left: 5px;
   width: 10px;
   height: 10px;
-  background: #000;
+  background: rgba(0, 8, 39, 0.96);
 }
 
 ._2crgF {
@@ -6784,14 +6785,14 @@ form{
   display: block;
   background: #fff;
   border: 2px solid rgba(0, 8, 39,.96);
-  color: #000;
+  color: rgba(0, 8, 39, 0.96);
   svg {
     float: none;
     transform: scale(1.2) translateY(0);
     margin-left: 44px;
   }
   path {
-    fill: #000;
+    fill: rgba(0, 8, 39, 0.96);
   }
 }
 
@@ -6975,7 +6976,7 @@ form{
 }
 
 ._2PUq3 {
-  background-color: #15243F;
+  background-color: #001b36;
 }
 
 ._1qO-x {
@@ -8461,7 +8462,7 @@ div._3bqe5 {
   left: -1px;
   width: 92px;
   height: 4px;
-  background-color: #000;
+  background-color: rgba(0, 8, 39, 0.96);
   position: absolute;
 }
 
@@ -9490,7 +9491,7 @@ div._3bqe5 {
     flex: 0 0 40px;
     width: 40px;
     height: 40px;
-    border: 2px solid #000;
+    border: 2px solid rgba(0, 8, 39, 0.96);
     &:after {
       font-size: 14px;
       line-height: 14px;
@@ -10130,7 +10131,7 @@ div._3bqe5 {
   line-height: 22px;
   padding-top: 44px;
   padding-bottom: 28px;
-  border-top: 4px solid #000;
+  border-top: 4px solid rgba(0, 8, 39, 0.96);
 }
 
 .jwlFt {
@@ -10223,7 +10224,6 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 22px;
-  //border-bottom: 1px solid rgba(103, 143, 185, 0.2);
   padding-bottom: 22px;
 }
 
@@ -10265,7 +10265,7 @@ div._3bqe5 {
 
 ._11QMn {
   margin-bottom: 72px;
-  background: url(/images/repeat-logo.png) #14233c;
+  background: url(/images/repeat-logo.png) #021429;
   color: $color_white;
 }
 
@@ -10358,7 +10358,7 @@ div._3bqe5 {
 ._1XEbE {
   display: block;
   position: relative;
-  background-color: #15243F;
+  background-color: #001b36;
   width: 586px;
   margin-left: 12px;
 }
@@ -10403,7 +10403,7 @@ div._3bqe5 {
 }
 
 ._1wjeD {
-  background-color: #15243F;
+  background-color: #001b36;
   padding: 40px 35px;
   padding-bottom: 114px;
 }
@@ -10508,7 +10508,7 @@ div._3bqe5 {
   ._2cP6X {
     width: 100%;
     height: 100px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgba(0, 8, 39, 0.96);
   }
 }
 
@@ -10535,7 +10535,7 @@ div._3bqe5 {
 }
 
 ._1-YRL {
-  background-color: #15243F;
+  background-color: #001b36;
   color: #f8f8f8;
 }
 
@@ -10747,7 +10747,7 @@ div._3bqe5 {
 
 ._2I-QY {
   color: rgba(0, 8, 39,.96);
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 8, 39, 0.96);
 }
 
 .k27yJ {
@@ -10758,7 +10758,7 @@ div._3bqe5 {
 
 ._2q7vJ {
   color: rgba(0, 8, 39,.96);
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 8, 39, 0.96);
 }
 
 ._2SyJe {
@@ -10769,7 +10769,7 @@ div._3bqe5 {
 
 ._3KPJA {
   width: 80px;
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 8, 39, 0.96);
 }
 
 ._2ZI7w {
@@ -11070,7 +11070,7 @@ div._3bqe5 {
   margin-bottom: 14px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: #000;
+  background-color: rgba(0, 8, 39, 0.96);
 }
 
 @media screen and (min-width: 924px) {
@@ -11266,7 +11266,7 @@ div._3bqe5 {
 }
 
 ._1-0JF {
-  background: url(/images/repeat-logo.png) #14233c;
+  background: url(/images/repeat-logo.png) #021429;
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
@@ -11477,7 +11477,7 @@ div._3bqe5 {
 }
 
 .GLLyX {
-  background: url(/images/repeat-logo.png) #14233c;
+  background: url(/images/repeat-logo.png) #021429;
   position: relative;
 }
 
@@ -12545,7 +12545,7 @@ div._3bqe5 {
 }
 
 ._3gymQ g,._3U2Oj g {
-  fill: #000
+  fill: rgba(0, 8, 39, 0.96)
 }
 
 ._1fm2Z {
@@ -12748,7 +12748,7 @@ div._3bqe5 {
   }
   &._36gJx {
     background: #fff;
-    color: #000;
+    color: rgba(0, 8, 39, 0.96);
     ._3VkOf {
       position: absolute;
       top: 248px;
@@ -13053,7 +13053,7 @@ div._3bqe5 {
 }
 
 .GKLAB {
-  background: url(/images/repeat-logo.png) #14233c repeat;
+  background: url(/images/repeat-logo.png) #021429 repeat;
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -13193,7 +13193,6 @@ div._3bqe5 {
   position: static;
   overflow: auto;
   transform: none;
-  background: url(/images/repeat-white-logo.png) rgba(240, 243, 250, 0.5);
   &.active{
     position: absolute;
     overflow: hidden;
@@ -13397,7 +13396,7 @@ div._3bqe5 {
   height: 52px;
   transition: all 0.1s linear;
   &:hover {
-    background: #000;
+    background: rgba(0, 8, 39, 0.96);
     path[data-hover-invert=true] {
       fill: #fff;
     }
@@ -13521,7 +13520,7 @@ div._3bqe5 {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  border: 1px solid #000;
+  border: 1px solid rgba(0, 8, 39, 0.96);
 }
 
 @media screen and (max-width: 508px) {
@@ -13778,7 +13777,7 @@ div._3bqe5 {
   margin-left: auto;
   margin-right: auto;
   ._2LIIc {
-    color: #000;
+    color: rgba(0, 8, 39, 0.96);
   }
   ._1gJri:nth-child(odd) {
     background: #fff;
@@ -14069,7 +14068,7 @@ div._3bqe5 {
 }
 
 ._33vOG ._2LIIc {
-  background: url(/images/repeat-logo.png) #14233c;
+  background: url(/images/repeat-logo.png) #021429;
   color: #fff;
 }
 
@@ -14420,7 +14419,7 @@ div._3bqe5 {
 }
 
 .C116H ._1k78U {
-  background: url(/images/repeat-logo.png) #14233c;
+  background: url(/images/repeat-logo.png) #021429;
   color: #fff;
 }
 
@@ -14746,7 +14745,7 @@ div._3bqe5 {
 
 ._346nx {
   color: rgba(0, 8, 39,.96);
-  border: 2px solid #000;
+  border: 2px solid rgba(0, 8, 39, 0.96);
 }
 
 .l5jFn {
@@ -14798,7 +14797,7 @@ div._3bqe5 {
     width: 14px;
     content: "";
     height: 4px;
-    background: #000;
+    background: rgba(0, 8, 39, 0.96);
   }
 }
 
@@ -14809,7 +14808,7 @@ div._3bqe5 {
   width: 14px;
   content: "";
   height: 4px;
-  background: #000;
+  background: rgba(0, 8, 39, 0.96);
 }
 
 ._1COxF {
@@ -15544,7 +15543,7 @@ div._3bqe5 {
 }
 
 ._3ev6- {
-  background-color: #000;
+  background-color: rgba(0, 8, 39, 0.96);
   svg {
     height: 14px;
     width: 18px;
@@ -16008,7 +16007,7 @@ div._3bqe5 {
 }
 
 ._1dz7N {
-  background-color: #000;
+  background-color: rgba(0, 8, 39, 0.96);
 }
 
 @media screen and (max-width: 846px) {
@@ -16381,7 +16380,7 @@ div._3bqe5 {
 }
 
 .O6y0Q {
-  background-color: #000
+  background-color: rgba(0, 8, 39, 0.96)
 }
 
 .O6y0Q svg {
@@ -16764,7 +16763,7 @@ nav._1R2o8 {
 }
 
 .O6y0Q {
-  background-color: #000;
+  background-color: rgba(0, 8, 39, 0.96);
   svg {
     top: 9px;
   }
@@ -16781,8 +16780,8 @@ nav._1R2o8 {
 ._2q1KC {
   position: relative;
   height: 164px;
-  background: url(/images/virtual.jpg) #0F1B2E;
-  background-size: contain;
+  background: url(/images/repeat-logo.png) #021429;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1158px) {
@@ -16848,7 +16847,7 @@ nav._1R2o8 {
 }
 
 .gld7a {
-  background-color: #000;
+  background-color: rgba(0, 8, 39, 0.96);
 }
 
 ._2F06s {
@@ -17113,7 +17112,7 @@ nav._1R2o8 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background-color: rgba(0, 8, 39, 0.96);
     height: 35px;
     z-index: 2;
   }
@@ -17385,7 +17384,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 664px) {
   ._1xaT_ {
-    color: #000;
+    color: rgba(0, 8, 39, 0.96);
     font-size: 22px;
     line-height: 22px;
     padding-bottom: 0;
@@ -17606,11 +17605,11 @@ nav._1R2o8 {
 }
 
 ._2sG6-, ._3TznZ {
-  border-bottom: 4px solid #000;
+  border-bottom: 4px solid rgba(0, 8, 39, 0.96);
 }
 
 ._2sG6- {
-  color: #000;
+  color: rgba(0, 8, 39, 0.96);
 }
 
 @media screen and (max-width: 664px) {
@@ -17681,7 +17680,7 @@ nav._1R2o8 {
 }
 
 ._1MM_D {
-  background-color: #000;
+  background-color: rgba(0, 8, 39, 0.96);
 }
 
 ._1p_jQ {
@@ -17802,7 +17801,7 @@ nav._1R2o8 {
 }
 
 ._1fDUg {
-  background: #000;
+  background: rgba(0, 8, 39, 0.96);
 }
 
 ._13Js3 {
