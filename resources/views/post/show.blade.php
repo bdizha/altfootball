@@ -14,10 +14,10 @@
         <div class="j-W_D _1iE2V">
             <div class="_1veAI _1iE2V">
                 <div class="_1lNSv _3Vb-u">
-                    <a class="_2kQCw" href="/f/{{ $post->fanbase()->slug }}">
-                        <div class="_1Gyo9 e_0uO" data-initials="{{ $post->fanbase()->initials }}"></div>
+                    <a class="_2kQCw" href="/f/{{ $post->fanbase->slug }}">
+                        <div class="_1Gyo9 e_0uO" data-initials="{{ $post->fanbase->initials }}"></div>
                         <p class="_3FTXM wcqil">
-                            {{ $post->fanbase()->name }}
+                            {{ $post->fanbase->name }}
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                  class="G0duV">
                                 <g fill="none" fill-rule="evenodd">
@@ -49,8 +49,8 @@
                                 <span>
                             posted in <br></span>
                             <a class="_1XNRF"
-                               href="/f/{{ $post->fanbase()->slug }}">
-                                {{ $post->fanbase()->name }}
+                               href="/f/{{ $post->fanbase->slug }}">
+                                {{ $post->fanbase->name }}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                      class="_1z7Hy">
                                     <g fill="none" fill-rule="evenodd">
@@ -104,7 +104,7 @@
                 </div>
                 <div class="_1Xbrb _9fE1R NasRD">
                     <div class="_1QuY4">
-                        <h2>LIKE {{ $post->fanbase()->name }}?</h2></div>
+                        <h2>LIKE {{ $post->fanbase->name }}?</h2></div>
                     <div class="_2KK_J _1yV5F _1MC-v _1h78h">
                         JOIN ALTFOOTBALL
                     </div>
@@ -121,8 +121,8 @@
             <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
                 <div>
                     <div class="undefined _2-_Re _378qt">
-                        <a class="_23nwS" href="/f/{{ $post->fanbase()->slug }}">
-                            <div class="_1Gyo9 Ofajv" data-initials="{{ $post->fanbase()->initials }}"></div>
+                        <a class="_23nwS" href="/f/{{ $post->fanbase->slug }}">
+                            <div class="_1Gyo9 Ofajv" data-initials="{{ $post->fanbase->initials }}"></div>
                         </a>
                         <h2 class="_3mNJn">{{ $post->title }}</h2>
                         <div class="_mHwf _29Okg">
@@ -219,8 +219,8 @@
                                                         {{ $post->user->nickname }}
                                                     </a>
                                                     <a class="O0stn _38OvA"
-                                                       href="/f/{{ $post->fanbase()->slug }}">
-                                                        {{ $post->fanbase()->name }}
+                                                       href="/f/{{ $post->fanbase->slug }}">
+                                                        {{ $post->fanbase->name }}
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                              viewBox="0 0 18 18" class="_1z7Hy">
                                                             <g fill="none" fill-rule="evenodd">
@@ -244,7 +244,7 @@
                             <div>
                                 <h2>Never miss a post</h2></div>
                             <div class="_3OD4J _1yV5F _1MC-v _1h78h">
-                                Join {{  $post->fanbase()->name }}
+                                Join {{  $post->fanbase->name }}
                             </div>
                         </div>
                     </div>
@@ -328,8 +328,8 @@
                                         </svg>
                                     </p>
                                     <div class="_1HPk2">
-                                        <a class="_25LcG" href="/f/{{ $post->fanbase()->slug }}">
-                                            {{ $post->fanbase()->name }}
+                                        <a class="_25LcG" href="/f/{{ $post->fanbase->slug }}">
+                                            {{ $post->fanbase->name }}
                                         </a>
                                     </div>
                                 </div>

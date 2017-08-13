@@ -21,7 +21,7 @@ class Comment extends Model
         'image'
     ];
 
-    protected $appends = ['comments', 'published_at', 'has_dribble', 'dribbles_count'];
+    protected $appends = ['comments', 'published_at', 'has_dribble', 'dribbles_count', 'html_content'];
 
     public function user()
     {
@@ -47,6 +47,11 @@ class Comment extends Model
     {
         return Dribble::where('type_id', $this->id)
             ->where('type', 'comment')->get()->count();
+    }
+
+    public function getHtmlContentAttribute()
+    {
+        return nl2br(str_replace("\n\n", "\n", $this->content));
     }
 
 

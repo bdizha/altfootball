@@ -22,6 +22,9 @@ class DribbleController extends Controller
         if(empty($dribble->id)){
             $dribble = Dribble::create($data);
         }
+        else{
+            $dribble->delete();
+        }
 
         return json_encode($dribble->toArray());
     }

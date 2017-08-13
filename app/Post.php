@@ -29,7 +29,7 @@ class Post extends Model
         'slug'
     ];
 
-    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'resized_image', 'square_image', 'has_dribble'];
+    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'resized_image', 'square_image', 'has_dribble', 'fanbase'];
 
     public function getPublishedAtAttribute()
     {
@@ -72,14 +72,12 @@ class Post extends Model
 
     public function getLimitedCommentsAttribute()
     {
-        $comments = Comment::where("type_id", $this->id)
+        return Comment::where("type_id", $this->id)
             ->orderBy('created_at', 'DESC')
             ->with('user')
             ->where('type', 'post')
             ->take(2)
             ->get();
-
-        return json_encode($comments->toArray(), JSON_HEX_APOS);
     }
 
     public function getDribblesAttribute()
@@ -114,10 +112,12 @@ class Post extends Model
     /**
      * The fanbase to which the post belongs
      */
-    public function fanbase()
+    public function getFanbaseAttribute()
     {
-        foreach ($this->fanbases as $fanbase)
+        foreach ($this->fanbases as $fanbase) {
             return $fanbase;
+        }
+        return new Fanbase();
     }
 
     public function getHtmlContent()
@@ -128,6 +128,7 @@ class Post extends Model
         ];
 
         $content = str_replace($searches, '', $this->content);
+        $content = nl2br($content);
         return str_replace("height=", "", str_replace("width=", "", $content));
     }
 

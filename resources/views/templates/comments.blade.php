@@ -58,7 +58,7 @@
             </div>
             <p class="_2OqId">
                 <span>
-                    <span data-bind="text: content"></span>
+                    <span data-bind="html: html_content"></span>
                 </span>
             </p>
             <div class="W6jQs" data-bind="visible: image">

@@ -10,6 +10,26 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    /**
+     * Create a new user instance after a valid registration.
+     *
+     * @param  array $data
+     * @return User
+     */
+    protected function index(Request $request)
+    {
+
+        $data = $request->all();
+
+        $posts = Post::orderBy('created_at', 'desc')
+            ->with('user')
+            ->offset(12 + ($data['page'] * 6))
+            ->limit(6)
+            ->get();
+
+        return json_encode($posts->toArray(), JSON_HEX_APOS);
+    }
+
     public function show(Request $request, $slug)
     {
         $fanbases = [];
@@ -21,8 +41,8 @@ class PostController extends Controller
         $siblingPosts = Post::where("id", "<", $post->id)
             ->orderBy("created_at", "DESC")->take(2)->get();
 
-        if ($post->fanbase()) {
-            $fanbases = Fanbase::where("id", "!=", $post->fanbase()->id)
+        if ($post->fanbase) {
+            $fanbases = Fanbase::where("id", "!=", $post->fanbase->id)
                 ->orderBy('id', 'asc')->take(3)->get();
         }
 

@@ -1,4 +1,3 @@
-<?php $fanbase = $post->fanbase() ?>
 <div class="p32Iu">
     <div class="_3bxb0">
         <div class="_2WwnI">
@@ -37,8 +36,8 @@
                            <span>
                                posted in <br>
                            </span>
-                           <a class="_1XNRF" href="/f/{{ $fanbase->slug }}">
-                             {{ $fanbase->name }}
+                           <a class="_1XNRF" href="/f/{{ $post->fanbase->slug }}">
+                             {{ $post->fanbase->name }}
                            </a>
                         </span>
                      </span>
