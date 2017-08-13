@@ -3199,7 +3199,7 @@ form{
 }
 
 ._1RYG9 {
-  background: url(/images/repeat-white-logo.png) rgba(240, 243, 250, 0.5);
+  background: url(/images/repeat-logo.png) rgba(240, 243, 250, 0.5);
   padding-top: 35px;
   padding-bottom: 64px;
   min-height: 100vh;
@@ -3268,6 +3268,11 @@ form{
   background: $color_white;
   box-shadow: 0 2px 6px 0 rgba(103, 143, 185, 0.2), inset 0 -1px 0 0 rgba(103, 143, 185, 0.2);
   overflow: hidden;
+  .gEjmr{
+    padding-bottom: 0;
+    box-shadow: none;
+    border-top: 1px solid rgba(103, 143, 185, 0.2);
+  }
 }
 
 ._1sUHj {
@@ -3451,7 +3456,7 @@ form{
 
 ._35O2p {
   border-top: 1px solid rgba(103, 143, 185, 0.2);
-  padding: 18px 26px;
+  padding: 18px 22px;
   margin-top: 18px;
 }
 
@@ -7406,6 +7411,10 @@ form{
   padding: 22px;
   margin-bottom: 22px;
   box-shadow: 0 1px 0.5px rgba(103, 143, 185, 0.2);
+  ._35FcZ,
+  ._3HP-Q{
+    display: none;
+  }
   &:last-child {
     border-bottom: 0;
   }
@@ -7523,8 +7532,8 @@ form{
     top: 0;
     cursor: pointer;
     box-sizing: border-box;
-    width: 18px;
-    height: 18px;
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -7584,11 +7593,8 @@ form{
   top: 22px;
   cursor: pointer;
   box-sizing: border-box;
-  width: 18px;
-  height: 18px;
-  svg {
-    transform: scale(1.2);
-  }
+  width: 22px;
+  height: 22px;
 }
 
 @media screen and (max-width: 508px) {
@@ -8940,6 +8946,11 @@ div._3bqe5 {
   }
   a:first-child, button:first-child, div:first-child {
     margin-left: 0;
+  }
+  dribbles{
+    button:first-child{
+      margin-left: 14px;
+    }
   }
 }
 

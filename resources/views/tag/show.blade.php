@@ -52,7 +52,7 @@
                                     <mask id="b" fill="#fff">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a"></use>
                                     </mask>
-                                    <path fill="#000"
+                                    <path fill="#00AFFF"
                                           d="M9.56 16.72L1.81 8.97 9.5 1.28A.75.75 0 1 0 8.44.22L.22 8.44c-.3.3-.3.77 0 1.06l8.28 8.28a.75.75 0 0 0 1.06-1.06"
                                           mask="url(#b)"></path>
                                 </g>
@@ -69,7 +69,7 @@
                                     <mask id="b" fill="#fff">
                                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a"></use>
                                     </mask>
-                                    <path fill="#000"
+                                    <path fill="#00AFFF"
                                           d="M9.56 16.72L1.81 8.97 9.5 1.28A.75.75 0 1 0 8.44.22L.22 8.44c-.3.3-.3.77 0 1.06l8.28 8.28a.75.75 0 0 0 1.06-1.06"
                                           mask="url(#b)"></path>
                                 </g>

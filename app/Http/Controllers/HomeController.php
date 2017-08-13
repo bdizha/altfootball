@@ -8,6 +8,7 @@ use App\Tag;
 use App\User;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -40,7 +41,14 @@ class HomeController extends Controller
             ->take(4)
             ->get();
 
+        if (Auth::check()) {
+            $user = Auth::user();
+        } else {
+            $user = new User();
+        }
+
         return view('welcome', [
+            'user' => json_encode($user->toArray(), JSON_HEX_APOS),
             'posts' => $posts,
             'fanbases' => $fanbases,
             'popularPosts' => $popularPosts,

@@ -33,8 +33,7 @@ class WelcomeController extends Controller
         $query = Fanbase::orderBy("views", "DESC");
 
         $user = Auth::user();
-
-
+        
         if ($route == 'recommended') {
             $fanbases = $query->take(10)->get();
         } else {

@@ -6,7 +6,6 @@ use App\Fan;
 use App\Fanbase;
 use App\Post;
 use App\User;
-use Auth;
 use Illuminate\Http\Request;
 
 class FanController extends Controller

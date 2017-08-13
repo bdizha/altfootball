@@ -14,7 +14,6 @@ class AlterAddCommentIdOnCommentsTable extends Migration
     public function up()
     {
         Schema::table('comments', function (Blueprint $table) {
-            $table->integer('parent_id')->nullable();
         });
     }
 

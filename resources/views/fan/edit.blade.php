@@ -4,7 +4,7 @@
             <div class="_3C1Cx">
                 <button class="_1ozur" data-bind="click: closeEditPopup">
                     <svg width="18" height="18" viewBox="0 0 18 18">
-                        <g stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                        <g stroke="#00AFFF" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
                             <path d="M2.368 2.282L16.51 16.425M16.218 2.282L2.075 16.425"></path>
                         </g>
                     </svg>
@@ -21,7 +21,7 @@
                             <div class="_21web">
                                 <div class="_2pUFC _3Xaa0 faM3p"><img alt="" role="presentation" src="https://drivetribe.imgix.net/IoJw-6Y0TwiDcrnGGL2679?w=700&amp;h=704&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges" class="_3-rkf _3Xaa0 b00q8" width="350" height="352"></div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" class="_2vslu">
-                                    <g fill="none" fill-rule="evenodd" stroke="#000">
+                                    <g fill="none" fill-rule="evenodd" stroke="#00AFFF">
                                         <path stroke-width="4" d="M26.95 52c13.77 0 24.94-11.2 24.94-25S40.72 2 26.95 2C13.17 2 2 13.2 2 27s11.17 25 24.95 25z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M26.96 17.46l-.03 18.98m-9.47-9.48l18.97-.02"></path>
                                     </g>

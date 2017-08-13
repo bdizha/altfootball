@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    @include('fan.templates.follow')
+    @include('templates.follow')
 @endsection
 
 @section('js')

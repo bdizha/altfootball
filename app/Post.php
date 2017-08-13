@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Redis;
 use MartinBean\Database\Eloquent\Sluggable;
+use Auth;
 
 class Post extends Model
 {
@@ -28,7 +29,7 @@ class Post extends Model
         'slug'
     ];
 
-    protected $appends = ['comments', 'published_at', 'resized_image', 'square_image'];
+    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'resized_image', 'square_image', 'has_dribble'];
 
     public function getPublishedAtAttribute()
     {
@@ -45,9 +46,45 @@ class Post extends Model
         return $this->title;
     }
 
+    public function getHasDribbleAttribute()
+    {
+        if (Auth::check()) {
+            $user = Auth::user();
+
+            $dribble = Dribble::where('type_id', $this->id)
+                ->where('user_id', $user->id)
+                ->where('type', 'post')->first();
+
+            return !empty($dribble);
+        } else {
+            return false;
+        }
+    }
+
     public function getCommentsAttribute()
     {
         return Comment::where("type_id", $this->id)
+            ->orderBy('created_at', 'DESC')
+            ->with('user')
+            ->where('type', 'post')
+            ->get();
+    }
+
+    public function getLimitedCommentsAttribute()
+    {
+        $comments = Comment::where("type_id", $this->id)
+            ->orderBy('created_at', 'DESC')
+            ->with('user')
+            ->where('type', 'post')
+            ->take(2)
+            ->get();
+
+        return json_encode($comments->toArray(), JSON_HEX_APOS);
+    }
+
+    public function getDribblesAttribute()
+    {
+        return Dribble::where("type_id", $this->id)
             ->orderBy('created_at', 'DESC')
             ->with('user')
             ->where('type', 'post')
@@ -137,11 +174,11 @@ class Post extends Model
 
         preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getResizedImageAttribute(), $imageParts, PREG_SET_ORDER);
 
-        if(!empty($imageParts[3][2])){
+        if (!empty($imageParts[3][2])) {
             $imageParts = explode(" ", $imageParts[3][2]);
         }
 
-        if(!empty($imageParts[0])){
+        if (!empty($imageParts[0])) {
             $image = $imageParts[0];
         }
 

@@ -36,3 +36,4 @@ Route::post('/comment', 'CommentController@create')->name("comment.create");
 Route::post('/fan', 'FanController@create')->name("fan.create");
 Route::post('/fanbase', 'FanbaseController@create')->name("fanbase.create");
 Route::post('/post', 'PostController@create')->name("post.create");
+Route::post('/dribble', 'DribbleController@create')->name("dribble.create");

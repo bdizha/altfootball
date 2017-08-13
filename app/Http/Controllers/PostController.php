@@ -21,7 +21,7 @@ class PostController extends Controller
         $siblingPosts = Post::where("id", "<", $post->id)
             ->orderBy("created_at", "DESC")->take(2)->get();
 
-        if($post->fanbase()) {
+        if ($post->fanbase()) {
             $fanbases = Fanbase::where("id", "!=", $post->fanbase()->id)
                 ->orderBy('id', 'asc')->take(3)->get();
         }
@@ -31,9 +31,16 @@ class PostController extends Controller
 
         $url = $request->fullUrl();
 
+
+        if (Auth::check()) {
+            $user = Auth::user();
+        } else {
+            $user = new User();
+        }
+
         return view('post.show', [
             'comments' => json_encode($post->comments->toArray(), JSON_HEX_APOS),
-            'user' => json_encode(Auth::user()->toArray(), JSON_HEX_APOS),
+            'user' => json_encode($user->toArray(), JSON_HEX_APOS),
             'post' => $post,
             'url' => $url,
             'siblingPosts' => $siblingPosts,
@@ -46,7 +53,7 @@ class PostController extends Controller
     {
         $data = $request->all();
 
-        if(!empty($data['image'])){
+        if (!empty($data['image'])) {
             $data['image'] = $this->saveImageFile($data['image'], time());
         }
         $post = Post::create($data);
