@@ -255,3 +255,70 @@
         </div>
     </div>
 @endsection
+
+@section('js')
+    <script type="text/javascript">
+        $(function() {
+            function Fanbase(data) {
+                this.id = ko.observable(data.id);
+            }
+
+            function FanbaseListViewModel() {
+                var data = {!! $fanbases->toJson() !!};
+
+                var self = this;
+                self.data = ko.observableArray(data);
+                self.selected = ko.observableArray([]);
+                self.fanbases = ko.computed(function() {
+                    var array = ko.observableArray([]);
+
+                    return ko.utils.arrayFilter(self.data(), function(fanbase) {
+                        array.push(new Fanbase(fanbase));
+                        return true;
+                    });
+                });
+                self.showJoinPopup = ko.observable(false);
+                self.selectedAll = ko.observable(false);
+                self.selectOne = function(fanbase) {
+                    if(self.selected.indexOf(fanbase.id) > -1){
+                        self.selected.remove(fanbase.id);
+                    }
+                    else{
+                        self.selected.push(fanbase.id);
+                    }
+                };
+                self.selectAll = function() {
+                    if(self.selectedAll()){
+                        ko.utils.arrayFilter(self.data(), function(fanbase) {
+                            if(self.selected.indexOf(fanbase.id) > -1){
+                                self.selected.remove(fanbase.id);
+                            }
+                            return true;
+                        });
+                        self.selectedAll(false);
+                    }
+                    else{
+                        ko.utils.arrayFilter(self.data(), function(fanbase) {
+                            self.selected.push(fanbase.id);
+                            return true;
+                        });
+                        self.selectedAll(true);
+                    }
+                };
+                self.submit = function(){
+                    if(self.selected().length === 0){
+                        self.showJoinPopup(true);
+                        return false;
+                    }
+                    return true;
+                };
+                self.ok = function(){
+                    self.showJoinPopup(false);
+                }
+            }
+
+            ko.applyBindings(FanbaseListViewModel, document.getElementById('profile-onboard-view-template'));
+        });
+
+    </script>
+@endsection

@@ -1,16 +1,15 @@
-@extends('layouts.fan', ['view' => 'show', 'id' => 'fan-show-view-template'])
+@extends('layouts.fan', ['view' => 'show'])
 
 @section('title', $user->name)
 
 @section('content')
     <div class="">
         <div>
-            <!-- react-empty: 4440 -->
             <div class="_2KNH4">
                 <div class="_1jbho">
                     <div class="Cu7qw">
                         <div class="_1KeJ_">
-                            <button class="_32k0z" data-bind="click: openSettingsPopup">
+                            <button class="_32k0z" data-bind="click: openSettingsForm">
                                 <div class="_13Js3">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          class="_13Js3">
@@ -34,7 +33,7 @@
                         </div>
                         <div class="_1Wugc undefined">
                             <span class="_2MwKG">
-                                <div data-bind="text: name()"></div>
+                                <div>{{ $user->name }}</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                      class="_1z7Hy _2JeVL"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF"
                                                                                                     d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
@@ -49,9 +48,8 @@
                                                                                   d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
                                                 fill="#FFF"
                                                 d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg></span>
-                            <p class="_14d4a" data-bind="text: bio"></p>
-                            <a rel="nofollow" target="_blank" class="_30-Mx" data-bind="text: website"
-                               href="{{ $user->website }}"></a>
+                            <p class="_14d4a">{{ $user->bio }}</p>
+                            <a rel="nofollow" target="_blank" class="_30-Mx" href="{{ $user->website }}"></a>
                             @if(!$user->is_self)
                                 <follow params='fan: {!! $user->fan->toJson()  !!}'></follow>
                             @endif
@@ -102,6 +100,12 @@
                                 <span class="_2aiW-">({{ $user->fanbases->count() }})</span>
                             </span>
                         </a>
+                        <button class="_2EVp5" data-bind="click: openFanbaseForm">
+                            Create a tribe
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                                <path fill="#FFF" fill-rule="evenodd" d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"></path>
+                            </svg>
+                        </button>
                     </div>
                     <div class="Gp5Eg _2QjgM">
                         <div class="_3h6Wn">
@@ -188,158 +192,15 @@
             </div>
         </div>
     </div>
+    <fanbase-form></fanbase-form>
     @include('templates.follow')
+    @include('fanbase.templates.form')
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(function () {
-
-            var data = {!! $user->toJson() !!};
-
-            var viewFanShowModel = {
-                firstName: ko.observable(data.first_name ? data.first_name : '').extend({
-                    required: {
-                        message: 'First name is required.'
-                    }
-                }),
-                lastName: ko.observable(data.last_name ? data.last_name : '').extend({
-                    required: {
-                        message: 'Last name is required.'
-                    }
-                }),
-                name: function () {
-                    return this.firstName() + " " + this.lastName();
-                },
-                id: ko.observable(data.id ? data.id : ''),
-                bio: ko.observable(data.bio ? data.bio : ''),
-                website: ko.observable(data.website ? data.website : ''),
-                canProfileEdit: ko.observable(false),
-                focusedFirstName: ko.observable(false),
-                focusedLastName: ko.observable(false),
-                focusedBio: ko.observable(false),
-                focusedWebsite: ko.observable(false),
-                showSettingsPopup: ko.observable(false),
-                showEditPopup: ko.observable(false),
-                enabled: ko.observable(true),
-                canSave: function () {
-                    return viewFanShowModel.errors().length === 0;
-                },
-                focusFirstName: function () {
-                    this.focusedFirstName(true);
-                },
-                focusLastName: function () {
-                    this.focusedLastName(true);
-                },
-                focusBio: function () {
-                    this.focusedBio(true);
-                },
-                focusWebsite: function () {
-                    this.focusedWebsite(true);
-                },
-                blurFirstName: function () {
-                    if (this.firstName().length === 0) {
-                        this.focusedFirstName(false);
-                    }
-                    this.toggleErrors();
-                    this.showAllMessages();
-                },
-                blurLastName: function () {
-                    if (this.lastName().length === 0) {
-                        this.focusedLastName(false);
-                    }
-                    this.toggleErrors();
-                    this.showAllMessages();
-                },
-                blurBio: function () {
-                    if (this.bio().length === 0) {
-                        this.focusedBio(false);
-                    }
-                },
-                blurWebsite: function () {
-                    if (this.website().length === 0) {
-                        this.focusedWebsite(false);
-                    }
-                },
-                openSettingsPopup: function () {
-                    this.showSettingsPopup(!this.showSettingsPopup());
-                },
-                closeSettingsPopup: function () {
-                    this.showSettingsPopup(false);
-                },
-                openEditPopup: function () {
-                    this.showSettingsPopup(false);
-                    this.showEditPopup(!this.showEditPopup());
-                },
-                closeEditPopup: function () {
-                    this.showEditPopup(false);
-                },
-                showAllMessages: function () {
-                    viewFanShowModel.errors.showAllMessages();
-                },
-                toggleErrors: function () {
-                    $("._2Kdch").each(function () {
-                        var $this = $(this);
-
-                        if ($this.find('span._1u7op').is(':visible')) {
-                            $this.addClass('p5bDW');
-                        }
-                        else {
-                            $this.removeClass('p5bDW');
-                        }
-                    });
-                },
-                submit: function () {
-                    viewFanShowModel.errors.showAllMessages();
-
-                    if (this.canSave()) {
-                        this.enabled(true);
-
-                        var data = JSON.stringify(
-                            {
-                                first_name: this.firstName(),
-                                last_name: this.lastName(),
-                                bio: this.bio(),
-                                website: this.website(),
-                                _method: "PATCH"
-                            });
-
-                        $.ajax({
-                            url: "/profile/" + this.id(),
-                            data: data,
-                            type: 'PATCH',
-                            contentType: 'application/json',
-                            success: function () {
-                                this.closeEditPopup();
-                                this.enabled(false);
-                            }
-                        });
-                    }
-                }
-            };
-
-            viewFanShowModel.errors = ko.validation.group(viewFanShowModel);
-
-            if (viewFanShowModel.firstName().length > 0) {
-                viewFanShowModel.focusFirstName();
-                viewFanShowModel.blurFirstName();
-            }
-
-            if (viewFanShowModel.lastName().length > 0) {
-                viewFanShowModel.focusLastName();
-                viewFanShowModel.blurLastName();
-            }
-
-            if (viewFanShowModel.bio().length > 0) {
-                viewFanShowModel.focusBio();
-            }
-
-            if (viewFanShowModel.website().length > 0) {
-                viewFanShowModel.focusWebsite();
-            }
-
-            ko.applyBindings(viewFanShowModel, document.getElementById('fan-show-view-template'));
+            window.settings = {!! $user->toJson() !!};
         });
-
     </script>
 @endsection

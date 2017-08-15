@@ -18,14 +18,22 @@ class PostController extends Controller
      */
     protected function index(Request $request)
     {
-
         $data = $request->all();
 
-        $posts = Post::orderBy('created_at', 'desc')
+        $query = Post::with('user')
+            ->orderBy('posts.created_at', 'desc')
             ->with('user')
-            ->offset(12 + ($data['page'] * 6))
-            ->limit(6)
-            ->get();
+            ->offset(12 + ($data['page'] * 2))
+            ->limit(2);
+
+        if(!empty($data['fanbase_id'])){
+            $posts = $query->whereHas('fanbases', function ($query) use ($data) {
+                $query->where('fanbases.id', $data['fanbase_id']);
+            })->get();
+        }
+        else{
+            $posts = $query->get();
+        }
 
         return json_encode($posts->toArray(), JSON_HEX_APOS);
     }

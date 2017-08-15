@@ -30,12 +30,13 @@ class FanbaseController extends Controller
             $query->where('fanbases.id', $fanbase->id);
         })
             ->orderBy("posts.created_at", "DESC")
-            ->take(24)
+            ->take(12)
             ->get();
 
         return view('fanbase.show', [
             'fanbase' => $fanbase,
-            'posts' => $posts
+            'posts' => $posts,
+            'user' => $this->getUserArray()
         ]);
     }
 

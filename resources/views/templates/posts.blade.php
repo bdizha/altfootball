@@ -32,7 +32,7 @@
                             <p class="_2B25b">
                                 <span class="_2jvdf" data-bind="text: published_at"></span>
                             </p>
-                            <p class="TATrW" data-bind="text: views"></p>
+                            <p class="TATrW" data-bind="text: views + ' views'"></p>
                         </div>
                     </div>
                     <div class="r9rA5">

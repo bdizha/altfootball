@@ -410,6 +410,7 @@
                                         @include('post.item')
                                     @endif
                                 @endforeach
+                                <posts params='page: 0, fanbase: {{ $fanbase->id }}'></posts>
                             </div>
                             <div class="_3gFQj _3LtPT">
                                 @foreach($posts as $k => $post)
@@ -417,6 +418,7 @@
                                         @include('post.item')
                                     @endif
                                 @endforeach
+                                <posts params='page: 1, fanbase: {{ $fanbase->id }}'></posts>
                             </div>
                         </div>
                         <div class="_2L2jX"></div>
@@ -428,4 +430,13 @@
     @include('templates.dribble')
     @include('templates.comments')
     @include('templates.posts')
+@endsection
+
+@section('js')
+    <script type="text/javascript">
+        $(function () {
+            window.currentUser = {!! $user !!};
+            ko.applyBindings();
+        });
+    </script>
 @endsection

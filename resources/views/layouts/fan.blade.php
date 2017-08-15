@@ -38,11 +38,11 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
 <div id="root">
-    <div id="{{ $id }}">
+    <div>
         <div>
             <div>
-                <div class="_1A3CD" data-bind="css: { active: showSettingsPopup() || showEditPopup() }">
-                    <div class="_1V79j" data-bind="click: closeSettingsPopup, css: { active: showSettingsPopup() || showEditPopup() }"></div>
+                <div class="_1A3CD" data-bind="css: { active: showSettingsForm() || showUserForm() || showFanbaseForm() }">
+                    <div class="_1V79j" data-bind="click: closeSettingsForm, css: { active: showSettingsForm() || showUserForm() || showFanbaseForm() }"></div>
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
                             <div class="_2H55B"><a class="" href="/">
@@ -114,15 +114,14 @@
                         @yield('content')
                     </div>
                 </div>
-                @include('fan.edit')
                 @if(!empty($view) && $view == 'show')
-                    <div class="_1L5ou" data-bind="css: { active: showSettingsPopup}">
+                    <div class="_1L5ou" data-bind="css: { active: showSettingsForm}">
                         <div>
                             <div class="_1rglo"></div>
                             <div>
-                                <div class="_1zDR7" data-bind="css: { active: showSettingsPopup}">
+                                <div class="_1zDR7" data-bind="css: { active: showSettingsForm}">
                                     <div class="_3rM3S">
-                                        <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="click: openEditPopup">
+                                        <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="click: openUserForm">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bWSPJ">
                                                 <g fill="none" fill-rule="evenodd" stroke="#00AFFF" stroke-linecap="round" stroke-linejoin="round">
                                                     <path stroke-width="1.5" d="M5.65 9.07l-.58 3.78 3.78-.58 8.32-8.32-3.2-3.2-1.37 1.37z"></path>
