@@ -385,6 +385,7 @@
 @section('js')
     <script type="text/javascript">
         $(function () {
+            window.currentUser = {!! $user !!};
             ko.applyBindings();
         });
 

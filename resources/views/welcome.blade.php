@@ -186,43 +186,7 @@
 @section('js')
     <script type="text/javascript">
         $(function () {
-
-            var PostsViewModel = function(params) {
-                var self = this;
-
-                self.posts = ko.observableArray([]);
-                self.page = ko.observable(params.page);
-
-                self.fetchPosts = function() {
-
-                    console.log("loading");
-                    var params = {
-                        page: self.page()
-                    };
-
-                    $.ajax("/posts", {
-                        data: params,
-                        type: "get",
-                        contentType: "application/json",
-                        success: function(response) {
-                            console.log("New posts:");
-
-                            var posts = ko.utils.parseJson(response);
-                            ko.utils.arrayForEach(posts, function(post) {
-                                self.posts.push(post);
-                            });
-
-                            self.page(self.page() + 2);
-                        }
-                    });
-                };
-            };
-
-            ko.components.register('posts', {
-                viewModel: PostsViewModel,
-                template: { element: 'posts-template' }
-            });
-
+            window.currentUser = {!! $user !!};
             ko.applyBindings();
         });
     </script>

@@ -6,6 +6,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Auth;
 
 class Controller extends BaseController
 {
@@ -33,5 +34,22 @@ class Controller extends BaseController
         file_put_contents($fileOutput, base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $base64String)));
 
         return url('/') . $filePart;
+    }
+
+    protected function getUserArray(){
+        if (Auth::check()) {
+            $user = Auth::user();
+        } else {
+            $user = new User();
+        }
+
+        $userArray = [
+            'id' => $user->id,
+            'name' => $user->name,
+            'image' => $user->image,
+            'slug' => $user->slug
+        ];
+
+        return json_encode($userArray, JSON_HEX_APOS);
     }
 }

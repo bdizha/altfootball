@@ -425,4 +425,7 @@
             </div>
         </div>
     </div>
+    @include('templates.dribble')
+    @include('templates.comments')
+    @include('templates.posts')
 @endsection

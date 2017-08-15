@@ -51,21 +51,14 @@ class PostController extends Controller
 
         $url = $request->fullUrl();
 
-
-        if (Auth::check()) {
-            $user = Auth::user();
-        } else {
-            $user = new User();
-        }
-
         return view('post.show', [
             'comments' => json_encode($post->comments->toArray(), JSON_HEX_APOS),
-            'user' => json_encode($user->toArray(), JSON_HEX_APOS),
             'post' => $post,
             'url' => $url,
             'siblingPosts' => $siblingPosts,
             'fanbases' => $fanbases,
-            'trendingPosts' => $trendingPosts
+            'trendingPosts' => $trendingPosts,
+            'user' => $this->getUserArray()
         ]);
     }
 

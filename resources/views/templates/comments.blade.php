@@ -78,7 +78,7 @@
                 </div>
             </div>
             <div class="_55ghi">
-                <reply-form params='comment: $data, user: $parent.user, callback: $parent.update'></reply-form>
+                <reply-form params='comment: $data, callback: $parent.update'></reply-form>
             </div>
             <div data-bind="if: comments.length > 0">
                 <comments params='comments: comments, type_id: comments.id, level: 1, root: $root'></comments>

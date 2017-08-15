@@ -124,7 +124,9 @@ class Post extends Model
     {
         $searches = [
             '<p><inline style="background-color: initial; font-size: 1em;"><br></inline></p>',
-            '<p><span style="background-color: initial; font-size: 1em;"><br></span></p>'
+            '<p><span style="background-color: initial; font-size: 1em;"><br></span></p>',
+            '<p><i class="wrapper" contenteditable="false"></i>
+</p>'
         ];
 
         $content = str_replace($searches, '', $this->content);

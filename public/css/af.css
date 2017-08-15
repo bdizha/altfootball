@@ -3832,7 +3832,7 @@ form._2rf1 ._1u7op {
 }
 
 ._2DyJ3 {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 22px;
 }
 
@@ -3971,7 +3971,6 @@ form._2rf1 ._1u7op {
   font-weight: 700;
   font-size: 14px;
   padding-top: 14px;
-  padding-bottom: 18px;
   line-height: 18px;
 }
 
@@ -8041,9 +8040,9 @@ form._2rf1 ._1u7op {
   position: relative;
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
   background: #FFFFFF;
-  padding: 22px;
   margin-bottom: 22px;
-  box-shadow: 0 1px 0.5px rgba(103, 143, 185, 0.2);
+  border-bottom: solid 1px rgba(103, 143, 185, 0.2);
+  padding-bottom: 22px;
 }
 
 .gEjmr ._35FcZ,
@@ -8055,16 +8054,18 @@ form._2rf1 ._1u7op {
   border-bottom: 0;
 }
 
+.gEjmr ._2MdIb {
+  top: 0;
+}
+
 .gEjmr p {
   font-size: 14px;
-  line-height: 18px;
   line-height: 22px;
 }
 
 .gEjmr p a,
 .gEjmr p span {
   font-size: 14px;
-  line-height: 18px;
   line-height: 22px;
 }
 
@@ -8106,6 +8107,15 @@ form._2rf1 ._1u7op {
   overflow: hidden;
   word-break: break-word;
   padding-bottom: 10px;
+}
+
+._3gFQj .gEjmr {
+  padding: 22px 22px 0;
+  border-bottom: none;
+}
+
+._3gFQj .gEjmr ._2MdIb {
+  top: 22px;
 }
 
 ._2UOnH {
@@ -12409,7 +12419,7 @@ div._3bqe5 > div {
 
 ._13Iad {
   color: #f8f8f8;
-  font-family: DriveTribe,Helvetica,sans-serif;
+  font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
@@ -13496,7 +13506,7 @@ div._3bqe5 > div {
 }
 
 .O93cc {
-  font-family: DriveTribe,Helvetica,sans-serif;
+  font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -17600,7 +17610,7 @@ div._3bqe5 > div {
 ._2UPZy:after {
   color: #fff;
   content: attr(data-initials);
-  font-family: DriveTribe Condensed,Helvetica,sans-serif;
+  font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -18000,7 +18010,7 @@ nav._1R2o8 {
 ._2UPZy:after {
   color: #fff;
   content: attr(data-initials);
-  font-family: DriveTribe Condensed,Helvetica,sans-serif;
+  font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -18766,7 +18776,7 @@ nav._1R2o8 {
   word-break: break-word;
   padding-bottom: 44px;
   color: #fff;
-  font-family: DriveTribe,Helvetica,sans-serif;
+  font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;

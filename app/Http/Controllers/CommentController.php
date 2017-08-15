@@ -20,6 +20,9 @@ class CommentController extends Controller
         }
         $comment = Comment::create($data);
         $comment['user'] = $comment->user;
+        if(empty($data['image'])){
+            $comment['image'] = '';
+        }
 
         return json_encode($comment->toArray());
     }

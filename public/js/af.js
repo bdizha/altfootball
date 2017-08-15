@@ -159,8 +159,11 @@ $(function() {
             dataURL: ko.observable()
         });
 
+        console.log("users...");
+        console.log(currentUser);
+
         self.image = ko.observable();
-        self.currentUser = ko.observable(params.comment);
+        self.currentUser = ko.observable(window.currentUser);
         self.comment = ko.observable(params.comment);
         self.replyText = ko.observable('');
         self.callback = params.callback;
@@ -199,11 +202,6 @@ $(function() {
         };
     };
 
-    ko.components.register('reply-form', {
-        viewModel: ReplyFormViewModel,
-        template: { element: 'reply-form-template' }
-    });
-
     var FanFollowViewModel = function(params) {
         var self = this;
 
@@ -231,7 +229,7 @@ $(function() {
         };
     };
 
-    var PostDribbleViewModel = function(params) {
+    var DribbleViewModel = function(params) {
         var self = this;
 
         self.dribblesCount = ko.observable(params.count);
@@ -268,14 +266,55 @@ $(function() {
         };
     };
 
+    var PostsViewModel = function(params) {
+        var self = this;
+
+        self.posts = ko.observableArray([]);
+        self.page = ko.observable(params.page);
+
+        self.fetchPosts = function() {
+
+            console.log("loading");
+            var params = {
+                page: self.page()
+            };
+
+            $.ajax("/posts", {
+                data: params,
+                type: "get",
+                contentType: "application/json",
+                success: function(response) {
+                    console.log("New posts:");
+
+                    var posts = ko.utils.parseJson(response);
+                    ko.utils.arrayForEach(posts, function(post) {
+                        self.posts.push(post);
+                    });
+
+                    self.page(self.page() + 2);
+                }
+            });
+        };
+    };
+
+    ko.components.register('posts', {
+        viewModel: PostsViewModel,
+        template: { element: 'posts-template' }
+    });
+
     ko.components.register('follow', {
         viewModel: FanFollowViewModel,
         template: { element: 'follow-template' }
     });
 
     ko.components.register('dribbles', {
-        viewModel: PostDribbleViewModel,
+        viewModel: DribbleViewModel,
         template: { element: 'post-dribbles-template' }
+    });
+
+    ko.components.register('reply-form', {
+        viewModel: ReplyFormViewModel,
+        template: { element: 'reply-form-template' }
     });
 });
 
