@@ -99,6 +99,9 @@ sup {
 
 img {
   border-style: none;
+  transition: all 0.4s ease-in-out;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 svg:not(:root) {
@@ -754,7 +757,6 @@ button {
 }
 
 .b00q8 {
-  transition: opacity 0.5s ease-out;
 }
 
 form {
@@ -779,7 +781,6 @@ form {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 1s cubic-bezier(0, 0.42, 0, 1);
 }
 
 .dZeOA {
@@ -3363,6 +3364,12 @@ form {
 ._2hvwD {
   display: block;
   margin: 0 26px;
+  overflow: hidden;
+  &:hover{
+    img{
+      transform: scale(1.05);
+    }
+  }
 }
 
 @media screen and (max-width: 508px) {
