@@ -303,9 +303,51 @@ $(function () {
         self.image = ko.observable(params.image ? params.image : '');
         self.cover = ko.observable(params.cover ? params.cover : '');
         self.name = ko.observable(params.name ? params.name : '');
-        self.initials = ko.observable(params.initials ? params.initials : '');
         self.description = ko.observable(params.description ? params.description : '');
-        self.mode = ko.observable(params.mode ? params.mode : '');
+        self.all = ko.observable(params.all ? params.all : '');
+        self.members = ko.observable(params.members ? params.members : '');
+
+        self.imageFileData = ko.observable({
+            dataURL: ko.observable()
+        });
+
+        self.coverFileData = ko.observable({
+            dataURL: ko.observable()
+        });
+
+        self.canSubmit = ko.computed(function () {
+            return true;
+        });
+
+        self.imageFileData().dataURL.subscribe(function (dataURL) {
+            self.image(dataURL);
+        });
+
+        self.coverFileData().dataURL.subscribe(function (dataURL) {
+            self.cover(dataURL);
+        });
+
+        self.saveFanbase = function () {
+
+            console.log("testing...");
+            var fanbase = {
+                image: self.image(),
+                cover: self.cover(),
+                name: self.name(),
+                description: self.description(),
+                mode: self.all()
+            };
+
+            $.ajax("/fanbase", {
+                data: ko.toJSON(fanbase),
+                type: "post",
+                contentType: "application/json",
+                success: function (fanbase) {
+                    console.log(fanbase);
+                }
+            });
+
+        };
     };
 
     var UserFormViewModel = function (params) {

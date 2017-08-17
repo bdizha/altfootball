@@ -3,20 +3,15 @@
 @section('title', $fanbase->name)
 
 @section('content')
-    <!-- react-empty: 43 -->
-    <div class="_2q1KC">
-        <div class="_3asg6"></div>
-        <div class="_3asg7 _38P1C">
-            <h1 class="_1xaT_ SqxHJ">
+    <div class="_1Ladt" data-reactid="63">
+        <div class="-hOD9 _1KXFt">
+            <div class="_23p6h">
+                <img src="{{ $fanbase->resized_cover }}" role="presentation" alt="" class="_2PoG-" width="1905" height="476" style="opacity: 1;">
+            </div>
+        </div>
+        <div class="_3asg7 _38P1C" data-reactid="65">
+            <h1 class="_1xaT_ SqxHJ" data-reactid="66">
                 {{ $fanbase->name }}
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _8SyER"
-                   >
-                    <g fill="none" fill-rule="evenodd">
-                        <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                        <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
-                            ></path>
-                    </g>
-                </svg>
             </h1>
         </div>
     </div>
@@ -24,15 +19,14 @@
         <div class="IEF7x _38P1C">
             <div class="_1bRKx">
                 <nav class="_3GkHt _1R2o8">
-                    <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}"
-                     >
-                        <!-- react-text: 57 -->Posts<!-- /react-text -->
+                    <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}">
+                        Posts
                     </a>
-                    <a style="display: none;" class="_3UwsA zxDoM _3rBNC" href="/f/{{ $fanbase->slug }}"
-                     >
-                        <!-- react-text: 59 -->Discussions<!-- /react-text --><span class="_2-WMb _2aPX0"
-                                                                                  ><span
-                                    class="_1a2gI">28</span></span>
+                    <a style="display: none;" class="_3UwsA zxDoM _3rBNC" href="/f/{{ $fanbase->slug }}">
+                        Discussions
+                        <span class="_2-WMb _2aPX0">
+                            <span class="_1a2gI">28</span>
+                        </span>
                     </a>
                 </nav>
                 <div class="_2Y2eP">
@@ -57,9 +51,7 @@
                 <div class="_2QqZ9 _1p_jQ">
                     <div class="_3icdW">
                         <div style="padding-bottom:100%;" class="_38L6D">
-                            <img alt="" role="presentation"
-                                 src="https://drivetribe.imgix.net/AobBsUgsQc6DkZiEab5vKg?w=100&amp;h=100&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                 class="_214e9 b00q8" width="32" height="32">
+                            {!! $fanbase->user->resized_image !!}
                         </div>
                     </div>
                     <div class="vklpv">
@@ -401,7 +393,6 @@
             </div>
             <div class="_3P2x7">
                 <div id="feed" class="_3slpw abgKc">
-                    <!-- react-empty: 242 -->
                     <div>
                         <div class="_2u6Ki _1iE2V">
                             <div class="_3gFQj _3LtPT">

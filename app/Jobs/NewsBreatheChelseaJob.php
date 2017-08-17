@@ -39,9 +39,9 @@ class NewsBreatheChelseaJob extends NewsJob
         echo ":::::: " . $this->domain . " ::::::\n";
 
         $sections = [
-            "news",
+            "transfer-centre",
             "transfer-gossip",
-            "transfer-centre"
+            "news",
         ];
 
         $client = new Client();
@@ -97,6 +97,7 @@ class NewsBreatheChelseaJob extends NewsJob
                             if ($data->filter('.post-thumbnail img')->count() &&
                                 $data->filter('.post-meta .updated')->count()
                             ) {
+                                $summary = $data->filter('meta[property="og:description"]')->attr('content');
 
                                 $post['image'] = $data->filter('.post-thumbnail img')->attr("src");
                                 $post['title'] = $data->filter('.entry-title')->text();
@@ -104,12 +105,10 @@ class NewsBreatheChelseaJob extends NewsJob
                                 $post['created_at'] = Carbon::parse($this->cleanUpDate($post['date']));
 
                                 $content = "";
-                                $summary = "";
-                                $data->filter('.et_pb_text_inner p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-                                    if ($i == 0) {
-                                        $summary = str_limit($node->text(), 250);
+                                $data->filter('.et_pb_text p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
+                                    if($i > 0){
+                                        $content .= "<p>{$node->html()}</p>";
                                     }
-                                    $content .= "<p>{$node->html()}</p>";
                                 });
 
                                 $content = str_replace("<p><br></p>", "", $content);

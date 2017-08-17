@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Fanbase;
 use App\Post;
 use Illuminate\Http\Request;
+use Auth;
 
 class FanbaseController extends Controller
 {
@@ -43,13 +44,20 @@ class FanbaseController extends Controller
     public function create(Request $request)
     {
         $data = $request->all();
+        $user = Auth::user();
+        $data['user_id'] = $user->id;
 
         if(!empty($data['image'])){
-            $data['image'] = $this->saveImageFile($data['image'], time());
+            $data['image'] = $this->saveImageFile($data['image'], 'fanbases', time());
         }
-        $post = Fanbase::create($data);
-        $post['user'] = $data['user'];
 
-        return json_encode($post->toArray());
+        if(!empty($data['cover'])){
+            $data['cover'] = $this->saveImageFile($data['cover'], 'fanbases', time());
+        }
+
+        $fanbase = Fanbase::create($data);
+        $fanbase['user'] = $user;
+
+        return json_encode($fanbase->toArray());
     }
 }
