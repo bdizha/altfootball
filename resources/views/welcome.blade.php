@@ -45,7 +45,7 @@
                             <div class="VDPbh">
                                 <div class="_1fZBx">
                                     @foreach($fanbases as $fanbase)
-                                    <a class="_pRC7 _46Jbt" data-initials="CC" href="/f/{{ $fanbase->slug }}">
+                                    <a class="_pRC7 _46Jbt" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3BoA_">
                                             <div style="padding-bottom:100%;" class="_38L6D">
                                                 <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
@@ -108,7 +108,7 @@
                 <div class="GLLyX">
                     <div class="_323ok _3Xaa0">
                         @foreach($fanbases as $fanbase)
-                            <a class="_2_Gw9" data-initials="{{ $fanbase->initials }}" href="/f/{{ $fanbase->slug }}"
+                            <a class="_2_Gw9" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}"
                              >
                                 <div class="_204wR">
                                     <div style="padding-bottom:100%;" class="_38L6D">

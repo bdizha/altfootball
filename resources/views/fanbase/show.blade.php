@@ -115,17 +115,27 @@
                             <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
                         </div>
                     </div>
-                    <div class="_2UPZy" data-initials="{{ $fanbase->initials }}"></div>
+                    <div class="_2UPZy" data-stamp="{{ $fanbase->stamp }}"></div>
                 </div>
                 <div class="_2DLtu">
-                    <button class="_2qvTq _1MC-v _1h78h _2yZ_n _8eFus">
-                        <span>Join fanbase</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
-                           >
-                            <path fill="#FFF" fill-rule="evenodd" d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"
-                                ></path>
-                        </svg>
-                    </button>
+                    @if($fanbase->is_owner)
+                        <button class="O6y0Q _1h78h _8eFus" data-bind="click: openFanbaseForm">
+                            Edit Fanbase
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                <g fill="#FFF" fill-rule="evenodd">
+                                    <path d="M15.1 4.95L12.96 2.8l1.01-1 2.14 2.13-1 1zm-9.13 7l.38-2.53.09-.09 2.14 2.14-.09.1-2.52.38zm3.32-1.18L7.15 8.63l5.1-5.11 2.15 2.14-5.11 5.1zM17.7 3.4L14.5.21a.77.77 0 0 0-1.06 0L5.12 8.54a.75.75 0 0 0-.21.41l-.58 3.78a.75.75 0 0 0 .86.85l3.77-.57c.16-.03.3-.1.42-.21l8.32-8.33c.3-.3.3-.77 0-1.06z"></path>
+                                    <path d="M13.69 11.38a.75.75 0 0 0-.75.75v4.36H1.5V5.06h4.29a.75.75 0 0 0 0-1.5H.75A.75.75 0 0 0 0 4.3v12.93c0 .42.34.75.75.75h12.94c.41 0 .75-.33.75-.75v-5.1a.75.75 0 0 0-.75-.76"></path>
+                                </g>
+                            </svg>
+                        </button>
+                    @else
+                        <button class="_2qvTq _1MC-v _1h78h _2yZ_n _8eFus">
+                            <span>Join fanbase</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                                <path fill="#FFF" fill-rule="evenodd" d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"></path>
+                            </svg>
+                        </button>
+                    @endif
                 </div>
                 <div class="sZVC2">
                     <h1 class="_1xaT_ SqxHJ">
@@ -393,6 +403,28 @@
             </div>
             <div class="_3P2x7">
                 <div id="feed" class="_3slpw abgKc">
+                    @if($fanbase->is_owner)
+                        <div class="_3SC7_">
+                            <div class="BiosM">
+                                <p class="A8eM3">Create a post_</p>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" class="_1IqO5">
+                                    <g fill="none" fill-rule="evenodd" stroke="rgba(0, 8, 39, 0.96)">
+                                        <path stroke-width="4" d="M26.95 52c13.77 0 24.94-11.2 24.94-25S40.72 2 26.95 2C13.17 2 2 13.2 2 27s11.17 25 24.95 25z"></path>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M26.96 17.46l-.03 18.98m-9.47-9.48l18.97-.02"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="_2mTBY">
+                                <svg width="38" height="38" viewBox="0 0 38 38">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path fill="#F71700" d="M18.62 37.24a18.62 18.62 0 1 0 0-37.24 18.62 18.62 0 0 0 0 37.24z"></path>
+                                        <path fill="#FFF" stroke="#FFF" d="M12.62 19.48h2.71v-1.29h-2.7zM18.62 19.48h6.43v-1.29h-6.43z"></path>
+                                        <path fill="#FFF" stroke="#FFF" d="M18.2 24.62h1.28v-12h-1.29z"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+                    @endif
                     <div>
                         <div class="_2u6Ki _1iE2V">
                             <div class="_3gFQj _3LtPT">
@@ -418,16 +450,17 @@
             </div>
         </div>
     </div>
+    <fanbase-form params="{{ $fanbase->toJS() }}"></fanbase-form>
     @include('templates.dribble')
     @include('templates.comments')
     @include('templates.posts')
+    @include('fanbase.templates.form')
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(function () {
             window.currentUser = {!! $user !!};
-            ko.applyBindings();
         });
     </script>
 @endsection

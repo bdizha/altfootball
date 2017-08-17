@@ -5,7 +5,7 @@
             <div class="_2p4GS _1Kdw6">
                 <button class="_2L8qZ _1FQjf">
                     <svg width="18" height="18" viewBox="0 0 18 18">
-                        <g stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                        <g stroke="rgba(0, 8, 39, 0.96)" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
                             <path d="M2.368 2.282L16.51 16.425M16.218 2.282L2.075 16.425"></path>
                         </g>
                     </svg>
@@ -25,7 +25,7 @@
                             <div class="_21SpA">Recommended size 250x250px</div>
                             <div class="_266GY p56qA">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" class="W8lfs">
-                                    <g fill="none" fill-rule="evenodd" stroke="#000">
+                                    <g fill="none" fill-rule="evenodd" stroke="rgba(0, 8, 39, 0.96)">
                                         <path stroke-width="2" d="M18.46 36c9.65 0 17.46-7.84 17.46-17.5S28.11 1 18.46 1A17.48 17.48 0 0 0 1 18.5C1 28.16 8.82 36 18.46 36z"></path>
                                         <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                             <path d="M18.47 11.83l-.02 13.28M11.82 18.48l13.28-.02"></path>
@@ -48,7 +48,7 @@
                             <div class="_21SpA">Recommended size 1440x360px</div>
                             <div class="_266GY _1Qepj">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" class="W8lfs">
-                                    <g fill="none" fill-rule="evenodd" stroke="#000">
+                                    <g fill="none" fill-rule="evenodd" stroke="rgba(0, 8, 39, 0.96)">
                                         <path stroke-width="2" d="M18.46 36c9.65 0 17.46-7.84 17.46-17.5S28.11 1 18.46 1A17.48 17.48 0 0 0 1 18.5C1 28.16 8.82 36 18.46 36z"></path>
                                         <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                             <path d="M18.47 11.83l-.02 13.28M11.82 18.48l13.28-.02"></path>
@@ -89,8 +89,8 @@
                     <button class="_1NluH">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
-                                <circle cx="9" cy="9" r="9" stroke="#000" stroke-width="1.5"></circle>
-                                <path fill="#000" d="M8.74 3.64c-.69 0-1.18.49-1.18 1.16 0 .66.49 1.15 1.18 1.15.67 0 1.16-.49 1.16-1.15 0-.67-.5-1.16-1.16-1.16zm-.97 3.12V14h1.92V6.76H7.77z"></path>
+                                <circle cx="9" cy="9" r="9" stroke="rgba(0, 8, 39, 0.96)" stroke-width="1.5"></circle>
+                                <path fill="rgba(0, 8, 39, 0.96)" d="M8.74 3.64c-.69 0-1.18.49-1.18 1.16 0 .66.49 1.15 1.18 1.15.67 0 1.16-.49 1.16-1.15 0-.67-.5-1.16-1.16-1.16zm-.97 3.12V14h1.92V6.76H7.77z"></path>
                             </g>
                         </svg>
                     </button>

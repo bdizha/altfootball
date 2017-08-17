@@ -38,7 +38,7 @@
                                 First name
                                 <span class="_1AUhk">(required)</span>
                             </label>
-                            <input type="text" class="BhP-y" name="firstName" data-bind="value: firstName, event: {focus: focusFirstName, blur: blurFirstName }"><span class="_2LSh0">17</span>
+                            <input type="text" class="BhP-y" name="firstName" data-bind="value: firstName, event: { focus: focusFirstName, blur: blurFirstName }"><span class="_2LSh0">17</span>
                         </div>
                     </div>
                     <div class="XU9RU _3-JIN _2CyDP" data-bind="css: { _1fTaL: focusedLastName }">

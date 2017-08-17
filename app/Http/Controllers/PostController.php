@@ -70,7 +70,7 @@ class PostController extends Controller
         ]);
     }
 
-    public function create(Request $request)
+    public function save(Request $request)
     {
         $data = $request->all();
 

@@ -45,7 +45,8 @@
                     <div class="_1V79j" data-bind="click: closeSettingsForm, css: { active: showSettingsForm() || showUserForm() || showFanbaseForm() }"></div>
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
-                            <div class="_2H55B"><a class="" href="/">
+                            <div class="_2H55B">
+                                <a class="" href="/">
                                     <img src="/images/logo.png" alt="AltFootball">
                                 </a>
                                 <form class="ra77F" action="">

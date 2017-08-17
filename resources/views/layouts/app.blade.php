@@ -41,7 +41,8 @@
     <div>
         <div>
             <div>
-                <div class="_1A3CD">
+                <div class="_1A3CD" data-bind="css: { active: showSettingsForm() || showUserForm() || showFanbaseForm() }">
+                    <div class="_1V79j" data-bind="click: closeSettingsForm, css: { active: showSettingsForm() || showUserForm() || showFanbaseForm() }"></div>
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
                             <div class="_2H55B"><a class="" href="/">

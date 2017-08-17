@@ -6,6 +6,7 @@ use App\Fanbase;
 use App\Post;
 use Illuminate\Http\Request;
 use Auth;
+use Illuminate\Support\Facades\Redis;
 
 class FanbaseController extends Controller
 {
@@ -24,6 +25,8 @@ class FanbaseController extends Controller
     {
         $fanbase = Fanbase::where('slug', '=', $slug)->first();
 
+//        dd($fanbase);
+
         $fanbase->views += 1;
         $fanbase->save();
 
@@ -41,23 +44,34 @@ class FanbaseController extends Controller
         ]);
     }
 
-    public function create(Request $request)
+    public function save(Request $request)
     {
         $data = $request->all();
         $user = Auth::user();
         $data['user_id'] = $user->id;
 
-        if(!empty($data['image'])){
+        if(!empty($data['image']) && strpos($data['image'], 'altfootball') === false){
+            if(!empty($data['id'])) {
+                Redis::del('fanbase:image:' . $data['id']);
+            }
             $data['image'] = $this->saveImageFile($data['image'], 'fanbases', time());
         }
 
-        if(!empty($data['cover'])){
+        if(!empty($data['cover']) && strpos($data['cover'], 'altfootball') === false){
+            if(!empty($data['id'])) {
+                Redis::del('fanbase:cover:' . $data['id']);
+            }
             $data['cover'] = $this->saveImageFile($data['cover'], 'fanbases', time());
         }
 
-        $fanbase = Fanbase::create($data);
-        $fanbase['user'] = $user;
+        if(empty($data['id'])){
+            $fanbase = Fanbase::create($data);
+        }
+        else{
+            $fanbase = Fanbase::find($data['id']);
+            $fanbase->update($data);
+        }
 
-        return json_encode($fanbase->toArray());
+        return $fanbase->toJS();
     }
 }

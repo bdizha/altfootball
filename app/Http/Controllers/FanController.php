@@ -35,7 +35,7 @@ class FanController extends Controller
         ]);
     }
 
-    public function create(Request $request)
+    public function save(Request $request)
     {
         $data = $request->all();
         $ids = [$data['requester_id'], $data['requested_id']];

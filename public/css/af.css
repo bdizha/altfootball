@@ -1020,7 +1020,10 @@ form .b00q8 {
   top: 27px;
 }
 
-._3-JIN
+.XU9RU ._2Kdch ._1u7op {
+  top: 38px;
+}
+
 ._16KIM {
   cursor: text;
   position: absolute;
@@ -1037,11 +1040,6 @@ form .b00q8 {
   transition: height 0.15s linear;
 }
 
-._1fTaL ._16KIM {
-  transform: translateY(-18px) scale(0.85) translateZ(0);
-  color: rgba(103, 143, 185, 0.4);
-}
-
 ._2LSh0 {
   position: absolute;
   right: 0;
@@ -1051,6 +1049,15 @@ form .b00q8 {
   transition: color .2s ease-out, opacity .25s ease-out;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
+}
+
+._1fTaL ._16KIM {
+  transform: translateY(-18px) scale(0.85) translateZ(0);
+  color: rgba(103, 143, 185, 0.6);
+}
+
+._1fTaL ._2LSh0 {
+  opacity: 1;
 }
 
 ._2eqbF {
@@ -1682,11 +1689,11 @@ form._2rf1 ._1u7op {
   -ms-flex-align: center;
   align-items: center;
   transition: all 0.1s linear;
-  content: attr(data-initials);
+  content: attr(data-stamp);
 }
 
 ._1Gyo9:after {
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -1787,7 +1794,7 @@ form._2rf1 ._1u7op {
 
 .FSUgb:after {
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -5232,7 +5239,7 @@ form._2rf1 ._1u7op {
 
   ._27PIS .ZD12l:after {
     color: #fff;
-    content: attr(data-initials);
+    content: attr(data-stamp);
     display: block;
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
@@ -5345,7 +5352,7 @@ form._2rf1 ._1u7op {
   position: absolute;
   top: 50%;
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -5377,7 +5384,7 @@ form._2rf1 ._1u7op {
 
 .RNhYX:after {
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -12152,7 +12159,7 @@ div._3bqe5 > div {
 
 ._pRC7:after {
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -12591,7 +12598,7 @@ div._3bqe5 > div {
 
   ._2_Gw9:after {
     color: #fff;
-    content: attr(data-initials);
+    content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -12719,7 +12726,7 @@ div._3bqe5 > div {
 
   ._2_Gw9:after {
     color: #fff;
-    content: attr(data-initials);
+    content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -17218,7 +17225,7 @@ div._3bqe5 > div {
 
 .VGksr:after {
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -17250,7 +17257,7 @@ div._3bqe5 > div {
 
   .VGksr:after {
     color: #fff;
-    content: attr(data-initials);
+    content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -17611,7 +17618,7 @@ div._3bqe5 > div {
 
 ._2UPZy:after {
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -17979,7 +17986,7 @@ nav._1R2o8 {
 ._3zxcs {
   font-size: 22px;
   line-height: 22px;
-  font-family: DriveTribe,Helvetica,sans-serif;
+  font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: 4px solid #ccc;
@@ -18055,7 +18062,7 @@ nav._1R2o8 {
 
 ._2CSDm {
   font-weight: 700;
-  color: #000;
+  color: rgba(0, 8, 39, 0.96);
 }
 
 ._37mnt {
@@ -18072,7 +18079,7 @@ nav._1R2o8 {
 }
 
 .SMf8G {
-  font-family: DriveTribe,Helvetica,sans-serif;
+  font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -18103,17 +18110,17 @@ nav._1R2o8 {
 }
 
 ._1edwb {
-  font-family: DriveTribe,Helvetica,sans-serif;
+  font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
-  color: #000;
+  color: rgba(0, 8, 39, 0.96);
   cursor: pointer;
 }
 
 ._21SpA {
-  color: #ccc;
+  color: rgba(103, 143, 185, 0.6);
   font-size: 12px;
   margin-bottom: 9px;
 }
@@ -18197,7 +18204,7 @@ nav._1R2o8 {
 
 ._2UPZy:after {
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;

@@ -1580,7 +1580,7 @@
       }
       &:after {
         color: #fff;
-        content: attr(data-initials);
+        content: attr(data-stamp);
         display: block;
         font-family: DriveTribe Condensed,Helvetica,sans-serif;
         font-weight: 400;
@@ -1683,7 +1683,7 @@
   position: absolute;
   top: 50%;
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed,Helvetica,sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -1713,7 +1713,7 @@
   }
   &:after {
     color: #fff;
-    content: attr(data-initials);
+    content: attr(data-stamp);
     font-family: DriveTribe Condensed,Helvetica,sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -2105,7 +2105,7 @@
   }
   &:after {
     color: #fff;
-    content: attr(data-initials);
+    content: attr(data-stamp);
     font-family: DriveTribe Condensed,Helvetica,sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -2823,9 +2823,9 @@
   justify-content: center;
   align-items: center;
   transition: all .1s linear;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   &:after {
-    content: attr(data-initials);
+    content: attr(data-stamp);
     font-family: DriveTribe,Helvetica,sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -11054,7 +11054,7 @@ div._3bqe5 {
   }
   &:after {
     color: #fff;
-    content: attr(data-initials);
+    content: attr(data-stamp);
     font-family: DriveTribe Condensed,Helvetica,sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -11414,7 +11414,7 @@ div._3bqe5 {
     }
     &:after {
       color: #fff;
-      content: attr(data-initials);
+      content: attr(data-stamp);
       font-family: DriveTribe Condensed,Helvetica,sans-serif;
       font-weight: 400;
       text-transform: uppercase;
@@ -11517,7 +11517,7 @@ div._3bqe5 {
     }
     &:after {
       color: #fff;
-      content: attr(data-initials);
+      content: attr(data-stamp);
       font-family: DriveTribe Condensed,Helvetica,sans-serif;
       font-weight: 400;
       text-transform: uppercase;

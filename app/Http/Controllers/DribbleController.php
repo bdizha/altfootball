@@ -9,7 +9,7 @@ use Auth;
 class DribbleController extends Controller
 {
 
-    public function create(Request $request)
+    public function save(Request $request)
     {
         $user = Auth::user();
         $data = $request->all();

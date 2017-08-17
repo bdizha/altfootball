@@ -23,7 +23,7 @@
                 <div class="_1mWot _27PIS _1wMrt PTpci" style="opacity: 1; transform: translateX(0px) translateZ(0px);">
                     <div class="ZD12l _1iE2V">
                         <div class="_1KG3g">
-                            <div class="gzgzI" data-bind="text: initials"></div>
+                            <div class="gzgzI" data-bind="text: stamp"></div>
                         </div>
                         <div class="_2lssz">
                             <div class="_38L6D" style="padding-bottom: 100%;">

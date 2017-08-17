@@ -3,6 +3,7 @@
 use App\Comment;
 use App\User;
 use App\Post;
+use App\Fanbase;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 
@@ -16,9 +17,11 @@ class BaseSeeder extends Seeder
     public function run()
     {
 
-        foreach(User::where("updated_at", ">=", Carbon::now()->subDays(2))->get() as $user){
-            $user->image = 'http://altfootball.dev/images/0' . rand(1, 8) . '.png';
-            $user->save();
+        foreach(Fanbase::all() as $fanbase){
+
+            echo $fanbase->initials . "\n";
+            $fanbase->stamp = $fanbase->initials;
+            $fanbase->save();
         }
     }
 }

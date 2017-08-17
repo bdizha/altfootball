@@ -136,7 +136,7 @@
 
 .VGksr:after {
   color: #fff;
-  content: attr(data-initials);
+  content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -167,7 +167,7 @@
 
   .VGksr:after {
     color: #fff;
-    content: attr(data-initials);
+    content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
     text-transform: uppercase;

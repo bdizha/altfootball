@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use MartinBean\Database\Eloquent\Sluggable;
 use Illuminate\Support\Facades\Redis;
+use Auth;
 
 class Fanbase extends Model
 {
@@ -18,13 +19,15 @@ class Fanbase extends Model
     protected $fillable = [
         'user_id',
         'name',
+        'stamp',
         'description',
         'image',
         'cover',
+        'access',
         'slug'
     ];
 
-    protected $appends = ['resized_image', 'initials'];
+    protected $appends = ['resized_image', 'initials', 'is_owner'];
 
     protected $covers = [
         "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905207/lxs2sjouxjlumcg4wnvz.jpg",
@@ -44,15 +47,14 @@ class Fanbase extends Model
     public function getInitialsAttribute()
     {
         $nameArray = explode(" ", $this->name);
-        $initials = "";
+        $stamp = "";
         foreach ($nameArray as $part) {
-            if (ctype_alnum($part)) {
-                $initials .= strtoupper($part[0]);
+            if (ctype_alnum($part) && strlen($stamp) < 3) {
+                $stamp .= strtoupper($part[0]);
             }
-
         }
 
-        return $initials;
+        return $stamp;
     }
 
     public function getSlugColumnName()
@@ -78,6 +80,11 @@ class Fanbase extends Model
     public function posts()
     {
         return $this->belongsToMany(Post::class, 'fanbases_posts');
+    }
+
+    public function getIsOwnerAttribute()
+    {
+        return Auth::guard()->check() ? Auth::user()->id === $this->user_id : false;
     }
 
     public function getImage($dimensions = "width=400&height=400")
@@ -142,5 +149,9 @@ class Fanbase extends Model
         }
 
         return $image;
+    }
+
+    public function toJS(){
+        return json_encode($this->toArray(), JSON_HEX_APOS);
     }
 }
