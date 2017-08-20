@@ -20,6 +20,42 @@ $(function () {
             e.preventDefault();
         }
     });
+
+    $(window).scroll(function() {
+        var fixable = $("._1YCPS");
+
+        console.log("..." + fixable.length);
+
+        if(fixable.length > 0){
+
+            if (fixable.offset().top > 100) {
+                fixable.addClass("_210LR");
+                fixable.removeClass("_2kPxQ");
+            } else {
+                fixable.addClass("_2kPxQ");
+                fixable.removeClass("_210LR");
+            }
+
+        }
+    });
+
+    $('.owl-carousel').owlCarousel({
+        loop: false,
+        nav: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            600:{
+                items: 3
+            },
+            1000:{
+                items: 4
+            }
+        },
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    })
 });
 
 function setHeightFor(selector) {
@@ -48,186 +84,12 @@ function applyHeights() {
     adjustHeight('._1Q_Pu', '._3VSm9');
 }
 
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
 $(function () {
-
-    ko.validation.rules.pattern.message = 'Invalid.';
-
-    ko.validation.init({
-        insertMessages: true,
-        decorateElement: true,
-        errorMessageClass: "_1u7op",
-        errorClass: '',
-        errorsAsTitle: true,
-        parseInputAttributes: false,
-        messagesOnModified: true,
-        decorateElementOnModified: true,
-        decorateInputElement: true
-    }, true);
-
-    var CommentsViewModel = function (params) {
-        var self = this;
-        self.fileData = ko.observable({
-            dataURL: ko.observable()
-        });
-        self.type_id = ko.observable(params.type_id);
-        self.isList = ko.observable(params.is_list);
-        self.level = ko.observable(params.level);
-        self.comments = ko.observableArray(params.comments);
-        self.image = ko.observable('');
-        self.currentCommentId = ko.observable(0);
-        self.root = ko.observable(params.root);
-        self.newCommentText = ko.observable('');
-        self.commentsCount = ko.computed(function () {
-            applyHeights();
-            return self.comments().length;
-        });
-
-        self.canSubmitComment = ko.computed(function () {
-            return self.newCommentText().length > 0;
-        });
-
-        // callback
-        self.update = function (reply) {
-            var comments = ko.utils.arrayMap(self.comments(), function (comment) {
-                if (comment.id === reply.type_id) {
-                    comment.comments.unshift(reply);
-                }
-
-                return comment;
-            });
-
-            self.comments([]);
-            self.comments(comments);
-
-            var allComments = $('._55ghi');
-            allComments.removeClass('_4c7v3');
-
-            applyHeights();
-        };
-
-        self.fileData().dataURL.subscribe(function (dataURL) {
-            self.image(dataURL);
-        });
-
-        self.reply = function (comment) {
-            console.log('#comment-' + comment.id + ' ._55ghi');
-
-            var allComments = $('._55ghi');
-            var activeComment = $('#comment-' + comment.id + ' ._55ghi');
-
-            if (activeComment.hasClass('_4c7v3')) {
-                allComments.removeClass('_4c7v3');
-            }
-            else {
-                allComments.removeClass('_4c7v3');
-                activeComment.addClass('_4c7v3');
-            }
-        };
-
-        self.saveComment = function () {
-            var comment = {
-                type_id: self.type_id(),
-                content: self.newCommentText(),
-                image: self.image(),
-                comments: []
-            };
-
-            self.newCommentText('');
-
-            applyHeights();
-
-            $.ajax("/comment", {
-                data: ko.toJSON(comment),
-                type: "post",
-                contentType: "application/json",
-                success: function (comment) {
-                    self.comments.unshift(ko.utils.parseJson(comment));
-                }
-            });
-        };
-    };
-
-    ko.components.register('comments', {
-        viewModel: CommentsViewModel,
-        template: {element: 'comments-template'}
-    });
-
-    var ReplyFormViewModel = function (params) {
-        var self = this;
-
-        self.fileData = ko.observable({
-            dataURL: ko.observable()
-        });
-
-        console.log("users...");
-        console.log(currentUser);
-
-        self.image = ko.observable();
-        self.currentUser = ko.observable(window.currentUser);
-        self.comment = ko.observable(params.comment);
-        self.replyText = ko.observable('');
-        self.callback = params.callback;
-        self.canSubmitReply = ko.computed(function () {
-            return self.replyText().length > 0;
-        });
-
-        self.cancel = function () {
-            var allComments = $('._55ghi');
-            allComments.removeClass('_4c7v3');
-        };
-
-        self.fileData().dataURL.subscribe(function (dataURL) {
-            self.image(dataURL);
-        });
-
-        self.saveReply = function () {
-            var reply = {
-                content: self.replyText(),
-                image: self.image(),
-                type: 'comment',
-                type_id: self.comment().id
-            };
-
-            self.replyText('');
-
-            $.ajax("/comment", {
-                data: ko.toJSON(reply),
-                type: "post",
-                contentType: "application/json",
-                success: function (reply) {
-                    self.callback(ko.utils.parseJson(reply));
-                }
-            });
-
-        };
-    };
-
-    var FanFollowViewModel = function (params) {
-        var self = this;
-
-        self.fan = ko.observable(params.fan);
-
-        self.isActive = ko.observable(Boolean(params.fan.is_active));
-        self.isInactive = ko.observable(!Boolean(params.fan.is_active));
-
-        self.save = function () {
-            self.isActive(!self.isActive());
-            self.isInactive(!self.isInactive());
-
-            var fan = {
-                requester_id: self.fan().requester_id,
-                requested_id: self.fan().requested_id
-            };
-
-            $.ajax("/fan", {
-                data: ko.toJSON(fan),
-                type: "post",
-                contentType: "application/json",
-                success: function (fan) {
-                }
-            });
-        };
-    };
 
     var DribbleViewModel = function (params) {
         var self = this;
@@ -266,37 +128,17 @@ $(function () {
         };
     };
 
-    var PostsViewModel = function (params) {
-        var self = this;
+    ko.components.register('dribbles', {
+        viewModel: DribbleViewModel,
+        template: {element: 'post-dribbles-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
 
-        self.posts = ko.observableArray([]);
-        self.fanbase = ko.observable(params.fanbase);
-        self.page = ko.observable(params.page);
 
-        self.fetchPosts = function () {
-
-            var params = {
-                fanbase_id: self.fanbase(),
-                page: self.page()
-            };
-
-            $.ajax("/posts", {
-                data: params,
-                type: "get",
-                contentType: "application/json",
-                success: function (response) {
-                    console.log("New posts:");
-
-                    var posts = ko.utils.parseJson(response);
-                    ko.utils.arrayForEach(posts, function (post) {
-                        self.posts.push(post);
-                    });
-
-                    self.page(self.page() + 2);
-                }
-            });
-        };
-    };
+$(function () {
 
     var FanbaseFormViewModel = function (params) {
         var self = this;
@@ -444,6 +286,293 @@ $(function () {
 
     FanbaseFormViewModel.errors = ko.validation.group(FanbaseFormViewModel);
 
+    ko.components.register('fanbase-form', {
+        viewModel: FanbaseFormViewModel,
+        template: {element: 'fanbase-form-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
+$(function () {
+
+    var FollowViewModel = function (params) {
+        var self = this;
+
+        console.log(params.is_list + ">>>>")
+
+        self.follower = ko.observable(params.follower);
+        self.isItem = ko.observable(Boolean(params.is_item));
+        self.isList = ko.observable(Boolean(params.is_list));
+        self.isActive = ko.observable(Boolean(params.follower.is_active));
+        self.isInactive = ko.observable(!Boolean(params.follower.is_active));
+        self.activeText = ko.observable(params.active_text);
+        self.inactiveText = ko.observable(params.inactive_text);
+
+        self.save = function () {
+            self.isActive(!self.isActive());
+            self.isInactive(!self.isInactive());
+
+            var follower = {
+                user_id: self.follower().user_id,
+                type_id: self.follower().type_id,
+                type: self.follower().type
+            };
+
+            $.ajax("/follower", {
+                data: ko.toJSON(follower),
+                type: "post",
+                contentType: "application/json",
+                success: function (follower) {
+                }
+            });
+        };
+    };
+
+    ko.components.register('follow', {
+        viewModel: FollowViewModel,
+        template: {element: 'follow-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
+$(function () {
+
+    var PostsViewModel = function (params) {
+        var self = this;
+
+        self.posts = ko.observableArray([]);
+        self.fanbase = ko.observable(params.fanbase);
+        self.page = ko.observable(params.page);
+
+        self.fetchPosts = function () {
+
+            var params = {
+                fanbase_id: self.fanbase(),
+                page: self.page()
+            };
+
+            $.ajax("/posts", {
+                data: params,
+                type: "get",
+                contentType: "application/json",
+                success: function (response) {
+                    console.log("New posts:");
+
+                    var posts = ko.utils.parseJson(response);
+                    ko.utils.arrayForEach(posts, function (post) {
+                        self.posts.push(post);
+                    });
+
+                    self.page(self.page() + 2);
+                }
+            });
+        };
+    };
+
+    ko.components.register('posts', {
+        viewModel: PostsViewModel,
+        template: {element: 'posts-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
+$(function () {
+
+    var ReplyFormViewModel = function (params) {
+        var self = this;
+
+        self.fileData = ko.observable({
+            dataURL: ko.observable()
+        });
+
+        console.log("users...");
+
+        self.image = ko.observable();
+        self.currentUser = ko.observable(window.currentUser);
+        self.comment = ko.observable(params.comment);
+        self.replyText = ko.observable('');
+        self.callback = params.callback;
+        self.canSubmitReply = ko.computed(function () {
+            return self.replyText().length > 0;
+        });
+
+        self.cancel = function () {
+            var allComments = $('._55ghi');
+            allComments.removeClass('_4c7v3');
+        };
+
+        self.fileData().dataURL.subscribe(function (dataURL) {
+            self.image(dataURL);
+        });
+
+        self.saveReply = function () {
+            var reply = {
+                content: self.replyText(),
+                image: self.image(),
+                type: 'comment',
+                type_id: self.comment().id
+            };
+
+            self.replyText('');
+
+            $.ajax("/tackle", {
+                data: ko.toJSON(reply),
+                type: "post",
+                contentType: "application/json",
+                success: function (reply) {
+                    self.callback(ko.utils.parseJson(reply));
+                }
+            });
+
+        };
+    };
+
+    ko.components.register('reply-form', {
+        viewModel: ReplyFormViewModel,
+        template: {element: 'reply-form-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
+$(function () {
+
+    var CommentsViewModel = function (params) {
+        var self = this;
+        self.fileData = ko.observable({
+            dataURL: ko.observable()
+        });
+        self.type_id = ko.observable(params.type_id);
+        self.isList = ko.observable(params.is_list);
+        self.level = ko.observable(params.level);
+        self.comments = ko.observableArray(params.comments);
+        self.image = ko.observable('');
+        self.currentCommentId = ko.observable(0);
+        self.root = ko.observable(params.root);
+        self.newCommentText = ko.observable('');
+        self.commentsCount = ko.computed(function () {
+            applyHeights();
+            return self.comments().length;
+        });
+
+        self.canSubmitComment = ko.computed(function () {
+            return self.newCommentText().length > 0;
+        });
+
+        // callback
+        self.update = function (reply) {
+            var comments = ko.utils.arrayMap(self.comments(), function (comment) {
+                if (comment.id === reply.type_id) {
+                    comment.comments.unshift(reply);
+                }
+
+                return comment;
+            });
+
+            self.comments([]);
+            self.comments(comments);
+
+            var allComments = $('._55ghi');
+            allComments.removeClass('_4c7v3');
+
+            applyHeights();
+        };
+
+        self.fileData().dataURL.subscribe(function (dataURL) {
+            self.image(dataURL);
+        });
+
+        self.reply = function (comment) {
+            console.log('#comment-' + comment.id + ' ._55ghi');
+
+            var allComments = $('._55ghi');
+            var activeComment = $('#comment-' + comment.id + ' ._55ghi');
+
+            if (activeComment.hasClass('_4c7v3')) {
+                allComments.removeClass('_4c7v3');
+            }
+            else {
+                allComments.removeClass('_4c7v3');
+                activeComment.addClass('_4c7v3');
+            }
+        };
+
+        self.saveComment = function () {
+            var comment = {
+                type_id: self.type_id(),
+                content: self.newCommentText(),
+                image: self.image(),
+                comments: []
+            };
+
+            self.newCommentText('');
+
+            applyHeights();
+
+            $.ajax("/tackle", {
+                data: ko.toJSON(comment),
+                type: "post",
+                contentType: "application/json",
+                success: function (comment) {
+                    self.comments.unshift(ko.utils.parseJson(comment));
+                }
+            });
+        };
+    };
+
+    ko.components.register('comments', {
+        viewModel: CommentsViewModel,
+        template: {element: 'comments-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
+$(function () {
+
+    var TermsViewModel = function(){
+        self = this;
+
+        self.selected = ko.observable('');
+        self.select = function(section){
+            if(self.selected() === section){
+                self.clear();
+            }
+            else{
+                self.selected(section);
+            }
+        };
+
+        self.clear = function(){
+            self.selected('');
+        };
+    };
+
+    ko.components.register('terms', {
+        viewModel: TermsViewModel,
+        template: {element: 'terms-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
+$(function () {
+
     var UserFormViewModel = function (params) {
         self.firstName = ko.observable(params.first_name ? params.first_name : '').extend({
             required: {
@@ -587,39 +716,32 @@ $(function () {
         viewModel: UserFormViewModel,
         template: {element: 'user-form-template'}
     });
+});
+//# sourceMappingURL=ko-components.js.map
 
-    ko.components.register('posts', {
-        viewModel: PostsViewModel,
-        template: {element: 'posts-template'}
-    });
+$(function () {
 
-    ko.components.register('follow', {
-        viewModel: FanFollowViewModel,
-        template: {element: 'follow-template'}
-    });
+    ko.validation.rules.pattern.message = 'Invalid.';
 
-    ko.components.register('dribbles', {
-        viewModel: DribbleViewModel,
-        template: {element: 'post-dribbles-template'}
-    });
+    ko.validation.init({
+        insertMessages: true,
+        decorateElement: true,
+        errorMessageClass: "_1u7op",
+        errorClass: '',
+        errorsAsTitle: true,
+        parseInputAttributes: false,
+        messagesOnModified: true,
+        decorateElementOnModified: true,
+        decorateInputElement: true
+    }, true);
 
-    ko.components.register('reply-form', {
-        viewModel: ReplyFormViewModel,
-        template: {element: 'reply-form-template'}
-    });
-
-    ko.components.register('fanbase-form', {
-        viewModel: FanbaseFormViewModel,
-        template: {element: 'fanbase-form-template'}
-    });
-
-
-    RootViewModel = function (params) {
+    RootViewModel = function () {
         var self = this;
 
         self.showSettingsForm = ko.observable(false);
         self.showUserForm = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
+        self.currentUser = ko.observable(false);
 
         self.openSettingsForm = function () {
             self.showSettingsForm(!self.showSettingsForm());
@@ -651,5 +773,4 @@ $(function () {
 
     ko.applyBindings(RootViewModel, document.getElementById('root'));
 });
-
 //# sourceMappingURL=af.js.map

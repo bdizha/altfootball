@@ -35,25 +35,6 @@ class FanController extends Controller
         ]);
     }
 
-    public function save(Request $request)
-    {
-        $data = $request->all();
-        $ids = [$data['requester_id'], $data['requested_id']];
-
-        $fan = Fan::whereIn('requester_id', $ids)
-            ->whereIn('requested_id', $ids)
-            ->first();
-
-        if (empty($fan->id)) {
-            $fan::create($data);
-        } else {
-            $fan->is_active = !$fan->is_active;
-            $fan->save();
-        }
-
-        return json_encode($fan->toArray());
-    }
-
     public function followers($slug)
     {
         $user = User::where('slug', '=', $slug)->first();

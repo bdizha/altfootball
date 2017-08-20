@@ -186,8 +186,7 @@
 @section('js')
     <script type="text/javascript">
         $(function () {
-            window.currentUser = {!! $user !!};
-            ko.applyBindings();
+            RootViewModel.currentUser(ko.utils.parseJson({!! $user !!}));
         });
     </script>
 @endsection

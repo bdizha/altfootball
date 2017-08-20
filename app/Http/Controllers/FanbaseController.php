@@ -25,8 +25,6 @@ class FanbaseController extends Controller
     {
         $fanbase = Fanbase::where('slug', '=', $slug)->first();
 
-//        dd($fanbase);
-
         $fanbase->views += 1;
         $fanbase->save();
 
@@ -72,6 +70,6 @@ class FanbaseController extends Controller
             $fanbase->update($data);
         }
 
-        return $fanbase->toJS();
+        return $fanbase->toJson();
     }
 }

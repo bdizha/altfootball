@@ -6,6 +6,8 @@ use App\Jobs\NewsGoalJob;
 use App\Jobs\News90MinJob;
 use App\Jobs\NewsSportslensJob;
 use App\Jobs\NewsBreatheChelseaJob;
+use App\Jobs\FCBayernJob;
+use App\Jobs\ArsenalFC;
 use Illuminate\Console\Command;
 
 class FetchContent extends Command
@@ -41,6 +43,8 @@ class FetchContent extends Command
      */
     public function handle()
     {
+        dispatch(new ArsenalFC());
+        dispatch(new FCBayernJob());
         dispatch(new NewsBreatheChelseaJob());
         dispatch(new NewsSportslensJob());
         dispatch(new News90MinJob());

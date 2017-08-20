@@ -22,7 +22,7 @@
                                  fill-rule="evenodd"
                                >
                                  <path
-                                         fill="#64c431"
+                                         fill="#5BC20F"
                                          d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
                                        ></path>
                                  <path

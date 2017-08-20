@@ -51,7 +51,7 @@
                             <p class="_14d4a">{{ $user->bio }}</p>
                             <a rel="nofollow" target="_blank" class="_30-Mx" href="{{ $user->website }}"></a>
                             @if(!$user->is_self)
-                                <follow params='fan: {!! $user->fan->toJson()  !!}'></follow>
+                                <follow params="follower: {!! $user->follower->toJson()  !!}, active_text: 'follow', inactive_text: 'unfollow'"></follow>
                             @endif
                         </div>
                     </div>
@@ -111,46 +111,41 @@
                         <div class="_3h6Wn">
                             <div class="_3dj9E">
                                 <div class="_3nlN8">
-                                    @foreach($fanbases as $k => $fanbase)
-                                        <a class="_1mWot" href="/f/{{ $fanbase->slug }}">
-                                            <div class="ZD12l _1iE2V">
-                                                <div class="_2lssz">
-                                                    <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation"
-                                                             src="{{ $fanbase->resized_image }}" class="_214e9 b00q8"
-                                                             width="200" height="200">
+                                    <div class="owl-carousel owl-theme">
+                                        @foreach($fanbases as $k => $fanbase)
+                                            <a class="_1mWot" href="/f/{{ $fanbase->slug }}">
+                                                <div class="ZD12l _1iE2V">
+                                                    <div class="_2lssz">
+                                                        <div class="_38L6D" style="padding-bottom: 100%;">
+                                                            <img alt="" role="presentation"
+                                                                 src="{{ $fanbase->resized_image }}" class="_214e9 b00q8"
+                                                                 width="200" height="200">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="_1KQuz @if($k == 0) fFpBH @endif">
-                                                <h3 class="_2o06m _1oBl0">
-                                                    <span class="_1QEWe">
-                                                        {{ $fanbase->name }}
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                             viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
-                                                                                                         fill-rule="evenodd"><path
-                                                                        fill="#00AFFF"
-                                                                        d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
-                                                                        fill="#FFF"
-                                                                        d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
-                                                    </span>
-                                                </h3>
-                                                <div class="_1TvPX">
-                                                    <div class="_1Ct87">
-                                                        <span><span class="CrE3q">Fanbase Leader</span></span>
+                                                <div class="_1KQuz @if($fanbase->is_owner) fFpBH @endif">
+                                                    <h3 class="_2o06m _1oBl0">
+                                                        <span class="_1QEWe">
+                                                            {{ $fanbase->name }}
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                                 viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
+                                                                                                             fill-rule="evenodd"><path
+                                                                            fill="#00AFFF"
+                                                                            d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
+                                                                            fill="#FFF"
+                                                                            d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
+                                                        </span>
+                                                    </h3>
+                                                    <div class="_1TvPX">
+                                                        <div class="_1Ct87">
+                                                            <span><span class="CrE3q">Fanbase Leader</span></span>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </a>
-                                    @endforeach
+                                            </a>
+                                        @endforeach
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="_2KkkC">
-                            <div class="_2BZH3 _2niMs">
-                                <button class="_1JesO" disabled="">Prev</button>
-                                <div class="_28Zwg" style="transform: scaleX(0) translateZ(0px);"></div>
-                                <button class="_1JesO undefined LmPde">Next</button>
                             </div>
                         </div>
                     </div>

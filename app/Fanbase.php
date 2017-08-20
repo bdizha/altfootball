@@ -72,15 +72,66 @@ class Fanbase extends Model
         return $this->hasOne('App\User', 'id', 'user_id');
     }
 
-    public function users()
-    {
-        return $this->belongsToMany(User::class, 'users_fanbases');
-    }
-
     public function posts()
     {
         return $this->belongsToMany(Post::class, 'fanbases_posts');
     }
+
+    public function getFollowersAttribute()
+    {
+        $user = Auth::user();
+
+        if (Auth::guard()->check()) {
+            $follower = Follower::where('type_id', $this->id)
+                ->where('type', 'fanbase')
+                ->first();
+
+            if (empty($follower->id)) {
+                $follower = Follower::create([
+                    'user_id' => $user->id,
+                    'type_id' => $this->id,
+                    'type' => 'fanbase'
+                ]);
+            }
+
+            return $follower;
+        }
+
+        $follower = new Follower();
+        $follower->type_id = $this->id;
+        $follower->type = 'fanbase';
+
+        return $follower;
+    }
+
+    public function getFollowerAttribute()
+    {
+        $user = Auth::user();
+
+        if (Auth::guard()->check()) {
+            $follower = Follower::where('user_id',  $user->id)
+                ->where('type_id', $this->id)
+                ->where('type', 'fanbase')
+                ->first();
+
+            if (empty($follower->id)) {
+                $follower = Follower::create([
+                    'user_id' => $user->id,
+                    'type_id' => $this->id,
+                    'type' => 'fanbase'
+                ]);
+            }
+
+            return $follower;
+        }
+
+        $follower = new Follower();
+        $follower->type_id = $this->id;
+        $follower->type = 'fanbase';
+
+        return $follower;
+    }
+
 
     public function getIsOwnerAttribute()
     {
@@ -149,9 +200,5 @@ class Fanbase extends Model
         }
 
         return $image;
-    }
-
-    public function toJS(){
-        return json_encode($this->toArray(), JSON_HEX_APOS);
     }
 }

@@ -14,7 +14,7 @@ class AlterAddImagesOnCommentsTable extends Migration
     public function up()
     {
         Schema::table('comments', function (Blueprint $table) {
-            $table->string('image', 512)->nullable();
+//            $table->string('image', 512)->nullable();
         });
     }
 

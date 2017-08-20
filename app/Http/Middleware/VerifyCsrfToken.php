@@ -18,6 +18,7 @@ class VerifyCsrfToken extends BaseVerifier
         'comment',
         'fan',
         'dribble',
-        'fanbase'
+        'fanbase',
+        'follower'
     ];
 }

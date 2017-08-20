@@ -7,6 +7,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="msapplication-navbutton-color" content="#ffffff">
     <meta name="apple-mobile-web-app-title" content="ALTFOOTBALL">
+    <link rel="stylesheet" type="text/css" href="/css/vendors.css">
     <link rel="stylesheet" type="text/css" href="/css/af.css">
     <link rel="icon" type="image/png" href="http://altfootball.dev/images/logo.png">
     <link rel="icon" type="image/png" href="http://altfootball.dev/images/logo.png" sizes="192x192">

@@ -40,7 +40,7 @@
                                                 </h3>
                                                 <p class="_1gZlE">{{ $fanbase->description }}</p><span class="_3es_m _2e1-n _1geYT">View Tribe</span></div>
                                             <div class="_3DEPd _2oYlQ">
-                                                <button class="zrN-a _2P1mw _1MC-v _1h78h">Join</button>
+                                                <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
                                             </div>
                                         </a>
                                     @endforeach
@@ -78,7 +78,7 @@
                                             <p class="_1gZlE">{{ $fanbase->description }}</p>
                                         </div>
                                         <div class="_3DEPd">
-                                            <button class="zrN-a _2P1mw _1MC-v _1h78h">Join</button>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -119,7 +119,7 @@
                                             <p class="_1gZlE">{{ $fanbase->description }}</p>
                                         </div>
                                         <div class="_3DEPd">
-                                            <button class="zrN-a _2P1mw _1MC-v _1h78h">Join</button>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -159,7 +159,7 @@
                                             <span class="_3es_m _2e1-n _1geYT">View Tribe</span>
                                         </div>
                                         <div class="_3DEPd _2oYlQ">
-                                            <button class="zrN-a _2P1mw _1MC-v _1h78h">Join</button>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -197,7 +197,7 @@
                                             <p class="_1gZlE">{{ $fanbase->description  }}</p>
                                         </div>
                                         <div class="_3DEPd">
-                                            <button class="zrN-a _2P1mw _1MC-v _1h78h">Join</button>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -235,7 +235,7 @@
                                             <p class="_1gZlE">{{ $fanbase->description }}</p>
                                         </div>
                                         <div class="_3DEPd">
-                                            <button class="zrN-a _2P1mw _1MC-v _1h78h">Join</button>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -254,6 +254,7 @@
             </div>
         </div>
     </div>
+    @include('templates.follow')
 @endsection
 
 @section('js')
@@ -316,8 +317,6 @@
                     self.showJoinPopup(false);
                 }
             }
-
-            ko.applyBindings(FanbaseListViewModel, document.getElementById('profile-onboard-view-template'));
         });
 
     </script>

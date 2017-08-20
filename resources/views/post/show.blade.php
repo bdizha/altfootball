@@ -21,7 +21,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                  class="G0duV">
                                 <g fill="none" fill-rule="evenodd">
-                                    <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                    <path fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                     <path fill="#FFF"
                                           d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                                 </g>
@@ -43,25 +43,26 @@
                             <div class="">
                                 <span class="_1NHvQ _3Xf-w">
                                     <a class="" href="/u/{{ $post->user->slug }}">
-                                        {{ $post->user->nickname }}
+                                        {{ $post->user->name }}
                                     </a>
                                     <span>
-                                <span>
-                            posted in <br></span>
-                            <a class="_1XNRF"
-                               href="/f/{{ $post->fanbase->slug }}">
-                                {{ $post->fanbase->name }}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-                                     class="_1z7Hy">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                        <path fill="#FFF"
-                                              d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                            </span>
-                            </span>
+                                        <span>
+                                            posted in <br>
+                                        </span>
+                                        <a class="_1XNRF"
+                                           href="/f/{{ $post->fanbase->slug }}">
+                                            {{ $post->fanbase->name }}
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                                 class="_1z7Hy">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                                    <path fill="#FFF"
+                                                          d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </span>
+                                </span>
                             </div>
                             <div class="_3qkzJ">
                                 <p class="_2B25b"><span class="_2jvdf">{{ $post->published_at }}</span></p>
@@ -120,61 +121,67 @@
             </div>
             <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
                 <div>
-                    <div class="undefined _2-_Re _378qt">
-                        <a class="_23nwS" href="/f/{{ $post->fanbase->slug }}">
-                            <div class="_1Gyo9 Ofajv" data-stamp="{{ $post->fanbase->stamp }}"></div>
+                    <div class="_1YCPS cB9oA _2kPxQ">
+                        <a class="_2aEHr" href="/f/{{ $post->fanbase->slug }}">
+                            <div class="_1Gyo9 HkQZ5" data-stamp="{{ $post->fanbase->stamp }}"></div>
                         </a>
-                        <h2 class="_3mNJn">{{ $post->title }}</h2>
-                        <div class="_mHwf _29Okg">
-                            <a class="_2Oo2A rF2QA"
-                               href="/p/hammond-enjoys-night-out-after-Lag4Ra_iR6WLzgJC0dSaxQ#tackles">
+                        <h2 class="_1BxZT">{{ $post->title }}</h2>
+                        <div class="_2D3SJ _2qjq9 _29Okg">
+                            <a class="_2Oo2A rF2QA" href="/p/{{ $post->slug }}#tackles">
                                 <span class="_35FcZ">
-                                    TACKLES
+                                    Tackles
+                                </span>
                                     <span class="_3HP-Q">
-                                         ({{ $tacklesCount }})
-                                    </span>
+                                    ({{ $tacklesCount }})
                                 </span>
                             </a>
-                            <div class="_8m6WC rF2QA"><span class="_35FcZ">Forward</span></div>
-                            <button class="_3yFg8 rF2QA">
-                                <div class="_1_VaP">
-                                    <span class="_35FcZ">Dribbles</span>
-                                    <span class="_3HP-Q"> ({{ $dribblesCount }})</span>
-                                    <svg width="24" height="23" viewBox="-3 -3 23 24">
-                                        <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75L13.5 0zm-.1 1.87l3.1 2.58V8.3L9 14.55 1.5 8.3V4.45l3.1-2.58L9 4.8l4.4-2.93z"
-                                              fill="#00AFFF" fill-rule="evenodd" opacity="1" class="outline"></path>
-                                        <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75" fill="#00AFFF"
-                                              fill-rule="evenodd" opacity="0" class="heart"></path>
-                                    </svg>
-                                </div>
-                            </button>
+                            <div class="_8m6WC rF2QA">
+                                <span class="_35FcZ">Repost</span>
+                            </div>
+                            <dribbles params='count: {!! $dribblesCount !!}, type_id: {{ $postId }}, has_dribble: {{ $post->has_dribble }}, type: "post"'></dribbles>
                         </div>
-                        <div class="_1Sbj_">
-                            <button class="mThhK">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20">
-                                    <path fill="#00AFFF" fill-rule="evenodd" stroke="#00AFFF" stroke-width=".5"
-                                          d="M14.75 12.57c-1.04 0-1.96.49-2.55 1.25l-4.95-2.76a3.23 3.23 0 0 0 0-2.13l4.94-2.76a3.21 3.21 0 1 0-.48-.89L6.77 8.04a3.22 3.22 0 1 0 0 3.9l4.95 2.77a3.2 3.2 0 0 0 3.03 4.3 3.22 3.22 0 0 0 0-6.44zm0-10.56a2.21 2.21 0 1 1 0 4.42 2.21 2.21 0 0 1 0-4.42zM4.22 12.21a2.21 2.21 0 1 1 0-4.43 2.21 2.21 0 0 1 0 4.43zm10.53 5.78a2.21 2.21 0 1 1 0-4.42 2.21 2.21 0 0 1 0 4.42z"></path>
-                                </svg>
-                            </button>
-                            <div class="fHCTs _3o2ca">
-                                <a class="_2Q0fU p1Di1" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($url) }}" target="_blank">
+                        <span class="_1NHvQ _2DoBA">
+                            <a href="/u/{{ $post->user->slug }}">
+                                {{ $post->user->name }}
+                            </a>
+                            <span>
+                                <span>
+                                    posted in <br>
+                                </span>
+                                <a class="_1XNRF"
+                                   href="/f/{{ $post->fanbase->slug }}">
+                                            {{ $post->fanbase->name }}
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                            <path fill="#FFF"
+                                                  d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </span>
+                        </span>
+                        <div class="_3VduI">
+                            <div class="_2xDj1 _3o2ca">
+                                <button class="_2Q0fU p1Di1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12">
-                                        <path fill="#FFF" fill-rule="evenodd"
-                                              d="M4.16 0c1.83 0 2.6.22 2.6.22l-.37 1.84s-.6-.15-1.16-.15c-.57 0-1.07.17-1.07.66v1.4h2.3l-.15 1.8H4.16V12H1.45V5.76H0v-1.8h1.45v-1.2c0-.53.01-1.35.46-1.86C2.4.37 3.04 0 4.16 0"></path>
+                                        <path fill="#FFF" fill-rule="evenodd" d="M4.16 0c1.83 0 2.6.22 2.6.22l-.37 1.84s-.6-.15-1.16-.15c-.57 0-1.07.17-1.07.66v1.4h2.3l-.15 1.8H4.16V12H1.45V5.76H0v-1.8h1.45v-1.2c0-.53.01-1.35.46-1.86C2.4.37 3.04 0 4.16 0"></path>
                                     </svg>
-                                </a>
-                                <a class="_2Q0fU _3cqrr" href="https://twitter.com/intent/tweet?url={{ urlencode($url) }}" target="_blank">
+                                </button>
+                                <button class="_2Q0fU _3cqrr">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
-                                        <path fill="#FFF" fill-rule="evenodd"
-                                              d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
+                                        <path fill="#FFF" fill-rule="evenodd" d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
                                     </svg>
-                                </a>
-                                {{--<button class="_2Q0fU _23g2_">--}}
-                                {{--<svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">--}}
-                                {{--<path fill="#666" fill-rule="evenodd"--}}
-                                {{--d="M2.88 1.44a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path>--}}
-                                {{--</svg>--}}
-                                {{--</button>--}}
+                                </button>
+                                <button class="_2Q0fU _23g2_">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="#000" d="M7.24 9.06a.75.75 0 0 0-1.06 0l-.31.32L1.8 5.32l3.51-3.51 4.06 4.06-.38.38a.75.75 0 1 0 1.06 1.06l.91-.91c.3-.3.3-.77 0-1.06L5.85.22a.75.75 0 0 0-1.06 0L.22 4.79c-.3.3-.3.77 0 1.06l5.12 5.12a.75.75 0 0 0 1.06 0l.84-.85c.3-.29.3-.76 0-1.06" mask="url(#mask-2)"></path>
+                                            <path fill="#000" d="M11.78 6.15L6.66 1.03a.77.77 0 0 0-1.06 0l-.93.93a.75.75 0 1 0 1.06 1.06l.4-.4 4.06 4.06-3.51 3.5-4.06-4.05.32-.31a.75.75 0 0 0-1.06-1.07l-.85.85c-.3.3-.3.77 0 1.06l5.12 5.12a.75.75 0 0 0 1.06 0l4.57-4.57a.75.75 0 0 0 0-1.06" mask="url(#mask-4)" transform="translate(6 6)"></path>
+                                            <path fill="#000" d="M6.01 6.01c-.29.3-.29.77 0 1.07l5.08 5.07a.75.75 0 0 0 1.06-1.06L7.08 6.01a.75.75 0 0 0-1.07 0"></path>
+                                        </g>
+                                    </svg>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -216,7 +223,7 @@
                                                 </a>
                                                 <div class="zv5pR E6O3i">
                                                     <a class="_3f32u _38OvA" href="/u/{{ $post->user->slug }}">
-                                                        {{ $post->user->nickname }}
+                                                        {{ $post->user->name }}
                                                     </a>
                                                     <a class="O0stn _38OvA"
                                                        href="/f/{{ $post->fanbase->slug }}">
@@ -224,7 +231,7 @@
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                                              viewBox="0 0 18 18" class="_1z7Hy">
                                                             <g fill="none" fill-rule="evenodd">
-                                                                <path fill="#64c431"
+                                                                <path fill="#5BC20F"
                                                                       d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                                                 <path fill="#FFF"
                                                                       d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
@@ -315,13 +322,13 @@
                                 <div class="_2bDpH">
                                     <p class="_2nWjU _31dto KTIgi">
                                         <a class="_2XyXQ" href="/u/{{ $post->user->slug }}">
-                                            {{ $post->user->nickname }}
+                                            {{ $post->user->name }}
                                         </a>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                              viewBox="0 0 18 18"
                                              class="_1z7Hy _1NCGm RyyhO">
                                             <g fill="none" fill-rule="evenodd">
-                                                <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                                <path fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                                 <path fill="#FFF"
                                                       d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                                             </g>
@@ -359,7 +366,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                          viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
                                                                                      fill-rule="evenodd"><path
-                                                    fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
+                                                    fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
                                                     fill="#FFF"
                                                     d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg></span>
                                 </h3>
@@ -386,7 +393,6 @@
     <script type="text/javascript">
         $(function () {
             window.currentUser = {!! $user !!};
-            ko.applyBindings();
         });
 
     </script>

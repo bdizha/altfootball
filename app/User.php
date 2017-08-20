@@ -37,7 +37,7 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name', 'resized_image', 'is_self', 'fan'];
+    protected $appends = ['name', 'resized_image', 'is_self', 'follower'];
 
     public function getNameAttribute()
     {
@@ -139,7 +139,7 @@ class User extends Authenticatable
         return Auth::guard()->check() ? Auth::user()->id === $this->id : false;
     }
 
-    public function getFanAttribute()
+    public function getFollowerAttribute()
     {
         $user = Auth::user();
 

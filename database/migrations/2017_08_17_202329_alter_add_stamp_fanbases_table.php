@@ -14,7 +14,7 @@ class AlterAddStampFanbasesTable extends Migration
     public function up()
     {
         Schema::table('fanbases', function (Blueprint $table) {
-            $table->string('stamp', 3)->nullable();
+//            $table->string('stamp', 3)->nullable();
         });
     }
 

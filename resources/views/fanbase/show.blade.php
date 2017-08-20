@@ -46,63 +46,47 @@
         </div>
     </div>
     <div>
-        <div class="_1YCPS _1YoJe _2kPxQ">
+        <div class="_1YCPS _1YoJe _210LR">
             <div class="_3ScM5">
-                <div class="_2QqZ9 _1p_jQ">
-                    <div class="_3icdW">
-                        <div style="padding-bottom:100%;" class="_38L6D">
-                            {!! $fanbase->user->resized_image !!}
+                <div class="_1p_jQ">
+                    <div class="_2QqZ9">
+                        <div class="_3icdW">
+                            <div class="_38L6D" style="padding-bottom: 100%;">
+                                <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="32" height="32">
+                            </div>
                         </div>
-                    </div>
-                    <div class="vklpv">
-                        <div class="lt6XA">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-                                 class="_1z7Hy">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
-                                        ></path>
-                                    <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
-                                        ></path>
-                                </g>
-                            </svg>
+                        <div class="vklpv">
+                            <div class="lt6XA">
+                                {{ $fanbase->name }}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                        <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <a class="_37ior" href="/u/{{ $fanbase->user->slug }}">
+                                {{ $fanbase->user->name }}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                        <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                    </g>
+                                </svg>
+                            </a>
                         </div>
-                        <a class="_37ior" href="/u/{{ $fanbase->user->slug }}">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-                                 class="_1z7Hy">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
-                                        ></path>
-                                    <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
-                                        ></path>
-                                </g>
-                            </svg>
-                        </a>
                     </div>
                 </div>
                 <div class="_3vhE-">
                     <div class="_1bRKx">
                         <nav class="_3GkHt _1R2o8">
-                            <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}"
-                             >
+                            <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}">
                                 Posts
-                            </a>
-                            <a class="_3UwsA zxDoM _3rBNC"
-                               href="/f/{{ $fanbase->slug }}?page=discussions">
-                                Discussions
-                                <span>
-                                    <span class="_2-WMb _2aPX0" class="_1a2gI">{{ rand(1, 40) }}</span>
-                                </span>
                             </a>
                         </nav>
                     </div>
                 </div>
-                <button class="_2qvTq _1MC-v _1h78h _2yZ_n _1odcZ">
-                    <span>Join fanbase</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-                        <path fill="#FFF" fill-rule="evenodd" d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"
-                            ></path>
-                    </svg>
-                </button>
+                <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join fanbase', inactive_text: 'Joined', is_item: true"></follow>
             </div>
         </div>
     </div>
@@ -129,12 +113,7 @@
                             </svg>
                         </button>
                     @else
-                        <button class="_2qvTq _1MC-v _1h78h _2yZ_n _8eFus">
-                            <span>Join fanbase</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-                                <path fill="#FFF" fill-rule="evenodd" d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"></path>
-                            </svg>
-                        </button>
+                        <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join fanbase', inactive_text: 'Joined', is_item: true"></follow>
                     @endif
                 </div>
                 <div class="sZVC2">
@@ -142,7 +121,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                              class="_1z7Hy _8SyER">
                             <g fill="none" fill-rule="evenodd">
-                                <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                <path fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                 <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
                                     ></path>
                             </g>
@@ -179,7 +158,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          class="_1z7Hy _1NCGm">
                                         <g fill="none" fill-rule="evenodd">
-                                            <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
+                                            <path fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
                                                 ></path>
                                             <path fill="#FFF"
                                                   d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
@@ -195,7 +174,7 @@
                     </div>
                     <div class="_1i-5m">{{ $fanbase->description }}</div>
                     <div class="_16scH _23-G3">
-                        <a class="nXDDw _4wu2M" href="/t/PgtD-TRMTVSO3dJmDa8Lkw/members">
+                        <a class="nXDDw _4wu2M" href="//f/{{ $fanbase->slug }}/members">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14"
                                >
                                 <path fill-rule="evenodd"
@@ -227,7 +206,7 @@
                                         ></path>
                                 </g>
                             </svg>
-                            <span class="_2OsaV">{{ rand(1, 11) }}M</span>
+                            <span class="_2OsaV">{{ $fanbase->views  }}M</span>
                         </div>
                     </div>
                     <div class="DZpu2">
@@ -295,26 +274,25 @@
                         </button>
                     </div>
                     <div class="hXKYZ">
-                        <div class="_2qTcl">DRIVETRIBE Members</div>
+                        <div class="_2qTcl">ALTFOOTBALL Members</div>
                         <div class="_2qTcl">Email</div>
                         <div class="_2qTcl">Copy the link</div>
                     </div>
                 </div>
-                <!-- react-empty: 190 -->
             </div>
             <div class="_2F06s">
                 <div class="_3JxnF _38P1C">
                     <div class="_1bRKx">
                         <nav class="_3GkHt _1R2o8">
-                            <a class="zxDoM _3rBNC _2sG6-" href="/t/jeremy-clarksons-tribe-PgtD-TRMTVSO3dJmDa8Lkw"
-                             >
-                                <!-- react-text: 196 -->Posts<!-- /react-text -->
+                            <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}">
+                                Posts
                             </a>
                             <a class="_3UwsA zxDoM _3rBNC"
-                               href="/t/jeremy-clarksons-tribe-PgtD-TRMTVSO3dJmDa8Lkw/discussions">
-                                <!-- react-text: 198 -->Discussions<!-- /react-text --><span class="_2-WMb _2aPX0"
-                                                                                           ><span
-                                            class="_1a2gI">28</span></span>
+                               href="/f/{{ $fanbase->slug }}/discussions">
+                                Discussions
+                                <span class="_2-WMb _2aPX0">
+                                    <span class="_1a2gI">28</span>
+                                </span>
                             </a>
                         </nav>
                         <div class="_2Y2eP">
@@ -339,7 +317,7 @@
                         <div class="_2QqZ9 _1p_jQ">
                             <div class="_3icdW">
                                 <div style="padding-bottom:100%;" class="_38L6D"role="presentation"
-                                                                                                         src="https://drivetribe.imgix.net/AobBsUgsQc6DkZiEab5vKg?w=100&amp;h=100&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
+                                                                                                         src="https://ALTFOOTBALL.imgix.net/AobBsUgsQc6DkZiEab5vKg?w=100&amp;h=100&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
                                                                                                          class="_214e9 b00q8"
                                                                                                          width="32"
                                                                                                          height="32"
@@ -351,7 +329,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          class="_1z7Hy">
                                         <g fill="none" fill-rule="evenodd">
-                                            <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
+                                            <path fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
                                                 ></path>
                                             <path fill="#FFF"
                                                   d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
@@ -360,11 +338,11 @@
                                     </svg>
                                 </div>
                                 <a class="_37ior" href="/u/{{ $fanbase->user->slug }}">
-                                    <!-- react-text: 222 -->Jeremy Clarkson<!-- /react-text -->
+                                    {{ $fanbase->user->name }}
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                          class="_1z7Hy">
                                         <g fill="none" fill-rule="evenodd">
-                                            <path fill="#64c431" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
+                                            <path fill="#5BC20F" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
                                                 ></path>
                                             <path fill="#FFF"
                                                   d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
@@ -377,25 +355,16 @@
                         <div class="_3vhE-">
                             <div class="_1bRKx">
                                 <nav class="_3GkHt _1R2o8">
-                                    <a class="zxDoM _3rBNC _2sG6-"
-                                       href="/t/jeremy-clarksons-tribe-PgtD-TRMTVSO3dJmDa8Lkw">
-                                        <!-- react-text: 231 -->Posts<!-- /react-text -->
-                                    </a>
-                                    <a class="_3UwsA zxDoM _3rBNC"
-                                       href="/t/jeremy-clarksons-tribe-PgtD-TRMTVSO3dJmDa8Lkw/discussions"
-                                     >
-                                        <!-- react-text: 233 -->Discussions<!-- /react-text --><span
-                                                class="_2-WMb _2aPX0">28</span></span>
+                                    <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}#posts">
+                                        Posts
                                     </a>
                                 </nav>
                             </div>
                         </div>
                         <button class="_2qvTq _1MC-v _1h78h _2yZ_n _1odcZ">
-                            <span>Join tribe</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8"
-                               >
-                                <path fill="#FFF" fill-rule="evenodd" d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"
-                                    ></path>
+                            <span>Join fanbase</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+                                <path fill="#FFF" fill-rule="evenodd" d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"></path>
                             </svg>
                         </button>
                     </div>
@@ -403,7 +372,7 @@
             </div>
             <div class="_3P2x7">
                 <div id="feed" class="_3slpw abgKc">
-                    @if($fanbase->is_owner)
+                    @if($fanbase->is_owner && $posts->count() == 0)
                         <div class="_3SC7_">
                             <div class="BiosM">
                                 <p class="A8eM3">Create a post_</p>
@@ -417,9 +386,8 @@
                             <div class="_2mTBY">
                                 <svg width="38" height="38" viewBox="0 0 38 38">
                                     <g fill="none" fill-rule="evenodd">
-                                        <path fill="#F71700" d="M18.62 37.24a18.62 18.62 0 1 0 0-37.24 18.62 18.62 0 0 0 0 37.24z"></path>
-                                        <path fill="#FFF" stroke="#FFF" d="M12.62 19.48h2.71v-1.29h-2.7zM18.62 19.48h6.43v-1.29h-6.43z"></path>
-                                        <path fill="#FFF" stroke="#FFF" d="M18.2 24.62h1.28v-12h-1.29z"></path>
+                                        <path fill="#da1a35" d="M18.62 37.24a18.62 18.62 0 1 0 0-37.24 18.62 18.62 0 0 0 0 37.24z"></path>
+                                        <path transform="scale(0.3) translate(22, 22)" fill="#FFF" d="M39 1C18 1 1 18 1 39s17 38 38 38 38-17 38-38S60 1 39 1zm32.6 28.6l-4.7 8.1h-13l-6.3-10.9 7-12.2h7.8c4.3 4.1 7.5 9.2 9.2 15zM23.2 63.4h-7.7c-4.2-4.1-7.4-9.2-9.1-15l4.6-8h13.1l6.2 10.8-7.1 12.2zm-7.7-48.8h7.7l7.2 12.3-6.2 10.8h-13l-4.7-8.1c1.6-5.8 4.8-11 9-15zm32.9-8.2l3.9 6.8-7.1 12.2H32.7l-7.1-12.2 3.9-6.8c3-.9 6.2-1.4 9.5-1.4 3.3.1 6.4.6 9.4 1.4zM29.5 71.5l-3.9-6.7 7.1-12.2h12.7l7.1 12.2-3.9 6.7c-3 .9-6.2 1.4-9.6 1.4-3.3 0-6.5-.5-9.5-1.4zm33-8.1h-7.7l-7.1-12.3 6.2-10.8H67l4.6 8c-1.7 5.9-4.9 11.1-9.1 15.1z"></path>
                                     </g>
                                 </svg>
                             </div>
@@ -450,11 +418,12 @@
             </div>
         </div>
     </div>
-    <fanbase-form params="{{ $fanbase->toJS() }}"></fanbase-form>
+    <fanbase-form params="{{ $fanbase->toJson() }}"></fanbase-form>
     @include('templates.dribble')
     @include('templates.comments')
     @include('templates.posts')
     @include('fanbase.templates.form')
+    @include('templates.follow')
 @endsection
 
 @section('js')
