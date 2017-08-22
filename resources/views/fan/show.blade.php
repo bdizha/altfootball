@@ -33,7 +33,7 @@
                         </div>
                         <div class="_1Wugc undefined">
                             <span class="_2MwKG">
-                                <div>{{ $user->name }}</div>
+                                {{ $user->name }}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                      class="_1z7Hy _2JeVL"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF"
                                                                                                     d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
@@ -48,11 +48,17 @@
                                                                                   d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
                                                 fill="#FFF"
                                                 d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg></span>
-                            <p class="_14d4a">{{ $user->bio }}</p>
-                            <a rel="nofollow" target="_blank" class="_30-Mx" href="{{ $user->website }}"></a>
-                            @if(!$user->is_self)
-                                <follow params="follower: {!! $user->follower->toJson()  !!}, active_text: 'follow', inactive_text: 'unfollow'"></follow>
+                            @if($user->bio)
+                                <p class="_14d4a">{{ $user->bio }}</p>
                             @endif
+                            @if($user->website)
+                                <a rel="nofollow" target="_blank" class="_30-Mx" href="{{ $user->website }}"></a>
+                            @endif
+                            <div class="_2aOYp">
+                            @if(!$user->is_self)
+                                <follow params="follower: {{ $user->follower->toJson() }}, active_text: 'unfollow', inactive_text: 'follow', class: 'user'"></follow>
+                            @endif
+                            </div>
                         </div>
                     </div>
                     <div class="GHC_I">
@@ -67,7 +73,7 @@
                     <div class="_12g8o Pb65u"><span><span class="DdJUj">dribbles</span><span class="-DD7c">113.7K</span></span>
                     </div>
                     <div class="Pb65u">
-                        <a class="" href="/u/{{ $user->slug }}/following"><span
+                        <a class="" href="/u/{{ $user->slug }}/requested"><span
                                     class="DdJUj">Following</span><span class="C6GXY">
                                 <svg
                                         xmlns="http://www.w3.org/2000/svg" width="12" height="7"><path
@@ -75,19 +81,19 @@
                                 </svg>
                             </span>
                             <span class="-DD7c">
-                                {{ $user->following()->count() }}
+                                {{ $user->requested->count() }}
                             </span>
                         </a>
                     </div>
                     <div class="GrqoM Pb65u">
-                        <a class="" href="/u/{{ $user->slug }}/followers">
+                        <a class="" href="/u/{{ $user->slug }}/requesters">
                             <span class="DdJUj">Followers</span>
                             <span class="C6GXY">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7"><path
                                             d="M0 0l6 6.99L12 0h-1.87L6 4.82 1.86 0"></path>
                                 </svg>
                             </span>
-                            <span class="-DD7c">{{ $user->followers()->count() }}</span>
+                            <span class="-DD7c">{{ $user->requesters->count() }}</span>
                         </a>
                     </div>
                 </div>
@@ -112,7 +118,7 @@
                             <div class="_3dj9E">
                                 <div class="_3nlN8">
                                     <div class="owl-carousel owl-theme">
-                                        @foreach($fanbases as $k => $fanbase)
+                                        @foreach($user->fanbases as $k => $fanbase)
                                             <a class="_1mWot" href="/f/{{ $fanbase->slug }}">
                                                 <div class="ZD12l _1iE2V">
                                                     <div class="_2lssz">
@@ -164,20 +170,7 @@
                         <div id="feed" class="">
                             <div>
                                 <div class="_2u6Ki _1iE2V">
-                                    <div class="_3gFQj">
-                                        @foreach($posts as $k => $post)
-                                            @if(fmod($k, 2))
-                                                @include('post.item')
-                                            @endif
-                                        @endforeach
-                                    </div>
-                                    <div class="_3gFQj">
-                                        @foreach($posts as $k => $post)
-                                            @if(fmod($k + 1, 2))
-                                                @include('post.item')
-                                            @endif
-                                        @endforeach
-                                    </div>
+
                                 </div>
                                 <div class="_2L2jX"></div>
                             </div>
@@ -190,12 +183,15 @@
     <fanbase-form></fanbase-form>
     @include('templates.follow')
     @include('fanbase.templates.form')
+    @include('templates.dribbles')
+    @include('templates.comments')
+    @include('templates.posts')
 @endsection
 
 @section('js')
     <script type="text/javascript">
         $(function () {
-            window.settings = {!! $user->toJson() !!};
+            {{--window.settings = {!! $user->toJson() !!};--}}
         });
     </script>
 @endsection

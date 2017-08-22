@@ -26,7 +26,7 @@
                 </nav>
                 <div>
                     <section class="h6rik _1jrlD _2i__3 _1J_BZ jb9hx">
-                        @foreach($fans as $fan)
+                        @foreach($followers as $fan)
                             <li class="DcoLy _1iE2V _1fsZ8">
                                 <a class="dgyZb" href="/u/{{ $fan->slug }}">
                                     <div class="_25jNX _35OoN">
@@ -51,7 +51,7 @@
                                         </span>
                                     </div>
                                 </a>
-                                <follow params='fan: {!! $fan->follower->toJson()  !!}'></follow>
+                                <follow params="follower: {!! $fan->follower->toJson()  !!}, active_text: 'unfollow', inactive_text: 'follow', class: 'items'"></follow>
                             </li>
                         @endforeach
                     </section>

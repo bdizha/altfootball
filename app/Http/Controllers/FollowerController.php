@@ -16,8 +16,8 @@ class FollowerController extends Controller
         $data['user_id'] = $user->id;
 
         $follower = Follower::where('user_id', $data['user_id'])
-            ->where('type', $data['type'])
-            ->where('type_id', $data['type_id'])
+            ->where('followable_type', $data['followable_type'])
+            ->where('followable_id', $data['followable_id'])
             ->first();
 
         if (empty($follower->id)) {

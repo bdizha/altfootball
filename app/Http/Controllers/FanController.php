@@ -14,62 +14,47 @@ class FanController extends Controller
     {
         $user = User::where('slug', '=', $slug)->first();
 
-        $posts = Post::whereHas('user', function ($query) use ($user) {
-            $query->where('users.id', $user->id);
-        })
-            ->orderBy("posts.created_at", "DESC")
-            ->take(24)
-            ->get();
-
-        $fanbases = Fanbase::whereHas('users', function ($query) use ($user) {
-            $query->where('users.id', $user->id);
-        })
-            ->orderBy("fanbases.name", "ASC")
-            ->take(12)
-            ->get();
-
         return view('fan.show', [
-            'user' => $user,
-            'posts' => $posts,
-            'fanbases' => $fanbases
+            'user' => $user
         ]);
     }
 
-    public function followers($slug)
-    {
-        $user = User::where('slug', '=', $slug)->first();
-        return view('fan.fans', [
-            'user' => $user,
-            'fans' => $user->followers(),
-            'tabs' => $this->tabs($user, 'followers')
-        ]);
-    }
-
-    public function following($slug)
+    public function requesters($slug)
     {
         $user = User::where('slug', '=', $slug)->first();
 
         return view('fan.fans', [
             'user' => $user,
-            'fans' => $user->following(),
-            'tabs' => $this->tabs($user, 'following')
+            'followers' => $user->requesters,
+            'tabs' => $this->tabs($user, 'requesters')
+        ]);
+    }
+
+    public function requested($slug)
+    {
+        $user = User::where('slug', '=', $slug)->first();
+
+        return view('fan.fans', [
+            'user' => $user,
+            'followers' => $user->requested,
+            'tabs' => $this->tabs($user, 'requested')
         ]);
     }
 
     protected function tabs($user, $active)
     {
         $tabs = [
-            'followers' =>
+            'requesters' =>
                 [
                     'label' => 'Followers',
-                    'count' => $user->followers()->count(),
+                    'count' => $user->requesters->count(),
                     'is_active' => false
                 ],
 
-            'following' =>
+            'requested' =>
                 [
                     'label' => 'Following',
-                    'count' => $user->following()->count(),
+                    'count' => $user->requested->count(),
                     'is_active' => false
                 ]
         ];

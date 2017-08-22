@@ -27,7 +27,7 @@ class Fanbase extends Model
         'slug'
     ];
 
-    protected $appends = ['resized_image', 'initials', 'is_owner'];
+    protected $appends = ['resized_image', 'initials', 'is_owner', 'follower'];
 
     protected $covers = [
         "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905207/lxs2sjouxjlumcg4wnvz.jpg",
@@ -77,31 +77,12 @@ class Fanbase extends Model
         return $this->belongsToMany(Post::class, 'fanbases_posts');
     }
 
-    public function getFollowersAttribute()
+    /**
+     * Get all of the fanbase's followers.
+     */
+    public function followers()
     {
-        $user = Auth::user();
-
-        if (Auth::guard()->check()) {
-            $follower = Follower::where('type_id', $this->id)
-                ->where('type', 'fanbase')
-                ->first();
-
-            if (empty($follower->id)) {
-                $follower = Follower::create([
-                    'user_id' => $user->id,
-                    'type_id' => $this->id,
-                    'type' => 'fanbase'
-                ]);
-            }
-
-            return $follower;
-        }
-
-        $follower = new Follower();
-        $follower->type_id = $this->id;
-        $follower->type = 'fanbase';
-
-        return $follower;
+        return $this->morphMany(Follower::class, 'followable');
     }
 
     public function getFollowerAttribute()
@@ -110,15 +91,16 @@ class Fanbase extends Model
 
         if (Auth::guard()->check()) {
             $follower = Follower::where('user_id',  $user->id)
-                ->where('type_id', $this->id)
-                ->where('type', 'fanbase')
+                ->where('followable_id', $this->id)
+                ->where('is_active', true)
+                ->where('followable_type', 'App\Fanbase')
                 ->first();
 
             if (empty($follower->id)) {
                 $follower = Follower::create([
                     'user_id' => $user->id,
-                    'type_id' => $this->id,
-                    'type' => 'fanbase'
+                    'followable_id' => $this->id,
+                    'followable_type' => 'App\Fanbase'
                 ]);
             }
 
@@ -126,8 +108,8 @@ class Fanbase extends Model
         }
 
         $follower = new Follower();
-        $follower->type_id = $this->id;
-        $follower->type = 'fanbase';
+        $follower->followable_id = $this->id;
+        $follower->followable_type = 'App\Fanbase';
 
         return $follower;
     }

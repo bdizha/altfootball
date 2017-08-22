@@ -86,7 +86,7 @@
                         </nav>
                     </div>
                 </div>
-                <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join fanbase', inactive_text: 'Joined', is_item: true"></follow>
+                <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join fanbase', active_text: 'Joined', class: 'fanbase'"></follow>
             </div>
         </div>
     </div>
@@ -113,7 +113,7 @@
                             </svg>
                         </button>
                     @else
-                        <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join fanbase', inactive_text: 'Joined', is_item: true"></follow>
+                        <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join fanbase', active_text: 'Joined', class: 'fanbase'></follow>
                     @endif
                 </div>
                 <div class="sZVC2">
@@ -418,8 +418,8 @@
             </div>
         </div>
     </div>
-    <fanbase-form params="{{ $fanbase->toJson() }}"></fanbase-form>
-    @include('templates.dribble')
+    {{--<fanbase-form params="{{ $fanbase->toJson() }}"></fanbase-form>--}}
+    @include('templates.dribbles')
     @include('templates.comments')
     @include('templates.posts')
     @include('fanbase.templates.form')
@@ -429,7 +429,7 @@
 @section('js')
     <script type="text/javascript">
         $(function () {
-            window.currentUser = {!! $user !!};
+            {{--window.currentUser = {!! $user !!};--}}
         });
     </script>
 @endsection

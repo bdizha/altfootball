@@ -75,7 +75,7 @@
                     </div>
                     <dribbles params='count: dribbles.length, type_id: id, has_dribble: has_dribble, type: "post"'></dribbles>
                 </div>
-                <comments params='comments: limited_comments, type_id: id, level: 0, root: $root, is_list: true'></comments>
+                <comments params='comments: limited_comments, type_id: id, level: 0, root: $root, class: 'items''></comments>
             </div>
         </div>
     </div>

@@ -301,15 +301,26 @@ $(function () {
     var FollowViewModel = function (params) {
         var self = this;
 
-        console.log(params.is_list + ">>>>")
-
         self.follower = ko.observable(params.follower);
-        self.isItem = ko.observable(Boolean(params.is_item));
-        self.isList = ko.observable(Boolean(params.is_list));
+        self.classes = ko.observable({
+            items: 'zrN-a _2P1mw _1MC-v _1h78h',
+            fanbase: '_2qvTq _1MC-v _1h78h _2yZ_n _1odcZ',
+            user: 'b9xa- _8GOLs _1h78h'
+        });
         self.isActive = ko.observable(Boolean(params.follower.is_active));
         self.isInactive = ko.observable(!Boolean(params.follower.is_active));
         self.activeText = ko.observable(params.active_text);
         self.inactiveText = ko.observable(params.inactive_text);
+        self.cssClass = ko.computed(function(){
+            return self.classes()[params.class];
+        });
+        self.isList = ko.computed(function(){
+            return params.class === 'items';
+        });
+
+        self.isUser = ko.computed(function(){
+            return params.class === 'user' && self.isInactive();
+        });
 
         self.save = function () {
             self.isActive(!self.isActive());
@@ -317,8 +328,8 @@ $(function () {
 
             var follower = {
                 user_id: self.follower().user_id,
-                type_id: self.follower().type_id,
-                type: self.follower().type
+                followable_id: self.follower().followable_id,
+                followable_type: self.follower().followable_type
             };
 
             $.ajax("/follower", {

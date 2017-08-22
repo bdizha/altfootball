@@ -40,7 +40,7 @@
                                                 </h3>
                                                 <p class="_1gZlE">{{ $fanbase->description }}</p><span class="_3es_m _2e1-n _1geYT">View Tribe</span></div>
                                             <div class="_3DEPd _2oYlQ">
-                                                <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
+                                                <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
                                             </div>
                                         </a>
                                     @endforeach
@@ -78,7 +78,7 @@
                                             <p class="_1gZlE">{{ $fanbase->description }}</p>
                                         </div>
                                         <div class="_3DEPd">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -119,7 +119,7 @@
                                             <p class="_1gZlE">{{ $fanbase->description }}</p>
                                         </div>
                                         <div class="_3DEPd">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -159,7 +159,7 @@
                                             <span class="_3es_m _2e1-n _1geYT">View Tribe</span>
                                         </div>
                                         <div class="_3DEPd _2oYlQ">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -197,7 +197,7 @@
                                             <p class="_1gZlE">{{ $fanbase->description  }}</p>
                                         </div>
                                         <div class="_3DEPd">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
                                         </div>
                                     </a>
                                     @endforeach
@@ -235,7 +235,7 @@
                                             <p class="_1gZlE">{{ $fanbase->description }}</p>
                                         </div>
                                         <div class="_3DEPd">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, active_text: 'Join', inactive_text: 'Joined', is_list: true"></follow>
+                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
                                         </div>
                                     </a>
                                     @endforeach

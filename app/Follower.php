@@ -7,14 +7,27 @@ use Illuminate\Database\Eloquent\Model;
 class Follower extends Model
 {
     protected $fillable = [
-        'type_id',
+        'followable_id',
+        'followable_type',
         'user_id',
-        'type',
         'is_active'
     ];
 
+    /**
+     * Get all of the owning followable models.
+     */
+    public function followable()
+    {
+        return $this->morphTo();
+    }
+
     public function user()
     {
-        return $this->hasOne('App\User', 'id', 'user_id');
+        return $this->hasOne(User::class, 'id', 'user_id');
+    }
+
+    public function requested()
+    {
+        return $this->hasOne(User::class, 'id', 'followable_id');
     }
 }

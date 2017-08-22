@@ -37,7 +37,7 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name', 'resized_image', 'is_self', 'follower'];
+    protected $appends = ['name', 'resized_image', 'is_self', 'follower', 'fanbases', 'requested', 'requesters'];
 
     public function getNameAttribute()
     {
@@ -60,55 +60,95 @@ class User extends Authenticatable
 
     public function posts()
     {
-        return $this->hasMany(Post::class);
-    }
-
-    public function fanbases()
-    {
-        return $this->belongsToMany(Fanbase::class, 'users_fanbases');
-    }
-
-    public function requesters()
-    {
-        return $this->hasMany('App\Fan', 'requested_id', 'id');
-    }
-
-    public function requested()
-    {
-        return $this->hasMany('App\Fan', 'requester_id', 'id');
-    }
-
-    public function fans()
-    {
-        return Fan::where('requester_id', $this->id)
-            ->orWhere('requested_id', $this->id)
-            ->get();
-    }
-
-    public function followers()
-    {
-        $userId = $this->id;
-        return User::whereHas('requested', function ($query) use($userId) {
-            $query->where('requested_id', $userId);
-        })
-            ->get();
-    }
-
-    public function following()
-    {
-        $userId = $this->id;
-        return User::whereHas('requesters', function ($query) use($userId) {
-            $query->where('requester_id', $userId);
-        })
-            ->get();
+        return $this->hasMany(Post::class)
+            ->orderBy("created_at", "DESC")
+            ->take(24);
     }
 
     /**
-     * Create a string based on the first and last name of a person.
+     * Get all of the user's followers.
      */
+    public function followers()
+    {
+        return $this->morphMany(Follower::class, 'followable');
+    }
+
+    public function getFanbasesAttribute()
+    {
+        return Fanbase::whereHas('followers', function ($query) {
+            $query->where('user_id', $this->id)
+            ->where('followable_type', 'App\Fanbase');
+        })
+            ->with('user')
+            ->get();
+    }
+
+    public function getRequestedAttribute()
+    {
+        return self::whereHas('followers', function ($query) {
+            $query->where('user_id', $this->id)
+                ->where('is_active', true)
+                ->where('followable_type', 'App\User');
+        })
+            ->get();
+    }
+
+    public function getRequestersAttribute()
+    {
+        return self::whereHas('followers', function ($query) {
+            $query->where('followable_id', $this->id)
+                ->where('is_active', true)
+                ->where('followable_type', 'App\User');
+        })
+            ->get();
+    }
+
     public function getSluggableString()
     {
         return sprintf('%s %s', $this->first_name, $this->last_name);
+    }
+
+    public function getIsSelfAttribute()
+    {
+        return Auth::guard()->check() ? Auth::user()->id === $this->id : false;
+    }
+
+    public function getFollowerAttribute()
+    {
+        $user = Auth::user();
+
+        if (Auth::guard()->check()) {
+            $follower = Follower::where('user_id',  $user->id)
+                ->where('followable_id', $this->id)
+                ->where('followable_type', 'App\User')
+                ->first();
+
+            if (empty($follower->id)) {
+                $follower = Follower::create([
+                    'user_id' => $user->id,
+                    'followable_id' => $this->id,
+                    'followable_type' => 'App\User'
+                ]);
+            }
+
+            return $follower;
+        }
+
+        $follower = new Follower();
+        $follower->followable_id = $this->id;
+        $follower->followable_type = 'App\User';
+
+        return $follower;
+    }
+
+    public function getDomain()
+    {
+        return str_replace("http://", "", $this->website);
+    }
+
+    public function getJson()
+    {
+        return $this->toJson();
     }
 
     public function getResizedImageAttribute($dimensions = "width=300&height=300")
@@ -132,45 +172,5 @@ class User extends Authenticatable
             return $image;
         } catch (\Exception $e) {
         }
-    }
-
-    public function getIsSelfAttribute()
-    {
-        return Auth::guard()->check() ? Auth::user()->id === $this->id : false;
-    }
-
-    public function getFollowerAttribute()
-    {
-        $user = Auth::user();
-
-        if (Auth::guard()->check() && $this->id != $user->id) {
-            $data = [
-                'requester_id' => $this->id,
-                'requested_id' => $user->id
-            ];
-
-            $ids = [$this->id, $user->id];
-            $fan = Fan::whereIn('requester_id', $ids)
-                ->whereIn('requested_id', $ids)
-                ->first();
-
-            if (empty($fan->id)) {
-                $fan = Fan::create($data);
-            }
-
-            return $fan;
-        }
-
-        return new Fan();
-    }
-
-    public function getDomain()
-    {
-        return str_replace("http://", "", $this->website);
-    }
-
-    public function getJson()
-    {
-        return $this->toJson();
     }
 }

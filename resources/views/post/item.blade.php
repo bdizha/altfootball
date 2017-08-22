@@ -98,6 +98,6 @@
             </div>
             <dribbles params='count: {!! $post->dribbles->count() !!}, type_id: {{ $post->id }}, has_dribble: {{ $post->has_dribble }}, type: "post"'></dribbles>
         </div>
-        <comments params='comments: {!! $post->limited_comments !!}, type_id: {{ $post->id }}, level: 0, root: $root, is_list: true'></comments>
+        <comments params='comments: {!! $post->limited_comments !!}, type_id: {{ $post->id }}, level: 0, root: $root, class: 'items''></comments>
     </div>
 </div>
