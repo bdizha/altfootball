@@ -23,35 +23,30 @@
                         <div class="_3l_Es">
                             <div class="">
                                 <div class="_2eSI4">
-                                    @foreach($fanbases as $k => $fanbase)
-                                        <a class="_12L63 _1qe7q" href="/f/{{ $fanbase->slug }}">
-                                            <div class="_3ta8l">
-                                                <div class="">
-                                                    <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                    <div class="owl-carousel owl-three owl-theme">
+                                        @foreach($fanbases as $k => $fanbase)
+                                            <a class="_12L63 _1qe7q" href="/f/{{ $fanbase->slug }}">
+                                                <div class="_3ta8l">
+                                                    <div class="">
+                                                        <div class="_38L6D" style="padding-bottom: 100%;">
+                                                            <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="_2iRjb">
-                                                <div class="_3hQ2Q">{{ str_pad(++$k, 2, 0, STR_PAD_LEFT) }}</div>
-                                                <h3 class="_2BMyH">
-                                                    {{ $fanbase->name }}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
-                                                </h3>
-                                                <p class="_1gZlE">{{ $fanbase->description }}</p><span class="_3es_m _2e1-n _1geYT">View Tribe</span></div>
-                                            <div class="_3DEPd _2oYlQ">
-                                                <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
-                                            </div>
-                                        </a>
-                                    @endforeach
+                                                <div class="_2iRjb">
+                                                    <div class="_3hQ2Q">{{ str_pad(++$k, 2, 0, STR_PAD_LEFT) }}</div>
+                                                    <h3 class="_2BMyH">
+                                                        {{ $fanbase->name }}
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
+                                                    </h3>
+                                                    <p class="_1gZlE">{{ $fanbase->description }}</p><span class="_3es_m _2e1-n _1geYT">View Tribe</span></div>
+                                                <div class="_3DEPd _2oYlQ">
+                                                    <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
+                                                </div>
+                                            </a>
+                                        @endforeach
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="_36Qac">
-                            <div class="_2BZH3">
-                                <button class="_1JesO" disabled="">Prev</button>
-                                <div class="_28Zwg" style="transform: scaleX(0) translateZ(0px);"></div>
-                                <button class="_1JesO undefined LmPde">Next</button>
                             </div>
                         </div>
                     </div>
@@ -64,32 +59,27 @@
                         <div class="_3l_Es">
                             <div class="">
                                 <div class="_2eSI4">
-                                    @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
-                                        <div class="_3ta8l">
-                                            <div class="">
-                                                <div class="_38L6D" style="padding-bottom: 100%;">
-                                                    <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                    <div class="owl-carousel owl-five owl-theme">
+                                        @foreach($fanbases as $k => $fanbase)
+                                        <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                            <div class="_3ta8l">
+                                                <div class="">
+                                                    <div class="_38L6D" style="padding-bottom: 100%;">
+                                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="_2iRjb">
-                                            <h3 class="_2BMyH">{{ $fanbase->name }}</h3>
-                                            <p class="_1gZlE">{{ $fanbase->description }}</p>
-                                        </div>
-                                        <div class="_3DEPd">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
-                                        </div>
-                                    </a>
-                                    @endforeach
+                                            <div class="_2iRjb">
+                                                <h3 class="_2BMyH">{{ $fanbase->name }}</h3>
+                                                <p class="_1gZlE">{{ $fanbase->description }}</p>
+                                            </div>
+                                            <div class="_3DEPd">
+                                                <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
+                                            </div>
+                                        </a>
+                                        @endforeach
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="_36Qac">
-                            <div class="_2BZH3">
-                                <button class="_1JesO" disabled="">Prev</button>
-                                <div class="_28Zwg" style="transform: scaleX(0) translateZ(0px);"></div>
-                                <button class="_1JesO undefined LmPde">Next</button>
                             </div>
                         </div>
                     </div>
@@ -102,35 +92,30 @@
                         <div class="_3l_Es">
                             <div class="">
                                 <div class="_2eSI4">
-                                    @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
-                                        <div class="_3ta8l">
-                                            <div class="">
-                                                <div class="_38L6D" style="padding-bottom: 100%;">
-                                                    <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                    <div class="owl-carousel owl-five owl-theme">
+                                        @foreach($fanbases as $k => $fanbase)
+                                        <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                            <div class="_3ta8l">
+                                                <div class="">
+                                                    <div class="_38L6D" style="padding-bottom: 100%;">
+                                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="_2iRjb">
-                                            <h3 class="_2BMyH">
-                                                {{ $fanbase->name }}
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
-                                            </h3>
-                                            <p class="_1gZlE">{{ $fanbase->description }}</p>
-                                        </div>
-                                        <div class="_3DEPd">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
-                                        </div>
-                                    </a>
-                                    @endforeach
+                                            <div class="_2iRjb">
+                                                <h3 class="_2BMyH">
+                                                    {{ $fanbase->name }}
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
+                                                </h3>
+                                                <p class="_1gZlE">{{ $fanbase->description }}</p>
+                                            </div>
+                                            <div class="_3DEPd">
+                                                <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
+                                            </div>
+                                        </a>
+                                        @endforeach
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="_36Qac">
-                            <div class="_2BZH3">
-                                <button class="_1JesO" disabled="">Prev</button>
-                                <div class="_28Zwg" style="transform: scaleX(0) translateZ(0px);"></div>
-                                <button class="_1JesO undefined LmPde">Next</button>
                             </div>
                         </div>
                     </div>
@@ -143,34 +128,27 @@
                         <div class="_3l_Es">
                             <div class="">
                                 <div class="_2eSI4">
-                                    @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 _1qe7q" href="/f/{{ $fanbase->slug }}">
-                                        <div class="_3ta8l">
-                                            <div class="">
-                                                <div class="_38L6D" style="padding-bottom: 100%;">
-                                                    <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                    <div class="owl-carousel owl-five owl-theme">
+                                        @foreach($fanbases as $k => $fanbase)
+                                            <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                                <div class="_3ta8l">
+                                                    <div class="">
+                                                        <div class="_38L6D" style="padding-bottom: 100%;">
+                                                            <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="_2iRjb">
-                                            <div class="_3hQ2Q">01</div>
-                                            <h3 class="_2BMyH">{{ $fanbase->name }}</h3>
-                                            <p class="_1gZlE">{{ $fanbase->description }}</p>
-                                            <span class="_3es_m _2e1-n _1geYT">View Tribe</span>
-                                        </div>
-                                        <div class="_3DEPd _2oYlQ">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
-                                        </div>
-                                    </a>
-                                    @endforeach
+                                                <div class="_2iRjb">
+                                                    <h3 class="_2BMyH">{{ $fanbase->name }}</h3>
+                                                    <p class="_1gZlE">{{ $fanbase->description  }}</p>
+                                                </div>
+                                                <div class="_3DEPd">
+                                                    <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
+                                                </div>
+                                            </a>
+                                        @endforeach
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="_36Qac">
-                            <div class="_2BZH3">
-                                <button class="_1JesO" disabled="">Prev</button>
-                                <div class="_28Zwg" style="transform: scaleX(0) translateZ(0px);"></div>
-                                <button class="_1JesO undefined LmPde">Next</button>
                             </div>
                         </div>
                     </div>
@@ -183,32 +161,27 @@
                         <div class="_3l_Es">
                             <div class="">
                                 <div class="_2eSI4">
-                                    @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
-                                        <div class="_3ta8l">
-                                            <div class="">
-                                                <div class="_38L6D" style="padding-bottom: 100%;">
-                                                    <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                    <div class="owl-carousel owl-five owl-theme">
+                                        @foreach($fanbases as $k => $fanbase)
+                                        <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                            <div class="_3ta8l">
+                                                <div class="">
+                                                    <div class="_38L6D" style="padding-bottom: 100%;">
+                                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="_2iRjb">
-                                            <h3 class="_2BMyH">{{ $fanbase->name }}</h3>
-                                            <p class="_1gZlE">{{ $fanbase->description  }}</p>
-                                        </div>
-                                        <div class="_3DEPd">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
-                                        </div>
-                                    </a>
-                                    @endforeach
+                                            <div class="_2iRjb">
+                                                <h3 class="_2BMyH">{{ $fanbase->name }}</h3>
+                                                <p class="_1gZlE">{{ $fanbase->description  }}</p>
+                                            </div>
+                                            <div class="_3DEPd">
+                                                <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
+                                            </div>
+                                        </a>
+                                        @endforeach
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="_36Qac">
-                            <div class="_2BZH3">
-                                <button class="_1JesO" disabled="">Prev</button>
-                                <div class="_28Zwg" style="transform: scaleX(0) translateZ(0px);"></div>
-                                <button class="_1JesO undefined LmPde">Next</button>
                             </div>
                         </div>
                     </div>
@@ -221,32 +194,27 @@
                         <div class="_3l_Es">
                             <div class="">
                                 <div class="_2eSI4">
-                                    @foreach($fanbases as $k => $fanbase)
-                                    <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
-                                        <div class="_3ta8l">
-                                            <div class="">
-                                                <div class="_38L6D" style="padding-bottom: 100%;">
-                                                    <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                    <div class="owl-carousel owl-five owl-theme">
+                                        @foreach($fanbases as $k => $fanbase)
+                                        <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                            <div class="_3ta8l">
+                                                <div class="">
+                                                    <div class="_38L6D" style="padding-bottom: 100%;">
+                                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="_2iRjb">
-                                            <h3 class="_2BMyH">{{ $fanbase->name }}</h3>
-                                            <p class="_1gZlE">{{ $fanbase->description }}</p>
-                                        </div>
-                                        <div class="_3DEPd">
-                                            <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
-                                        </div>
-                                    </a>
-                                    @endforeach
+                                            <div class="_2iRjb">
+                                                <h3 class="_2BMyH">{{ $fanbase->name }}</h3>
+                                                <p class="_1gZlE">{{ $fanbase->description }}</p>
+                                            </div>
+                                            <div class="_3DEPd">
+                                                <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
+                                            </div>
+                                        </a>
+                                        @endforeach
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="_36Qac">
-                            <div class="_2BZH3">
-                                <button class="_1JesO" disabled="">Prev</button>
-                                <div class="_28Zwg" style="transform: scaleX(0) translateZ(0px);"></div>
-                                <button class="_1JesO undefined LmPde">Next</button>
                             </div>
                         </div>
                     </div>
@@ -278,7 +246,7 @@
                         return true;
                     });
                 });
-                self.showJoinPopup = ko.observable(false);
+                self.openJoinForm = ko.observable(false);
                 self.selectedAll = ko.observable(false);
                 self.selectOne = function(fanbase) {
                     if(self.selected.indexOf(fanbase.id) > -1){
@@ -308,13 +276,13 @@
                 };
                 self.submit = function(){
                     if(self.selected().length === 0){
-                        self.showJoinPopup(true);
+                        self.openJoinForm(true);
                         return false;
                     }
                     return true;
                 };
                 self.ok = function(){
-                    self.showJoinPopup(false);
+                    self.openJoinForm(false);
                 }
             }
         });

@@ -2,10 +2,10 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
-use MartinBean\Database\Eloquent\Sluggable;
-use Illuminate\Support\Facades\Redis;
 use Auth;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Redis;
+use MartinBean\Database\Eloquent\Sluggable;
 
 class Fanbase extends Model
 {
@@ -82,7 +82,7 @@ class Fanbase extends Model
      */
     public function followers()
     {
-        return $this->morphMany(Follower::class, 'followable');
+        return [];
     }
 
     public function getFollowerAttribute()
@@ -90,7 +90,7 @@ class Fanbase extends Model
         $user = Auth::user();
 
         if (Auth::guard()->check()) {
-            $follower = Follower::where('user_id',  $user->id)
+            $follower = Follower::where('user_id', $user->id)
                 ->where('followable_id', $this->id)
                 ->where('is_active', true)
                 ->where('followable_type', 'App\Fanbase')
@@ -139,7 +139,7 @@ class Fanbase extends Model
             $image = Redis::get('fanbase:cover:' . $this->id);
             if (empty($image)) {
 
-                if(empty($this->cover)){
+                if (empty($this->cover)) {
                     $this->cover = $this->covers[rand(0, count($this->covers) - 1)];
                     $this->save();
                 }
@@ -157,11 +157,11 @@ class Fanbase extends Model
         $image = "";
         preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getImage(), $imageParts, PREG_SET_ORDER);
 
-        if(!empty($imageParts[3][2])){
+        if (!empty($imageParts[3][2])) {
             $imageParts = explode(" ", $imageParts[3][2]);
         }
 
-        if(!empty($imageParts[0])){
+        if (!empty($imageParts[0])) {
             $image = $imageParts[0];
         }
 
@@ -173,11 +173,11 @@ class Fanbase extends Model
         $image = "";
         preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getCover(), $imageParts, PREG_SET_ORDER);
 
-        if(!empty($imageParts[3][2])){
+        if (!empty($imageParts[3][2])) {
             $imageParts = explode(" ", $imageParts[3][2]);
         }
 
-        if(!empty($imageParts[0])){
+        if (!empty($imageParts[0])) {
             $image = $imageParts[0];
         }
 

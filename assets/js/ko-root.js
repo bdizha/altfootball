@@ -21,6 +21,19 @@ $(function () {
         self.showUserForm = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
         self.currentUser = ko.observable(false);
+        self.showJoinForm = ko.observable(false);
+
+        self.showOverlay = function() {
+            return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm();
+        };
+
+        self.openJoinForm = function() {
+            self.showJoinForm(true);
+        };
+
+        self.hideJoinPopup = function() {
+            self.showJoinForm(false);
+        };
 
         self.openSettingsForm = function () {
             self.showSettingsForm(!self.showSettingsForm());

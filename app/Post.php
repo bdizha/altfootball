@@ -145,6 +145,10 @@ class Post extends Model
 
             $fileExt = $fileParts[count($fileParts) - 1];
 
+            if(!in_array(strtolower($fileExt), ['jpg', 'jpeg', 'gif', 'png'])){
+                $fileExt = 'jpg';
+            }
+
             $filename = "/images/posts/" . md5($this->image) . ".{$fileExt}";
 
             file_put_contents(public_path() . $filename, $data);

@@ -39,7 +39,7 @@ $(function () {
         }
     });
 
-    $('.owl-carousel').owlCarousel({
+    $('.owl-four').owlCarousel({
         loop: false,
         nav: true,
         responsive:{
@@ -55,7 +55,45 @@ $(function () {
         },
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
-    })
+    });
+
+
+    $('.owl-three').owlCarousel({
+        loop: false,
+        nav: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            600:{
+                items: 2
+            },
+            1000:{
+                items: 3
+            }
+        },
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    });
+
+
+    $('.owl-five').owlCarousel({
+        loop: false,
+        nav: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            600:{
+                items: 2
+            },
+            1000:{
+                items: 5
+            }
+        },
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    });
 });
 
 function setHeightFor(selector) {
@@ -345,6 +383,96 @@ $(function () {
     ko.components.register('follow', {
         viewModel: FollowViewModel,
         template: {element: 'follow-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
+$(function () {
+
+    var JoinFormViewModel = function (params) {
+
+        self = this;
+
+        self.email = ko.observable().extend({
+            required: {
+                message: 'Email is required.'
+            }
+        }).extend({
+            email: {
+                message: 'Email is invalid.'
+            }
+        });
+
+        self.focusedEmail = ko.observable(false);
+
+        self.canGo = ko.computed(function () {
+
+            return true;
+            // return $("._2Kdch").hasClass("p5bDW");
+        });
+
+        self.showAllMessages = function () {
+            console.log("showAllMessages");
+            JoinFormViewModel.errors().showAllMessages();
+        };
+
+        self.focusEmail = function () {
+            self.focusedEmail(true);
+        };
+
+        self.blurEmail = function () {
+            if (self.email.length === 0) {
+                self.focusedEmail(false);
+            }
+
+            // console.log(JoinFormViewModel.errors());
+
+            console.log("testing...");
+
+            self.toggleErrors();
+            self.showAllMessages();
+        };
+
+        self.toggleErrors = function () {
+            $("._2Kdch").each(function () {
+                var $this = $(this);
+
+                if ($this.find('span._1u7op').is(':visible')) {
+                    $this.addClass('p5bDW');
+                }
+                else {
+                    $this.removeClass('p5bDW');
+                }
+            });
+        };
+
+        self.proceed = function () {
+            self.showAllMessages();
+
+            if (self.canGo) {
+                $.ajax("/register", {
+                    data: ko.toJSON({
+                        email: self.email()
+                    }),
+                    type: "post",
+                    contentType: "application/json",
+                    success: function (response) {
+                        console.log(response);
+                    }
+                });
+
+            }
+        }
+    };
+
+    JoinFormViewModel.errors = ko.validation.group(JoinFormViewModel);
+
+    ko.components.register('join-form', {
+        viewModel: JoinFormViewModel,
+        template: {element: 'join-form-template'}
     });
 });
 /**
@@ -753,6 +881,19 @@ $(function () {
         self.showUserForm = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
         self.currentUser = ko.observable(false);
+        self.showJoinForm = ko.observable(false);
+
+        self.showOverlay = function() {
+            return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm();
+        };
+
+        self.openJoinForm = function() {
+            self.showJoinForm(true);
+        };
+
+        self.hideJoinPopup = function() {
+            self.showJoinForm(false);
+        };
 
         self.openSettingsForm = function () {
             self.showSettingsForm(!self.showSettingsForm());

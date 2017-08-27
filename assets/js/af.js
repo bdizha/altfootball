@@ -39,7 +39,7 @@ $(function () {
         }
     });
 
-    $('.owl-carousel').owlCarousel({
+    $('.owl-four').owlCarousel({
         loop: false,
         nav: true,
         responsive:{
@@ -55,7 +55,45 @@ $(function () {
         },
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
-    })
+    });
+
+
+    $('.owl-three').owlCarousel({
+        loop: false,
+        nav: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            600:{
+                items: 2
+            },
+            1000:{
+                items: 3
+            }
+        },
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    });
+
+
+    $('.owl-five').owlCarousel({
+        loop: false,
+        nav: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            600:{
+                items: 2
+            },
+            1000:{
+                items: 5
+            }
+        },
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    });
 });
 
 function setHeightFor(selector) {

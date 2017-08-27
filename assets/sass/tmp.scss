@@ -359,10 +359,10 @@
     color: #fff;
   }
   ._1VKWj {
-    border-color: #f4f4f4;
+    border-color: $color_gray;
   }
   .d25Pz {
-    color: #f4f4f4;
+    color: $color_gray;
   }
 }
 
@@ -1486,10 +1486,10 @@
     background: none;
   }
   ._1JesO {
-    color: #f4f4f4;
+    color: $color_gray;
   }
   ._28Zwg {
-    background: #f4f4f4;
+    background: $color_gray;
   }
 }
 
@@ -2183,7 +2183,7 @@
 
 ._3SoCa {
   cursor: default;
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   color: #141C3E;
 }
 
@@ -3305,7 +3305,7 @@
 }
 
 ._1CpYs {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
 }
 
 ._1FJkk {
@@ -3318,7 +3318,7 @@
 }
 
 .Q4jwH {
-  border-bottom-color: #f4f4f4;
+  border-bottom-color: $color_gray;
 }
 
 ._1FB7A {
@@ -3821,7 +3821,7 @@
 }
 
 ._1fEnk {
-  background: #f4f4f4;
+  background: $color_gray;
   width: 100vw;
   height: 100vh;
 }
@@ -4819,7 +4819,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  background: #f4f4f4;
+  background: $color_gray;
   margin: 0 9px 0 0;
   padding: 13px 22px;
   display: block;
@@ -4854,7 +4854,7 @@
   &:after {
     display: block;
     content: "";
-    background-color: #f4f4f4;
+    background-color: $color_gray;
     width: 1px;
     position: absolute;
     right: -12px;
@@ -5054,7 +5054,7 @@
 }
 
 ._2Y_Qz {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   padding-top: 44px;
   padding-bottom: 20vh;
   text-align: center;
@@ -5317,7 +5317,7 @@
   height: 228px;
   position: relative;
   border: 1px solid rgba(103, 143, 185, 0.4);
-  background: #f4f4f4;
+  background: $color_gray;
   cursor: pointer;
 }
 
@@ -5385,7 +5385,7 @@
   margin: 0 12px 9px 0;
   padding-left: 18px;
   align-items: center;
-  background: #f4f4f4;
+  background: $color_gray;
   display: inline-block;
   text-transform: none;
   position: relative;
@@ -5692,7 +5692,7 @@
 
 ._1Kdw6 {
   position: relative;
-  border-bottom-color: #f4f4f4;
+  border-bottom-color: $color_gray;
 }
 
 ._2hR29 {
@@ -6285,7 +6285,7 @@
 
 ._242Fk {
   position: relative;
-  background: #f4f4f4;
+  background: $color_gray;
 }
 
 ._2PRiK {
@@ -7316,7 +7316,7 @@
 ._1TdTV {
   color: rgba(103, 143, 185, 0.4);
   padding: 14px;
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   border: 1px solid rgba(103, 143, 185, 0.4);
   margin-top: 14px;
 }
@@ -7333,7 +7333,7 @@
 ._2wdBf {
   display: flex;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   border: 1px solid rgba(103, 143, 185, 0.4);
 }
 
@@ -7784,7 +7784,7 @@ div._3bqe5 {
 ._3Xhwq {
   position: relative;
   margin-right: 1px;
-  background: #f4f4f4;
+  background: $color_gray;
   height: 300px;
 }
 
@@ -7839,7 +7839,7 @@ div._3bqe5 {
 }
 
 ._1kUIS {
-  color: #f4f4f4;
+  color: $color_gray;
 }
 
 .vrQ3d {
@@ -7888,7 +7888,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 80px;
   line-height: 92px;
-  color: #f4f4f4;
+  color: $color_gray;
 }
 
 @media screen and (max-width: 508px) {
@@ -9260,7 +9260,7 @@ div._3bqe5 {
 }
 
 ._3bVUr {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   color: rgba(0, 8, 39,.96);
 }
 
@@ -9398,7 +9398,7 @@ div._3bqe5 {
 }
 
 ._418j1 {
-  background: #f4f4f4;
+  background: $color_gray;
   width: 100%;
   height: 0;
   padding-top: 100%;
@@ -10146,7 +10146,7 @@ div._3bqe5 {
 }
 
 ._11QMn {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   margin-bottom: 72px;
   background-color: rgba(0, 8, 39, 0.96);
   color: #f8f8f8;
@@ -10613,7 +10613,7 @@ div._3bqe5 {
 }
 
 ._1RYG9 {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   padding-top: 35px;
   padding-bottom: 64px;
   min-height: 100vh;
@@ -11922,7 +11922,7 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._2i9BG {
     display: block;
-    background: #f4f4f4;
+    background: $color_gray;
     width: 100%;
     height: 18px;
   }
@@ -12155,7 +12155,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._1g8z0 {
-    background: #f4f4f4;
+    background: $color_gray;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -12261,7 +12261,7 @@ div._3bqe5 {
 
 ._3y3Fm {
   width: 100%;
-  background: #f4f4f4;
+  background: $color_gray;
   padding: 18px 14px;
   display: flex;
   cursor: pointer;
@@ -12868,7 +12868,7 @@ div._3bqe5 {
 ._2H55B > :after {
   display: block;
   content: "";
-  background: #f4f4f4;
+  background: $color_gray;
   width: 1px;
   position: absolute;
   top: 0;
@@ -12880,7 +12880,7 @@ div._3bqe5 {
   :after {
     display: block;
     content: "";
-    background: #f4f4f4;
+    background: $color_gray;
     width: 1px;
     position: absolute;
     top: 0;
@@ -13150,7 +13150,7 @@ div._3bqe5 {
 }
 
 ._3TYH2 {
-  background: #f4f4f4;
+  background: $color_gray;
   padding: 0;
   &:after {
     display: none;
@@ -13309,7 +13309,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._2bVMA {
-    background: #f4f4f4;
+    background: $color_gray;
     font-size: 12px;
     padding: 18px 14px 9px;
     margin-bottom: 0;
@@ -13791,7 +13791,7 @@ div._3bqe5 {
 }
 
 ._2Eb44 {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   padding-top: 35px;
 }
 
@@ -13984,7 +13984,7 @@ div._3bqe5 {
 
 ._12d8M {
   position: relative;
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   display: flex;
   justify-content: center;
 }

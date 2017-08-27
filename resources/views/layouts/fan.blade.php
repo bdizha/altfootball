@@ -42,8 +42,8 @@
     <div>
         <div>
             <div>
-                <div class="_1A3CD" data-bind="css: { active: showSettingsForm() || showUserForm() || showFanbaseForm() }">
-                    <div class="_1V79j" data-bind="click: closeSettingsForm, css: { active: showSettingsForm() || showUserForm() || showFanbaseForm() }"></div>
+                <div class="_1A3CD" data-bind="css: { active: showOverlay() }">
+                    <div class="_1V79j" data-bind="click: closeSettingsForm, css: { active: showOverlay() }"></div>
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
                             <div class="_2H55B">
@@ -90,8 +90,8 @@
                                         </div>
                                     </a>
                                 @else
-                                    <button class="BJ1bO" data-bind="click: showJoinPopup">Sign in</button>
-                                    <button class="_6UUFH" data-bind="click: showJoinPopup">Join</button>
+                                    <button class="BJ1bO" data-bind="click: openJoinForm">Sign in</button>
+                                    <button class="_6UUFH" data-bind="click: openJoinForm">Join</button>
                                 @endif
                             </div>
                         </nav>

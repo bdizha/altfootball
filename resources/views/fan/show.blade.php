@@ -117,7 +117,7 @@
                         <div class="_3h6Wn">
                             <div class="_3dj9E">
                                 <div class="_3nlN8">
-                                    <div class="owl-carousel owl-theme">
+                                    <div class="owl-carousel owl-four owl-theme">
                                         @foreach($user->fanbases as $k => $fanbase)
                                             <a class="_1mWot" href="/f/{{ $fanbase->slug }}">
                                                 <div class="ZD12l _1iE2V">

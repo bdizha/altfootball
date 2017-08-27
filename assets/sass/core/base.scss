@@ -124,8 +124,8 @@ button, input, optgroup, select, textarea {
   margin: 0;
 }
 
-._2aOYp{
-  follow{
+._2aOYp {
+  follow {
     width: 100%;
   }
 }
@@ -294,6 +294,10 @@ button {
 .jb9hx {
   padding-left: 18px;
   padding-right: 18px;
+  follow {
+    margin-top: 22px;
+    width: 100%;
+  }
 }
 
 ._1J_BZ {
@@ -360,7 +364,7 @@ button {
   cursor: pointer;
   svg {
     float: right;
-    transform: scale(1.5) translateY(1px);
+    transform: scale(1.2) translateY(1px);
   }
 }
 
@@ -381,18 +385,17 @@ button {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  border: 1px solid rgba(0, 8, 39, .96);
-  background: #fff;
-  color: rgba(0, 8, 39, .96);
+  background: $color_light_blue;
+  color: $color_white;
   cursor: pointer;
   padding: 14px 28px;
   transition: all 0.1s linear;
+  width: 100%;
   &[disabled] {
     opacity: 0.4;
   }
   &:hover {
-    background: #666;
-    color: #fff;
+    background: $color_green;
   }
 }
 
@@ -662,10 +665,10 @@ button {
     color: #fff;
   }
   ._1VKWj {
-    border-color: #f4f4f4;
+    border-color: $color_gray;
   }
   .d25Pz {
-    color: #f4f4f4;
+    color: $color_gray;
   }
 }
 
@@ -796,6 +799,7 @@ form {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
+  overflow: hidden;
 }
 
 .dZeOA {
@@ -1008,6 +1012,7 @@ form {
   }
   .M13JP {
     margin-top: 22px;
+    width: 100%;
   }
   &._2rf1 {
     ._1u7op {
@@ -1044,6 +1049,12 @@ form {
   align-items: center;
   justify-content: center;
   background: rgba(122, 214, 31, 0.6);
+  overflow: hidden;
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .vf_FQ {
@@ -1729,7 +1740,7 @@ form {
 
 ._3SoCa {
   cursor: default;
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   color: #141C3E;
 }
 
@@ -1882,7 +1893,7 @@ form {
 
 ._1nAwr {
   display: flex;
-  border: 1px solid rgba(20, 28, 62, 0.6);
+  border: 1px solid rgba(103, 143, 185, 0.1);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2077,7 +2088,7 @@ form {
   top: 50%;
   width: 20px;
   height: 50px;
-  transform: translateY(-25px) scale(1.5);
+  transform: translateY(-25px) scale(1.2);
   transition: opacity .2s ease-out;
   display: none;
   z-index: 2;
@@ -2095,7 +2106,7 @@ form {
 
 ._1Sgd1, ._2dfms {
   right: 35px;
-  transform: translateY(-25px) scale(1.5) rotate(180deg);
+  transform: translateY(-25px) scale(1.2) rotate(180deg);
 }
 
 ._1Sgd1, ._2Xl8Z {
@@ -2210,7 +2221,7 @@ form {
 }
 
 ._1CpYs {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
 }
 
 ._Kj1Z {
@@ -2237,7 +2248,7 @@ form {
 }
 
 .Q4jwH {
-  border-bottom-color: #f4f4f4;
+  border-bottom-color: $color_gray;
 }
 
 ._1FB7A {
@@ -2299,7 +2310,7 @@ form {
     }
   }
   svg {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 
@@ -2320,7 +2331,6 @@ form {
   text-transform: uppercase;
   float: right;
   color: rgba(0, 8, 39, .96);
-  border: 1px solid rgba(0, 8, 39, .96);
   padding: 9px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
@@ -3394,7 +3404,7 @@ form {
   overflow: hidden;
   &:hover {
     img {
-      transform: scale(1.05);
+      transform: scale(1.2);
     }
   }
 }
@@ -3625,7 +3635,7 @@ form {
 ._1TdTV {
   color: rgba(103, 143, 185, 0.4);
   padding: 14px;
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   border: 1px solid rgba(103, 143, 185, 0.4);
   margin-top: 14px;
 }
@@ -3888,7 +3898,7 @@ form {
 }
 
 .lOdRy {
-  background-color: #001b36;
+  background-color: #0C122A;
 }
 
 ._1XrlP {
@@ -4189,7 +4199,7 @@ form {
 
 ._2Eh0V {
   margin-bottom: 12px;
-  background-color: #001b36;
+  background-color: #0C122A;
   &:last-child {
     margin-bottom: 0;
   }
@@ -4250,7 +4260,7 @@ form {
 }
 
 ._175AS {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   padding: 22px;
   color: #f8f8f8;
   overflow: hidden;
@@ -4502,7 +4512,7 @@ form {
   font-size: 14px;
   padding: 28px 18px;
   transition: opacity .1s ease-out;
-  &.disabled{
+  &.disabled {
     opacity: 0.2;
   }
 }
@@ -4516,6 +4526,7 @@ form {
 }
 
 .LmPde {
+  cursor: pointer;
   opacity: 1;
 }
 
@@ -4524,10 +4535,10 @@ form {
     background: none;
   }
   ._1JesO {
-    color: #f4f4f4;
+    color: $color_gray;
   }
   ._28Zwg {
-    background: #f4f4f4;
+    background: $color_gray;
   }
 }
 
@@ -4657,7 +4668,7 @@ form {
 }
 
 ._1fEnk {
-  background: #f4f4f4;
+  background: $color_gray;
   width: 100vw;
   height: 100vh;
 }
@@ -4779,8 +4790,14 @@ form {
   margin-left: 12px;
   cursor: pointer;
   height: 378px;
+  overflow: hidden;
   &.PTpci {
     cursor: default;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -4850,8 +4867,7 @@ form {
   flex: 0 0 auto;
   margin-left: 0;
   ._1KQuz {
-    border: none;
-    background: #001b36;
+    background: #0C122A;
   }
   ._12Iv2 {
     display: none;
@@ -4964,7 +4980,6 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgba(103, 143, 185, 0.2);
   border-top: 0;
   padding: 14px;
 }
@@ -5449,7 +5464,7 @@ form {
 }
 
 ._1S3Ei {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   cursor: default;
 }
 
@@ -5743,6 +5758,7 @@ form {
 .bWRAm {
   font-size: 44px;
   line-height: 44px;
+
 }
 
 @media screen and (max-width: 508px) {
@@ -5787,15 +5803,18 @@ form {
 ._12n1y {
   font-size: 18px;
   line-height: 18px;
-  text-transform: uppercase;
   text-transform: none;
   border: 2px solid rgba(0, 8, 39, .96);
   padding: 14px;
   margin: 22px 0px;
   width: 100%;
-
   &:first-child {
     margin-top: 44px;
+  }
+  &:hover,
+  &:focus{
+    border: 2px solid  $color_green;
+    background-color: rgba(91, 194, 15, 0.123456789);
   }
 }
 
@@ -5824,6 +5843,7 @@ form {
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
+
   }
   ._12n1y {
     background: rgba(6, 33, 54, 0.5);
@@ -6066,7 +6086,7 @@ form {
 }
 
 ._2Y_Qz {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   padding-top: 44px;
   padding-bottom: 20vh;
   text-align: center;
@@ -6405,7 +6425,7 @@ form {
   margin: 0 12px 9px 0;
   padding-left: 18px;
   align-items: center;
-  background: #f4f4f4;
+  background: $color_gray;
   display: inline-block;
   text-transform: none;
   position: relative;
@@ -6567,7 +6587,7 @@ form {
   height: 228px;
   position: relative;
   border: 1px solid rgba(103, 143, 185, 0.4);
-  background: #f4f4f4;
+  background: $color_gray;
   cursor: pointer;
 }
 
@@ -6615,7 +6635,7 @@ form {
 
 ._1Kdw6 {
   position: relative;
-  border-bottom-color: #f4f4f4;
+  border-bottom-color: $color_gray;
 }
 
 ._2hR29 {
@@ -7013,7 +7033,7 @@ form {
 }
 
 ._2PUq3 {
-  background-color: #001b36;
+  background-color: #0C122A;
 }
 
 ._1qO-x {
@@ -7194,7 +7214,7 @@ form {
 
 ._242Fk {
   position: relative;
-  background: #f4f4f4;
+  background: $color_gray;
 }
 
 ._2PRiK {
@@ -7978,7 +7998,7 @@ form {
 ._2wdBf {
   display: flex;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   border: 1px solid rgba(103, 143, 185, 0.4);
 }
 
@@ -8420,7 +8440,7 @@ div._3bqe5 {
 ._3Xhwq {
   position: relative;
   margin-right: 1px;
-  background: #f4f4f4;
+  background: $color_gray;
   height: 300px;
 }
 
@@ -8475,7 +8495,7 @@ div._3bqe5 {
 }
 
 ._1kUIS {
-  color: #f4f4f4;
+  color: $color_gray;
 }
 
 .vrQ3d {
@@ -8524,7 +8544,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 80px;
   line-height: 92px;
-  color: #f4f4f4;
+  color: $color_gray;
 }
 
 @media screen and (max-width: 508px) {
@@ -9588,7 +9608,7 @@ div._3bqe5 {
 }
 
 ._418j1 {
-  background: #f4f4f4;
+  background: $color_gray;
   width: 100%;
   height: 0;
   padding-top: 100%;
@@ -10318,15 +10338,9 @@ div._3bqe5 {
 }
 
 ._11QMn {
-  margin-bottom: 72px;
-  background: url(/images/repeat-logo.png) #021429;
+  margin-bottom: 0;
+  background: url(/images/repeat-logo.png) #0c122a;
   color: $color_white;
-}
-
-@media screen and (min-width: 924px) {
-  ._11QMn {
-    margin: 0 22px 72px;
-  }
 }
 
 @media screen and (max-width: 1158px) {
@@ -10412,9 +10426,15 @@ div._3bqe5 {
 ._1XEbE {
   display: block;
   position: relative;
-  background-color: #001b36;
+  background-color: #0C122A;
   width: 586px;
   margin-left: 12px;
+  border: 1px solid rgba(103, 143, 185, 0.1);
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
 }
 
 @media screen and (max-width: 1236px) {
@@ -10457,7 +10477,7 @@ div._3bqe5 {
 }
 
 ._1wjeD {
-  background-color: #001b36;
+  background-color: #0C122A;
   padding: 40px 35px;
   padding-bottom: 114px;
 }
@@ -10549,6 +10569,10 @@ div._3bqe5 {
   width: 378px;
   margin-left: 12px;
   height: 170px;
+  border: 1px solid rgba(103, 143, 185, 0.1);
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 1236px) {
@@ -10589,11 +10613,11 @@ div._3bqe5 {
 }
 
 ._1-YRL {
-  background-color: #001b36;
+  background-color: #0C122A;
   color: #f8f8f8;
 }
 
-._1-YRL,._31dto a {
+._1-YRL, ._31dto a {
   color: #f8f8f8
 }
 
@@ -10607,7 +10631,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   .cB9oA {
-    top:68px;
+    top: 68px;
     padding: 0 14px
   }
 
@@ -10619,7 +10643,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   .cB9oA {
-    justify-content:space-between;
+    justify-content: space-between;
     top: 58px;
     height: 55px
   }
@@ -10635,13 +10659,13 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   ._2aEHr {
-    flex:1
+    flex: 1
   }
 }
 
 @media screen and (max-width: 508px) {
   ._2aEHr {
-    display:none
+    display: none
   }
 }
 
@@ -10657,7 +10681,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   .HkQZ5 {
-    border-width:2px;
+    border-width: 2px;
     width: 40px;
     height: 40px
   }
@@ -10672,23 +10696,23 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   ._1BxZT {
-    display:none
+    display: none
   }
 }
 
-._2qjq9>a,._2qjq9>button,._2qjq9>div {
+._2qjq9 > a, ._2qjq9 > button, ._2qjq9 > div {
   margin: 0 14px
 }
 
 @media screen and (max-width: 508px) {
-  ._2qjq9>a,._2qjq9>button,._2qjq9>div {
-    margin-right:0
+  ._2qjq9 > a, ._2qjq9 > button, ._2qjq9 > div {
+    margin-right: 0
   }
 }
 
 @media screen and (max-width: 508px) {
   ._2D3SJ {
-    display:none
+    display: none
   }
 }
 
@@ -10703,7 +10727,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._2DoBA {
-    display:block
+    display: block
   }
 }
 
@@ -10714,7 +10738,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._3VA_m {
-    display:block;
+    display: block;
     position: relative;
     margin-right: 14px;
     z-index: 1;
@@ -10728,7 +10752,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._2xDj1 {
-    padding-left:0
+    padding-left: 0
   }
 }
 
@@ -10739,13 +10763,13 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._3VduI {
-    position:relative
+    position: relative
   }
 }
 
 @media screen and (max-width: 508px) {
   ._39O2d {
-    transform:translateX(-150px)
+    transform: translateX(-150px)
   }
 }
 
@@ -10763,13 +10787,13 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   ._11ESs {
-    min-width:0
+    min-width: 0
   }
 }
 
 @media screen and (max-width: 508px) {
   ._11ESs {
-    display:none
+    display: none
   }
 }
 
@@ -10780,7 +10804,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   ._11d79 {
-    display:none
+    display: none
   }
 }
 
@@ -10792,7 +10816,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   .Orvqg {
-    display:none
+    display: none
   }
 }
 
@@ -11523,12 +11547,12 @@ div._3bqe5 {
 }
 
 ._1-0JF {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.05);
-  margin: 0 22px 22px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1158px) {
@@ -11715,6 +11739,7 @@ div._3bqe5 {
 
 ._9DqWK {
   height: 92px;
+  background: #0c122a;
 }
 
 ._3JzN1 {
@@ -11734,7 +11759,7 @@ div._3bqe5 {
 }
 
 .GLLyX {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   position: relative;
 }
 
@@ -12014,7 +12039,7 @@ div._3bqe5 {
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  background: #f4f4f4;
+  background: $color_gray;
   margin: 0 9px 0 0;
   padding: 13px 22px;
   display: block;
@@ -12049,7 +12074,7 @@ div._3bqe5 {
   &:after {
     display: block;
     content: "";
-    background-color: #f4f4f4;
+    background-color: $color_gray;
     width: 1px;
     position: absolute;
     right: -12px;
@@ -12441,7 +12466,7 @@ div._3bqe5 {
 }
 
 ._3WrZO {
-  transform: translateX(14px) translateY(16px) rotate(-90deg) scale(1.5);
+  transform: translateX(14px) translateY(16px) rotate(-90deg) scale(1.2);
 }
 
 @media screen and (max-width: 508px) {
@@ -12511,16 +12536,10 @@ div._3bqe5 {
   }
 }
 
-._2KkkC{
+._2KkkC {
   text-align: center;
-  ._1JesO{
+  ._1JesO {
     display: inline-block;
-  }
-}
-
-@media screen and (min-width: 846px) {
-  ._2KkkC {
-    border-bottom: 1px solid rgba(103, 143, 185, 0.2);
   }
 }
 
@@ -12531,7 +12550,7 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._2i9BG {
     display: block;
-    background: #f4f4f4;
+    background: $color_gray;
     width: 100%;
     height: 18px;
   }
@@ -12546,11 +12565,11 @@ div._3bqe5 {
     margin: 12px 18px 0 0;
     transform: none;
   }
-  ._1Q_Pu{
+  ._1Q_Pu {
     display: none;
   }
-  ._45-A3{
-    ._1Q_Pu{
+  ._45-A3 {
+    ._1Q_Pu {
       display: block;
     }
   }
@@ -12728,14 +12747,17 @@ div._3bqe5 {
 }
 
 ._1ssnS {
-  background-color: $color_green;
+  background-color: $color_light_blue;
   margin-bottom: 14px;
   border: 0;
   color: $color_white;
   &.active,
   &:focus,
   &:hover {
+    background-color: $color_green;
     color: $color_white;
+    /* mistakes are pretty common */
+    /* work it out to the best of their abilities */
   }
 }
 
@@ -12914,7 +12936,7 @@ div._3bqe5 {
 
 ._3y3Fm {
   width: 100%;
-  background: #f4f4f4;
+  background: $color_gray;
   padding: 18px 14px;
   display: flex;
   cursor: pointer;
@@ -13016,9 +13038,9 @@ div._3bqe5 {
       }
     }
   }
-  &:hover{
-    img{
-      transform: scale(1.5);
+  &:hover {
+    img {
+      transform: scale(1.2);
     }
   }
   &._36gJx {
@@ -13328,7 +13350,7 @@ div._3bqe5 {
 }
 
 .GKLAB {
-  background: url(/images/repeat-logo.png) #021429 repeat;
+  background: url(/images/repeat-logo.png) #0c122a repeat;
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -13559,7 +13581,7 @@ div._3bqe5 {
 ._2H55B > :after {
   display: block;
   content: "";
-  background: #f4f4f4;
+  background: $color_gray;
   width: 1px;
   position: absolute;
   top: 0;
@@ -13571,7 +13593,7 @@ div._3bqe5 {
   :after {
     display: block;
     content: "";
-    background: #f4f4f4;
+    background: $color_gray;
     width: 1px;
     position: absolute;
     top: 0;
@@ -13794,7 +13816,6 @@ div._3bqe5 {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  border: 1px solid rgba(0, 8, 39, 0.96);
 }
 
 @media screen and (max-width: 508px) {
@@ -13861,7 +13882,6 @@ div._3bqe5 {
 
 .l4oHd {
   font-size: 18px;
-  line-height: 18px;
   position: relative;
   background: none;
   line-height: 28px;
@@ -14015,7 +14035,7 @@ div._3bqe5 {
 }
 
 ._1DH32 {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   padding-top: 40px;
   padding-bottom: 500px;
 }
@@ -14342,7 +14362,7 @@ div._3bqe5 {
 }
 
 ._33vOG ._2LIIc {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   color: #fff;
 }
 
@@ -14544,7 +14564,7 @@ div._3bqe5 {
   line-height: 22px;
   text-transform: uppercase;
   ._2jrdA {
-    transform: translate(10px, -4px) scale(1.5) rotate(-90deg);
+    transform: translate(10px, -4px) scale(1.2) rotate(-90deg);
   }
 }
 
@@ -14578,7 +14598,7 @@ div._3bqe5 {
 }
 
 ._2jrdA {
-  transform: translate(5px, -10px) scale(1.5) rotate(-90deg);
+  transform: translate(5px, -10px) scale(1.2) rotate(-90deg);
 }
 
 @media screen and (max-width: 508px) {
@@ -14693,7 +14713,7 @@ div._3bqe5 {
 }
 
 .C116H ._1k78U {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   color: #fff;
 }
 
@@ -14744,7 +14764,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._2bVMA {
-    background: #f4f4f4;
+    background: $color_gray;
     font-size: 12px;
     padding: 18px 14px 9px;
     margin-bottom: 0;
@@ -15768,7 +15788,7 @@ div._3bqe5 {
 }
 
 ._2Eb44 {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   padding-top: 40px;
 }
 
@@ -15944,7 +15964,7 @@ div._3bqe5 {
 
 ._12d8M {
   position: relative;
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   display: flex;
   justify-content: center;
 }
@@ -16369,7 +16389,7 @@ div._3bqe5 {
 }
 
 ._1dVfa {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
   padding: 35px 0 0;
   justify-content: center;
   display: flex;
@@ -16453,7 +16473,7 @@ div._3bqe5 {
 }
 
 ._1Iwk5 {
-  background-color: #f4f4f4;
+  background-color: $color_gray;
 }
 
 ._1c7AL {
@@ -16964,7 +16984,7 @@ nav._1R2o8 {
   height: 228px;
   position: relative;
   border: 1px solid #ccc;
-  background: #f4f4f4;
+  background: $color_gray;
   cursor: pointer
 }
 
@@ -17202,7 +17222,7 @@ nav._1R2o8 {
 ._2q1KC {
   position: relative;
   height: 164px;
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   background-size: cover;
 }
 
@@ -17928,7 +17948,7 @@ nav._1R2o8 {
   right: 0;
   background-color: #fff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-  z-index: 99;
+  z-index: 10;
   overflow: hidden;
   button, img {
     transition: height .2s ease-out;

@@ -3,9 +3,13 @@
 namespace App\Console\Commands;
 
 use App\User;
+use App\Fanbase;
+use Carbon\Carbon;
 use Goutte\Client;
 use Illuminate\Console\Command;
 use Symfony\Component\DomCrawler\Crawler;
+use DB;
+use Illuminate\Support\Facades\Redis;
 
 class Misc extends Command
 {
@@ -41,64 +45,70 @@ class Misc extends Command
      */
     public function handle()
     {
-        $client = new Client();
 
-        $crawler = $client->request('GET', "http://www.realmadrid.com/en/football/squad");
-
-        $crawler->filter('.m_player_picture')->each(function (Crawler $node, $i) {
-            $link = $node->filter('a')->attr("href");
-
-            if (!empty($link)) {
-
-                $client = new Client();
-                $data = $client->request('GET', $this->domain . $link);
-                $user = [];
-
-                $user['image'] = $data->filter('[property="og:image"]')->attr("content");
-                $user['cover'] = $this->domain . $data->filter('.m_player_bio_main img')->attr("src");
-                $user['website'] = $this->domain;
-
-                $name = $data->filter('.m_player_bio_basic_info h1 strong')->text();
-
-                $nameParts = explode(" ", $name);
-
-                if(!empty($nameParts[0])){
-                    $user['first_name'] = $nameParts[0];
-                    $user['first_name'] = str_replace("\n", "",  $user['first_name']);
-                    $user['first_name'] = str_replace("  ", "",  $user['first_name']);
-                    $user['nickname'] = strtolower(trim($user['first_name']));
-                    $user['email'] = strtolower(trim($user['first_name'])) . "@chelseafc.com";
-                    $user['last_name'] = "";
-                }
-
-                if(!empty($nameParts[1])){
-                    $user['last_name'] = $nameParts[1];
-                    $user['last_name'] = str_replace("\n", "",  $user['last_name']);
-                    $user['last_name'] = str_replace("   ", "",  $user['last_name']);
-                    $user['email'] = strtolower(trim($user['first_name']) . "." . trim($user['last_name'])) . "@chelseafc.com";
-                }
+        $json = file_get_contents("http://www.juventus.com/service/?type=%5B%22news%22%5D&language=en&offset=17&limit=30&startdate=&enddate=&category=%255B%2522italian_leagueone%2522%252C%2522uefa_cl%2522%252C%2522uefa_el%2522%252C%2522italian_cup%2522%252C%2522italian_supercup%2522%252C%2522uefa_supercup%2522%252C%2522fifa_club_wc%2522%252C%2522fifa_wc%2522%252C%2522friendly%2522%252C%2522other%2522%252C%2522unesco_cup%2522%252C%2522uefa_youth_league%2522%252C%2522primavera%2522%252C%2522campionato_nazionale_allievi_professionisti_a_e_b%2522%252C%2522campionato_nazionale_allievi_professionisti_lega_pro%2522%252C%2522campionato_nazionale_giovanissimi_professionisti%2522%252C%2522matchreport%2522%252C%2522ticket%2522%252C%2522charity%2522%252C%2522financial%2522%252C%2522official%2522%252C%2522event%2522%252C%2522member%2522%252C%2522fan%2522%252C%2522team%2522%252C%2522youth_teams%2522%252C%2522jacademy%2522%252C%2522junior%2522%252C%2522sponsor%2522%252C%2522stadium_museum%2522%252C%2522loans%2522%252C%2522sustainability%2522%252C%2522tour%2522%252C%2522tour_e%2522%252C%2522women_sa%2522%255D");
 
 
-                if($data->filter('.m_bio_strip_content strong')->count())
-                {
-                    $user['bio'] = $data->filter('.m_bio_strip_content strong')->text();
-                }
-//                dd($user);
+        $array = json_decode($json);
 
-                if(!empty($user['email'])){
+        dd($array);
 
-                    $user['password'] = bcrypt($user['email']);
+        $users = User::all();
+        foreach($users as $user){
 
-                    $u = User::where("slug", str_slug($user['first_name'] . " " . $user['last_name']))->first();
+            $randomUser = DB::table('users')
+                ->where('created_at', '>', Carbon::now()->subDays(1))
+                ->inRandomOrder()
+                ->first();
 
-                    if (empty($u->id)) {
-                        $u = User::create($user);
-                        echo "Created user ::: {$u->slug}\n";
-                    } else {
-                        echo "Updated user ::: {$u->slug}\n";
-                    }
-                }
+            Redis::del('fan:image:' . $user->id);
+
+            $user->image = $randomUser->image;
+            $user->save();
+
+            echo 'Updating user: ' . $user['first_name'] . "\n";
+        }
+
+        dd('done');
+
+        foreach($array->content as $p){
+
+            $user = [];
+            $user['first_name'] = $p->name->first;
+            $user['last_name'] = $p->name->first;
+            $user['nickname'] = $user['first_name'];
+            $user['image'] = "https://platform-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/{$p->altIds->opta}.png";
+
+
+            if(!empty($p->currentTeam)){
+                $teamName = $p->currentTeam->name;
             }
-        });
+            elseif(!empty($p->previousTeam)){
+                $teamName = $p->previousTeam->name;
+            }
+            else{
+                $teamName = time();
+            }
+
+            $teamSlug = str_replace("-", "", str_slug($teamName));
+
+            $user['email'] = strtolower($user['nickname']) . "@{$teamSlug}.com";
+            $user['password'] = bcrypt($user['email']);
+
+            $u = User::where("email", $user['email'])->first();
+
+            echo 'Inserting new user: ' . $user['first_name'] . "\n";
+
+            if (empty($u->id)) {
+                $u = User::create(
+                    $user
+                );
+            } else {
+                $u->first_name = $user['first_name'];
+                $u->last_name = $user['last_name'];
+                $u->nickname = $user['nickname'];
+                $u->save();
+            }
+        }
     }
 }

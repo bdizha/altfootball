@@ -113,7 +113,7 @@
                             </svg>
                         </button>
                     @else
-                        <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join fanbase', active_text: 'Joined', class: 'fanbase'></follow>
+                        <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join fanbase', active_text: 'Joined', class: 'fanbase'"></follow>
                     @endif
                 </div>
                 <div class="sZVC2">
@@ -418,7 +418,7 @@
             </div>
         </div>
     </div>
-    {{--<fanbase-form params="{{ $fanbase->toJson() }}"></fanbase-form>--}}
+    <fanbase-form params="{{ $toJson }}"></fanbase-form>
     @include('templates.dribbles')
     @include('templates.comments')
     @include('templates.posts')

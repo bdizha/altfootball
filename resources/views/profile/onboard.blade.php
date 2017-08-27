@@ -96,7 +96,7 @@
                         return true;
                     });
                 });
-                self.showJoinPopup = ko.observable(false);
+                self.openJoinForm = ko.observable(false);
                 self.selectedAll = ko.observable(false);
                 self.selectOne = function(fanbase) {
                     if(self.selected.indexOf(fanbase.id) > -1){
@@ -126,13 +126,13 @@
                 };
                 self.submit = function(){
                     if(self.selected().length === 0){
-                        self.showJoinPopup(true);
+                        self.openJoinForm(true);
                         return false;
                     }
                     return true;
                 };
                 self.ok = function(){
-                    self.showJoinPopup(false);
+                    self.openJoinForm(false);
                 }
             }
 

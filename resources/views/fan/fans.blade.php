@@ -51,7 +51,7 @@
                                         </span>
                                     </div>
                                 </a>
-                                <follow params="follower: {!! $fan->follower->toJson()  !!}, active_text: 'unfollow', inactive_text: 'follow', class: 'items'"></follow>
+                                <follow params="follower: {{ $fan->follower->toJson() }}, active_text: 'unfollow', inactive_text: 'follow', class: 'user'"></follow>
                             </li>
                         @endforeach
                     </section>
@@ -63,10 +63,4 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript">
-        $(function () {
-            ko.applyBindings();
-        });
-
-    </script>
 @endsection

@@ -7,6 +7,8 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Redis;
 use MartinBean\Database\Eloquent\Sluggable;
+use DB;
+use Carbon\Carbon;
 
 class User extends Authenticatable
 {
@@ -75,12 +77,7 @@ class User extends Authenticatable
 
     public function getFanbasesAttribute()
     {
-        return Fanbase::whereHas('followers', function ($query) {
-            $query->where('user_id', $this->id)
-            ->where('followable_type', 'App\Fanbase');
-        })
-            ->with('user')
-            ->get();
+        return [];
     }
 
     public function getRequestedAttribute()
@@ -151,14 +148,19 @@ class User extends Authenticatable
         return $this->toJson();
     }
 
-    public function getResizedImageAttribute($dimensions = "width=300&height=300")
+    public function getResizedImageAttribute()
     {
+        $dimensions = "width=300&height=300";
         try {
             $image = Redis::get('fan:image:' . $this->id);
             if (empty($image)) {
 
                 if (empty($this->image)) {
-                    $u = User::where("image", "!=", "")->orderByRaw("RAND()")->first();
+                    $u = DB::table('users')
+                        ->where('created_at', '>', Carbon::parse('22/08/2017')->subDays(1))
+                        ->where('created_at', '<', Carbon::parse('22/08/2017')->addDays(1))
+                        ->inRandomOrder()
+                        ->first();
 
                     if (!empty($u->image)) {
                         $this->image = $u->image;

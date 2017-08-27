@@ -12,7 +12,7 @@
                     </a>
                     <span class="_1NHvQ _3Xf-w">
                         <a href="/u/{{ $post->user->slug }}">
-                           {{ $post->user->nickname }}
+                           {{ $post->user->name }}
                             <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     width="18" height="18"

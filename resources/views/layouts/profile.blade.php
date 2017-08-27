@@ -38,7 +38,7 @@
 <div id="root">
     <div id="{{ $id }}">
         <div>
-            <div class="_34lyh3" @if(!empty($view) && $view == 'onboard') data-bind="css: { _7jk98: showJoinPopup }" @endif>
+            <div class="_34lyh3" @if(!empty($view) && $view == 'onboard') data-bind="css: { _7jk98: openJoinForm }" @endif>
                 <div class="_1A3CD">
                     <div class="container">
                         <header class="_3XXLi">
@@ -115,7 +115,7 @@
                 </div>
             </div>
             @if(!empty($view) && $view == 'onboard')
-                <div class="ZZJJ0 _3Xaa0" data-bind="css: { active: showJoinPopup }">
+                <div class="ZZJJ0 _3Xaa0" data-bind="css: { active: openJoinForm }">
                     <div class="_1Vurz" style="opacity: 0.6;"></div>
                     <div class="_2XWUY" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
                         <div class="_3nouD" style="opacity: 1;">

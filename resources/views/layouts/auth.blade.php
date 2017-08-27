@@ -41,7 +41,7 @@
     <div>
         <div>
             <div>
-                <div class="_1A3CD" data-bind="css: { active: shouldShowJoinPopup }">
+                <div class="_1A3CD" data-bind="css: { active: showJoinForm }">
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
                             <div class="_2H55B"><a class="" href="/">
@@ -64,8 +64,8 @@
                                 </form>
                             </div>
                             <div class="_3BBJg">FANBASES</a>
-                                <button class="BJ1bO" data-bind="click: showJoinPopup">Sign in</button>
-                                <button class="_6UUFH" data-bind="click: showJoinPopup">Join</button>
+                                <button class="BJ1bO" data-bind="click: openJoinForm">Sign in</button>
+                                <button class="_6UUFH" data-bind="click: openJoinForm">Join</button>
                             </div>
                         </nav>
                         <div class="_3GUPV -hkpO">

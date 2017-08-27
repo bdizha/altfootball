@@ -354,6 +354,11 @@ button {
   padding-right: 18px;
 }
 
+.jb9hx follow {
+  margin-top: 22px;
+  width: 100%;
+}
+
 ._1J_BZ {
   margin-left: auto;
   margin-right: auto;
@@ -421,7 +426,7 @@ button {
 
 ._1h78h svg {
   float: right;
-  transform: scale(1.5) translateY(1px);
+  transform: scale(1.2) translateY(1px);
 }
 
 ._1MC-v {
@@ -442,12 +447,12 @@ button {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  border: 1px solid rgba(0, 8, 39, 0.96);
-  background: #fff;
-  color: rgba(0, 8, 39, 0.96);
+  background: #00AFFF;
+  color: #FFFFFF;
   cursor: pointer;
   padding: 14px 28px;
   transition: all 0.1s linear;
+  width: 100%;
 }
 
 ._1geYT[disabled] {
@@ -455,8 +460,7 @@ button {
 }
 
 ._1geYT:hover {
-  background: #666;
-  color: #fff;
+  background: #5BC20F;
 }
 
 ._2e1-n {
@@ -750,11 +754,11 @@ button {
 }
 
 ._2hvFi ._1VKWj {
-  border-color: #f4f4f4;
+  border-color: #FAFAFA;
 }
 
 ._2hvFi .d25Pz {
-  color: #f4f4f4;
+  color: #FAFAFA;
 }
 
 ._1L5ou {
@@ -880,6 +884,7 @@ form .b00q8 {
   height: 100%;
   transform-origin: 25% 3%;
   transition: all 0.4s;
+  overflow: hidden;
 }
 
 .dZeOA {
@@ -1091,6 +1096,7 @@ form ._1u7op {
 
 form .M13JP {
   margin-top: 22px;
+  width: 100%;
 }
 
 form._2rf1 ._1u7op {
@@ -1129,6 +1135,11 @@ form._2rf1 ._1u7op {
   -ms-flex-pack: center;
   justify-content: center;
   background: rgba(122, 214, 31, 0.6);
+  overflow: hidden;
+}
+
+._2pUFC:hover img {
+  transform: scale(1.2);
 }
 
 .vf_FQ {
@@ -1880,7 +1891,7 @@ form._2rf1 ._1u7op {
 
 ._3SoCa {
   cursor: default;
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   color: #141C3E;
 }
 
@@ -2059,7 +2070,7 @@ form._2rf1 ._1u7op {
 ._1nAwr {
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid rgba(20, 28, 62, 0.6);
+  border: 1px solid rgba(103, 143, 185, 0.1);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -2280,7 +2291,7 @@ form._2rf1 ._1u7op {
   top: 50%;
   width: 20px;
   height: 50px;
-  transform: translateY(-25px) scale(1.5);
+  transform: translateY(-25px) scale(1.2);
   transition: opacity .2s ease-out;
   display: none;
   z-index: 2;
@@ -2300,7 +2311,7 @@ form._2rf1 ._1u7op {
 ._1Sgd1,
 ._2dfms {
   right: 35px;
-  transform: translateY(-25px) scale(1.5) rotate(180deg);
+  transform: translateY(-25px) scale(1.2) rotate(180deg);
 }
 
 ._1Sgd1,
@@ -2426,7 +2437,7 @@ form._2rf1 ._1u7op {
 }
 
 ._1CpYs {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
 }
 
 ._Kj1Z {
@@ -2455,7 +2466,7 @@ form._2rf1 ._1u7op {
 }
 
 .Q4jwH {
-  border-bottom-color: #f4f4f4;
+  border-bottom-color: #FAFAFA;
 }
 
 ._1FB7A {
@@ -2528,7 +2539,7 @@ form._2rf1 ._1u7op {
 }
 
 ._2YLzg svg {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 ._33rbn {
@@ -2551,7 +2562,6 @@ form._2rf1 ._1u7op {
   text-transform: uppercase;
   float: right;
   color: rgba(0, 8, 39, 0.96);
-  border: 1px solid rgba(0, 8, 39, 0.96);
   padding: 9px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
@@ -3705,7 +3715,7 @@ form._2rf1 ._1u7op {
 }
 
 ._2hvwD:hover img {
-  transform: scale(1.05);
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 508px) {
@@ -3954,7 +3964,7 @@ form._2rf1 ._1u7op {
 ._1TdTV {
   color: rgba(103, 143, 185, 0.4);
   padding: 14px;
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   border: 1px solid rgba(103, 143, 185, 0.4);
   margin-top: 14px;
 }
@@ -4250,7 +4260,7 @@ form._2rf1 ._1u7op {
 }
 
 .lOdRy {
-  background-color: #001b36;
+  background-color: #0C122A;
 }
 
 ._1XrlP {
@@ -4576,7 +4586,7 @@ form._2rf1 ._1u7op {
 
 ._2Eh0V {
   margin-bottom: 12px;
-  background-color: #001b36;
+  background-color: #0C122A;
 }
 
 ._2Eh0V:last-child {
@@ -4638,7 +4648,7 @@ form._2rf1 ._1u7op {
 }
 
 ._175AS {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   padding: 22px;
   color: #f8f8f8;
   overflow: hidden;
@@ -4925,6 +4935,7 @@ form._2rf1 ._1u7op {
 }
 
 .LmPde {
+  cursor: pointer;
   opacity: 1;
 }
 
@@ -4933,11 +4944,11 @@ form._2rf1 ._1u7op {
 }
 
 ._3PqGG ._1JesO {
-  color: #f4f4f4;
+  color: #FAFAFA;
 }
 
 ._3PqGG ._28Zwg {
-  background: #f4f4f4;
+  background: #FAFAFA;
 }
 
 .LYLB_ {
@@ -5073,7 +5084,7 @@ form._2rf1 ._1u7op {
 }
 
 ._1fEnk {
-  background: #f4f4f4;
+  background: #FAFAFA;
   width: 100vw;
   height: 100vh;
 }
@@ -5208,10 +5219,15 @@ form._2rf1 ._1u7op {
   margin-left: 12px;
   cursor: pointer;
   height: 378px;
+  overflow: hidden;
 }
 
 ._1mWot.PTpci {
   cursor: default;
+}
+
+._1mWot:hover img {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 508px) {
@@ -5293,8 +5309,7 @@ form._2rf1 ._1u7op {
 }
 
 ._2uakq ._1KQuz {
-  border: none;
-  background: #001b36;
+  background: #0C122A;
 }
 
 ._2uakq ._12Iv2 {
@@ -5415,7 +5430,6 @@ form._2rf1 ._1u7op {
   flex-direction: column;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border: 1px solid rgba(103, 143, 185, 0.2);
   border-top: 0;
   padding: 14px;
 }
@@ -5937,7 +5951,7 @@ form._2rf1 ._1u7op {
 }
 
 ._1S3Ei {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   cursor: default;
 }
 
@@ -6286,7 +6300,6 @@ form._2rf1 ._1u7op {
 ._12n1y {
   font-size: 18px;
   line-height: 18px;
-  text-transform: uppercase;
   text-transform: none;
   border: 2px solid rgba(0, 8, 39, 0.96);
   padding: 14px;
@@ -6296,6 +6309,12 @@ form._2rf1 ._1u7op {
 
 ._12n1y:first-child {
   margin-top: 44px;
+}
+
+._12n1y:hover,
+._12n1y:focus {
+  border: 2px solid #5BC20F;
+  background-color: rgba(91, 194, 15, 0.123457);
 }
 
 @media screen and (max-width: 508px) {
@@ -6588,7 +6607,7 @@ form._2rf1 ._1u7op {
 }
 
 ._2Y_Qz {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   padding-top: 44px;
   padding-bottom: 20vh;
   text-align: center;
@@ -6957,7 +6976,7 @@ form._2rf1 ._1u7op {
   padding-left: 18px;
   -ms-flex-align: center;
   align-items: center;
-  background: #f4f4f4;
+  background: #FAFAFA;
   display: inline-block;
   text-transform: none;
   position: relative;
@@ -7124,7 +7143,7 @@ form._2rf1 ._1u7op {
   height: 228px;
   position: relative;
   border: 1px solid rgba(103, 143, 185, 0.4);
-  background: #f4f4f4;
+  background: #FAFAFA;
   cursor: pointer;
 }
 
@@ -7173,7 +7192,7 @@ form._2rf1 ._1u7op {
 
 ._1Kdw6 {
   position: relative;
-  border-bottom-color: #f4f4f4;
+  border-bottom-color: #FAFAFA;
 }
 
 ._2hR29 {
@@ -7589,7 +7608,7 @@ form._2rf1 ._1u7op {
 }
 
 ._2PUq3 {
-  background-color: #001b36;
+  background-color: #0C122A;
 }
 
 ._1qO-x {
@@ -7786,7 +7805,7 @@ form._2rf1 ._1u7op {
 
 ._242Fk {
   position: relative;
-  background: #f4f4f4;
+  background: #FAFAFA;
 }
 
 ._2PRiK {
@@ -8651,7 +8670,7 @@ form._2rf1 ._1u7op {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   border: 1px solid rgba(103, 143, 185, 0.4);
 }
 
@@ -9126,7 +9145,7 @@ div._3bqe5 > div {
 ._3Xhwq {
   position: relative;
   margin-right: 1px;
-  background: #f4f4f4;
+  background: #FAFAFA;
   height: 300px;
 }
 
@@ -9186,7 +9205,7 @@ div._3bqe5 > div {
 }
 
 ._1kUIS {
-  color: #f4f4f4;
+  color: #FAFAFA;
 }
 
 .vrQ3d {
@@ -9240,7 +9259,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 80px;
   line-height: 92px;
-  color: #f4f4f4;
+  color: #FAFAFA;
 }
 
 @media screen and (max-width: 508px) {
@@ -10359,7 +10378,7 @@ div._3bqe5 > div {
 }
 
 ._418j1 {
-  background: #f4f4f4;
+  background: #FAFAFA;
   width: 100%;
   height: 0;
   padding-top: 100%;
@@ -11121,15 +11140,9 @@ div._3bqe5 > div {
 }
 
 ._11QMn {
-  margin-bottom: 72px;
-  background: url(/images/repeat-logo.png) #021429;
+  margin-bottom: 0;
+  background: url(/images/repeat-logo.png) #0c122a;
   color: #FFFFFF;
-}
-
-@media screen and (min-width: 924px) {
-  ._11QMn {
-    margin: 0 22px 72px;
-  }
 }
 
 @media screen and (max-width: 1158px) {
@@ -11219,9 +11232,14 @@ div._3bqe5 > div {
 ._1XEbE {
   display: block;
   position: relative;
-  background-color: #001b36;
+  background-color: #0C122A;
   width: 586px;
   margin-left: 12px;
+  border: 1px solid rgba(103, 143, 185, 0.1);
+}
+
+._1XEbE:hover img {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1236px) {
@@ -11266,7 +11284,7 @@ div._3bqe5 > div {
 }
 
 ._1wjeD {
-  background-color: #001b36;
+  background-color: #0C122A;
   padding: 40px 35px;
   padding-bottom: 114px;
 }
@@ -11358,6 +11376,11 @@ div._3bqe5 > div {
   width: 378px;
   margin-left: 12px;
   height: 170px;
+  border: 1px solid rgba(103, 143, 185, 0.1);
+}
+
+._2cP6X:first-child {
+  margin-left: 0;
 }
 
 @media screen and (max-width: 1236px) {
@@ -11398,7 +11421,7 @@ div._3bqe5 > div {
 }
 
 ._1-YRL {
-  background-color: #001b36;
+  background-color: #0C122A;
   color: #f8f8f8;
 }
 
@@ -12427,12 +12450,12 @@ div._3bqe5 > div {
 }
 
 ._1-0JF {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
   box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.05);
-  margin: 0 22px 22px;
+  margin: 0;
 }
 
 @media screen and (max-width: 1158px) {
@@ -12644,6 +12667,7 @@ div._3bqe5 > div {
 
 ._9DqWK {
   height: 92px;
+  background: #0c122a;
 }
 
 ._3JzN1 {
@@ -12664,7 +12688,7 @@ div._3bqe5 > div {
 }
 
 .GLLyX {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   position: relative;
 }
 
@@ -12989,7 +13013,7 @@ div._3bqe5 > div {
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  background: #f4f4f4;
+  background: #FAFAFA;
   margin: 0 9px 0 0;
   padding: 13px 22px;
   display: block;
@@ -13028,7 +13052,7 @@ div._3bqe5 > div {
 ._1z2cn ._3iSno:after {
   display: block;
   content: "";
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   width: 1px;
   position: absolute;
   right: -12px;
@@ -13436,7 +13460,7 @@ div._3bqe5 > div {
 }
 
 ._3WrZO {
-  transform: translateX(14px) translateY(16px) rotate(-90deg) scale(1.5);
+  transform: translateX(14px) translateY(16px) rotate(-90deg) scale(1.2);
 }
 
 @media screen and (max-width: 508px) {
@@ -13515,12 +13539,6 @@ div._3bqe5 > div {
   display: inline-block;
 }
 
-@media screen and (min-width: 846px) {
-  ._2KkkC {
-    border-bottom: 1px solid rgba(103, 143, 185, 0.2);
-  }
-}
-
 ._2i9BG {
   display: none;
 }
@@ -13528,7 +13546,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._2i9BG {
     display: block;
-    background: #f4f4f4;
+    background: #FAFAFA;
     width: 100%;
     height: 18px;
   }
@@ -13730,7 +13748,7 @@ div._3bqe5 > div {
 }
 
 ._1ssnS {
-  background-color: #5BC20F;
+  background-color: #00AFFF;
   margin-bottom: 14px;
   border: 0;
   color: #FFFFFF;
@@ -13739,7 +13757,10 @@ div._3bqe5 > div {
 ._1ssnS.active,
 ._1ssnS:focus,
 ._1ssnS:hover {
+  background-color: #5BC20F;
   color: #FFFFFF;
+  /* mistakes are pretty common */
+  /* work it out to the best of their abilities */
 }
 
 ._27HZP {
@@ -13933,7 +13954,7 @@ div._3bqe5 > div {
 
 ._3y3Fm {
   width: 100%;
-  background: #f4f4f4;
+  background: #FAFAFA;
   padding: 18px 14px;
   display: -ms-flexbox;
   display: flex;
@@ -14051,7 +14072,7 @@ div._3bqe5 > div {
 }
 
 ._12L63:hover img {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 ._12L63._36gJx {
@@ -14388,7 +14409,7 @@ div._3bqe5 > div {
 }
 
 .GKLAB {
-  background: url(/images/repeat-logo.png) #021429 repeat;
+  background: url(/images/repeat-logo.png) #0c122a repeat;
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -14637,7 +14658,7 @@ div._3bqe5 > div {
 ._2H55B > :after {
   display: block;
   content: "";
-  background: #f4f4f4;
+  background: #FAFAFA;
   width: 1px;
   position: absolute;
   top: 0;
@@ -14648,7 +14669,7 @@ div._3bqe5 > div {
 ._3BBJg > :after {
   display: block;
   content: "";
-  background: #f4f4f4;
+  background: #FAFAFA;
   width: 1px;
   position: absolute;
   top: 0;
@@ -14885,7 +14906,6 @@ div._3bqe5 > div {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  border: 1px solid rgba(0, 8, 39, 0.96);
 }
 
 @media screen and (max-width: 508px) {
@@ -14956,7 +14976,6 @@ div._3bqe5 > div {
 
 .l4oHd {
   font-size: 18px;
-  line-height: 18px;
   position: relative;
   background: none;
   line-height: 28px;
@@ -15116,7 +15135,7 @@ div._3bqe5 > div {
 }
 
 ._1DH32 {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   padding-top: 40px;
   padding-bottom: 500px;
 }
@@ -15499,7 +15518,7 @@ div._3bqe5 > div {
 }
 
 ._33vOG ._2LIIc {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   color: #fff;
 }
 
@@ -15715,7 +15734,7 @@ div._3bqe5 > div {
 }
 
 ._289iX ._2jrdA {
-  transform: translate(10px, -4px) scale(1.5) rotate(-90deg);
+  transform: translate(10px, -4px) scale(1.2) rotate(-90deg);
 }
 
 @media screen and (max-width: 1020px) {
@@ -15748,7 +15767,7 @@ div._3bqe5 > div {
 }
 
 ._2jrdA {
-  transform: translate(5px, -10px) scale(1.5) rotate(-90deg);
+  transform: translate(5px, -10px) scale(1.2) rotate(-90deg);
 }
 
 @media screen and (max-width: 508px) {
@@ -15881,7 +15900,7 @@ div._3bqe5 > div {
 }
 
 .C116H ._1k78U {
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   color: #fff;
 }
 
@@ -15932,7 +15951,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._2bVMA {
-    background: #f4f4f4;
+    background: #FAFAFA;
     font-size: 12px;
     padding: 18px 14px 9px;
     margin-bottom: 0;
@@ -17033,7 +17052,7 @@ div._3bqe5 > div {
 }
 
 ._2Eb44 {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   padding-top: 40px;
 }
 
@@ -17242,7 +17261,7 @@ div._3bqe5 > div {
 
 ._12d8M {
   position: relative;
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -17693,7 +17712,7 @@ div._3bqe5 > div {
 }
 
 ._1dVfa {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
   padding: 35px 0 0;
   -ms-flex-pack: center;
   justify-content: center;
@@ -17787,7 +17806,7 @@ div._3bqe5 > div {
 }
 
 ._1Iwk5 {
-  background-color: #f4f4f4;
+  background-color: #FAFAFA;
 }
 
 ._1c7AL {
@@ -18318,7 +18337,7 @@ nav._1R2o8 {
   height: 228px;
   position: relative;
   border: 1px solid #ccc;
-  background: #f4f4f4;
+  background: #FAFAFA;
   cursor: pointer;
 }
 
@@ -18567,7 +18586,7 @@ nav._1R2o8 {
 ._2q1KC {
   position: relative;
   height: 164px;
-  background: url(/images/repeat-logo.png) #021429;
+  background: url(/images/repeat-logo.png) #0c122a;
   background-size: cover;
 }
 
@@ -19350,7 +19369,7 @@ nav._1R2o8 {
   right: 0;
   background-color: #fff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
-  z-index: 99;
+  z-index: 10;
   overflow: hidden;
 }
 

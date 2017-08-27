@@ -37,6 +37,7 @@ class FanbaseController extends Controller
 
         return view('fanbase.show', [
             'fanbase' => $fanbase,
+            'toJson'=> $fanbase->toJson(),
             'posts' => $posts,
             'user' => $this->getUserArray()
         ]);
