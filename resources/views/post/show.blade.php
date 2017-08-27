@@ -114,7 +114,7 @@
             <div class="_1Y7kL">
                 <div class="vowHC _1KXFt">
                     <div class="_23p6h">
-                        {!! $post->resized_image !!}
+                        <img alt="{{ $post->title }}" role="presentation" src="{{ $post->big_image }}" class="_2PoG-">
                     </div>
                 </div>
                 <p class="_2cAm4">CREDIT: <a target="_blank" href="http://{{ $post->credit }}">{{ $post->credit }}</a></p>
@@ -203,7 +203,7 @@
                                            href="/p/{{ $post->slug }}">
                                             <div class="_1w60_">
                                                 <div class="_2pUFC _3Xaa0">
-                                                    {!! $post->resized_image !!}
+                                                    <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_image }}" class="b00q8">
                                                 </div>
                                             </div>
                                         </a>
@@ -301,7 +301,7 @@
                         <div class="_1XEbE">
                             <div class="">
                                 <div class="_38L6D" style="padding-bottom: 50%;">
-                                    {!! $post->resized_image !!}
+                                    <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_image }}" class="_214e9 b00q8">
                                 </div>
                             </div>
                             <div class="_1wjeD">
@@ -356,7 +356,7 @@
                                 </div>
                                 <div class="_2lssz">
                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                        <img alt="" role="presentation" src="{{ $fanbase->thumb_image }}" class="_214e9 b00q8" width="200" height="200">
                                     </div>
                                 </div>
                             </div>

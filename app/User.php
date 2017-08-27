@@ -77,7 +77,11 @@ class User extends Authenticatable
 
     public function getFanbasesAttribute()
     {
-        return [];
+        return Fanbase::whereHas('followers', function ($query) {
+            $query->where('user_id', $this->id)
+                ->where('followable_type', 'App\Fanbase');
+        })
+            ->get();
     }
 
     public function getRequestedAttribute()

@@ -78,7 +78,7 @@ class RegisterController extends Controller
 
         $this->sendNewActivationEmail($user, $user->token);
 
-        return $user;
+        die(json_encode(['success' => true]));
     }
 
     /**

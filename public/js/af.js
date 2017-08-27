@@ -406,17 +406,24 @@ $(function () {
             }
         });
 
+        self.token = ko.observable(params._token);
+
         self.focusedEmail = ko.observable(false);
 
-        self.canGo = ko.computed(function () {
+        self.isSubmitted = ko.observable(false);
 
-            return true;
-            // return $("._2Kdch").hasClass("p5bDW");
-        });
+        self.canGo = ko.observable(false);
 
         self.showAllMessages = function () {
             console.log("showAllMessages");
-            JoinFormViewModel.errors().showAllMessages();
+            JoinFormViewModel.errors.showAllMessages();
+
+            var $this = $("._34JK span._1u7op");
+
+            console.log(self.email().length > 0);
+            console.log(!$this.is(':visible'));
+
+            self.canGo(self.email().length > 0 && !$this.is(':visible'));
         };
 
         self.focusEmail = function () {
@@ -424,42 +431,35 @@ $(function () {
         };
 
         self.blurEmail = function () {
+
+            console.log(self.email() + ">>>");
+
             if (self.email.length === 0) {
                 self.focusedEmail(false);
             }
 
-            // console.log(JoinFormViewModel.errors());
-
-            console.log("testing...");
-
-            self.toggleErrors();
             self.showAllMessages();
-        };
 
-        self.toggleErrors = function () {
-            $("._2Kdch").each(function () {
-                var $this = $(this);
-
-                if ($this.find('span._1u7op').is(':visible')) {
-                    $this.addClass('p5bDW');
-                }
-                else {
-                    $this.removeClass('p5bDW');
-                }
-            });
+            console.log(JoinFormViewModel.errors().length);
+            console.log("something...");
         };
 
         self.proceed = function () {
             self.showAllMessages();
 
             if (self.canGo) {
+
+                self.canGo(false);
+
                 $.ajax("/register", {
                     data: ko.toJSON({
-                        email: self.email()
+                        email: self.email(),
+                        _token: self.token()
                     }),
                     type: "post",
                     contentType: "application/json",
                     success: function (response) {
+                        self.isSubmitted(true);
                         console.log(response);
                     }
                 });

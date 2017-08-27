@@ -70,7 +70,7 @@
             <a class="_2hvwD" href="{{ route('post.show', ['slug' => $post->slug]) }}">
                 <div class="_25bvT">
                     <div style="padding-bottom:56.25%;" class="_38L6D">
-                        {!! $post->resized_image !!}
+                        <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_image }}" class="_214e9 b00q8">
                     </div>
                 </div>
                 <h2 class="_2DyJ3 _3duUm">{{ $post->title }}</h2>

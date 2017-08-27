@@ -394,8 +394,25 @@ button {
   &[disabled] {
     opacity: 0.4;
   }
-  &:hover {
+  &:hover,
+  &:focus{
     background: $color_green;
+  }
+}
+
+._23KD{
+  display: none;
+}
+
+._JD9R{
+  display: none;
+  transition: all 0.25s ease-out;
+  h1,p{
+    transition: all 0.25s ease-out;
+    opacity: 0;
+  }
+  &._83JNY{
+    display: block;
   }
 }
 
@@ -1018,6 +1035,9 @@ form {
     ._1u7op {
       margin-top: -10px;
     }
+  }
+  ._2Kdch{
+    padding: 0;
   }
 }
 

@@ -48,7 +48,7 @@
                                     <a class="_pRC7 _46Jbt" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3BoA_">
                                             <div style="padding-bottom:100%;" class="_38L6D">
-                                                <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                                <img alt="" role="presentation" src="{{ $fanbase->thumb_image }}" class="_214e9 b00q8" width="200" height="200">
                                             </div>
                                         </div>
                                         <p class="_2mbtl">{{ $fanbase->name }}</p>
@@ -67,7 +67,7 @@
                                             <div class="WCfW6">
                                                 <div class="_1ZxE5">
                                                     <div style="padding-bottom:100%;" class="_38L6D">
-                                                        {!! $post->square_image !!}
+                                                        <img alt="{{ $post->title }}" role="presentation" src="{{ $post->thumb_image }}" class="_214e9 b00q8">
                                                     </div>
                                                 </div>
                                             </div>

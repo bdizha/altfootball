@@ -23,6 +23,12 @@ class AppServiceProvider extends ServiceProvider
 
             return false;
         });
+
+        \Cloudinary::config(array(
+            "cloud_name" => "altfootball",
+            "api_key" => "565551878586399",
+            "api_secret" => "n0Hbn1qbWj_JVRKRg9LYLgF4aRo"
+        ));
     }
 
     /**

@@ -22,7 +22,7 @@ class PSG extends NewsJob
      */
     public function __construct()
     {
-        $this->fanbase_id = 26;
+        $this->fanbase_id = 19;
         $this->domain = "https://en.psg.fr";
         $this->url = "http://www.90min.com/top-stories?page=";
     }
@@ -130,14 +130,12 @@ class PSG extends NewsJob
 
                             $fb = FanbasePost::where("post_id", $p->id)
                                 ->where("fanbase_id", $this->fanbase_id)
-                                ->first();
+                                ->delete();
 
-                            if (empty($fb->id)) {
-                                FanbasePost::create([
-                                    'post_id' => $p->id,
-                                    'fanbase_id' => $this->fanbase_id
-                                ]);
-                            }
+                            FanbasePost::create([
+                                'post_id' => $p->id,
+                                'fanbase_id' => $this->fanbase_id
+                            ]);
                         }
                     }
                 }

@@ -459,8 +459,28 @@ button {
   opacity: 0.4;
 }
 
-._1geYT:hover {
+._1geYT:hover,
+._1geYT:focus {
   background: #5BC20F;
+}
+
+._23KD {
+  display: none;
+}
+
+._JD9R {
+  display: none;
+  transition: all 0.25s ease-out;
+}
+
+._JD9R h1,
+._JD9R p {
+  transition: all 0.25s ease-out;
+  opacity: 0;
+}
+
+._JD9R._83JNY {
+  display: block;
 }
 
 ._2e1-n {
@@ -1101,6 +1121,10 @@ form .M13JP {
 
 form._2rf1 ._1u7op {
   margin-top: -10px;
+}
+
+form ._2Kdch {
+  padding: 0;
 }
 
 ._1AUhk,

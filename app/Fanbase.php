@@ -27,7 +27,7 @@ class Fanbase extends Model
         'slug'
     ];
 
-    protected $appends = ['resized_image', 'initials', 'is_owner', 'follower'];
+    protected $appends = ['thumb_image', 'small_image', 'big_image', 'initials', 'is_owner', 'follower'];
 
     protected $covers = [
         "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905207/lxs2sjouxjlumcg4wnvz.jpg",
@@ -82,7 +82,7 @@ class Fanbase extends Model
      */
     public function followers()
     {
-        return [];
+        return $this->morphMany(Follower::class, 'followable');
     }
 
     public function getFollowerAttribute()
@@ -120,67 +120,65 @@ class Fanbase extends Model
         return Auth::guard()->check() ? Auth::user()->id === $this->user_id : false;
     }
 
-    public function getImage($dimensions = "width=400&height=400")
+    public function getSmallImageAttribute()
     {
-        try {
-            $image = Redis::get('fanbase:image:' . $this->id);
-            if (empty($image)) {
-                $image = file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
-                Redis::set('fanbase:image:' . $this->id, $image);
-            }
-            return $image;
-        } catch (\Exception $e) {
+        $image = Redis::get('fanbase:image:small:' . $this->id);
+        if (empty($image)) {
+            $cloudImage = \Cloudinary\Uploader::upload(
+                $this->image,
+                array(
+                    "quality" => 100,
+                    "crop" => "limit",
+                    "width" => 400,
+                    "height" => 400
+                ));
+
+            $image = $cloudImage['url'];
+
+            Redis::set('fanbase:image:small:' . $this->id, $image);
         }
-    }
-
-    public function getCover($dimensions = "width=1440&height=360")
-    {
-        try {
-            $image = Redis::get('fanbase:cover:' . $this->id);
-            if (empty($image)) {
-
-                if (empty($this->cover)) {
-                    $this->cover = $this->covers[rand(0, count($this->covers) - 1)];
-                    $this->save();
-                }
-
-                $image = file_get_contents("http://images.altfootball.dev?url=" . $this->cover . "&" . $dimensions);
-                Redis::set('fanbase:cover:' . $this->id, $image);
-            }
-            return $image;
-        } catch (\Exception $e) {
-        }
-    }
-
-    public function getResizedImageAttribute()
-    {
-        $image = "";
-        preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getImage(), $imageParts, PREG_SET_ORDER);
-
-        if (!empty($imageParts[3][2])) {
-            $imageParts = explode(" ", $imageParts[3][2]);
-        }
-
-        if (!empty($imageParts[0])) {
-            $image = $imageParts[0];
-        }
-
         return $image;
     }
 
-    public function getResizedCoverAttribute()
+
+    public function getBigImageAttribute()
     {
-        $image = "";
-        preg_match_all('/(\w+)\s*=\s*(?|"([^"]*)"|\'([^\']*)\')/', $this->getCover(), $imageParts, PREG_SET_ORDER);
+        $image = Redis::get('fanbase:image:big:' . $this->id);
+        if (empty($image)) {
+            $cloudImage = \Cloudinary\Uploader::upload(
+                $this->image,
+                array(
+                    "crop" => "fill",
+                    "quality" => 100,
+                    "width" => 1400,
+                    "height" => 360,
+                    "x" => 0,
+                    "y" => 0
+                ));
 
-        if (!empty($imageParts[3][2])) {
-            $imageParts = explode(" ", $imageParts[3][2]);
+            $image = $cloudImage['url'];
+            Redis::set('fanbase:image:big:' . $this->id, $image);
         }
+        return $image;
+    }
 
-        if (!empty($imageParts[0])) {
-            $image = $imageParts[0];
+
+    public function getThumbImageAttribute()
+    {
+        $image = Redis::get('fanbase:image:thumb:' . $this->id);
+        if (empty($image)) {
+            $cloudImage = \Cloudinary\Uploader::upload(
+                $this->image,
+                array(
+                    "crop" => "thumb",
+                    "quality" => 100,
+                    "width" => 200,
+                    "height" => 200
+                ));
+
+            $image = $cloudImage['url'];
+            Redis::set('fanbase:image:thumb:' . $this->id, $image);
         }
-
         return $image;
     }
 }
