@@ -39,7 +39,7 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name', 'resized_image', 'is_self', 'follower', 'fanbases', 'requested', 'requesters'];
+    protected $appends = ['name', 'small_image', 'thumb_image', 'is_self', 'follower', 'fanbases', 'requested', 'requesters'];
 
     public function getNameAttribute()
     {
@@ -77,7 +77,7 @@ class User extends Authenticatable
 
     public function getFanbasesAttribute()
     {
-        return Fanbase::whereHas('followers', function ($query) {
+        return user::whereHas('followers', function ($query) {
             $query->where('user_id', $this->id)
                 ->where('followable_type', 'App\Fanbase');
         })
@@ -152,31 +152,49 @@ class User extends Authenticatable
         return $this->toJson();
     }
 
-    public function getResizedImageAttribute()
+    public function getSmallImageAttribute()
     {
-        $dimensions = "width=300&height=300";
-        try {
-            $image = Redis::get('fan:image:' . $this->id);
-            if (empty($image)) {
+        $image = Redis::get('user:image:small:' . $this->id);
+        if (empty($image)) {
+            try {
+                $cloudImage = \Cloudinary\Uploader::upload(
+                    $this->image,
+                    array(
+                        "quality" => 100,
+                        "crop" => "fill",
+                        "width" => 200,
+                        "height" => 200
+                    ));
 
-                if (empty($this->image)) {
-                    $u = DB::table('users')
-                        ->where('created_at', '>', Carbon::parse('22/08/2017')->subDays(1))
-                        ->where('created_at', '<', Carbon::parse('22/08/2017')->addDays(1))
-                        ->inRandomOrder()
-                        ->first();
+                $image = $cloudImage['url'];
 
-                    if (!empty($u->image)) {
-                        $this->image = $u->image;
-                        $this->save();
-                    }
-                }
-
-                $image = file_get_contents("http://images.altfootball.dev?url=" . $this->image . "&" . $dimensions);
-                Redis::set('fan:image:' . $this->id, $image);
+                Redis::set('user:image:small:' . $this->id, $image);
+            } catch (\Exception $e) {
             }
-            return $image;
-        } catch (\Exception $e) {
         }
+        return $image;
+    }
+
+
+    public function getThumbImageAttribute()
+    {
+        $image = Redis::get('user:image:thumb:' . $this->id);
+        if (empty($image)) {
+            try {
+                $cloudImage = \Cloudinary\Uploader::upload(
+                    $this->image,
+                    array(
+                        "crop" => "thumb",
+                        "quality" => 100,
+                        "width" => 100,
+                        "height" => 100
+                    ));
+
+                $image = $cloudImage['url'];
+                Redis::set('user:image:thumb:' . $this->id, $image);
+            } catch (\Exception $e) {
+            }
+        }
+        return $image;
     }
 }

@@ -6,7 +6,7 @@
                     <a href="{{ $post->slug }}">
                         <div class="_1yAXU">
                             <div style="padding-bottom:100%;" class="_38L6D">
-                                {!! $post->user->resized_image !!}
+                                <img alt="" role="presentation" src="{{ $post->user->thumb_image }}" class="_214e9 b00q8">
                             </div>
                         </div>
                     </a>

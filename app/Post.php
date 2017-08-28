@@ -142,7 +142,7 @@ class Post extends Model
                 $this->image,
                 array(
                     "quality" => 100,
-                    "crop" => "limit",
+                    "crop" => "fill",
                     "width" => 384,
                     "height" => 216
                 ));

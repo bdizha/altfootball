@@ -35,7 +35,7 @@
                         <div class="_25jNX _3PwOQ">
                             <div class="N3r_f">
                                 <div class="_38L6D" style="padding-bottom: 100%;">
-                                    {!! $post->user->resized_image !!}
+                                    <img alt="" role="presentation" src="{{ $post->user->thumb_image }}" class="_214e9 b00q8">
                                 </div>
                             </div>
                         </div>
@@ -203,7 +203,7 @@
                                            href="/p/{{ $post->slug }}">
                                             <div class="_1w60_">
                                                 <div class="_2pUFC _3Xaa0">
-                                                    <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_image }}" class="b00q8">
+                                                    <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_image }}" class="_214e9 b00q8">
                                                 </div>
                                             </div>
                                         </a>
@@ -216,7 +216,7 @@
                                                     <div class="_25jNX _3lGf-">
                                                         <div class="N3r_f">
                                                             <div class="_38L6D" style="padding-bottom: 100%;">
-                                                                {!! $post->user->resized_image !!}
+                                                                <img alt="" role="presentation" src="{{ $post->user->thumb_image }}" class="_214e9 b00q8">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -314,7 +314,7 @@
                                     <div class="_25jNX _3Y-3q" style="width: 40px; height: 40px;">
                                         <div class="N3r_f">
                                             <div class="_38L6D" style="padding-bottom: 100%;">
-                                                {!! $post->user->resized_image !!}
+                                                <img alt="" role="presentation" src="{{ $post->user->thumb_image }}" class="_214e9 b00q8">
                                             </div>
                                         </div>
                                     </div>

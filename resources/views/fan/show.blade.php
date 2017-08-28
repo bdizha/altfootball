@@ -26,7 +26,7 @@
                             <div class="_25jNX">
                                 <div class="N3r_f">
                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                        {!! $user->resized_image !!}
+                                        <img alt="{{ $user->name }}" role="presentation" src="{{ $user->small_image }}" class="_214e9 b00q8">
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                                                     <div class="_2lssz">
                                                         <div class="_38L6D" style="padding-bottom: 100%;">
                                                             <img alt="" role="presentation"
-                                                                 src="{{ $fanbase->resized_image }}" class="_214e9 b00q8"
+                                                                 src="{{ $fanbase->thumb_image }}" class="_214e9 b00q8"
                                                                  width="200" height="200">
                                                         </div>
                                                     </div>

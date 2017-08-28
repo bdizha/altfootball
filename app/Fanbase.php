@@ -124,18 +124,21 @@ class Fanbase extends Model
     {
         $image = Redis::get('fanbase:image:small:' . $this->id);
         if (empty($image)) {
-            $cloudImage = \Cloudinary\Uploader::upload(
-                $this->image,
-                array(
-                    "quality" => 100,
-                    "crop" => "limit",
-                    "width" => 400,
-                    "height" => 400
-                ));
+            try {
+                $cloudImage = \Cloudinary\Uploader::upload(
+                    $this->image,
+                    array(
+                        "quality" => 100,
+                        "crop" => "fill",
+                        "width" => 400,
+                        "height" => 400
+                    ));
 
-            $image = $cloudImage['url'];
+                $image = $cloudImage['url'];
 
-            Redis::set('fanbase:image:small:' . $this->id, $image);
+                Redis::set('fanbase:image:small:' . $this->id, $image);
+            } catch (\Exception $e) {
+            }
         }
         return $image;
     }
@@ -145,19 +148,22 @@ class Fanbase extends Model
     {
         $image = Redis::get('fanbase:image:big:' . $this->id);
         if (empty($image)) {
-            $cloudImage = \Cloudinary\Uploader::upload(
-                $this->image,
-                array(
-                    "crop" => "fill",
-                    "quality" => 100,
-                    "width" => 1400,
-                    "height" => 360,
-                    "x" => 0,
-                    "y" => 0
-                ));
+            try {
+                $cloudImage = \Cloudinary\Uploader::upload(
+                    $this->image,
+                    array(
+                        "crop" => "fill",
+                        "quality" => 100,
+                        "width" => 1400,
+                        "height" => 360,
+                        "x" => 0,
+                        "y" => 0
+                    ));
 
-            $image = $cloudImage['url'];
-            Redis::set('fanbase:image:big:' . $this->id, $image);
+                $image = $cloudImage['url'];
+                Redis::set('fanbase:image:big:' . $this->id, $image);
+            } catch (\Exception $e) {
+            }
         }
         return $image;
     }
@@ -167,17 +173,20 @@ class Fanbase extends Model
     {
         $image = Redis::get('fanbase:image:thumb:' . $this->id);
         if (empty($image)) {
-            $cloudImage = \Cloudinary\Uploader::upload(
-                $this->image,
-                array(
-                    "crop" => "thumb",
-                    "quality" => 100,
-                    "width" => 200,
-                    "height" => 200
-                ));
+            try {
+                $cloudImage = \Cloudinary\Uploader::upload(
+                    $this->image,
+                    array(
+                        "crop" => "thumb",
+                        "quality" => 100,
+                        "width" => 200,
+                        "height" => 200
+                    ));
 
-            $image = $cloudImage['url'];
-            Redis::set('fanbase:image:thumb:' . $this->id, $image);
+                $image = $cloudImage['url'];
+                Redis::set('fanbase:image:thumb:' . $this->id, $image);
+            } catch (\Exception $e) {
+            }
         }
         return $image;
     }

@@ -91,7 +91,7 @@
                                         <div class="_25jNX" style="width:66px;height:66px;">
                                             <div class="N3r_f">
                                                 <div style="padding-bottom:100%;" class="_38L6D">
-                                                    {!! $fan->resized_image  !!}
+                                                    <img alt="{{ $fan->name }}" role="presentation" src="{{ $fan->thumb_image }}" class="_214e9 b00q8">
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +112,7 @@
                              >
                                 <div class="_204wR">
                                     <div style="padding-bottom:100%;" class="_38L6D">
-                                        <img alt="" role="presentation" src="{{ $fanbase->resized_image }}" class="_214e9 b00q8" width="200" height="200">
+                                        <img alt="" role="presentation" src="{{ $fanbase->thumb_image }}" class="_214e9 b00q8" width="200" height="200">
                                     </div>
                                 </div>
                                 <p class="Dpcfa">{{ $fanbase->name }}</p>
