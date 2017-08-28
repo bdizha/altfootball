@@ -29,7 +29,7 @@
                                     <div class="_271kZ">
                                         <div class="">
                                             <div class="_38L6D" style="padding-bottom: 100%;">
-                                                {!! $base->resized_image !!}
+                                                {!! $base->thumb_image !!}
                                             </div>
                                         </div>
                                         <button class="_1Szys _1MC-v _1h78h">Join</button>

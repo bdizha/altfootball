@@ -7,7 +7,7 @@
                         <div class="_2VAHq">
                             <a href="chelsea-name-their-price-for-star-man-as-barcelona-step-up-interest-in-players-signature">
                                 <div class="_1yAXU">
-                                    <div style="padding-bottom:100%;" class="_38L6D" data-bind="html: user.resized_image"></div>
+                                    <div style="padding-bottom:100%;" class="_38L6D" data-bind="html: user.thumb_image"></div>
                                 </div>
                             </a>
                             <span class="_1NHvQ _3Xf-w">
@@ -48,7 +48,7 @@
                 <div>
                     <a class="_2hvwD" data-bind="attr: { href: '/p/' + slug }">
                         <div class="_25bvT">
-                            <div style="padding-bottom:56.25%;" class="_38L6D" data-bind="html: resized_image">
+                            <div style="padding-bottom:56.25%;" class="_38L6D" data-bind="html: thumb_image">
                             </div>
                         </div>
                         <h2 class="_2DyJ3 _3duUm" data-bind="text: title"></h2>
@@ -75,7 +75,7 @@
                     </div>
                     <dribbles params='count: dribbles.length, type_id: id, has_dribble: has_dribble, type: "post"'></dribbles>
                 </div>
-                <comments params='comments: limited_comments, type_id: id, level: 0, root: $root, class: 'items''></comments>
+                <comments params='comments: limited_comments, type_id: id, level: 0, root: $root, class: "items"'></comments>
             </div>
         </div>
     </div>

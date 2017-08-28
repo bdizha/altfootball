@@ -110,7 +110,7 @@ class ArsenalFC extends NewsJob
 
                             $content = str_replace("<p><br></p>", "", $content);
                             $post['content'] = $content;
-                            $post['summary'] = $summary;
+                            $post['summary'] =  substr($summary, 0, 255);
 
                             if (empty($p->id)) {
                                 $p = Post::create($post);

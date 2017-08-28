@@ -145,7 +145,7 @@
                                 <div class="_25jNX _3Y-3q" style="width:35px;height:35px;">
                                     <div class="N3r_f">
                                         <div style="padding-bottom:100%;" class="_38L6D">
-                                            {!! $fanbase->user->resized_image !!}
+                                            {!! $fanbase->user->thumb_image !!}
                                         </div>
                                     </div>
                                 </div>
