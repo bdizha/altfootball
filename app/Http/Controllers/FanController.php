@@ -12,49 +12,51 @@ class FanController extends Controller
 {
     public function show($slug)
     {
-        $user = User::where('slug', '=', $slug)->first();
+        $user = User::with(['received', 'sent', 'fanbases'])
+            ->where('slug', '=', $slug)
+            ->first();
 
         return view('fan.show', [
             'user' => $user
         ]);
     }
 
-    public function requesters($slug)
+    public function received($slug)
     {
         $user = User::where('slug', '=', $slug)->first();
 
         return view('fan.fans', [
             'user' => $user,
-            'followers' => $user->requesters,
-            'tabs' => $this->tabs($user, 'requesters')
+            'followers' => $user->received,
+            'tabs' => $this->tabs($user, 'received')
         ]);
     }
 
-    public function requested($slug)
+    public function sent($slug)
     {
         $user = User::where('slug', '=', $slug)->first();
 
         return view('fan.fans', [
             'user' => $user,
-            'followers' => $user->requested,
-            'tabs' => $this->tabs($user, 'requested')
+            'followers' => $user->sent,
+            'tabs' => $this->tabs($user, 'sent')
         ]);
     }
 
     protected function tabs($user, $active)
     {
         $tabs = [
-            'requesters' =>
+            'received' =>
                 [
                     'label' => 'Followers',
-                    'count' => $user->requesters->count(),
+                    'count' => $user->received->count(),
                     'is_active' => false
                 ],
 
-            'requested' =>
+            'sent' =>
                 [
                     'label' => 'Following',
-                    'count' => $user->requested->count(),
+                    'count' => $user->sent->count(),
                     'is_active' => false
                 ]
         ];

@@ -6,6 +6,7 @@ use Auth;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Redis;
 use MartinBean\Database\Eloquent\Sluggable;
+use Imgix\UrlBuilder;
 
 class Fanbase extends Model
 {
@@ -24,10 +25,14 @@ class Fanbase extends Model
         'image',
         'cover',
         'access',
-        'slug'
+        'slug',
+        'small_image',
+        'thumb_image',
+        'big_image',
+        'big_cover'
     ];
 
-    protected $appends = ['thumb_image', 'small_image', 'big_image', 'initials', 'is_owner', 'follower'];
+    protected $appends = ['initials', 'is_owner', 'follower', 'small_x', 'thumb_x',  'big_x', 'cover_x'];
 
     protected $covers = [
         "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905207/lxs2sjouxjlumcg4wnvz.jpg",
@@ -77,12 +82,10 @@ class Fanbase extends Model
         return $this->belongsToMany(Post::class, 'fanbases_posts');
     }
 
-    /**
-     * Get all of the fanbase's followers.
-     */
-    public function followers()
+    public function users()
     {
-        return $this->morphMany(Follower::class, 'followable');
+        return  $this->hasMany(Follower::class, 'followable_id', 'id')
+            ->orderBy("created_at", "DESC");
     }
 
     public function getFollowerAttribute()
@@ -93,14 +96,14 @@ class Fanbase extends Model
             $follower = Follower::where('user_id', $user->id)
                 ->where('followable_id', $this->id)
                 ->where('is_active', true)
-                ->where('followable_type', 'App\Fanbase')
+                ->where('type', 2)
                 ->first();
 
             if (empty($follower->id)) {
                 $follower = Follower::create([
                     'user_id' => $user->id,
                     'followable_id' => $this->id,
-                    'followable_type' => 'App\Fanbase'
+                    'type' => 2
                 ]);
             }
 
@@ -109,7 +112,7 @@ class Fanbase extends Model
 
         $follower = new Follower();
         $follower->followable_id = $this->id;
-        $follower->followable_type = 'App\Fanbase';
+        $follower->type = 2;
 
         return $follower;
     }
@@ -120,74 +123,75 @@ class Fanbase extends Model
         return Auth::guard()->check() ? Auth::user()->id === $this->user_id : false;
     }
 
-    public function getSmallImageAttribute()
+    public function getSmallXAttribute()
     {
-        $image = Redis::get('fanbase:image:small:' . $this->id);
-        if (empty($image)) {
+        if (!empty($this->image)) {
             try {
-                $cloudImage = \Cloudinary\Uploader::upload(
-                    $this->image,
-                    array(
-                        "quality" => 100,
-                        "crop" => "fill",
-                        "width" => 400,
-                        "height" => 400
-                    ));
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 300, "h" => 300);
+                $url = $builder->createURL($this->image, $params);
 
-                $image = $cloudImage['url'];
+                $this->small_image = $url;
+                $this->save();
 
-                Redis::set('fanbase:image:small:' . $this->id, $image);
             } catch (\Exception $e) {
             }
         }
-        return $image;
+        return $this->small_image;
     }
 
-
-    public function getBigImageAttribute()
+    public function getThumbXAttribute()
     {
-        $image = Redis::get('fanbase:image:big:' . $this->id);
-        if (empty($image)) {
+        if (!empty($this->image)) {
             try {
-                $cloudImage = \Cloudinary\Uploader::upload(
-                    $this->image,
-                    array(
-                        "crop" => "fill",
-                        "quality" => 100,
-                        "width" => 1400,
-                        "height" => 360,
-                        "x" => 0,
-                        "y" => 0
-                    ));
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 200, "h" => 200);
+                $url = $builder->createURL($this->image, $params);
 
-                $image = $cloudImage['url'];
-                Redis::set('fanbase:image:big:' . $this->id, $image);
+                $this->thumb_image = $url;
+                $this->save();
+
             } catch (\Exception $e) {
             }
         }
-        return $image;
+        return $this->thumb_image;
     }
 
-
-    public function getThumbImageAttribute()
+    public function getBigXAttribute()
     {
-        $image = Redis::get('fanbase:image:thumb:' . $this->id);
-        if (empty($image)) {
+        if (!empty($this->image)) {
             try {
-                $cloudImage = \Cloudinary\Uploader::upload(
-                    $this->image,
-                    array(
-                        "crop" => "thumb",
-                        "quality" => 100,
-                        "width" => 200,
-                        "height" => 200
-                    ));
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 420, "h" => 420);
+                $url = $builder->createURL($this->image, $params);
 
-                $image = $cloudImage['url'];
-                Redis::set('fanbase:image:thumb:' . $this->id, $image);
+                $this->big_image = $url;
+                $this->save();
+
             } catch (\Exception $e) {
             }
         }
-        return $image;
+        return $this->big_image;
+    }
+
+    public function getCoverXAttribute()
+    {
+        if (!empty($this->big_cover)) {
+            try {
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 400, "h" => 400);
+                $url = $builder->createURL($this->cover, $params);
+
+                $this->big_cover = $url;
+                $this->save();
+
+            } catch (\Exception $e) {
+            }
+        }
+        return $this->big_cover;
     }
 }

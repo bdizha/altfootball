@@ -3,6 +3,7 @@
 use App\Comment;
 use App\User;
 use App\Post;
+use App\Follower;
 use App\Fanbase;
 use Carbon\Carbon;
 use Illuminate\Database\Seeder;
@@ -17,11 +18,16 @@ class BaseSeeder extends Seeder
     public function run()
     {
 
-        foreach(Fanbase::all() as $fanbase){
+        foreach(Follower::all() as $follower){
 
-            echo $fanbase->initials . "\n";
-            $fanbase->stamp = $fanbase->initials;
-            $fanbase->save();
+            if($follower->type == 'App\User'){
+                $follower->type = 1;
+            }
+            else{
+                $follower->type = 2;
+            }
+
+            $follower->save();
         }
     }
 }

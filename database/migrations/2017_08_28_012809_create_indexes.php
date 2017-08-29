@@ -49,7 +49,9 @@ class CreateIndexes extends Migration
         Schema::table('followers', function (Blueprint $table) {
             $table->index('is_active');
             $table->index('followable_id');
-            $table->index('followable_type');
+            $table->index(['type', 'followable_id']);
+            $table->index(['type', 'followable_id', 'followable_id']);
+            $table->index(['type', 'followable_id', 'followable_id', 'is_active']);
         });
 
         Schema::table('tags_posts', function (Blueprint $table) {

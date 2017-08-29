@@ -18,14 +18,14 @@ class AlterFansTable extends Migration
         Schema::create('fans', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('requester_id')->unsigned();
-            $table->integer('requested_id')->unsigned();
+            $table->integer('sent_id')->unsigned();
             $table->boolean('is_active')->default(false);
             $table->timestamps();
 
             $table->foreign('requester_id')
                 ->references('id')->on('users')
                 ->onDelete('cascade');
-            $table->foreign('requested_id')
+            $table->foreign('sent_id')
                 ->references('id')->on('users')
                 ->onDelete('cascade');
         });

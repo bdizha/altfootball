@@ -2,11 +2,12 @@
 
 namespace App;
 
+use Auth;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Redis;
 use MartinBean\Database\Eloquent\Sluggable;
-use Auth;
+use Imgix\UrlBuilder;
 
 class Post extends Model
 {
@@ -15,7 +16,7 @@ class Post extends Model
     /**
      * The attributes that are mass assignable.
      *
-     * @var array
+     * @$array
      */
     protected $fillable = [
         'title',
@@ -26,10 +27,15 @@ class Post extends Model
         'content',
         'user_id',
         'created_at',
-        'slug'
+        'slug',
+        'small_image',
+        'thumb_image',
+        'big_image'
     ];
 
-    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'thumb_image', 'small_image', 'big_image', 'has_dribble', 'fanbase'];
+    protected $wordsPerMinute = 170;
+
+    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'has_dribble', 'fanbase', 'reading_time', 'small_x', 'thumb_x', 'big_x'];
 
     public function getPublishedAtAttribute()
     {
@@ -134,66 +140,68 @@ class Post extends Model
         return str_replace("height=", "", str_replace("width=", "", $content));
     }
 
-    public function getSmallImageAttribute()
+    public function getSmallXAttribute()
     {
-        $image = Redis::get('post:image:small:' . $this->id);
-        if (empty($image)) {
-            $cloudImage = \Cloudinary\Uploader::upload(
-                $this->image,
-                array(
-                    "quality" => 100,
-                    "crop" => "fill",
-                    "width" => 384,
-                    "height" => 216
-                ));
+        if (!empty($this->image)) {
+            try {
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 384, "h" => 216);
+                $url = $builder->createURL($this->image, $params);
 
-            $image = $cloudImage['url'];
+                $this->small_image = $url;
+                $this->save();
 
-            Redis::set('post:image:small:' . $this->id, $image);
+            } catch (\Exception $e) {
+            }
         }
-        return $image;
+        return $this->small_image;
+    }
+
+    public function getThumbXAttribute()
+    {
+        if (!empty($this->image)) {
+            try {
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 100, "h" => 100);
+                $url = $builder->createURL($this->image, $params);
+
+                $this->thumb_image = $url;
+                $this->save();
+
+            } catch (\Exception $e) {
+            }
+        }
+        return $this->thumb_image;
+    }
+
+    public function getBigXAttribute()
+    {
+        if (!empty($this->image)) {
+            try {
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 1000, "h" => 695);
+                $url = $builder->createURL($this->image, $params);
+
+                $this->big_image = $url;
+                $this->save();
+
+            } catch (\Exception $e) {
+            }
+        }
+        return $this->big_image;
     }
 
 
-    public function getBigImageAttribute()
+    public function getReadingTimeAttribute()
     {
-        $image = Redis::get('post:image:big:' . $this->id);
-        if (empty($image)) {
-            $cloudImage = \Cloudinary\Uploader::upload(
-                $this->image,
-                array(
-                    "crop" => "fill",
-                    "quality" => 100,
-                    "width" => 1236,
-                    "height" => 695,
-                    "x" => 0,
-                    "y" => 0
-                ));
+        $words = explode(" ", $this->content);
+        $totalWords = count($words);
+        $readingTimeMinutes = floor($totalWords / $this->wordsPerMinute);
 
-            $image = $cloudImage['url'];
-            Redis::set('post:image:big:' . $this->id, $image);
-        }
-        return $image;
-    }
-
-
-    public function getThumbImageAttribute()
-    {
-        $image = Redis::get('post:image:thumb:' . $this->id);
-        if (empty($image)) {
-            $cloudImage = \Cloudinary\Uploader::upload(
-                $this->image,
-                array(
-                    "crop" => "thumb",
-                    "quality" => 100,
-                    "width" => 90,
-                    "height" => 90
-                ));
-
-            $image = $cloudImage['url'];
-            Redis::set('post:image:thumb:' . $this->id, $image);
-        }
-        return $image;
+        return (!empty($readingTimeMinutes) ? $readingTimeMinutes : "< 1") . " min read";
     }
 
     public function getMeta($url)

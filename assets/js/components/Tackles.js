@@ -19,7 +19,6 @@ $(function () {
         self.root = ko.observable(params.root);
         self.newCommentText = ko.observable('');
         self.commentsCount = ko.computed(function () {
-            applyHeights();
             return self.comments().length;
         });
 
@@ -42,8 +41,6 @@ $(function () {
 
             var allComments = $('._55ghi');
             allComments.removeClass('_4c7v3');
-
-            applyHeights();
         };
 
         self.fileData().dataURL.subscribe(function (dataURL) {
@@ -74,8 +71,6 @@ $(function () {
             };
 
             self.newCommentText('');
-
-            applyHeights();
 
             $.ajax("/tackle", {
                 data: ko.toJSON(comment),

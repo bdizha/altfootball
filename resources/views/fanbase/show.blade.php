@@ -52,7 +52,7 @@
                     <div class="_2QqZ9">
                         <div class="_3icdW">
                             <div class="_38L6D" style="padding-bottom: 100%;">
-                                <img alt="" role="presentation" src="{{ $fanbase->thumb_image }}" class="_214e9 b00q8" width="32" height="32">
+                                <img alt="" role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="32" height="32">
                             </div>
                         </div>
                         <div class="vklpv">
@@ -96,7 +96,7 @@
                 <div class="T1M_q">
                     <div class="LPTvp _3Xaa0 _1KXFt">
                         <div class="_23p6h">
-                            <img alt="" role="presentation" src="{{ $fanbase->thumb_image }}" class="_214e9 b00q8" width="200" height="200">
+                            <img alt="" role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="200" height="200">
                         </div>
                     </div>
                     <div class="_2UPZy" data-stamp="{{ $fanbase->stamp }}"></div>
@@ -145,7 +145,7 @@
                                 <div class="_25jNX _3Y-3q" style="width:35px;height:35px;">
                                     <div class="N3r_f">
                                         <div style="padding-bottom:100%;" class="_38L6D">
-                                            {!! $fanbase->user->thumb_image !!}
+                                            {!! $fanbase->user->thumb_x !!}
                                         </div>
                                     </div>
                                 </div>

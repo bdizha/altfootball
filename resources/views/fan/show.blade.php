@@ -26,7 +26,7 @@
                             <div class="_25jNX">
                                 <div class="N3r_f">
                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                        <img alt="{{ $user->name }}" role="presentation" src="{{ $user->small_image }}" class="_214e9 b00q8">
+                                        <img alt="{{ $user->name }}" role="presentation" src="{{ $user->small_x }}" class="_214e9 b00q8">
                                     </div>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                     <div class="_12g8o Pb65u"><span><span class="DdJUj">dribbles</span><span class="-DD7c">113.7K</span></span>
                     </div>
                     <div class="Pb65u">
-                        <a class="" href="/u/{{ $user->slug }}/requested"><span
+                        <a class="" href="/u/{{ $user->slug }}/sent"><span
                                     class="DdJUj">Following</span><span class="C6GXY">
                                 <svg
                                         xmlns="http://www.w3.org/2000/svg" width="12" height="7"><path
@@ -81,19 +81,19 @@
                                 </svg>
                             </span>
                             <span class="-DD7c">
-                                {{ $user->requested->count() }}
+                                {{ $user->sent->count() }}
                             </span>
                         </a>
                     </div>
                     <div class="GrqoM Pb65u">
-                        <a class="" href="/u/{{ $user->slug }}/requesters">
+                        <a class="" href="/u/{{ $user->slug }}/received">
                             <span class="DdJUj">Followers</span>
                             <span class="C6GXY">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7"><path
                                             d="M0 0l6 6.99L12 0h-1.87L6 4.82 1.86 0"></path>
                                 </svg>
                             </span>
-                            <span class="-DD7c">{{ $user->requesters->count() }}</span>
+                            <span class="-DD7c">{{ $user->received->count() }}</span>
                         </a>
                     </div>
                 </div>
@@ -124,7 +124,7 @@
                                                     <div class="_2lssz">
                                                         <div class="_38L6D" style="padding-bottom: 100%;">
                                                             <img alt="" role="presentation"
-                                                                 src="{{ $fanbase->thumb_image }}" class="_214e9 b00q8"
+                                                                 src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8"
                                                                  width="200" height="200">
                                                         </div>
                                                     </div>

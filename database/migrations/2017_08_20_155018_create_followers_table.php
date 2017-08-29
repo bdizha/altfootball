@@ -18,7 +18,7 @@ class CreateFollowersTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->boolean('is_active')->default(false);
             $table->integer('followable_id');
-            $table->string('followable_type');
+            $table->string('type');
             $table->timestamps();
 
             $table->foreign('user_id')

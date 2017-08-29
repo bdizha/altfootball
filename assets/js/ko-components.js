@@ -243,7 +243,7 @@ $(function () {
             var follower = {
                 user_id: self.follower().user_id,
                 followable_id: self.follower().followable_id,
-                followable_type: self.follower().followable_type
+                type: self.follower().type
             };
 
             $.ajax("/follower", {
@@ -477,7 +477,6 @@ $(function () {
         self.root = ko.observable(params.root);
         self.newCommentText = ko.observable('');
         self.commentsCount = ko.computed(function () {
-            applyHeights();
             return self.comments().length;
         });
 
@@ -500,8 +499,6 @@ $(function () {
 
             var allComments = $('._55ghi');
             allComments.removeClass('_4c7v3');
-
-            applyHeights();
         };
 
         self.fileData().dataURL.subscribe(function (dataURL) {
@@ -532,8 +529,6 @@ $(function () {
             };
 
             self.newCommentText('');
-
-            applyHeights();
 
             $.ajax("/tackle", {
                 data: ko.toJSON(comment),

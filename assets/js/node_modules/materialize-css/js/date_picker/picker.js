@@ -1049,7 +1049,7 @@ PickerConstructor.extend = function( name, Component ) {
         // Grab the component data.
         var componentData = this.data( name )
 
-        // If the picker is requested, return the data object.
+        // If the picker is sent, return the data object.
         if ( options == 'picker' ) {
             return componentData
         }

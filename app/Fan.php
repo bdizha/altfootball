@@ -8,7 +8,7 @@ class Fan extends Model
 {
     protected $fillable = [
         'requester_id',
-        'requested_id'
+        'sent_id'
     ];
 
     public function requester()
@@ -16,8 +16,8 @@ class Fan extends Model
         return $this->hasOne('App\User', 'id', 'requester_id');
     }
 
-    public function requested()
+    public function sent()
     {
-        return $this->hasOne('App\User', 'id', 'requested_id');
+        return $this->hasOne('App\User', 'id', 'sent_id');
     }
 }

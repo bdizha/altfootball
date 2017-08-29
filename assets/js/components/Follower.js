@@ -36,7 +36,7 @@ $(function () {
             var follower = {
                 user_id: self.follower().user_id,
                 followable_id: self.follower().followable_id,
-                followable_type: self.follower().followable_type
+                type: self.follower().type
             };
 
             $.ajax("/follower", {

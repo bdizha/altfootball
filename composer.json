@@ -14,7 +14,7 @@
         "laravel/socialite": "^3.0",
         "socialiteproviders/generators": "^2.0",
         "laravelcollective/html": "^5.4",
-        "cloudinary/cloudinary_php": "dev-master"
+        "imgix/imgix-php": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

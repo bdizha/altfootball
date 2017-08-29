@@ -31,8 +31,11 @@
   -webkit-tap-highlight-color: transparent;
 }
 
-br {
-  line-height: 0;
+br,
+line {
+  line-height: 1.8;
+  display: block;
+  height: 1.8em;
 }
 
 textarea {
@@ -893,7 +896,6 @@ form .b00q8 {
 ._38L6D {
   width: 100%;
   position: relative;
-  overflow: hidden;
 }
 
 ._214e9 {
@@ -3910,6 +3912,7 @@ form ._2Kdch {
   height: 0;
   padding-bottom: 56.25%;
   margin-bottom: 18px;
+  overflow: hidden;
 }
 
 .FnwOT {
@@ -4090,11 +4093,10 @@ form ._2Kdch {
 }
 
 ._1NHvQ {
-  display: inline;
+  display: block;
   font-size: 12px;
   line-height: 14px;
-  display: block;
-  margin-bottom: 9px;
+  margin-bottom: 19px;
 }
 
 ._1NHvQ a,
@@ -4138,7 +4140,7 @@ form ._2Kdch {
 
 ._2VAHq {
   position: relative;
-  padding-left: 44px;
+  padding-left: 54px;
 }
 
 ._1w9h1 {
@@ -4152,11 +4154,21 @@ form ._2Kdch {
 
 ._1rRTL,
 ._1yAXU {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+._1rRTL img,
+._1yAXU img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 100%;
+  overflow: hidden;
 }
 
 ._3Xf-w ._1XNRF {
@@ -4678,6 +4690,10 @@ form ._2Kdch {
   overflow: hidden;
   width: 100%;
   height: auto;
+}
+
+._1DRo {
+  overflow: hidden;
 }
 
 ._208gk {
@@ -9324,7 +9340,7 @@ div._3bqe5 > div {
 
 .j-W_D {
   width: 100%;
-  max-width: 1236px;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 64px;
@@ -9388,8 +9404,8 @@ div._3bqe5 > div {
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 64px;
-  line-height: 64px;
+  font-size: 52px;
+  line-height: 56px;
   margin-bottom: 18px;
   max-width: 768px;
 }
@@ -9414,6 +9430,11 @@ div._3bqe5 > div {
   top: 0;
   left: 78px;
   z-index: 1;
+}
+
+._HY8RT {
+  position: absolute;
+  fill: #5BC20F;
 }
 
 @media screen and (max-width: 1236px) {
@@ -9838,10 +9859,12 @@ div._3bqe5 > div {
 ._1Q_Pu {
   -ms-flex-positive: 0;
   flex-grow: 0;
-  max-width: 664px;
-  min-width: 664px;
-  padding: 0px;
   height: 100%;
+  width: 100%;
+  max-width: 740px;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin: 0 auto;
 }
 
 ._1Q_Pu div:first-child {
@@ -9859,9 +9882,9 @@ div._3bqe5 > div {
 
 ._1Q_Pu p {
   margin-bottom: 28px;
-  line-height: 28px;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 19px;
+  line-height: 1.8;
+  letter-spacing: -.003em;
 }
 
 ._1Q_Pu p img {
@@ -11055,14 +11078,15 @@ div._3bqe5 > div {
 
 ._1zwKC {
   width: 100%;
-  max-width: 1236px;
   margin-right: auto;
   margin-top: 88px;
+  max-width: 740px;
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 ._1zwKC ._1gLAu {
-  max-width: 716px;
-  padding-left: 35px;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 1280px) {

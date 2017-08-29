@@ -96,31 +96,9 @@ $(function () {
     });
 });
 
-function setHeightFor(selector) {
-    $(selector).attr("style", "");
-    var $columns = $(selector);
-    var maxHeight = Math.max.apply(Math, $columns.map(function () {
-        return $(this).height();
-    }).get());
-
-    if ($(window).width() > 1125) {
-        $(selector).attr("style", "height: " + (maxHeight + 40) + "px");
-    }
-}
-
-function adjustHeight(target, reference) {
-    if ($(this).width() > 1125 && $(target).height() < $(reference).height()) {
-        $(reference).attr("style", "height: " + ($(target).height()) + "px");
-    }
-}
-
 $(window).bind('resize', function () {
-    applyHeights();
+    // applyHeights();
 });
-
-function applyHeights() {
-    adjustHeight('._1Q_Pu', '._3VSm9');
-}
 
 /**
  * Created by batanayi on 2017/08/19.
@@ -367,7 +345,7 @@ $(function () {
             var follower = {
                 user_id: self.follower().user_id,
                 followable_id: self.follower().followable_id,
-                followable_type: self.follower().followable_type
+                type: self.follower().type
             };
 
             $.ajax("/follower", {
@@ -601,7 +579,6 @@ $(function () {
         self.root = ko.observable(params.root);
         self.newCommentText = ko.observable('');
         self.commentsCount = ko.computed(function () {
-            applyHeights();
             return self.comments().length;
         });
 
@@ -624,8 +601,6 @@ $(function () {
 
             var allComments = $('._55ghi');
             allComments.removeClass('_4c7v3');
-
-            applyHeights();
         };
 
         self.fileData().dataURL.subscribe(function (dataURL) {
@@ -656,8 +631,6 @@ $(function () {
             };
 
             self.newCommentText('');
-
-            applyHeights();
 
             $.ajax("/tackle", {
                 data: ko.toJSON(comment),

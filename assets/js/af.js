@@ -96,28 +96,6 @@ $(function () {
     });
 });
 
-function setHeightFor(selector) {
-    $(selector).attr("style", "");
-    var $columns = $(selector);
-    var maxHeight = Math.max.apply(Math, $columns.map(function () {
-        return $(this).height();
-    }).get());
-
-    if ($(window).width() > 1125) {
-        $(selector).attr("style", "height: " + (maxHeight + 40) + "px");
-    }
-}
-
-function adjustHeight(target, reference) {
-    if ($(this).width() > 1125 && $(target).height() < $(reference).height()) {
-        $(reference).attr("style", "height: " + ($(target).height()) + "px");
-    }
-}
-
 $(window).bind('resize', function () {
-    applyHeights();
+    // applyHeights();
 });
-
-function applyHeights() {
-    adjustHeight('._1Q_Pu', '._3VSm9');
-}

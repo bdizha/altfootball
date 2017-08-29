@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Redis;
 use MartinBean\Database\Eloquent\Sluggable;
 use DB;
 use Carbon\Carbon;
+use Imgix\UrlBuilder;
 
 class User extends Authenticatable
 {
@@ -32,6 +33,8 @@ class User extends Authenticatable
         'is_active',
         'is_onboarded',
         'token',
+        'small_image',
+        'thumb_image'
     ];
 
     protected $sluggable = [
@@ -39,7 +42,7 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name', 'small_image', 'thumb_image', 'is_self', 'follower', 'fanbases', 'requested', 'requesters'];
+    protected $appends = ['name', 'is_self', 'follower', 'fanbases', 'sent', 'received', 'small_x', 'thumb_x'];
 
     public function getNameAttribute()
     {
@@ -67,41 +70,40 @@ class User extends Authenticatable
             ->take(24);
     }
 
-    /**
-     * Get all of the user's followers.
-     */
-    public function followers()
+    public function sent()
     {
-        return $this->morphMany(Follower::class, 'followable');
+        return $this->belongsToMany(User::class, 'followers', 'user_id', 'id')
+            ->where('type', Follower::type_user)
+            ->orderBy("created_at", "DESC");
     }
 
-    public function getFanbasesAttribute()
+    public function received()
     {
-        return user::whereHas('followers', function ($query) {
-            $query->where('user_id', $this->id)
-                ->where('followable_type', 'App\Fanbase');
-        })
-            ->get();
+        return  $this->belongsToMany(User::class, 'followers', 'followable_id', 'id')
+            ->where('type', Follower::type_user)
+            ->orderBy("created_at", "DESC");
     }
 
-    public function getRequestedAttribute()
+    public function fanbases()
     {
-        return self::whereHas('followers', function ($query) {
-            $query->where('user_id', $this->id)
-                ->where('is_active', true)
-                ->where('followable_type', 'App\User');
-        })
-            ->get();
+        return  $this->belongsToMany(Fanbase::class, 'followers', 'user_id', 'id')
+            ->where('type', Follower::type_fanbase)
+            ->orderBy("created_at", "DESC");
     }
 
-    public function getRequestersAttribute()
+    public function getFanbases()
     {
-        return self::whereHas('followers', function ($query) {
-            $query->where('followable_id', $this->id)
-                ->where('is_active', true)
-                ->where('followable_type', 'App\User');
-        })
-            ->get();
+        return User::has('fanbases')->get();
+    }
+
+    public function getsent()
+    {
+        return User::has('sent')->get();
+    }
+
+    public function getreceived()
+    {
+        return User::has('received')->get();
     }
 
     public function getSluggableString()
@@ -121,14 +123,14 @@ class User extends Authenticatable
         if (Auth::guard()->check()) {
             $follower = Follower::where('user_id',  $user->id)
                 ->where('followable_id', $this->id)
-                ->where('followable_type', 'App\User')
+                ->where('type', 'App\User')
                 ->first();
 
             if (empty($follower->id)) {
                 $follower = Follower::create([
                     'user_id' => $user->id,
                     'followable_id' => $this->id,
-                    'followable_type' => 'App\User'
+                    'type' => Follower::type_user
                 ]);
             }
 
@@ -137,7 +139,7 @@ class User extends Authenticatable
 
         $follower = new Follower();
         $follower->followable_id = $this->id;
-        $follower->followable_type = 'App\User';
+        $follower->type = 'App\User';
 
         return $follower;
     }
@@ -152,49 +154,40 @@ class User extends Authenticatable
         return $this->toJson();
     }
 
-    public function getSmallImageAttribute()
+    public function getSmallXAttribute()
     {
-        $image = Redis::get('user:image:small:' . $this->id);
-        if (empty($image)) {
+        if (!empty($this->image)) {
             try {
-                $cloudImage = \Cloudinary\Uploader::upload(
-                    $this->image,
-                    array(
-                        "quality" => 100,
-                        "crop" => "fill",
-                        "width" => 200,
-                        "height" => 200
-                    ));
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 200, "h" => 200);
+                $url = $builder->createURL($this->image, $params);
 
-                $image = $cloudImage['url'];
+                $this->small_image = $url;
+                $this->save();
 
-                Redis::set('user:image:small:' . $this->id, $image);
             } catch (\Exception $e) {
             }
         }
-        return $image;
+        return $this->small_image;
     }
 
 
-    public function getThumbImageAttribute()
+    public function getThumbXAttribute()
     {
-        $image = Redis::get('user:image:thumb:' . $this->id);
-        if (empty($image)) {
+        if (!empty($this->thumb_image)) {
             try {
-                $cloudImage = \Cloudinary\Uploader::upload(
-                    $this->image,
-                    array(
-                        "crop" => "thumb",
-                        "quality" => 100,
-                        "width" => 100,
-                        "height" => 100
-                    ));
+                $builder = new UrlBuilder("altf.imgix.net");
+                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $params = array("w" => 100, "h" => 100);
+                $url = $builder->createURL($this->image, $params);
 
-                $image = $cloudImage['url'];
-                Redis::set('user:image:thumb:' . $this->id, $image);
+                $this->thumb_image = $url;
+                $this->save();
+
             } catch (\Exception $e) {
             }
         }
-        return $image;
+        return $this->thumb_image;
     }
 }
