@@ -104,7 +104,7 @@ class FCBayernJob extends NewsJob
 
                                 $content = "";
                                 $data->filter('.text-media-content p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-                                    $content .= "<p>{$node->html()}</p>";
+                                    $content .= "<p>{$node->text()}</p>";
                                 });
 
                                 $content = str_replace("<p><br></p>", "", $content);

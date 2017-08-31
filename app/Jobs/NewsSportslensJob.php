@@ -103,7 +103,7 @@ class NewsSportslensJob extends NewsJob
                                     if ($i == 0) {
                                         $summary = str_limit($node->text(), 250);
                                     }
-                                    $content .= "<p>{$node->html()}</p>";
+                                    $content .= "<p>{$node->text()}</p>";
                                 });
 
                                 $content = str_replace("<p><br></p>", "", $content);

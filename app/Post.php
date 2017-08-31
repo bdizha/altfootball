@@ -4,10 +4,10 @@ namespace App;
 
 use Auth;
 use Carbon\Carbon;
+use Craft\Exception;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Redis;
-use MartinBean\Database\Eloquent\Sluggable;
 use Imgix\UrlBuilder;
+use MartinBean\Database\Eloquent\Sluggable;
 
 class Post extends Model
 {
@@ -144,8 +144,8 @@ class Post extends Model
     {
         if (!empty($this->image)) {
             try {
-                $builder = new UrlBuilder("altf.imgix.net");
-                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $builder = new UrlBuilder("altfootball.imgix.net");
+                $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 384, "h" => 216);
                 $url = $builder->createURL($this->image, $params);
 
@@ -162,10 +162,12 @@ class Post extends Model
     {
         if (!empty($this->image)) {
             try {
-                $builder = new UrlBuilder("altf.imgix.net");
-                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $builder = new UrlBuilder("altfootball.imgix.net");
+                $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 100, "h" => 100);
                 $url = $builder->createURL($this->image, $params);
+
+//                dd($url . ">>>>>>");
 
                 $this->thumb_image = $url;
                 $this->save();
@@ -180,8 +182,8 @@ class Post extends Model
     {
         if (!empty($this->image)) {
             try {
-                $builder = new UrlBuilder("altf.imgix.net");
-                $builder->setSignKey("J25XzQFZNDMPZnff");
+                $builder = new UrlBuilder("altfootball.imgix.net");
+                $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 1000, "h" => 695);
                 $url = $builder->createURL($this->image, $params);
 
@@ -214,5 +216,33 @@ class Post extends Model
         ];
 
         return $meta;
+    }
+
+    public function save(array $options = [])
+    {
+        parent::save($options);
+
+        if (strpos($this->image, 'http') !== false) {
+            $this->saveImage();
+        }
+    }
+
+    protected function saveImage()
+    {
+        try {
+            $imagePart = '/posts/' . md5($this->id) . '.jpg';
+            $filePart = '/images/' . $imagePart;
+            $fileOutput = public_path('/') . $filePart;
+
+            $imageContent = file_get_contents($this->image);
+            file_put_contents($fileOutput, $imageContent);
+
+            $this->image = $imagePart;
+            $this->save();
+            return true;
+
+        } catch (Exception $e) {
+            return false;
+        }
     }
 }

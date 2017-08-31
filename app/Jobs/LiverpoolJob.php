@@ -57,9 +57,6 @@ class LiverpoolJob extends NewsJob
                         $user = array();
 
                         if ($data->filter('.post-body')->count()) {
-
-                            echo "in the body...\n";
-
                             $user['first_name'] = "Liverpool";
                             $user['last_name'] = "News";
                             $user['nickname'] = 'Reds';
@@ -100,7 +97,7 @@ class LiverpoolJob extends NewsJob
                                     if ($i == 0) {
                                         $node->filter('p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
                                             if ($i > 0) {
-                                                $content .= "<p>{$node->html()}</p>";
+                                                $content .= "<p>{$node->text()}</p>";
                                             }
                                         });
                                     }

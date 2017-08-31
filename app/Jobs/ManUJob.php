@@ -57,9 +57,6 @@ class ManUJob extends NewsJob
                     $user = array();
 
                     if ($data->filter('.newsstory')->count()) {
-
-                        echo "in the body...\n";
-
                         $user['first_name'] = "MUFC";
                         $user['last_name'] = "News";
                         $user['nickname'] = 'Manu';
@@ -112,7 +109,7 @@ class ManUJob extends NewsJob
                                 if ($i == 0) {
                                     $node->filter('p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
                                         if ($i > 0) {
-                                            $content .= "<p>{$node->html()}</p>";
+                                            $content .= "<p>{$node->text()}</p>";
                                         }
                                     });
                                 }

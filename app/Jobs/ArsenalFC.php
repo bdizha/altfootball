@@ -100,7 +100,7 @@ class ArsenalFC extends NewsJob
                                                 strpos($node->text(), 'clicking') === false &&
                                                 strpos($node->text(), 'Press') === false
                                             ) {
-                                                $content .= "<p>{$node->html()}</p>";
+                                                $content .= "<p>{$node->text()}</p>";
                                             }
                                         }
 

@@ -32,7 +32,7 @@ class AddCroudinaryColumnsTable extends Migration
         });
 
         Schema::table('users', function (Blueprint $table) {
-            $table->string('thumb_image', 255);
+            $table->string('thumb_image', 255)->nullable();
             $table->string('small_image', 255);
         });
 
