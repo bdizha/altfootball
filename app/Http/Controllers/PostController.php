@@ -26,9 +26,9 @@ class PostController extends Controller
             ->limit(2);
 
         if (!empty($data['fanbase_id'])) {
-//            $posts = $query->whereHas('fanbases', function ($query) use ($data) {
-//                $query->where('fanbases.id', $data['fanbase_id']);
-//            })->get();
+            $posts = $query->whereHas('fanbases', function ($query) use ($data) {
+                $query->where('fanbases.id', $data['fanbase_id']);
+            })->get();
         } else {
             $posts = $query->get();
         }
