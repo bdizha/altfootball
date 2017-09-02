@@ -125,7 +125,11 @@ class Fanbase extends Model
 
     public function getSmallXAttribute()
     {
-        if (!empty($this->image)) {
+        if (strpos($this->image, 'http') !== false) {
+            $this->saveImage();
+        }
+
+        if (empty($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
@@ -143,7 +147,11 @@ class Fanbase extends Model
 
     public function getThumbXAttribute()
     {
-        if (!empty($this->image)) {
+        if (strpos($this->image, 'http') !== false) {
+            $this->saveImage();
+        }
+
+        if (empty($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
@@ -161,7 +169,11 @@ class Fanbase extends Model
 
     public function getBigXAttribute()
     {
-        if (!empty($this->image)) {
+        if (strpos($this->image, 'http') !== false) {
+            $this->saveImage();
+        }
+
+        if (empty($this->big_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
@@ -179,11 +191,15 @@ class Fanbase extends Model
 
     public function getCoverXAttribute()
     {
+        if (strpos($this->cover, 'http') !== false) {
+            $this->saveCover();
+        }
+
         if (!empty($this->big_cover)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 400, "h" => 400);
+                $params = array("w" => 1905, "h" => 476);
                 $url = $builder->createURL($this->cover, $params);
 
                 $this->big_cover = $url;
@@ -202,6 +218,10 @@ class Fanbase extends Model
         if (strpos($this->image, 'http') !== false) {
             $this->saveImage();
         }
+
+        if (strpos($this->cover, 'http') !== false) {
+            $this->saveCover();
+        }
     }
 
     protected function saveImage()
@@ -214,9 +234,22 @@ class Fanbase extends Model
             $imageContent = file_get_contents($this->image);
             file_put_contents($fileOutput, $imageContent);
 
+            $this->small_image = '';
+            $this->thumb_image = '';
+            $this->big_image = '';
             $this->image = $imagePart;
             $this->save();
 
+            return true;
+
+        } catch (Exception $e) {
+            return false;
+        }
+    }
+
+    protected function saveCover()
+    {
+        try {
             // set cover images
             $imagePart = '/fanbases/' . md5($this->id . "_cover") . '.jpg';
             $filePart = '/images/' . $imagePart;
@@ -225,8 +258,11 @@ class Fanbase extends Model
             $imageContent = file_get_contents($this->cover);
             file_put_contents($fileOutput, $imageContent);
 
+            $this->big_cover = '';
+
             $this->cover = $imagePart;
             $this->save();
+
             return true;
 
         } catch (Exception $e) {

@@ -6,7 +6,7 @@
     <div class="_1Ladt" data-reactid="63">
         <div class="-hOD9 _1KXFt">
             <div class="_23p6h">
-                <img src="{{ $fanbase->resized_cover }}" role="presentation" alt="" class="_2PoG-" width="1905" height="476" style="opacity: 1;">
+                <img src="{{ $fanbase->cover_x }}" role="presentation" alt="" class="_2PoG-" width="1905" height="476" style="opacity: 1;">
             </div>
         </div>
         <div class="_3asg7 _38P1C" data-reactid="65">

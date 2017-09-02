@@ -156,7 +156,12 @@ class User extends Authenticatable
 
     public function getSmallXAttribute()
     {
-        if (!empty($this->image)) {
+        if (empty($this->small_image)) {
+
+            if (strpos($this->image, 'http') !== false) {
+                $this->saveImage();
+            }
+
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
@@ -175,7 +180,12 @@ class User extends Authenticatable
 
     public function getThumbXAttribute()
     {
-        if (!empty($this->thumb_image)) {
+        if (empty($this->thumb_image)) {
+
+            if (strpos($this->image, 'http') !== false) {
+                $this->saveImage();
+            }
+
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
@@ -189,5 +199,36 @@ class User extends Authenticatable
             }
         }
         return $this->thumb_image;
+    }
+
+    public function save(array $options = [])
+    {
+        parent::save($options);
+
+        if (strpos($this->image, 'http') !== false) {
+            $this->saveImage();
+        }
+    }
+
+    protected function saveImage()
+    {
+        try {
+            $imagePart = '/users/' . md5($this->id) . '.jpg';
+            $filePart = '/images/' . $imagePart;
+            $fileOutput = public_path('/') . $filePart;
+
+            $imageContent = file_get_contents($this->image);
+            file_put_contents($fileOutput, $imageContent);
+
+            $this->small_image = '';
+            $this->thumb_image = '';
+            $this->image = $imagePart;
+            $this->save();
+
+            return true;
+
+        } catch (Exception $e) {
+            return false;
+        }
     }
 }

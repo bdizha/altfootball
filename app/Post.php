@@ -142,7 +142,7 @@ class Post extends Model
 
     public function getSmallXAttribute()
     {
-        if (!empty($this->image)) {
+        if (empty($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
@@ -160,7 +160,7 @@ class Post extends Model
 
     public function getThumbXAttribute()
     {
-        if (!empty($this->image)) {
+        if (empty($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
@@ -180,7 +180,7 @@ class Post extends Model
 
     public function getBigXAttribute()
     {
-        if (!empty($this->image)) {
+        if (empty($this->big_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $builder->setSignKey("arQnS85SyXJAFH8r");
