@@ -889,6 +889,12 @@ form .b00q8 {
   max-width: 200px;
 }
 
+@media (max-width: 1000px) {
+  form._37Oy_ img {
+    display: none;
+  }
+}
+
 ._2fsVB {
   opacity: 0;
 }

@@ -793,6 +793,14 @@ form {
     max-height: 200px;
     max-width: 200px;
   }
+
+  @media (max-width: 1000px) {
+    &._37Oy_{
+      img{
+        display: none;
+      }
+    }
+  }
 }
 
 ._2fsVB {
