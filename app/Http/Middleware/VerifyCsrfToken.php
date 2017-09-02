@@ -15,7 +15,7 @@ class VerifyCsrfToken extends BaseVerifier
         'profile/store',
         'onboard/store',
         'profile/*',
-        'comment',
+        'tackle',
         'fan',
         'dribble',
         'fanbase',

@@ -18,47 +18,22 @@ class PostController extends Controller
      */
     protected function index(Request $request)
     {
-            $toArray = [];
         $data = $request->all();
 
-        $query = Post::orderBy('posts.created_at', 'desc')
+        $query = Post::with('user')
+            ->orderBy('posts.created_at', 'desc')
             ->offset(12 + ($data['page'] * 2))
             ->limit(2);
 
         if (!empty($data['fanbase_id'])) {
-            $posts = $query->whereHas('fanbases', function ($query) use ($data) {
-                $query->where('fanbases.id', $data['fanbase_id']);
-            })->get();
+//            $posts = $query->whereHas('fanbases', function ($query) use ($data) {
+//                $query->where('fanbases.id', $data['fanbase_id']);
+//            })->get();
         } else {
             $posts = $query->get();
-
-
-            foreach ($posts as $post) {
-
-                unset($post['fanbases']);
-
-                $item = [
-                    'title' => $post->title,
-                    'summary' => $post->summary,
-                    'content' => $post->content,
-                    'slug' => $post->slug,
-                    'small_image' => $post->small_image,
-                    'id' => $post->id,
-                ];
-
-                $user = $post['user'];
-                $item['user'] = [
-                    'thumb_image' => $user->thumb_image,
-                    'slug' => $user->slug,
-                    'name' => $user->name,
-                    'id' => $user->id,
-                ];
-                $item['fanbase'] = $post['fanbase'];
-                $toArray[] = $item;
-            }
         }
 
-        return json_encode($toArray, JSON_HEX_APOS);
+        return json_encode($posts->toArray(), JSON_HEX_APOS);
     }
 
     public function show(Request $request, $slug)

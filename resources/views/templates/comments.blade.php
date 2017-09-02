@@ -48,7 +48,7 @@
                     <div class="_25jNX _3kBjx">
                         <div class="N3r_f">
                             <div class="_38L6D" style="padding-bottom: 100%;">
-                                <img class="_214e9 b00q8" data-bind="attr: { src: user.image }">
+                                <img class="_214e9 b00q8" data-bind="attr: { src: user.thumb_x }">
                             </div>
                         </div>
                     </div>

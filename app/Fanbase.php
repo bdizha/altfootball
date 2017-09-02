@@ -99,7 +99,7 @@ class Fanbase extends Model
                 ->where('type', 2)
                 ->first();
 
-            if (empty($follower->id)) {
+            if (empty($follower->id) && !empty($this->id)) {
                 $follower = Follower::create([
                     'user_id' => $user->id,
                     'followable_id' => $this->id,

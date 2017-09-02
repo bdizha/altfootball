@@ -42,7 +42,7 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name', 'is_self', 'follower', 'fanbases', 'sent', 'received', 'small_x', 'thumb_x'];
+    protected $appends = ['name', 'is_self', 'follower', 'small_x', 'thumb_x'];
 
     public function getNameAttribute()
     {
