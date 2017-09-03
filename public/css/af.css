@@ -11467,11 +11467,16 @@ div._3bqe5 > div {
   width: 378px;
   margin-left: 12px;
   height: 170px;
-  border: 1px solid rgba(103, 143, 185, 0.1);
 }
 
 ._2cP6X:first-child {
   margin-left: 0;
+}
+
+@media screen and (min-width: 924px) {
+  ._2cP6X {
+    border: 1px solid rgba(103, 143, 185, 0.1);
+  }
 }
 
 @media screen and (max-width: 1236px) {
