@@ -86,19 +86,19 @@
                         <picture>
                             <source
                                     media="(min-width: 1000px)"
-                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop">
+                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=1236&h=695&fit=crop">
                             <source
                                     media="(min-width: 900px)"
-                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=800&h=745&fit=crop">
+                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop">
                             <source
                                     media="(min-width: 650px)"
-                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=716&h=480&fit=crop">
+                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=900&h=580&fit=crop">
                             <source
                                     media="(min-width: 465px)"
-                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=716&h=480&fit=crop">
+                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=650&h=480&fit=crop">
                             <source
                                     media="(min-width: 260px)"
-                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=300&h=200&fit=crop">
+                                    srcset="https://altfootball.imgix.net{{ $post->image }}?w=360&h=240&fit=crop">
                             <img
                                     src="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop"
                                     alt="a cute kitten">
