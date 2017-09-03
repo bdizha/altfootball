@@ -101,7 +101,7 @@ class News90MinJob extends NewsJob
                                     if ($i == 0) {
                                         $summary = str_limit($node->text(), 250);
                                     }
-                                    $content .= "<p>{$node->text()}</p>";
+                                    $content .= "<p>{$node->html()}</p>";
                                 });
 
                                 $post['content'] = str_replace("<p><br></p>", "", $content);

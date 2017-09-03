@@ -109,7 +109,7 @@ class ManUJob extends NewsJob
                                 if ($i == 0) {
                                     $node->filter('p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
                                         if ($i > 0) {
-                                            $content .= "<p>{$node->text()}</p>";
+                                            $content .= "<p>{$node->html()}</p>";
                                         }
                                     });
                                 }

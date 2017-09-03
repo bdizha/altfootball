@@ -145,7 +145,7 @@ class Post extends Model
         if (empty($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $builder->setSignKey("arQnS85SyXJAFH8r");
+                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 384, "h" => 216);
                 $url = $builder->createURL($this->image, $params);
 
@@ -163,7 +163,7 @@ class Post extends Model
         if (empty($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $builder->setSignKey("arQnS85SyXJAFH8r");
+                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 100, "h" => 100);
                 $url = $builder->createURL($this->image, $params);
 
@@ -183,7 +183,7 @@ class Post extends Model
         if (empty($this->big_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $builder->setSignKey("arQnS85SyXJAFH8r");
+                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 1000, "h" => 695);
                 $url = $builder->createURL($this->image, $params);
 

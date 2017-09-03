@@ -99,7 +99,7 @@ class JuventusJob extends NewsJob
 
                                 $content = "";
                                 $data->filter('.article-text p')->each(function (Crawler $node, $i) use (&$content) {
-                                    $content .= "<p>{$node->text()}</p>";
+                                    $content .= "<p>{$node->html()}</p>";
                                 });
 
                                 $content = str_replace("<p><br></p>", "", $content);

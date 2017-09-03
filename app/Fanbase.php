@@ -132,7 +132,7 @@ class Fanbase extends Model
         if (empty($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $builder->setSignKey("arQnS85SyXJAFH8r");
+                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 300, "h" => 300);
                 $url = $builder->createURL($this->image, $params);
 
@@ -154,7 +154,7 @@ class Fanbase extends Model
         if (empty($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $builder->setSignKey("arQnS85SyXJAFH8r");
+                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 200, "h" => 200);
                 $url = $builder->createURL($this->image, $params);
 
@@ -176,7 +176,7 @@ class Fanbase extends Model
         if (empty($this->big_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $builder->setSignKey("arQnS85SyXJAFH8r");
+                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 420, "h" => 420);
                 $url = $builder->createURL($this->image, $params);
 
@@ -198,7 +198,7 @@ class Fanbase extends Model
         if (!empty($this->big_cover)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $builder->setSignKey("arQnS85SyXJAFH8r");
+                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 1905, "h" => 476);
                 $url = $builder->createURL($this->cover, $params);
 
