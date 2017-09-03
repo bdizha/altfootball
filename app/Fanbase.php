@@ -133,7 +133,7 @@ class Fanbase extends Model
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 // $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 300, "h" => 300);
+                $params = array("w" => 300, "h" => 300, "q" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->small_image = $url;
@@ -155,7 +155,7 @@ class Fanbase extends Model
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 // $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 200, "h" => 200);
+                $params = array("w" => 200, "h" => 200, "q" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->thumb_image = $url;
@@ -177,7 +177,7 @@ class Fanbase extends Model
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 // $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 420, "h" => 420);
+                $params = array("w" => 420, "h" => 420, "q" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->big_image = $url;

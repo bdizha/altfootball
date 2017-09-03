@@ -46,8 +46,9 @@
                     <div class="_1V79j" data-bind="click: closeSettingsForm, css: { active: showOverlay() }"></div>
                     <header class="_3XXLi">
                         <nav class="R1XAV" id="header">
-                            <div class="_2H55B"><a class="" href="/">
-                                    <img src="/images/logo.png" alt="AltFootball">
+                            <div class="_2H55B">
+                                <a class="" href="/">
+                                    <img class="_3YKuQ" src="/images/logo.png" alt="AltFootball">
                                 </a>
                                 <form class="ra77F" action="">
                                     <div class="_1YqNB _1eF7g _3TYH2">

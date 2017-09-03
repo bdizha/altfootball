@@ -165,7 +165,7 @@ class User extends Authenticatable
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 // $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 200, "h" => 200);
+                $params = array("w" => 200, "h" => 200, "q" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->small_image = $url;
@@ -189,7 +189,7 @@ class User extends Authenticatable
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 // $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 100, "h" => 100);
+                $params = array("w" => 100, "h" => 100, "q" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->thumb_image = $url;

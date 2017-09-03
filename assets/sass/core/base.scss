@@ -465,7 +465,7 @@ button {
 }
 
 .mJKuh {
-  animation: _2o-5c step-end 1s infinite;
+  animation: _2o-5c step-end 2s infinite;
 }
 
 .ZZJJ0 {
@@ -729,9 +729,13 @@ button {
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
   z-index: 14;
   overflow-y: auto;
+  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
   &.active {
     opacity: 1;
     transform: translateX(0%) translateZ(0px);
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
   }
 }
 
@@ -1101,8 +1105,36 @@ form {
   }
 }
 
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+  100% { -webkit-transform: translateX(0%); }
+}
+
+@keyframes slide-out {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+  0% { -webkit-transform: translateX(0%); }
+  100% { -webkit-transform: translateX(-100%); }
+}
+
 ._2jqxM {
-  animation: _1x85p step-end 1s infinite;
+  animation: _1x85p step-end 2s infinite;
 }
 
 ._21web {
@@ -4741,7 +4773,7 @@ form {
 }
 
 ._387Mh #activity-blinker {
-  animation: _5nU0s step-end 1s infinite;
+  animation: _5nU0s step-end 2s infinite;
 }
 
 ._3rnSr {
@@ -5884,7 +5916,6 @@ form {
   .bWRAm {
     font-size: 24px;
     line-height: 24px;
-    text-transform: none;
 
   }
   ._12n1y {
@@ -12839,8 +12870,10 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   .O93cc {
-    font-size: 44px;
-    line-height: 44px;
+    font-size: 35px;
+    line-height: 35px;
+    width: 200px;
+    margin-top: 4px;
   }
 }
 
@@ -12881,6 +12914,10 @@ div._3bqe5 {
   left: 0
 }
 
+.xy5Fz {
+  float: right
+}
+
 ._3U2Oj {
   transform: scale(.7);
   transform-origin: top left
@@ -12916,7 +12953,6 @@ div._3bqe5 {
   font-size: 14px;
   line-height: 18px;
   color: #141C3E;
-  margin-bottom: 64px;
 }
 
 @media screen and (max-width: 508px) {
@@ -13606,15 +13642,6 @@ div._3bqe5 {
   justify-content: flex-start;
 }
 
-._2H55B {
-  a {
-    img {
-      width: 52px;
-      height: 52px;
-    }
-  }
-}
-
 ._2H55B > *, ._3BBJg > * {
   display: flex;
   align-items: center;
@@ -13775,7 +13802,7 @@ div._3bqe5 {
 }
 
 .q3UHn #activity-blinker {
-  animation: _3JjsZ step-end 1s infinite;
+  animation: _3JjsZ step-end 2s infinite;
 }
 
 ._3KPPV {

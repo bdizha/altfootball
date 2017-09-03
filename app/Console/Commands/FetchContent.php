@@ -12,6 +12,9 @@ use App\Jobs\ManUJob;
 use App\Jobs\PSG;
 use App\Jobs\LiverpoolJob;
 use App\Jobs\RealMadridJob;
+use App\Jobs\BarcelonaFC;
+use App\Jobs\PremierLeagueJob;
+use App\Jobs\SearieAJob;
 use Illuminate\Console\Command;
 
 class FetchContent extends Command
@@ -47,6 +50,9 @@ class FetchContent extends Command
      */
     public function handle()
     {
+        dispatch(new SearieAJob());
+        dispatch(new PremierLeagueJob());
+        dispatch(new BarcelonaFC());
         dispatch(new ManUJob());
         dispatch(new LiverpoolJob());
         dispatch(new RealMadridJob());

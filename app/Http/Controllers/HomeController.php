@@ -23,7 +23,7 @@ class HomeController extends Controller
     protected function index(Request $request)
     {
         $posts = Post::orderBy('created_at', 'desc')->paginate(12);
-        $fanbases = Fanbase::orderBy('id', 'asc')->take(6)->get();
+        $fanbases = Fanbase::orderBy('id', 'asc')->take(9)->get();
 
         $date = Carbon::now()->subDays(7);
 

@@ -38,11 +38,6 @@ class BarcelonaFC extends NewsJob
         echo ":::::: " . $this->domain . " ::::::\n";
         $client = new Client();
 
-        $leagues = [
-            'premier-league',
-            ''
-        ];
-
         $crawler = $client->request('GET', $this->url);
         $crawler->filter('.news-list__item')->each(function (Crawler $node, $i) {
 

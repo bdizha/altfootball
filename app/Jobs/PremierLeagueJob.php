@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class BarcelonaFC extends NewsJob
+class PremierLeagueJob extends NewsJob
 {
     protected $domain = "";
     protected $url = "";
@@ -24,7 +24,7 @@ class BarcelonaFC extends NewsJob
     {
         $this->fanbase_id = 20;
         $this->domain = "http://www.skysports.com";
-        $this->url = "http://www.skysports.com/la-liga";
+        $this->url = "http://www.skysports.com/premier-league";
     }
 
     /**
@@ -38,13 +38,8 @@ class BarcelonaFC extends NewsJob
         echo ":::::: " . $this->domain . " ::::::\n";
         $client = new Client();
 
-        $leagues = [
-            'premier-league',
-            ''
-        ];
-
         $crawler = $client->request('GET', $this->url);
-        $crawler->filter('.news-list__item')->each(function (Crawler $node, $i) {
+        $crawler->filter('.news-list-featured__item')->each(function (Crawler $node, $i) {
 
             if ($node->filter('a')->count()) {
 
@@ -63,12 +58,12 @@ class BarcelonaFC extends NewsJob
                     $user = array();
 
                     if ($data->filter('.widge-figure__image')->count()) {
-                        $user['first_name'] = "Sky";
-                        $user['last_name'] = "Sports";
-                        $user['nickname'] = 'Sky';
+                        $user['first_name'] = "Premier";
+                        $user['last_name'] = "League";
+                        $user['nickname'] = 'Premier';
                         $user['email'] = strtolower($user['nickname']) . "@skysports.com";
                         $user['password'] = bcrypt($user['email']);
-                        $user['image'] = "http://e0.365dm.com/17/07/768x432/skysports-premier-league-fixtures-alexandre-lacazette-harry-kane-philippe-coutinho_3994253.jpg?20170706103827";
+                        $user['image'] = "http://e2.365dm.com/17/08/16-9/20/skysports-thomas-lemar-france-goal_4088295.jpg?20170901170229";
 
                         $u = User::where("email", $user['email'])->first();
 
