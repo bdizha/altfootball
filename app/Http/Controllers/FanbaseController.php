@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Fanbase;
 use App\Post;
+use Craft\Exception;
 use Illuminate\Http\Request;
 use Auth;
 use Illuminate\Support\Facades\Redis;
@@ -45,32 +46,54 @@ class FanbaseController extends Controller
 
     public function save(Request $request)
     {
-        $data = $request->all();
-        $user = Auth::user();
-        $data['user_id'] = $user->id;
+        ini_set('memory_limit', '-1');
 
-        if(!empty($data['image']) && strpos($data['image'], 'altfootball') === false){
-            if(!empty($data['id'])) {
-                Redis::del('fanbase:image:' . $data['id']);
+        try {
+
+            $data = $request->all();
+            $user = Auth::user();
+            $data['user_id'] = $user->id;
+
+            $image = "";
+            $cover = "";
+
+            if (!empty($data['image'])) {
+                $image = $data['image'];
+                unset($data['image']);
             }
-            $data['image'] = $this->saveImageFile($data['image'], 'fanbases', time());
-        }
 
-        if(!empty($data['cover']) && strpos($data['cover'], 'altfootball') === false){
-            if(!empty($data['id'])) {
-                Redis::del('fanbase:cover:' . $data['id']);
+            if (!empty($data['cover'])) {
+                $cover = $data['cover'];
+                unset($data['cover']);
             }
-            $data['cover'] = $this->saveImageFile($data['cover'], 'fanbases', time());
-        }
 
-        if(empty($data['id'])){
-            $fanbase = Fanbase::create($data);
-        }
-        else{
-            $fanbase = Fanbase::find($data['id']);
+            if (empty($data['id'])) {
+                $fanbase = Fanbase::create($data);
+            } else {
+                $fanbase = Fanbase::find($data['id']);
+                $fanbase->update($data);
+            }
+
+            if (!empty($image) && strpos($image, 'fanbases') === false) {
+                $data['image'] = $this->saveImageFile($image, 'fanbases', $fanbase->id);
+            }
+            else{
+                $data['image'] = $image;
+            }
+
+            if (!empty($cover) && strpos($cover, 'fanbases') === false) {
+                $data['cover'] = $this->saveImageFile($cover, 'fanbases', $fanbase->id . "_cover");
+            }
+            else{
+                $data['cover'] = $cover;
+            }
+
             $fanbase->update($data);
-        }
 
-        return $fanbase->toJson();
+            return $fanbase->toJson();
+        }
+        catch(Exception $e){
+
+        }
     }
 }

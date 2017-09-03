@@ -9173,8 +9173,8 @@ div._3bqe5 {
   }
   p {
     margin-bottom: 28px;
-    font-size: 19px;
-    line-height: 1.8;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: -.003em;
     img {
       width: 100%;
@@ -9190,9 +9190,16 @@ div._3bqe5 {
   }
 }
 
+._45VFC{
+  display: none;
+}
+
 @media screen and (max-width: 508px) {
   ._1Q_Pu {
     min-width: 100%;
+  }
+  ._45VFC{
+    display: block;
   }
 }
 

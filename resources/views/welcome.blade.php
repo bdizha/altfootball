@@ -44,11 +44,11 @@
                             <div class="_7YHcU">Join the Fanbases you like to tune your feed</div>
                             <div class="VDPbh">
                                 <div class="_1fZBx">
-                                    @foreach($fanbases as $fanbase)
-                                    <a class="_pRC7 _46Jbt" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}">
+                                    @foreach($fanbases as $k => $fanbase)
+                                    <a class="_pRC7 _46Jbt @if($k >= 6)_45VFC @endif" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}">
                                         <div class="_3BoA_">
                                             <div style="padding-bottom:100%;" class="_38L6D">
-                                                <img alt="" role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                <img role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="200" height="200">
                                             </div>
                                         </div>
                                         <p class="_2mbtl">{{ $fanbase->name }}</p>

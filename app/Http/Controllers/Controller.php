@@ -15,27 +15,13 @@ class Controller extends BaseController
 
     protected function saveImageFile($base64String = '', $table, $recordId)
     {
-        $types = [
-            'png',
-            'gif',
-            'jpeg',
-            'jpg'
-        ];
-
-        $extension = 'png';
-        foreach ($types as $type) {
-            if (strpos($base64String, $type) !== false) {
-                $extension = $type;
-            }
-        }
-
-        $filePart = '/images/' . $table . '/' . md5($recordId) . '.' . $extension;
-
+        $imagePart = '/' . $table . '/' . md5($recordId) . '.jpg';
+        $filePart = '/images/' . $imagePart;
         $fileOutput = public_path('/') . $filePart;
 
         file_put_contents($fileOutput, base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $base64String)));
 
-        return url('/') . $filePart;
+        return $imagePart;
     }
 
     protected function getUserArray()
@@ -55,13 +41,5 @@ class Controller extends BaseController
 
         return json_encode($userArray, JSON_HEX_APOS);
     }
-
-    protected function uploadImage($url)
-    {
-        $image = \Cloudinary\Uploader::upload($url);
-
-        dd($image);
-    }
-
 
 }

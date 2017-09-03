@@ -146,7 +146,7 @@ class Post extends Model
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 // $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 384, "h" => 216, "q" => 100, "crop" => "faces", "fit" => "crop");
+                $params = array("w" => 384, "h" => 216, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->small_image = $url;
@@ -164,7 +164,7 @@ class Post extends Model
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 // $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 100, "h" => 100, "q" => 100, "crop" => "faces", "fit" => "crop");
+                $params = array("w" => 100, "h" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
 //                dd($url . ">>>>>>");
@@ -184,7 +184,7 @@ class Post extends Model
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 // $builder->setSignKey("arQnS85SyXJAFH8r");
-                $params = array("w" => 1000, "h" => 695, "q" => 100, "crop" => "faces", "fit" => "crop");
+                $params = array("w" => 1000, "h" => 695, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->big_image = $url;

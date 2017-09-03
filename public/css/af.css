@@ -9917,8 +9917,8 @@ div._3bqe5 > div {
 
 ._1Q_Pu p {
   margin-bottom: 28px;
-  font-size: 19px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 28px;
   letter-spacing: -.003em;
 }
 
@@ -9934,9 +9934,17 @@ div._3bqe5 > div {
   }
 }
 
+._45VFC {
+  display: none;
+}
+
 @media screen and (max-width: 508px) {
   ._1Q_Pu {
     min-width: 100%;
+  }
+
+  ._45VFC {
+    display: block;
   }
 }
 

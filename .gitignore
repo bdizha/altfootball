@@ -11,3 +11,4 @@ npm-debug.log
 .env
 public/images/posts/
 public/images/users/
+public/images/fanbases/
