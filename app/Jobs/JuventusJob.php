@@ -39,7 +39,7 @@ class JuventusJob extends NewsJob
         $client = new Client();
 
 
-        foreach (range(1, 10) as $step) {
+        foreach (range(1, 2) as $step) {
 
             $url = "http://www.juventus.com/service/?type=%5B%22news%22%5D&language=en&offset={$step}limit=10&startdate=&enddate=&category=%255B%2522italian_leagueone%2522%252C%2522uefa_cl%2522%252C%2522uefa_el%2522%252C%2522italian_cup%2522%252C%2522italian_supercup%2522%252C%2522uefa_supercup%2522%252C%2522fifa_club_wc%2522%252C%2522fifa_wc%2522%252C%2522friendly%2522%252C%2522other%2522%252C%2522unesco_cup%2522%252C%2522uefa_youth_league%2522%252C%2522primavera%2522%252C%2522campionato_nazionale_allievi_professionisti_a_e_b%2522%252C%2522campionato_nazionale_allievi_professionisti_lega_pro%2522%252C%2522campionato_nazionale_giovanissimi_professionisti%2522%252C%2522matchreport%2522%252C%2522ticket%2522%252C%2522charity%2522%252C%2522financial%2522%252C%2522official%2522%252C%2522event%2522%252C%2522member%2522%252C%2522fan%2522%252C%2522team%2522%252C%2522youth_teams%2522%252C%2522jacademy%2522%252C%2522junior%2522%252C%2522sponsor%2522%252C%2522stadium_museum%2522%252C%2522loans%2522%252C%2522sustainability%2522%252C%2522tour%2522%252C%2522tour_e%2522%252C%2522women_sa%2522%255D";
 

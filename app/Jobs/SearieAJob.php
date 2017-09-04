@@ -22,7 +22,7 @@ class SearieAJob extends NewsJob
      */
     public function __construct()
     {
-        $this->fanbase_id = 20;
+        $this->fanbase_id = 33;
         $this->domain = "http://www.skysports.com";
         $this->url = "http://www.skysports.com/premier-league";
     }

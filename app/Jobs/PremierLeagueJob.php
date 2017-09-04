@@ -22,7 +22,7 @@ class PremierLeagueJob extends NewsJob
      */
     public function __construct()
     {
-        $this->fanbase_id = 20;
+        $this->fanbase_id = 10;
         $this->domain = "http://www.skysports.com";
         $this->url = "http://www.skysports.com/premier-league";
     }
@@ -106,11 +106,9 @@ class PremierLeagueJob extends NewsJob
 
                         $content = "";
                         $data->filter('.article__body')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-                            if ($i == 0) {
-                                $node->filter('p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-                                    $content .= "<p>{$node->html()}</p>";
-                                });
-                            }
+                            $node->filter('p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
+                                $content .= "<p>{$node->html()}</p>";
+                            });
                         });
 
                         $content = str_replace("<p><br></p>", "", $content);

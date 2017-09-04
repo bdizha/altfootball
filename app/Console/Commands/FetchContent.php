@@ -51,9 +51,9 @@ class FetchContent extends Command
      */
     public function handle()
     {
-        dispatch(new JuventusJob());
         dispatch(new SearieAJob());
         dispatch(new PremierLeagueJob());
+        dispatch(new JuventusJob());
         dispatch(new BarcelonaFC());
         dispatch(new ManUJob());
         dispatch(new LiverpoolJob());
