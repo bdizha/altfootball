@@ -34,21 +34,6 @@ class Fanbase extends Model
 
     protected $appends = ['initials', 'is_owner', 'follower', 'small_x', 'thumb_x',  'big_x', 'cover_x'];
 
-    protected $covers = [
-        "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905207/lxs2sjouxjlumcg4wnvz.jpg",
-        "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905177/h9broabdo5soffuaozvs.jpg",
-        "http://www.tottenhamhotspur.com/uploadedImages/Shared_Assets/Images/News_images/Legends/woody_lcfinal_hero.jpg",
-        "https://www.psg.fr/img/image/upload/t_image_1440x850,q_auto/js44h6m3mdbr8ndbqbfr",
-        "https://www.arsenal.com/sites/default/files/styles/xxlarge/public/images/alexis_4.jpg",
-        "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502906549/c45hdp6tq81rbodydccd.jpg",
-        "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905257/jr5xnoieva486ofpmqpg.jpg",
-        "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905318/cxyhvdny6llyiqqfkdf0.jpg",
-        "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502907179/bkn900qwxijuqxwpp7fo.jpg",
-        "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905275/q1kpkkq75ratnic2qez8.jpg",
-        "https://res.cloudinary.com/dq82ikfq4/image/upload/w_900,c_limit/v1502905299/vcchubpmz4jg5dvomutv.jpg",
-        "https://media-public.fcbarcelona.com/20157/0/document_thumbnail/20197/127/111/28/52195199/1.0-2/52195199.jpg"
-    ];
-
     public function getInitialsAttribute()
     {
         $nameArray = explode(" ", $this->name);
@@ -132,7 +117,6 @@ class Fanbase extends Model
         if (empty($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 300, "h" => 300, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
@@ -154,7 +138,6 @@ class Fanbase extends Model
         if (empty($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 200, "h" => 200, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
@@ -176,7 +159,6 @@ class Fanbase extends Model
         if (empty($this->big_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 420, "h" => 420, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
@@ -199,7 +181,6 @@ class Fanbase extends Model
 
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 1905, "h" => 476);
                 $url = $builder->createURL($this->cover, $params);
 
@@ -269,5 +250,17 @@ class Fanbase extends Model
         } catch (Exception $e) {
             return false;
         }
+    }
+
+    public function getMeta()
+    {
+        $meta = [
+            "url" => url()->current(),
+            "title" => $this->name,
+            "description" => $this->description,
+            "image" => $this->getBigXAttribute()
+        ];
+
+        return $meta;
     }
 }

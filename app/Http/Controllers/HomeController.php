@@ -47,7 +47,8 @@ class HomeController extends Controller
             'popularPosts' => $popularPosts,
             'tags' => $tags,
             'fans' => $fans,
-            'user' => $this->getUserArray()
+            'user' => $this->getUserArray(),
+            'meta' => $this->getMeta()
         ]);
     }
 }

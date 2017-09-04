@@ -42,4 +42,16 @@ class Controller extends BaseController
         return json_encode($userArray, JSON_HEX_APOS);
     }
 
+    public function getMeta()
+    {
+        $meta = [
+            "url" => url()->current(),
+            "title" => env("META_TITLE"),
+            "description" => env("META_DESCRIPTION"),
+            "image" => url()->current() . "/images/pundit-main.jpg"
+        ];
+
+        return $meta;
+    }
+
 }

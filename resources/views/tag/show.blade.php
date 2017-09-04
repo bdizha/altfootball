@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Page Title')
+@section('meta')
+    @include('includes.meta', $tag->getMeta())
+@endsection
 
 @section('content')
     <div class="_3LeFV">

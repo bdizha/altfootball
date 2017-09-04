@@ -3,7 +3,7 @@
 @section('title', 'Altfootball')
 
 @section('meta')
-    {{--@include('includes.meta', $post->getMeta($url))--}}
+    @include('includes.meta', $post->getMeta())
 @endsection
 
 @section('content')

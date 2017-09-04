@@ -2,6 +2,10 @@
 
 @section('title', 'Altfootball')
 
+@section('meta')
+    @include('includes.meta', $meta)
+@endsection
+
 @section('content')
     <div class="">
         <div>

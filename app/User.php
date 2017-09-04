@@ -164,7 +164,6 @@ class User extends Authenticatable
 
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 200, "h" => 200, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
@@ -188,7 +187,6 @@ class User extends Authenticatable
 
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 100, "h" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
@@ -230,5 +228,17 @@ class User extends Authenticatable
         } catch (Exception $e) {
             return false;
         }
+    }
+
+    public function getMeta()
+    {
+        $meta = [
+            "url" => url()->current(),
+            "title" => $this->name,
+            "description" => $this->bio,
+            "image" => $this->getSmallXAttribute()
+        ];
+
+        return $meta;
     }
 }

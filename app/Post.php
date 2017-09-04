@@ -145,7 +145,6 @@ class Post extends Model
         if (empty($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 384, "h" => 216, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
@@ -163,7 +162,6 @@ class Post extends Model
         if (empty($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 100, "h" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
@@ -183,7 +181,6 @@ class Post extends Model
         if (empty($this->big_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                // $builder->setSignKey("arQnS85SyXJAFH8r");
                 $params = array("w" => 1000, "h" => 695, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
@@ -206,13 +203,13 @@ class Post extends Model
         return (!empty($readingTimeMinutes) ? $readingTimeMinutes : "< 1") . " min read";
     }
 
-    public function getMeta($url)
+    public function getMeta()
     {
         $meta = [
-            "url" => $url,
+            "url" => url()->current(),
             "title" => $this->title,
             "description" => $this->summary,
-            "image" => $this->getBigImageAttribute()
+            "image" => $this->getBigXAttribute()
         ];
 
         return $meta;

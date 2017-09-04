@@ -1,6 +1,8 @@
 @extends('layouts.fan', ['view' => 'show'])
 
-@section('title', $user->name)
+@section('meta')
+    @include('includes.meta', $user->getMeta())
+@endsection
 
 @section('content')
     <div class="">

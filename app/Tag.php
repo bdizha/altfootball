@@ -34,4 +34,16 @@ class Tag extends Model
     {
         return $this->belongsToMany(Post::class, 'tags_posts');
     }
+
+    public function getMeta()
+    {
+        $meta = [
+            "url" => url()->current(),
+            "title" => $this->content,
+            "description" => $this->content,
+            "image" => !empty($this->posts[0]) ? $this->posts[0]->getBigXAttribute() : url()->current() . "/images/pundit-main.jpg"
+        ];
+
+        return $meta;
+    }
 }

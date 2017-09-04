@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', $fanbase->name)
+@section('meta')
+    @include('includes.meta', $fanbase->getMeta())
+@endsection
 
 @section('content')
     <div class="_1Ladt" data-reactid="63">

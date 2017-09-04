@@ -206,11 +206,11 @@ $(function () {
         });
 
         self.imageFileData = ko.observable({
-            dataURL: ko.observable(params.image ? params.image : '')
+            dataURL: ko.observable(params.image ? params.thumb_x : '')
         });
 
         self.coverFileData = ko.observable({
-            dataURL: ko.observable(params.cover ? params.cover : '')
+            dataURL: ko.observable(params.cover ? params.cover_x : '')
         });
 
         self.imageFileData().dataURL.subscribe(function (dataURL) {
@@ -284,7 +284,6 @@ $(function () {
         });
 
         self.saveFanbase = function () {
-            console.log("...submitting fanbase...");
 
             var fanbase = {
                 image: self.image(),
