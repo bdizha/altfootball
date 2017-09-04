@@ -17,8 +17,13 @@ class FanbaseController extends Controller
             ->take(24)
             ->get();
 
+
+        $meta = $this->getMeta();
+        $meta['title'] = 'Discover Fanbases';
+
         return view('fanbase.index', [
-            'fanbases' => $fanbases
+            'fanbases' => $fanbases,
+            'meta' => $meta
         ]);
     }
 

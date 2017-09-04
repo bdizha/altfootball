@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', 'Discover Fanbases')
+@section('meta')
+    @include('includes.meta', $meta)
+@endsection
 
 @section('content')
     <div class="">

@@ -21,6 +21,8 @@ class Controller extends BaseController
 
         file_put_contents($fileOutput, base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $base64String)));
 
+        $this->imgix_purge("https://altfootball.imgix.net" . $imagePart);
+
         return $imagePart;
     }
 
@@ -52,6 +54,23 @@ class Controller extends BaseController
         ];
 
         return $meta;
+    }
+
+    function imgix_purge($url) {
+        $headers = array(
+            'Content-Type:application/json',
+            'Authorization: Basic '. base64_encode( env("IMGIX_API_KEY") . ':')
+        );
+        $payload = json_encode(array("url" => $url));
+        $curl = curl_init('https://api.imgix.com/v2/image/purger');
+        curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+        curl_setopt($curl, CURLOPT_TIMEOUT, 30);
+        curl_setopt($curl, CURLOPT_POST, 1);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $payload);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+        $response = curl_exec($curl);
+        curl_close($curl);
+        return $response;
     }
 
 }
