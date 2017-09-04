@@ -21,7 +21,9 @@ class Controller extends BaseController
 
         file_put_contents($fileOutput, base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $base64String)));
 
-        $this->imgix_purge("https://altfootball.imgix.net" . $imagePart);
+       $response = $this->imgix_purge("https://altfootball.imgix.net" . $imagePart);
+
+       dd($response);
 
         return $imagePart;
     }

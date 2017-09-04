@@ -15,6 +15,7 @@ use App\Jobs\RealMadridJob;
 use App\Jobs\BarcelonaFC;
 use App\Jobs\PremierLeagueJob;
 use App\Jobs\SearieAJob;
+use App\Jobs\JuventusJob;
 use Illuminate\Console\Command;
 
 class FetchContent extends Command
@@ -50,6 +51,7 @@ class FetchContent extends Command
      */
     public function handle()
     {
+        dispatch(new JuventusJob());
         dispatch(new SearieAJob());
         dispatch(new PremierLeagueJob());
         dispatch(new BarcelonaFC());
