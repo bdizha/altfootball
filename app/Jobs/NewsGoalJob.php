@@ -24,7 +24,7 @@ class NewsGoalJob extends NewsJob
     {
         $this->fanbase_id = 4;
         $this->domain = "http://www.goal.com";
-        $this->url = "http://www.goal.com/en-za/news/4639/premier-league/archive/";
+        $this->url = "http://www.goal.com/en/news/";
     }
 
     /**
@@ -39,34 +39,35 @@ class NewsGoalJob extends NewsJob
 
         $client = new Client();
 
-        foreach (range(1, 2) as $page) {
+        foreach (range(1, 5) as $page) {
 
             $crawler = $client->request('GET', $this->url . $page);
-            $crawler->filter('.module-section-archive .story')->each(function (Crawler $node, $i) {
+            $crawler->filter('.type-article')->each(function (Crawler $node, $i) {
                 $link = $node->filter('a')->attr("href");
 
-                if (!empty($link)) {
+                if (!empty($link) && strpos($link, 'http') !== false) {
 
-                    $url = $this->domain . $link;
+                    $url = $link;
                     $p = Post::where("external_url", $url)->first();
                     $client = new Client();
                     $data = $client->request('GET', $url);
 
                     $user = array();
 
-                    if ($data->filter('h2.author')->count()) {
+                    if ($data->filter('.name-and-social')->count()) {
 
-                        $author = $data->filter('h2.author')->text();
+                        $author = $data->filter('.name-and-social')->text();
 
-                        $nameArr = explode(" ", $author);
+                        $nameArr = explode(" ", trim($author));
 
                         if (!empty($nameArr[1])) {
 
                             $user['first_name'] = $nameArr[0];
                             $user['last_name'] = $nameArr[1];
                             $user['nickname'] = $nameArr[0];
-                            $user['email'] = strtolower($nameArr[0]) . "@gmail.com";
+                            $user['email'] = strtolower($nameArr[0]) . "@goal.com";
                             $user['password'] = bcrypt($user['email']);
+                            $user['image'] = "http://news.bbcimg.co.uk/media/images/71752000/jpg/_71752708_mmftbhenryonclarke.jpg";
 
                             $u = User::where("email", $user['email'])->first();
 
@@ -86,24 +87,25 @@ class NewsGoalJob extends NewsJob
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
-                            if ($data->filter('.article-header img')->count() &&
-                                $data->filter('.module-article-body time')->count() &&
-                                $data->filter('p.leading')->count()
+                            if ($data->filter('meta[itemprop="url"]')->count()
                             ) {
 
-                                $post['image'] = $data->filter('.article-header img')->attr("src");
-                                $post['title'] = $data->filter('.article-header img')->attr("alt");
-                                $post['date'] = $data->filter('.module-article-body time')->text();
-                                $post['summary'] = str_limit($data->filter('p.leading')->text(), 250);
+                                $post['image'] = $data->filter('meta[itemprop="url"]')->attr('content');
+                                $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
+                                $post['date'] = $data->filter('time[itemprop="datePublished"]')->attr('datetime');
+                                $post['summary'] = str_limit($data->filter('meta[property="og:description"]')->attr('content'), 250);
                                 $post['created_at'] = Carbon::parse($this->cleanUpDate($post['date']));
 
                                 $content = "";
-                                $data->filter('.article-text p')->each(function (Crawler $node, $i) use (&$content) {
-                                    $content .= "<p>{$node->html()}</p>";
+                                $data->filter('.body p')->each(function (Crawler $node, $i) use (&$content) {
+                                    $content .= "<p>{$node->text()}</p>";
                                 });
 
                                 $content = str_replace("<p><br></p>", "", $content);
                                 $post['content'] = str_replace("<p></p>", "", $content);
+
+//                                dd($post);
+
 
                                 if (empty($p->id)) {
                                     $p = Post::create($post);

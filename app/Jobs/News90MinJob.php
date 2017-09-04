@@ -24,7 +24,7 @@ class News90MinJob extends NewsJob
     {
         $this->fanbase_id = 7;
         $this->domain = "http://www.90min.com";
-        $this->url = "http://www.90min.com/top-stories?page=";
+        $this->url = "http://www.90min.com";
     }
 
     /**
@@ -38,24 +38,27 @@ class News90MinJob extends NewsJob
         echo ":::::: " . $this->domain . " ::::::\n";
         $client = new Client();
 
-        foreach (range(1, 3) as $page) {
+        foreach (range(1, 1) as $page) {
 
-            $crawler = $client->request('GET', $this->url . $page);
-            $crawler->filter('.feedpage-article__metadata')->each(function (Crawler $node, $i) {
-                $link = $node->filter('a.feedpage-article__title')->attr("href");
+            $crawler = $client->request('GET', $this->url);
+            $crawler->filter('.article, .topic-articles__link')->each(function (Crawler $node, $i) {
+                $link = $node->attr("href");
 
                 if (!empty($link)) {
 
                     $url = $this->domain . $link;
+
+//                    dd($url);
+
                     $p = Post::where("external_url", $url)->first();
                     $client = new Client();
                     $data = $client->request('GET', $url);
 
                     $user = array();
 
-                    if ($node->filter('a.feedpage-article__author-link')->count()) {
+                    if ($data->filter('.post-cover__media')->count()) {
 
-                        $author = $node->filter('a.feedpage-article__author-link')->text();
+                        $author = $data->filter('.post-metadata__author-name')->text();
 
                         $nameArr = explode(" ", $author);
 

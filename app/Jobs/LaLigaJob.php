@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class BarcelonaFC extends NewsJob
+class LaLigaJob extends NewsJob
 {
     protected $domain = "";
     protected $url = "";
@@ -22,7 +22,7 @@ class BarcelonaFC extends NewsJob
      */
     public function __construct()
     {
-        $this->fanbase_id = 20;
+        $this->fanbase_id = 25;
         $this->domain = "http://www.skysports.com";
         $this->url = "http://www.skysports.com/la-liga";
     }
