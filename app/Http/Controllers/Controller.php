@@ -21,9 +21,7 @@ class Controller extends BaseController
 
         file_put_contents($fileOutput, base64_decode(preg_replace('#^data:image/\w+;base64,#i', '', $base64String)));
 
-       $response = $this->imgix_purge("https://altfootball.imgix.net" . $imagePart);
-
-       dd($response);
+        $this->imgix_purge("https://altfootball.imgix.net" . $imagePart);
 
         return $imagePart;
     }
@@ -58,10 +56,11 @@ class Controller extends BaseController
         return $meta;
     }
 
-    function imgix_purge($url) {
+    function imgix_purge($url)
+    {
         $headers = array(
             'Content-Type:application/json',
-            'Authorization: Basic '. base64_encode( env("IMGIX_API_KEY") . ':')
+            'Authorization: Basic ' . base64_encode(env("IMGIX_API_KEY") . ':')
         );
         $payload = json_encode(array("url" => $url));
         $curl = curl_init('https://api.imgix.com/v2/image/purger');
