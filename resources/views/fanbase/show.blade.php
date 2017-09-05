@@ -120,6 +120,7 @@
                 </div>
                 <div class="sZVC2">
                     <h1 class="_1xaT_ SqxHJ">
+                        {{ $fanbase->name }}
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                              class="_1z7Hy _8SyER">
                             <g fill="none" fill-rule="evenodd">
@@ -282,34 +283,17 @@
                     </div>
                 </div>
             </div>
-            <div class="_2F06s">
+            <div class="gld7a">
                 <div class="_3JxnF _38P1C">
                     <div class="_1bRKx">
                         <nav class="_3GkHt _1R2o8">
-                            <a class="zxDoM _3rBNC _2sG6-" href="/f/{{ $fanbase->slug }}">
+                            <a class="zxDoM _3TznZ _3rBNC _3vwB1 _2sG6-"  href="/f/{{ $fanbase->slug }}">
                                 Posts
                             </a>
-                            <a class="_3UwsA zxDoM _3rBNC"
-                               href="/f/{{ $fanbase->slug }}/discussions">
-                                Discussions
-                                <span class="_2-WMb _2aPX0">
-                                    <span class="_1a2gI">28</span>
-                                </span>
+                            <a class="_3UwsA zxDoM _3TznZ _3rBNC" href="javascript:void();">
+                                <span>&nbsp;</span>
                             </a>
                         </nav>
-                        <div class="_2Y2eP">
-                            <button class="_1VJcf">
-                                <div class="_32tSU">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 3 17"
-                                         class="_32tSU">
-                                        <g fill="#00AFFF" fill-rule="evenodd">
-                                            <path d="M2.2.69a1.15 1.15 0 1 1-2.1.92A1.15 1.15 0 0 1 2.2.7M2.2 7.87a1.15 1.15 0 1 1-2.1.92 1.15 1.15 0 0 1 2.1-.92M2.2 15.04a1.15 1.15 0 1 1-2.1.93 1.15 1.15 0 0 1 2.1-.93"
-                                                ></path>
-                                        </g>
-                                    </svg>
-                                </div>
-                            </button>
-                        </div>
                     </div>
                 </div>
             </div>
