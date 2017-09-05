@@ -180,6 +180,16 @@
                     </p>
                     {!! $post->getHtmlContent() !!}
                 </div>
+                <div class="_3tkuf">
+                    <div class="_1drt2 _9fE1R NasRD">
+                        <div>
+                            <h2>Never miss a post</h2>
+                        </div>
+                        <div class="_3OD4J _1yV5F _1MC-v _1h78h">
+                           Join {{ $post->fanbase->name }}
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="_2xoE4 NasRD _3QYjF">
                 <button class="_1Zj5n _1cG70 _2YLzg">
