@@ -2,14 +2,15 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Http\Controllers\Controller;
+use App\Notifications\SendActivationEmail;
+use App\Traits\CaptureIpTrait;
 use App\User;
 use Auth;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
-use App\Traits\CaptureIpTrait;
 use Illuminate\Http\Request;
-use App\Notifications\SendActivationEmail;
+use Illuminate\Support\Facades\Validator;
+use Socialite;
 
 class RegisterController extends Controller
 {
@@ -45,7 +46,7 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -58,7 +59,7 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
+     * @param  array $data
      * @return User
      */
     protected function create(array $data)
@@ -66,12 +67,12 @@ class RegisterController extends Controller
         $ipAddress = new CaptureIpTrait;
         $user = User::where("email", $data["email"])->first();
 
-        if(empty($user->id)){
+        if (empty($user->id)) {
             $user = User::create([
                 'nickname' => $data['nickname'],
                 'email' => $data['email'],
                 'password' => bcrypt($data['email']),
-                'token'             => str_random(64),
+                'token' => str_random(64),
                 'ip_address' => $ipAddress->getClientIp()
             ]);
         }
@@ -90,8 +91,7 @@ class RegisterController extends Controller
         if (Auth::guard()->check()) {
             $user = Auth::user();
             return view('auth.unverified', ['user' => $user]);
-        }
-        else{
+        } else {
             $this->redirectPath('/register');
         }
     }
@@ -103,10 +103,9 @@ class RegisterController extends Controller
     public function activate(Request $request, $token)
     {
         $user = User::where("token", $token)->first();
-        if(empty($user->id)){
+        if (empty($user->id)) {
             $this->redirectPath('/register');
-        }
-        else{
+        } else {
             $user->is_active = true;
             $user->save();
 
@@ -116,7 +115,59 @@ class RegisterController extends Controller
         }
     }
 
-    public function sendNewActivationEmail(User $user, $token) {
+    public function sendNewActivationEmail(User $user, $token)
+    {
         $user->notify(new SendActivationEmail($token));
+    }
+
+    public function redirectToProvider()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    public function handleProviderCallback()
+    {
+        $facebookUser = Socialite::driver('facebook')->user();
+
+//        dd($facebookUser->getAvatar());
+
+        $ipAddress = new CaptureIpTrait;
+        $user = User::where("email", $facebookUser->getEmail())->first();
+
+        if (empty($user->id)) {
+            $name = $facebookUser->getName();
+            $nameParts = explode(" ", $name);
+
+            $firstName = $nameParts[0];
+            $lastName = "";
+            if (!empty($nameParts[1])) {
+                $lastName = $nameParts[1];
+            }
+
+            $data = [
+                'first_name' => $firstName,
+                'last_name' => $lastName,
+                'nickname' => $facebookUser->getNickname(),
+                'email' => $facebookUser->getEmail(),
+                'password' => bcrypt($facebookUser->getEmail()),
+                'token' => str_random(64),
+                'ip_address' => $ipAddress->getClientIp(),
+                'is_active' => true,
+                'image' => $facebookUser->getAvatar()
+            ];
+
+            $user = User::create($data);
+        }
+
+        $avatar = $facebookUser->getAvatar();
+        if(!empty($avatar)){
+            $user->image = $avatar;
+            $user->save();
+
+            $imagePart = '/users/' . md5($user->id) . '.jpg';
+            $this->imgix_purge("https://altfootball.imgix.net" . $imagePart);
+        }
+
+        $this->guard()->login($user, true);
     }
 }

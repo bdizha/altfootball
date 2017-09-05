@@ -104,7 +104,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  color: #5BC20F;
+  color: #57d100;
 }
 
 abbr[title] {
@@ -437,11 +437,11 @@ button {
 }
 
 ._1MC-v:hover {
-  background-color: #5BC20F;
+  background-color: #57d100;
 }
 
 ._1h78h:hover {
-  background-color: #5BC20F;
+  background-color: #57d100;
 }
 
 ._1geYT {
@@ -464,7 +464,7 @@ button {
 
 ._1geYT:hover,
 ._1geYT:focus {
-  background: #5BC20F;
+  background: #57d100;
 }
 
 ._23KD {
@@ -1170,7 +1170,7 @@ form ._2Kdch {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: rgba(122, 214, 31, 0.6);
+  background: rgba(87, 209, 0, 0.7);
   overflow: hidden;
 }
 
@@ -1741,7 +1741,7 @@ form ._2Kdch {
 }
 
 ._23p6h ._3Xaa0 {
-  background: rgba(122, 214, 31, 0.6);
+  background: rgba(87, 209, 0, 0.7);
 }
 
 .YRuUa {
@@ -6392,7 +6392,7 @@ form ._2Kdch {
 
 ._12n1y:hover,
 ._12n1y:focus {
-  border: 2px solid #5BC20F;
+  border: 2px solid #57d100;
   background-color: rgba(91, 194, 15, 0.123457);
 }
 
@@ -6441,7 +6441,7 @@ form ._2Kdch {
 
 ._37Oy_ .M13JP:hover,
 ._37Oy_ .M13JP:focus {
-  background: #5BC20F;
+  background: #57d100;
 }
 
 ._37Oy_ .M13JP[disabled] {
@@ -9472,7 +9472,7 @@ div._3bqe5 > div {
 
 ._HY8RT {
   position: absolute;
-  fill: #5BC20F;
+  fill: #57d100;
 }
 
 @media screen and (max-width: 1236px) {
@@ -9915,7 +9915,7 @@ div._3bqe5 > div {
 
 ._1Q_Pu a:hover,
 ._1Q_Pu a:focus {
-  color: #5BC20F;
+  color: #57d100;
 }
 
 ._1Q_Pu p {
@@ -11036,7 +11036,7 @@ div._3bqe5 > div {
 }
 
 ._1aThB:hover {
-  background: #5BC20F;
+  background: #57d100;
 }
 
 ._1aThB:hover path[data-hover-invert=true] {
@@ -13126,7 +13126,7 @@ div._3bqe5 > div {
 }
 
 ._1SLoN:hover {
-  background: #5BC20F;
+  background: #57d100;
   color: #fff;
 }
 
@@ -13855,7 +13855,7 @@ div._3bqe5 > div {
 ._1ssnS.active,
 ._1ssnS:focus,
 ._1ssnS:hover {
-  background-color: #5BC20F;
+  background-color: #57d100;
   color: #FFFFFF;
   /* mistakes are pretty common */
   /* work it out to the best of their abilities */
@@ -14001,7 +14001,7 @@ div._3bqe5 > div {
 ._2-WMb {
   -ms-flex-align: center;
   align-items: center;
-  background-color: #5BC20F;
+  background-color: #57d100;
   border-radius: 22px;
   display: -ms-flexbox;
   display: flex;
@@ -14263,7 +14263,7 @@ div._3bqe5 > div {
 }
 
 .zrN-a:hover {
-  background: #5BC20F;
+  background: #57d100;
 }
 
 .rr7kJ {
@@ -14810,7 +14810,7 @@ div._3bqe5 > div {
 ._13sKJ:hover:before {
   display: block;
   content: "";
-  background: #5BC20F;
+  background: #57d100;
   height: 4px;
   position: absolute;
   left: 0;
@@ -14820,7 +14820,7 @@ div._3bqe5 > div {
 
 ._13sKJ.HEYnN ._2rsMb path,
 ._13sKJ:hover ._2rsMb path {
-  fill: #5BC20F;
+  fill: #57d100;
 }
 
 @media screen and (max-width: 508px) {
@@ -14880,7 +14880,7 @@ div._3bqe5 > div {
 }
 
 ._3YKuQ:hover {
-  background: #5BC20F;
+  background: #57d100;
 }
 
 ._3YKuQ:hover path[data-hover-invert=true] {
@@ -17924,7 +17924,7 @@ div._3bqe5 > div {
 }
 
 .T1M_q {
-  background: #5BC20F;
+  background: #57d100;
   width: 248px;
   height: 248px;
   position: absolute;

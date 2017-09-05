@@ -34,5 +34,10 @@ return [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],
+    'facebook' => [
+        'client_id' => '1932873593602036',
+        'client_secret' => '0ee3a3bfe289c6a503d8e99d743e61ed',
+        'redirect' => $_SERVER['APP_URL'] . '/fb/join',
+    ],
 
 ];

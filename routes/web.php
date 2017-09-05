@@ -38,3 +38,6 @@ Route::post('/fanbase', 'FanbaseController@save')->name("fanbase.save");
 Route::post('/post', 'PostController@save')->name("post.save");
 Route::get('/posts', 'PostController@index')->name("post.index");
 Route::post('/dribble', 'DribbleController@save')->name("dribble.save");
+
+Route::get('/fb', 'Auth\RegisterController@redirectToProvider');
+Route::get('/fb/join', 'Auth\RegisterController@handleProviderCallback');

@@ -374,12 +374,12 @@ button {
 ._1MC-v {
   background-color: #00AFFF;
   &:hover {
-    background-color: #5BC20F;
+    background-color: #57d100;
   }
 }
 
 ._1h78h:hover {
-  background-color: #5BC20F;
+  background-color: #57d100;
 }
 
 ._1geYT {
@@ -1082,7 +1082,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(122, 214, 31, 0.6);
+  background: rgba(87, 209, 0, 0.7);
   overflow: hidden;
   &:hover {
     img {
@@ -1607,7 +1607,7 @@ form {
   overflow: hidden;
   position: absolute;
   ._3Xaa0 {
-    background: rgba(122, 214, 31, 0.6);
+    background: rgba(87, 209, 0, 0.7);
   }
 }
 
@@ -5931,7 +5931,7 @@ form {
     background: #00AFFF;
     border: none;
     &:hover, &:focus {
-      background: #5BC20F;
+      background: #57d100;
     }
     &[disabled] {
       opacity: 1;
@@ -10241,7 +10241,7 @@ div._3bqe5 {
   height: 40px;
   transition: all 0.1s linear;
   &:hover {
-    background: #5BC20F;
+    background: #57d100;
     path[data-hover-invert=true] {
       fill: #fff;
     }
@@ -12146,7 +12146,7 @@ div._3bqe5 {
     content: "#";
   }
   &:hover {
-    background: #5BC20F;
+    background: #57d100;
     color: #fff;
   }
 }
@@ -13223,7 +13223,7 @@ div._3bqe5 {
   background: #141C3E;
   color: #fff;
   &:hover {
-    background: #5BC20F;
+    background: #57d100;
   }
 }
 
@@ -13785,7 +13785,7 @@ div._3bqe5 {
   height: 52px;
   transition: all 0.1s linear;
   &:hover {
-    background: #5BC20F;
+    background: #57d100;
     path[data-hover-invert=true] {
       fill: #fff;
     }
@@ -16582,7 +16582,7 @@ div._3bqe5 {
 }
 
 .T1M_q {
-  background: #5BC20F;
+  background: #57d100;
   width: 248px;
   height: 248px;
   position: absolute;

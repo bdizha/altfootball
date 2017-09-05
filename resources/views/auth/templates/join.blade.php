@@ -9,7 +9,7 @@
                 </svg>
             </button>
             <h1 class="O93cc" id="signInPanelHeader">Join the new home of footballing</h1>
-            <a href="https://www.facebook.com/v2.9/dialog/oauth?client_id=516295178554349&amp;redirect_uri=https://drivetribe.com/fb-sign-in&amp;response_type=token&amp;scope=public_profile, email" class="MAYYh _35Ns5">Sign in with Facebook</a>
+            <a href="/fb" class="MAYYh _35Ns5">Sign in with Facebook</a>
             <a href="/register" class="_1ssnS _35Ns5">Sign in with Email</a>
             <p class="d3Gx3">If you already have an account you can use the buttons above to log back in</p>
             <ul class="_35zqi">
