@@ -159,6 +159,13 @@
                                 @endif
                             @endforeach
                             <posts params='page: 0, fanbase: ""'></posts>
+                            <div class="p32Iu">
+                                <div class="_3bxb0">
+                                    <div class="_2hvwD">
+                                        <script src="//cdn.playbuzz.com/widget/feed.js"></script><div class="pb_feed" data-comments="false" data-game-info="false" data-item="2b7291a8-b33e-469b-99b5-1b8c013ce6ec" data-embed-by="ab03eebd-4805-4de5-a97a-610ca3aa958d" data-version="2" ></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="_3gFQj">
                             @foreach($posts as $k => $post)
@@ -167,13 +174,6 @@
                                 @endif
                             @endforeach
                             <posts params='page: 1, fanbase: ""'></posts>
-                        </div>
-                        <div class="p32Iu">
-                            <div class="_3bxb0">
-                                <div class="_2hvwD">
-                                    <script src="//cdn.playbuzz.com/widget/feed.js"></script><div class="pb_feed" data-comments="false" data-game-info="false" data-item="2b7291a8-b33e-469b-99b5-1b8c013ce6ec" data-embed-by="ab03eebd-4805-4de5-a97a-610ca3aa958d" data-version="2" ></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="_2L2jX"></div>
