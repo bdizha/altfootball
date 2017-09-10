@@ -34,6 +34,10 @@ $(function () {
             dataURL: ko.observable(params.image ? params.thumb_x : '')
         });
 
+        self.imageFileData().dataURL.subscribe(function (dataURL) {
+            self.image(dataURL);
+        });
+
         self.canSave = function () {
             return UserFormViewModel.errors().length === 0;
         };
