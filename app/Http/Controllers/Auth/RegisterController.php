@@ -125,49 +125,52 @@ class RegisterController extends Controller
         return Socialite::driver('facebook')->redirect();
     }
 
-    public function handleProviderCallback()
+    public function handleProviderCallback(Request $request)
     {
-        $facebookUser = Socialite::driver('facebook')->user();
+        if (!empty($request['error'])) {
+            return redirect()->to('/');
+        } else {
+            $facebookUser = Socialite::driver('facebook')->user();
 
-//        dd($facebookUser->getAvatar());
+            $ipAddress = new CaptureIpTrait;
+            $user = User::where("email", $facebookUser->getEmail())->first();
 
-        $ipAddress = new CaptureIpTrait;
-        $user = User::where("email", $facebookUser->getEmail())->first();
+            if (empty($user->id)) {
+                $name = $facebookUser->getName();
+                $nameParts = explode(" ", $name);
 
-        if (empty($user->id)) {
-            $name = $facebookUser->getName();
-            $nameParts = explode(" ", $name);
+                $firstName = $nameParts[0];
+                $lastName = "";
+                if (!empty($nameParts[1])) {
+                    $lastName = $nameParts[1];
+                }
 
-            $firstName = $nameParts[0];
-            $lastName = "";
-            if (!empty($nameParts[1])) {
-                $lastName = $nameParts[1];
+                $data = [
+                    'first_name' => $firstName,
+                    'last_name' => $lastName,
+                    'nickname' => $facebookUser->getNickname(),
+                    'email' => $facebookUser->getEmail(),
+                    'password' => bcrypt($facebookUser->getEmail()),
+                    'token' => str_random(64),
+                    'ip_address' => $ipAddress->getClientIp(),
+                    'is_active' => true,
+                    'image' => $facebookUser->getAvatar()
+                ];
+
+                $user = User::create($data);
             }
 
-            $data = [
-                'first_name' => $firstName,
-                'last_name' => $lastName,
-                'nickname' => $facebookUser->getNickname(),
-                'email' => $facebookUser->getEmail(),
-                'password' => bcrypt($facebookUser->getEmail()),
-                'token' => str_random(64),
-                'ip_address' => $ipAddress->getClientIp(),
-                'is_active' => true,
-                'image' => $facebookUser->getAvatar()
-            ];
+            $avatar = $facebookUser->getAvatar();
+            if (!empty($avatar)) {
+                $user->image = $avatar;
+                $user->save();
 
-            $user = User::create($data);
+                $imagePart = '/users/' . md5($user->id) . '.jpg';
+                $this->imgix_purge("https://altfootball.imgix.net" . $imagePart);
+            }
+
+            $this->guard()->login($user, true);
+
         }
-
-        $avatar = $facebookUser->getAvatar();
-        if(!empty($avatar)){
-            $user->image = $avatar;
-            $user->save();
-
-            $imagePart = '/users/' . md5($user->id) . '.jpg';
-            $this->imgix_purge("https://altfootball.imgix.net" . $imagePart);
-        }
-
-        $this->guard()->login($user, true);
     }
 }

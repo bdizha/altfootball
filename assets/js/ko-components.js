@@ -188,8 +188,8 @@ $(function () {
                 data: ko.toJSON(fanbase),
                 type: "post",
                 contentType: "application/json",
-                success: function (response) {
-                    var fanbase = ko.utils.parseJson(response);
+                success: function (f) {
+                    var fanbase = ko.utils.parseJson(f);
                     window.location = '/f/' + fanbase.slug;
                 }
             });
@@ -271,11 +271,10 @@ $(function () {
 
         self = this;
 
-        self.email = ko.observable().extend({
+        self.email = ko.observable('').extend({
             required: {
                 message: 'Email is required.'
-            }
-        }).extend({
+            },
             email: {
                 message: 'Email is invalid.'
             }
@@ -295,10 +294,10 @@ $(function () {
 
             var $this = $("._34JK span._1u7op");
 
-            console.log(self.email().length > 0);
+            console.log(self.email.length > 0);
             console.log(!$this.is(':visible'));
 
-            self.canGo(self.email().length > 0 && !$this.is(':visible'));
+            self.canGo(self.email.length > 0 && !$this.is(':visible'));
         };
 
         self.focusEmail = function () {
@@ -597,6 +596,7 @@ $(function () {
             return self.firstName() + " " + self.lastName();
         };
         self.id = ko.observable(params.id ? params.id : '');
+        self.image = ko.observable(params.image ? params.image : '');
         self.bio = ko.observable(params.bio ? params.bio : '');
         self.website = ko.observable(params.website ? params.website : '');
         self.canProfileEdit = ko.observable(false);
@@ -605,6 +605,11 @@ $(function () {
         self.focusedBio = ko.observable(false);
         self.focusedWebsite = ko.observable(false);
         self.enabled = ko.observable(true);
+
+        self.imageFileData = ko.observable({
+            dataURL: ko.observable(params.image ? params.thumb_x : '')
+        });
+
         self.canSave = function () {
             return UserFormViewModel.errors().length === 0;
         };
@@ -676,12 +681,13 @@ $(function () {
             UserFormViewModel.errors.showAllMessages();
 
             if (self.canSave()) {
-                self.enabled(true);
+                self.enabled(false);
 
                 var data = JSON.stringify(
                     {
                         first_name: self.firstName(),
                         last_name: self.lastName(),
+                        image: self.image(),
                         bio: self.bio(),
                         website: self.website(),
                         _method: "PATCH"
@@ -692,34 +698,36 @@ $(function () {
                     data: data,
                     type: 'PATCH',
                     contentType: 'application/json',
-                    success: function () {
+                    success: function (u) {
                         self.closeEditForm();
-                        self.enabled(false);
+                        self.enabled(true);
+                        var user = ko.utils.parseJson(u);
+                        window.location = '/u/' + user.slug;
                     }
                 });
             }
+        };
+
+        if (self.firstName().length > 0) {
+            self.focusFirstName();
+            self.blurFirstName();
+        }
+
+        if (self.lastName().length > 0) {
+            self.focusLastName();
+            self.blurLastName();
+        }
+
+        if (self.bio().length > 0) {
+            self.focusBio();
+        }
+
+        if (self.website().length > 0) {
+            self.focusWebsite();
         }
     };
 
     UserFormViewModel.errors = ko.validation.group(UserFormViewModel);
-    //
-    // if (UserFormViewModel.firstName().length > 0) {
-    //     UserFormViewModel.focusFirstName();
-    //     UserFormViewModel.blurFirstName();
-    // }
-    //
-    // if (UserFormViewModel.lastName().length > 0) {
-    //     UserFormViewModel.focusLastName();
-    //     UserFormViewModel.blurLastName();
-    // }
-    //
-    // if (UserFormViewModel.bio().length > 0) {
-    //     UserFormViewModel.focusBio();
-    // }
-    //
-    // if (UserFormViewModel.website().length > 0) {
-    //     UserFormViewModel.focusWebsite();
-    // }
 
     ko.components.register('user-form', {
         viewModel: UserFormViewModel,

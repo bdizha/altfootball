@@ -226,7 +226,7 @@ class User extends Authenticatable
             return true;
 
         } catch (Exception $e) {
-            return false;
+
         }
     }
 
@@ -240,5 +240,19 @@ class User extends Authenticatable
         ];
 
         return $meta;
+    }
+
+    public function toKoJs(){
+        $userArray = [];
+
+        $fields = $this->appends;
+        $fields = array_merge(['id'], $fields);
+        $fields = array_merge($this->fillable, $fields);
+
+        foreach($fields as $field){
+            $userArray[$field] = $this->$field;
+        }
+
+        return json_encode($userArray);
     }
 }

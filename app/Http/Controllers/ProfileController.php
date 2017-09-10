@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Auth;
+use Illuminate\Http\Request;
 
 class ProfileController extends Controller
 {
@@ -12,8 +12,7 @@ class ProfileController extends Controller
         if (Auth::guard()->check()) {
             $user = Auth::user();
             return view('profile.create', ['user' => $user]);
-        }
-        else{
+        } else {
             return redirect('/');
         }
     }
@@ -35,18 +34,16 @@ class ProfileController extends Controller
         $data = $request->all();
         $user = Auth::user();
 
+        if (!empty($data['image']) && strpos($data['image'], 'users') === false) {
+            $data['image'] = $this->saveImageFile($data['image'], 'users', $user->id);
+        }
+
         $user->first_name = $data['first_name'];
         $user->last_name = $data['last_name'];
         $user->bio = $data['bio'];
         $user->website = $data['website'];
         $user->save();
 
-        dd($request->ajax());
-
-        if($request->ajax()){
-            dd($request->ajax());
-        }
-
-        return redirect('/');
+        return true;
     }
 }

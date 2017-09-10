@@ -20,7 +20,9 @@
                         <div>
                             <label for="profile-image-upload">
                                 <div class="_21web">
-                                    <div class="_2pUFC _3Xaa0 faM3p"><img alt="" role="presentation" src="https://drivetribe.imgix.net/IoJw-6Y0TwiDcrnGGL2679?w=700&amp;h=704&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges" class="_3-rkf _3Xaa0 b00q8" width="350" height="352"></div>
+                                    <div class="_2pUFC _3Xaa0 faM3p">
+                                        <img data-bind="attr: { src: imageFileData().dataURL, alt: name, title: name }, visible: imageFileData().dataURL" role="presentation" class="_2PoG-" width="350" height="350" style="opacity: 1;">
+                                    </div>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" class="_2vslu">
                                         <g fill="none" fill-rule="evenodd" stroke="#00AFFF">
                                             <path stroke-width="4" d="M26.95 52c13.77 0 24.94-11.2 24.94-25S40.72 2 26.95 2C13.17 2 2 13.2 2 27s11.17 25 24.95 25z"></path>

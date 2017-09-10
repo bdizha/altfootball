@@ -17,7 +17,8 @@ class FanController extends Controller
             ->first();
 
         return view('fan.show', [
-            'user' => $user
+            'user' => $user,
+            'toJson'=> $user->toKoJs()
         ]);
     }
 

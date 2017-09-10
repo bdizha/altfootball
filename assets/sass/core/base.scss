@@ -793,9 +793,11 @@ button {
 }
 
 form {
-  .b00q8 {
-    max-height: 200px;
-    max-width: 200px;
+  &#fanbase-form {
+    .b00q8 {
+      max-height: 200px;
+      max-width: 200px;
+    }
   }
 
   @media (max-width: 1000px) {

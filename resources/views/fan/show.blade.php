@@ -1,4 +1,4 @@
-@extends('layouts.fan', ['view' => 'show'])
+@extends('layouts.app')
 
 @section('meta')
     @include('includes.meta', $user->getMeta())
@@ -34,32 +34,17 @@
                             </div>
                         </div>
                         <div class="_1Wugc undefined">
-                            <span class="_2MwKG">
-                                {{ $user->name }}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-                                     class="_1z7Hy _2JeVL"><g fill="none" fill-rule="evenodd"><path fill="#00AFFF"
-                                                                                                    d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
-                                                fill="#FFF"
-                                                d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg></span><span
-                                    class="_1nCpf"><!-- react-text: 4460 -->James<!-- /react-text --><br>
-                                <!-- react-text: 4462 -->May<!-- /react-text --><svg xmlns="http://www.w3.org/2000/svg"
-                                                                                     width="18" height="18"
-                                                                                     viewBox="0 0 18 18"
-                                                                                     class="_1z7Hy _2JeVL"><g
-                                            fill="none" fill-rule="evenodd"><path fill="#00AFFF"
-                                                                                  d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
-                                                fill="#FFF"
-                                                d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg></span>
-                            @if($user->bio)
-                                <p class="_14d4a">{{ $user->bio }}</p>
-                            @endif
-                            @if($user->website)
-                                <a rel="nofollow" target="_blank" class="_30-Mx" href="{{ $user->website }}"></a>
-                            @endif
-                            <div class="_2aOYp">
-                            @if(!$user->is_self)
-                                <follow params="follower: {{ $user->follower->toJson() }}, active_text: 'unfollow', inactive_text: 'follow', class: 'user'"></follow>
-                            @endif
+                                @include('fan.approved')
+                                @if($user->bio)
+                                    <p class="_14d4a">{{ $user->bio }}</p>
+                                @endif
+                                @if($user->website)
+                                    <a rel="nofollow" target="_blank" class="_30-Mx" href="{{ $user->website }}"></a>
+                                @endif
+                                <div class="_2aOYp">
+                                @if(!$user->is_self)
+                                    <follow params="follower: {{ $user->follower->toJson() }}, active_text: 'unfollow', inactive_text: 'follow', class: 'user'"></follow>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -193,12 +178,45 @@
             </div>
         </div>
     </div>
-    <fanbase-form></fanbase-form>
+    <user-form params="{{ $toJson }}"></user-form>
     @include('templates.follow')
-    @include('fanbase.templates.form')
+    @include('profile.templates.form')
     @include('templates.dribbles')
     @include('templates.comments')
     @include('templates.posts')
+@endsection
+
+@section('modal')
+    <div class="_1L5ou" data-bind="css: { active: showSettingsForm}">
+        <div class="_1rglo"></div>
+        <div>
+            <div class="_1zDR7" data-bind="css: { active: showSettingsForm}">
+                <div class="_3rM3S">
+                    <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="click: openUserForm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bWSPJ">
+                            <g fill="none" fill-rule="evenodd" stroke="#00AFFF" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke-width="1.5" d="M5.65 9.07l-.58 3.78 3.78-.58 8.32-8.32-3.2-3.2-1.37 1.37z"></path>
+                                <path d="M15.1 5.67l-3.02-3.03M9.3 11.5L6.26 8.46"></path>
+                                <path stroke-width="1.5" d="M13.69 12.14v5.11H.75V4.31h5.04"></path>
+                            </g>
+                        </svg>
+                        Edit Profile
+                    </button>
+                    <a class="_27Mgd _1VKWj _29zpU" href="/terms" style="opacity: 1; transform: translateY(0px) translateZ(0px);">Terms &amp; Privacy Policy</a>
+                    <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);">
+                        Get Help
+                        <form id="fan-logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </button>
+                    <a class="_27Mgd _1VKWj _29zpU" href="{{ route('logout') }}"
+                       onclick="event.preventDefault(); document.getElementById('fan-logout-form').submit();"
+                       style="opacity: 1; transform: translateY(0px) translateZ(0px);">Sign Out</a>
+                </div>
+                <div class="rTjpd" style="transform: translateX(18.5px) rotate(45deg); top: -7px;"></div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 @section('js')

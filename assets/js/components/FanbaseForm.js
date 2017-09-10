@@ -139,8 +139,8 @@ $(function () {
                 data: ko.toJSON(fanbase),
                 type: "post",
                 contentType: "application/json",
-                success: function (response) {
-                    var fanbase = ko.utils.parseJson(response);
+                success: function (f) {
+                    var fanbase = ko.utils.parseJson(f);
                     window.location = '/f/' + fanbase.slug;
                 }
             });

@@ -9,11 +9,10 @@ $(function () {
 
         self = this;
 
-        self.email = ko.observable().extend({
+        self.email = ko.observable('').extend({
             required: {
                 message: 'Email is required.'
-            }
-        }).extend({
+            },
             email: {
                 message: 'Email is invalid.'
             }
@@ -33,10 +32,10 @@ $(function () {
 
             var $this = $("._34JK span._1u7op");
 
-            console.log(self.email().length > 0);
+            console.log(self.email.length > 0);
             console.log(!$this.is(':visible'));
 
-            self.canGo(self.email().length > 0 && !$this.is(':visible'));
+            self.canGo(self.email.length > 0 && !$this.is(':visible'));
         };
 
         self.focusEmail = function () {

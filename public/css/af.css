@@ -888,7 +888,7 @@ button {
   fill: #d8bf6c;
 }
 
-form .b00q8 {
+form#fanbase-form .b00q8 {
   max-height: 200px;
   max-width: 200px;
 }
