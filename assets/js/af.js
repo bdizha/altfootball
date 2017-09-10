@@ -24,8 +24,6 @@ $(function () {
     $(window).scroll(function() {
         var fixable = $("._1YCPS");
 
-        console.log("..." + fixable.length);
-
         if(fixable.length > 0){
 
             if (fixable.offset().top > 100) {

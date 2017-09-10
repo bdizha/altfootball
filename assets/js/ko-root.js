@@ -20,7 +20,7 @@ $(function () {
         self.showSettingsForm = ko.observable(false);
         self.showUserForm = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
-        self.currentUser = ko.observable(false);
+        self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
 
         self.showOverlay = function() {

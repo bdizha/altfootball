@@ -406,8 +406,6 @@ $(function () {
             dataURL: ko.observable()
         });
 
-        console.log("users...");
-
         self.image = ko.observable();
         self.currentUser = ko.observable(window.currentUser);
         self.comment = ko.observable(params.comment);

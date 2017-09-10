@@ -181,7 +181,7 @@
 @section('js')
     <script type="text/javascript">
         $(function () {
-            RootViewModel.currentUser(ko.utils.parseJson({!! $user !!}));
+            window.currentUser = {!! $user !!};
         });
     </script>
 @endsection

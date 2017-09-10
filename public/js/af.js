@@ -24,8 +24,6 @@ $(function () {
     $(window).scroll(function() {
         var fixable = $("._1YCPS");
 
-        console.log("..." + fixable.length);
-
         if(fixable.length > 0){
 
             if (fixable.offset().top > 100) {
@@ -517,8 +515,6 @@ $(function () {
             dataURL: ko.observable()
         });
 
-        console.log("users...");
-
         self.image = ko.observable();
         self.currentUser = ko.observable(window.currentUser);
         self.comment = ko.observable(params.comment);
@@ -868,7 +864,7 @@ $(function () {
         self.showSettingsForm = ko.observable(false);
         self.showUserForm = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
-        self.currentUser = ko.observable(false);
+        self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
 
         self.showOverlay = function() {
