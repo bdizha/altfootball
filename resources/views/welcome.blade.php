@@ -124,18 +124,10 @@
                         @endforeach
                     </div>
                     <div class="_1Rj2S _3Xaa0">
-                        <div>
-                            <form class="_37Oy_">
-                                <img src="/images/text.png" title="altfootball" alt="altfootball">
-                                <h1 class="bWRAm _3Khdi" dKhdireactid="123">The only place where everything
-                                    is football
-                                </h1>
-                                <input type="email" name="email" placeholder="EMAIL ADDRESS" value=""
-                                       class="_12n1y">
-                                <button class="M13JP _1geYT">
-                                    Join AltFootball
-                                </button>
-                            </form>
+                        <div class="_37Oy_">
+                            <img src="/images/text.png" title="altfootball" alt="altfootball">
+                            @include('auth.templates.form')
+                            <join-form params="_token: '{{ csrf_token() }}'"></join-form>
                             <a href="/fb" class="ahXq_">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
                                      viewBox="0 0 18 18" class="_2tOI2">

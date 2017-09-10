@@ -24,7 +24,7 @@ $(function () {
 
         self.isSubmitted = ko.observable(false);
 
-        self.canGo = ko.observable(false);
+        self.canGo = ko.observable(true);
 
         self.showAllMessages = function () {
             console.log("showAllMessages");
@@ -33,9 +33,9 @@ $(function () {
             var $this = $("._34JK span._1u7op");
 
             console.log(self.email.length > 0);
-            console.log(!$this.is(':visible'));
+            console.log(!$this.is(':visible') + ">>>>");
 
-            self.canGo(self.email.length > 0 && !$this.is(':visible'));
+            self.canGo(!$this.is(':visible'));
         };
 
         self.focusEmail = function () {
@@ -43,9 +43,6 @@ $(function () {
         };
 
         self.blurEmail = function () {
-
-            console.log(self.email() + ">>>");
-
             if (self.email.length === 0) {
                 self.focusedEmail(false);
             }
@@ -59,7 +56,7 @@ $(function () {
         self.proceed = function () {
             self.showAllMessages();
 
-            if (self.canGo) {
+            if (self.canGo()) {
 
                 self.canGo(false);
 
@@ -72,6 +69,8 @@ $(function () {
                     contentType: "application/json",
                     success: function (response) {
                         self.isSubmitted(true);
+
+                        self.canGo(true);
                         console.log(response);
                     }
                 });

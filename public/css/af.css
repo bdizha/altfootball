@@ -6292,6 +6292,8 @@ form ._2Kdch {
     float: left;
     padding-right: 92px;
     padding-top: 64px;
+    background: url(/images/repeat-logo.png) #0c122a;
+    position: relative;
   }
 }
 
@@ -6333,6 +6335,15 @@ form ._2Kdch {
 .bWRAm {
   font-size: 44px;
   line-height: 44px;
+}
+
+form .bWRAm,
+form ._12n1y {
+  color: rgba(255, 255, 255, 0.967846);
+}
+
+._JD9R {
+  color: rgba(255, 255, 255, 0.967846);
 }
 
 @media screen and (max-width: 508px) {
@@ -6380,10 +6391,11 @@ form ._2Kdch {
   font-size: 18px;
   line-height: 18px;
   text-transform: none;
-  border: 2px solid rgba(0, 8, 39, 0.96);
+  border: 2px solid #FFFFFF;
   padding: 14px;
   margin: 22px 0px;
   width: 100%;
+  background: rgba(6, 33, 54, 0.5);
 }
 
 ._12n1y:first-child {
@@ -6393,7 +6405,6 @@ form ._2Kdch {
 ._12n1y:hover,
 ._12n1y:focus {
   border: 2px solid #57d100;
-  background-color: rgba(91, 194, 15, 0.123457);
 }
 
 @media screen and (max-width: 508px) {
@@ -6425,13 +6436,6 @@ form ._2Kdch {
 ._37Oy_ .bWRAm {
   font-size: 24px;
   line-height: 24px;
-}
-
-._37Oy_ ._12n1y {
-  background: rgba(6, 33, 54, 0.5);
-  border: 2px solid #fff;
-  font-size: 22px;
-  line-height: 22px;
 }
 
 ._37Oy_ .M13JP {

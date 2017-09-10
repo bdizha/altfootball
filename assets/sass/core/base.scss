@@ -5796,6 +5796,8 @@ form {
     float: left;
     padding-right: 92px;
     padding-top: 64px;
+    background: url(/images/repeat-logo.png) #0c122a;
+    position: relative;
   }
 }
 
@@ -5837,7 +5839,17 @@ form {
 .bWRAm {
   font-size: 44px;
   line-height: 44px;
+}
 
+form{
+  .bWRAm,
+  ._12n1y{
+    color: rgba(255, 255, 255, 0.9678455);
+  }
+}
+
+._JD9R{
+  color: rgba(255, 255, 255, 0.9678455);
 }
 
 @media screen and (max-width: 508px) {
@@ -5883,17 +5895,17 @@ form {
   font-size: 18px;
   line-height: 18px;
   text-transform: none;
-  border: 2px solid rgba(0, 8, 39, .96);
+  border: 2px solid $color_white;
   padding: 14px;
   margin: 22px 0px;
   width: 100%;
+  background: rgba(6, 33, 54, 0.5);
   &:first-child {
     margin-top: 44px;
   }
   &:hover,
   &:focus{
     border: 2px solid  $color_green;
-    background-color: rgba(91, 194, 15, 0.123456789);
   }
 }
 
@@ -5922,12 +5934,6 @@ form {
     font-size: 24px;
     line-height: 24px;
 
-  }
-  ._12n1y {
-    background: rgba(6, 33, 54, 0.5);
-    border: 2px solid #fff;
-    font-size: 22px;
-    line-height: 22px;
   }
   .M13JP {
     background: #00AFFF;

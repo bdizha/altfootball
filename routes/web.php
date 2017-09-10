@@ -39,5 +39,5 @@ Route::post('/post', 'PostController@save')->name("post.save");
 Route::get('/posts', 'PostController@index')->name("post.index");
 Route::post('/dribble', 'DribbleController@save')->name("dribble.save");
 
-Route::get('/fb', 'Auth\RegisterController@redirectToProvider');
-Route::get('/fb/join', 'Auth\RegisterController@handleProviderCallback');
+Route::get('/fb', 'SocialAuthController@redirect');
+Route::get('/fb/join', 'SocialAuthController@callback');

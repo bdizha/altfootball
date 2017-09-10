@@ -3,13 +3,13 @@
           data-bind="submit: proceed, css: { '_23KD': isSubmitted }">
         <input type="hidden" name="nickname"/>
         <input name="_token" data-bind="value: token" type="hidden">
-        <h1 class="bWRAm">This is all things football sign in</h1>
+        <h1 class="bWRAm">The only place where everything is fallball</h1>
         <div class="_34JK">
             <input class="_12n1y"
                    data-bind="value: email, event: { valueUpdate: 'afterkeyup', focus: focusEmail, blur: blurEmail }"
                    placeholder="EMAIL ADDRESS" name="email" type="email" title="Email is invalid."/>
         </div>
-        <button class="M13JP _1geYT" type="submit">Continue</button>
+        <button class="M13JP _1geYT" type="submit"data-bind="enable: canGo()">Continue</button>
     </form>
     <div class="_JD9R" data-bind="css: { '_83JNY': isSubmitted }">
         <h1 class="_15nhh nNfqa" style="opacity: 1; transform: translateY(0px) translateZ(0px);">Great stuff.</h1>
