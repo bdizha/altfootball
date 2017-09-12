@@ -4,10 +4,11 @@
             <span class="_35FcZ">Dribbles</span>
             <span class="_3HP-Q">
             (<!--ko text: dribblesCount --><!--/ko-->)
-            </span>
-            <svg width="24" height="23" viewBox="-3 -3 23 24" data-bind="click: save">
-                <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75L13.5 0zm-.1 1.87l3.1 2.58V8.3L9 14.55 1.5 8.3V4.45l3.1-2.58L9 4.8l4.4-2.93z" fill="#00AFFF" fill-rule="evenodd" data-bind="attr: { opacity: initialOpacity }" class="outline" transform="translate(0, 0) translate(-9, -8.25) scale(1, 1) translate(9, 8.25) rotate(0, 9, 8.25) skewX(0) skewY(0) "></path>
-                <path d="M13.5 0L9 3 4.5 0 0 3.75V9l9 7.5L18 9V3.75" fill="#da1a35" data-bind="attr: { opacity: selectedOpacity }" fill-rule="evenodd" class="heart" transform="translate(0, 0) translate(-9, -8.25) translate(9, 8.25) rotate(0, 9, 8.25) skewX(0) skewY(0) scale(1, 1)"></path>
+            </span>&nbsp;
+            ﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" width="24" height="24">
+                <g id="surface1">
+                    <path stroke="#00AFFF" stroke-width="2" fill="#FFFFFF" d="M 22.5 5 C 19.609375 5 17.171875 6.804688 16 7.855469 C 14.828125 6.804688 12.390625 5 9.5 5 C 5.363281 5 2 8.363281 2 12.5 C 2 15.089844 4.363281 17.445313 4.460938 17.539063 L 16 29.082031 L 27.535156 17.546875 C 27.636719 17.445313 30 15.089844 30 12.5 C 30 8.363281 26.636719 5 22.5 5 Z "/>
+                </g>
             </svg>
         </div>
     </button>

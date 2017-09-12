@@ -1,11 +1,8 @@
 <?php
 
 namespace App;
-
-use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
-use Auth;
-
+use Illuminate\Database\Eloquent\Model;
 class Comment extends Model
 {
     /**

@@ -95,8 +95,8 @@
                         </a>
                         <button class="_2EVp5" data-bind="click: openFanbaseForm">
                             Create a fanbase
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
-                                <path fill="#FFF" fill-rule="evenodd" d="M3 3H0v2h3v3h2V5h3V3H5V0H3v3z"></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24">
+                                <path fill="#FFF" fill-rule="evenodd" d="M 11 5 L 11 11 L 5 11 L 5 13 L 11 13 L 11 19 L 13 19 L 13 13 L 19 13 L 19 11 L 13 11 L 13 5 Z "></path>
                             </svg>
                         </button>
                     </div>

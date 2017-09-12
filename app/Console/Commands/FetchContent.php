@@ -62,8 +62,8 @@ class FetchContent extends Command
         dispatch(new RealMadridJob());
         dispatch(new PSG());
         dispatch(new ArsenalFC());
-        dispatch(new FCBayernJob());
         dispatch(new NewsBreatheChelseaJob());
+        dispatch(new FCBayernJob());
         dispatch(new NewsSportslensJob());
     }
 }

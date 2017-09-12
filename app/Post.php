@@ -2,12 +2,11 @@
 
 namespace App;
 
-use Auth;
-use Carbon\Carbon;
-use Craft\Exception;
 use Illuminate\Database\Eloquent\Model;
+use Carbon\Carbon;
 use Imgix\UrlBuilder;
 use MartinBean\Database\Eloquent\Sluggable;
+use Auth;
 
 class Post extends Model
 {
@@ -142,7 +141,7 @@ class Post extends Model
 
     public function getSmallXAttribute()
     {
-        if (empty($this->small_image)) {
+        if (empty($this->small_image) || $this->needsResizing($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $params = array("w" => 384, "h" => 216, "crop" => "faces", "fit" => "crop");
@@ -159,7 +158,7 @@ class Post extends Model
 
     public function getThumbXAttribute()
     {
-        if (empty($this->thumb_image)) {
+        if (empty($this->thumb_image) || $this->needsResizing($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $params = array("w" => 100, "h" => 100, "crop" => "faces", "fit" => "crop");
@@ -178,7 +177,7 @@ class Post extends Model
 
     public function getBigXAttribute()
     {
-        if (empty($this->big_image)) {
+        if (empty($this->big_image) || $this->needsResizing($this->big_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $params = array("w" => 1000, "h" => 695, "crop" => "faces", "fit" => "crop");
@@ -241,5 +240,9 @@ class Post extends Model
         } catch (Exception $e) {
             return false;
         }
+    }
+
+    public function needsResizing($url){
+        return strpos($url, '.com') !== false;
     }
 }

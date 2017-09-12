@@ -156,7 +156,7 @@ class User extends Authenticatable
 
     public function getSmallXAttribute()
     {
-        if (empty($this->small_image)) {
+        if (empty($this->small_image) || $this->needsResizing($this->small_image)) {
 
             if (strpos($this->image, 'http') !== false) {
                 $this->saveImage();
@@ -179,7 +179,7 @@ class User extends Authenticatable
 
     public function getThumbXAttribute()
     {
-        if (empty($this->thumb_image)) {
+        if (empty($this->thumb_image) || $this->needsResizing($this->thumb_image)) {
 
             if (strpos($this->image, 'http') !== false) {
                 $this->saveImage();
@@ -254,5 +254,9 @@ class User extends Authenticatable
         }
 
         return json_encode($userArray);
+    }
+
+    public function needsResizing($url){
+        return strpos($url, '.com') !== false;
     }
 }
