@@ -5,14 +5,13 @@
             <div class="r9rA5">
                 <button class="_2KGdb _34-mC">
                     <div class="_1CwPf">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="19"
-                             height="20" viewBox="0 0 19 20"
-                           >
-                            <path fill="#00AFFF" fill-rule="evenodd"
-                                  stroke="#00AFFF" stroke-width=".5"
-                                  d="M14.75 12.57c-1.04 0-1.96.49-2.55 1.25l-4.95-2.76a3.23 3.23 0 0 0 0-2.13l4.94-2.76a3.21 3.21 0 1 0-.48-.89L6.77 8.04a3.22 3.22 0 1 0 0 3.9l4.95 2.77a3.2 3.2 0 0 0 3.03 4.3 3.22 3.22 0 0 0 0-6.44zm0-10.56a2.21 2.21 0 1 1 0 4.42 2.21 2.21 0 0 1 0-4.42zM4.22 12.21a2.21 2.21 0 1 1 0-4.43 2.21 2.21 0 0 1 0 4.43zm10.53 5.78a2.21 2.21 0 1 1 0-4.42 2.21 2.21 0 0 1 0 4.42z"
-                                ></path>
-                        </svg>
+                        <div class="_GSL7C">
+                            ﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" width="20" height="20">
+                                <g id="surface1">
+                                    <path fill="#00AFFF" d="M 18 2 C 16.34375 2 15 3.34375 15 5 C 15 5.195313 15.027344 5.375 15.0625 5.5625 L 7.9375 9.71875 C 7.414063 9.273438 6.742188 9 6 9 C 4.34375 9 3 10.34375 3 12 C 3 13.65625 4.34375 15 6 15 C 6.742188 15 7.414063 14.726563 7.9375 14.28125 L 15.0625 18.4375 C 15.027344 18.625 15 18.804688 15 19 C 15 20.65625 16.34375 22 18 22 C 19.65625 22 21 20.65625 21 19 C 21 17.34375 19.65625 16 18 16 C 17.257813 16 16.585938 16.273438 16.0625 16.71875 L 8.9375 12.5625 C 8.972656 12.375 9 12.195313 9 12 C 9 11.804688 8.972656 11.625 8.9375 11.4375 L 16.0625 7.28125 C 16.585938 7.726563 17.257813 8 18 8 C 19.65625 8 21 6.65625 21 5 C 21 3.34375 19.65625 2 18 2 Z "/>
+                                </g>
+                            </svg>
+                        </div>
                     </div>
                 </button>
             </div>
@@ -24,14 +23,16 @@
                         <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_x }}" class="_214e9 b00q8">
                     </div>
                 </div>
-                <h2 class="_2DyJ3 _3duUm">{{ $post->title }}</h2>
+                <div class="_3DF9">
+                    <h2 class="_2DyJ3 _3duUm">{{ $post->title }}</h2>
+                </div>
             </a>
-            <h3 class="_2hvwD _3VB1o _3duUm _2L6V9">
+            <h3 class="_2hvwD _3VB1o _3duUm _2L6V9 _3DF9">
                 <span>
                     <span>{{ $post->summary }}</span>
                 </span>
             </h3>
-            <a class="_2hvwD _1kgtA"
+            <a class="_2hvwD _1kgtA _3DF9"
                href="{{ route('post.show', ['slug' => $post->slug]) }}">
                 Read story
             </a>
