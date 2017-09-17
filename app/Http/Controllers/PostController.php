@@ -55,12 +55,9 @@ class PostController extends Controller
         $post->views += 1;
         $post->save();
 
-        $url = $request->fullUrl();
-
         return view('post.show', [
             'comments' => json_encode($post->comments->toArray(), JSON_HEX_APOS),
             'post' => $post,
-            'url' => $url,
             'siblingPosts' => $siblingPosts,
             'fanbases' => $fanbases,
             'trendingPosts' => $trendingPosts,

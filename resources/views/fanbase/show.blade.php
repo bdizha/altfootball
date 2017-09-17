@@ -202,70 +202,6 @@
                             <span class="_2OsaV">{{ $fanbase->views  }}M</span>
                         </div>
                     </div>
-                    <div class="DZpu2">
-                        <div class="_2K1XH">
-                            <div class="xPwPM">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                     width="21" height="16" viewBox="0 0 21 16" class="_3QdfW">
-                                    <defs>
-                                        <path id="a" d="M3.74.82h3v6h-6v-6z"></path>
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path stroke="#00AFFF" stroke-linecap="round" stroke-linejoin="round"
-                                              stroke-width="1.5" d="M11.69 2.33H.88V14.8h18V9.3"
-                                            ></path>
-                                        <path stroke="#00AFFF" stroke-linecap="round" stroke-linejoin="round"
-                                              d="M3.32 4.78l6.31 6.3 4.91-4.91M3.32 12.35l3.8-3.79M16.43 12.35l-4.04-4.03"
-                                            ></path>
-                                        <g transform="translate(14 -.66)">
-                                            <mask id="b" fill="#fff">
-                                                <use xlink:href="#a"></use>
-                                            </mask>
-                                            <path fill="#00AFFF"
-                                                  d="M6 3.07H4.5v-1.5a.75.75 0 0 0-1.5 0v1.5H1.5a.75.75 0 0 0 0 1.5H3v1.5a.75.75 0 1 0 1.5 0v-1.5H6a.75.75 0 0 0 0-1.5"
-                                                  mask="url(#b)"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <span class="_2i-9F">Invite friends</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" class="j5L9g"
-                                   >
-                                    <path d="M0 0l6 6.99L12 0h-1.87L6 4.82 1.86 0"></path>
-                                </svg>
-                            </div>
-                        </div>
-                        <button class="_22wPT">
-                            <div class="xPwPM">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                     width="21" height="16" viewBox="0 0 21 16" class="_3QdfW">
-                                    <defs>
-                                        <path id="a" d="M3.74.82h3v6h-6v-6z"></path>
-                                    </defs>
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path stroke="#00AFFF" stroke-linecap="round" stroke-linejoin="round"
-                                              stroke-width="1.5" d="M11.69 2.33H.88V14.8h18V9.3"
-                                            ></path>
-                                        <path stroke="#00AFFF" stroke-linecap="round" stroke-linejoin="round"
-                                              d="M3.32 4.78l6.31 6.3 4.91-4.91M3.32 12.35l3.8-3.79M16.43 12.35l-4.04-4.03"
-                                            ></path>
-                                        <g transform="translate(14 -.66)">
-                                            <mask id="b" fill="#fff">
-                                                <use xlink:href="#a"></use>
-                                            </mask>
-                                            <path fill="#00AFFF"
-                                                  d="M6 3.07H4.5v-1.5a.75.75 0 0 0-1.5 0v1.5H1.5a.75.75 0 0 0 0 1.5H3v1.5a.75.75 0 1 0 1.5 0v-1.5H6a.75.75 0 0 0 0-1.5"
-                                                  mask="url(#b)"></path>
-                                        </g>
-                                    </g>
-                                </svg>
-                                <span class="_2i-9F">Invite friends</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="7" class="j5L9g"
-                                   >
-                                    <path d="M0 0l6 6.99L12 0h-1.87L6 4.82 1.86 0"></path>
-                                </svg>
-                            </div>
-                        </button>
-                    </div>
                     <div class="hXKYZ">
                         <div class="_2qTcl">ALTFOOTBALL Members</div>
                         <div class="_2qTcl">Email</div>
@@ -353,7 +289,7 @@
                             <div class="BiosM">
                                 <p class="A8eM3">Create a post_</p>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" class="_1IqO5">
-                                    <g fill="none" fill-rule="evenodd" stroke="rgba(0, 8, 39, 0.96)">
+                                    <g fill="none" fill-rule="evenodd" stroke="rgba(103, 143, 185, 0.4)">
                                         <path stroke-width="4" d="M26.95 52c13.77 0 24.94-11.2 24.94-25S40.72 2 26.95 2C13.17 2 2 13.2 2 27s11.17 25 24.95 25z"></path>
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M26.96 17.46l-.03 18.98m-9.47-9.48l18.97-.02"></path>
                                     </g>

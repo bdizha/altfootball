@@ -32,7 +32,7 @@ class NewsJob implements ShouldQueue
         //
     }
 
-    public function _blank($html){
+    public function insertTarget($html){
         return str_replace("href=", "target='_blank' href=", $html);
     }
 
@@ -67,8 +67,9 @@ class NewsJob implements ShouldQueue
         $html = str_replace("<p><br></p>", "", $html);
         $html = str_replace("<p><br></p>", "", $html);
         $html = str_replace("<p>&nbsp;</p>", "", $html);
+        $html = str_replace("<br><br>", "<br>", $html);
         $html = str_replace("style=", "data-style=", $html);
 
-        return $html;
+        return $this->insertTarget($html);
     }
 }

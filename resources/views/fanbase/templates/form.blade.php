@@ -6,7 +6,7 @@
                     <div class="_2p4GS _1Kdw6">
                         <button class="_2L8qZ _1FQjf" data-bind="click: closeFanbaseForm">
                             <svg width="18" height="18" viewBox="0 0 18 18">
-                                <g stroke="rgba(0, 8, 39, 0.96)" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                <g stroke="rgba(103, 143, 185, 0.4)" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
                                     <path d="M2.368 2.282L16.51 16.425M16.218 2.282L2.075 16.425"></path>
                                 </g>
                             </svg>
@@ -30,7 +30,7 @@
                                             </div>
                                         </div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" class="W8lfs" data-bind="css: { _1NaRT: imageFileData().dataURL }">
-                                            <g fill="none" fill-rule="evenodd" stroke="rgba(0, 8, 39, 0.96)">
+                                            <g fill="none" fill-rule="evenodd" stroke="rgba(103, 143, 185, 0.4)">
                                                 <path stroke-width="2" d="M18.46 36c9.65 0 17.46-7.84 17.46-17.5S28.11 1 18.46 1A17.48 17.48 0 0 0 1 18.5C1 28.16 8.82 36 18.46 36z"></path>
                                                 <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                                     <path d="M18.47 11.83l-.02 13.28M11.82 18.48l13.28-.02"></path>
@@ -60,7 +60,7 @@
                                             </div>
                                         </div>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37" class="W8lfs" data-bind="css: { _1NaRT: coverFileData().dataURL }">
-                                            <g fill="none" fill-rule="evenodd" stroke="rgba(0, 8, 39, 0.96)">
+                                            <g fill="none" fill-rule="evenodd" stroke="rgba(103, 143, 185, 0.4)">
                                                 <path stroke-width="2" d="M18.46 36c9.65 0 17.46-7.84 17.46-17.5S28.11 1 18.46 1A17.48 17.48 0 0 0 1 18.5C1 28.16 8.82 36 18.46 36z"></path>
                                                 <g stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                                                     <path d="M18.47 11.83l-.02 13.28M11.82 18.48l13.28-.02"></path>

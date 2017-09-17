@@ -98,39 +98,34 @@ class NewsGoalJob extends NewsJob
 
                                 $content = "";
                                 $data->filter('.body p')->each(function (Crawler $node, $i) use (&$content) {
-                                    $content .= "<p>{$this->_blank($node->html())}</p>";
+                                    $content .= "<p>{$node->html()}</p>";
                                 });
 
-                                $content = str_replace("<p><br></p>", "", $content);
-                                $post['content'] = str_replace("<p></p>", "", $content);
-
-//                                dd($post);
-
+                                $post['content'] = $this->cleanHtml($content);
+                                $post['summary'] = substr($post['summary'], 0, 255);
 
                                 if (empty($p->id)) {
                                     $p = Post::create($post);
-
-                                    echo 'Inserted post: ' . $post['title'] . "\n";
-//                                    Log::notice('Inserted post: ' . $post['title']);
+                                    echo 'Inserted post: ' . $p->slug . "\n";
 
                                 } else {
+                                    $p->content = $post['content'];
                                     $p->title = $post['title'];
+                                    $p->credit = $post['credit'];
+                                    $p->image = $post['image'];
                                     $p->created_at = Carbon::parse($post['date']);
                                     $p->save();
 
                                     echo "updated::: {$p->slug} \n";
                                 }
 
-                                $fb = FanbasePost::where("post_id", $p->id)
-                                    ->where("fanbase_id", $this->fanbase_id)
-                                    ->first();
+                                FanbasePost::where("post_id", $p->id)
+                                    ->delete();
 
-                                if (empty($fb->id)) {
-                                    FanbasePost::create([
-                                        'post_id' => $p->id,
-                                        'fanbase_id' => $this->fanbase_id
-                                    ]);
-                                }
+                                FanbasePost::create([
+                                    'post_id' => $p->id,
+                                    'fanbase_id' => $this->fanbase_id
+                                ]);
                             }
                         }
                     }

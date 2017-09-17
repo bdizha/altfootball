@@ -27,17 +27,4 @@
             </span>
          </span>
     </div>
-    <div class="_3qkzJ">
-        <p class="_2B25b">
-            <span class="_2jvdf">{{ $post->published_at }}</span>
-        </p>
-        <p class="_2B25b">
-            <span class="_2jvdf">
-                {{ $post->reading_time }}
-            </span>
-        </p>
-        <p class="TATrW">
-            {{ ++$post->views }}K Views
-        </p>
-    </div>
 </div>

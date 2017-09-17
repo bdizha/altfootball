@@ -34,7 +34,7 @@ class Post extends Model
 
     protected $wordsPerMinute = 170;
 
-    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'has_dribble', 'fanbase', 'reading_time', 'small_x', 'thumb_x', 'big_x'];
+    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'has_dribble', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x'];
 
     public function getPublishedAtAttribute()
     {
@@ -49,6 +49,11 @@ class Post extends Model
     public function getSluggableString()
     {
         return $this->title;
+    }
+
+    public function getShareUrlAttribute()
+    {
+        return route('post.show', ['slug' => $this->slug]);
     }
 
     public function getHasDribbleAttribute()

@@ -52,8 +52,8 @@ class FetchContent extends Command
      */
     public function handle()
     {
-        dispatch(new JuventusJob());
         dispatch(new HitcJob());
+        dispatch(new JuventusJob());
         dispatch(new NewsBreatheChelseaJob());
         dispatch(new NewsGoalJob());
         dispatch(new News90MinJob());

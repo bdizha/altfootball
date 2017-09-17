@@ -102,12 +102,11 @@ class HitcJob extends NewsJob
                             $data->filter('.post-content p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
 
                                 if(strpos($node->html(), 'guardian') === false){
-                                    $content .= "<p>{$this->_blank($node->html())}</p>";
+                                    $content .= "<p>{$node->html()}</p>";
                                 }
                             });
 
-                            $this->cleanHtml($content);
-                            $post['content'] = $content;
+                            $post['content'] = $this->cleanHtml($content);
                             $post['summary'] = substr($summary, 0, 255);
 
                             if (empty($p->id)) {

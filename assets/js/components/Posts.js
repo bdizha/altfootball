@@ -19,6 +19,8 @@ $(function () {
                 page: self.page()
             };
 
+            self.page(self.page() + 2);
+
             $.ajax("/posts", {
                 data: params,
                 type: "get",
@@ -31,7 +33,7 @@ $(function () {
                         self.posts.push(post);
                     });
 
-                    self.page(self.page() + 2);
+                    $("._34-mC").on('click', toogleShare);
                 }
             });
         };

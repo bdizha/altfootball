@@ -110,15 +110,12 @@ class JuventusJob extends NewsJob
                             $content = "";
                             $data->filter('.module-content .text')->each(function (Crawler $node, $i) use (&$content, &$summary) {
                                 $node->filter('p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-                                    $content .= "<p>{$this->_blank($node->html())}</p>";
+                                    $content .= "<p>{$node->html()}</p>";
                                 });
                             });
 
-                            $content = str_replace("<p><br></p>", "", $content);
-                            $post['content'] = $content;
+                            $post['content'] = $this->cleanHtml($content);
                             $post['summary'] = substr($summary, 0, 255);
-
-//                        dd($post);
 
                             if (empty($p->id)) {
                                 $p = Post::create($post);
@@ -134,10 +131,6 @@ class JuventusJob extends NewsJob
 
                                 echo "updated::: {$p->slug} \n";
                             }
-
-//                            dd($p);
-
-//                        dd($p);
 
                             FanbasePost::where("post_id", $p->id)
                                 ->delete();

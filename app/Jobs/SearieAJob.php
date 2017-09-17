@@ -108,7 +108,7 @@ class SearieAJob extends NewsJob
                         $data->filter('.article__body')->each(function (Crawler $node, $i) use (&$content, &$summary) {
                             if ($i == 0) {
                                 $node->filter('p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-                                    $content .= "<p>{$this->_blank($node->html())}</p>";
+                                    $content .= "<p>{$node->html()}</p>";
                                 });
                             }
                         });
