@@ -118,7 +118,7 @@ class BarcelonaFC extends NewsJob
                             }
                         });
 
-                        $content = str_replace("<p><br></p>", "", $content);
+                        $content = $this->cleanHtml($content);
                         $post['content'] = $content;
                         $post['summary'] = substr($summary, 0, 255);
 

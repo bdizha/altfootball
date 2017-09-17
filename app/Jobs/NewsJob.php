@@ -62,4 +62,13 @@ class NewsJob implements ShouldQueue
 
         return trim($date);
     }
+
+    public function cleanHtml($html){
+        $html = str_replace("<p><br></p>", "", $html);
+        $html = str_replace("<p><br></p>", "", $html);
+        $html = str_replace("<p>&nbsp;</p>", "", $html);
+        $html = str_replace("style=", "data-style=", $html);
+
+        return $html;
+    }
 }
