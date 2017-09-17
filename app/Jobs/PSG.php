@@ -66,7 +66,7 @@ class PSG extends NewsJob
 
                         $user['first_name'] = $nameArr[0];
                         $user['last_name'] = $nameArr[1];
-                        $user['nickname'] = $nameArr[0];
+                        $user['nickname'] = "www.en.psg.fr";
                         $user['email'] = strtolower($nameArr[0]) . "@gmail.com";
                         $user['password'] = bcrypt($user['email']);
 
@@ -85,6 +85,8 @@ class PSG extends NewsJob
 
                         $post = array();
 
+
+                        $post['credit'] = $this->domain;
                         $post['summary'] = substr($data->filter('.article--headline')->text(), 0, 255);
                         $post['external_url'] = $url;
                         $post['user_id'] = $u->id;
@@ -122,6 +124,7 @@ class PSG extends NewsJob
                             } else {
                                 $p->title = $post['title'];
                                 $p->content = $post['content'];
+                                $p->credit = $post['credit'];
                                 $p->created_at = Carbon::parse($post['date']);
                                 $p->save();
 

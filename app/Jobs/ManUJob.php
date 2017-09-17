@@ -59,7 +59,7 @@ class ManUJob extends NewsJob
                     if ($data->filter('.newsstory')->count()) {
                         $user['first_name'] = "MUFC";
                         $user['last_name'] = "News";
-                        $user['nickname'] = 'Manu';
+                        $user['nickname'] = 'www.manutd.com';
                         $user['email'] = strtolower($user['nickname']) . "@manutd.com";
                         $user['password'] = bcrypt($user['email']);
 
@@ -78,6 +78,7 @@ class ManUJob extends NewsJob
 
                         $post = array();
 
+                        $post['credit'] = $this->domain;
                         $post['external_url'] = $url;
                         $post['user_id'] = $u->id;
 
@@ -128,6 +129,7 @@ class ManUJob extends NewsJob
                             } else {
                                 $p->content = $post['content'];
                                 $p->title = $post['title'];
+                                $p->credit = $post['credit'];
                                 $p->image = $post['image'];
                                 $p->created_at = Carbon::parse($post['date']);
                                 $p->save();

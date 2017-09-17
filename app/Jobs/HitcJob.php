@@ -62,7 +62,7 @@ class HitcJob extends NewsJob
                         if ($data->filter('meta[property="og:image"]')->count()) {
                             $user['first_name'] = "HITC";
                             $user['last_name'] = "Official";
-                            $user['nickname'] = 'HITC';
+                            $user['nickname'] = "www.hitc.com";
                             $user['bio'] = 'Here is the city';
                             $user['email'] = strtolower($user['nickname']) . "@hitc.com";
                             $user['password'] = bcrypt($user['email']);
@@ -82,6 +82,8 @@ class HitcJob extends NewsJob
                             }
 
                             $post = array();
+
+                            $post['credit'] = $this->domain;
 
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
@@ -117,6 +119,7 @@ class HitcJob extends NewsJob
                             } else {
                                 $p->content = $post['content'];
                                 $p->title = $post['title'];
+                                $p->credit = $post['credit'];
                                 $p->image = $post['image'];
                                 $p->created_at = Carbon::parse($post['date']);
                                 $p->save();

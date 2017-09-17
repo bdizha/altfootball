@@ -59,7 +59,7 @@ class LiverpoolJob extends NewsJob
                         if ($data->filter('.post-body')->count()) {
                             $user['first_name'] = "Liverpool";
                             $user['last_name'] = "News";
-                            $user['nickname'] = 'Reds';
+                            $user['nickname'] = 'www.liverpoolfc.com';
                             $user['email'] = strtolower($user['nickname']) . "@liverpoolfc.com";
                             $user['password'] = bcrypt($user['email']);
 
@@ -78,6 +78,7 @@ class LiverpoolJob extends NewsJob
 
                             $post = array();
 
+                            $post['credit'] = $this->domain;
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
@@ -115,6 +116,7 @@ class LiverpoolJob extends NewsJob
                                     $p->content = $post['content'];
                                     $p->title = $post['title'];
                                     $p->image = $post['image'];
+                                    $p->credit = $post['credit'];
                                     $p->created_at = Carbon::parse($post['date']);
                                     $p->save();
 

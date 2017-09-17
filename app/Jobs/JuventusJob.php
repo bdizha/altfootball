@@ -63,7 +63,7 @@ class JuventusJob extends NewsJob
                         if ($data->filter('meta[property="og:image"]')->count()) {
                             $user['first_name'] = "Juventus";
                             $user['last_name'] = "Official";
-                            $user['nickname'] = 'Sky';
+                            $user['nickname'] = 'www.juventus.com';
                             $user['email'] = strtolower($user['nickname']) . "@juventus.com";
                             $user['password'] = bcrypt($user['email']);
                             $user['image'] = "http://www.destinyman.com/wp-content/uploads/2016/04/Football-Juventus-.jpg";
@@ -83,6 +83,7 @@ class JuventusJob extends NewsJob
 
                             $post = array();
 
+                            $post['credit'] = $this->domain;
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
@@ -126,6 +127,7 @@ class JuventusJob extends NewsJob
                             } else {
                                 $p->content = $post['content'];
                                 $p->title = $post['title'];
+                                $p->credit = $post['credit'];
                                 $p->image = $post['image'];
                                 $p->created_at = Carbon::parse($post['date']);
                                 $p->save();

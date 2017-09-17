@@ -105,7 +105,9 @@
                         </picture>
                     </div>
                 </div>
-                <p class="_2cAm4">CREDIT: <a target="_blank" href="http://{{ $post->credit }}">{{ $post->credit }}</a></p>
+                @if(!empty($post->credit))
+                    <p class="_2cAm4">CREDIT: <a target="_blank" href="{{ $post->credit }}">{{ $post->user->nickname }}</a></p>
+                @endif
             </div>
             <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
                 <div>
