@@ -137,7 +137,7 @@ class JuventusJob extends NewsJob
 
 //                            dd($p);
 
-                        dd($p);
+//                        dd($p);
 
                             FanbasePost::where("post_id", $p->id)
                                 ->delete();
