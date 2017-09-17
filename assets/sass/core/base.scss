@@ -3374,6 +3374,11 @@ form {
     box-shadow: none;
     border-top: 1px solid rgba(103, 143, 185, 0.4);
   }
+  &:hover{
+    ._HY8RT{
+      fill: $color_green;
+    }
+  }
 }
 
 ._1sUHj {
@@ -3484,7 +3489,7 @@ form {
   justify-content: space-between;
   align-items: flex-start;
   padding: 18px 18px 0;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 508px) {
@@ -3596,7 +3601,7 @@ form {
 
 ._2DyJ3 {
   font-size: 22px;
-  line-height: 22px;
+  line-height: 18px;
 }
 
 ._3VB1o {
@@ -3628,6 +3633,7 @@ form {
   margin: 18px 18px 0;
   ._3duUm{
     margin-bottom: 0;
+    margin-top: 10px;
   }
 }
 
@@ -8777,7 +8783,7 @@ div._3bqe5 {
 
 ._HY8RT{
   position: absolute;
-  fill: $color_green;
+  fill: $color_light_blue;
 }
 
 @media screen and (max-width: 1236px) {

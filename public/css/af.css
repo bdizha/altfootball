@@ -3680,6 +3680,10 @@ form ._2Kdch {
   border-top: 1px solid rgba(103, 143, 185, 0.4);
 }
 
+.p32Iu:hover ._HY8RT {
+  fill: #57d100;
+}
+
 ._1sUHj {
   transform: translateY(100px) translateZ(0);
   opacity: 0;
@@ -3793,7 +3797,7 @@ form ._2Kdch {
   -ms-flex-align: start;
   align-items: flex-start;
   padding: 18px 18px 0;
-  margin-bottom: 18px;
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 508px) {
@@ -3919,7 +3923,7 @@ form ._2Kdch {
 
 ._2DyJ3 {
   font-size: 22px;
-  line-height: 22px;
+  line-height: 18px;
 }
 
 ._3VB1o {
@@ -3956,6 +3960,7 @@ form ._2Kdch {
 
 ._3DF9 ._3duUm {
   margin-bottom: 0;
+  margin-top: 10px;
 }
 
 .FnwOT {
@@ -9491,7 +9496,7 @@ div._3bqe5 > div {
 
 ._HY8RT {
   position: absolute;
-  fill: #57d100;
+  fill: #00AFFF;
 }
 
 @media screen and (max-width: 1236px) {

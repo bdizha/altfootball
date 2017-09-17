@@ -30,12 +30,6 @@
                                 </span>
                             </span>
                         </div>
-                        <div class="_3qkzJ">
-                            <p class="_2B25b">
-                                <span class="_2jvdf" data-bind="text: published_at"></span>
-                            </p>
-                            <p class="TATrW" data-bind="text: views + ' views'"></p>
-                        </div>
                     </div>
                     <div class="r9rA5">
                         <button class="_2KGdb _34-mC">
@@ -55,6 +49,15 @@
                             </div>
                         </div>
                         <div class="_3DF9">
+                            <div class="_3qkzJ">
+                                <p class="_2B25b">
+                                    <span class="_2jvdf" data-bind="text: published_at"></span>
+                                </p>
+                                <p class="_2B25b">
+                                    <span class="_2jvdf" data-bind="text: reading_time"></span>
+                                </p>
+                                <p class="TATrW" data-bind="text: views + ' views'"></p>
+                            </div>
                             <h2 class="_2DyJ3 _3duUm" data-bind="text: title"></h2>
                         </div>
                     </a>
