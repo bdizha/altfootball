@@ -191,7 +191,7 @@
     height: 405px;
     padding-left: 66px;
     padding-right: 40px;
-    border-bottom: 1px solid #ebebeb
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4)
   }
 }
 
@@ -408,7 +408,7 @@
 ._10Rvu {
   display: flex;
   padding: 14px 18px;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
   flex: 0 0 100%;
   color: $color_dark;
 }
@@ -518,8 +518,8 @@
 
 ._1qM6O,._3cgGL {
   display: flex;
-  border-top: 1px solid #ebebeb;
-  border-left: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
+  border-left: 1px solid rgba(103, 143, 185, 0.4);
   padding: 14px 18px;
   flex-direction: column;
   justify-content: space-between;

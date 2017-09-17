@@ -14,7 +14,7 @@
                             </a>
                             <span class="_1NHvQ _3Xf-w">
                                 <a data-bind="attr: { href: '/u/' + user.slug }">
-                                   Jude
+                                    <!-- ko text: user.name --><!--/ko-->)
                                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy">
                                       <g fill="none" fill-rule="evenodd">
                                          <path fill="#57d100" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
@@ -54,14 +54,16 @@
                                 <img role="presentation" class="_214e9 b00q8" data-bind="attr: { src: small_x }">
                             </div>
                         </div>
-                        <h2 class="_2DyJ3 _3duUm" data-bind="text: title"></h2>
+                        <div class="_3DF9">
+                            <h2 class="_2DyJ3 _3duUm" data-bind="text: title"></h2>
+                        </div>
                     </a>
-                    <h3 class="_2hvwD _3VB1o _3duUm _2L6V9">
-                <span>
-                    <span data-bind="html: summary"></span>
-                </span>
+                    <h3 class="_2hvwD _3VB1o _3duUm _2L6V9 _3DF9">
+                        <span>
+                            <span data-bind="html: summary"></span>
+                        </span>
                     </h3>
-                    <a class="_2hvwD _1kgtA" data-bind="attr: { href: '/p/' + slug }">
+                    <a class="_2hvwD _1kgtA _3DF9" data-bind="attr: { href: '/p/' + slug }">
                         Read story
                     </a>
                 </div>

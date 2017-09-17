@@ -740,7 +740,7 @@ button {
 }
 
 ._359eg {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   padding: 18px 0;
   svg {
     margin-right: 18px;
@@ -1304,7 +1304,7 @@ form {
 
 @media screen and (min-width: 846px) {
   ._1jbho {
-    border-right: 1px solid #ebebeb;
+    border-right: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -1850,7 +1850,7 @@ form {
 .RgFHG {
   padding-bottom: 18px;
   margin: 18px 26px 0;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   display: flex;
   align-items: center;
 }
@@ -2272,7 +2272,7 @@ form {
   position: absolute;
   padding: 14px 0;
   background-color: #fff;
-  border: 1px solid #ebebeb;
+  border: 1px solid rgba(103, 143, 185, 0.4);
   box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.09);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -2537,7 +2537,7 @@ form {
   display: flex;
   justify-content: space-between;
   padding-bottom: 14px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 ._3R967 {
@@ -3343,10 +3343,10 @@ form {
 @media screen and (min-width: 846px) {
   ._3gFQj {
     &:first-child {
-      padding-right: 14px;
+      padding-right: 7px;
     }
     &:last-child {
-      padding-left: 14px;
+      padding-left: 7px;
     }
   }
 }
@@ -3364,7 +3364,7 @@ form {
 
 .p32Iu {
   transition: transform 0.4s cubic-bezier(0, 0.42, 0, 1), opacity 0.3s ease-out;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
   background: $color_white;
   -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
@@ -3372,7 +3372,7 @@ form {
   .gEjmr {
     padding-bottom: 0;
     box-shadow: none;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -3483,7 +3483,7 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 26px 26px 0;
+  padding: 18px 18px 0;
   margin-bottom: 18px;
 }
 
@@ -3497,7 +3497,7 @@ form {
   font-size: 14px;
   line-height: 18px;
   ._3MJAj {
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid rgba(103, 143, 185, 0.4);
     margin-top: 14px;
     margin-bottom: 14px;
     padding: 18px 26px 0;
@@ -3521,11 +3521,11 @@ form {
 ._326aY {
   margin-top: 18px;
   margin-bottom: 18px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 ._8vnW9 {
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
   padding: 18px 26px;
   li {
     padding-bottom: 9px;
@@ -3561,8 +3561,8 @@ form {
 }
 
 ._35O2p {
-  border-top: 1px solid #ebebeb;
-  padding: 18px 22px;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
+  padding: 18px;
   margin-top: 18px;
 }
 
@@ -3625,8 +3625,7 @@ form {
 }
 
 ._3DF9{
-  margin: 18px 28px 0;
-
+  margin: 18px 18px 0;
   ._3duUm{
     margin-bottom: 0;
   }
@@ -3870,6 +3869,10 @@ form {
 ._3Xf-w ._1XNRF {
   font-size: 14px;
   line-height: 18px;
+  color: $color_light_blue;
+  &:hover{
+    color: $color_green;
+  }
 }
 
 ._2xn_m {
@@ -4417,7 +4420,7 @@ form {
   height: auto;
   width: 100%;
   background: #fff;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 @media screen and (max-width: 508px) {
@@ -5080,7 +5083,7 @@ form {
 
 @media screen and (max-width: 508px) {
   ._1KQuz {
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -5453,7 +5456,7 @@ form {
 
 ._3Phfs {
   background: #fff;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   height: 96px;
   width: 100%;
   padding: 22px;
@@ -6002,7 +6005,7 @@ form{
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid #ebebeb;
+  border: 1px solid rgba(103, 143, 185, 0.4);
   padding: 18px 26px;
   margin: 18px auto;
 }
@@ -6161,8 +6164,8 @@ form{
 }
 
 ._26DkX {
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   padding-bottom: 28px;
   ._1e4LX {
     margin-bottom: 9px;
@@ -6988,8 +6991,8 @@ form{
 @media screen and (max-width: 508px) {
   ._nbnx {
     border: 0;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid rgba(103, 143, 185, 0.4);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
     margin-bottom: 9px;
     margin-left: 0;
   }
@@ -7130,7 +7133,7 @@ form{
 
 ._1qO-x {
   display: flex;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   padding: 35px 0;
   width: 100%;
   &:first-child {
@@ -7216,7 +7219,7 @@ form{
   padding-top: 44px;
   background-color: #fff;
   .ODDw0 {
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -7430,7 +7433,7 @@ form{
   padding-top: 18px;
   padding-bottom: 14px;
   list-style: disc;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 ._2Es-V {
@@ -7659,7 +7662,7 @@ form{
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   padding: 14px;
   width: 100%;
   display: block;
@@ -7923,7 +7926,7 @@ form{
   text-transform: uppercase;
   font-size: 22px;
   line-height: 22px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   padding-bottom: 28px;
 }
 
@@ -8217,8 +8220,8 @@ div._3bqe5 {
 ._1zrW5 {
   padding: 0 22px;
   margin-left: 22px;
-  border-left: 1px solid #ebebeb;
-  border-right: 1px solid #ebebeb;
+  border-left: 1px solid rgba(103, 143, 185, 0.4);
+  border-right: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 @media screen and (max-width: 508px) {
@@ -8275,7 +8278,7 @@ div._3bqe5 {
   top: 96px;
   left: 0;
   right: 0;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   z-index: 6;
   &:after {
     display: block;
@@ -8592,7 +8595,7 @@ div._3bqe5 {
 
 .vrQ3d {
   position: relative;
-  border: 1px solid #ebebeb;
+  border: 1px solid rgba(103, 143, 185, 0.4);
   margin-bottom: 28px;
 }
 
@@ -8682,7 +8685,7 @@ div._3bqe5 {
   margin-right: auto;
   padding-top: 64px;
   background: #FFF;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
 }
 
@@ -8963,7 +8966,7 @@ div._3bqe5 {
   color: rgba(0, 8, 39, 0.5);
   font-size: 14px;
   line-height: 18px;
-  padding: 18px 0 9px;
+  padding: 18px;
   &:before {
     content: "- ";
   }
@@ -9388,7 +9391,7 @@ div._3bqe5 {
   left: 0;
   top: 96px;
   background: #fff;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   opacity: 0;
   font-size: 14px;
   line-height: 18px;
@@ -9892,7 +9895,7 @@ div._3bqe5 {
 ._1MHOe {
   position: relative;
   padding-bottom: 18px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   margin-bottom: 28px;
 }
 
@@ -10394,7 +10397,7 @@ div._3bqe5 {
       padding-bottom: 22px;
       margin-bottom: 0;
       box-shadow: none;
-      border-top: 1px solid #ebebeb;
+      border-top: 1px solid rgba(103, 143, 185, 0.4);
       &:last-child {
         padding-bottom: 0px;
       }
@@ -10974,7 +10977,7 @@ div._3bqe5 {
   line-height: 28px;
   text-transform: uppercase;
   margin-top: 14px;
-  filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 2px 5px rgba(103, 143, 185, 0.4));
 }
 
 @media screen and (max-width: 508px) {
@@ -11083,7 +11086,7 @@ div._3bqe5 {
     justify-content: space-between;
     margin: 0;
     padding: 9px 14px;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
     ._31RCK {
       margin: 9px 0 9px 18px;
       float: left;
@@ -11284,7 +11287,7 @@ div._3bqe5 {
     flex: 0 0 100%;
     flex-direction: row;
     padding: 10px 0;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid rgba(103, 143, 185, 0.4);
     max-width: 100%;
   }
 }
@@ -11292,15 +11295,15 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._3XlGZ {
     padding: 10px 0;
-    border-top: 1px solid #ebebeb;
-    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid rgba(103, 143, 185, 0.4);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
 .Pb65u {
   position: relative;
   padding-bottom: 18px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   padding: 14px;
   padding-left: 0;
   text-align: center;
@@ -11319,7 +11322,7 @@ div._3bqe5 {
   .Pb65u {
     flex: 1;
     border-bottom: 0;
-    border-right: 1px solid #ebebeb;
+    border-right: 1px solid rgba(103, 143, 185, 0.4);
     margin-bottom: 0;
     justify-content: center;
     display: flex;
@@ -12453,7 +12456,7 @@ div._3bqe5 {
 }
 
 ._3hdBv {
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
   position: relative;
   padding-top: 28px;
 }
@@ -13390,8 +13393,8 @@ div._3bqe5 {
       padding: 12px 18px;
     }
     &._36gJx {
-      border-top: 1px solid #ebebeb;
-      border-bottom: 1px solid #ebebeb;
+      border-top: 1px solid rgba(103, 143, 185, 0.4);
+      border-bottom: 1px solid rgba(103, 143, 185, 0.4);
       margin-bottom: 9px;
     }
   }
@@ -13664,7 +13667,7 @@ div._3bqe5 {
 }
 
 ._GSL7C{
-  background: #F2F2F2;
+  background: #F8F8F8;
   display: block;
   height: 36px;
   width: 36px;
@@ -13679,14 +13682,9 @@ div._3bqe5 {
     top: 8px;
   }
   &:hover{
-    background: rgba(0, 0, 0, 0.2);
+    background: #F0F0F0;
     -webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.26);
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.26);
-    svg{
-      path{
-        fill: $color_green;
-      }
-    }
   }
 }
 
@@ -14304,7 +14302,7 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._1gJri {
     padding: 9px 0;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -14647,7 +14645,7 @@ div._3bqe5 {
 }
 
 ._3FpSb {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   padding: 28px 0;
 }
 
@@ -14680,7 +14678,7 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._2xjah {
     padding-top: 18px;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -14791,7 +14789,7 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._2clUd {
     padding: 9px 0;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -14968,7 +14966,7 @@ div._3bqe5 {
   ._3ldas {
     margin: 0;
     padding: 18px 14px;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
     ._1SDQT {
       margin: 9px 0 9px 18px;
       float: left;
@@ -15349,7 +15347,7 @@ div._3bqe5 {
   .weBNu {
     background: #fff;
     color: rgba(0, 8, 39, .96);
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
     transition: all 0.1s linear 0.6s;
   }
 }
@@ -15504,7 +15502,7 @@ div._3bqe5 {
 ._10Rvu {
   display: flex;
   padding: 14px 18px;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
   flex: 0 0 100%;
 }
 
@@ -15608,8 +15606,8 @@ div._3bqe5 {
 
 ._1qM6O, ._3cgGL {
   display: flex;
-  border-top: 1px solid #ebebeb;
-  border-left: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
+  border-left: 1px solid rgba(103, 143, 185, 0.4);
   padding: 14px 18px;
   flex-direction: column;
   justify-content: space-between;
@@ -15674,7 +15672,7 @@ div._3bqe5 {
     flex: 0 0 100%;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #ebebeb;
+    border-top: 1px solid rgba(103, 143, 185, 0.4);
     ._6Jl0_ {
       padding-bottom: 6px;
     }
@@ -15722,7 +15720,7 @@ div._3bqe5 {
 
 ._2xfQr {
   margin: 0 22px;
-  border-top: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 @media screen and (max-width: 508px) {
@@ -16375,7 +16373,7 @@ div._3bqe5 {
     height: 405px;
     padding-left: 66px;
     padding-right: 40px;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -16601,7 +16599,7 @@ div._3bqe5 {
 ._341l1 {
   font-size: 14px;
   line-height: 18px;
-  border: 1px solid #ebebeb;
+  border: 1px solid rgba(103, 143, 185, 0.4);
   flex: 1;
   justify-content: center;
   margin: 0;
@@ -16737,8 +16735,8 @@ div._3bqe5 {
 
 ._1i-5m {
   padding: 18px 14px;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   font-size: 14px
 }
 
@@ -16752,7 +16750,7 @@ div._3bqe5 {
 
 ._23-G3 {
   padding: 14px 0;
-  border-bottom: 1px solid #ebebeb
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4)
 }
 
 @media screen and (max-width: 664px) {
@@ -16879,7 +16877,7 @@ div._3bqe5 {
   text-transform: uppercase;
   padding: 14px 0;
   margin: 0 14px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   cursor: pointer;
   font-size: 12px;
   line-height: 14px;
@@ -17279,8 +17277,8 @@ nav._1R2o8 {
 
 ._1i-5m {
   padding: 18px 14px;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid rgba(103, 143, 185, 0.4);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   font-size: 14px;
 }
 
@@ -17294,7 +17292,7 @@ nav._1R2o8 {
 
 ._23-G3 {
   padding: 14px 0;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 @media screen and (max-width: 664px) {
@@ -17407,7 +17405,7 @@ nav._1R2o8 {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: inset 0 -140px 80px -40px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 -140px 80px -40px rgba(103, 143, 185, 0.4);
   }
 }
 
@@ -17619,7 +17617,7 @@ nav._1R2o8 {
   text-transform: uppercase;
   padding: 14px 0;
   margin: 0 14px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   cursor: pointer;
   font-size: 12px;
   line-height: 14px;
@@ -17822,7 +17820,7 @@ nav._1R2o8 {
 
 .DZpu2 {
   padding: 0 14px;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 @media screen and (max-width: 664px) {
@@ -17843,7 +17841,7 @@ nav._1R2o8 {
   justify-content: space-between;
   align-items: center;
   padding: 0 14px;
-  border-left: 1px solid #ebebeb;
+  border-left: 1px solid rgba(103, 143, 185, 0.4);
   &:first-child {
     border-left: none;
   }

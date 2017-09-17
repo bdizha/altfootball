@@ -16,6 +16,7 @@ use App\Jobs\RealMadridJob;
 use App\Jobs\PremierLeagueJob;
 use App\Jobs\SearieAJob;
 use App\Jobs\JuventusJob;
+use App\Jobs\HitcJob;
 use Illuminate\Console\Command;
 
 class FetchContent extends Command
@@ -51,6 +52,8 @@ class FetchContent extends Command
      */
     public function handle()
     {
+        dispatch(new HitcJob());
+        dispatch(new NewsBreatheChelseaJob());
         dispatch(new NewsGoalJob());
         dispatch(new News90MinJob());
         dispatch(new SearieAJob());
