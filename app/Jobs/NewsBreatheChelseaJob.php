@@ -72,7 +72,7 @@ class NewsBreatheChelseaJob extends NewsJob
 
                             $user['first_name'] = $nameArr[0];
                             $user['last_name'] = $nameArr[1];
-                            $user['nickname'] = $nameArr[0];
+                            $user['nickname'] = "www.breathechelsea.com";
                             $user['email'] = strtolower($nameArr[0]) . "@breathechelsea.com";
                             $user['password'] = bcrypt($user['email']);
 
@@ -91,6 +91,7 @@ class NewsBreatheChelseaJob extends NewsJob
 
                             $post = array();
 
+                            $post['credit'] = $this->domain;
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
