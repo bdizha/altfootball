@@ -15,12 +15,7 @@
                             <span class="_1NHvQ _3Xf-w">
                                 <a data-bind="attr: { href: '/u/' + user.slug }">
                                     <!-- ko text: user.name --><!--/ko-->)
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy">
-                                      <g fill="none" fill-rule="evenodd">
-                                         <path fill="#57d100" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                         <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                      </g>
-                                   </svg>
+                                   @include('svg.approved')
                                 </a>
                                 <span>
                                    <span>
@@ -29,6 +24,16 @@
                                     <a class="_1XNRF" data-bind="attr: { href: '/f/' + fanbase.slug }, text: fanbase.name"></a>
                                 </span>
                             </span>
+                        </div>
+
+                        <div class="_3qkzJ">
+                            <p class="_2B25b">
+                                <span class="_2jvdf" data-bind="text: published_at"></span>
+                            </p>
+                            <p class="_2B25b">
+                                <span class="_2jvdf" data-bind="text: reading_time"></span>
+                            </p>
+                            <p class="TATrW" data-bind="text: views + ' views'"></p>
                         </div>
                     </div>
                     <div class="r9rA5">
@@ -49,15 +54,6 @@
                             </div>
                         </div>
                         <div class="_3DF9">
-                            <div class="_3qkzJ">
-                                <p class="_2B25b">
-                                    <span class="_2jvdf" data-bind="text: published_at"></span>
-                                </p>
-                                <p class="_2B25b">
-                                    <span class="_2jvdf" data-bind="text: reading_time"></span>
-                                </p>
-                                <p class="TATrW" data-bind="text: views + ' views'"></p>
-                            </div>
                             <h2 class="_2DyJ3 _3duUm" data-bind="text: title"></h2>
                         </div>
                     </a>
