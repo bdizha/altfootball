@@ -98,7 +98,10 @@ class HitcJob extends NewsJob
 
                             $content = "";
                             $data->filter('.post-content p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-                                $content .= "<p>{$node->html()}</p>";
+
+                                if(strpos($node->html(), 'guardian') === false){
+                                    $content .= "<p>{$node->html()}</p>";
+                                }
                             });
 
                             $content = str_replace("<p><br></p>", "", $content);
