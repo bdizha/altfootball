@@ -112,7 +112,7 @@ class PSG extends NewsJob
 
                             $content = "";
                             $data->filter('.article--body p')->each(function (Crawler $node, $i) use (&$content, &$summary){
-                                $content .= "<p>{$node->html()}</p>";
+                                $content .= "<p>{$this->_blank($node->html())}</p>";
                             });
 
                             $post['content'] = str_replace("<p><br></p>", "", $content);

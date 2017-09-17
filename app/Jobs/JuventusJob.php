@@ -110,7 +110,7 @@ class JuventusJob extends NewsJob
                             $content = "";
                             $data->filter('.module-content .text')->each(function (Crawler $node, $i) use (&$content, &$summary) {
                                 $node->filter('p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-                                    $content .= "<p>{$node->html()}</p>";
+                                    $content .= "<p>{$this->_blank($node->html())}</p>";
                                 });
                             });
 
@@ -134,6 +134,8 @@ class JuventusJob extends NewsJob
 
                                 echo "updated::: {$p->slug} \n";
                             }
+
+//                            dd($p);
 
 //                        dd($p);
 

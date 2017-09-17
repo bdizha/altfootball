@@ -125,7 +125,7 @@ class RealMadridJob extends NewsJob
                             $data->filter('.m_text_content p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
 
                                 if ($i > 0 || !empty($summary)) {
-                                    $content .= "<p>{$node->html()}</p>";
+                                    $content .= "<p>{$this->_blank($node->html())}</p>";
                                 }
 
                                 if (empty($summary)) {

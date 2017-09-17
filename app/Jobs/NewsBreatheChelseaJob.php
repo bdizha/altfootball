@@ -107,7 +107,7 @@ class NewsBreatheChelseaJob extends NewsJob
                                 $content = "";
                                 $data->filter('.et_pb_text p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
                                     if($i > 0){
-                                        $content .= "<p>{$node->html()}</p>";
+                                        $content .= "<p>{$this->_blank($node->html())}</p>";
                                     }
                                 });
 

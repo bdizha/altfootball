@@ -32,6 +32,10 @@ class NewsJob implements ShouldQueue
         //
     }
 
+    public function _blank($html){
+        return str_replace("href=", "target='_blank' href=", $html);
+    }
+
     public function cleanUpDate($string){
         $months = [
             "Jan" => "January",

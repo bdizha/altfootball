@@ -98,7 +98,7 @@ class NewsGoalJob extends NewsJob
 
                                 $content = "";
                                 $data->filter('.body p')->each(function (Crawler $node, $i) use (&$content) {
-                                    $content .= "<p>{$node->text()}</p>";
+                                    $content .= "<p>{$this->_blank($node->html())}</p>";
                                 });
 
                                 $content = str_replace("<p><br></p>", "", $content);
