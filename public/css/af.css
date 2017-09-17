@@ -2524,7 +2524,7 @@ form ._2Kdch {
   padding-left: 12px;
   height: auto;
   margin-bottom: 0;
-  placeholder-color: rgba(0, 8, 39, 0.5);
+  border-radius: 18px;
 }
 
 .Q4jwH {
@@ -9707,6 +9707,10 @@ div._3bqe5 > div {
   left: 10px;
 }
 
+._W78U {
+  background: #FFFFFF;
+}
+
 ._1PQQ2 {
   font-size: 22px;
   line-height: 22px;
@@ -15093,6 +15097,7 @@ div._3bqe5 > div {
 .ra77F {
   position: relative;
   width: 100%;
+  border-radius: 18px;
 }
 
 ._3TYH2 {

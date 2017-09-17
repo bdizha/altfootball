@@ -2308,7 +2308,7 @@ form {
   padding-left: 12px;
   height: auto;
   margin-bottom: 0;
-  placeholder-color: rgba(0, 8, 39, 0.5);
+  border-radius: 18px;
 }
 
 .Q4jwH {
@@ -8981,6 +8981,10 @@ div._3bqe5 {
   }
 }
 
+._W78U{
+  background: $color_white;
+}
+
 ._1PQQ2 {
   font-size: 22px;
   line-height: 22px;
@@ -13999,6 +14003,7 @@ div._3bqe5 {
 ._3TYH2, .ra77F {
   position: relative;
   width: 100%;
+  border-radius: 18px;
 }
 
 ._3TYH2 {
