@@ -417,10 +417,6 @@ $(function () {
             self.errors.showAllMessages(true);
 
             var $this = $("._34JK span._1u7op");
-
-            console.log(self.email.length > 0);
-            console.log(!$this.is(':visible') + ">>>>");
-
             self.canGo(!$this.is(':visible'));
         };
 
@@ -434,9 +430,6 @@ $(function () {
             }
 
             self.showAllMessages(true);
-
-            console.log(self.errors().length);
-            console.log("something...");
         };
 
         self.proceed = function () {
