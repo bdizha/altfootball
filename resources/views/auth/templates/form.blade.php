@@ -6,7 +6,7 @@
         <h1 class="bWRAm">The only place where everything is fallball</h1>
         <div class="_34JK">
             <input class="_12n1y"
-                   data-bind="value: email, event: { valueUpdate: 'afterkeyup', focus: focusEmail, blur: blurEmail }"
+                   data-bind="value: email, valueUpdate: 'afterkeyup', event: { focus: focusEmail, blur: blurEmail }"
                    placeholder="EMAIL ADDRESS" name="email" type="email" title="Email is invalid."/>
         </div>
         <button class="M13JP _1geYT" type="submit"data-bind="enable: canGo()">Continue</button>

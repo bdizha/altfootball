@@ -8,7 +8,7 @@ $(function () {
         errorMessageClass: "_1u7op",
         errorClass: '',
         errorsAsTitle: true,
-        parseInputAttributes: false,
+        parseInputAttributes: true,
         messagesOnModified: true,
         decorateElementOnModified: true,
         decorateInputElement: true

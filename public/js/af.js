@@ -411,9 +411,10 @@ $(function () {
 
         self.canGo = ko.observable(true);
 
+        self.errors = ko.validation.group(self);
+
         self.showAllMessages = function () {
-            console.log("showAllMessages");
-            JoinFormViewModel.errors.showAllMessages();
+            self.errors.showAllMessages(true);
 
             var $this = $("._34JK span._1u7op");
 
@@ -432,13 +433,15 @@ $(function () {
                 self.focusedEmail(false);
             }
 
-            self.showAllMessages();
+            self.showAllMessages(true);
 
-            console.log(JoinFormViewModel.errors().length);
+            console.log(self.errors().length);
             console.log("something...");
         };
 
         self.proceed = function () {
+            self.email.isModified(true);
+
             self.showAllMessages();
 
             if (self.canGo()) {
@@ -459,12 +462,9 @@ $(function () {
                         console.log(response);
                     }
                 });
-
             }
         }
     };
-
-    JoinFormViewModel.errors = ko.validation.group(JoinFormViewModel);
 
     ko.components.register('join-form', {
         viewModel: JoinFormViewModel,
@@ -872,7 +872,7 @@ $(function () {
         errorMessageClass: "_1u7op",
         errorClass: '',
         errorsAsTitle: true,
-        parseInputAttributes: false,
+        parseInputAttributes: true,
         messagesOnModified: true,
         decorateElementOnModified: true,
         decorateInputElement: true
