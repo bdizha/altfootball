@@ -340,8 +340,8 @@ $(function () {
         self.follower = ko.observable(params.follower);
         self.classes = ko.observable({
             items: 'zrN-a _2P1mw _1MC-v _1h78h',
-            fanbase: '_2qvTq _1MC-v _1h78h _2yZ_n _1odcZ',
-            user: 'b9xa- _8GOLs _1h78h'
+            fanbase: 'FYAkp _2qvTq _1MC-v _1h78h _2yZ_n _8eFus',
+            user: 'b9xa- _8GOLs _1h78h',
         });
         self.isActive = ko.observable(Boolean(params.follower.is_active));
         self.isInactive = ko.observable(!Boolean(params.follower.is_active));

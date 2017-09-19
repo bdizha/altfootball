@@ -216,9 +216,6 @@
                             <a class="zxDoM _3TznZ _3rBNC _3vwB1 _2sG6-"  href="/f/{{ $fanbase->slug }}">
                                 Posts
                             </a>
-                            <a class="_3UwsA zxDoM _3TznZ _3rBNC" href="javascript:void();">
-                                <span>&nbsp;</span>
-                            </a>
                         </nav>
                     </div>
                 </div>
