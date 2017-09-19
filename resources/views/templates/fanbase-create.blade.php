@@ -87,7 +87,7 @@
                         </div>
                     </div>
                     <button class="_1NluH">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 20 20">
                             <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
                                 <circle cx="9" cy="9" r="9" stroke="rgba(103, 143, 185, 0.4)" stroke-width="1.5"></circle>
                                 <path fill="rgba(103, 143, 185, 0.4)" d="M8.74 3.64c-.69 0-1.18.49-1.18 1.16 0 .66.49 1.15 1.18 1.15.67 0 1.16-.49 1.16-1.15 0-.67-.5-1.16-1.16-1.16zm-.97 3.12V14h1.92V6.76H7.77z"></path>

@@ -18,6 +18,8 @@ elixir.config.assetsPath = 'assets/';
 elixir(function(mix) {
     mix.sass(path + '.scss');
 
+    mix.version('public/css/af.css');
+
     mix.copy([
         'assets/js/node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
     ], 'public/css/vendors.css');
@@ -41,5 +43,5 @@ elixir(function(mix) {
         'assets/js/ko-components.js',
         'assets/js/ko-root.js'
 
-    ], 'public/js/' + path + '.js');
+    ], 'public/js/' + path + '.js').version('public/js/' + path + '.js');
 });
