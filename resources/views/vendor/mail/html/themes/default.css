@@ -6,7 +6,7 @@ body, body *:not(html):not(style):not(br):not(tr):not(code) {
 }
 
 body {
-    color: rgba(0, 8, 39, 0.9);
+    color: rgba(0, 8, 39, 0.86);
     height: 100%;
     hyphens: auto;
     line-height: 1.4;
@@ -63,7 +63,7 @@ h3 {
 }
 
 p {
-    color: rgba(0, 8, 39, 0.9);
+    color: rgba(0, 8, 39, 0.86);
     font-size: 16px;
     line-height: 1.5em;
     margin-top: 0;
@@ -184,7 +184,7 @@ img {
 }
 
 .table td {
-    color: rgba(0, 8, 39, 0.9);
+    color: rgba(0, 8, 39, 0.86);
     font-size: 15px;
     line-height: 18px;
     padding: 10px 0;

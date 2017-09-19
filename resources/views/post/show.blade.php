@@ -33,13 +33,6 @@
                     <div class="_1-sfe _29LD-">
                         <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
                         <div class="dqbp5">
-                            <div class="_25jNX _3PwOQ">
-                                <div class="N3r_f">
-                                    <div class="_38L6D" style="padding-bottom: 100%;">
-                                        <img alt="" role="presentation" src="{{ $post->user->thumb_x }}" class="_214e9 b00q8">
-                                    </div>
-                                </div>
-                            </div>
                             @include('post.meta')
                         </div>
                     </div>

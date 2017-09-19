@@ -214,7 +214,7 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
-  border: 2px solid rgba(103, 143, 185, 0.4);
+  border: 2px solid rgba(0, 8, 39, 0.86);
   padding: 18px;
   flex: 0 0 196px;
   text-align: left
@@ -1880,7 +1880,7 @@
   padding-left: 12px;
   height: 44px;
   margin-bottom: 0;
-  placeholder-color: #666
+  background: rgba(103, 143, 185, 0.15);
 }
 
 .Q4jwH {
@@ -2585,7 +2585,7 @@
 }
 
 ._3ovQm[disabled] {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   cursor: default
 }
 
@@ -2653,7 +2653,7 @@
 ._3cmsY {
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
-  border: 2px solid rgba(103, 143, 185, 0.4);
+  border: 2px solid rgba(0, 8, 39, 0.86);
   cursor: pointer;
   padding: 9px 18px;
   margin-bottom: 28px;
@@ -3366,7 +3366,7 @@
 }
 
 ._2jvdf {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
   line-height: 1
 }
@@ -3378,7 +3378,7 @@
 .TATrW {
   display: flex;
   align-items: center;
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 12px
 }
 
@@ -4885,7 +4885,7 @@
 }
 
 ._3UGMt {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   width: 76px;
   height: 55px;
   font-family: DriveTribe,Helvetica,sans-serif;
@@ -5435,7 +5435,7 @@
   line-height: 18px;
   text-transform: uppercase;
   text-transform: none;
-  border: 2px solid rgba(103, 143, 185, 0.4);
+  border: 2px solid rgba(0, 8, 39, 0.86);
   padding: 14px;
   margin: 44px 0 22px;
   width: 100%
@@ -5669,7 +5669,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   text-align: center;
   margin-top: 14px;
   margin-bottom: 12px;
@@ -5710,7 +5710,7 @@
 
 @media screen and (max-width: 846px) {
   ._26DkX {
-    border-bottom:12px solid rgba(103, 143, 185, 0.2);
+    border-bottom:12px solid rgba(103, 143, 185, 0.15);
     padding-bottom: 22px
   }
 }
@@ -5986,7 +5986,7 @@
   position: relative;
   width: 24px;
   height: 24px;
-  border: 2px solid rgba(103, 143, 185, 0.4);
+  border: 2px solid rgba(0, 8, 39, 0.86);
   cursor: pointer
 }
 
@@ -6490,7 +6490,7 @@
 ._2AwjV {
   display: block;
   background: #fff;
-  border: 2px solid rgba(103, 143, 185, 0.4);
+  border: 2px solid rgba(0, 8, 39, 0.86);
   color: rgba(103, 143, 185, 0.4)
 }
 
@@ -6800,7 +6800,7 @@
 }
 
 .BB62- {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
   line-height: 18px;
   padding-top: 2px
@@ -6942,7 +6942,7 @@
 .ZQJT_ {
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   padding-top: 2px
 }
 
@@ -6991,7 +6991,7 @@
 
 ._3Njiy {
   display: flex;
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   align-items: center;
   font-size: 12px;
   line-height: 12px;
@@ -7191,7 +7191,7 @@
 }
 
 .BNBMP {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
   line-height: 12px;
   padding-top: 18px;
@@ -7283,7 +7283,7 @@
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   margin: 12px 0 9px
 }
 
@@ -7678,7 +7678,7 @@ div._3bqe5,div._3bqe5>div {
 
 ._3HP-Q {
   margin-left: 4px;
-  color: #666
+  font-weight: normal;
 }
 
 .kKUQF {
@@ -8465,7 +8465,7 @@ div._3bqe5,div._3bqe5>div {
 }
 
 ._2cAm4 {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
   line-height: 18px;
   padding: 18px 0 9px
@@ -9166,7 +9166,7 @@ div._3bqe5,div._3bqe5>div {
     flex:0 0 40px;
     width: 40px;
     height: 40px;
-    border: 2px solid rgba(103, 143, 185, 0.4)
+    border: 2px solid rgba(0, 8, 39, 0.8)
   }
 
   .e_0uO:after {
@@ -9493,7 +9493,7 @@ div._3bqe5,div._3bqe5>div {
 }
 
 ._3cGe8 {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 14px;
   line-height: 18px;
   padding: 14px 0
@@ -10460,7 +10460,7 @@ div._3bqe5,div._3bqe5>div {
 }
 
 ._1fuqz {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   font-size: 12px;
   text-transform: uppercase
 }
@@ -11772,7 +11772,7 @@ div._3bqe5,div._3bqe5>div {
   font-size: 18px;
   line-height: 22px;
   background: #fff;
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   padding-right: 0;
   padding-left: 0;
   text-transform: uppercase
@@ -12153,7 +12153,7 @@ div._3bqe5,div._3bqe5>div {
 }
 
 ._1ssnS {
-  border: 2px solid rgba(103, 143, 185, 0.4);
+  border: 2px solid rgba(0, 8, 39, 0.86);
   margin-bottom: 14px
 }
 
@@ -12298,7 +12298,7 @@ div._3bqe5,div._3bqe5>div {
 
 ._105Oj {
   display: block;
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   margin-top: 4px
 }
 
@@ -14349,7 +14349,7 @@ div._3bqe5,div._3bqe5>div {
 
 ._346nx {
   color: rgba(103, 143, 185, 0.4);
-  border: 2px solid rgba(103, 143, 185, 0.4)
+  border: 2px solid rgba(0, 8, 39, 0.8)
 }
 
 .l5jFn {
@@ -14419,7 +14419,7 @@ div._3bqe5,div._3bqe5>div {
 ._2reVj {
   width: 118px;
   height: 53px;
-  border: 2px solid rgba(103, 143, 185, 0.4);
+  border: 2px solid rgba(0, 8, 39, 0.86);
   float: right;
   text-transform: uppercase;
   font-size: 14px;
@@ -15395,7 +15395,7 @@ div._3bqe5,div._3bqe5>div {
 }
 
 ._2z54n {
-  color: rgba(0, 8, 39, 0.5);
+  color: rgba(0, 0, 0, 0.4);
   display: flex
 }
 
