@@ -9,7 +9,7 @@
                                 <div class="_1yAXU">
                                     <div style="padding-bottom:100%;" class="_38L6D">
                                         <img role="presentation" class="_214e9 b00q8" data-bind="attr: { src: user.thumb_x }">
-                                        <div class="_HY8RT" style="width: calc(100% + 10px); height: calc(100% + 10px); top:-5px; left:-5px">
+                                        <div class="_HY8RT">
                                             <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M3.44615311,11.6601601 C6.57294867,5.47967718 12.9131553,1.5 19.9642857,1.5 C27.0154162,1.5 33.3556228,5.47967718 36.4824183,11.6601601 L37.3747245,11.2087295 C34.0793076,4.69494641 27.3961457,0.5 19.9642857,0.5 C12.5324257,0.5 5.84926381,4.69494641 2.55384689,11.2087295 L3.44615311,11.6601601 Z"></path><path d="M36.4824183,28.2564276 C33.3556228,34.4369105 27.0154162,38.4165876 19.9642857,38.4165876 C12.9131553,38.4165876 6.57294867,34.4369105 3.44615311,28.2564276 L2.55384689,28.7078582 C5.84926381,35.2216412 12.5324257,39.4165876 19.9642857,39.4165876 C27.3961457,39.4165876 34.0793076,35.2216412 37.3747245,28.7078582 L36.4824183,28.2564276 Z"></path>
                                             </svg>
@@ -24,7 +24,7 @@
                                 </a>
                                 <span>
                                    <span>
-                                       posted in <br>
+                                       shared in <br>
                                    </span>
                                     <a class="_1XNRF" data-bind="attr: { href: '/f/' + fanbase.slug }, text: '@' + fanbase.slug"></a>
                                 </span>
@@ -104,12 +104,15 @@
                         </span>
                     </a>
                     <div class="_8m6WC rF2QA">
-                        <span class="_35FcZ">
+                        <span class="_35FcZ _13DRk">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" width="24" height="24">
                                 <g id="surface1">
                                     <path fill="rgba(103, 143, 185, 0.6)" d="M 5 7 L 0 12 L 4 12 L 4 25 L 21 25 L 19 23 L 6 23 L 6 12 L 10 12 Z M 9 7 L 11 9 L 24 9 L 24 20 L 20 20 L 25 25 L 30 20 L 26 20 L 26 7 Z "/>
                                 </g>
                             </svg>
+                            <span class="_34IO">
+                                <!--ko text: comments.length --><!--/ko-->
+                            </span>
                         </span>
                     </div>
                     <dribbles params='count: dribbles.length, type_id: id, has_dribble: has_dribble, type: "post"'></dribbles>

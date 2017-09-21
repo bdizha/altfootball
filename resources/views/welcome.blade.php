@@ -79,7 +79,7 @@
                                                 <span class="_3bbo_">
                                                     {{ str_limit($post->title, 60) }}
                                                 </span>
-                                                <span class="FMK9E">{{ str_limit($post->summary, 30) }}</span>
+                                                <span class="FMK9E">{{ str_limit($post->summary, 28) }}</span>
                                             </div>
                                         </div>
                                     </a>

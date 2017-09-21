@@ -147,7 +147,7 @@
                 <div>
                     <nav class="_3GkHt _11gfn">
                         <button class="zxDoM undefined">
-                            Posted
+                            shared
                         </button>
                         <button class="_3UwsA zxDoM">
                             dribbled

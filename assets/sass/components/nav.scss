@@ -32,7 +32,7 @@
       border-radius: 0;
       &:hover,
       &:focus {
-        border: 2px solid $color_green;
+        border: 1px solid $color_green;
         background: $color_green;
         color: $color_white;
         &:before {

@@ -434,7 +434,7 @@ $height: auto;
   height: 10px;
   width: 10px;
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 12px;
   background-color: lighten($topColor, 10%);
   margin-right: 1px;
 }
@@ -733,7 +733,7 @@ pre[class*="language-"] {
       }
       text-align: center;
       background-color: #fff;
-      border-radius: 50%;
+      border-radius: 12px;
       box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
       height: 24px;
       width: 24px;

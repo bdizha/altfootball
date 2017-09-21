@@ -306,7 +306,7 @@
 .noUi-vertical .noUi-handle {
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: 12px;
   box-shadow: none;
   background-color: #26A69A;
   border: none;
@@ -338,7 +338,7 @@
   top: -17px;
   left: -2px;
   background-color: #26A69A;
-  border-radius: 50%;
+  border-radius: 12px;
   transition: border-radius .25s cubic-bezier(0.215, 0.610, 0.355, 1.000),
   transform .25s cubic-bezier(0.215, 0.610, 0.355, 1.000);
   transform: scale(.5) rotate(-45deg);
@@ -377,7 +377,7 @@
   top: -17px;
   left: -2px;
   background-color: #26A69A;
-  border-radius: 50%;
+  border-radius: 12px;
   transition: border-radius .25s cubic-bezier(0.215, 0.610, 0.355, 1.000),
   transform .25s cubic-bezier(0.215, 0.610, 0.355, 1.000);
   transform: scale(.5) rotate(-45deg);

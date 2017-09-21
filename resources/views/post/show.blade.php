@@ -101,27 +101,14 @@
                                 <div class="_1Gyo9 HkQZ5" data-stamp="{{ $post->fanbase->stamp }}"></div>
                             </a>
                             <h2 class="_1BxZT">{{ $post->title }}</h2>
-                            <div class="_2D3SJ _2qjq9 _29Okg">
-                                <a class="_2Oo2A rF2QA" href="/p/{{ $post->slug }}#tackles">
-                                    <span class="_35FcZ">
-                                        Tackles
-                                    </span>
-                                        <span class="_3HP-Q">
-                                        ({{ $tacklesCount }})
-                                    </span>
-                                </a>
-                                <div class="_8m6WC rF2QA">
-                                    <span class="_35FcZ">Repost</span>
-                                </div>
-                                <dribbles params='count: {!! $dribblesCount !!}, type_id: {{ $postId }}, has_dribble: {{ $post->has_dribble }}, type: "post"'></dribbles>
-                            </div>
+                            @include('post.actions')
                             <span class="_1NHvQ _2DoBA">
                                 <a href="/u/{{ $post->user->slug }}">
                                     {{ $post->user->name }}
                                 </a>
                                 <span>
                                     <span>
-                                        posted in <br>
+                                        shared in <br>
                                     </span>
                                     <a class="_1XNRF"
                                        href="/f/{{ $post->fanbase->slug }}">
