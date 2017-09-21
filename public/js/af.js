@@ -435,6 +435,8 @@ $(function () {
         self.proceed = function () {
             self.email.isModified(true);
 
+            self.isSubmitted(true);
+
             self.showAllMessages();
 
             if (self.canGo()) {
@@ -449,8 +451,6 @@ $(function () {
                     type: "post",
                     contentType: "application/json",
                     success: function (response) {
-                        self.isSubmitted(true);
-
                         self.canGo(true);
                         console.log(response);
                     }

@@ -80,16 +80,13 @@
                         </span>
                     </h3>
                     <div class="_35O2p _29Okg _46OYH">
-                        <a class="_2hvwD _1kgtA" data-bind="attr: { href: '/p/' + slug }">
-                            Read story
+                        <a class="_2Oo2A _2hvwD" data-bind="attr: { href: '/p/' + slug }">
+                            <span class="_2jvdf" data-bind="text: reading_time"></span>
                         </a>
+                        <div class="_8m6WC rF2QA">
+                            <span class="_2jvdf" data-bind="text: published_at"></span>
+                        </div>
                         <div class="_1_VaP">
-                            <p class="_2B25b">
-                                <span class="_2jvdf" data-bind="text: published_at"></span>
-                            </p>
-                            <p class="_2B25b">
-                                <span class="_2jvdf" data-bind="text: reading_time"></span>
-                            </p>
                             <p class="TATrW" data-bind="text: views + ' views'"></p>
                         </div>
                     </div>
