@@ -3709,6 +3709,55 @@ form ._2Kdch {
   fill: #57d100;
 }
 
+dribbles {
+  width: calc(33% - 20px);
+  text-align: right;
+  height: 24px;
+}
+
+dribbles:hover path {
+  fill: #ED0027;
+}
+
+dribbles:hover ._34IO {
+  color: #ED0027;
+}
+
+.rF2QA {
+  display: inline-block;
+  height: 24px;
+}
+
+._35FcZ:hover path {
+  fill: #00AFFF;
+}
+
+._35FcZ:hover ._34IO {
+  color: #00AFFF;
+}
+
+._8m6WC:hover path {
+  fill: #57d100;
+}
+
+._8m6WC:hover ._34IO {
+  color: #57d100;
+}
+
+._13DRk {
+  position: relative;
+  padding-right: 20px;
+}
+
+._13DRk ._34IO {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  color: rgba(103, 143, 185, 0.6);
+  font-size: 16px;
+  font-weight: 700;
+}
+
 ._1sUHj {
   transform: translateY(100px) translateZ(0);
   opacity: 0;
@@ -8898,7 +8947,7 @@ div._3bqe5 > div {
 }
 
 ._35FcZ {
-  display: inline;
+  display: inline-block;
   word-wrap: normal;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
@@ -8928,7 +8977,7 @@ div._3bqe5 > div {
 }
 
 ._2Oo2A {
-  min-width: 92px;
+  min-width: calc(33% - 20px);
   text-align: left;
 }
 
@@ -9922,6 +9971,12 @@ div._3bqe5 > div {
 
 ._1l_wG dribbles button:first-child {
   margin-left: 14px;
+}
+
+._1l_wG ._24GTO {
+  margin-top: 0;
+  padding: 0;
+  border: none;
 }
 
 @media screen and (max-width: 846px) {

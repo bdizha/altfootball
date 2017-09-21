@@ -40,16 +40,7 @@
                 <div class="_1Fx1P _1iE2V _1Ov3j">
                     <div class="_1-sfe CDTi0">
                         <div class="_1l_wG _29Okg">
-                            <a class="_2Oo2A rF2QA" href="/p/{{ $post->slug }}#tackles">
-                                <span class="_35FcZ">
-                                    Tackles
-                                </span>
-                                <span class="_3HP-Q">
-                                    ({{ $tacklesCount }})
-                                </span>
-                            </a>
-                            <div class="_8m6WC rF2QA"><span class="_35FcZ">Forward</span></div>
-                            <dribbles params='count: {!! $dribblesCount !!}, type_id: {{ $postId }}, has_dribble: {{ $post->has_dribble }}, type: "post"'></dribbles>
+                            @include('post.actions')
                         </div>
                         <div class="_3o2ca">
                             <a class="_2Q0fU p1Di1" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($post->share_url) }}" target="_blank">
