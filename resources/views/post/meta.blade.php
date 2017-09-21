@@ -22,7 +22,7 @@
                    posted in <br>
                </span>
                <a class="_1XNRF" href="/f/{{ $post->fanbase->slug }}">
-                 {{ $post->fanbase->name }}
+                 {{ '@' . $post->fanbase->slug }}
                </a>
             </span>
          </span>

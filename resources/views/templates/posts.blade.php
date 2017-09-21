@@ -26,7 +26,7 @@
                                    <span>
                                        posted in <br>
                                    </span>
-                                    <a class="_1XNRF" data-bind="attr: { href: '/f/' + fanbase.slug }, text: fanbase.name"></a>
+                                    <a class="_1XNRF" data-bind="attr: { href: '/f/' + fanbase.slug }, text: '@' + fanbase.slug"></a>
                                 </span>
                             </span>
                         </div>
