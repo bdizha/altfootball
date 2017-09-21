@@ -176,7 +176,7 @@ button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 input::-moz-focus-inner {
@@ -853,7 +853,7 @@ form {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -867,7 +867,7 @@ form {
 
 .N3r_f {
   background: #f8f8f8;
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -1176,7 +1176,7 @@ form {
 
 ._21web {
   border: 1px solid rgba(103, 143, 185, 0.4);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -1187,7 +1187,7 @@ form {
 }
 
 .faM3p {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1OkWe {
@@ -1198,7 +1198,7 @@ form {
 }
 
 ._3-rkf {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1CeIM {
@@ -1232,7 +1232,7 @@ form {
 ._31TRT {
   padding: 18px 28px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .vwhZ_ {
@@ -1672,7 +1672,7 @@ form {
   align-items: center;
   transition: all 0.1s linear;
   content: attr(data-stamp);
-  border-radius: 12px;
+  border-radius: 0px;
   &:after {
     content: attr(data-stamp);
     font-family: DriveTribe, Helvetica, sans-serif;
@@ -1921,7 +1921,7 @@ form {
   display: flex;
   height: 100%;
   margin-bottom: 14px;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(103, 143, 185, 0.15);
   &:last-child {
     margin-bottom: 0;
@@ -2383,7 +2383,7 @@ form {
 ._1Zj5n {
   width: 22px;
   height: 22px;
-  border-radius: 12px;
+  border-radius: 0px;
   background: #fff;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: flex;
@@ -3410,7 +3410,7 @@ form {
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
   .gEjmr {
     padding-bottom: 0;
     box-shadow: none;
@@ -3954,7 +3954,7 @@ dribbles {
     content: "";
     width: 2px;
     height: 2px;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
@@ -3997,7 +3997,7 @@ dribbles {
     height: 36px;
     display: inline-block;
     vertical-align: middle;
-    border-radius: 12px;
+    border-radius: 100%;
     overflow: hidden;
     margin-left: 4px;
   }
@@ -6048,7 +6048,7 @@ form {
   margin: 22px 0px;
   width: 100%;
   background: rgba(6, 33, 54, 0.5);
-  border-radius: 12px;
+  border-radius: 0px;
   &:first-child {
     margin-top: 44px;
   }
@@ -6070,7 +6070,7 @@ form {
   font-size: 14px;
   line-height: 14px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
   &[disabled] {
     opacity: 0.3;
   }
@@ -6663,7 +6663,7 @@ form {
   display: inline-block;
   text-transform: none;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._150di {
@@ -7590,7 +7590,7 @@ form {
     content: "";
     width: 2px;
     height: 2px;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
@@ -7860,7 +7860,7 @@ form {
     content: "";
     width: 2px;
     height: 2px;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
@@ -7911,7 +7911,7 @@ form {
     content: "";
     width: 2px;
     height: 2px;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: rgba(0, 0, 0, 0.4);
   }
 }
@@ -8830,11 +8830,7 @@ div._3bqe5 {
   background: $color_white;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
-  border-radius: 12px;
-  img,
-  ._23p6h{
-    border-radius: 12px;
-  }
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -8933,7 +8929,7 @@ div._3bqe5 {
   height: calc(100% + 4px);
   top: -4px;
   left: 0px;
-  border-radius: 12px;
+  border-radius: 100%;
 }
 
 @media screen and (max-width: 1236px) {
@@ -9635,7 +9631,7 @@ div._3bqe5 {
 
 ._1Xbrb, ._3tkuf {
   background-color: rgba(0, 8, 39, 0.86);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   color: #f8f8f8;
 }
@@ -9671,7 +9667,7 @@ div._3bqe5 {
 ._1yV5F {
   text-align: center;
   padding: 12px 40px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._2KK_J {
@@ -10712,7 +10708,7 @@ div._3bqe5 {
   width: 586px;
   margin-left: 12px;
   border: 1px solid rgba(103, 143, 185, 0.15);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   &:hover {
     img {
@@ -10854,7 +10850,7 @@ div._3bqe5 {
   margin-left: 12px;
   height: 170px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0px;
   &:first-child {
     margin-left: 0;
   }
@@ -10966,7 +10962,7 @@ div._3bqe5 {
   border-width: 3px;
   width: 52px;
   height: 52px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .HkQZ5:after {
@@ -11194,7 +11190,7 @@ div._3bqe5 {
   width: 30px;
   height: 30px;
   flex: 0 0 30px;
-  border-radius: 12px;
+  border-radius: 0px;
   align-items: center;
   justify-content: center;
   margin-right: 12px;
@@ -12176,7 +12172,7 @@ div._3bqe5 {
     position: relative;
     &:before {
       border: 3px solid #fff;
-      border-radius: 12px;
+      border-radius: 0px;
       content: "";
       height: 66px;
       width: 66px;
@@ -12338,7 +12334,7 @@ div._3bqe5 {
   margin: 0 9px 0 0;
   padding: 13px 22px;
   display: block;
-  border-radius: 12px;
+  border-radius: 0px;
   white-space: nowrap;
   transition: all .1s ease-out;
   color: rgba(0, 8, 39, 0.86);
@@ -12443,7 +12439,7 @@ div._3bqe5 {
 ._166mk {
   background: rgba(0, 8, 39, 0.86);
   color: #fff;
-  border-radius: 12px;
+  border-radius: 0px;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -13022,7 +13018,7 @@ div._3bqe5 {
   display: block;
   margin-bottom: 14px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 508px) {
@@ -13851,7 +13847,7 @@ div._3bqe5 {
   height: 30px;
   width: 30px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 100%;
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -14178,7 +14174,7 @@ div._3bqe5 {
 ._3TYH2, .ra77F {
   position: relative;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._3TYH2 {
@@ -14515,7 +14511,7 @@ div._3bqe5 {
 }
 
 ._2LIIc {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: flex;
   justify-content: center;
@@ -15007,7 +15003,7 @@ div._3bqe5 {
 }
 
 ._1k78U {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: flex;
   justify-content: center;
@@ -15957,7 +15953,7 @@ div._3bqe5 {
   height: 66px;
   flex: 0 0 66px;
   border: 2px solid #fff;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 846px) {
@@ -16095,7 +16091,7 @@ div._3bqe5 {
   height: 50px;
   width: 50px;
   border: 2px solid #f8f8f8;
-  border-radius: 12px;
+  border-radius: 0px;
   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.28));
   svg {
     height: 24px;
@@ -16817,7 +16813,7 @@ div._3bqe5 {
   position: absolute;
   top: -248px;
   left: 0;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 4px solid $color_white;
 }
 

@@ -218,7 +218,7 @@ button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 input::-moz-focus-inner {
@@ -939,7 +939,7 @@ form#fanbase-form .b00q8 {
   height: 100%;
   transform-origin: 25% 3%;
   transition: all 0.4s;
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -953,7 +953,7 @@ form#fanbase-form .b00q8 {
 
 .N3r_f {
   background: #f8f8f8;
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -1249,7 +1249,7 @@ form ._2Kdch {
 
 ._21web {
   border: 1px solid rgba(103, 143, 185, 0.4);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -1260,7 +1260,7 @@ form ._2Kdch {
 }
 
 .faM3p {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1OkWe {
@@ -1271,7 +1271,7 @@ form ._2Kdch {
 }
 
 ._3-rkf {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1CeIM {
@@ -1308,7 +1308,7 @@ form ._2Kdch {
 ._31TRT {
   padding: 18px 28px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .vwhZ_ {
@@ -1796,7 +1796,7 @@ form ._2Kdch {
   align-items: center;
   transition: all 0.1s linear;
   content: attr(data-stamp);
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1Gyo9:after {
@@ -2067,7 +2067,7 @@ form ._2Kdch {
   display: flex;
   height: 100%;
   margin-bottom: 14px;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
@@ -2591,7 +2591,7 @@ form ._2Kdch {
 ._1Zj5n {
   width: 22px;
   height: 22px;
-  border-radius: 12px;
+  border-radius: 0px;
   background: #fff;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: -ms-flexbox;
@@ -3703,7 +3703,7 @@ form ._2Kdch {
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .p32Iu .gEjmr {
@@ -4293,7 +4293,7 @@ dribbles:hover ._34IO {
   content: "";
   width: 2px;
   height: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -4339,7 +4339,7 @@ dribbles:hover ._34IO {
   height: 36px;
   display: inline-block;
   vertical-align: middle;
-  border-radius: 12px;
+  border-radius: 100%;
   overflow: hidden;
   margin-left: 4px;
 }
@@ -6538,7 +6538,7 @@ form ._12n1y {
   margin: 22px 0px;
   width: 100%;
   background: rgba(6, 33, 54, 0.5);
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._12n1y:first-child {
@@ -6562,7 +6562,7 @@ form ._12n1y {
   font-size: 14px;
   line-height: 14px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .M13JP[disabled] {
@@ -7206,7 +7206,7 @@ form ._12n1y {
   display: inline-block;
   text-transform: none;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._150di {
@@ -8190,7 +8190,7 @@ form ._12n1y {
   content: "";
   width: 2px;
   height: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -8488,7 +8488,7 @@ form ._12n1y {
   content: "";
   width: 2px;
   height: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -8543,7 +8543,7 @@ form ._12n1y {
   content: "";
   width: 2px;
   height: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -9537,12 +9537,7 @@ div._3bqe5 > div {
   background: #FFFFFF;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
-  border-radius: 12px;
-}
-
-.j-W_D img,
-.j-W_D ._23p6h {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -9642,7 +9637,7 @@ div._3bqe5 > div {
   height: calc(100% + 4px);
   top: -4px;
   left: 0px;
-  border-radius: 12px;
+  border-radius: 100%;
 }
 
 @media screen and (max-width: 1236px) {
@@ -10381,7 +10376,7 @@ div._3bqe5 > div {
 ._1Xbrb,
 ._3tkuf {
   background-color: rgba(0, 8, 39, 0.86);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   color: #f8f8f8;
 }
@@ -10422,7 +10417,7 @@ div._3bqe5 > div {
 ._1yV5F {
   text-align: center;
   padding: 12px 40px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._2KK_J {
@@ -11514,7 +11509,7 @@ div._3bqe5 > div {
   width: 586px;
   margin-left: 12px;
   border: 1px solid rgba(103, 143, 185, 0.15);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -11657,7 +11652,7 @@ div._3bqe5 > div {
   margin-left: 12px;
   height: 170px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._2cP6X:first-child {
@@ -11778,7 +11773,7 @@ div._3bqe5 > div {
   border-width: 3px;
   width: 52px;
   height: 52px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .HkQZ5:after {
@@ -12022,7 +12017,7 @@ div._3bqe5 > div {
   height: 30px;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
-  border-radius: 12px;
+  border-radius: 0px;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
@@ -13123,7 +13118,7 @@ div._3bqe5 > div {
 
   ._2_Gw9:before {
     border: 3px solid #fff;
-    border-radius: 12px;
+    border-radius: 0px;
     content: "";
     height: 66px;
     width: 66px;
@@ -13309,7 +13304,7 @@ div._3bqe5 > div {
   margin: 0 9px 0 0;
   padding: 13px 22px;
   display: block;
-  border-radius: 12px;
+  border-radius: 0px;
   white-space: nowrap;
   transition: all .1s ease-out;
   color: rgba(0, 8, 39, 0.86);
@@ -13417,7 +13412,7 @@ div._3bqe5 > div {
 ._166mk {
   background: rgba(0, 8, 39, 0.86);
   color: #fff;
-  border-radius: 12px;
+  border-radius: 0px;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -14019,7 +14014,7 @@ div._3bqe5 > div {
   display: block;
   margin-bottom: 14px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 508px) {
@@ -14919,7 +14914,7 @@ div._3bqe5 > div {
   height: 30px;
   width: 30px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 100%;
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -15269,7 +15264,7 @@ div._3bqe5 > div {
 .ra77F {
   position: relative;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._3TYH2 {
@@ -15633,7 +15628,7 @@ div._3bqe5 > div {
 }
 
 ._2LIIc {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: -ms-flexbox;
   display: flex;
@@ -16182,7 +16177,7 @@ div._3bqe5 > div {
 }
 
 ._1k78U {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: -ms-flexbox;
   display: flex;
@@ -17206,7 +17201,7 @@ div._3bqe5 > div {
   -ms-flex: 0 0 66px;
   flex: 0 0 66px;
   border: 2px solid #fff;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 846px) {
@@ -17355,7 +17350,7 @@ div._3bqe5 > div {
   height: 50px;
   width: 50px;
   border: 2px solid #f8f8f8;
-  border-radius: 12px;
+  border-radius: 0px;
   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.28));
 }
 
@@ -18150,7 +18145,7 @@ div._3bqe5 > div {
   position: absolute;
   top: -248px;
   left: 0;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 4px solid #FFFFFF;
 }
 
