@@ -8321,13 +8321,13 @@ form ._12n1y {
 }
 
 .gEjmr p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
 }
 
 .gEjmr p a,
 .gEjmr p span {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
 }
 
@@ -11287,11 +11287,10 @@ div._3bqe5 > div {
 }
 
 ._1lisf {
-  font-size: 22px;
+  font-size: 24px;
   line-height: 22px;
-  padding-top: 44px;
+  padding-top: 0;
   padding-bottom: 28px;
-  border-top: 4px solid rgba(103, 143, 185, 0.4);
 }
 
 .jwlFt {
@@ -11321,7 +11320,7 @@ div._3bqe5 > div {
 ._1zwKC {
   width: 100%;
   margin-right: auto;
-  margin-top: 88px;
+  margin-top: 44px;
   max-width: 740px;
   padding-left: 22px;
   padding-right: 22px;
@@ -11389,7 +11388,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 22px;
-  padding: 24px;
+  padding: 24px 0;
 }
 
 @media screen and (max-width: 508px) {
@@ -15302,18 +15301,6 @@ div._3bqe5 > div {
 
 ._3TYH2:after {
   display: none;
-}
-
-@media screen and (max-width: 846px) {
-  ._3TYH2 {
-    height: 39px;
-  }
-}
-
-@media screen and (max-width: 508px) {
-  ._3TYH2 {
-    height: 32px;
-  }
 }
 
 .l4oHd {
