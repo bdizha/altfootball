@@ -29,8 +29,6 @@
                             Twitter
                         </a>
                     </div>
-                    <div class="rTjpd" style="transform: translateX(281.5px) rotate(45deg); top: -7px;">
-                    </div>
                 </div>
             </div>
         </div>
@@ -44,25 +42,18 @@
                 <div class="_3DF9">
                     <h2 class="_2DyJ3 _3duUm">{{ $post->title }}</h2>
                 </div>
+                <div class="_8m6WC rF2QA">
+                    <span class="_2jvdf">{{ 'Approx. ' . $post->published_at }}</span>
+                </div>
             </a>
             <h3 class="_35O2p _3VB1o _3duUm _2L6V9">
                 <span>
                     <span>{{ $post->summary }}</span>
+                    <a class="_1kgtA _2Oo2A" href="{{ route('post.show', ['slug' => $post->slug]) }}">
+                        {{ $post->reading_time }}
+                    </a>
                 </span>
             </h3>
-            <div class="_35O2p _29Okg _46OYH">
-                <a class="_1kgtA _2Oo2A" href="{{ route('post.show', ['slug' => $post->slug]) }}">
-                    {{ $post->reading_time }}
-                </a>
-                <div class="_8m6WC rF2QA">
-                    <span class="_2jvdf">{{ $post->published_at }}</span>
-                </div>
-                <div class="_1_VaP">
-                    <p class="TATrW">
-                        {{ ++$post->views }}K Views
-                    </p>
-                </div>
-            </div>
         </div>
         @include('post.actions')
         <comments params='comments: {!! $post->limited_comments !!}, type_id: {{ $post->id }}, level: 0, root: $root, class: "items"'></comments>

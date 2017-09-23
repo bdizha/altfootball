@@ -252,11 +252,11 @@
   .circle {
     width: 200%;
     height: 100%;
-    border-width: 3px; /* STROKEWIDTH */
+    border-width: 2px; /* STROKEWIDTH */
     border-style: solid;
     border-color: inherit;
     border-bottom-color: transparent !important;
-    border-radius: 0px;
+    border-radius: 0;
     -webkit-animation: none;
     animation: none;
     position: absolute;

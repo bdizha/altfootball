@@ -63,7 +63,7 @@ form p:last-child {
   &.tabbed:focus + label:after {
     transform: scale(1);
     border: 0;
-    border-radius: 0px;
+    border-radius: 0;
     box-shadow: 0 0 0 10px rgba(0,0,0,.1);
     background-color: rgba(0,0,0,.1);
   }
@@ -146,7 +146,7 @@ form p:last-child {
     width: 20px;
     background-color: transparent;
     border: 2px solid $radio-empty-color;
-    top: 0px;
+    top: 0;
     z-index: 0;
   }
 

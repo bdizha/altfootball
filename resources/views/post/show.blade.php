@@ -177,25 +177,25 @@
                         <div class="_3Cj79 _1geYT">Get more</div>
                     </div>
                 </div>
+                <div>
+                    <div id="fb-root"></div>
+                    <div class="_3G-jr">Like us on facebook</div>
+                    <div class="_3Z0E3">
+                        <img src="/images/logo.png" alt="AltFootball" class="_1aThB">
+                        <div class="_3GhRl">
+                            <a class="zzDw5" href="https://www.facebook.com/altfootballdotcom/" rel="nofollow">ALTFOOTBALL</a>
+                            <div class="fb-like _1kDAA fb_iframe_widget"
+                                 data-href="https://www.facebook.com/altfootballdotcom" data-layout="button"
+                                 data-action="like" data-size="small" data-show-faces="false" data-share="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </article>
         <div id="tackles" class="jwlFt _1zwKC">
             <div class="_1gLAu _1iE2V">
                 <div class="_1-sfe">
-                    <div>
-                        <div id="fb-root"></div>
-                        <div class="_3G-jr">Like us on facebook</div>
-                        <div class="_3Z0E3">
-                            <img src="/images/logo.png" alt="AltFootball" class="_1aThB">
-                            <div class="_3GhRl">
-                                <a class="zzDw5" href="https://www.facebook.com/altfootballdotcom/" rel="nofollow">ALTFOOTBALL</a>
-                                <div class="fb-like _1kDAA fb_iframe_widget"
-                                     data-href="https://www.facebook.com/altfootballdotcom" data-layout="button"
-                                     data-action="like" data-size="small" data-show-faces="false" data-share="false">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <comments params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
                 </div>
             </div>

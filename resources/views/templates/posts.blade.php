@@ -69,23 +69,18 @@
                         </div>
                         <div class="_3DF9">
                             <h2 class="_2DyJ3 _3duUm" data-bind="text: title"></h2>
+                            <div class="_8m6WC rF2QA">
+                                <span class="_2jvdf" data-bind="text: published_at"></span>
+                            </div>
                         </div>
                     </a>
                     <h3 class="_35O2p _3VB1o _3duUm _2L6V9">
                         <span>
                             <span data-bind="html: summary"></span>
+                            <a class="_1kgtA _2Oo2A" data-bind="attr: { href: '/p/' + slug }, text: reading_time">
+                            </a>
                         </span>
                     </h3>
-                    <div class="_35O2p _29Okg _46OYH">
-                        <a class="_1kgtA _2Oo2A" data-bind="attr: { href: '/p/' + slug }, text: reading_time">
-                        </a>
-                        <div class="_8m6WC rF2QA">
-                            <span class="_2jvdf" data-bind="text: published_at"></span>
-                        </div>
-                        <div class="_1_VaP">
-                            <p class="TATrW" data-bind="text: views + ' views'"></p>
-                        </div>
-                    </div>
                 </div>
                 <div class="_35O2p _29Okg _24GTO">
                     <a class="_2Oo2A rF2QA" data-bind="attr: { href: '/p/' + slug + '#comments' }">

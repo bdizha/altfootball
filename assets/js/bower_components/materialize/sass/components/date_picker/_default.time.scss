@@ -179,7 +179,7 @@
 }
 .clockpicker-plate {
 	background-color: $timepicker-clock-plate-bg;
-	border-radius: 0px;
+	border-radius: 0;
 	width: 270px;
 	height: 270px;
 	overflow: visible;
@@ -201,7 +201,7 @@
 	visibility: hidden;
 }
 .clockpicker-tick {
-	border-radius: 0px;
+	border-radius: 0;
 	color: $timepicker-clock-color;
 	line-height: 40px;
 	text-align: center;

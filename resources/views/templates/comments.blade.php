@@ -5,7 +5,7 @@
             <div data-bind="fileDrag: fileData">
                 <div>
                     <div>
-                        <textarea placeholder="Want to add something?" class="_1FJkk _2u-lb" data-bind="value: newCommentText, valueUpdate: 'afterkeyup'"></textarea>
+                        <textarea placeholder="Want to add something?" class="_3vbhf l4oHd" data-bind="value: newCommentText, valueUpdate: 'afterkeyup'"></textarea>
                     </div>
                     <div class="_3hgGE" data-bind="visible: fileData().dataURL">
                         <button class="_1Zj5n _1PzVp" type="button">
