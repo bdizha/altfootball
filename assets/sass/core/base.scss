@@ -3559,6 +3559,12 @@ dribbles {
   display: block;
   margin: 0;
   overflow: hidden;
+  @media screen and (max-width: 508px) {
+    .rF2QA {
+      margin-bottom: 18px;
+      padding: 0;
+    }
+  }
   &:hover {
     img {
       transform: scale(1.2);
@@ -3671,11 +3677,13 @@ dribbles {
 ._24GTO {
   margin-top: 0;
   padding: 0 18px 18px 0;
+  ._2Oo2A{
+
+  }
 }
 
 @media screen and (max-width: 508px) {
   ._35O2p {
-    padding: 18px 24px;
     &._46OYH{
       padding: 0 24px 18px;
     }
@@ -9836,11 +9844,13 @@ div._3bqe5 {
   }
 }
 
-._2kQCw {
-  display: block;
-  position: fixed;
-  left: 28px;
-  top: 118px;
+@media screen and (max-width: 812px) {
+  ._2kQCw {
+    display: block;
+    position: fixed;
+    left: 28px;
+    top: 118px;
+  }
 }
 
 .e_0uO {

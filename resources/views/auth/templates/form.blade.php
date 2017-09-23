@@ -3,7 +3,7 @@
           data-bind="submit: proceed, css: { '_23KD': isSubmitted }">
         <input type="hidden" name="nickname"/>
         <input name="_token" data-bind="value: token" type="hidden">
-        <h1 class="bWRAm">The only place where everything is fallball</h1>
+        <h1 class="bWRAm">The only place where everything is football</h1>
         <div class="_34JK">
             <input class="_12n1y"
                    data-bind="value: email, valueUpdate: 'afterkeyup', event: { focus: focusEmail, blur: blurEmail }"

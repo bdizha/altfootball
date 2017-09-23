@@ -3858,6 +3858,13 @@ dribbles:hover ._34IO {
   overflow: hidden;
 }
 
+@media screen and (max-width: 508px) {
+  ._2hvwD .rF2QA {
+    margin-bottom: 18px;
+    padding: 0;
+  }
+}
+
 ._2hvwD:hover img {
   transform: scale(1.2);
 }
@@ -3986,10 +3993,6 @@ dribbles:hover ._34IO {
 }
 
 @media screen and (max-width: 508px) {
-  ._35O2p {
-    padding: 18px 24px;
-  }
-
   ._35O2p._46OYH {
     padding: 0 24px 18px;
   }
@@ -10594,11 +10597,13 @@ div._3bqe5 > div {
   }
 }
 
-._2kQCw {
-  display: block;
-  position: fixed;
-  left: 28px;
-  top: 118px;
+@media screen and (max-width: 812px) {
+  ._2kQCw {
+    display: block;
+    position: fixed;
+    left: 28px;
+    top: 118px;
+  }
 }
 
 .e_0uO {
