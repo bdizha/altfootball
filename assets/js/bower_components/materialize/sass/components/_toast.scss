@@ -49,11 +49,11 @@
   }
 
   &.rounded{
-    border-radius: 0;
+    border-radius: 3px;
   }
 
   @media #{$small-and-down} {
     width: 100%;
-    border-radius: 0;
+    border-radius: 3px;
   }
 }

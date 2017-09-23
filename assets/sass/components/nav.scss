@@ -3,7 +3,7 @@
   border: none;
   -ms-box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
   box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
-  border-radius: 0;
+  border-radius: 3px;
   margin-bottom: 0;
 
   .nav {
@@ -29,7 +29,7 @@
       display: flex;
       align-items: center;
       border: 2px solid $color_light_blue;
-      border-radius: 0;
+      border-radius: 3px;
       &:hover,
       &:focus {
         border: 1px solid $color_green;
@@ -90,7 +90,7 @@
   }
 
   .search {
-    border-radius: 0;
+    border-radius: 3px;
     font-size: 18px;
     width: 100%;
     display: block;

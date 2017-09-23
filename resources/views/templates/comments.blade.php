@@ -4,7 +4,7 @@
         <form class="_33rbn _2XbY_" data-bind="submit: saveComment">
             <div data-bind="fileDrag: fileData">
                 <div>
-                    <div>
+                    <div class="_3TYH2">
                         <textarea placeholder="Want to add something?" class="_3vbhf l4oHd" data-bind="value: newCommentText, valueUpdate: 'afterkeyup'"></textarea>
                     </div>
                     <div class="_3hgGE" data-bind="visible: fileData().dataURL">

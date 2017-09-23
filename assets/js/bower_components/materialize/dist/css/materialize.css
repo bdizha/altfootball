@@ -2918,7 +2918,7 @@ table.striped > tbody > tr:nth-child(odd) {
 }
 
 table.striped > tbody > tr > td {
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 table.highlight > tbody > tr {
@@ -3286,7 +3286,7 @@ input[type=range] + .thumb {
 }
 
 .circle {
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .center-block {
@@ -4983,13 +4983,13 @@ small {
 }
 
 .toast.rounded {
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 @media only screen and (max-width: 600px) {
   .toast {
     width: 100%;
-    border-radius: 0;
+    border-radius: 3px;
   }
 }
 
@@ -5230,7 +5230,7 @@ small {
   line-height: 40px;
   padding: 0;
   background-color: #26a69a;
-  border-radius: 0;
+  border-radius: 3px;
   -webkit-transition: .3s;
   transition: .3s;
   cursor: pointer;
@@ -5242,7 +5242,7 @@ small {
 }
 
 .btn-floating:before {
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .btn-floating.btn-large {
@@ -5391,7 +5391,7 @@ button.btn-floating {
   width: 40px;
   height: 40px;
   background-color: #26a69a;
-  border-radius: 0;
+  border-radius: 3px;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -5525,7 +5525,7 @@ button.btn-floating {
 
 .waves-effect .waves-ripple {
   position: absolute;
-  border-radius: 0;
+  border-radius: 3px;
   width: 20px;
   height: 20px;
   margin-top: -10px;
@@ -5612,7 +5612,7 @@ button.btn-floating {
   width: 2.5em;
   height: 2.5em;
   line-height: 2.5em;
-  border-radius: 0;
+  border-radius: 3px;
   -webkit-mask-image: none;
 }
 
@@ -5710,7 +5710,7 @@ button.btn-floating {
   margin: 0;
   width: 100%;
   max-height: 45%;
-  border-radius: 0;
+  border-radius: 3px;
   will-change: bottom, opacity;
 }
 
@@ -5831,7 +5831,7 @@ button.btn-floating {
   margin: 0 8px 0 -12px;
   height: 32px;
   width: 32px;
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .chip .close {
@@ -5998,7 +5998,7 @@ textarea.materialize-textarea {
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #9e9e9e;
-  border-radius: 0;
+  border-radius: 3px;
   outline: none;
   height: 3rem;
   width: 100%;
@@ -6573,7 +6573,7 @@ textarea.materialize-textarea.validate + label:not(.label-icon).active {
 [type="radio"]:checked + label:after,
 [type="radio"].with-gap:checked + label:before,
 [type="radio"].with-gap:checked + label:after {
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 [type="radio"]:not(:checked) + label:before,
@@ -6718,7 +6718,7 @@ form p:last-child {
   -webkit-transform: scale(1);
           transform: scale(1);
   border: 0;
-  border-radius: 0;
+  border-radius: 3px;
   -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: rgba(0, 0, 0, 0.1);
@@ -6914,7 +6914,7 @@ form p:last-child {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border-radius: 0;
+  border-radius: 3px;
   left: 0;
   top: -3px;
   -webkit-transition: left 0.3s ease, background .3s ease, -webkit-box-shadow 0.1s ease, -webkit-transform .1s ease;
@@ -7189,7 +7189,7 @@ input[type=range] + .thumb {
   border: none;
   height: 0;
   width: 0;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #26a69a;
   margin-left: 7px;
   -webkit-transform-origin: 50% 50%;
@@ -7234,7 +7234,7 @@ input[type=range]::-webkit-slider-thumb {
   border: none;
   height: 14px;
   width: 14px;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #26a69a;
   -webkit-transform-origin: 50% 50%;
           transform-origin: 50% 50%;
@@ -7263,7 +7263,7 @@ input[type=range]::-moz-range-thumb {
   border: none;
   height: 14px;
   width: 14px;
-  border-radius: 0;
+  border-radius: 3px;
   background: #26a69a;
   margin-top: -5px;
 }
@@ -7298,7 +7298,7 @@ input[type=range]::-ms-thumb {
   border: none;
   height: 14px;
   width: 14px;
-  border-radius: 0;
+  border-radius: 3px;
   background: #26a69a;
 }
 
@@ -7976,7 +7976,7 @@ input[type=range]:focus::-ms-fill-upper {
   border-style: solid;
   border-color: inherit;
   border-bottom-color: transparent !important;
-  border-radius: 0;
+  border-radius: 3px;
   -webkit-animation: none;
   animation: none;
   position: absolute;
@@ -8174,7 +8174,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: #e0e0e0;
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .slider .indicators .indicator-item.active {
@@ -8262,7 +8262,7 @@ input[type=range]:focus::-ms-fill-upper {
   background-color: rgba(255, 255, 255, 0.5);
   -webkit-transition: background-color .3s;
   transition: background-color .3s;
-  border-radius: 0;
+  border-radius: 3px;
 }
 
 .carousel .indicators .indicator-item.active {
@@ -8318,7 +8318,7 @@ input[type=range]:focus::-ms-fill-upper {
 .tap-target {
   position: absolute;
   font-size: 1rem;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #ee6e73;
   -webkit-box-shadow: 0 20px 20px 0 rgba(103, 143, 185, 0.4), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
           box-shadow: 0 20px 20px 0 rgba(103, 143, 185, 0.4), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
@@ -8340,7 +8340,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 .tap-target-wave {
   position: absolute;
-  border-radius: 0;
+  border-radius: 3px;
   z-index: 10001;
 }
 
@@ -8350,7 +8350,7 @@ input[type=range]:focus::-ms-fill-upper {
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 0;
+  border-radius: 3px;
   background-color: #ffffff;
 }
 
@@ -8830,7 +8830,7 @@ input[type=range]:focus::-ms-fill-upper {
 .picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
-  border-radius: 0;
+  border-radius: 3px;
   -webkit-transform: scale(0.75);
           transform: scale(0.75);
   background: #0089ec;
@@ -9045,7 +9045,7 @@ input[type=range]:focus::-ms-fill-upper {
 .picker__day--selected,
 .picker__day--selected:hover,
 .picker--focused .picker__day--selected {
-  border-radius: 0;
+  border-radius: 3px;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
   background-color: #26a69a;
@@ -9293,7 +9293,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 
 .clockpicker-plate {
   background-color: #eee;
-  border-radius: 0;
+  border-radius: 3px;
   width: 270px;
   height: 270px;
   overflow: visible;
@@ -9321,7 +9321,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 .clockpicker-tick {
-  border-radius: 0;
+  border-radius: 3px;
   color: rgba(0, 0, 0, 0.87);
   line-height: 40px;
   text-align: center;
