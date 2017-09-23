@@ -8832,7 +8832,6 @@ div._3bqe5 {
   margin-right: auto;
   padding: 64px;
   background: $color_white;
-  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
   border-radius: 3px;
 }
@@ -9851,6 +9850,9 @@ div._3bqe5 {
     position: fixed;
     left: 28px;
     top: 118px;
+    &._45TY{
+      top: 180px;
+    }
   }
 }
 
@@ -10439,9 +10441,7 @@ div._3bqe5 {
   justify-content: flex-start;
   align-items: center;
   margin-top: 18px;
-  margin-bottom: 28px;
   border: 1px solid rgba(103, 143, 185, 0.4);
-  height: 77px;
   padding: 12px 35px 12px 9px;
 }
 

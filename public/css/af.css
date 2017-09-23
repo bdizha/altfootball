@@ -9535,7 +9535,6 @@ div._3bqe5 > div {
   margin-right: auto;
   padding: 64px;
   background: #FFFFFF;
-  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
   border-radius: 3px;
 }
@@ -10604,6 +10603,10 @@ div._3bqe5 > div {
     left: 28px;
     top: 118px;
   }
+
+  ._2kQCw._45TY {
+    top: 180px;
+  }
 }
 
 .e_0uO {
@@ -11219,9 +11222,7 @@ div._3bqe5 > div {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 18px;
-  margin-bottom: 28px;
   border: 1px solid rgba(103, 143, 185, 0.4);
-  height: 77px;
   padding: 12px 35px 12px 9px;
 }
 

@@ -44,14 +44,17 @@ $(function () {
 
     $(window).scroll(function() {
         var fixable = $("._1YCPS");
+        var fan = $("._2kQCw");
 
         if(fixable.length > 0){
 
             if (fixable.offset().top > 100) {
                 fixable.addClass("_210LR");
+                fan.addClass("_45TY");
                 fixable.removeClass("_2kPxQ");
             } else {
                 fixable.addClass("_2kPxQ");
+                fan.removeClass("_45TY");
                 fixable.removeClass("_210LR");
             }
 
