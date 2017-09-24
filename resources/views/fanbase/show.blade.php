@@ -338,7 +338,7 @@
 @section('js')
     <script type="text/javascript">
         $(function () {
-            {{--window.currentUser = {!! $user !!};--}}
+            {{--window._USER = {!! $user !!};--}}
         });
     </script>
 @endsection

@@ -38,6 +38,7 @@ class Controller extends BaseController
             'id' => $user->id,
             'name' => $user->name,
             'image' => $user->image,
+            'thumb_x' => $user->thumb_x,
             'slug' => $user->slug
         ];
 

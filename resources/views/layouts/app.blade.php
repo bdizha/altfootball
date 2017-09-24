@@ -55,11 +55,10 @@
         </div>
     </div>
 </div>
-<script>
-    window.serverPerf = {
-        router: 418,
-        render: 43
-    };
+<script type="text/javascript" auth="{{ Auth::guard()->check() ? "true" : "false" }}">
+    $(function () {
+        window.isAuthenticated = {{ Auth::guard()->check() ? "true" : "false" }};
+    });
 </script>
 @yield('js')
 </body>

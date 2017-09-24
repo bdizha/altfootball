@@ -3423,6 +3423,7 @@ form {
     }
   }
 }
+
 dribbles {
   width: calc(33% - 20px);
   text-align: right;
@@ -3436,11 +3437,13 @@ dribbles {
     }
   }
 }
+
 .rF2QA {
   display: inline-block;
   height: 24px;
 }
-._35FcZ{
+
+._35FcZ {
   &:hover {
     path {
       fill: $color_light_blue;
@@ -3450,7 +3453,8 @@ dribbles {
     }
   }
 }
-._8m6WC{
+
+._8m6WC {
   &:hover {
     path {
       fill: $color_green;
@@ -3678,14 +3682,14 @@ dribbles {
 ._24GTO {
   margin-top: 0;
   padding: 0 18px 18px 0;
-  ._2Oo2A{
+  ._2Oo2A {
 
   }
 }
 
 @media screen and (max-width: 508px) {
   ._35O2p {
-    &._46OYH{
+    &._46OYH {
       padding: 0 24px 18px;
     }
   }
@@ -7356,8 +7360,8 @@ form {
 }
 
 .ivfOh {
-  padding-top: 44px;
-  background-color: #fff;
+  padding-top: 0px;
+  background-color: $color_white;
   .ODDw0 {
     border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   }
@@ -7366,11 +7370,10 @@ form {
 ._3CHps {
   display: flex;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
 }
 
 ._1HA3l {
-  padding-left: 12px;
   ._1bkDE {
     line-height: 14px;
     &:hover {
@@ -8830,7 +8833,7 @@ div._3bqe5 {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 64px;
+  padding: 0 64px;
   background: $color_white;
   overflow: hidden;
   border-radius: 3px;
@@ -8876,7 +8879,7 @@ div._3bqe5 {
 
 ._3BzB6 {
   position: static;
-  ._35O2p{
+  ._35O2p {
     border-top: none;
   }
 }
@@ -8896,8 +8899,7 @@ div._3bqe5 {
 ._12F3w {
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
-  font-size: 52px;
+  font-size: 56px;
   line-height: 56px;
   margin-bottom: 18px;
   max-width: 768px;
@@ -9032,7 +9034,7 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._25BgE, .C8E2s {
     margin-bottom: 18px;
-    font-size: 22px;
+    font-size: 24px;
     line-height: 28px;
   }
 }
@@ -9118,12 +9120,13 @@ div._3bqe5 {
 }
 
 ._2cAm4 {
-  color: rgba(103, 143, 185, 0.6);
-  font-size: 14px;
+  color: $color_light_blue;
+  font-size: 16px;
   line-height: 18px;
   padding: 18px;
+  text-align: center;
   &:before {
-    content: "- ";
+    content: "~ ";
   }
 }
 
@@ -9244,12 +9247,18 @@ div._3bqe5 {
 }
 
 .CDTi0 {
+  display: -ms-flexbox;
   display: flex;
   border-top: none;
   border-bottom: none;
   padding: 14px 0;
+  -ms-flex-pack: justify;
   justify-content: space-between;
   float: none;
+  border-top: 1px solid rgba(103, 143, 185, 0.6);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.6);
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 @media screen and (max-width: 846px) {
@@ -9281,12 +9290,12 @@ div._3bqe5 {
     margin-top: 0;
     padding: 0 24px 0 0;
   }
-  .rF2QA{
+  .rF2QA {
     padding: 0 24px 0 0;
   }
 }
 
-._210LR{
+._210LR {
   ._24GTO {
     margin-top: 0;
     padding: 0 18px 0 0;
@@ -9321,7 +9330,7 @@ div._3bqe5 {
 ._1Y7kL {
   width: 100%;
   max-width: 1236px;
-  margin: 44px auto 44px;
+  margin: 0 auto;
   height: auto;
   position: relative;
 }
@@ -9363,7 +9372,6 @@ div._3bqe5 {
     margin-top: 0;
   }
   a {
-    color: $color_light_blue;
     &:hover,
     &:focus {
       color: $color_green;
@@ -9738,7 +9746,8 @@ div._3bqe5 {
 
 .dqbp5 {
   position: relative;
-  padding-right: 52px;
+  padding-right: 0;
+  margin-top: 24px;
 }
 
 ._3PwOQ {
@@ -9850,7 +9859,7 @@ div._3bqe5 {
     position: fixed;
     left: 28px;
     top: 118px;
-    &._45TY{
+    &._45TY {
       top: 180px;
     }
   }
@@ -10533,7 +10542,7 @@ div._3bqe5 {
 ._1zwKC {
   width: 100%;
   margin-right: auto;
-  margin-top: 44px;
+  margin-top: 0;
   max-width: 740px;
   padding-left: 22px;
   padding-right: 22px;
@@ -10598,6 +10607,7 @@ div._3bqe5 {
   font-size: 24px;
   line-height: 22px;
   padding: 24px 0;
+  border-top: 3px solid rgba(103, 143, 185, 0.4);
 }
 
 @media screen and (max-width: 508px) {
@@ -10885,7 +10895,7 @@ div._3bqe5 {
 @media screen and (min-width: 924px) {
   ._2cP6X {
     border: 1px solid rgba(103, 143, 185, 0.15);
-    &:hover{
+    &:hover {
       border-radius: 3px;
     }
   }
@@ -13869,7 +13879,7 @@ div._3bqe5 {
   z-index: 8;
   -webkit-box-shadow: 0 1px 8px rgba(103, 143, 185, 0.4);
   box-shadow: 0 1px 8px rgba(103, 143, 185, 0.4);
-  ._3TYH2{
+  ._3TYH2 {
     padding: 0;
   }
 }

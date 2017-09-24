@@ -13,6 +13,36 @@
         <?php $postId = $post->id ?>
         <article>
             <div class="j-W_D _1iE2V">
+                <div class="_1Y7kL">
+                    <div class="vowHC _1KXFt">
+                        <div class="_23p6h">
+                            <picture>
+                                <source
+                                        media="(min-width: 1000px)"
+                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=1236&h=695&fit=crop&crop=faces&q=100">
+                                <source
+                                        media="(min-width: 900px)"
+                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop&crop=faces&q=100">
+                                <source
+                                        media="(min-width: 650px)"
+                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=900&h=580&fit=crop&crop=faces&q=100">
+                                <source
+                                        media="(min-width: 465px)"
+                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=650&h=480&fit=crop&crop=faces&q=100">
+                                <source
+                                        media="(min-width: 260px)"
+                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=360&h=240&fit=crop&crop=faces&q=100">
+                                <img
+                                        src="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop&crop=faces&q=100"
+                                        alt="a cute kitten">
+                            </picture>
+                        </div>
+                    </div>
+                    @if(!empty($post->credit))
+                        <p class="_2cAm4">CREDIT: <a target="_blank" href="{{ $post->credit }}">{{ $post->user->nickname }}</a></p>
+                    @endif
+                </div>
+
                 <div class="_1veAI _1iE2V">
                     <div class="_1lNSv _3Vb-u">
                         <a class="_2kQCw" href="/f/{{ $post->fanbase->slug }}">
@@ -64,35 +94,6 @@
                             JOIN ALTFOOTBALL
                         </div>
                     </div>
-                </div>
-                <div class="_1Y7kL">
-                    <div class="vowHC _1KXFt">
-                        <div class="_23p6h">
-                            <picture>
-                                <source
-                                        media="(min-width: 1000px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=1236&h=695&fit=crop&crop=faces&q=100">
-                                <source
-                                        media="(min-width: 900px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop&crop=faces&q=100">
-                                <source
-                                        media="(min-width: 650px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=900&h=580&fit=crop&crop=faces&q=100">
-                                <source
-                                        media="(min-width: 465px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=650&h=480&fit=crop&crop=faces&q=100">
-                                <source
-                                        media="(min-width: 260px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=360&h=240&fit=crop&crop=faces&q=100">
-                                <img
-                                        src="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop&crop=faces&q=100"
-                                        alt="a cute kitten">
-                            </picture>
-                        </div>
-                    </div>
-                    @if(!empty($post->credit))
-                        <p class="_2cAm4">CREDIT: <a target="_blank" href="{{ $post->credit }}">{{ $post->user->nickname }}</a></p>
-                    @endif
                 </div>
                 <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
                     <div>
@@ -301,8 +302,9 @@
 @section('js')
     <script type="text/javascript">
         $(function () {
-            window.currentUser = {!! $user !!};
+            window._USER = {!! $user !!};
+            console.log(">>>>>> ......");
+            console.log(window._USER);
         });
-
     </script>
 @endsection

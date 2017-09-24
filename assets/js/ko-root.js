@@ -20,15 +20,29 @@ $(function () {
         self.showSettingsForm = ko.observable(false);
         self.showUserForm = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
-        self.currentUser = ko.observable(window.currentUser);
+        // self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
+        self.isSignedIn = ko.computed(function () {
+            return window.isAuthenticated ? true : true;
+        });
 
-        self.showOverlay = function() {
+        console.log("self.isAuthenticated()");
+        console.log(window.isAuthenticated);
+        console.log("self.isSignedIn()");
+        console.log(self.isSignedIn());
+
+        self.showOverlay = ko.computed(function () {
             return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm();
-        };
+        });
 
         self.openJoinForm = function() {
             self.showJoinForm(true);
+        };
+
+        self.checkAuth = function() {
+            if(!self.isSignedIn()){
+                self.showJoinForm(true);
+            }
         };
 
         self.hideJoinPopup = function() {

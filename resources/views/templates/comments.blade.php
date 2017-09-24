@@ -1,43 +1,56 @@
 <template id='comments-template'>
-    <div data-bind="if: level() === 0 && isList() === false">
-        <h2 class="_1lisf">Join in</h2>
-        <form class="_33rbn _2XbY_" data-bind="submit: saveComment">
-            <div data-bind="fileDrag: fileData">
-                <div>
-                    <div class="_3TYH2">
-                        <textarea placeholder="Want to add something?" class="_3vbhf l4oHd" data-bind="value: newCommentText, valueUpdate: 'afterkeyup'"></textarea>
-                    </div>
-                    <div class="_3hgGE" data-bind="visible: fileData().dataURL">
-                        <button class="_1Zj5n _1PzVp" type="button">
-                            <svg width="10" height="10">
-                                <path fill="none" stroke="#00AFFF" stroke-linecap="square" stroke-width="2" d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
-                            </svg>
-                        </button>
-                        <img class="b00q8" data-bind="attr: { src: fileData().dataURL }, visible: fileData().dataURL">
-                    </div>
-                </div>
-                <div class="_3FA_l">
-                    <div class="_2A7z5 _29E8b">
-                        <label for="Lag4Ra_iR6WLzgJC0dSaxQ" class="NOB1F">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path fill="#00AFFF"
-                                          d="M16.5 13.1h-2.04A5.6 5.6 0 0 0 9 6.1a5.64 5.64 0 0 0-5.46 7H1.5V4.8h15v8.3zM9 15.87A4.14 4.14 0 1 1 9 7.6a4.14 4.14 0 0 1 0 8.28zM6.94 1.5h4.12l1.25 1.8H5.69l1.25-1.8zm10.31 1.8h-3.12L12.08.32a.75.75 0 0 0-.62-.32H6.54a.75.75 0 0 0-.62.32L3.87 3.3H.75a.75.75 0 0 0-.75.75v9.8c0 .41.34.75.75.75h3.4a5.63 5.63 0 0 0 9.7 0h3.4c.41 0 .75-.34.75-.75v-9.8a.75.75 0 0 0-.75-.75z"></path>
-                                    <path fill="#00AFFF"
-                                          d="M9 13.23a1.5 1.5 0 1 1 0-2.99 1.5 1.5 0 0 1 0 3m0-4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5"></path>
-                                </g>
-                            </svg>
-                        </label>
-                        <input type="file" name="Lag4Ra_iR6WLzgJC0dSaxQ" id="Lag4Ra_iR6WLzgJC0dSaxQ" data-bind="fileInput: fileData" accept="image/*" />
-                    </div>
-                    <button type="submit" class="_1kqns" data-bind="enable: canSubmitComment">Post</button>
-                </div>
-            </div>
-        </form>
-    </div>
+
     <!-- ko if: level() === 0 && isList() === false -->
     <div class="_2uxNN">
         Tackles(<span data-bind="text: commentsCount"></span>)
+    </div>
+    <div class="ivfOh">
+        <!-- ko if: isSignedIn()  -->
+        <div class="_1HA3l _3CHps">
+            <div class="_25jNX _2l14J">
+                <div class="N3r_f">
+                    <div class="_38L6D" style="padding-bottom: 100%;">
+                        <img alt="" role="presentation" data-bind="attr: { src: currentUser().thumb_x }" class="_214e9 b00q8" width="60" height="60">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="_1bkDE" data-bind="text: currentUser().name"></div>
+            </div>
+        </div>
+        <!-- /ko -->
+        <form class="_33rbn ODDw0" data-bind="submit: saveComment">
+            <div data-bind="fileDrag: fileData" class="filedrag">
+                <div class="sc-bdVaJa fBUmFc">
+                    <div>
+                        <textarea placeholder="Want to add something?" class="_3fi2B _2u-lb" data-bind="value: newCommentText, valueUpdate: 'afterkeyup', event: { focus: checkAuth }"></textarea>
+                    </div>
+                </div>
+                <div class="_3hgGE" data-bind="visible: fileData().dataURL">
+                    <button class="_1Zj5n _1PzVp" type="button">
+                        <svg width="10" height="10">
+                            <path fill="none" stroke="#00AFFF" stroke-linecap="square" stroke-width="2" d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
+                        </svg>
+                    </button>
+                    <img class="b00q8" data-bind="attr: { src: fileData().dataURL }, visible: fileData().dataURL">
+                </div>
+                <div class="_3FA_l">
+                    <div class="_2A7z5 _29E8b">
+                        <label for="media-upload" class="NOB1F">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="21" viewBox="0 0 27 21">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path stroke="#95A0AF" stroke-width="1.8" d="M9.93 1.32l-2.18 3.5H1.8c-.5 0-.9.4-.9.9V19.2c0 .5.4.9.9.9h22.9c.5 0 .9-.4.9-.9V5.72c0-.5-.4-.9-.9-.9h-5.95l-2.18-3.5A.9.9 0 0 0 15.8.9h-5.1a.9.9 0 0 0-.77.42z"></path>
+                                    <ellipse cx="13.25" cy="12.1" stroke="#95A0AF" e-width="1.8" rx="5.19" ry="5.15"></ellipse>
+                                    <path fill="#95A0AF" d="M20.95 8.9a.9.9 0 1 0 0-1.78c-.5 0-.9.4-.9.89s.4.89.9.89"></path>
+                                </g>
+                            </svg>
+                        </label>
+                        <input type="file" name="media-upload" id="media-upload" data-bind="fileInput: fileData" accept="image/*">
+                    </div>
+                    <button type="submit" class="_1kqns" data-bind="enable: canSubmitComment" disabled="">Post</button>
+                </div>
+            </div>
+        </form>
     </div>
     <!-- /ko -->
     <ul class="_1RyqV" data-bind="foreach: comments(), visible: comments().length > 0">
@@ -105,7 +118,7 @@
                 </div>
             </div>
             <div>
-                <div class="_1bkDE" data-bind="text: currentUser().name"></div>
+                <div class="_1bkDE" data-bind="text: currentUser.name"></div>
                 <div class="BB62-">
                     <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" class="_3TxDq">
                         <path fill-rule="evenodd" d="M7 12L0 6l7-6v1.86L2.16 6 7 10.14"></path>

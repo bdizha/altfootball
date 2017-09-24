@@ -528,7 +528,7 @@ $(function () {
         });
 
         self.image = ko.observable();
-        self.currentUser = ko.observable(window.currentUser);
+        self.currentUser = ko.observable(window._USER);
         self.comment = ko.observable(params.comment);
         self.replyText = ko.observable('');
         self.callback = params.callback;
@@ -584,6 +584,12 @@ $(function () {
         self.fileData = ko.observable({
             dataURL: ko.observable()
         });
+
+
+        console.log(".isObject(params.user)");
+        console.log(params.user);
+
+        self.currentUser = ko.observable(params.user);
         self.type_id = ko.observable(params.type_id);
         self.isList = ko.observable(params.is_list);
         self.level = ko.observable(params.level);
@@ -595,6 +601,10 @@ $(function () {
         self.commentsCount = ko.computed(function () {
             return self.comments().length;
         });
+
+        // console.log(">>>>>> USER START<<<<<<");
+        // console.log(self.currentUser());
+        // console.log(">>>>>> USER FINISH <<<<<<");
 
         self.canSubmitComment = ko.computed(function () {
             return self.newCommentText().length > 0;
@@ -880,15 +890,29 @@ $(function () {
         self.showSettingsForm = ko.observable(false);
         self.showUserForm = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
-        self.currentUser = ko.observable(window.currentUser);
+        // self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
+        self.isSignedIn = ko.computed(function () {
+            return window.isAuthenticated ? true : true;
+        });
 
-        self.showOverlay = function() {
+        console.log("self.isAuthenticated()");
+        console.log(window.isAuthenticated);
+        console.log("self.isSignedIn()");
+        console.log(self.isSignedIn());
+
+        self.showOverlay = ko.computed(function () {
             return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm();
-        };
+        });
 
         self.openJoinForm = function() {
             self.showJoinForm(true);
+        };
+
+        self.checkAuth = function() {
+            if(!self.isSignedIn()){
+                self.showJoinForm(true);
+            }
         };
 
         self.hideJoinPopup = function() {
