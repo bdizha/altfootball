@@ -2433,13 +2433,14 @@ form {
   font-weight: 700;
   text-transform: uppercase;
   float: right;
-  color: rgba(0, 8, 39, 0.86);
+  color: $color_white;
   padding: 9px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
-  &:hover:enabled {
-    background: rgba(0, 8, 39, 0.86);
-    color: #fff;
+  background: $color_light_blue;
+  &:focus:enabled,
+  &:hover:enabled{
+    background: $color_green;
   }
   &[disabled] {
     opacity: .25;
@@ -7363,7 +7364,7 @@ form {
   padding-top: 0px;
   background-color: $color_white;
   .ODDw0 {
-    border-bottom: 1px solid rgba(103, 143, 185, 0.4);
+    //border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   }
 }
 

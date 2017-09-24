@@ -2651,15 +2651,16 @@ form ._2Kdch {
   font-weight: 700;
   text-transform: uppercase;
   float: right;
-  color: rgba(0, 8, 39, 0.86);
+  color: #FFFFFF;
   padding: 9px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
+  background: #00AFFF;
 }
 
+._1kqns:focus:enabled,
 ._1kqns:hover:enabled {
-  background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  background: #57d100;
 }
 
 ._1kqns[disabled] {
@@ -7926,10 +7927,6 @@ form ._12n1y {
 .ivfOh {
   padding-top: 0px;
   background-color: #FFFFFF;
-}
-
-.ivfOh .ODDw0 {
-  border-bottom: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 ._3CHps {

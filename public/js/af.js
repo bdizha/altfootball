@@ -944,6 +944,27 @@ $(function () {
             console.log('closing this form :: RootViewModel');
             self.showFanbaseForm(false);
         };
+
+        self.setPage = function (pageId) {
+            $(".page").show();
+            $("#" + pageId).show();
+        };
+
+        // Sammy(function() {
+        //     this.get('#p/:slug', function() {
+        //         self.setPage("page-post");
+        //     });
+        //
+        //     this.get('#u/:slug', function() {
+        //         self.setPage("page-user");
+        //         $.get("/mail", { mailId: this.params.mailId }, self.chosenMailData);
+        //     });
+        //
+        //     this.get('', function() {
+        //         self.setPage("page-home");
+        //     });
+        //
+        // }).run();
     };
 
 
