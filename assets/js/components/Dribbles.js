@@ -8,11 +8,13 @@ $(function () {
     var DribbleViewModel = function (params) {
         var self = this;
 
+        console.log("params.has_dribble");
+        console.log(params.has_dribble);
         console.log("DribbleViewModel::params");
-        console.log(params.has_dribble == true);
+        console.log(params.has_dribble === true);
 
         self.dribblesCount = ko.observable(params.count);
-        self.hasDribble = ko.observable(params.has_dribble == true);
+        self.hasDribble = ko.observable(params.has_dribble === true);
         self.type = ko.observable(params.type);
         self.typeId = ko.observable(params.type_id);
 
@@ -37,6 +39,6 @@ $(function () {
 
     ko.components.register('dribbles', {
         viewModel: DribbleViewModel,
-        template: {element: 'post-dribbles-template'}
+        template: {element: 'dribbles-template'}
     });
 });

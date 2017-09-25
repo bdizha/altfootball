@@ -13,7 +13,7 @@
                         <div class="_1KeJ_">
                             <button class="_32k0z" data-bind="click: openSettingsForm">
                                 <div class="_13Js3">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18 18"
                                          class="_13Js3">
                                         <g fill="none" fill-rule="evenodd">
                                             <path fill="#00AFFF"
@@ -120,7 +120,7 @@
                                                     <h3 class="_2o06m _1oBl0">
                                                         <span class="_1QEWe">
                                                             {{ $fanbase->name }}
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
                                                                  viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
                                                                                                              fill-rule="evenodd"><path
                                                                             fill="#00AFFF"
@@ -193,7 +193,7 @@
             <div class="_1zDR7" data-bind="css: { active: showSettingsForm}">
                 <div class="_3rM3S">
                     <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="click: openUserForm">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="bWSPJ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" class="bWSPJ">
                             <g fill="none" fill-rule="evenodd" stroke="#00AFFF" stroke-linecap="round" stroke-linejoin="round">
                                 <path stroke-width="1.5" d="M5.65 9.07l-.58 3.78 3.78-.58 8.32-8.32-3.2-3.2-1.37 1.37z"></path>
                                 <path d="M15.1 5.67l-3.02-3.03M9.3 11.5L6.26 8.46"></path>

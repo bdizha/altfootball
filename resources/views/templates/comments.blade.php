@@ -91,7 +91,7 @@
                 </div>
             </div>
             <div class="_55ghi">
-                <reply-form params='comment: $data, callback: $parent.update'></reply-form>
+                <reply-form params='comment: $data, user: user, callback: $parent.update'></reply-form>
             </div>
             <div data-bind="if: comments.length > 0">
                 <comments params='comments: comments, type_id: comments.id, level: 1, root: $root'></comments>
@@ -113,12 +113,12 @@
             <div class="_25jNX _2l14J">
                 <div class="N3r_f">
                     <div class="_38L6D" style="padding-bottom: 100%;">
-                        <img alt="" role="presentation" data-bind="attr: { src: currentUser().image }" class="_214e9 b00q8" width="60" height="60">
+                        <img alt="" role="presentation" data-bind="attr: { src: currentUser().thumb_x }" class="_214e9 b00q8" width="60" height="60">
                     </div>
                 </div>
             </div>
             <div>
-                <div class="_1bkDE" data-bind="text: currentUser.name"></div>
+                <div class="_1bkDE" data-bind="text: currentUser().name"></div>
                 <div class="BB62-">
                     <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" class="_3TxDq">
                         <path fill-rule="evenodd" d="M7 12L0 6l7-6v1.86L2.16 6 7 10.14"></path>
@@ -141,7 +141,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="21" viewBox="0 0 27 21">
                                 <g fill="none" fill-rule="evenodd">
                                     <path stroke="#95A0AF" stroke-width="1.8" d="M9.93 1.32l-2.18 3.5H1.8c-.5 0-.9.4-.9.9V19.2c0 .5.4.9.9.9h22.9c.5 0 .9-.4.9-.9V5.72c0-.5-.4-.9-.9-.9h-5.95l-2.18-3.5A.9.9 0 0 0 15.8.9h-5.1a.9.9 0 0 0-.77.42z"></path>
-                                    <ellipse cx="13.25" cy="12.1" stroke="#95A0AF" strok    e-width="1.8" rx="5.19" ry="5.15"></ellipse>
+                                    <ellipse cx="13.25" cy="12.1" stroke="#95A0AF" stroke-width="1.8" rx="5.19" ry="5.15"></ellipse>
                                     <path fill="#95A0AF" d="M20.95 8.9a.9.9 0 1 0 0-1.78c-.5 0-.9.4-.9.89s.4.89.9.89"></path>
                                 </g>
                             </svg>

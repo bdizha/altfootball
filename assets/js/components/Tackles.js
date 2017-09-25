@@ -11,10 +11,6 @@ $(function () {
             dataURL: ko.observable()
         });
 
-
-        console.log(".isObject(params.user)");
-        console.log(params.user);
-
         self.currentUser = ko.observable(params.user);
         self.type_id = ko.observable(params.type_id);
         self.isList = ko.observable(params.is_list);
@@ -28,15 +24,10 @@ $(function () {
             return self.comments().length;
         });
 
-        // console.log(">>>>>> USER START<<<<<<");
-        // console.log(self.currentUser());
-        // console.log(">>>>>> USER FINISH <<<<<<");
-
         self.canSubmitComment = ko.computed(function () {
             return self.newCommentText().length > 0;
         });
 
-        // callback
         self.update = function (reply) {
             var comments = ko.utils.arrayMap(self.comments(), function (comment) {
                 if (comment.id === reply.type_id) {

@@ -13,7 +13,7 @@ $(function () {
         });
 
         self.image = ko.observable();
-        self.currentUser = ko.observable(window._USER);
+        self.currentUser = ko.observable(params.user);
         self.comment = ko.observable(params.comment);
         self.replyText = ko.observable('');
         self.callback = params.callback;

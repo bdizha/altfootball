@@ -2,7 +2,7 @@
     <div class="_2V52z" data-bind="css: { active: showJoinForm }">
         <div class="bHN0m">
             <button data-bind="click: hideJoinPopup" class="xy5Fz">
-                <svg width="18" height="18" viewBox="0 0 18 18">
+                <svg width="19" height="19" viewBox="0 0 18 18">
                     <g stroke="#00AFFF" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
                         <path d="M2.368 2.282L16.51 16.425M16.218 2.282L2.075 16.425"></path>
                     </g>
@@ -14,7 +14,7 @@
             <p class="d3Gx3">If you already have an account you can use the buttons above to log back in</p>
             <ul class="_35zqi">
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" class="_3gymQ">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" class="_3gymQ">
                         <g fill="#666" fill-rule="evenodd">
                             <path d="M16 13.33H5.2a.76.76 0 0 0-.4.11l-3.3 1.99V1.5H16v11.83zM16.75 0h-16A.75.75 0 0 0 0 .75v16a.75.75 0 0 0 1.14.64l4.26-2.56h11.35c.41 0 .75-.33.75-.75V.75a.75.75 0 0 0-.75-.75z"></path>
                             <path d="M4.75 6.48h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1m0 3h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1"></path>
@@ -23,7 +23,7 @@
                     Share 77 views with millions of other fans.
                 </li>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="19" viewBox="0 0 18 18">
                         <defs>
                             <path id="a" d="M0 17.43h18.01V0H0z"></path>
                         </defs>
@@ -46,7 +46,7 @@
                     Laugh at the latest football games.
                 </li>
                 <li>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19">
                         <g fill="none" fill-rule="evenodd">
                             <path fill="#00AFFF" d="M16.5 13.1h-2.04A5.6 5.6 0 0 0 9 6.1a5.64 5.64 0 0 0-5.46 7H1.5V4.8h15v8.3zM9 15.87A4.14 4.14 0 1 1 9 7.6a4.14 4.14 0 0 1 0 8.28zM6.94 1.5h4.12l1.25 1.8H5.69l1.25-1.8zm10.31 1.8h-3.12L12.08.32a.75.75 0 0 0-.62-.32H6.54a.75.75 0 0 0-.62.32L3.87 3.3H.75a.75.75 0 0 0-.75.75v9.8c0 .41.34.75.75.75h3.4a5.63 5.63 0 0 0 9.7 0h3.4c.41 0 .75-.34.75-.75v-9.8a.75.75 0 0 0-.75-.75z"></path>
                             <path fill="#00AFFF" d="M9 13.23a1.5 1.5 0 1 1 0-2.99 1.5 1.5 0 0 1 0 3m0-4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5"></path>

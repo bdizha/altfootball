@@ -4,7 +4,7 @@
             <div>
                 <div class="_3C1Cx">
                     <button class="_1ozur" data-bind="click: closeEditForm">
-                        <svg width="18" height="18" viewBox="0 0 18 18">
+                        <svg width="19" height="19" viewBox="0 0 18 18">
                             <g stroke="#00AFFF" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
                                 <path d="M2.368 2.282L16.51 16.425M16.218 2.282L2.075 16.425"></path>
                             </g>

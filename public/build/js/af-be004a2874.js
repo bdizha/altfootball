@@ -167,7 +167,7 @@ $(function () {
 
     ko.components.register('dribbles', {
         viewModel: DribbleViewModel,
-        template: {element: 'post-dribbles-template'}
+        template: {element: 'dribbles-template'}
     });
 });
 /**

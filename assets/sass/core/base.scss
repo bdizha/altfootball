@@ -2439,7 +2439,7 @@ form {
   transition: all 0.15s ease-out;
   background: $color_light_blue;
   &:focus:enabled,
-  &:hover:enabled{
+  &:hover:enabled {
     background: $color_green;
   }
   &[disabled] {
@@ -3383,10 +3383,10 @@ form {
 @media screen and (min-width: 846px) {
   ._3gFQj {
     &:first-child {
-      padding-right: 2px;
+      padding-right: 4px;
     }
     &:last-child {
-      padding-left: 2px;
+      padding-left: 4px;
     }
   }
 }
@@ -3404,7 +3404,7 @@ form {
 
 .p32Iu {
   transition: transform 0.4s cubic-bezier(0, 0.42, 0, 1), opacity 0.3s ease-out;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   background: $color_white;
   -webkit-box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
@@ -3430,24 +3430,47 @@ dribbles {
   text-align: right;
   height: 24px;
   &:hover {
+    ._GSL7C {
+      background: $color_red;
+      border: 1px solid $color_red;
+    }
     path {
-      fill: #ED0027;
+      fill: $color_white;
     }
     ._34IO {
-      color: #ED0027;
+      color: $color_red;
     }
   }
 }
 
 .rF2QA {
   display: inline-block;
-  height: 24px;
+  height: 30px;
+}
+
+._1CwPf {
+  &:hover {
+    ._GSL7C {
+      background: rgba(0, 8, 39, .86);
+      border: 1px solid rgba(0, 8, 39, .86);
+    }
+    path {
+      fill: $color_white;
+    }
+    ._34IO {
+      color: rgba(0, 8, 39, .86);
+    }
+  }
 }
 
 ._35FcZ {
   &:hover {
+    ._GSL7C {
+      background: $color_light_blue;
+      border: 1px solid $color_light_blue;
+    }
     path {
-      fill: $color_light_blue;
+      fill: $color_white;
     }
     ._34IO {
       color: $color_light_blue;
@@ -3457,8 +3480,12 @@ dribbles {
 
 ._8m6WC {
   &:hover {
+    ._GSL7C {
+      background: $color_green;
+      border: 1px solid $color_green;
+    }
     path {
-      fill: $color_green;
+      fill: $color_white;
     }
     ._34IO {
       color: $color_green;
@@ -3474,8 +3501,12 @@ dribbles {
     top: 0;
     right: 0;
     color: rgba(103, 143, 185, 0.6);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 700;
+    line-height: 30px;
+    &._35GH {
+      color: rgb(237, 0, 39);
+    }
   }
 }
 
@@ -9218,8 +9249,9 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._1Ov3j {
+    margin-top: 24px;
     padding-right: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 
@@ -9340,18 +9372,20 @@ div._3bqe5 {
   ._1Y7kL {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 @media screen and (max-width: 846px) {
   ._1Y7kL {
-    padding-left: 24px;
-    padding-right: 24px;
     margin-top: 0;
     padding: 0;
-    margin-bottom: 28px;
+    margin-bottom: 0;
+  }
+
+  ._1lNSv {
+    margin-bottom: 24px;
   }
 }
 
@@ -9366,8 +9400,8 @@ div._3bqe5 {
   height: 100%;
   width: 100%;
   max-width: 740px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin: 0 auto;
   div:first-child {
     margin-top: 0;
@@ -9379,7 +9413,7 @@ div._3bqe5 {
     }
   }
   p {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: -.003em;
@@ -9659,7 +9693,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._1Xbrb {
-    margin-top: 0;
+    margin-top: 24px;
     align-items: stretch;
     h2 {
       display: block;
@@ -10446,13 +10480,17 @@ div._3bqe5 {
   text-transform: uppercase;
 }
 
+._23YI {
+  margin-bottom: 24px;
+}
+
 ._3Z0E3 {
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   margin-top: 18px;
   border: 1px solid rgba(103, 143, 185, 0.4);
-  padding: 12px 35px 12px 9px;
+  padding: 24px;
 }
 
 ._1aThB {
@@ -12505,12 +12543,12 @@ div._3bqe5 {
 }
 
 ._1U_qv {
-  padding: 22px;
+  padding: 24px;
 }
 
 @media screen and (max-width: 508px) {
   ._1U_qv {
-    padding: 18px 0 18px 14px;
+    padding: 24px 0 24px 24px;
     overflow: hidden;
   }
 }
@@ -13867,7 +13905,7 @@ div._3bqe5 {
   border: none;
   height: 96px;
   width: 100%;
-  padding: 22px;
+  padding: 24px;
   position: fixed;
   backface-visibility: hidden;
   top: 0;
@@ -13886,7 +13924,7 @@ div._3bqe5 {
 }
 
 ._GSL7C {
-  background: rgba(103, 143, 185, 0.6);
+  border: 1px solid rgba(103, 143, 185, 0.6);
   display: block;
   height: 30px;
   width: 30px;
@@ -13897,8 +13935,8 @@ div._3bqe5 {
   overflow: hidden;
   svg {
     position: absolute;
-    left: 8px;
-    top: 8px;
+    left: 5px;
+    top: 5px;
   }
   &:hover {
     background: $color_green;
@@ -13909,7 +13947,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   .R1XAV {
-    padding: 14px;
+    padding: 14px 24px;
     height: 68px;
   }
 }

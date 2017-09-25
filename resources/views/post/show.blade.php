@@ -13,6 +13,22 @@
         <?php $postId = $post->id ?>
         <article>
             <div class="j-W_D _1iE2V">
+                <div class="_1lNSv _3Vb-u">
+                    <a class="_2kQCw" href="/f/{{ $post->fanbase->slug }}">
+                        <div class="_1Gyo9 e_0uO" data-stamp="{{ $post->fanbase->stamp }}"></div>
+                        <p class="_3FTXM wcqil">
+                            {{ $post->fanbase->name }}
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18 18"
+                                 class="G0duV">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#57d100" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                    <path fill="#FFF"
+                                          d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                </g>
+                            </svg>
+                        </p>
+                    </a>
+                </div>
                 <div class="_1Y7kL">
                     <div class="vowHC _1KXFt">
                         <div class="_23p6h">
@@ -44,22 +60,6 @@
                 </div>
 
                 <div class="_1veAI _1iE2V">
-                    <div class="_1lNSv _3Vb-u">
-                        <a class="_2kQCw" href="/f/{{ $post->fanbase->slug }}">
-                            <div class="_1Gyo9 e_0uO" data-stamp="{{ $post->fanbase->stamp }}"></div>
-                            <p class="_3FTXM wcqil">
-                                {{ $post->fanbase->name }}
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
-                                     class="G0duV">
-                                    <g fill="none" fill-rule="evenodd">
-                                        <path fill="#57d100" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                        <path fill="#FFF"
-                                              d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                    </g>
-                                </svg>
-                            </p>
-                        </a>
-                    </div>
                     <div class="_1-sfe _29LD-">
                         <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
                         <div class="dqbp5">
@@ -87,11 +87,14 @@
                             </a>
                         </div>
                     </div>
-                    <div class="_1Xbrb _9fE1R NasRD">
-                        <div class="_1QuY4">
-                            <h2>LIKE {{ $post->fanbase->name }}?</h2></div>
-                        <div class="_2KK_J _1yV5F _1MC-v _1h78h">
-                            JOIN ALTFOOTBALL
+                    <div class="_3tkuf">
+                        <div class="_1drt2 _9fE1R NasRD">
+                            <div>
+                                <h2>LIKE {{ $post->fanbase->name }}?</h2>
+                            </div>
+                            <div class="_3OD4J _1yV5F _1MC-v _1h78h">
+                                JOIN ALTFOOTBALL
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -114,7 +117,7 @@
                                     <a class="_1XNRF"
                                        href="/f/{{ $post->fanbase->slug }}">
                                                 {{ $post->fanbase->name }}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="_1z7Hy">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18 18" class="_1z7Hy">
                                             <g fill="none" fill-rule="evenodd">
                                                 <path fill="#57d100" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                                 <path fill="#FFF"
@@ -137,7 +140,7 @@
                                         </svg>
                                     </button>
                                     <button class="_2Q0fU _23g2_">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18 18">
                                             <g fill="none" fill-rule="evenodd">
                                                 <path fill="#000" d="M7.24 9.06a.75.75 0 0 0-1.06 0l-.31.32L1.8 5.32l3.51-3.51 4.06 4.06-.38.38a.75.75 0 1 0 1.06 1.06l.91-.91c.3-.3.3-.77 0-1.06L5.85.22a.75.75 0 0 0-1.06 0L.22 4.79c-.3.3-.3.77 0 1.06l5.12 5.12a.75.75 0 0 0 1.06 0l.84-.85c.3-.29.3-.76 0-1.06" mask="url(#mask-2)"></path>
                                                 <path fill="#000" d="M11.78 6.15L6.66 1.03a.77.77 0 0 0-1.06 0l-.93.93a.75.75 0 1 0 1.06 1.06l.4-.4 4.06 4.06-3.51 3.5-4.06-4.05.32-.31a.75.75 0 0 0-1.06-1.07l-.85.85c-.3.3-.3.77 0 1.06l5.12 5.12a.75.75 0 0 0 1.06 0l4.57-4.57a.75.75 0 0 0 0-1.06" mask="url(#mask-4)" transform="translate(6 6)"></path>
@@ -155,7 +158,7 @@
                         </p>
                         {!! $post->getHtmlContent() !!}
                     </div>
-                    <div class="_3tkuf">
+                    <div class="_3tkuf _23YI">
                         <div class="_1drt2 _9fE1R NasRD">
                             <div>
                                 <h2>Never miss a post</h2>
@@ -233,7 +236,7 @@
                                             <a class="_2XyXQ" href="/u/{{ $post->user->slug }}">
                                                 {{ $post->user->name }}
                                             </a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
                                                  viewBox="0 0 18 18"
                                                  class="_1z7Hy _1NCGm RyyhO">
                                                 <g fill="none" fill-rule="evenodd">
@@ -272,7 +275,7 @@
                                 <div class="_1KQuz _1-YRL">
                                     <h3 class="_2o06m _1oBl0">
                                     <span class="_1QEWe">{{ $fanbase->name }}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
                                              viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
                                                                                          fill-rule="evenodd"><path
                                                         fill="#57d100" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path

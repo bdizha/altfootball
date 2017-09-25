@@ -8,11 +8,13 @@ $(function () {
     var DribbleViewModel = function (params) {
         var self = this;
 
+        console.log("params.has_dribble");
+        console.log(params.has_dribble);
         console.log("DribbleViewModel::params");
-        console.log(params.has_dribble == true);
+        console.log(params.has_dribble === true);
 
         self.dribblesCount = ko.observable(params.count);
-        self.hasDribble = ko.observable(params.has_dribble == true);
+        self.hasDribble = ko.observable(params.has_dribble === true);
         self.type = ko.observable(params.type);
         self.typeId = ko.observable(params.type_id);
 
@@ -37,7 +39,7 @@ $(function () {
 
     ko.components.register('dribbles', {
         viewModel: DribbleViewModel,
-        template: {element: 'post-dribbles-template'}
+        template: {element: 'dribbles-template'}
     });
 });
 /**
@@ -395,7 +397,7 @@ $(function () {
         });
 
         self.image = ko.observable();
-        self.currentUser = ko.observable(window._USER);
+        self.currentUser = ko.observable(params.user);
         self.comment = ko.observable(params.comment);
         self.replyText = ko.observable('');
         self.callback = params.callback;
@@ -452,10 +454,6 @@ $(function () {
             dataURL: ko.observable()
         });
 
-
-        console.log(".isObject(params.user)");
-        console.log(params.user);
-
         self.currentUser = ko.observable(params.user);
         self.type_id = ko.observable(params.type_id);
         self.isList = ko.observable(params.is_list);
@@ -469,15 +467,10 @@ $(function () {
             return self.comments().length;
         });
 
-        // console.log(">>>>>> USER START<<<<<<");
-        // console.log(self.currentUser());
-        // console.log(">>>>>> USER FINISH <<<<<<");
-
         self.canSubmitComment = ko.computed(function () {
             return self.newCommentText().length > 0;
         });
 
-        // callback
         self.update = function (reply) {
             var comments = ko.utils.arrayMap(self.comments(), function (comment) {
                 if (comment.id === reply.type_id) {

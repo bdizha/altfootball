@@ -3676,11 +3676,11 @@ form ._2Kdch {
 
 @media screen and (min-width: 846px) {
   ._3gFQj:first-child {
-    padding-right: 2px;
+    padding-right: 4px;
   }
 
   ._3gFQj:last-child {
-    padding-left: 2px;
+    padding-left: 4px;
   }
 }
 
@@ -3697,7 +3697,7 @@ form ._2Kdch {
 
 .p32Iu {
   transition: transform 0.4s cubic-bezier(0, 0.42, 0, 1), opacity 0.3s ease-out;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
   background: #FFFFFF;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
@@ -3725,8 +3725,13 @@ dribbles {
   height: 24px;
 }
 
+dribbles:hover ._GSL7C {
+  background: #ED0027;
+  border: 1px solid #ED0027;
+}
+
 dribbles:hover path {
-  fill: #ED0027;
+  fill: #FFFFFF;
 }
 
 dribbles:hover ._34IO {
@@ -3735,19 +3740,42 @@ dribbles:hover ._34IO {
 
 .rF2QA {
   display: inline-block;
-  height: 24px;
+  height: 30px;
+}
+
+._1CwPf:hover ._GSL7C {
+  background: rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.86);
+}
+
+._1CwPf:hover path {
+  fill: #FFFFFF;
+}
+
+._1CwPf:hover ._34IO {
+  color: rgba(0, 8, 39, 0.86);
+}
+
+._35FcZ:hover ._GSL7C {
+  background: #00AFFF;
+  border: 1px solid #00AFFF;
 }
 
 ._35FcZ:hover path {
-  fill: #00AFFF;
+  fill: #FFFFFF;
 }
 
 ._35FcZ:hover ._34IO {
   color: #00AFFF;
 }
 
+._8m6WC:hover ._GSL7C {
+  background: #57d100;
+  border: 1px solid #57d100;
+}
+
 ._8m6WC:hover path {
-  fill: #57d100;
+  fill: #FFFFFF;
 }
 
 ._8m6WC:hover ._34IO {
@@ -3764,8 +3792,13 @@ dribbles:hover ._34IO {
   top: 0;
   right: 0;
   color: rgba(103, 143, 185, 0.6);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
+  line-height: 30px;
+}
+
+._13DRk ._34IO._35GH {
+  color: #ed0027;
 }
 
 ._1sUHj {
@@ -9925,8 +9958,9 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._1Ov3j {
+    margin-top: 24px;
     padding-right: 0;
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 
@@ -10052,18 +10086,20 @@ div._3bqe5 > div {
   ._1Y7kL {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 22px;
-    padding-right: 22px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 }
 
 @media screen and (max-width: 846px) {
   ._1Y7kL {
-    padding-left: 24px;
-    padding-right: 24px;
     margin-top: 0;
     padding: 0;
-    margin-bottom: 28px;
+    margin-bottom: 0;
+  }
+
+  ._1lNSv {
+    margin-bottom: 24px;
   }
 }
 
@@ -10079,8 +10115,8 @@ div._3bqe5 > div {
   height: 100%;
   width: 100%;
   max-width: 740px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin: 0 auto;
 }
 
@@ -10094,7 +10130,7 @@ div._3bqe5 > div {
 }
 
 ._1Q_Pu p {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   font-size: 18px;
   line-height: 28px;
   letter-spacing: -.003em;
@@ -10383,7 +10419,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._1Xbrb {
-    margin-top: 0;
+    margin-top: 24px;
     -ms-flex-align: stretch;
     align-items: stretch;
   }
@@ -11208,6 +11244,10 @@ div._3bqe5 > div {
   text-transform: uppercase;
 }
 
+._23YI {
+  margin-bottom: 24px;
+}
+
 ._3Z0E3 {
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -11217,7 +11257,7 @@ div._3bqe5 > div {
   align-items: center;
   margin-top: 18px;
   border: 1px solid rgba(103, 143, 185, 0.4);
-  padding: 12px 35px 12px 9px;
+  padding: 24px;
 }
 
 ._1aThB {
@@ -13462,12 +13502,12 @@ div._3bqe5 > div {
 }
 
 ._1U_qv {
-  padding: 22px;
+  padding: 24px;
 }
 
 @media screen and (max-width: 508px) {
   ._1U_qv {
-    padding: 18px 0 18px 14px;
+    padding: 24px 0 24px 24px;
     overflow: hidden;
   }
 }
@@ -14913,7 +14953,7 @@ div._3bqe5 > div {
   border: none;
   height: 96px;
   width: 100%;
-  padding: 22px;
+  padding: 24px;
   position: fixed;
   backface-visibility: hidden;
   top: 0;
@@ -14932,7 +14972,7 @@ div._3bqe5 > div {
 }
 
 ._GSL7C {
-  background: rgba(103, 143, 185, 0.6);
+  border: 1px solid rgba(103, 143, 185, 0.6);
   display: block;
   height: 30px;
   width: 30px;
@@ -14945,8 +14985,8 @@ div._3bqe5 > div {
 
 ._GSL7C svg {
   position: absolute;
-  left: 8px;
-  top: 8px;
+  left: 5px;
+  top: 5px;
 }
 
 ._GSL7C:hover {
@@ -14956,7 +14996,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .R1XAV {
-    padding: 14px;
+    padding: 14px 24px;
     height: 68px;
   }
 }
