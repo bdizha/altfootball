@@ -55,6 +55,7 @@ class FCBayernJob extends NewsJob
 
                 $post = [];
 
+                $post['credit'] = $this->domain;
                 $post['title'] = $teaser->title;
                 $post['summary'] = $teaser->text;
                 $post['external_url'] = $teaser->link->href;
@@ -110,18 +111,16 @@ class FCBayernJob extends NewsJob
                                 $content = str_replace("<p><br></p>", "", $content);
                                 $post['content'] = str_replace("<p><span style=\"background-color: initial; font-size: 1em;\"><br></span></p>", "", $content);
 
-//dd($post);
-
                                 if (empty($p->id)) {
                                     $p = Post::create($post);
 
                                     echo 'Inserted post: ' . $p->slug . "\n";
 
                                 } else {
-                                    $p->title = $post['title'];
-                                    $p->created_at = Carbon::parse($post['date']);
-                                    $p->image = $post['image'];
                                     $p->content = $post['content'];
+                                    $p->title = $post['title'];
+                                    $p->image = $post['image'];
+                                    $p->credit = $post['credit'];
                                     $p->save();
 
                                     echo "updated::: {$p->slug} \n";

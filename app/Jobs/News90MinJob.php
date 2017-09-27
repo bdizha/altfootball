@@ -85,6 +85,7 @@ class News90MinJob extends NewsJob
 
                             $post = array();
 
+                            $post['credit'] = $this->domain;
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
@@ -115,7 +116,10 @@ class News90MinJob extends NewsJob
 
                                     echo 'Inserted post: ' . $post['title'] . "\n";
                                 } else {
+                                    $p->content = $post['content'];
                                     $p->title = $post['title'];
+                                    $p->credit = $post['credit'];
+                                    $p->image = $post['image'];
                                     $p->created_at = Carbon::parse($post['date']);
                                     $p->save();
 

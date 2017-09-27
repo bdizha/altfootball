@@ -84,6 +84,7 @@ class NewsGoalJob extends NewsJob
 
                             $post = array();
 
+                            $post['credit'] = $this->domain;
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 

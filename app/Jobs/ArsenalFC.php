@@ -120,6 +120,7 @@ class ArsenalFC extends NewsJob
                                 $p->content = $post['content'];
                                 $p->title = $post['title'];
                                 $p->image = $post['image'];
+                                $p->credit = $post['credit'];
                                 $p->created_at = Carbon::parse($post['date']);
                                 $p->save();
 

@@ -57,9 +57,6 @@ class RealMadridJob extends NewsJob
                     $p = Post::where("external_url", $url)->first();
                     $client = new Client();
                     $data = $client->request('GET', $url);
-
-//                dd($url);
-
                     $user = array();
 
                     if ($data->filter('.main_content')->count()) {
@@ -86,6 +83,7 @@ class RealMadridJob extends NewsJob
 
                         $post = array();
 
+                        $post['credit'] = $this->domain;
                         $summary = '';
                         if ($data->filter('.m_section_news_header strong')->count()) {
                             $summary = substr($data->filter('.m_section_news_header strong')->text(), 0, 255);
@@ -144,8 +142,10 @@ class RealMadridJob extends NewsJob
 
                                 echo 'Inserted post: ' . $post['title'] . "\n";
                             } else {
-                                $p->title = $post['title'];
                                 $p->content = $post['content'];
+                                $p->title = $post['title'];
+                                $p->image = $post['image'];
+                                $p->credit = $post['credit'];
                                 $p->created_at = Carbon::parse($post['date']);
                                 $p->save();
 

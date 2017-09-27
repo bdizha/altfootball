@@ -121,7 +121,10 @@ class NewsBreatheChelseaJob extends NewsJob
                                     echo 'Inserted post: ' . $p->slug . "\n";
 
                                 } else {
+                                    $p->content = $post['content'];
                                     $p->title = $post['title'];
+                                    $p->credit = $post['credit'];
+                                    $p->image = $post['image'];
                                     $p->created_at = Carbon::parse($post['date']);
                                     $p->save();
 

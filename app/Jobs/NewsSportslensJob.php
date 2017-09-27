@@ -85,6 +85,7 @@ class NewsSportslensJob extends NewsJob
 
                             $post = array();
 
+                            $post['credit'] = $this->domain;
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
@@ -110,15 +111,16 @@ class NewsSportslensJob extends NewsJob
                                 $post['content'] = str_replace("<p><span style=\"background-color: initial; font-size: 1em;\"><br></span></p>", "", $content);
                                 $post['summary'] = $summary;
 
-//                                dd($post);
-
                                 if (empty($p->id)) {
                                     $p = Post::create($post);
 
                                     echo 'Inserted post: ' . $p->slug . "\n";
 
                                 } else {
+                                    $p->content = $post['content'];
                                     $p->title = $post['title'];
+                                    $p->image = $post['image'];
+                                    $p->credit = $post['credit'];
                                     $p->created_at = Carbon::parse($post['date']);
                                     $p->save();
 

@@ -85,9 +85,6 @@ class LiverpoolJob extends NewsJob
                             if ($data->filter('meta[property="og:image"]')->count()) {
 
                                 $summary = $data->filter('meta[property="og:description"]')->attr('content');
-
-//                            dd($summary);
-
                                 $post['image'] = $data->filter('meta[property="og:image"]')->attr('content');
                                 $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
                                 $post['date'] = $data->filter('.post-time')->attr('datetime');
