@@ -2,11 +2,11 @@
 
 namespace App;
 
-use Illuminate\Database\Eloquent\Model;
+use Auth;
 use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Model;
 use Imgix\UrlBuilder;
 use MartinBean\Database\Eloquent\Sluggable;
-use Auth;
 
 class Post extends Model
 {
@@ -34,7 +34,7 @@ class Post extends Model
 
     protected $wordsPerMinute = 170;
 
-    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'has_dribble', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x'];
+    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'has_dribble', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x', 'url_x'];
 
     public function getPublishedAtAttribute()
     {
@@ -144,6 +144,15 @@ class Post extends Model
         return str_replace("height=", "", str_replace("width=", "", $content));
     }
 
+    public function getUrlXAttribute()
+    {
+        $credit = $this->credit;
+        if (!empty($credit)) {
+            $credit = str_replace(['http://', 'https://'], '', $credit);
+        }
+        return $credit;
+    }
+
     public function getSmallXAttribute()
     {
         if (empty($this->small_image) || $this->needsResizing($this->small_image)) {
@@ -247,7 +256,8 @@ class Post extends Model
         }
     }
 
-    public function needsResizing($url){
+    public function needsResizing($url)
+    {
         return strpos($url, '.com') !== false;
     }
 }

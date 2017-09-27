@@ -55,7 +55,7 @@
                         </div>
                     </div>
                     @if(!empty($post->credit))
-                        <p class="_2cAm4">CREDIT: <a target="_blank" href="{{ $post->credit }}">{{ $post->user->nickname }}</a></p>
+                        <p class="_2cAm4">CREDIT: <a target="_blank" href="{{ $post->external_url }}">{{ $post->url_x }}</a></p>
                     @endif
                 </div>
 
