@@ -86,7 +86,8 @@ class SearieAJob extends NewsJob
 
                         $summary = $data->filter('meta[property="og:description"]')->attr('content');
 
-                        $post['image'] = $data->filter('.widge-figure__image')->attr('data-src');
+                        $ogImage = $data->filter('meta[property="og:image"]')->attr('content');
+                        $post["image"] = str_replace("150x150", "16-9/20", $ogImage);
 
                         $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
 
