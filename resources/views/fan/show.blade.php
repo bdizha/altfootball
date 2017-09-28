@@ -95,8 +95,8 @@
                         </a>
                         <button class="_2EVp5" data-bind="click: openFanbaseForm">
                             Create a fanbase
-                            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24">
-                                <path fill="#FFF" fill-rule="evenodd" d="M 11 5 L 11 11 L 5 11 L 5 13 L 11 13 L 11 19 L 13 19 L 13 13 L 19 13 L 19 11 L 13 11 L 13 5 Z "></path>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+                                <path fill="rgba(103, 143, 185, 0.8)" fill-rule="evenodd" d="M 11 5 L 11 11 L 5 11 L 5 13 L 11 13 L 11 19 L 13 19 L 13 13 L 19 13 L 19 11 L 13 11 L 13 5 Z "></path>
                             </svg>
                         </button>
                     </div>
@@ -179,6 +179,8 @@
         </div>
     </div>
     <user-form params="{{ $toJson }}"></user-form>
+    <fanbase-form params="{{ (new \App\Fanbase())->toJson() }}"></fanbase-form>
+    @include('fanbase.templates.form')
     @include('templates.follow')
     @include('profile.templates.form')
     @include('templates.dribbles')
