@@ -85,6 +85,7 @@ class BarcelonaFC extends NewsJob
 
                         $post = array();
 
+                        $post['credit'] = $this->domain;
                         $post['external_url'] = $url;
                         $post['user_id'] = $u->id;
 
@@ -104,8 +105,21 @@ class BarcelonaFC extends NewsJob
 
                             $dateRaw = str_replace("/", "-", $dateRaw);
 
-                            $post['date'] = $dateRaw;
+                            $dateParts = explode(' ', $dateRaw);
 
+                            if (!empty($dateParts[1])) {
+                                $date = $dateParts[0];
+
+                                $dParts = explode('-', $date);
+
+                                if (!empty($dParts[2])) {
+                                    if(strlen($dParts[2]) == 2){
+                                        $dateRaw = str_pad($dParts[2], 4, "20", STR_PAD_LEFT) . "-" . $dParts[1] . "-" . $dParts[0] . " " . $dateParts[1];
+                                    }
+                                }
+                            }
+
+                            $post['date'] = $dateRaw;
                             $post['created_at'] = $this->cleanUpDate(Carbon::parse($post['date']));
                         }
 
