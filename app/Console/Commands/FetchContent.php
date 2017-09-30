@@ -2,6 +2,9 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\Barcelona;
+use App\Jobs\BarcelonaFC;
+use App\Jobs\Bundesliga;
 use App\Jobs\LaLigaJob;
 use App\Jobs\NewsGoalJob;
 use App\Jobs\News90MinJob;
@@ -17,6 +20,7 @@ use App\Jobs\PremierLeagueJob;
 use App\Jobs\SearieAJob;
 use App\Jobs\JuventusJob;
 use App\Jobs\HitcJob;
+use App\Jobs\SpanishFootball;
 use Illuminate\Console\Command;
 
 class FetchContent extends Command
@@ -52,6 +56,10 @@ class FetchContent extends Command
      */
     public function handle()
     {
+        dispatch(new Bundesliga());
+        dispatch(new Barcelona());
+        dispatch(new BarcelonaFC());
+        dispatch(new SpanishFootball());
         dispatch(new SearieAJob());
         dispatch(new HitcJob());
         dispatch(new JuventusJob());
