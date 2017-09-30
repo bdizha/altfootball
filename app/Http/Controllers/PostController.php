@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Fanbase;
 use App\Post;
 use Auth;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 
@@ -21,6 +22,7 @@ class PostController extends Controller
         $data = $request->all();
 
         $query = Post::with('user')
+            ->where('created_at', ">=", Carbon::now())
             ->orderBy('posts.created_at', 'desc')
             ->offset(12 + ($data['page'] * 2))
             ->limit(2);
