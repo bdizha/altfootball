@@ -22,7 +22,7 @@ class PostController extends Controller
         $data = $request->all();
 
         $query = Post::with('user')
-            ->where('created_at', ">=", Carbon::now())
+            ->where('created_at', "<=", Carbon::now())
             ->orderBy('posts.created_at', 'desc')
             ->offset(12 + ($data['page'] * 2))
             ->limit(2);

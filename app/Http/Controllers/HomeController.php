@@ -6,9 +6,9 @@ use App\Fanbase;
 use App\Post;
 use App\Tag;
 use App\User;
-use Illuminate\Http\Request;
-use Carbon\Carbon;
 use Auth;
+use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
@@ -22,7 +22,9 @@ class HomeController extends Controller
      */
     protected function index(Request $request)
     {
-        $posts = Post::orderBy('created_at', 'desc')->paginate(12);
+        $posts = Post::where('created_at', "<=", Carbon::now())
+            ->orderBy('created_at', 'desc')
+            ->paginate(12);
         $fanbases = Fanbase::orderBy('id', 'asc')->take(9)->get();
 
         $date = Carbon::now()->subDays(7);
