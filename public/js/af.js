@@ -86,20 +86,7 @@ $(function () {
     $('.owl-three').owlCarousel({
         loop: false,
         nav: true,
-        responsive:{
-            0:{
-                items: 1
-            },
-            300:{
-                items: 2
-            },
-            600:{
-                items: 3
-            },
-            1000:{
-                items: 3
-            }
-        },
+        autoWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });
@@ -141,17 +128,34 @@ $(function () {
     var DribbleViewModel = function (params) {
         var self = this;
 
-        console.log("params.has_dribble");
-        console.log(params.has_dribble);
-        console.log("DribbleViewModel::params");
-        console.log(params.has_dribble === true);
-
         self.dribblesCount = ko.observable(params.count);
-        self.hasDribble = ko.observable(params.has_dribble === true);
+        self.hasDribble = ko.observable(Boolean(params.has_dribble));
         self.type = ko.observable(params.type);
         self.typeId = ko.observable(params.type_id);
+        self.classId = ko.computed(function(){
+            return self.type() + "-"+ self.typeId();
+        });
+
+        console.log("params.has_dribble: " + params.has_dribble);
+        console.log("self.hasDribble: " + self.hasDribble());
 
         self.save = function () {
+
+            if(new RootViewModel().checkAuth()){
+
+            }
+
+            if(self.hasDribble()){
+                self.dribblesCount(self.dribblesCount() - 1);
+                $("." + self.classId()).removeClass("_35GH");
+            }
+            else{
+                $("." + self.classId()).addClass("_35GH");
+                self.dribblesCount(self.dribblesCount() + 1);
+            }
+
+            $("." + self.classId() + " ._34IO").html(self.dribblesCount());
+
 
             self.hasDribble(!self.hasDribble());
 
@@ -903,8 +907,13 @@ $(function () {
         };
 
         self.checkAuth = function() {
-            if(!self.isSignedIn()){
+
+            if(window.isAuthenticated === false){
                 self.showJoinForm(true);
+                return false;
+            }
+            else{
+                return true;
             }
         };
 

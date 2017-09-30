@@ -362,7 +362,7 @@ button {
   text-align: left;
   padding: 22px 40px;
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   cursor: pointer;
   svg {
     float: right;
@@ -419,18 +419,18 @@ button {
 }
 
 ._2e1-n {
-  border-color: #fff;
+  border-color: $color_white;
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   &:hover {
-    background: #fff;
+    background: $color_white;
     color: rgba(103, 143, 185, 0.4);
   }
 }
 
 .oFTqy {
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
 }
 
 .cgtnr {
@@ -491,7 +491,7 @@ button {
 }
 
 ._2XWUY {
-  background: #fff;
+  background: $color_white;
   opacity: 0;
   z-index: 1;
   max-width: 500px;
@@ -569,7 +569,7 @@ button {
 }
 
 ._1zDR7 {
-  background: #fff;
+  background: $color_white;
   border: 1px solid #f8f8f8;
   box-shadow: 0 9px 18px 0 rgba(103, 143, 185, 0.15);
   width: 300px;
@@ -588,7 +588,7 @@ button {
 }
 
 ._34TRY {
-  background: #fff;
+  background: $color_white;
   border: 1px solid #f8f8f8;
   box-shadow: 0 9px 18px 0 rgba(103, 143, 185, 0.4);
   width: 300px;
@@ -618,7 +618,7 @@ button {
 .rTjpd {
   width: 14px;
   height: 14px;
-  background: #fff;
+  background: $color_white;
   box-shadow: 0 -9px 18px 0 rgba(103, 143, 185, 0.15);
   position: absolute;
   left: 0;
@@ -701,7 +701,7 @@ button {
     background: #141C3E;
   }
   ._1VKWj, ._2Hdnz, ._35Phm {
-    color: #fff;
+    color: $color_white;
   }
   ._1VKWj {
     border-color: $color_gray;
@@ -720,7 +720,7 @@ button {
 }
 
 ._1V79j {
-  background-color: #fff;
+  background-color: $color_white;
   left: 0;
   transform: translateZ(0);
   z-index: 13;
@@ -743,7 +743,7 @@ button {
   opacity: 0;
   width: 100%;
   max-width: 508px;
-  background: #fff;
+  background: $color_white;
   transform-origin: top right;
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
   z-index: 14;
@@ -769,10 +769,10 @@ button {
   &._36JfC {
     border-bottom-color: #141C3E;
     a {
-      color: #fff;
+      color: $color_white;
     }
     path {
-      fill: #fff;
+      fill: $color_white;
     }
   }
 }
@@ -1204,7 +1204,7 @@ form {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  color: #fff;
+  color: $color_white;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -1681,7 +1681,7 @@ form {
     text-align: center;
   }
   &:hover {
-    color: #fff;
+    color: $color_white;
     background-color: rgba(0, 8, 39, 0.86);
   }
 }
@@ -1719,13 +1719,13 @@ form {
 }
 
 ._2ju8u {
-  color: #fff;
+  color: $color_white;
 }
 
 .Ge5XM {
-  color: #fff;
+  color: $color_white;
   a {
-    color: #fff;
+    color: $color_white;
   }
 }
 
@@ -1746,7 +1746,7 @@ form {
   position: relative;
   float: left;
   &:before {
-    border: 2px solid #fff;
+    border: 2px solid $color_white;
     content: "";
     height: 44px;
     width: 44px;
@@ -1761,7 +1761,7 @@ form {
     top: 50%;
   }
   &:after {
-    color: #fff;
+    color: $color_white;
     content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
@@ -1801,7 +1801,7 @@ form {
 
 ._3LGNS {
   background-color: #141C3E;
-  color: #fff;
+  color: $color_white;
   text-align: left;
   padding: 18px 26px;
   width: 100%;
@@ -1864,11 +1864,11 @@ form {
   font-size: 18px;
   line-height: 18px;
   margin-bottom: 9px;
-  color: #fff;
+  color: $color_white;
 }
 
 ._3XrdG {
-  color: #fff;
+  color: $color_white;
 }
 
 ._3a_DQ {
@@ -1952,7 +1952,7 @@ form {
       height: 42px;
     }
     path {
-      stroke: #fff;
+      stroke: $color_white;
     }
   }
   ._3B0zP {
@@ -2229,7 +2229,7 @@ form {
 
 ._1-yvw, ._2uxUw, ._3cahE, ._3Zur7 {
   display: inline;
-  color: #fff;
+  color: $color_white;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -2293,9 +2293,11 @@ form {
   border: 1px solid rgba(103, 143, 185, 0.4);
   padding: 8px;
   padding-left: 12px;
-  height: 44px;
+  height: 50px;
   margin-bottom: 0;
-  placeholder-color: rgba(103, 143, 185, 0.8);
+  font-weight: normal;
+  font-size: 14px;
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._26cuW {
@@ -2308,7 +2310,7 @@ form {
 ._145-T {
   position: absolute;
   padding: 14px 0;
-  background-color: #fff;
+  background-color: $color_white;
   border: 1px solid rgba(103, 143, 185, 0.4);
   box-shadow: 0 0 25px 0 rgba(103, 143, 185, 0.4);
   overflow-y: scroll;
@@ -2382,14 +2384,14 @@ form {
   width: 22px;
   height: 22px;
   border-radius: 3px;
-  background: #fff;
+  background: $color_white;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: flex;
   position: relative;
   &:hover {
     background: rgba(103, 143, 185, 0.4);
     svg > path {
-      stroke: #fff;
+      stroke: $color_white;
     }
   }
   svg {
@@ -2406,7 +2408,7 @@ form {
   border-radius: 3px;
   border: 0;
   &:hover {
-    background: #fff;
+    background: $color_white;
     svg > path {
       stroke: rgba(103, 143, 185, 0.4);
     }
@@ -2450,10 +2452,11 @@ form {
 
 ._2LRWs {
   border: 0;
-  background: #fff;
+  background: $color_white;
   color: rgba(103, 143, 185, 0.8);
+  margin-right: 14px;
   &:hover:enabled {
-    background: #fff;
+    background: $color_white;
     color: rgba(103, 143, 185, 0.4);
   }
 }
@@ -2634,7 +2637,7 @@ form {
 }
 
 ._1qYdF {
-  background: #fff;
+  background: $color_white;
   overflow: auto;
 }
 
@@ -2679,7 +2682,7 @@ form {
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   font-size: 14px;
   position: absolute;
   bottom: 0;
@@ -2756,7 +2759,7 @@ form {
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   font-size: 14px;
   padding: 6px 14px;
   bottom: 0;
@@ -2788,7 +2791,7 @@ form {
   top: 0;
   bottom: 0;
   &:before {
-    border: 4px solid #fff;
+    border: 4px solid $color_white;
     content: "";
     height: 50%;
     width: 50%;
@@ -2803,7 +2806,7 @@ form {
     top: 50%;
   }
   &:after {
-    color: #fff;
+    color: $color_white;
     content: attr(data-total);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
@@ -2908,7 +2911,7 @@ form {
 
 ._3wK-_ {
   text-transform: uppercase;
-  color: #fff;
+  color: $color_white;
   text-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -3052,7 +3055,7 @@ form {
 }
 
 ._2oiYz {
-  background: #fff;
+  background: $color_white;
   width: 20px;
   height: 20px;
   position: absolute;
@@ -3428,8 +3431,9 @@ form {
 dribbles {
   width: calc(33% - 20px);
   text-align: right;
-  height: 24px;
-  &:hover {
+  height: 30px;
+  &:hover,
+  ._35GH{
     ._GSL7C {
       background: $color_red;
       border: 1px solid $color_red;
@@ -3499,7 +3503,7 @@ dribbles {
   ._34IO {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 36px;
     color: rgba(103, 143, 185, 0.8);
     font-size: 14px;
     font-weight: 700;
@@ -3586,7 +3590,7 @@ dribbles {
 }
 
 ._3bxb0 {
-  background: #fff;
+  background: $color_white;
   p {
     word-break: break-word;
   }
@@ -3837,8 +3841,8 @@ dribbles {
   top: 22px;
   bottom: 22px;
   width: 196px;
-  border: 8px solid #fff;
-  color: #fff;
+  border: 8px solid $color_white;
+  color: $color_white;
   position: absolute;
   right: 14px;
 }
@@ -3921,10 +3925,10 @@ dribbles {
   text-transform: uppercase;
   width: 96px;
   height: 96px;
-  border: 8px solid #fff;
+  border: 8px solid $color_white;
   text-align: center;
   font-size: 22px;
-  color: #fff;
+  color: $color_white;
   font-size: 28px;
   line-height: 28px;
   svg {
@@ -4115,7 +4119,7 @@ dribbles {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  border: 4px solid #fff;
+  border: 4px solid $color_white;
   height: 67px;
   width: 67px;
   svg {
@@ -4123,7 +4127,7 @@ dribbles {
     height: 28px;
   }
   path {
-    fill: #fff;
+    fill: $color_white;
   }
 }
 
@@ -4505,7 +4509,7 @@ dribbles {
 }
 
 .YgLNn {
-  background-color: #fff;
+  background-color: $color_white;
   box-shadow: 0 2px 6px 0 rgba(103, 143, 185, 0.15), inset 0 -1px 0 0 rgba(103, 143, 185, 0.15);
   overflow: hidden;
 }
@@ -4591,7 +4595,7 @@ dribbles {
   left: 0;
   height: auto;
   width: 100%;
-  background: #fff;
+  background: $color_white;
   border-top: 1px solid rgba(103, 143, 185, 0.4);
 }
 
@@ -4681,7 +4685,6 @@ dribbles {
 
 ._38Ked {
   display: block;
-  width: 144px;
   margin-right: 12px;
   &:hover {
     ._1Szys, ._3Yasi {
@@ -4698,8 +4701,6 @@ dribbles {
 }
 
 ._271kZ, .eRQki {
-  width: 144px;
-  height: 144px;
 }
 
 @media screen and (max-width: 846px) {
@@ -4759,7 +4760,7 @@ dribbles {
 }
 
 ._2BZH3 {
-  background: #fff;
+  background: $color_white;
   display: flex;
   align-items: center;
 }
@@ -4768,9 +4769,10 @@ dribbles {
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   padding: 28px 18px;
   transition: opacity .1s ease-out;
+  color: $color_light_blue;
   &.disabled {
     opacity: 0.2;
   }
@@ -4875,7 +4877,7 @@ dribbles {
   font-size: 12px;
   line-height: 12px;
   background: #00AFFF;
-  color: #fff;
+  color: $color_white;
   border-radius: 18px;
   margin: 0 auto 44px;
   padding: 12px 72px;
@@ -4991,7 +4993,7 @@ dribbles {
   position: relative;
   width: 28px;
   height: 28px;
-  background-color: #fff;
+  background-color: $color_white;
   border: 1px solid rgba(0, 8, 39, 0.86);
   cursor: pointer;
   user-select: none;
@@ -5027,12 +5029,12 @@ dribbles {
 
 ._3fNy8 {
   background: rgba(103, 143, 185, 0.8);
-  color: #fff;
+  color: $color_white;
 }
 
 ._2nJET:hover {
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
 }
 
 ._21G_8 {
@@ -5075,7 +5077,7 @@ dribbles {
     }
     .ZD12l {
       &:before {
-        border: 3px solid #fff;
+        border: 3px solid $color_white;
         content: "";
         display: block;
         height: 40px;
@@ -5088,7 +5090,7 @@ dribbles {
         z-index: 1;
       }
       &:after {
-        color: #fff;
+        color: $color_white;
         content: attr(data-stamp);
         display: block;
         font-family: DriveTribe Condensed, Helvetica, sans-serif;
@@ -5177,7 +5179,7 @@ dribbles {
 }
 
 ._1KG3g {
-  border: 4px solid #fff;
+  border: 4px solid $color_white;
   content: "";
   height: 92px;
   width: 92px;
@@ -5195,7 +5197,7 @@ dribbles {
   display: block;
   position: absolute;
   top: 50%;
-  color: #fff;
+  color: $color_white;
   content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
@@ -5210,7 +5212,7 @@ dribbles {
 
 .RNhYX {
   &:before {
-    border: 4px solid #fff;
+    border: 4px solid $color_white;
     content: "";
     height: 66px;
     width: 66px;
@@ -5225,7 +5227,7 @@ dribbles {
     top: 50%;
   }
   &:after {
-    color: #fff;
+    color: $color_white;
     content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
@@ -5239,7 +5241,7 @@ dribbles {
 }
 
 ._1KQuz {
-  background: #fff;
+  background: $color_white;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -5262,7 +5264,7 @@ dribbles {
 
 .fFpBH {
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   border: 0;
 }
 
@@ -5565,7 +5567,7 @@ dribbles {
 }
 
 ._2PHlN {
-  background: #fff;
+  background: $color_white;
 }
 
 @media screen and (min-width: 508px) {
@@ -5614,7 +5616,7 @@ dribbles {
 }
 
 ._2O4Bm {
-  color: #fff;
+  color: $color_white;
 }
 
 ._3wk01 {
@@ -5628,7 +5630,7 @@ dribbles {
 }
 
 ._3Phfs {
-  background: #fff;
+  background: $color_white;
   border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   height: 96px;
   width: 100%;
@@ -5736,7 +5738,7 @@ dribbles {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: $color_white;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -6115,7 +6117,7 @@ form {
 
 ._37Oy_ {
   ._12n1y, ._15nhh, .bWRAm, .M13JP, .VnaIq {
-    color: #fff;
+    color: $color_white;
   }
   .bWRAm {
     font-size: 24px;
@@ -6165,7 +6167,7 @@ form {
     padding-bottom: 14px;
     &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder {
       opacity: .75;
-      color: #fff;
+      color: $color_white;
     }
   }
 }
@@ -6246,7 +6248,7 @@ form {
 }
 
 .KyQLW {
-  color: #fff;
+  color: $color_white;
   padding: 14px 66px;
   position: relative;
   svg {
@@ -6540,9 +6542,9 @@ form {
 }
 
 ._2rvhv {
-  color: #fff;
+  color: $color_white;
   &:after {
-    background: #fff;
+    background: $color_white;
   }
 }
 
@@ -6785,7 +6787,7 @@ form {
 }
 
 .HMy0C {
-  color: #fff;
+  color: $color_white;
   background: #00AFFF;
   padding-left: 0;
 }
@@ -6926,7 +6928,7 @@ form {
 .enQMr {
   transform: translate(-50%, -50%) rotate(45deg);
   g {
-    stroke: #fff;
+    stroke: $color_white;
   }
 }
 
@@ -7111,7 +7113,7 @@ form {
 
 ._2AwjV {
   display: block;
-  background: #fff;
+  background: $color_white;
   border: 2px solid rgba(0, 8, 39, 0.86);
   color: rgba(103, 143, 185, 0.4);
   svg {
@@ -7462,7 +7464,7 @@ form {
     right: 22px;
     transform: scale(2);
     path {
-      stroke: #fff;
+      stroke: $color_white;
       stroke-width: 1px;
     }
   }
@@ -7877,6 +7879,10 @@ form {
 
 ._55ghi {
   display: none;
+  border-left: 1px dotted rgba(103, 143, 185, 0.4);
+  ._3fi2B{
+    background: $color_white;
+  }
   &._4c7v3 {
     display: block;
   }
@@ -7904,6 +7910,9 @@ form {
 
 ._3ZzkS {
   margin-left: 28px;
+  background: rgba(103, 143, 185, 0.15);
+  padding: 24px;
+  margin-top: 24px;
 }
 
 @media screen and (max-width: 508px) {
@@ -8023,7 +8032,7 @@ form {
   top: 0;
   bottom: 0;
   right: 0;
-  background: #fff;
+  background: $color_white;
   transform-origin: center right;
   transform: translateX(100%) translateZ(0);
   overflow-y: auto;
@@ -8205,7 +8214,7 @@ form {
 @media screen and (max-width: 846px) {
   ._3IQ6i {
     &:before {
-      border: 4px solid #fff;
+      border: 4px solid $color_white;
       content: "";
       height: 50%;
       width: 50%;
@@ -8220,7 +8229,7 @@ form {
       top: 50%;
     }
     &:after {
-      color: #fff;
+      color: $color_white;
       content: attr(data-count);
       font-family: DriveTribe Condensed, Helvetica, sans-serif;
       font-weight: 400;
@@ -8237,7 +8246,7 @@ form {
 @media screen and (min-width: 846px) {
   ._3IQ6i {
     &:before {
-      border: 6px solid #fff;
+      border: 6px solid $color_white;
       content: "";
       height: 50%;
       width: 50%;
@@ -8252,7 +8261,7 @@ form {
       top: 50%;
     }
     &:after {
-      color: #fff;
+      color: $color_white;
       content: attr(data-count);
       font-family: DriveTribe Condensed, Helvetica, sans-serif;
       font-weight: 400;
@@ -8418,7 +8427,7 @@ div._3bqe5 {
   font-weight: 700;
   text-transform: uppercase;
   background: #00AFFF;
-  color: #fff;
+  color: $color_white;
   padding: 12px 22px;
 }
 
@@ -8450,7 +8459,7 @@ div._3bqe5 {
 
 ._378qt {
   position: fixed;
-  background: #fff;
+  background: $color_white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8604,7 +8613,7 @@ div._3bqe5 {
     transition: all 0.5s cubic-bezier(0, 0.42, 0, 1);
     perspective: 500px;
     &:before {
-      background: #fff;
+      background: $color_white;
       content: "";
       display: block;
       position: absolute;
@@ -9608,7 +9617,7 @@ div._3bqe5 {
   position: fixed;
   left: 0;
   top: 96px;
-  background: #fff;
+  background: $color_white;
   border-bottom: 1px solid rgba(103, 143, 185, 0.4);
   opacity: 0;
   font-size: 14px;
@@ -9665,7 +9674,7 @@ div._3bqe5 {
   padding: 12px 40px;
   margin-left: auto;
   background: #00AFFF;
-  color: #fff;
+  color: $color_white;
   border: 0;
 }
 
@@ -9756,7 +9765,7 @@ div._3bqe5 {
   font-size: 14px;
   line-height: 18px;
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   padding: 22px 28px;
   margin-bottom: 18px;
   font-family: DriveTribe, Helvetica, sans-serif;
@@ -10501,7 +10510,7 @@ div._3bqe5 {
   &:hover {
     background: #57d100;
     path[data-hover-invert=true] {
-      fill: #fff;
+      fill: $color_white;
     }
   }
 }
@@ -10625,14 +10634,18 @@ div._3bqe5 {
   margin: 0;
   padding: 0;
   ._1RyqV {
-    padding: 24px 0 0;
+    padding: 0;
     margin: 0;
     margin-right: -24px;
+    ._3HYOY{
+      display: none;
+    }
     .gEjmr {
       padding: 24px;
       margin-bottom: 0;
       box-shadow: none;
-      border-top: 1px solid rgba(103, 143, 185, 0.4);
+      border-top: none;
+      border-left: 1px dotted rgba(103, 143, 185, 0.4);
       &:last-child {
         padding-bottom: 0;
       }
@@ -11253,7 +11266,7 @@ div._3bqe5 {
   font-weight: 700;
   text-transform: uppercase;
   background: #141C3E;
-  color: #fff;
+  color: $color_white;
   padding: 44px;
   font-size: 35px;
 }
@@ -11304,7 +11317,7 @@ div._3bqe5 {
   &:hover {
     background-color: rgba(103, 143, 185, 0.8);
     svg path {
-      fill: #fff;
+      fill: $color_white;
     }
   }
 }
@@ -11391,7 +11404,7 @@ div._3bqe5 {
 
 .Y4W7O {
   background: #1da1f2;
-  color: #fff;
+  color: $color_white;
 }
 
 ._2I-QY {
@@ -11402,7 +11415,7 @@ div._3bqe5 {
 .k27yJ {
   width: 80px;
   background: #d8bf6c;
-  color: #fff;
+  color: $color_white;
 }
 
 ._2q7vJ {
@@ -11413,7 +11426,7 @@ div._3bqe5 {
 ._2SyJe {
   width: 80px;
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
 }
 
 ._3KPJA {
@@ -11447,12 +11460,12 @@ div._3bqe5 {
 
 ._1-Zgz, ._1WmTc {
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
 }
 
 .A57di {
   background: #00AFFF;
-  color: #fff;
+  color: $color_white;
 }
 
 .h6rik {
@@ -11767,13 +11780,13 @@ div._3bqe5 {
   font-size: 22px;
   line-height: 22px;
   margin-bottom: 12px;
-  color: #fff;
+  color: $color_white;
 }
 
 .cHuZj {
   font-size: 14px;
   line-height: 18px;
-  color: #fff;
+  color: $color_white;
 }
 
 ._5hpWN {
@@ -11815,7 +11828,7 @@ div._3bqe5 {
 
 ._1iEU6 {
   position: relative;
-  color: #fff;
+  color: $color_white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11860,7 +11873,7 @@ div._3bqe5 {
   width: 145px;
   height: 145px;
   &:before {
-    border: 3px solid #fff;
+    border: 3px solid $color_white;
     content: "";
     height: 53px;
     width: 53px;
@@ -11875,7 +11888,7 @@ div._3bqe5 {
     top: 50%;
   }
   &:after {
-    color: #fff;
+    color: $color_white;
     content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
@@ -11908,7 +11921,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
-  color: #fff;
+  color: $color_white;
   position: absolute;
   bottom: 12px;
   text-align: center;
@@ -12168,7 +12181,7 @@ div._3bqe5 {
 
 .ahXq_ {
   display: block;
-  color: #fff;
+  color: $color_white;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 14px;
@@ -12250,7 +12263,7 @@ div._3bqe5 {
     height: 196px;
     position: relative;
     &:before {
-      border: 3px solid #fff;
+      border: 3px solid $color_white;
       border-radius: 3px;
       content: "";
       height: 66px;
@@ -12266,7 +12279,7 @@ div._3bqe5 {
       top: 50%;
     }
     &:after {
-      color: #fff;
+      color: $color_white;
       content: attr(data-stamp);
       font-family: DriveTribe Condensed, Helvetica, sans-serif;
       font-weight: 400;
@@ -12291,7 +12304,7 @@ div._3bqe5 {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 18px;
-    color: #fff;
+    color: $color_white;
     position: absolute;
     bottom: 35px;
     text-align: center;
@@ -12360,7 +12373,7 @@ div._3bqe5 {
     width: 248px;
     height: 248px;
     &:before {
-      border: 3px solid #fff;
+      border: 3px solid $color_white;
       content: "";
       height: 92px;
       width: 92px;
@@ -12375,7 +12388,7 @@ div._3bqe5 {
       top: 50%;
     }
     &:after {
-      color: #fff;
+      color: $color_white;
       content: attr(data-stamp);
       font-family: DriveTribe Condensed, Helvetica, sans-serif;
       font-weight: 400;
@@ -12422,7 +12435,7 @@ div._3bqe5 {
   }
   &:hover {
     background: #57d100;
-    color: #fff;
+    color: $color_white;
   }
 }
 
@@ -12435,7 +12448,7 @@ div._3bqe5 {
 
 ._2Phzy {
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   position: relative;
 }
 
@@ -12517,7 +12530,7 @@ div._3bqe5 {
 
 ._166mk {
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   border-radius: 3px;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
@@ -12725,7 +12738,7 @@ div._3bqe5 {
   color: #00AFFF;
   font-size: 18px;
   line-height: 22px;
-  background: #fff;
+  background: $color_white;
   color: rgba(103, 143, 185, 0.8);
   padding-right: 0;
   padding-left: 0;
@@ -13219,7 +13232,7 @@ div._3bqe5 {
 }
 
 ._1fm2Z {
-  background: #fff;
+  background: $color_white;
   z-index: 9;
   position: fixed;
   overflow-y: scroll
@@ -13254,7 +13267,7 @@ div._3bqe5 {
 }
 
 ._1fm2Z {
-  background: #fff;
+  background: $color_white;
   z-index: 9;
   position: fixed;
   overflow-y: scroll;
@@ -13276,7 +13289,7 @@ div._3bqe5 {
 }
 
 ._1a2gI {
-  color: #fff;
+  color: $color_white;
   font-size: 12px;
   line-height: 12px;
 }
@@ -13348,7 +13361,7 @@ div._3bqe5 {
 }
 
 ._2v0kW {
-  background: #fff;
+  background: $color_white;
 }
 
 ._2Je9x {
@@ -13366,7 +13379,7 @@ div._3bqe5 {
   width: 100%;
   height: 72px;
   z-index: -1;
-  background-color: #fff;
+  background-color: $color_white;
   box-shadow: 0 10px 25px -10px rgba(103, 143, 185, 0.4);
   opacity: 0;
   transform: translateY(-30px) translateZ(0);
@@ -13394,7 +13407,7 @@ div._3bqe5 {
 
 ._12L63 {
   background: rgba(0, 8, 39, 0.86);
-  color: #fff;
+  color: $color_white;
   display: flex;
   position: relative;
   flex-direction: column;
@@ -13421,7 +13434,7 @@ div._3bqe5 {
     }
   }
   &._36gJx {
-    background: #fff;
+    background: $color_white;
     color: rgba(103, 143, 185, 0.4);
     ._3VkOf {
       position: absolute;
@@ -13498,7 +13511,7 @@ div._3bqe5 {
 
 .zrN-a {
   background: #141C3E;
-  color: #fff;
+  color: $color_white;
   &:hover {
     background: #57d100;
   }
@@ -13527,7 +13540,7 @@ div._3bqe5 {
 
 ._1ivLH, ._1Rl1f {
   background: #141C3E;
-  color: #fff;
+  color: $color_white;
 }
 
 ._2BMyH {
@@ -13565,7 +13578,7 @@ div._3bqe5 {
 }
 
 ._3hQ2Q {
-  border-top: 8px solid #fff;
+  border-top: 8px solid $color_white;
   margin-bottom: 35px;
   padding-top: 9px;
   display: none;
@@ -13708,7 +13721,7 @@ div._3bqe5 {
 ._1ioC2 {
   font-size: 28px;
   line-height: 28px;
-  color: #fff;
+  color: $color_white;
 }
 
 @media screen and (max-width: 508px) {
@@ -13773,7 +13786,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 28px;
   line-height: 28px;
-  color: #fff;
+  color: $color_white;
   margin: 35px 0;
 }
 
@@ -13837,7 +13850,7 @@ div._3bqe5 {
 ._31KTy {
   width: 100%;
   max-width: 404px;
-  color: #fff;
+  color: $color_white;
 }
 
 ._2DneJ {
@@ -13903,7 +13916,7 @@ div._3bqe5 {
 }
 
 .R1XAV {
-  background: #fff;
+  background: $color_white;
   border: none;
   height: 96px;
   width: 100%;
@@ -14095,7 +14108,7 @@ div._3bqe5 {
   &:hover {
     background: #57d100;
     path[data-hover-invert=true] {
-      fill: #fff;
+      fill: $color_white;
     }
   }
 }
@@ -14173,7 +14186,7 @@ div._3bqe5 {
 }
 
 .-hkpO {
-  background: #fff;
+  background: $color_white;
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.18);
   width: 300px;
   height: 500px;
@@ -14443,7 +14456,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._1DH32 {
-    background: #fff;
+    background: $color_white;
     padding-top: 0;
   }
 }
@@ -14463,7 +14476,7 @@ div._3bqe5 {
     color: rgba(103, 143, 185, 0.4);
   }
   ._1gJri:nth-child(odd) {
-    background: #fff;
+    background: $color_white;
   }
 }
 
@@ -14490,17 +14503,17 @@ div._3bqe5 {
       background: #141C3E;
     }
     ._3vawV, ._3ZFAN, ._10G3J {
-      color: #fff;
+      color: $color_white;
     }
     &:nth-child(odd) {
       ._3vawV, ._3ZFAN, ._10G3J {
-        color: #fff;
+        color: $color_white;
       }
     }
     ._2LIIc, &:nth-child(odd) ._2LIIc {
       background-color: #141C3E;
-      border-color: #fff;
-      color: #fff;
+      border-color: $color_white;
+      color: $color_white;
     }
   }
 }
@@ -14752,7 +14765,7 @@ div._3bqe5 {
 
 ._33vOG ._2LIIc {
   background: url(/images/repeat-logo.png) #0c122a;
-  color: #fff;
+  color: $color_white;
 }
 
 .lStfn {
@@ -15103,7 +15116,7 @@ div._3bqe5 {
 
 .C116H ._1k78U {
   background: url(/images/repeat-logo.png) #0c122a;
-  color: #fff;
+  color: $color_white;
 }
 
 ._1NG4N {
@@ -15382,14 +15395,14 @@ div._3bqe5 {
 }
 
 ._2jBYb {
-  background: #fff;
+  background: $color_white;
   color: rgba(103, 143, 185, 0.4);
   margin-top: 14px;
 }
 
 ._3qJ9g {
   display: block;
-  color: #fff;
+  color: $color_white;
   font-size: 35px;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
@@ -15411,8 +15424,8 @@ div._3bqe5 {
 ._6b0wI {
   display: block;
   width: 118px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid $color_white;
+  color: $color_white;
   padding: 6.2px;
   margin-top: 14px;
   text-transform: uppercase;
@@ -15571,7 +15584,7 @@ div._3bqe5 {
 ._20t0i {
   bottom: 57px;
   path {
-    fill: #fff;
+    fill: $color_white;
   }
 }
 
@@ -15593,7 +15606,7 @@ div._3bqe5 {
     transition: all 0.4s cubic-bezier(0, 0.42, 0, 1) 0.25s;
   }
   .weBNu {
-    background: #fff;
+    background: $color_white;
     color: rgba(0, 8, 39, 0.86);
     border-bottom: 1px solid rgba(103, 143, 185, 0.4);
     transition: all 0.1s linear 0.6s;
@@ -15607,7 +15620,7 @@ div._3bqe5 {
   bottom: 0;
   padding: 0 26px;
   background: #141C3E;
-  color: #fff;
+  color: $color_white;
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
   transform-origin: 0 0;
   perspective: 500px;
@@ -15646,7 +15659,7 @@ div._3bqe5 {
   line-height: 14px;
   border-bottom: 1px solid #141C3E;
   background: #141C3E;
-  color: #fff;
+  color: $color_white;
   cursor: pointer;
 }
 
@@ -16016,7 +16029,7 @@ div._3bqe5 {
 }
 
 ._2nCgx {
-  border-color: #fff;
+  border-color: $color_white;
   opacity: 0;
   margin-right: -15px;
   cursor: pointer;
@@ -16024,7 +16037,7 @@ div._3bqe5 {
   width: 66px;
   height: 66px;
   flex: 0 0 66px;
-  border: 2px solid #fff;
+  border: 2px solid $color_white;
   border-radius: 3px;
 }
 
@@ -16190,7 +16203,7 @@ div._3bqe5 {
 ._2ZEu- {
   display: flex;
   flex-direction: column;
-  background-color: #fff;
+  background-color: $color_white;
   width: 100%;
   max-width: 404px;
   margin: 0 auto;
@@ -16400,7 +16413,7 @@ div._3bqe5 {
   line-height: 12px;
   display: flex;
   background: #00AFFF;
-  color: #fff;
+  color: $color_white;
   width: 222px;
   padding: 14px 0;
   justify-content: center;
@@ -16423,7 +16436,7 @@ div._3bqe5 {
 ._3ocT_ {
   padding: 28px 35px;
   margin-bottom: 14px;
-  background-color: #fff;
+  background-color: $color_white;
   &:hover {
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
     ._3jhvW {
@@ -16549,7 +16562,7 @@ div._3bqe5 {
 
 .VGksr {
   &:before {
-    border: 8px solid #fff;
+    border: 8px solid $color_white;
     content: "";
     height: 110px;
     width: 110px;
@@ -16564,7 +16577,7 @@ div._3bqe5 {
     top: 50%;
   }
   &:after {
-    color: #fff;
+    color: $color_white;
     content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
@@ -16580,7 +16593,7 @@ div._3bqe5 {
 @media screen and (min-width: 508px) {
   .VGksr {
     &:before {
-      border: 9px solid #fff;
+      border: 9px solid $color_white;
       content: "";
       height: 204px;
       width: 204px;
@@ -16595,7 +16608,7 @@ div._3bqe5 {
       top: 50%;
     }
     &:after {
-      color: #fff;
+      color: $color_white;
       content: attr(data-stamp);
       font-family: DriveTribe Condensed, Helvetica, sans-serif;
       font-weight: 400;
@@ -16921,7 +16934,7 @@ div._3bqe5 {
 }
 
 ._2UPZy:before {
-  border: 4px solid #fff;
+  border: 4px solid $color_white;
   content: "";
   height: 110px;
   width: 110px;
@@ -16938,7 +16951,7 @@ div._3bqe5 {
 }
 
 ._2UPZy:after {
-  color: #fff;
+  color: $color_white;
   content: attr(data-stamp);
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
@@ -16957,7 +16970,7 @@ div._3bqe5 {
 }
 
 ._3p0RC {
-  background-color: #fff;
+  background-color: $color_white;
   padding-top: 18px
 }
 
@@ -17230,7 +17243,7 @@ nav._1R2o8 {
   padding-right: 9px;
   padding-top: 4px;
   position: relative;
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid $color_white;
   color: #666
 }
 
@@ -17437,7 +17450,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 664px) {
   .rks9Y {
-    background-color: #fff;
+    background-color: $color_white;
     margin-top: 0;
     width: 100%;
   }
@@ -17463,7 +17476,7 @@ nav._1R2o8 {
 
 ._2UPZy {
   &:before {
-    border: 4px solid #fff;
+    border: 4px solid $color_white;
     content: "";
     height: 110px;
     width: 110px;
@@ -17478,7 +17491,7 @@ nav._1R2o8 {
     top: 50%;
   }
   &:after {
-    color: #fff;
+    color: $color_white;
     content: attr(data-stamp);
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
@@ -17498,7 +17511,7 @@ nav._1R2o8 {
 }
 
 ._3p0RC {
-  background-color: #fff;
+  background-color: $color_white;
   padding-top: 18px;
 }
 
@@ -17726,7 +17739,7 @@ nav._1R2o8 {
 }
 
 ._2F06s {
-  background-color: #fff;
+  background-color: $color_white;
 }
 
 ._3vhE- {
@@ -17929,9 +17942,9 @@ nav._1R2o8 {
 }
 
 ._2fuDo {
-  color: #fff;
+  color: $color_white;
   svg g {
-    fill: #fff;
+    fill: $color_white;
   }
 }
 
@@ -17958,7 +17971,7 @@ nav._1R2o8 {
 }
 
 ._1kh2T {
-  color: #fff;
+  color: $color_white;
   font-size: 18px;
 }
 
@@ -18200,7 +18213,7 @@ nav._1R2o8 {
   position: relative;
   word-break: break-word;
   padding-bottom: 44px;
-  color: #fff;
+  color: $color_white;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -18258,7 +18271,7 @@ nav._1R2o8 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: $color_white;
 }
 
 .lPfhU {
@@ -18340,7 +18353,7 @@ nav._1R2o8 {
   top: 96px;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: $color_white;
   box-shadow: 0 1px 8px rgba(103, 143, 185, 0.4);
   z-index: 10;
   overflow: hidden;
@@ -18408,7 +18421,7 @@ nav._1R2o8 {
   padding-right: 9px;
   padding-top: 4px;
   position: relative;
-  border-bottom: 4px solid #fff;
+  border-bottom: 4px solid $color_white;
   color: rgba(103, 143, 185, 0.8);
   &:after {
     display: none;
@@ -18453,7 +18466,7 @@ nav._1R2o8 {
 }
 
 ._3vwB1 {
-  color: #fff;
+  color: $color_white;
   border-bottom-color: rgba(0, 8, 39, 0.86);
 }
 
@@ -18536,9 +18549,9 @@ nav._1R2o8 {
 }
 
 ._16OR7 {
-  color: #fff;
+  color: $color_white;
   a {
-    color: #fff;
+    color: $color_white;
   }
 }
 

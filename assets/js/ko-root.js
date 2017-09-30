@@ -40,8 +40,13 @@ $(function () {
         };
 
         self.checkAuth = function() {
-            if(!self.isSignedIn()){
+
+            if(window.isAuthenticated === false){
                 self.showJoinForm(true);
+                return false;
+            }
+            else{
+                return true;
             }
         };
 

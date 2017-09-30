@@ -86,20 +86,7 @@ $(function () {
     $('.owl-three').owlCarousel({
         loop: false,
         nav: true,
-        responsive:{
-            0:{
-                items: 1
-            },
-            300:{
-                items: 2
-            },
-            600:{
-                items: 3
-            },
-            1000:{
-                items: 3
-            }
-        },
+        autoWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });

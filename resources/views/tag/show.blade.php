@@ -26,57 +26,27 @@
                 <div class="">
                     <div class="_1ht8_">
                         <div class="_3FaZ4">
-                            @foreach($bases as $k => $base)
-                                <a class="_38Ked" href="/f/{{ $base->slug }}">
-                                    <div class="_271kZ">
-                                        <div class="">
-                                            <div class="_38L6D" style="padding-bottom: 100%;">
-                                                {!! $base->thumb_x !!}
+                            <div class="owl-carousel owl-five owl-theme">
+                                @foreach($bases as $k => $base)
+                                    <a class="_38Ked" href="/f/{{ $base->slug }}">
+                                        <div class="_271kZ">
+                                            <div class="">
+                                                <div class="_38L6D" style="padding-bottom: 100%;">
+                                                    <img alt="" role="presentation" src="{{ $base->small_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                </div>
                                             </div>
+                                            <button class="_1Szys _1MC-v _1h78h">Join</button>
                                         </div>
-                                        <button class="_1Szys _1MC-v _1h78h">Join</button>
-                                    </div>
-                                    <h3 class="_1G1nd">{{ $base->name }}</h3>
-                                </a>
-                            @endforeach
+                                        <h3 class="_1G1nd">{{ $base->name }}</h3>
+                                    </a>
+                                @endforeach
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="">
                     <div class="_2BZH3">
-                        <button class="_1JesO JcKTU" disabled="">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 width="10" height="18" viewBox="0 0 10 18">
-                                <defs>
-                                    <path id="a" d="M9.78 18V0H0v18z"></path>
-                                </defs>
-                                <g fill="none" fill-rule="evenodd">
-                                    <mask id="b" fill="#fff">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a"></use>
-                                    </mask>
-                                    <path fill="#00AFFF"
-                                          d="M9.56 16.72L1.81 8.97 9.5 1.28A.75.75 0 1 0 8.44.22L.22 8.44c-.3.3-.3.77 0 1.06l8.28 8.28a.75.75 0 0 0 1.06-1.06"
-                                          mask="url(#b)"></path>
-                                </g>
-                            </svg>
-                        </button>
                         <div class="_28Zwg LYLB_" style="transform: scaleX(0) translateZ(0px);"></div>
-                        <button class="_1JesO _3ovrL LmPde undefined">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                 width="10" height="18" viewBox="0 0 10 18" class="_3_fQN">
-                                <defs>
-                                    <path id="a" d="M9.78 18V0H0v18z"></path>
-                                </defs>
-                                <g fill="none" fill-rule="evenodd">
-                                    <mask id="b" fill="#fff">
-                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a"></use>
-                                    </mask>
-                                    <path fill="#00AFFF"
-                                          d="M9.56 16.72L1.81 8.97 9.5 1.28A.75.75 0 1 0 8.44.22L.22 8.44c-.3.3-.3.77 0 1.06l8.28 8.28a.75.75 0 0 0 1.06-1.06"
-                                          mask="url(#b)"></path>
-                                </g>
-                            </svg>
-                        </button>
                     </div>
                 </div>
             </div>
