@@ -303,7 +303,7 @@ textarea {
 body {
   font-family: 'DriveTribe', Helvetica, sans-serif;
   font-weight: 400;
-  background: url(/images/repeat-logo.png) #F9F9F9;
+  background: #FAFAFA;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -815,7 +815,7 @@ button {
 }
 
 ._1V79j {
-  background-color: #FFFFFF;
+  background-color: #678fb9;
   left: 0;
   transform: translateZ(0);
   z-index: 13;
@@ -2494,13 +2494,13 @@ form ._2Kdch {
 }
 
 ._3fi2B {
-  border: 1px solid rgba(103, 143, 185, 0.4);
+  border: 1px solid transparent;
   padding: 8px;
   padding-left: 12px;
   height: 50px;
   margin-bottom: 0;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   background: rgba(103, 143, 185, 0.15);
 }
 
@@ -3636,7 +3636,7 @@ form ._2Kdch {
 }
 
 ._1RYG9 {
-  background: url(/images/repeat-logo.png) #F9F9F9;
+  background: #FAFAFA;
   padding-top: 35px;
   padding-bottom: 64px;
   min-height: 100vh;
@@ -3679,11 +3679,11 @@ form ._2Kdch {
 
 @media screen and (min-width: 846px) {
   ._3gFQj:first-child {
-    padding-right: 4px;
+    padding-right: 7px;
   }
 
   ._3gFQj:last-child {
-    padding-left: 4px;
+    padding-left: 7px;
   }
 }
 
@@ -3700,7 +3700,7 @@ form ._2Kdch {
 
 .p32Iu {
   transition: transform 0.4s cubic-bezier(0, 0.42, 0, 1), opacity 0.3s ease-out;
-  margin-bottom: 8px;
+  margin-bottom: 14px;
   background: #FFFFFF;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
@@ -7958,8 +7958,10 @@ form ._12n1y {
 }
 
 .ivfOh {
-  padding-top: 0px;
-  background-color: #FFFFFF;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
+  overflow: hidden;
+  padding: 24px;
 }
 
 ._3CHps {
@@ -9567,8 +9569,6 @@ div._3bqe5 > div {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 64px;
-  background: #FFFFFF;
   overflow: hidden;
   border-radius: 3px;
 }
@@ -14928,7 +14928,7 @@ div._3bqe5 > div {
   position: static;
   overflow: auto;
   transform: none;
-  background: #FFFFFF;
+  background: #FAFAFA;
 }
 
 ._1A3CD.active {
@@ -15036,8 +15036,8 @@ div._3bqe5 > div {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 14px;
-  margin: 0 27px;
+  padding: 0;
+  margin: 0 24px;
   position: relative;
   font-family: DriveTribe, Helvetica, sans-serif;
   font-weight: 700;
@@ -15359,7 +15359,7 @@ div._3bqe5 > div {
   position: relative;
   background: none;
   line-height: 28px;
-  padding: 18px 24px;
+  padding: 12px 24px;
 }
 
 @media screen and (max-width: 508px) {

@@ -168,20 +168,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="_1Q_Pu">
-                        <div id="fb-root"></div>
-                        <div class="_3G-jr">Like us on facebook</div>
-                        <div class="_3Z0E3">
-                            <img src="/images/logo.png" alt="AltFootball" class="_1aThB">
-                            <div class="_3GhRl">
-                                <a class="zzDw5" href="https://www.facebook.com/altfootballdotcom/" rel="nofollow">ALTFOOTBALL</a>
-                                <div class="fb-like _1kDAA fb_iframe_widget"
-                                     data-href="https://www.facebook.com/altfootballdotcom" data-layout="button"
-                                     data-action="like" data-size="small" data-show-faces="false" data-share="false">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
                 <div class="_2xoE4 NasRD _3QYjF">
                     <button class="_1Zj5n _1cG70 _2YLzg">

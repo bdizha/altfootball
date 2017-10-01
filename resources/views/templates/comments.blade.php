@@ -2,7 +2,7 @@
 
     <!-- ko if: level() === 0 && isList() === false -->
     <div class="_2uxNN">
-        Tackles(<span data-bind="text: commentsCount"></span>)
+        Responses (<span data-bind="text: commentsCount"></span>)
     </div>
     <div class="ivfOh">
         <!-- ko if: isSignedIn()  -->
@@ -23,7 +23,7 @@
             <div data-bind="fileDrag: fileData" class="filedrag">
                 <div class="sc-bdVaJa fBUmFc">
                     <div>
-                        <textarea placeholder="Want to add something?" class="_3fi2B _2u-lb" data-bind="value: newCommentText, valueUpdate: 'afterkeyup', event: { focus: checkAuth }"></textarea>
+                        <textarea placeholder="Write a response..." class="_3fi2B _2u-lb" data-bind="value: newCommentText, valueUpdate: 'afterkeyup', event: { focus: checkAuth }"></textarea>
                     </div>
                 </div>
                 <div class="_3hgGE" data-bind="visible: fileData().dataURL">
