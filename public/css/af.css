@@ -2497,11 +2497,13 @@ form ._2Kdch {
   border: 1px solid transparent;
   padding: 8px;
   padding-left: 12px;
-  height: 50px;
   margin-bottom: 0;
   font-weight: normal;
-  font-size: 16px;
   background: rgba(103, 143, 185, 0.15);
+  color: rgba(0, 8, 39, 0.86);
+  font-size: 18px;
+  line-height: 1.58;
+  letter-spacing: -.004em;
 }
 
 ._26cuW {
