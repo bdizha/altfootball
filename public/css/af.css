@@ -3935,7 +3935,6 @@ dribbles ._35GH ._34IO {
 @media screen and (max-width: 508px) {
   ._2hvwD .rF2QA {
     margin-bottom: 18px;
-    padding: 0;
   }
 }
 
@@ -4124,10 +4123,8 @@ dribbles ._35GH ._34IO {
   margin: 0;
 }
 
-@media screen and (min-width: 768px) {
-  ._25bvT img {
-    border-radius: 3px;
-  }
+._25bvT img {
+  border-radius: 0px;
 }
 
 ._3DF9 {

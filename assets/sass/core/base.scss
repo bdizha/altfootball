@@ -3631,7 +3631,6 @@ dribbles {
   @media screen and (max-width: 508px) {
     .rF2QA {
       margin-bottom: 18px;
-      padding: 0;
     }
   }
   &:hover {
@@ -3804,10 +3803,8 @@ dribbles {
   padding-bottom: 56.25%;
   overflow: hidden;
   margin: 0;
-  @media screen and (min-width: 768px) {
-    img {
-      border-radius: 3px;
-    }
+  img {
+    border-radius: 0px;
   }
 }
 
