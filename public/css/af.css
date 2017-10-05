@@ -3890,6 +3890,38 @@ dribbles ._35GH ._34IO {
   background: #FFFFFF;
 }
 
+._3bxb0 ._2kQCw {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin-bottom: 0;
+  position: static;
+}
+
+._3bxb0 .e_0uO {
+  -ms-flex: 0 0 40px;
+  flex: 0 0 40px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgba(0, 8, 39, 0.86);
+}
+
+._3bxb0 .e_0uO:after {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+._3bxb0 ._3FTXM {
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 14px;
+  font-size: 18px;
+  line-height: 40px;
+  transform: none;
+  position: static;
+}
+
 ._3bxb0 p {
   word-break: break-word;
 }
@@ -4041,7 +4073,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1pPnu {
-  height: 45px;
+  height: 40px;
   overflow: hidden;
 }
 
@@ -7967,6 +7999,12 @@ form ._12n1y {
   margin-bottom: 14px;
 }
 
+@media screen and (max-width: 508px) {
+  .ivfOh {
+    margin: 0 -24px;
+  }
+}
+
 ._3CHps {
   display: -ms-flexbox;
   display: flex;
@@ -10426,7 +10464,8 @@ div._3bqe5 > div {
   background-color: rgba(0, 8, 39, 0.86);
   border-radius: 3px;
   overflow: hidden;
-  color: #f8f8f8;
+  margin-bottom: 24px;
+  color: #FFFFFF;
 }
 
 @media screen and (max-width: 508px) {

@@ -23,7 +23,7 @@ $(function () {
         // self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
         self.isSignedIn = ko.computed(function () {
-            return window.isAuthenticated ? true : true;
+            return !!window.isAuthenticated;
         });
 
         console.log("self.isAuthenticated()");

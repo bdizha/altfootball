@@ -62,9 +62,6 @@
                 <div class="_1veAI _1iE2V">
                     <div class="_1-sfe _29LD-">
                         <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
-                        <div class="dqbp5">
-                            @include('post.meta')
-                        </div>
                     </div>
                 </div>
                 <div class="_1Fx1P _1iE2V _1Ov3j">
@@ -85,16 +82,6 @@
                                           d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
                                 </svg>
                             </a>
-                        </div>
-                    </div>
-                    <div class="_3tkuf">
-                        <div class="_1drt2 _9fE1R NasRD">
-                            <div>
-                                <h2>LIKE {{ $post->fanbase->name }}?</h2>
-                            </div>
-                            <div class="_3OD4J _1yV5F _1MC-v _1h78h">
-                                JOIN ALTFOOTBALL
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,6 +143,16 @@
                         <p class="_25BgE">
                             <span><span>{{ $post->summary }}</span></span>
                         </p>
+                        <div class="_3tkuf">
+                            <div class="_1drt2 _9fE1R NasRD">
+                                <div>
+                                    <h2>LIKE {{ $post->fanbase->name }}?</h2>
+                                </div>
+                                <div class="_3OD4J _1yV5F _1MC-v _1h78h">
+                                    JOIN ALTFOOTBALL
+                                </div>
+                            </div>
+                        </div>
                         {!! $post->getHtmlContent() !!}
                     </div>
                     <div class="_3tkuf _23YI">
@@ -167,6 +164,9 @@
                                Join {{ $post->fanbase->name }}
                             </div>
                         </div>
+                    </div>
+                    <div class="dqbp5">
+                        @include('post.meta')
                     </div>
                 </div>
                 <div class="_2xoE4 NasRD _3QYjF">

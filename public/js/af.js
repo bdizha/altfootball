@@ -508,7 +508,7 @@ $(function () {
                         self.posts.push(post);
                     });
 
-                    $("._34-mC").on('click', toogleShare);
+                    // $("._34-mC").on('click', toogleShare);
                 }
             });
         };
@@ -890,7 +890,7 @@ $(function () {
         // self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
         self.isSignedIn = ko.computed(function () {
-            return window.isAuthenticated ? true : true;
+            return !!window.isAuthenticated;
         });
 
         console.log("self.isAuthenticated()");

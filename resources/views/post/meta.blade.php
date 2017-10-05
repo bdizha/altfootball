@@ -1,27 +1,14 @@
 <div class="_1pPnu">
-    <div class="_2VAHq">
-        <a href="{{ $post->slug }}">
-            <div class="_1yAXU">
-                <div style="padding-bottom:100%;" class="_38L6D">
-                    <img alt="" role="presentation" src="{{ $post->user->thumb_x }}" class="_214e9 b00q8">
-                    <div class="_HY8RT">
-                    </div>
-                </div>
-            </div>
-        </a>
-        <span class="_1NHvQ _3Xf-w">
-            <a href="/u/{{ $post->user->slug }}">
-               {{ $post->user->name }}
-                @include('svg.approved')
-            </a>
-            <span>
-               <span>
-                   shared in <br>
-               </span>
-               <a class="_1XNRF" href="/f/{{ $post->fanbase->slug }}">
-                 {{ '@' . $post->fanbase->slug }}
-               </a>
-            </span>
-         </span>
-    </div>
+    <a class="_2kQCw" href="/f/{{ $post->fanbase->slug }}">
+        <div class="_1Gyo9 e_0uO" data-stamp="GF"></div>
+        <p class="_3FTXM wcqil">
+            {{ '@' . $post->fanbase->slug }}
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18 18" class="G0duV">
+                <g fill="none" fill-rule="evenodd">
+                    <path fill="#57d100" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                    <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                </g>
+            </svg>
+        </p>
+    </a>
 </div>

@@ -5,8 +5,7 @@
         Responses (<span data-bind="text: commentsCount"></span>)
     </div>
     <div class="ivfOh">
-        <!-- ko if: isSignedIn()  -->
-        <div class="_1HA3l _3CHps">
+        <div class="_1HA3l _3CHps" data-bind="if: isSignedIn()">
             <div class="_25jNX _2l14J">
                 <div class="N3r_f">
                     <div class="_38L6D" style="padding-bottom: 100%;">
@@ -18,7 +17,6 @@
                 <div class="_1bkDE" data-bind="text: currentUser().name"></div>
             </div>
         </div>
-        <!-- /ko -->
         <form class="_33rbn ODDw0" data-bind="submit: saveComment">
             <div data-bind="fileDrag: fileData" class="filedrag">
                 <div class="sc-bdVaJa fBUmFc">

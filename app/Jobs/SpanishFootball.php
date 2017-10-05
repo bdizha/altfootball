@@ -23,7 +23,8 @@ class SpanishFootball extends NewsJob
     public function __construct()
     {
         $this->fanbase_id = 34;
-        $this->domain = "http://www.marca.com/en/football/spanish-football.html?cid=MENUMIGA35903&s_kw=spanish-football";
+        $this->url = "http://www.marca.com/en/football/spanish-football.html?cid=MENUMIGA35903&s_kw=spanish-football";
+        $this->domain = "http://www.marca.com/en/";
     }
 
     /**
@@ -37,7 +38,7 @@ class SpanishFootball extends NewsJob
         echo ":::::: " . $this->domain . " ::::::\n";
         $client = new Client();
 
-        $crawler = $client->request('GET', $this->domain);
+        $crawler = $client->request('GET', $this->url);
         $crawler->filter('.content-item ')->each(function (Crawler $node, $i) {
 
             if ($node->filter('a')->count()) {

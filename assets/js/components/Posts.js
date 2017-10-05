@@ -33,7 +33,7 @@ $(function () {
                         self.posts.push(post);
                     });
 
-                    $("._34-mC").on('click', toogleShare);
+                    // $("._34-mC").on('click', toogleShare);
                 }
             });
         };

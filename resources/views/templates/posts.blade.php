@@ -3,31 +3,18 @@
         <div class="p32Iu">
             <div class="_3bxb0">
                 <div class="_2WwnI">
-                    <div class="_1pPnu">
-                        <div class="_2VAHq">
-                            <a data-bind="attr: { href: '/u/' + user.slug }">
-                                <div class="_1yAXU">
-                                    <div style="padding-bottom:100%;" class="_38L6D">
-                                        <img role="presentation" class="_214e9 b00q8" data-bind="attr: { src: user.thumb_x }">
-                                        <div class="_HY8RT">
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <span class="_1NHvQ _3Xf-w">
-                                <a data-bind="attr: { href: '/u/' + user.slug }">
-                                    <!-- ko text: user.name --><!--/ko-->)
-                                   @include('svg.approved')
-                                </a>
-                                <span>
-                                   <span>
-                                       shared in <br>
-                                   </span>
-                                    <a class="_1XNRF" data-bind="attr: { href: '/f/' + fanbase.slug }, text: '@' + fanbase.slug"></a>
-                                </span>
-                            </span>
-                        </div>
-                    </div>
+                    <a class="_2kQCw" data-bind="attr: { href: '/f/' + fanbase.slug }">
+                        <div class="_1Gyo9 e_0uO" data-stamp="GF"></div>
+                        <p class="_3FTXM wcqil">
+                            <span data-bind="text: '@' + fanbase.slug"></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18 18" class="G0duV">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#57d100" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                    <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                </g>
+                            </svg>
+                        </p>
+                    </a>
                     <div class="r9rA5">
                         <button class="_2KGdb _34-mC">
                             <div class="_1CwPf">

@@ -3435,7 +3435,7 @@ dribbles {
   text-align: right;
   height: 30px;
   &:hover,
-  ._35GH{
+  ._35GH {
     ._GSL7C {
       background: $color_red;
       border: 1px solid $color_red;
@@ -3593,6 +3593,32 @@ dribbles {
 
 ._3bxb0 {
   background: $color_white;
+  ._2kQCw {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    margin-bottom: 0;
+    position: static;
+  }
+  .e_0uO {
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(0, 8, 39, 0.86);
+    &:after {
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
+  ._3FTXM {
+    flex: 1;
+    margin-left: 14px;
+    font-size: 18px;
+    line-height: 40px;
+    transform: none;
+    position: static;
+  }
   p {
     word-break: break-word;
   }
@@ -3734,7 +3760,7 @@ dribbles {
 }
 
 ._1pPnu {
-  height: 45px;
+  height: 40px;
   overflow: hidden;
 }
 
@@ -7406,6 +7432,12 @@ form {
   }
 }
 
+@media screen and (max-width: 508px) {
+  .ivfOh {
+    margin: 0 -24px;
+  }
+}
+
 ._3CHps {
   display: flex;
   align-items: center;
@@ -7885,7 +7917,7 @@ form {
 ._55ghi {
   display: none;
   border-left: 1px dotted rgba(103, 143, 185, 0.4);
-  ._3fi2B{
+  ._3fi2B {
     background: $color_white;
   }
   &._4c7v3 {
@@ -9701,7 +9733,8 @@ div._3bqe5 {
   background-color: rgba(0, 8, 39, 0.86);
   border-radius: 3px;
   overflow: hidden;
-  color: #f8f8f8;
+  margin-bottom: 24px;
+  color: $color_white;
 }
 
 @media screen and (max-width: 508px) {
@@ -10640,7 +10673,7 @@ div._3bqe5 {
     padding: 0;
     margin: 0;
     margin-right: -24px;
-    ._3HYOY{
+    ._3HYOY {
       display: none;
     }
     .gEjmr {

@@ -27,6 +27,12 @@
     <meta name="apple-itunes-app" content="app-id=1164159977">
     @yield('meta')
     <script src="/js/vendors.js"></script>
+    @yield('js')
+    <script type="text/javascript" auth="{{ Auth::guard()->check() ? "true" : "false" }}">
+        $(function () {
+            window.isAuthenticated = {{ Auth::guard()->check() ? "true" : "false" }};
+        });
+    </script>
     <script src="/js/af.js"></script>
 </head>
 <body>
@@ -55,11 +61,5 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" auth="{{ Auth::guard()->check() ? "true" : "false" }}">
-    $(function () {
-        window.isAuthenticated = {{ Auth::guard()->check() ? "true" : "false" }};
-    });
-</script>
-@yield('js')
 </body>
 </html>
