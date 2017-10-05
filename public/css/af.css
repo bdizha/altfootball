@@ -3943,12 +3943,6 @@ dribbles ._35GH ._34IO {
   transform: scale(1.2);
 }
 
-@media screen and (max-width: 508px) {
-  ._2hvwD {
-    margin: 0 24px;
-  }
-}
-
 ._2WwnI {
   display: -ms-flexbox;
   display: flex;
@@ -4138,12 +4132,6 @@ dribbles ._35GH ._34IO {
 
 ._3DF9 {
   margin: 24px 24px 0;
-}
-
-@media screen and (max-width: 508px) {
-  ._3DF9 {
-    margin: 24px 0 0;
-  }
 }
 
 ._3DF9 ._3duUm {
