@@ -6,6 +6,10 @@ $(function () {
     };
 
     $('a._2Q0fU, a._29zpU').on('click', function (e) {
+
+        if($(this).hasAttribute("onclick")){
+            return false;
+        }
         var
             verticalPos = Math.floor(($(window).width() - popupSize.width) / 2),
             horisontalPos = Math.floor(($(window).height() - popupSize.height) / 2);
