@@ -5,6 +5,7 @@
     "laravel-elixir": "^3.*"
   },
   "dependencies": {
-    "sammy": "^0.7.6"
+    "sammy": "^0.7.6",
+    "tween": "^0.9.0"
   }
 }

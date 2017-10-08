@@ -669,6 +669,20 @@ button {
   transform: scaleX(1) scaleY(1) translateY(0px) translateZ(0px);
 }
 
+@media screen and (max-width: 810px) {
+  ._1zDR7.active {
+    top: 152px;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 508px) {
+  ._1zDR7.active {
+    top: 152px;
+    left: 0;
+  }
+}
+
 ._34TRY {
   background: #FFFFFF;
   border: 1px solid #f8f8f8;
@@ -815,7 +829,7 @@ button {
 }
 
 ._1V79j {
-  background-color: #678fb9;
+  background-color: rgba(255, 255, 255, 0.96);
   left: 0;
   transform: translateZ(0);
   z-index: 13;
@@ -951,7 +965,7 @@ form#fanbase-form .b00q8 {
 
 .N3r_f {
   background: #f8f8f8;
-  border-radius: 3px;
+  border-radius: 50%;
   overflow: hidden;
   width: 100%;
   height: 100%;
@@ -6630,6 +6644,7 @@ form ._12n1y {
 ._37Oy_ .bWRAm {
   font-size: 24px;
   line-height: 24px;
+  font-weight: 400;
 }
 
 ._37Oy_ .M13JP {
@@ -20128,4 +20143,19 @@ nav._1R2o8 {
 
 ._13Js3:hover path:last-child {
   stroke: rgba(103, 143, 185, 0.8);
+}
+
+#busy .spinner {
+  animation: spinner 1.2s linear infinite;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/loader.png);
+  background-size: 100%;
+  margin-left: -90px;
+  margin-top: -90px;
+  position: absolute;
+  height: 180px;
+  width: 180px;
+  left: 50%;
+  top: 50%;
 }

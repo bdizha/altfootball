@@ -125,7 +125,6 @@
                     </div>
                     <div class="_1Rj2S _3Xaa0">
                         <div class="_37Oy_">
-                            <img src="/images/text.png" title="altfootball" alt="altfootball">
                             @include('auth.templates.form')
                             <join-form params="_token: '{{ csrf_token() }}'"></join-form>
                             <a href="/fb" class="ahXq_">

@@ -442,6 +442,12 @@ $(function () {
         };
 
         self.proceed = function () {
+
+            if (self.email.length === 0) {
+                self.canGo(false);
+                return false;
+            }
+
             self.email.isModified(true);
 
             self.isSubmitted(true);

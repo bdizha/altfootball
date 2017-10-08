@@ -44,6 +44,6 @@ class ProfileController extends Controller
         $user->website = $data['website'];
         $user->save();
 
-        return true;
+        return $user->toJson();
     }
 }
