@@ -3428,6 +3428,22 @@ form {
   overflow: hidden;
   position: relative;
   border-radius: 3px;
+  ._4TYO{
+    margin: 0 24px 18px;
+    box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
+  }
+  ._3DF9{
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 8, 39, 0.7);
+    left: 0;
+    right: 0;
+    padding: 18px 24px;
+    color: $color_white;
+    text-shadow: 0 1px -1px rgba(0, 8, 39, 0.7);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.2);
+  }
   .gEjmr {
     padding-bottom: 0;
     box-shadow: none;
@@ -3438,6 +3454,10 @@ form {
     box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
     ._HY8RT {
       border: 1px solid $color_green;
+    }
+    ._3DF9{
+      color: $color_green;
+      background: rgba(255, 255, 255, 1);
     }
   }
 }
@@ -3640,6 +3660,7 @@ dribbles {
   display: block;
   margin: 0;
   overflow: hidden;
+  position: relative;
   @media screen and (max-width: 508px) {
     .rF2QA {
       margin-bottom: 18px;
@@ -3738,7 +3759,7 @@ dribbles {
   margin-top: 0;
   &._2L6V9 {
     border: none !important;
-    padding-top: 0;
+    padding-top: 18px;
   }
 }
 
@@ -3816,7 +3837,7 @@ dribbles {
   overflow: hidden;
   margin: 0;
   img {
-    border-radius: 0px;
+    border-radius: 0;
   }
 }
 
@@ -3824,7 +3845,7 @@ dribbles {
   margin: 24px 24px 0;
   ._3duUm {
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 

@@ -32,7 +32,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="_4TYO">
             <a class="_2hvwD" href="{{ route('post.show', ['slug' => $post->slug]) }}">
                 <div class="_25bvT">
                     <div style="padding-bottom:56.25%;" class="_38L6D">
@@ -42,9 +42,6 @@
                 <div class="_3DF9">
                     <h2 class="_2DyJ3 _3duUm">{{ $post->title }}</h2>
                 </div>
-                <div class="_8m6WC rF2QA">
-                    <span class="_2jvdf">{{ 'Approx. ' . $post->published_at }}</span>
-                </div>
             </a>
             <h3 class="_35O2p _3VB1o _3duUm _2L6V9">
                 <span>
@@ -52,6 +49,7 @@
                     <a class="_1kgtA _2Oo2A" href="{{ route('post.show', ['slug' => $post->slug]) }}">
                         {{ $post->reading_time }}
                     </a>
+                    <span class="_2jvdf">{{ ' ~' . $post->published_at }}</span>
                 </span>
             </h3>
         </div>

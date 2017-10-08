@@ -213,7 +213,7 @@ class Post extends Model
         $totalWords = count($words);
         $readingTimeMinutes = floor($totalWords / $this->wordsPerMinute);
 
-        return (!empty($readingTimeMinutes) ? $readingTimeMinutes : "< 1") . "m read";
+        return (!empty($readingTimeMinutes) ? $readingTimeMinutes : "< 1") . " mins read";
     }
 
     public function getMeta()

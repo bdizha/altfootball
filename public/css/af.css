@@ -3724,6 +3724,24 @@ form ._2Kdch {
   border-radius: 3px;
 }
 
+.p32Iu ._4TYO {
+  margin: 0 24px 18px;
+  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
+}
+
+.p32Iu ._3DF9 {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 8, 39, 0.7);
+  left: 0;
+  right: 0;
+  padding: 18px 24px;
+  color: #FFFFFF;
+  text-shadow: 0 1px -1px rgba(0, 8, 39, 0.7);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.2);
+}
+
 .p32Iu .gEjmr {
   padding-bottom: 0;
   box-shadow: none;
@@ -3736,6 +3754,11 @@ form ._2Kdch {
 
 .p32Iu:hover ._HY8RT {
   border: 1px solid #57d100;
+}
+
+.p32Iu:hover ._3DF9 {
+  color: #57d100;
+  background: white;
 }
 
 dribbles {
@@ -3944,6 +3967,7 @@ dribbles ._35GH ._34IO {
   display: block;
   margin: 0;
   overflow: hidden;
+  position: relative;
 }
 
 @media screen and (max-width: 508px) {
@@ -4059,7 +4083,7 @@ dribbles ._35GH ._34IO {
 
 ._35O2p._2L6V9 {
   border: none !important;
-  padding-top: 0;
+  padding-top: 18px;
 }
 
 ._46OYH {
@@ -4138,7 +4162,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._25bvT img {
-  border-radius: 0px;
+  border-radius: 0;
 }
 
 ._3DF9 {
@@ -4147,7 +4171,7 @@ dribbles ._35GH ._34IO {
 
 ._3DF9 ._3duUm {
   margin-bottom: 0;
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .FnwOT {
