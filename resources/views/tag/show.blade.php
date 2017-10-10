@@ -54,20 +54,10 @@
                 <div>
                     <div class="_2u6Ki _1iE2V">
                         <div class="_3gFQj">
-                            @foreach($posts as $k => $post)
-                                @if(fmod($k, 2))
-                                    @include('post.item')
-                                @endif
-                            @endforeach
-                            <div class="_2L2jX"></div>
+                            <posts params='page: 0, fanbase: ""'></posts>
                         </div>
                         <div class="_3gFQj">
-                            @foreach($posts as $k => $post)
-                                @if(fmod($k + 1, 2))
-                                    @include('post.item')
-                                @endif
-                            @endforeach
-                            <div class="_2L2jX"></div>
+                            <posts params='page: 1, fanbase: ""'></posts>
                         </div>
                     </div>
                     <div class="_2L2jX"></div>

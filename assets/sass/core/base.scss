@@ -3428,6 +3428,9 @@ form {
   overflow: hidden;
   position: relative;
   border-radius: 3px;
+  &.active{
+    z-index: 40;
+  }
   ._4TYO{
     margin: 0 24px 18px;
     box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);

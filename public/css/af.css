@@ -3724,6 +3724,10 @@ form ._2Kdch {
   border-radius: 3px;
 }
 
+.p32Iu.active {
+  z-index: 40;
+}
+
 .p32Iu ._4TYO {
   margin: 0 24px 18px;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);

@@ -1,10 +1,10 @@
 <template id="posts-template">
     <div data-bind="foreach: posts, infiniteScroll: fetchPosts">
-        <div class="p32Iu">
+        <div class="p32Iu" data-bind="css: { active: $parent.current() === $index() }">
             <div class="_3bxb0">
                 <div class="_2WwnI">
-                    <a class="_2kQCw" data-bind="attr: { href: '/f/' + fanbase.slug }">
-                        <div class="_1Gyo9 e_0uO" data-stamp="GF"></div>
+                    <a class="_2kQCw" data-bind="attr: { 'href': '/f/' + fanbase.slug }">
+                        <div class="_1Gyo9 e_0uO" data-bind="attr: { 'data-stamp': fanbase.stamp }"></div>
                         <p class="_3FTXM wcqil">
                             <span data-bind="text: '@' + fanbase.slug"></span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18 18" class="G0duV">
@@ -48,21 +48,21 @@
                     </div>
                 </div>
                 <div class="_4TYO">
-                    <a class="_2hvwD" data-bind="attr: { href: '/p/' + slug }">
+                    <a class="_2hvwD" data-bind="attr: { 'href': '/p/' + slug }">
                         <div class="_25bvT">
                             <div style="padding-bottom:56.25%;" class="_38L6D">
                                 <img role="presentation" class="_214e9 b00q8" data-bind="attr: { src: small_x }">
                             </div>
                         </div>
                         <div class="_3DF9">
-                            <h2 class="_2DyJ3 _3duUm" data-bind="text: title"></h2>
+                            <h2 class="_2DyJ3 _3duUm" data-bind="text: title + ' ' + $parent.current()"></h2>
                         </div>
                     </a>
                     <h3 class="_35O2p _3VB1o _3duUm _2L6V9">
                         <span>
                             <span data-bind="html: summary"></span>
                             <a class="_1kgtA _2Oo2A" data-bind="attr: { href: '/p/' + slug }, text: reading_time"></a>
-                            <span class="_2jvdf" data-bind="text: ' ~' + published_at"></span>
+                            <span class="_2jvdf" data-bind="text: ' ~' +     published_at"></span>
                         </span>
                     </h3>
                 </div>

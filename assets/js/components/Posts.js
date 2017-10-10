@@ -8,12 +8,22 @@ $(function () {
     var PostsViewModel = function (params) {
         var self = this;
 
+        self.current = ko.observable(0);
         self.posts = ko.observableArray([]);
         self.fanbase = ko.observable(params.fanbase);
         self.page = ko.observable(params.page);
 
-        self.fetchPosts = function () {
+        self.show = function (index, data){
 
+            params.showItem(true);
+
+            self.current(index);
+
+            console.log("self.current");
+            console.log(self.current());
+        };
+
+        self.fetchPosts = function () {
             var params = {
                 fanbase_id: self.fanbase(),
                 page: self.page()
@@ -33,6 +43,7 @@ $(function () {
                         self.posts.push(post);
                     });
 
+                    // investigate why this is happening and be open minded
                     // $("._34-mC").on('click', toogleShare);
                 }
             });

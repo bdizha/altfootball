@@ -24,7 +24,7 @@ class PostController extends Controller
         $query = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
             ->orderBy('posts.created_at', 'desc')
-            ->offset(12 + ($data['page'] * 2))
+            ->offset(($data['page'] * 2))
             ->limit(2);
 
         if (!empty($data['fanbase_id'])) {
@@ -44,10 +44,12 @@ class PostController extends Controller
         $post = Post::where('slug', '=', $slug)->first();
 
         $trendingPosts = Post::where("id", "<", $post->id)
+            ->where('created_at', '>=', Carbon::now()->subWeek(1))
             ->orderBy("created_at", "DESC")->take(4)->get();
 
         $siblingPosts = Post::where("id", "<", $post->id)
-            ->orderBy("created_at", "DESC")->take(2)->get();
+            ->inRandomOrder()
+            ->orderBy("created_at", "DESC")->take(3)->get();
 
         if ($post->fanbase) {
             $fanbases = Fanbase::where("id", "!=", $post->fanbase->id)

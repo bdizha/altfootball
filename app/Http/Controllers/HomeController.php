@@ -22,9 +22,6 @@ class HomeController extends Controller
      */
     protected function index(Request $request)
     {
-        $posts = Post::where('created_at', "<=", Carbon::now())
-            ->orderBy('created_at', 'desc')
-            ->paginate(12);
         $fanbases = Fanbase::orderBy('id', 'asc')->take(9)->get();
 
         $date = Carbon::now()->subDays(7);
@@ -44,7 +41,6 @@ class HomeController extends Controller
             ->get();
 
         return view('welcome', [
-            'posts' => $posts,
             'fanbases' => $fanbases,
             'popularPosts' => $popularPosts,
             'tags' => $tags,

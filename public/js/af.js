@@ -493,12 +493,22 @@ $(function () {
     var PostsViewModel = function (params) {
         var self = this;
 
+        self.current = ko.observable(0);
         self.posts = ko.observableArray([]);
         self.fanbase = ko.observable(params.fanbase);
         self.page = ko.observable(params.page);
 
-        self.fetchPosts = function () {
+        self.show = function (index, data){
 
+            params.showItem(true);
+
+            self.current(index);
+
+            console.log("self.current");
+            console.log(self.current());
+        };
+
+        self.fetchPosts = function () {
             var params = {
                 fanbase_id: self.fanbase(),
                 page: self.page()
@@ -518,6 +528,7 @@ $(function () {
                         self.posts.push(post);
                     });
 
+                    // investigate why this is happening and be open minded
                     // $("._34-mC").on('click', toogleShare);
                 }
             });
@@ -896,6 +907,7 @@ $(function () {
 
         self.showSettingsForm = ko.observable(false);
         self.showUserForm = ko.observable(false);
+        self.showItem = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
         // self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
@@ -909,11 +921,15 @@ $(function () {
         console.log(self.isSignedIn());
 
         self.showOverlay = ko.computed(function () {
-            return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm();
+            return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm() || self.showItem();
         });
 
         self.openJoinForm = function() {
             self.showJoinForm(true);
+        };
+
+        self.openItem = function() {
+            self.showItem(true);
         };
 
         self.checkAuth = function() {
@@ -977,6 +993,13 @@ $(function () {
         //     });
         //
         // }).run();
+    };
+
+    ko.extenders.overlay = function(target, option) {
+        target.subscribe(function(newValue) {
+            console.log(option + ": " + newValue);
+        });
+        return option;
     };
 
 

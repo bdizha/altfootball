@@ -34,7 +34,7 @@ class Post extends Model
 
     protected $wordsPerMinute = 170;
 
-    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'has_dribble', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x', 'url_x'];
+    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'has_dribble', 'hide', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x', 'url_x'];
 
     public function getPublishedAtAttribute()
     {
@@ -49,6 +49,11 @@ class Post extends Model
     public function getSluggableString()
     {
         return $this->title;
+    }
+
+    public function getHideAttribute()
+    {
+        return false;
     }
 
     public function getShareUrlAttribute()
@@ -177,8 +182,6 @@ class Post extends Model
                 $builder = new UrlBuilder("altfootball.imgix.net");
                 $params = array("w" => 100, "h" => 100, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
-
-//                dd($url . ">>>>>>");
 
                 $this->thumb_image = $url;
                 $this->save();
