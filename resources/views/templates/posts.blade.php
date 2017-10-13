@@ -1,5 +1,5 @@
 <template id="posts-template">
-    <div data-bind="foreach: posts, infiniteScroll: fetchPosts">
+    <div data-bind="foreach: posts(), infiniteScroll: fetchPosts">
         <div class="p32Iu" data-bind="css: { active: $parent.current() === $index() }">
             <div class="_3bxb0">
                 <div class="_2WwnI">
@@ -21,7 +21,7 @@
                                 <div class="_GSL7C">
                                     ﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" width="19" height="19">
                                         <g id="surface1">
-                                            <path fill="#FFFFFF" d="M 18 2 C 16.34375 2 15 3.34375 15 5 C 15 5.195313 15.027344 5.375 15.0625 5.5625 L 7.9375 9.71875 C 7.414063 9.273438 6.742188 9 6 9 C 4.34375 9 3 10.34375 3 12 C 3 13.65625 4.34375 15 6 15 C 6.742188 15 7.414063 14.726563 7.9375 14.28125 L 15.0625 18.4375 C 15.027344 18.625 15 18.804688 15 19 C 15 20.65625 16.34375 22 18 22 C 19.65625 22 21 20.65625 21 19 C 21 17.34375 19.65625 16 18 16 C 17.257813 16 16.585938 16.273438 16.0625 16.71875 L 8.9375 12.5625 C 8.972656 12.375 9 12.195313 9 12 C 9 11.804688 8.972656 11.625 8.9375 11.4375 L 16.0625 7.28125 C 16.585938 7.726563 17.257813 8 18 8 C 19.65625 8 21 6.65625 21 5 C 21 3.34375 19.65625 2 18 2 Z "/>
+                                            <path fill="rgba(103, 143, 185, 0.8)" d="M 18 2 C 16.34375 2 15 3.34375 15 5 C 15 5.195313 15.027344 5.375 15.0625 5.5625 L 7.9375 9.71875 C 7.414063 9.273438 6.742188 9 6 9 C 4.34375 9 3 10.34375 3 12 C 3 13.65625 4.34375 15 6 15 C 6.742188 15 7.414063 14.726563 7.9375 14.28125 L 15.0625 18.4375 C 15.027344 18.625 15 18.804688 15 19 C 15 20.65625 16.34375 22 18 22 C 19.65625 22 21 20.65625 21 19 C 21 17.34375 19.65625 16 18 16 C 17.257813 16 16.585938 16.273438 16.0625 16.71875 L 8.9375 12.5625 C 8.972656 12.375 9 12.195313 9 12 C 9 11.804688 8.972656 11.625 8.9375 11.4375 L 16.0625 7.28125 C 16.585938 7.726563 17.257813 8 18 8 C 19.65625 8 21 6.65625 21 5 C 21 3.34375 19.65625 2 18 2 Z "/>
                                         </g>
                                     </svg>
                                 </div>
@@ -55,14 +55,14 @@
                             </div>
                         </div>
                         <div class="_3DF9">
-                            <h2 class="_2DyJ3 _3duUm" data-bind="text: title + ' ' + $parent.current()"></h2>
+                            <h2 class="_2DyJ3 _3duUm" data-bind="text: title"></h2>
                         </div>
                     </a>
                     <h3 class="_35O2p _3VB1o _3duUm _2L6V9">
                         <span>
                             <span data-bind="html: summary"></span>
                             <a class="_1kgtA _2Oo2A" data-bind="attr: { href: '/p/' + slug }, text: reading_time"></a>
-                            <span class="_2jvdf" data-bind="text: ' ~' +     published_at"></span>
+                            <span class="_2jvdf" data-bind="text: ' ~' + published_at"></span>
                         </span>
                     </h3>
                 </div>

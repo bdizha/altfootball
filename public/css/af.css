@@ -3724,16 +3724,13 @@ form ._2Kdch {
   border-radius: 3px;
 }
 
-.p32Iu.active {
-  z-index: 40;
-}
-
 .p32Iu ._4TYO {
   margin: 0 24px 18px;
-  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
+  border: 1px solid rgba(103, 143, 185, 0.2);
 }
 
 .p32Iu ._3DF9 {
+  display: none;
   margin: 0;
   position: absolute;
   bottom: 0;
@@ -3761,6 +3758,7 @@ form ._2Kdch {
 }
 
 .p32Iu:hover ._3DF9 {
+  display: block;
   color: #57d100;
   background: white;
 }
