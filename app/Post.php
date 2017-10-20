@@ -34,7 +34,7 @@ class Post extends Model
 
     protected $wordsPerMinute = 170;
 
-    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'has_dribble', 'hide', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x', 'url_x'];
+    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'title_x', 'summary_x', 'has_dribble', 'hide', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x', 'url_x'];
 
     public function getPublishedAtAttribute()
     {
@@ -124,6 +124,16 @@ class Post extends Model
         return $this->belongsToMany(Fanbase::class, 'fanbases_posts');
     }
 
+    public function getTitleXAttribute()
+    {
+        return str_limit($this->title, 56);
+    }
+
+    public function getSummaryXAttribute()
+    {
+        return str_limit($this->summary, 102);
+    }
+
     /**
      * The fanbase to which the post belongs
      */
@@ -163,7 +173,7 @@ class Post extends Model
         if (empty($this->small_image) || $this->needsResizing($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $params = array("w" => 384, "h" => 216, "crop" => "faces", "fit" => "crop");
+                $params = array("w" => 384, "h" => 260, "crop" => "faces", "fit" => "crop");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->small_image = $url;

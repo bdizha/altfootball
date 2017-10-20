@@ -944,9 +944,6 @@ form#fanbase-form .b00q8 {
 }
 
 ._214e9 {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   transform-origin: 25% 3%;
@@ -3652,15 +3649,15 @@ form ._2Kdch {
 }
 
 ._1RYG9 {
-  background: #FAFAFA;
-  padding-top: 35px;
+  background: rgba(103, 143, 185, 0.15);
+  padding-top: 36px;
   padding-bottom: 64px;
   min-height: 100vh;
 }
 
 @media screen and (max-width: 508px) {
   ._1RYG9 {
-    padding-top: 1px;
+    padding-top: 24px;
   }
 }
 
@@ -3725,19 +3722,18 @@ form ._2Kdch {
 }
 
 .p32Iu ._4TYO {
-  margin: 0 24px 18px;
+  margin: 0 14px 14px;
   border: 1px solid rgba(103, 143, 185, 0.2);
 }
 
 .p32Iu ._3DF9 {
-  display: none;
   margin: 0;
   position: absolute;
   bottom: 0;
   background: rgba(0, 8, 39, 0.7);
   left: 0;
   right: 0;
-  padding: 18px 24px;
+  padding: 14px 14px;
   color: #FFFFFF;
   text-shadow: 0 1px -1px rgba(0, 8, 39, 0.7);
   border-bottom: 1px solid rgba(103, 143, 185, 0.2);
@@ -3989,13 +3985,13 @@ dribbles ._35GH ._34IO {
   justify-content: space-between;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 24px 24px 0;
+  padding: 14px 14px 0;
   margin-bottom: 18px;
 }
 
 @media screen and (max-width: 508px) {
   ._2WwnI {
-    padding: 18px 24px 0;
+    padding: 14px 14px 0;
   }
 }
 
@@ -4019,7 +4015,7 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 508px) {
   ._2G_85 ._3MJAj {
-    padding: 18px 18px 0;
+    padding: 14px 14px 0;
   }
 }
 
@@ -4079,13 +4075,13 @@ dribbles ._35GH ._34IO {
 }
 
 ._35O2p {
-  padding: 18px 24px;
+  padding: 14px;
   margin-top: 0;
 }
 
 ._35O2p._2L6V9 {
   border: none !important;
-  padding-top: 18px;
+  padding-top: 14px;
 }
 
 ._46OYH {
@@ -4096,12 +4092,12 @@ dribbles ._35GH ._34IO {
 
 ._24GTO {
   margin-top: 0;
-  padding: 0 18px 18px 0;
+  padding: 0 14px 14px 0;
 }
 
 @media screen and (max-width: 508px) {
   ._35O2p._46OYH {
-    padding: 0 24px 18px;
+    padding: 0 14px 14px;
   }
 }
 
@@ -4168,12 +4164,17 @@ dribbles ._35GH ._34IO {
 }
 
 ._3DF9 {
-  margin: 24px 24px 0;
+  margin: 14px 14px 0;
 }
 
 ._3DF9 ._3duUm {
   margin-bottom: 0;
   margin-top: 0;
+}
+
+._3DF9 ._3duUm:after,
+._3DF9 ._3duUm:before {
+  content: '"';
 }
 
 .FnwOT {
@@ -4862,7 +4863,7 @@ dribbles ._35GH ._34IO {
 .Vnlgq {
   font-size: 18px;
   line-height: 22px;
-  padding: 0 18px 18px;
+  padding: 0 14px 14px;
 }
 
 @media screen and (min-width: 508px) {
@@ -5118,7 +5119,7 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 508px) {
   ._1_mZ1 {
-    margin: 0 18px 18px;
+    margin: 0 14px 14px;
   }
 }
 
@@ -6647,6 +6648,10 @@ form ._12n1y {
   ._12n1y {
     margin-top: 35px;
   }
+
+  ._12n1y:first-child {
+    margin-top: 14px;
+  }
 }
 
 .M13JP {
@@ -6662,6 +6667,10 @@ form ._12n1y {
   opacity: 0.3;
 }
 
+._37Oy_ ._5YHG {
+  width: 246px;
+}
+
 ._37Oy_ ._12n1y,
 ._37Oy_ ._15nhh,
 ._37Oy_ .bWRAm,
@@ -6674,6 +6683,7 @@ form ._12n1y {
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+  margin: 14px 0;
 }
 
 ._37Oy_ .M13JP {
@@ -6713,8 +6723,6 @@ form ._12n1y {
 
 @media screen and (max-width: 508px) {
   ._37Oy_ ._12n1y {
-    margin-top: 18px;
-    margin-bottom: 12px;
     font-size: 18px;
     line-height: 18px;
     padding-top: 14px;
@@ -8470,7 +8478,7 @@ form ._12n1y {
 }
 
 ._3gFQj .gEjmr {
-  padding: 24px 24px 0;
+  padding: 14px 14px 0;
   border-bottom: none;
 }
 
@@ -9058,7 +9066,7 @@ div._3bqe5 > div {
 }
 
 ._2FV23 {
-  padding: 24px 24px 0;
+  padding: 14px 14px 0;
 }
 
 @media screen and (max-width: 508px) {
@@ -9095,7 +9103,7 @@ div._3bqe5 > div {
 .rF2QA {
   position: relative;
   cursor: pointer;
-  padding: 0 24px 0;
+  padding: 0 14px 0;
 }
 
 @media screen and (max-width: 508px) {
@@ -10116,11 +10124,11 @@ div._3bqe5 > div {
 
 ._1l_wG ._24GTO {
   margin-top: 0;
-  padding: 0 24px 0 0;
+  padding: 0 14px 0 0;
 }
 
 ._1l_wG .rF2QA {
-  padding: 0 24px 0 0;
+  padding: 0 14px 0 0;
 }
 
 ._210LR ._24GTO {
@@ -15417,7 +15425,7 @@ div._3bqe5 > div {
 }
 
 ._3TYH2 {
-  background: rgba(103, 143, 185, 0.15);
+  border: 1px solid rgba(103, 143, 185, 0.2);
   padding: 14px;
 }
 
@@ -19191,6 +19199,7 @@ nav._1R2o8 {
   padding-bottom: 64px;
   min-height: 100vh;
   margin: 0;
+  background: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 1210px) {

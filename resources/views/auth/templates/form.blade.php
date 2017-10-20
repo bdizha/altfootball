@@ -1,7 +1,7 @@
 <template id="join-form-template">
     <form method="POST" action="/register" accept-charset="UTF-8" class="_2rf1"
           data-bind="submit: proceed, css: { '_23KD': isSubmitted }">
-        <img src="/images/text.png" title="altfootball" alt="altfootball">
+        <img src="/images/text.png" class="_5YHG" title="altfootball" alt="altfootball">
         <input type="hidden" name="nickname"/>
         <input name="_token" data-bind="value: token" type="hidden">
         <h1 class="bWRAm">The only place where everything is football</h1>

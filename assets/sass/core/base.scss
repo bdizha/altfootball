@@ -732,7 +732,7 @@ button {
 }
 
 ._1V79j {
-  background-color: rgba(255,255,255,0.96);
+  background-color: rgba(255, 255, 255, 0.96);
   left: 0;
   transform: translateZ(0);
   z-index: 13;
@@ -850,9 +850,6 @@ form {
 }
 
 ._214e9 {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   -webkit-transform-origin: 25% 3%;
@@ -3356,15 +3353,15 @@ form {
 }
 
 ._1RYG9 {
-  background: $color_gray;
-  padding-top: 35px;
+  background: rgba(103, 143, 185, 0.15);
+  padding-top: 36px;
   padding-bottom: 64px;
   min-height: 100vh;
 }
 
 @media screen and (max-width: 508px) {
   ._1RYG9 {
-    padding-top: 1px;
+    padding-top: 24px;
   }
 }
 
@@ -3428,19 +3425,18 @@ form {
   overflow: hidden;
   position: relative;
   border-radius: 3px;
-  ._4TYO{
-    margin: 0 24px 18px;
+  ._4TYO {
+    margin: 0 14px 14px;
     border: 1px solid rgba(103, 143, 185, 0.2);
   }
-  ._3DF9{
-    display: none;
+  ._3DF9 {
     margin: 0;
     position: absolute;
     bottom: 0;
     background: rgba(0, 8, 39, 0.7);
     left: 0;
     right: 0;
-    padding: 18px 24px;
+    padding: 14px 14px;
     color: $color_white;
     text-shadow: 0 1px -1px rgba(0, 8, 39, 0.7);
     border-bottom: 1px solid rgba(103, 143, 185, 0.2);
@@ -3456,7 +3452,7 @@ form {
     ._HY8RT {
       border: 1px solid $color_green;
     }
-    ._3DF9{
+    ._3DF9 {
       display: block;
       color: $color_green;
       background: rgba(255, 255, 255, 1);
@@ -3679,13 +3675,13 @@ dribbles {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 24px 24px 0;
+  padding: 14px 14px 0;
   margin-bottom: 18px;
 }
 
 @media screen and (max-width: 508px) {
   ._2WwnI {
-    padding: 18px 24px 0;
+    padding: 14px 14px 0;
   }
 }
 
@@ -3705,7 +3701,7 @@ dribbles {
 
 @media screen and (max-width: 508px) {
   ._2G_85 ._3MJAj {
-    padding: 18px 18px 0;
+    padding: 14px 14px 0;
   }
 }
 
@@ -3757,11 +3753,11 @@ dribbles {
 }
 
 ._35O2p {
-  padding: 18px 24px;
+  padding: 14px;
   margin-top: 0;
   &._2L6V9 {
     border: none !important;
-    padding-top: 18px;
+    padding-top: 14px;
   }
 }
 
@@ -3773,7 +3769,7 @@ dribbles {
 
 ._24GTO {
   margin-top: 0;
-  padding: 0 18px 18px 0;
+  padding: 0 14px 14px 0;
   ._2Oo2A {
 
   }
@@ -3782,7 +3778,7 @@ dribbles {
 @media screen and (max-width: 508px) {
   ._35O2p {
     &._46OYH {
-      padding: 0 24px 18px;
+      padding: 0 14px 14px;
     }
   }
 }
@@ -3844,10 +3840,14 @@ dribbles {
 }
 
 ._3DF9 {
-  margin: 24px 24px 0;
+  margin: 14px 14px 0;
   ._3duUm {
     margin-bottom: 0;
     margin-top: 0;
+    &:after,
+    &:before {
+      content: '"';
+    }
   }
 }
 
@@ -4482,7 +4482,7 @@ dribbles {
 .Vnlgq {
   font-size: 18px;
   line-height: 22px;
-  padding: 0 18px 18px;
+  padding: 0 14px 14px;
 }
 
 @media screen and (min-width: 508px) {
@@ -4719,7 +4719,7 @@ dribbles {
 
 @media screen and (max-width: 508px) {
   ._1_mZ1 {
-    margin: 0 18px 18px;
+    margin: 0 14px 14px;
   }
 }
 
@@ -6154,6 +6154,9 @@ form {
 @media screen and (max-width: 508px) {
   ._12n1y {
     margin-top: 35px;
+    &:first-child {
+      margin-top: 14px;
+    }
   }
 }
 
@@ -6170,6 +6173,9 @@ form {
 }
 
 ._37Oy_ {
+  ._5YHG {
+    width: 246px;
+  }
   ._12n1y, ._15nhh, .bWRAm, .M13JP, .VnaIq {
     color: $color_white;
   }
@@ -6177,6 +6183,7 @@ form {
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
+    margin: 14px 0;
   }
   .M13JP {
     background: #00AFFF;
@@ -6213,8 +6220,6 @@ form {
 
 @media screen and (max-width: 508px) {
   ._37Oy_ ._12n1y {
-    margin-top: 18px;
-    margin-bottom: 12px;
     font-size: 18px;
     line-height: 18px;
     padding-top: 14px;
@@ -7857,7 +7862,7 @@ form {
 
 ._3gFQj {
   .gEjmr {
-    padding: 24px 24px 0;
+    padding: 14px 14px 0;
     border-bottom: none;
     ._2MdIb {
       top: 24px;
@@ -8393,7 +8398,7 @@ div._3bqe5 {
 }
 
 ._2FV23 {
-  padding: 24px 24px 0;
+  padding: 14px 14px 0;
 }
 
 @media screen and (max-width: 508px) {
@@ -8430,7 +8435,7 @@ div._3bqe5 {
 .rF2QA {
   position: relative;
   cursor: pointer;
-  padding: 0 24px 0;
+  padding: 0 14px 0;
 }
 
 @media screen and (max-width: 508px) {
@@ -9392,10 +9397,10 @@ div._3bqe5 {
   }
   ._24GTO {
     margin-top: 0;
-    padding: 0 24px 0 0;
+    padding: 0 14px 0 0;
   }
   .rF2QA {
-    padding: 0 24px 0 0;
+    padding: 0 14px 0 0;
   }
 }
 
@@ -14339,7 +14344,7 @@ div._3bqe5 {
 }
 
 ._3TYH2 {
-  background: rgba(103, 143, 185, 0.15);
+  border: 1px solid rgba(103, 143, 185, 0.2);
   padding: 14px;
   &:after {
     display: none;
@@ -17835,6 +17840,7 @@ nav._1R2o8 {
   padding-bottom: 64px;
   min-height: 100vh;
   margin: 0;
+  background: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 1210px) {
@@ -18732,7 +18738,6 @@ nav._1R2o8 {
     }
   }
 }
-
 
 #busy .spinner {
   -webkit-animation: spinner 1.2s linear infinite;
