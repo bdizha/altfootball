@@ -48,6 +48,8 @@ $(function () {
                 }
             });
         };
+
+        self.fetchPosts();
     };
 
     ko.components.register('posts', {

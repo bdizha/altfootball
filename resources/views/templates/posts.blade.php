@@ -1,5 +1,5 @@
 <template id="posts-template">
-    <div data-bind="foreach: posts(), infiniteScroll: fetchPosts()">
+    <div data-bind="foreach: posts, infiniteScroll: fetchPosts">
         <div class="p32Iu" data-bind="css: { active: $parent.current() === $index() }">
             <div class="_3bxb0">
                 <div class="_2WwnI">
