@@ -50,7 +50,7 @@
                 <div class="_4TYO">
                     <a class="_2hvwD" data-bind="attr: { 'href': '/p/' + slug }">
                         <div class="_25bvT">
-                            <div class="_38L6D">
+                            <div style="padding-bottom:60.25%;" class="_38L6D">
                                 <img role="presentation" class="_214e9 b00q8" data-bind="attr: { src: small_x }">
                             </div>
                         </div>
