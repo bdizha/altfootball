@@ -112,8 +112,7 @@
                 <div class="GLLyX">
                     <div class="_323ok _3Xaa0">
                         @foreach($fanbases as $fanbase)
-                            <a class="_2_Gw9" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}"
-                             >
+                            <a class="_2_Gw9" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}">
                                 <div class="_204wR">
                                     <div style="padding-bottom:100%;" class="_38L6D">
                                         <img alt="" role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="200" height="200">

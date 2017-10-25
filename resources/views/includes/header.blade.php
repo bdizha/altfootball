@@ -3,7 +3,7 @@
     <nav class="R1XAV" id="header">
         <div class="_2H55B">
             <a class="" href="/">
-                <img class="_3YKuQ" src="/images/logo.png" alt="AltFootball">
+                <img src="/images/text.png" class="_5YHG" title="AltFootball" alt="AltFootball" />
             </a>
             <form class="ra77F" action="">
                 <div class="_1YqNB _1eF7g _3TYH2">
@@ -22,7 +22,6 @@
             </form>
         </div>
         <div class="_3BBJg">
-            <a class="_13sKJ" href="/fanbases">FANBASES</a>
             @if(Auth::guard()->check() && Auth::user()->is_active)
                 <?php $user = Auth::user() ?>
                 <button class="_13sKJ">
