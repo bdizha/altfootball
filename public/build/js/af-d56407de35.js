@@ -6,6 +6,10 @@ $(function () {
     };
 
     $('a._2Q0fU, a._29zpU').on('click', function (e) {
+
+        if($(this).hasAttribute("onclick")){
+            return false;
+        }
         var
             verticalPos = Math.floor(($(window).width() - popupSize.width) / 2),
             horisontalPos = Math.floor(($(window).height() - popupSize.height) / 2);
@@ -44,14 +48,17 @@ $(function () {
 
     $(window).scroll(function() {
         var fixable = $("._1YCPS");
+        var fan = $("._2kQCw");
 
         if(fixable.length > 0){
 
             if (fixable.offset().top > 100) {
                 fixable.addClass("_210LR");
+                fan.addClass("_45TY");
                 fixable.removeClass("_2kPxQ");
             } else {
                 fixable.addClass("_2kPxQ");
+                fan.removeClass("_45TY");
                 fixable.removeClass("_210LR");
             }
 
@@ -83,20 +90,7 @@ $(function () {
     $('.owl-three').owlCarousel({
         loop: false,
         nav: true,
-        responsive:{
-            0:{
-                items: 1
-            },
-            300:{
-                items: 2
-            },
-            600:{
-                items: 3
-            },
-            1000:{
-                items: 3
-            }
-        },
+        autoWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });
@@ -138,15 +132,34 @@ $(function () {
     var DribbleViewModel = function (params) {
         var self = this;
 
-        console.log("DribbleViewModel::params");
-        console.log(params.has_dribble == true);
-
         self.dribblesCount = ko.observable(params.count);
-        self.hasDribble = ko.observable(params.has_dribble == true);
+        self.hasDribble = ko.observable(Boolean(params.has_dribble));
         self.type = ko.observable(params.type);
         self.typeId = ko.observable(params.type_id);
+        self.classId = ko.computed(function(){
+            return self.type() + "-"+ self.typeId();
+        });
+
+        console.log("params.has_dribble: " + params.has_dribble);
+        console.log("self.hasDribble: " + self.hasDribble());
 
         self.save = function () {
+
+            if(new RootViewModel().checkAuth()){
+
+            }
+
+            if(self.hasDribble()){
+                self.dribblesCount(self.dribblesCount() - 1);
+                $("." + self.classId()).removeClass("_35GH");
+            }
+            else{
+                $("." + self.classId()).addClass("_35GH");
+                self.dribblesCount(self.dribblesCount() + 1);
+            }
+
+            $("." + self.classId() + " ._34IO").html(self.dribblesCount());
+
 
             self.hasDribble(!self.hasDribble());
 
@@ -433,7 +446,15 @@ $(function () {
         };
 
         self.proceed = function () {
+
+            if (self.email.length === 0) {
+                self.canGo(false);
+                return false;
+            }
+
             self.email.isModified(true);
+
+            self.isSubmitted(true);
 
             self.showAllMessages();
 
@@ -449,8 +470,6 @@ $(function () {
                     type: "post",
                     contentType: "application/json",
                     success: function (response) {
-                        self.isSubmitted(true);
-
                         self.canGo(true);
                         console.log(response);
                     }
@@ -474,12 +493,22 @@ $(function () {
     var PostsViewModel = function (params) {
         var self = this;
 
+        self.current = ko.observable(0);
         self.posts = ko.observableArray([]);
         self.fanbase = ko.observable(params.fanbase);
         self.page = ko.observable(params.page);
 
-        self.fetchPosts = function () {
+        self.show = function (index, data){
 
+            params.showItem(true);
+
+            self.current(index);
+
+            console.log("self.current");
+            console.log(self.current());
+        };
+
+        self.fetchPosts = function () {
             var params = {
                 fanbase_id: self.fanbase(),
                 page: self.page()
@@ -499,10 +528,13 @@ $(function () {
                         self.posts.push(post);
                     });
 
-                    $("._34-mC").on('click', toogleShare);
+                    // investigate why this is happening and be open minded
+                    // $("._34-mC").on('click', toogleShare);
                 }
             });
         };
+
+        self.fetchPosts();
     };
 
     ko.components.register('posts', {
@@ -525,7 +557,7 @@ $(function () {
         });
 
         self.image = ko.observable();
-        self.currentUser = ko.observable(window.currentUser);
+        self.currentUser = ko.observable(params.user);
         self.comment = ko.observable(params.comment);
         self.replyText = ko.observable('');
         self.callback = params.callback;
@@ -581,6 +613,8 @@ $(function () {
         self.fileData = ko.observable({
             dataURL: ko.observable()
         });
+
+        self.currentUser = ko.observable(params.user);
         self.type_id = ko.observable(params.type_id);
         self.isList = ko.observable(params.is_list);
         self.level = ko.observable(params.level);
@@ -597,7 +631,6 @@ $(function () {
             return self.newCommentText().length > 0;
         });
 
-        // callback
         self.update = function (reply) {
             var comments = ko.utils.arrayMap(self.comments(), function (comment) {
                 if (comment.id === reply.type_id) {
@@ -876,16 +909,40 @@ $(function () {
 
         self.showSettingsForm = ko.observable(false);
         self.showUserForm = ko.observable(false);
+        self.showItem = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
-        self.currentUser = ko.observable(window.currentUser);
+        // self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
+        self.isSignedIn = ko.computed(function () {
+            return !!window.isAuthenticated;
+        });
 
-        self.showOverlay = function() {
-            return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm();
-        };
+        console.log("self.isAuthenticated()");
+        console.log(window.isAuthenticated);
+        console.log("self.isSignedIn()");
+        console.log(self.isSignedIn());
+
+        self.showOverlay = ko.computed(function () {
+            return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm() || self.showItem();
+        });
 
         self.openJoinForm = function() {
             self.showJoinForm(true);
+        };
+
+        self.openItem = function() {
+            self.showItem(true);
+        };
+
+        self.checkAuth = function() {
+
+            if(window.isAuthenticated === false){
+                self.showJoinForm(true);
+                return false;
+            }
+            else{
+                return true;
+            }
         };
 
         self.hideJoinPopup = function() {
@@ -917,6 +974,34 @@ $(function () {
             console.log('closing this form :: RootViewModel');
             self.showFanbaseForm(false);
         };
+
+        self.setPage = function (pageId) {
+            $(".page").show();
+            $("#" + pageId).show();
+        };
+
+        // Sammy(function() {
+        //     this.get('#p/:slug', function() {
+        //         self.setPage("page-post");
+        //     });
+        //
+        //     this.get('#u/:slug', function() {
+        //         self.setPage("page-user");
+        //         $.get("/mail", { mailId: this.params.mailId }, self.chosenMailData);
+        //     });
+        //
+        //     this.get('', function() {
+        //         self.setPage("page-home");
+        //     });
+        //
+        // }).run();
+    };
+
+    ko.extenders.overlay = function(target, option) {
+        target.subscribe(function(newValue) {
+            console.log(option + ": " + newValue);
+        });
+        return option;
     };
 
 

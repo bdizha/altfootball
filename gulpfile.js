@@ -44,4 +44,6 @@ elixir(function(mix) {
         'assets/js/ko-root.js'
 
     ], 'public/js/' + path + '.js');
+
+    mix.version(['public/js/' + path + '.js', 'public/css/af.css']);
 });
