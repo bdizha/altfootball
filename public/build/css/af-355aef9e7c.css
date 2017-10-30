@@ -3652,7 +3652,7 @@ form ._2Kdch {
 }
 
 ._1RYG9 {
-  background: rgba(103, 143, 185, 0.15);
+  background: url(/images/repeat-logo.png) rgba(103, 143, 185, 0.15);
   padding-top: 36px;
   padding-bottom: 64px;
   min-height: 100vh;
@@ -4296,7 +4296,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._4512y {
-  padding: 24px;
+  padding: 18px;
 }
 
 ._3jsIy {
@@ -4313,10 +4313,9 @@ dribbles ._35GH ._34IO {
   height: 96px;
   border: 8px solid #FFFFFF;
   text-align: center;
-  font-size: 22px;
   color: #FFFFFF;
-  font-size: 28px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 ._3jsIy svg {
@@ -6301,7 +6300,7 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 846px) {
   ._1V5wh {
-    padding-top: 96px;
+    padding-top: 56px;
   }
 }
 
@@ -6575,8 +6574,8 @@ dribbles ._35GH ._34IO {
 form .bWRAm,
 form ._12n1y {
   font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 20px;
   color: rgba(255, 255, 255, 0.967846);
 }
 
@@ -6631,7 +6630,7 @@ form ._12n1y {
   text-transform: none;
   border: 1px solid #FFFFFF;
   padding: 14px;
-  margin: 22px 0;
+  margin: 18px 0;
   width: 100%;
   background: rgba(6, 33, 54, 0.5);
   border-radius: 12px;
@@ -8035,7 +8034,7 @@ form ._12n1y {
   background: #FFFFFF;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
-  padding: 24px;
+  padding: 18px;
   margin-bottom: 14px;
 }
 
@@ -8411,7 +8410,7 @@ form ._12n1y {
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
   background: #FFFFFF;
   margin-bottom: 14px;
-  padding: 24px;
+  padding: 18px;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
 }
 
@@ -8607,7 +8606,7 @@ form ._12n1y {
 ._3ZzkS {
   margin-left: 28px;
   background: rgba(103, 143, 185, 0.15);
-  padding: 24px;
+  padding: 18px;
   margin-top: 24px;
 }
 
@@ -9216,7 +9215,7 @@ div._3bqe5 > div {
   height: 64px;
   padding: 0 22px;
   width: 100vw;
-  top: 96px;
+  top: 56px;
   left: 0;
   right: 0;
   border-bottom: 1px solid rgba(103, 143, 185, 0.4);
@@ -10402,7 +10401,7 @@ div._3bqe5 > div {
 
 ._9fE1R {
   position: relative;
-  padding: 24px;
+  padding: 18px;
   margin-top: 24px;
 }
 
@@ -11348,7 +11347,7 @@ div._3bqe5 > div {
   align-items: center;
   margin-top: 18px;
   border: 1px solid rgba(103, 143, 185, 0.4);
-  padding: 24px;
+  padding: 18px;
 }
 
 ._1aThB {
@@ -11502,7 +11501,7 @@ div._3bqe5 > div {
 }
 
 ._1RyqV ._1RyqV .gEjmr {
-  padding: 24px;
+  padding: 18px;
   margin-bottom: 0;
   box-shadow: none;
   border-top: none;
@@ -11535,7 +11534,7 @@ div._3bqe5 > div {
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
   background: #FFFFFF;
   margin-bottom: 22px;
-  padding: 24px;
+  padding: 18px;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
 }
 
@@ -12891,7 +12890,7 @@ div._3bqe5 > div {
 }
 
 ._1-0JF {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: url(/images/repeat-logo.png) rgba(103, 143, 185, 0.15);
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
@@ -13129,7 +13128,7 @@ div._3bqe5 > div {
 }
 
 .GLLyX {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: url(/images/repeat-logo.png) rgba(12, 18, 42, 0.95);
   position: relative;
 }
 
@@ -13604,7 +13603,7 @@ div._3bqe5 > div {
 }
 
 ._1U_qv {
-  padding: 24px;
+  padding: 18px;
 }
 
 @media screen and (max-width: 508px) {
@@ -15035,7 +15034,7 @@ div._3bqe5 > div {
 
 ._3XXLi {
   position: relative;
-  height: 96px;
+  height: 56px;
 }
 
 @media screen and (max-width: 846px) {
@@ -15053,9 +15052,9 @@ div._3bqe5 > div {
 .R1XAV {
   background: #FFFFFF;
   border: none;
-  height: 96px;
+  height: 56px;
   width: 100%;
-  padding: 24px;
+  padding: 18px;
   position: fixed;
   backface-visibility: hidden;
   top: 0;
@@ -15350,7 +15349,7 @@ div._3bqe5 > div {
   width: 300px;
   height: 500px;
   position: fixed;
-  top: 96px;
+  top: 56px;
   right: 250px;
   transform-origin: top center;
   transform: scaleY(0);
@@ -19829,7 +19828,7 @@ nav._1R2o8 {
 ._1YCPS {
   position: fixed;
   width: 100%;
-  top: 96px;
+  top: 56px;
   left: 0;
   right: 0;
   background-color: #FFFFFF;
