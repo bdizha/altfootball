@@ -5,7 +5,7 @@ input.giant {
   color: $color_dark;
   box-shadow: none;
   border: none;
-  border-radius: 12px;
+  border-radius: 0px;
   height: $gap * 3;
   margin-bottom: $gap;
   margin-left: -5px;
@@ -36,7 +36,7 @@ article{
 
 .form-control {
   border: 1px solid $color_blue;
-  border-radius: 12px;
+  border-radius: 0px;
   color: $color_dark;
   &:focus,
   &:active {
@@ -45,5 +45,5 @@ article{
 }
 
 .alert{
-  border-radius: 12px;
+  border-radius: 0px;
 }

@@ -676,7 +676,7 @@ pre[class*="language-"] {
   margin: 4em auto 0;
   padding: 1em;
   max-width: 360px;
-  border-radius: 2px;
+  border-radius: 0px;
   background-color: hsla(0, 0%, 100%, .13);
 
 
@@ -1028,7 +1028,7 @@ body.themes {
   font-size: 15px;
   font-family: 'Helvetica Neue';
   letter-spacing: .3px;
-  border-radius: 2px;
+  border-radius: 0px;
   color: #fff;
   padding: 10px 20px;
   transition: background .2s;

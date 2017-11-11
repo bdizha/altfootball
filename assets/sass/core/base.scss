@@ -23,12 +23,12 @@ line {
 
 textarea {
   -webkit-appearance: none;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 input {
   -webkit-appearance: none;
-  border-radius: 12px;
+  border-radius: 0px;
   &:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
   }
@@ -176,7 +176,7 @@ button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 input::-moz-focus-inner {
@@ -354,7 +354,7 @@ button {
 }
 
 ._1h78h {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -371,18 +371,18 @@ button {
 }
 
 ._1MC-v {
-  background-color: #00AFFF;
+  background-color: #0095D0;
   &:hover {
-    background-color: #57d100;
+    background-color: #48C04A;
   }
 }
 
 ._1h78h:hover {
-  background-color: #57d100;
+  background-color: #48C04A;
 }
 
 ._1geYT {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -438,7 +438,7 @@ button {
 }
 
 ._2CyDP, .cgtnr {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -507,7 +507,7 @@ button {
 }
 
 ._2zEgR {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -525,7 +525,7 @@ button {
 }
 
 ._2JpJc {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -539,8 +539,8 @@ button {
 }
 
 ._1OI3o {
-  border-color: #00AFFF;
-  color: #00AFFF;
+  border-color: #0095D0;
+  color: #0095D0;
 }
 
 ._3Ej8o {
@@ -647,7 +647,7 @@ button {
 }
 
 ._29zpU {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   clear: both;
@@ -684,7 +684,7 @@ button {
 }
 
 ._35Phm {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -701,7 +701,7 @@ button {
 }
 
 ._27Mgd {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
@@ -797,7 +797,7 @@ button {
 
 ._1oI4U {
   padding: 0 22px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   display: block;
   text-transform: uppercase;
@@ -863,7 +863,7 @@ form {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -951,7 +951,7 @@ form {
 }
 
 ._2TaIJ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -964,7 +964,7 @@ form {
 }
 
 .zoflJ {
-  color: #00AFFF;
+  color: #0095D0;
   &[disabled] {
     color: rgba(103, 143, 185, 0.4);
   }
@@ -1039,7 +1039,7 @@ form {
   color: rgba(103, 143, 185, 0.4);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -1054,7 +1054,7 @@ form {
 }
 
 ._2eqbF {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._37XUn {
@@ -1063,7 +1063,7 @@ form {
 
 ._1u7op {
   color: #da1a35;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -1186,7 +1186,7 @@ form {
 
 ._21web {
   border: 1px solid rgba(103, 143, 185, 0.4);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -1197,7 +1197,7 @@ form {
 }
 
 .faM3p {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1OkWe {
@@ -1208,7 +1208,7 @@ form {
 }
 
 ._3-rkf {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1CeIM {
@@ -1242,11 +1242,11 @@ form {
 ._31TRT {
   padding: 18px 28px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .vwhZ_ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -1290,7 +1290,7 @@ form {
 }
 
 ._1fDUg, .b9xa- {
-  background: #00AFFF;
+  background: #0095D0;
 }
 
 ._1fDUg svg, .b9xa- svg {
@@ -1471,7 +1471,7 @@ form {
   position: relative;
   justify-content: center;
   flex-direction: column;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -1532,7 +1532,7 @@ form {
 @media screen and (max-width: 508px) {
   .Y5qEv {
     display: block;
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
@@ -1613,7 +1613,7 @@ form {
   word-wrap: break-word;
   margin-right: 0;
   min-height: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -1682,10 +1682,10 @@ form {
   align-items: center;
   transition: all 0.1s linear;
   content: attr(data-stamp);
-  border-radius: 12px;
+  border-radius: 0px;
   &:after {
     content: attr(data-stamp);
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 22px;
@@ -1803,7 +1803,7 @@ form {
 }
 
 ._28Y8c {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -1817,7 +1817,7 @@ form {
   text-align: left;
   padding: 18px 26px;
   width: 100%;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -1870,7 +1870,7 @@ form {
 }
 
 ._2gW41 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -1918,7 +1918,7 @@ form {
 ._2JNmn {
   font-size: 12px;
   line-height: 14px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -1931,7 +1931,7 @@ form {
   display: flex;
   height: 100%;
   margin-bottom: 14px;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(103, 143, 185, 0.15);
   &:last-child {
     margin-bottom: 0;
@@ -1944,7 +1944,7 @@ form {
   height: 100%;
   color: #f8f8f8;
   border: 1px solid #141C3E;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   ._3t9Qw {
     width: calc(100% - 101px);
@@ -1984,7 +1984,7 @@ form {
   width: 100%;
   height: 100%;
   padding: 18px 26px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   flex-direction: column;
   justify-content: flex-start;
@@ -1995,7 +1995,7 @@ form {
 }
 
 ._3bbo_ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 14px;
@@ -2056,10 +2056,10 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   text-transform: uppercase;
   ._3bbo_ {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     text-transform: uppercase;
     font-size: 12px;
     line-height: 14px;
@@ -2118,7 +2118,7 @@ form {
 }
 
 ._1OggK, ._28liP, .FMK9E {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -2160,7 +2160,7 @@ form {
 }
 
 ._3xUes {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -2242,7 +2242,7 @@ form {
 ._1-yvw, ._2uxUw, ._3cahE, ._3Zur7 {
   display: inline;
   color: $color_white;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2255,7 +2255,7 @@ form {
 ._2uxUw {
   display: block;
   padding: 14px 0;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   width: 100%;
   max-width: 716px;
@@ -2284,7 +2284,7 @@ form {
 ._1mT7f {
   font-size: 14px;
   position: relative;
-  color: #00AFFF;
+  color: #0095D0;
   cursor: pointer;
   margin-left: 18px;
   display: flex;
@@ -2315,8 +2315,8 @@ form {
 }
 
 ._26cuW {
-  color: #00AFFF;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  color: #0095D0;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -2397,7 +2397,7 @@ form {
 ._1Zj5n {
   width: 22px;
   height: 22px;
-  border-radius: 12px;
+  border-radius: 0px;
   background: $color_white;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: flex;
@@ -2419,7 +2419,7 @@ form {
 }
 
 ._2YLzg {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 0;
   &:hover {
     background: $color_white;
@@ -2445,7 +2445,7 @@ form {
 }
 
 ._1kqns {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   float: right;
@@ -2521,11 +2521,11 @@ form {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 1px solid #00AFFF;
+  border: 1px solid #0095D0;
 }
 
 .KTIgi {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2546,7 +2546,7 @@ form {
 ._7ROiA {
   cursor: pointer;
   line-height: inherit;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   &:hover {
     text-decoration: underline;
@@ -2563,7 +2563,7 @@ form {
   display: block;
   margin-bottom: 9px;
   button {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     color: #2784bd;
     &:hover {
@@ -2635,7 +2635,7 @@ form {
 }
 
 ._3KCF8 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -2658,8 +2658,8 @@ form {
 .Xr6ka {
   position: absolute;
   top: 28px;
-  color: #00AFFF;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  color: #0095D0;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -2692,7 +2692,7 @@ form {
 }
 
 ._1tRa2 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(0, 8, 39, 0.86);
@@ -2769,7 +2769,7 @@ form {
 }
 
 ._2KQbF {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(0, 8, 39, 0.86);
@@ -2850,7 +2850,7 @@ form {
   box-sizing: content-box;
   position: relative;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(103, 143, 185, 0.4);
   height: 165px;
   cursor: pointer;
@@ -3105,7 +3105,7 @@ form {
 }
 
 ._3cmsY {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   border: 1px solid rgba(0, 8, 39, 0.86);
   cursor: pointer;
@@ -3121,7 +3121,7 @@ form {
 
 ._5lS25 {
   font-size: 12px;
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._22BIt {
@@ -3139,7 +3139,7 @@ form {
 }
 
 ._3LYcH, ._101VT {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3157,7 +3157,7 @@ form {
 }
 
 ._25ugo {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 18px;
 }
@@ -3188,7 +3188,7 @@ form {
 }
 
 ._30g4J {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -3233,13 +3233,13 @@ form {
 }
 
 ._21MHb {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .XmFjj {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -3302,7 +3302,7 @@ form {
 }
 
 ._2fFf8 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -3427,11 +3427,11 @@ form {
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
   ._4TYO {
     margin: 0 14px 14px;
     border: 1px solid rgba(103, 143, 185, 0.2);
-    border-radius: 12px;
+    border-radius: 0px;
   }
   ._3DF9 {
     margin: 0;
@@ -3458,7 +3458,7 @@ form {
     }
     ._3DF9 {
       display: block;
-      background: rgba(87, 209, 0, .85);
+      background: rgba(59, 189, 76, 0.9);
     }
   }
 }
@@ -3606,7 +3606,7 @@ dribbles {
 }
 
 ._3vb09 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 35px;
   line-height: 35px;
@@ -3823,7 +3823,7 @@ dribbles {
     line-height: 18px;
   }
   a {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     line-height: inherit;
     &:hover {
@@ -3847,6 +3847,7 @@ dribbles {
   ._3duUm {
     margin-bottom: 0;
     margin-top: 0;
+    text-transform: uppercase;
     &:after,
     &:before {
       content: '"';
@@ -3862,7 +3863,7 @@ dribbles {
 
 ._2nUtC {
   a, p, span {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 28px;
@@ -3923,7 +3924,7 @@ dribbles {
 
 ._3tN0i {
   color: rgba(103, 143, 185, 0.4);
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
 }
 
@@ -3947,7 +3948,7 @@ dribbles {
 ._2L6V9 {
   margin-bottom: 0;
   a {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     line-height: inherit;
     &:hover {
@@ -4017,7 +4018,7 @@ dribbles {
 }
 
 ._1pPnu a {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -4046,7 +4047,7 @@ dribbles {
     content: "";
     width: 2px;
     height: 2px;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: rgba(103, 143, 185, 0.8);
   }
 }
@@ -4089,7 +4090,7 @@ dribbles {
     height: 36px;
     display: inline-block;
     vertical-align: middle;
-    border-radius: 12px;
+    border-radius: 0px;
     overflow: hidden;
     margin-left: 4px;
   }
@@ -4294,7 +4295,7 @@ dribbles {
 }
 
 ._3H01F {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -4357,7 +4358,7 @@ dribbles {
 }
 
 ._3f32u {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -4469,7 +4470,7 @@ dribbles {
 ._3zT4K {
   font-size: 22px;
   line-height: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   padding: 0 18px 28px;
   text-transform: uppercase;
@@ -4590,7 +4591,7 @@ dribbles {
 }
 
 ._2vzGK {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 18px;
   margin-top: 12px;
@@ -4622,7 +4623,7 @@ dribbles {
 }
 
 .A8eM3 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -4709,7 +4710,7 @@ dribbles {
 }
 
 ._1_mZ1 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -4791,7 +4792,7 @@ dribbles {
 }
 
 ._1G1nd {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -4819,7 +4820,7 @@ dribbles {
 }
 
 ._1JesO {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -4924,12 +4925,12 @@ dribbles {
 }
 
 ._1C4sR {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
-  background: #00AFFF;
+  background: #0095D0;
   color: $color_white;
   border-radius: 18px;
   margin: 0 auto 44px;
@@ -5243,7 +5244,7 @@ dribbles {
   display: block;
   position: absolute;
   top: 50%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .gzgzI {
@@ -5331,7 +5332,7 @@ dribbles {
 }
 
 ._1QEWe, ._2o06m {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -5378,12 +5379,12 @@ dribbles {
 
 ._1OCcp {
   text-transform: uppercase;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
 .CrE3q {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -5444,7 +5445,7 @@ dribbles {
 ._3YXPS {
   opacity: 0;
   padding-top: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -5454,7 +5455,7 @@ dribbles {
 ._26n6g {
   opacity: 0;
   padding-top: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -5473,7 +5474,7 @@ dribbles {
 }
 
 ._1ksgx {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -5502,7 +5503,7 @@ dribbles {
 }
 
 ._1J2yn {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
@@ -5516,7 +5517,7 @@ dribbles {
 
 .xn0aB {
   font-size: 14px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   padding-right: 24px;
@@ -5568,7 +5569,7 @@ dribbles {
   color: rgba(103, 143, 185, 0.8);
   width: 76px;
   height: 55px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -5654,7 +5655,7 @@ dribbles {
 }
 
 ._3debN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-size: 28px;
   line-height: 28px;
   text-transform: uppercase;
@@ -5677,7 +5678,7 @@ dribbles {
 }
 
 ._3_ndg {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -5740,7 +5741,7 @@ dribbles {
   align-items: center;
   justify-content: center;
   margin-left: -52px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -5975,7 +5976,7 @@ dribbles {
 }
 
 ._3UYss {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6129,7 +6130,7 @@ form {
 }
 
 ._12n1y, .VnaIq span {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -6142,7 +6143,7 @@ form {
   margin: 18px 0;
   width: 100%;
   background: rgba(6, 33, 54, 0.5);
-  border-radius: 12px;
+  border-radius: 0px;
   &:first-child {
     margin-top: 44px;
   }
@@ -6168,7 +6169,7 @@ form {
   font-size: 14px;
   line-height: 14px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
   &[disabled] {
     opacity: 0.3;
   }
@@ -6188,10 +6189,10 @@ form {
     margin: 14px 0;
   }
   .M13JP {
-    background: #00AFFF;
+    background: #0095D0;
     border: none;
     &:hover, &:focus {
-      background: #57d100;
+      background: #48C04A;
     }
     &[disabled] {
       opacity: 1;
@@ -6288,7 +6289,7 @@ form {
 }
 
 ._1iBcU, ._3OQAJ, .KyQLW {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6332,7 +6333,7 @@ form {
 }
 
 ._2LrKA {
-  background: #00AFFF;
+  background: #0095D0;
 }
 
 ._1S4og {
@@ -6350,7 +6351,7 @@ form {
 
 ._35Eoh {
   text-align: center;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 72px;
@@ -6365,7 +6366,7 @@ form {
 }
 
 ._1Honn {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -6386,7 +6387,7 @@ form {
 
 ._3MbTo {
   text-align: center;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -6439,7 +6440,7 @@ form {
 }
 
 ._1e4LX {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(103, 143, 185, 0.4);
@@ -6448,7 +6449,7 @@ form {
 }
 
 ._1J7fB {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(103, 143, 185, 0.4);
@@ -6495,7 +6496,7 @@ form {
 }
 
 ._3vbhf {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -6571,7 +6572,7 @@ form {
 .zxDoM {
   display: flex;
   color: rgba(0, 8, 39, 0.86);
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -6634,7 +6635,7 @@ form {
 }
 
 ._3nf8R {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6652,7 +6653,7 @@ form {
 }
 
 ._2tXok {
-  color: #00AFFF;
+  color: #0095D0;
   &[disabled] {
     color: rgba(103, 143, 185, 0.4);
   }
@@ -6704,7 +6705,7 @@ form {
 }
 
 ._2y6Xw {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6722,7 +6723,7 @@ form {
 
 ._3R_r_ > label {
   cursor: pointer;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   &:first-child {
     margin-right: 35px;
@@ -6751,7 +6752,7 @@ form {
 }
 
 ._2fg1f {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -6763,7 +6764,7 @@ form {
   display: inline-block;
   text-transform: none;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._150di {
@@ -6771,7 +6772,7 @@ form {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6779,7 +6780,7 @@ form {
 }
 
 .pbRDO {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6810,7 +6811,7 @@ form {
 }
 
 ._1jO5_ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6835,12 +6836,12 @@ form {
   color: rgba(103, 143, 185, 0.4);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
 ._15Cw9 {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._3SQbI {
@@ -6849,7 +6850,7 @@ form {
 
 .HMy0C {
   color: $color_white;
-  background: #00AFFF;
+  background: #0095D0;
   padding-left: 0;
 }
 
@@ -6867,7 +6868,7 @@ form {
 }
 
 ._31olX {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6888,7 +6889,7 @@ form {
 }
 
 ._3UY9k {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6932,7 +6933,7 @@ form {
 }
 
 .NpeF3 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -7111,12 +7112,12 @@ form {
 
 ._2fwRw {
   text-transform: uppercase;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
 ._35KTo {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 64px;
   height: 20px;
@@ -7133,7 +7134,7 @@ form {
 }
 
 ._3jX9n {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 55px;
@@ -7164,7 +7165,7 @@ form {
 }
 
 ._2VZfh {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7354,7 +7355,7 @@ form {
 ._3Qk42 {
   font-size: 12px;
   line-height: 12px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 0;
@@ -7389,7 +7390,7 @@ form {
 }
 
 ._1dxvB {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -7437,7 +7438,7 @@ form {
 }
 
 ._2VD5i {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -7500,7 +7501,7 @@ form {
 }
 
 ._1bkDE {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   margin-right: 6px;
@@ -7648,7 +7649,7 @@ form {
 }
 
 .vka9m {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   margin-right: 6px;
@@ -7689,7 +7690,7 @@ form {
 }
 
 ._341rK {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -7698,7 +7699,7 @@ form {
     content: "";
     width: 2px;
     height: 2px;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: rgba(103, 143, 185, 0.8);
   }
 }
@@ -7773,7 +7774,7 @@ form {
     margin-bottom: 0;
   }
   a, button {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     color: #2784bd;
   }
@@ -7786,7 +7787,7 @@ form {
 }
 
 ._1lUs3, ._2OqId a {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
 }
 
 ._1lUs3 {
@@ -7890,7 +7891,7 @@ form {
 }
 
 ._1vFjj {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
 }
 
@@ -7905,7 +7906,7 @@ form {
 }
 
 ._3Rgm7 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -7964,7 +7965,7 @@ form {
 }
 
 ._22SkP {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -7973,7 +7974,7 @@ form {
     content: "";
     width: 2px;
     height: 2px;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: rgba(103, 143, 185, 0.8);
   }
 }
@@ -8020,20 +8021,20 @@ form {
   margin-right: 12px;
   display: flex;
   align-items: center;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   &:before {
     margin-right: 12px;
     content: "";
     width: 2px;
     height: 2px;
-    border-radius: 12px;
+    border-radius: 0px;
     background-color: rgba(103, 143, 185, 0.8);
   }
 }
 
 ._3bJmr {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
@@ -8074,7 +8075,7 @@ form {
 }
 
 ._1MG96 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   float: right;
@@ -8129,13 +8130,13 @@ form {
 }
 
 ._1bt4K {
-  width: 56px;
-  height: 56px;
+  width: 66px;
+  height: 66px;
   margin-right: 14px;
 }
 
 ._3ucBL {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -8148,7 +8149,7 @@ form {
 }
 
 ._3gGIp {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -8176,7 +8177,7 @@ form {
 }
 
 ._1eOJH {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -8359,7 +8360,7 @@ form {
 
 ._17xgL {
   margin-bottom: 4px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -8418,7 +8419,7 @@ div._3bqe5 {
 ._35FcZ {
   display: inline-block;
   word-wrap: normal;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -8430,7 +8431,7 @@ div._3bqe5 {
 }
 
 .kKUQF {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
 }
 
@@ -8493,10 +8494,10 @@ div._3bqe5 {
 }
 
 ._2oi1a {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  background: #00AFFF;
+  background: #0095D0;
   color: $color_white;
   padding: 12px 22px;
 }
@@ -8846,7 +8847,7 @@ div._3bqe5 {
 }
 
 ._2bd6H {
-  color: #00AFFF;
+  color: #0095D0;
   transition: color 0.2s ease;
 }
 
@@ -8895,7 +8896,7 @@ div._3bqe5 {
   position: absolute;
   top: 0;
   left: 9px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 80px;
@@ -8911,7 +8912,7 @@ div._3bqe5 {
 }
 
 ._1GpGz {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 28px;
   line-height: 28px;
@@ -8945,7 +8946,7 @@ div._3bqe5 {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -9006,10 +9007,10 @@ div._3bqe5 {
 }
 
 ._12F3w {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 56px;
-  line-height: 56px;
+  line-height: 66px;
   margin: 24px 0;
   max-width: 768px;
 }
@@ -9044,7 +9045,7 @@ div._3bqe5 {
   height: calc(100% + 4px);
   top: -4px;
   left: 0;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 1236px) {
@@ -9061,7 +9062,7 @@ div._3bqe5 {
 }
 
 ._1U6VM {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -9178,7 +9179,7 @@ div._3bqe5 {
   margin-left: 40px;
   margin-bottom: 44px;
   width: 40%;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   blockquote {
@@ -9741,7 +9742,7 @@ div._3bqe5 {
 ._3Cj79 {
   padding: 12px 40px;
   margin-left: auto;
-  background: #00AFFF;
+  background: #0095D0;
   color: $color_white;
   border: 0;
 }
@@ -9764,7 +9765,7 @@ div._3bqe5 {
 
 ._1Xbrb, ._3tkuf {
   background-color: rgba(0, 8, 39, 0.86);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   margin-bottom: 24px;
   color: $color_white;
@@ -9801,7 +9802,7 @@ div._3bqe5 {
 ._1yV5F {
   text-align: center;
   padding: 12px 40px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._2KK_J {
@@ -9837,9 +9838,9 @@ div._3bqe5 {
   color: $color_white;
   padding: 22px 28px;
   margin-bottom: 18px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   .bsAyu {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -9921,7 +9922,7 @@ div._3bqe5 {
 }
 
 .wcqil {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -10197,7 +10198,7 @@ div._3bqe5 {
 
 ._3d7ey {
   a, p, span {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 28px;
@@ -10219,7 +10220,7 @@ div._3bqe5 {
 }
 
 ._3GQKy {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
@@ -10553,7 +10554,7 @@ div._3bqe5 {
 }
 
 ._3G-jr {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
@@ -10577,7 +10578,7 @@ div._3bqe5 {
   height: 40px;
   transition: all 0.1s linear;
   &:hover {
-    background: #57d100;
+    background: #48C04A;
     path[data-hover-invert=true] {
       fill: $color_white;
     }
@@ -10723,7 +10724,7 @@ div._3bqe5 {
 }
 
 ._2uxNN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 24px;
@@ -10810,7 +10811,7 @@ div._3bqe5 {
 }
 
 ._2H69I {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -10866,7 +10867,7 @@ div._3bqe5 {
   width: 586px;
   margin-left: 12px;
   border: 1px solid rgba(103, 143, 185, 0.15);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   &:hover {
     img {
@@ -10940,7 +10941,7 @@ div._3bqe5 {
 }
 
 .grsTy {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -11008,7 +11009,7 @@ div._3bqe5 {
   margin-left: 12px;
   height: 170px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0px;
   &:first-child {
     margin-left: 0;
   }
@@ -11018,7 +11019,7 @@ div._3bqe5 {
   ._2cP6X {
     border: 1px solid rgba(103, 143, 185, 0.15);
     &:hover {
-      border-radius: 12px;
+      border-radius: 0px;
     }
   }
 }
@@ -11120,7 +11121,7 @@ div._3bqe5 {
   border-width: 2px;
   width: 24px;
   height: 24px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .HkQZ5:after {
@@ -11305,7 +11306,7 @@ div._3bqe5 {
 }
 
 ._7otWp {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
@@ -11332,7 +11333,7 @@ div._3bqe5 {
 }
 
 ._3ej6u {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   background: #141C3E;
@@ -11351,7 +11352,7 @@ div._3bqe5 {
   width: 24px;
   height: 24px;
   flex: 0 0 24px;
-  border-radius: 12px;
+  border-radius: 0px;
   align-items: center;
   justify-content: center;
   margin-right: 12px;
@@ -11404,7 +11405,7 @@ div._3bqe5 {
   text-align: center;
   width: 133px;
   ._31RCK > span {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 18px;
@@ -11462,7 +11463,7 @@ div._3bqe5 {
   text-transform: uppercase;
   height: 30px;
   padding: 4px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -11534,7 +11535,7 @@ div._3bqe5 {
 }
 
 .A57di {
-  background: #00AFFF;
+  background: #0095D0;
   color: $color_white;
 }
 
@@ -11704,7 +11705,7 @@ div._3bqe5 {
 .-DD7c {
   display: block;
   margin-top: 9px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -11844,7 +11845,7 @@ div._3bqe5 {
 }
 
 ._1CkKO {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -11906,7 +11907,7 @@ div._3bqe5 {
 }
 
 ._3i2q0 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -11921,7 +11922,7 @@ div._3bqe5 {
 }
 
 ._3f7H0 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -12057,7 +12058,7 @@ div._3bqe5 {
   max-width: 1236px;
   padding: 28px 0;
   margin: 0 14px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -12100,7 +12101,7 @@ div._3bqe5 {
 ._1pgHm {
   text-transform: uppercase;
   padding: 18px 28px;
-  background-color: #00AFFF;
+  background-color: #0095D0;
 }
 
 @media screen and (max-width: 846px) {
@@ -12132,7 +12133,7 @@ div._3bqe5 {
 }
 
 ._3F7tI {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -12203,7 +12204,7 @@ div._3bqe5 {
 
 ._13Iad {
   color: #f8f8f8;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
@@ -12219,7 +12220,7 @@ div._3bqe5 {
   padding: 0 22px;
   display: flex;
   align-items: center;
-  ._5YHG{
+  ._5YHG {
     display: none;
   }
 }
@@ -12282,7 +12283,7 @@ div._3bqe5 {
 }
 
 ._24mzx {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -12337,7 +12338,7 @@ div._3bqe5 {
     position: relative;
     &:before {
       border: 3px solid $color_white;
-      border-radius: 12px;
+      border-radius: 0px;
       content: "";
       height: 66px;
       width: 66px;
@@ -12491,7 +12492,7 @@ div._3bqe5 {
 }
 
 ._1SLoN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -12499,7 +12500,7 @@ div._3bqe5 {
   margin: 0 9px 0 0;
   padding: 13px 22px;
   display: block;
-  border-radius: 12px;
+  border-radius: 0px;
   white-space: nowrap;
   transition: all .1s ease-out;
   color: rgba(0, 8, 39, 0.86);
@@ -12507,7 +12508,7 @@ div._3bqe5 {
     content: "#";
   }
   &:hover {
-    background: #57d100;
+    background: #48C04A;
     color: $color_white;
   }
 }
@@ -12604,8 +12605,8 @@ div._3bqe5 {
 ._166mk {
   background: rgba(0, 8, 39, 0.86);
   color: $color_white;
-  border-radius: 12px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  border-radius: 0px;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -12636,7 +12637,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._1U_qv {
-    padding: 24px 0 24px 24px;
+    padding: 18px 0 18px 18px;
     overflow: hidden;
   }
 }
@@ -12689,7 +12690,7 @@ div._3bqe5 {
 
 ._1kLI9 {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._3d3uJ {
@@ -12698,7 +12699,7 @@ div._3bqe5 {
 }
 
 ._3MRFY {
-  background-color: #00AFFF;
+  background-color: #0095D0;
   width: 50%;
   max-width: 212px;
 }
@@ -12708,7 +12709,7 @@ div._3bqe5 {
 }
 
 ._1T85P {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._3H0B3 {
@@ -12808,7 +12809,7 @@ div._3bqe5 {
 }
 
 ._2EVp5 {
-  color: #00AFFF;
+  color: #0095D0;
   font-size: 18px;
   line-height: 22px;
   background: $color_white;
@@ -12880,7 +12881,7 @@ div._3bqe5 {
   max-width: 872px;
   margin-left: auto;
   margin-right: auto;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -12908,7 +12909,7 @@ div._3bqe5 {
 }
 
 .aPjG8 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -13086,7 +13087,7 @@ div._3bqe5 {
 }
 
 ._3BaWr {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 64px;
@@ -13113,11 +13114,11 @@ div._3bqe5 {
   margin: 0 auto;
   h2 {
     margin-bottom: 28px;
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
   }
   h3 {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     margin: 22px 0;
   }
@@ -13172,7 +13173,7 @@ div._3bqe5 {
 }
 
 ._35Ns5 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -13184,7 +13185,7 @@ div._3bqe5 {
   display: block;
   margin-bottom: 14px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 508px) {
@@ -13236,7 +13237,7 @@ div._3bqe5 {
 }
 
 .O93cc {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -13423,7 +13424,7 @@ div._3bqe5 {
 }
 
 ._105Oj em, .seE-I em {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -13586,7 +13587,7 @@ div._3bqe5 {
   background: #141C3E;
   color: $color_white;
   &:hover {
-    background: #57d100;
+    background: #48C04A;
   }
 }
 
@@ -13617,7 +13618,7 @@ div._3bqe5 {
 }
 
 ._2BMyH {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -13655,7 +13656,7 @@ div._3bqe5 {
   margin-bottom: 35px;
   padding-top: 9px;
   display: none;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -13854,7 +13855,7 @@ div._3bqe5 {
 }
 
 .udCjc {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -13973,25 +13974,13 @@ div._3bqe5 {
 
 ._3XXLi {
   position: relative;
-  height: 56px;
-}
-
-@media screen and (max-width: 846px) {
-  ._3XXLi {
-    height: 68px;
-  }
-}
-
-@media screen and (max-width: 508px) {
-  ._3XXLi {
-    height: 58px;
-  }
+  height: 66px;
 }
 
 .R1XAV {
   background: $color_white;
   border: none;
-  height: 56px;
+  height: 66px;
   width: 100%;
   padding: 18px;
   position: fixed;
@@ -14009,6 +13998,139 @@ div._3bqe5 {
   ._3TYH2 {
     padding: 0;
   }
+  &.jMZSBo {
+    width: 100%;
+    min-width: 320px;
+    position: fixed;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 1px solid #e8ebef;
+    z-index: 9;
+    background-color: #ffffff;
+    padding: 0 22px;
+    height: 70px;
+    font-family: 'DriveTribe', Helvetica, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  @media (max-width: 846px) {
+    &.jMZSBo {
+      padding: 0px 15px;
+      background-color: #ffffff;
+      border-color: #e8ebef;
+    }
+  }
+
+  @media (max-width: 586px) {
+    &.jMZSBo {
+      font-size: 12px;
+      line-height: 14px;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: 508px) {
+    &.jMZSBo {
+      height: 66px;
+    }
+  }
+  .fVSfy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    .bUebbF {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-letter-spacing: 1.3px;
+      -moz-letter-spacing: 1.3px;
+      -ms-letter-spacing: 1.3px;
+      letter-spacing: 1.3px;
+      position: relative;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-left: 1px solid #e8ebef;
+      line-height: 1;
+      padding-left: 0;
+      &:before {
+        content: '';
+        box-sizing: content-box;
+        display: block;
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        bottom: 4px;
+        height: 0px;
+        background-color: $color_white;
+      }
+      @media (max-width: 708px) {
+        display: none;
+        padding: 0;
+        padding-right: 15px;
+        &:before {
+          left: 0;
+          right: 20px;
+        }
+      }
+    }
+    .hBQeWD {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-letter-spacing: 1.3px;
+      -moz-letter-spacing: 1.3px;
+      -ms-letter-spacing: 1.3px;
+      letter-spacing: 1.3px;
+      position: relative;
+      padding: 10px 0;
+      cursor: pointer;
+      margin: 0 24px 0 0;
+      font-family: $font_sans;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 14px;
+    }
+  }
 }
 
 ._GSL7C {
@@ -14017,7 +14139,7 @@ div._3bqe5 {
   height: 30px;
   width: 30px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -14051,6 +14173,34 @@ div._3bqe5 {
   justify-content: flex-start;
 }
 
+._2H55B {
+  .jHUdQQ {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: $color_green;
+    @media (max-width: 586px) {
+      left: 15px;
+    }
+    .dOqZCB {
+      position: absolute;
+      font-size: 36px;
+      font-family: 'DriveTribe', Helvetica, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      -webkit-transform: translateX(-50%) translateY(0%);
+      -ms-transform: translateX(-50%) translateY(0%);
+      transform: translateX(-50%) translateY(0%);
+      @media (max-width: 586px) {
+        -webkit-transform: translateX(0) translateY(0%);
+        -ms-transform: translateX(0) translateY(0%);
+        transform: translateX(0) translateY(0%);
+        font-size: 20px;
+      }
+    }
+  }
+}
+
 ._2H55B > *, ._3BBJg > * {
   display: -ms-flexbox;
   display: flex;
@@ -14059,7 +14209,7 @@ div._3bqe5 {
   padding: 0;
   margin: 0 24px;
   position: relative;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -14186,7 +14336,7 @@ div._3bqe5 {
   height: 52px;
   transition: all 0.1s linear;
   &:hover {
-    background: #57d100;
+    background: #48C04A;
     path[data-hover-invert=true] {
       fill: $color_white;
     }
@@ -14299,7 +14449,7 @@ div._3bqe5 {
 }
 
 ._6UUFH {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -14322,7 +14472,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   .BJ1bO {
-    border: 1px solid rgba(0, 8, 39, 0.86);
+    border: 1px solid rgba(103, 143, 185, 0.8);
     height: 32px;
     padding: 0 18px;
     display: flex;
@@ -14351,7 +14501,7 @@ div._3bqe5 {
 ._3TYH2, .ra77F {
   position: relative;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._3TYH2 {
@@ -14431,7 +14581,7 @@ div._3bqe5 {
       right: 14px;
     }
     ._1C5MC {
-      font-family: DriveTribe, Helvetica, sans-serif;
+      font-family: $font_sans;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 12px;
@@ -14676,7 +14826,7 @@ div._3bqe5 {
 }
 
 ._2LIIc {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: flex;
   justify-content: center;
@@ -14688,7 +14838,7 @@ div._3bqe5 {
 }
 
 ._2LIIc, ._3vawV, ._3ZFAN, ._10G3J {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -14703,7 +14853,7 @@ div._3bqe5 {
 }
 
 ._3ZFAN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -14904,7 +15054,7 @@ div._3bqe5 {
 }
 
 ._2GM-b {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -14925,14 +15075,14 @@ div._3bqe5 {
   span {
     display: block;
     position: relative;
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 64px;
     line-height: 64px;
   }
   position: relative;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 64px;
@@ -15090,7 +15240,7 @@ div._3bqe5 {
 }
 
 ._3sn4w {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -15168,7 +15318,7 @@ div._3bqe5 {
 }
 
 ._1k78U {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: flex;
   justify-content: center;
@@ -15180,7 +15330,7 @@ div._3bqe5 {
 }
 
 ._1HFhM, ._1k78U, ._1NG4N, .BeWU8 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -15200,7 +15350,7 @@ div._3bqe5 {
 }
 
 ._1NG4N {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -15236,7 +15386,7 @@ div._3bqe5 {
 }
 
 ._2bVMA {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -15294,7 +15444,7 @@ div._3bqe5 {
   text-align: center;
   position: relative;
   span {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 18px;
@@ -15366,7 +15516,7 @@ div._3bqe5 {
 }
 
 ._1betN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -15412,7 +15562,7 @@ div._3bqe5 {
 }
 
 ._2Bf6g {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -15433,7 +15583,7 @@ div._3bqe5 {
 }
 
 ._2Jtky {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -15484,7 +15634,7 @@ div._3bqe5 {
   display: block;
   color: $color_white;
   font-size: 35px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -15553,7 +15703,7 @@ div._3bqe5 {
   margin-right: 14px;
   padding: 9px 0;
   opacity: .4;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -15604,7 +15754,7 @@ div._3bqe5 {
   float: right;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -15732,7 +15882,7 @@ div._3bqe5 {
 }
 
 .weBNu {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -15791,7 +15941,7 @@ div._3bqe5 {
 }
 
 ._2A4Sa {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
 }
 
@@ -15806,7 +15956,7 @@ div._3bqe5 {
 }
 
 ._2yIak {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 35px;
   line-height: 35px;
@@ -15901,7 +16051,7 @@ div._3bqe5 {
   flex-direction: column;
   justify-content: space-around;
   > span {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
@@ -15924,7 +16074,7 @@ div._3bqe5 {
 }
 
 ._14NuX {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -16118,7 +16268,7 @@ div._3bqe5 {
   height: 66px;
   flex: 0 0 66px;
   border: 1px solid $color_white;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 846px) {
@@ -16149,7 +16299,7 @@ div._3bqe5 {
 }
 
 ._61szA {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -16166,7 +16316,7 @@ div._3bqe5 {
 }
 
 ._1zuag {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -16216,7 +16366,7 @@ div._3bqe5 {
 }
 
 ._21oXk {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -16256,7 +16406,7 @@ div._3bqe5 {
   height: 50px;
   width: 50px;
   border: 1px solid #f8f8f8;
-  border-radius: 12px;
+  border-radius: 0px;
   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.28));
   svg {
     height: 24px;
@@ -16338,7 +16488,7 @@ div._3bqe5 {
   color: #f8f8f8;
   font-size: 14px;
   line-height: 18px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -16384,7 +16534,7 @@ div._3bqe5 {
 }
 
 .Q8QGa {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -16483,7 +16633,7 @@ div._3bqe5 {
 }
 
 ._3CI0P, ._14tWP {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -16492,14 +16642,14 @@ div._3bqe5 {
   font-size: 12px;
   line-height: 12px;
   display: flex;
-  background: #00AFFF;
+  background: #0095D0;
   color: $color_white;
   width: 222px;
   padding: 14px 0;
   justify-content: center;
   cursor: pointer;
   align-self: flex-end;
-  border-radius: 2px;
+  border-radius: 0px;
   margin-bottom: 28px;
   svg {
     margin-right: 9px;
@@ -16540,7 +16690,7 @@ div._3bqe5 {
 }
 
 ._3jhvW {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   margin-bottom: 14px;
   color: #2784bd;
@@ -16557,7 +16707,7 @@ div._3bqe5 {
 }
 
 ._3LR7v {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   svg {
     transform: translateY(4px);
@@ -16568,11 +16718,11 @@ div._3bqe5 {
 ._1euuK {
   font-weight: 400;
   margin-left: 4px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
 }
 
 ._1m8TD {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   margin-left: auto;
   svg {
@@ -16593,7 +16743,7 @@ div._3bqe5 {
   width: 9px;
   height: 9px;
   border-radius: 9px;
-  background-color: #00AFFF;
+  background-color: #0095D0;
   margin-right: 14px;
 }
 
@@ -16739,7 +16889,7 @@ div._3bqe5 {
 
 ._3clb_ {
   word-break: break-word;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -16843,7 +16993,7 @@ div._3bqe5 {
 }
 
 ._1sBpq {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   font-size: 44px;
   line-height: 55px;
@@ -16859,7 +17009,7 @@ div._3bqe5 {
 
 ._2-lPc {
   color: rgba(103, 143, 185, 0.4);
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   margin: 14px 0 28px;
@@ -16901,7 +17051,7 @@ div._3bqe5 {
 ._1pCN3 {
   font-size: 22px;
   line-height: 22px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   border: 4px solid rgba(103, 143, 185, 0.4);
@@ -16978,7 +17128,7 @@ div._3bqe5 {
   position: absolute;
   top: -248px;
   left: 0;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 4px solid $color_white;
 }
 
@@ -17355,7 +17505,7 @@ nav._1R2o8 {
 ._3zxcs {
   font-size: 22px;
   line-height: 22px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   border: 4px solid #ccc;
@@ -17446,7 +17596,7 @@ nav._1R2o8 {
 }
 
 .SMf8G {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -17477,7 +17627,7 @@ nav._1R2o8 {
 }
 
 ._1edwb {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -18283,7 +18433,7 @@ nav._1R2o8 {
   word-break: break-word;
   padding-bottom: 44px;
   color: $color_white;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -18704,7 +18854,7 @@ nav._1R2o8 {
 }
 
 ._1fDUg, .b9xa- {
-  background: #00AFFF;
+  background: #0095D0;
 }
 
 ._1fDUg svg, .b9xa- svg {
@@ -18736,25 +18886,4 @@ nav._1R2o8 {
       stroke: rgba(103, 143, 185, 0.8);
     }
   }
-}
-
-#busy .spinner {
-  -webkit-animation: spinner 1.2s linear infinite;
-  -moz-animation: spinner 1.2s linear infinite;
-  -o-animation: spinner 1.2s linear infinite;
-  -ms-animation: spinner 1.2s linear infinite;
-  animation: spinner 1.2s linear infinite;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(/assets/images/loader.png);
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  background-size: 100%;
-  margin-left: -90px;
-  margin-top: -90px;
-  position: absolute;
-  height: 180px;
-  width: 180px;
-  left: 50%;
-  top: 50%
 }

@@ -117,7 +117,7 @@ form p:last-child {
 [type="checkbox"].filled-in {
   // General
   + label:after {
-    border-radius: 2px;
+    border-radius: 0px;
   }
 
   + label:before,
@@ -177,13 +177,13 @@ form p:last-child {
 
   // Focused styles
   &.tabbed:focus + label:after {
-    border-radius: 2px;
+    border-radius: 0px;
     border-color: $radio-empty-color;
     background-color: rgba(0,0,0,.1);
   }
 
   &.tabbed:checked:focus + label:after {
-    border-radius: 2px;
+    border-radius: 0px;
     background-color: $secondary-color;
     border-color: $secondary-color;
   }

@@ -16,7 +16,7 @@ span.badge {
     font-size: 0.8rem;
     color: #fff;
     background-color: $badge-bg-color;
-    border-radius: 2px;
+    border-radius: 0px;
   }
   &.new:after {
     content: " new";

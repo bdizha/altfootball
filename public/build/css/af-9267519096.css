@@ -40,12 +40,12 @@ line {
 
 textarea {
   -webkit-appearance: none;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 input {
   -webkit-appearance: none;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 input:-webkit-autofill {
@@ -104,7 +104,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  color: #57d100;
+  color: #48C04A;
 }
 
 abbr[title] {
@@ -218,7 +218,7 @@ button {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 input::-moz-focus-inner {
@@ -414,7 +414,7 @@ button {
 }
 
 ._1h78h {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -432,24 +432,24 @@ button {
 }
 
 ._1MC-v {
-  background-color: #00AFFF;
+  background-color: #0095D0;
 }
 
 ._1MC-v:hover {
-  background-color: #57d100;
+  background-color: #48C04A;
 }
 
 ._1h78h:hover {
-  background-color: #57d100;
+  background-color: #48C04A;
 }
 
 ._1geYT {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  background: #00AFFF;
+  background: #0095D0;
   color: #FFFFFF;
   cursor: pointer;
   padding: 14px 28px;
@@ -463,7 +463,7 @@ button {
 
 ._1geYT:hover,
 ._1geYT:focus {
-  background: #57d100;
+  background: #48C04A;
 }
 
 ._23KD {
@@ -507,7 +507,7 @@ button {
 
 ._2CyDP,
 .cgtnr {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -585,7 +585,7 @@ button {
 }
 
 ._2zEgR {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -604,7 +604,7 @@ button {
 }
 
 ._2JpJc {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -620,8 +620,8 @@ button {
 }
 
 ._1OI3o {
-  border-color: #00AFFF;
-  color: #00AFFF;
+  border-color: #0095D0;
+  color: #0095D0;
 }
 
 ._3Ej8o {
@@ -732,7 +732,7 @@ button {
 }
 
 ._29zpU {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   clear: both;
@@ -756,7 +756,7 @@ button {
 }
 
 ._2KljY {
-  color: #00AFFF;
+  color: #0095D0;
   display: inline-block;
 }
 
@@ -765,7 +765,7 @@ button {
 }
 
 ._2KljY path {
-  fill: #00AFFF;
+  fill: #0095D0;
 }
 
 .d25Pz {
@@ -773,7 +773,7 @@ button {
 }
 
 ._35Phm {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -791,7 +791,7 @@ button {
 }
 
 ._27Mgd {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
@@ -900,7 +900,7 @@ button {
 
 ._1oI4U {
   padding: 0 22px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   display: block;
   text-transform: uppercase;
@@ -951,7 +951,7 @@ form#fanbase-form .b00q8 {
   height: 100%;
   transform-origin: 25% 3%;
   transition: all 0.4s;
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -1045,7 +1045,7 @@ form#fanbase-form .b00q8 {
 }
 
 ._2TaIJ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -1058,7 +1058,7 @@ form#fanbase-form .b00q8 {
 }
 
 .zoflJ {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 .zoflJ[disabled] {
@@ -1127,7 +1127,7 @@ form#fanbase-form .b00q8 {
   color: rgba(103, 143, 185, 0.4);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -1141,7 +1141,7 @@ form#fanbase-form .b00q8 {
 }
 
 ._2eqbF {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._37XUn {
@@ -1150,7 +1150,7 @@ form#fanbase-form .b00q8 {
 
 ._1u7op {
   color: #da1a35;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -1261,7 +1261,7 @@ form ._2Kdch {
 
 ._21web {
   border: 1px solid rgba(103, 143, 185, 0.4);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   width: 100%;
   height: 0;
@@ -1272,7 +1272,7 @@ form ._2Kdch {
 }
 
 .faM3p {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1OkWe {
@@ -1283,7 +1283,7 @@ form ._2Kdch {
 }
 
 ._3-rkf {
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1CeIM {
@@ -1320,11 +1320,11 @@ form ._2Kdch {
 ._31TRT {
   padding: 18px 28px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .vwhZ_ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -1375,7 +1375,7 @@ form ._2Kdch {
 
 ._1fDUg,
 .b9xa- {
-  background: #00AFFF;
+  background: #0095D0;
 }
 
 ._1fDUg svg,
@@ -1583,7 +1583,7 @@ form ._2Kdch {
   justify-content: center;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -1650,7 +1650,7 @@ form ._2Kdch {
 @media screen and (max-width: 508px) {
   .Y5qEv {
     display: block;
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
@@ -1735,7 +1735,7 @@ form ._2Kdch {
   word-wrap: break-word;
   margin-right: 0;
   min-height: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -1808,12 +1808,12 @@ form ._2Kdch {
   align-items: center;
   transition: all 0.1s linear;
   content: attr(data-stamp);
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._1Gyo9:after {
   content: attr(data-stamp);
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -1943,7 +1943,7 @@ form ._2Kdch {
 }
 
 ._28Y8c {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -1957,7 +1957,7 @@ form ._2Kdch {
   text-align: left;
   padding: 18px 26px;
   width: 100%;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2011,7 +2011,7 @@ form ._2Kdch {
 }
 
 ._2gW41 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -2065,7 +2065,7 @@ form ._2Kdch {
 ._2JNmn {
   font-size: 12px;
   line-height: 14px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -2079,7 +2079,7 @@ form ._2Kdch {
   display: flex;
   height: 100%;
   margin-bottom: 14px;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
@@ -2094,7 +2094,7 @@ form ._2Kdch {
   height: 100%;
   color: #f8f8f8;
   border: 1px solid #141C3E;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -2146,7 +2146,7 @@ form ._2Kdch {
   width: 100%;
   height: 100%;
   padding: 18px 26px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -2161,7 +2161,7 @@ form ._2Kdch {
 }
 
 ._3bbo_ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 14px;
@@ -2229,12 +2229,12 @@ form ._2Kdch {
   flex-direction: column;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   text-transform: uppercase;
 }
 
 ._1-hq7 ._3bbo_ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 14px;
@@ -2305,7 +2305,7 @@ form ._2Kdch {
 ._1OggK,
 ._28liP,
 .FMK9E {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -2353,7 +2353,7 @@ form ._2Kdch {
 }
 
 ._3xUes {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -2441,7 +2441,7 @@ form ._2Kdch {
 ._3Zur7 {
   display: inline;
   color: #FFFFFF;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2454,7 +2454,7 @@ form ._2Kdch {
 ._2uxUw {
   display: block;
   padding: 14px 0;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   width: 100%;
   max-width: 716px;
@@ -2487,7 +2487,7 @@ form ._2Kdch {
 ._1mT7f {
   font-size: 14px;
   position: relative;
-  color: #00AFFF;
+  color: #0095D0;
   cursor: pointer;
   margin-left: 18px;
   display: -ms-flexbox;
@@ -2521,8 +2521,8 @@ form ._2Kdch {
 }
 
 ._26cuW {
-  color: #00AFFF;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  color: #0095D0;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -2607,7 +2607,7 @@ form ._2Kdch {
 ._1Zj5n {
   width: 22px;
   height: 22px;
-  border-radius: 12px;
+  border-radius: 0px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: -ms-flexbox;
@@ -2634,7 +2634,7 @@ form ._2Kdch {
 }
 
 ._2YLzg {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 0;
 }
 
@@ -2665,7 +2665,7 @@ form ._2Kdch {
 }
 
 ._1kqns {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   float: right;
@@ -2673,12 +2673,12 @@ form ._2Kdch {
   padding: 9px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
-  background: #00AFFF;
+  background: #0095D0;
 }
 
 ._1kqns:focus:enabled,
 ._1kqns:hover:enabled {
-  background: #57d100;
+  background: #48C04A;
 }
 
 ._1kqns[disabled] {
@@ -2745,11 +2745,11 @@ form ._2Kdch {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 1px solid #00AFFF;
+  border: 1px solid #0095D0;
 }
 
 .KTIgi {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -2771,7 +2771,7 @@ form ._2Kdch {
 ._7ROiA {
   cursor: pointer;
   line-height: inherit;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -2791,7 +2791,7 @@ form ._2Kdch {
 }
 
 ._1saq1 button {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   color: #2784bd;
 }
@@ -2874,7 +2874,7 @@ form ._2Kdch {
 }
 
 ._3KCF8 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -2901,8 +2901,8 @@ form ._2Kdch {
 .Xr6ka {
   position: absolute;
   top: 28px;
-  color: #00AFFF;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  color: #0095D0;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -2935,7 +2935,7 @@ form ._2Kdch {
 }
 
 ._1tRa2 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(0, 8, 39, 0.86);
@@ -3022,7 +3022,7 @@ form ._2Kdch {
 }
 
 ._2KQbF {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(0, 8, 39, 0.86);
@@ -3108,7 +3108,7 @@ form ._2Kdch {
   box-sizing: content-box;
   position: relative;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(103, 143, 185, 0.4);
   height: 165px;
   cursor: pointer;
@@ -3384,7 +3384,7 @@ form ._2Kdch {
 }
 
 ._3cmsY {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   border: 1px solid rgba(0, 8, 39, 0.86);
   cursor: pointer;
@@ -3401,7 +3401,7 @@ form ._2Kdch {
 
 ._5lS25 {
   font-size: 12px;
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._22BIt {
@@ -3420,7 +3420,7 @@ form ._2Kdch {
 
 ._3LYcH,
 ._101VT {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3438,7 +3438,7 @@ form ._2Kdch {
 }
 
 ._25ugo {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
@@ -3470,7 +3470,7 @@ form ._2Kdch {
 }
 
 ._30g4J {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -3518,13 +3518,13 @@ form ._2Kdch {
 }
 
 ._21MHb {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .XmFjj {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -3593,7 +3593,7 @@ form ._2Kdch {
 }
 
 ._2fFf8 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -3721,13 +3721,13 @@ form ._2Kdch {
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
   overflow: hidden;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .p32Iu ._4TYO {
   margin: 0 14px 14px;
   border: 1px solid rgba(103, 143, 185, 0.2);
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .p32Iu ._3DF9 {
@@ -3754,12 +3754,12 @@ form ._2Kdch {
 }
 
 .p32Iu:hover ._HY8RT {
-  border: 1px solid #57d100;
+  border: 1px solid #48C04A;
 }
 
 .p32Iu:hover ._3DF9 {
   display: block;
-  background: rgba(87, 209, 0, 0.85);
+  background: rgba(59, 189, 76, 0.9);
 }
 
 dribbles {
@@ -3803,8 +3803,8 @@ dribbles ._35GH ._34IO {
 }
 
 ._35FcZ:hover ._GSL7C {
-  background: #00AFFF;
-  border: 1px solid #00AFFF;
+  background: #0095D0;
+  border: 1px solid #0095D0;
 }
 
 ._35FcZ:hover path {
@@ -3812,12 +3812,12 @@ dribbles ._35GH ._34IO {
 }
 
 ._35FcZ:hover ._34IO {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._8m6WC:hover ._GSL7C {
-  background: #57d100;
-  border: 1px solid #57d100;
+  background: #48C04A;
+  border: 1px solid #48C04A;
 }
 
 ._8m6WC:hover path {
@@ -3825,7 +3825,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._8m6WC:hover ._34IO {
-  color: #57d100;
+  color: #48C04A;
 }
 
 ._13DRk {
@@ -3905,7 +3905,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3vb09 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 35px;
   line-height: 35px;
@@ -4146,7 +4146,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3VB1o a {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   line-height: inherit;
 }
@@ -4173,6 +4173,7 @@ dribbles ._35GH ._34IO {
 ._3DF9 ._3duUm {
   margin-bottom: 0;
   margin-top: 0;
+  text-transform: uppercase;
 }
 
 ._3DF9 ._3duUm:after,
@@ -4189,7 +4190,7 @@ dribbles ._35GH ._34IO {
 ._2nUtC a,
 ._2nUtC p,
 ._2nUtC span {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -4249,7 +4250,7 @@ dribbles ._35GH ._34IO {
 
 ._3tN0i {
   color: rgba(103, 143, 185, 0.4);
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -4275,7 +4276,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2L6V9 a {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   line-height: inherit;
 }
@@ -4353,7 +4354,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1pPnu a {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -4390,7 +4391,7 @@ dribbles ._35GH ._34IO {
   content: "";
   width: 2px;
   height: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgba(103, 143, 185, 0.8);
 }
 
@@ -4409,7 +4410,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2VAHq:hover ._HY8RT {
-  border: 1px solid #57d100;
+  border: 1px solid #48C04A;
 }
 
 ._1w9h1 {
@@ -4436,7 +4437,7 @@ dribbles ._35GH ._34IO {
   height: 36px;
   display: inline-block;
   vertical-align: middle;
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   margin-left: 4px;
 }
@@ -4444,11 +4445,11 @@ dribbles ._35GH ._34IO {
 ._3Xf-w ._1XNRF {
   font-size: 16px;
   line-height: 18px;
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._3Xf-w ._1XNRF:hover {
-  color: #57d100;
+  color: #48C04A;
 }
 
 ._2xn_m {
@@ -4667,7 +4668,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3H01F {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -4735,7 +4736,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3f32u {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -4850,7 +4851,7 @@ dribbles ._35GH ._34IO {
 ._3zT4K {
   font-size: 22px;
   line-height: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   padding: 0 18px 28px;
   text-transform: uppercase;
@@ -4977,7 +4978,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2vzGK {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   margin-top: 12px;
@@ -5012,7 +5013,7 @@ dribbles ._35GH ._34IO {
 }
 
 .A8eM3 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -5109,7 +5110,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1_mZ1 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -5191,7 +5192,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1G1nd {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -5221,13 +5222,13 @@ dribbles ._35GH ._34IO {
 }
 
 ._1JesO {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
   padding: 28px 18px;
   transition: opacity .1s ease-out;
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._1JesO.disabled {
@@ -5330,12 +5331,12 @@ dribbles ._35GH ._34IO {
 }
 
 ._1C4sR {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
-  background: #00AFFF;
+  background: #0095D0;
   color: #FFFFFF;
   border-radius: 18px;
   margin: 0 auto 44px;
@@ -5683,7 +5684,7 @@ dribbles ._35GH ._34IO {
   display: block;
   position: absolute;
   top: 50%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .gzgzI {
@@ -5778,7 +5779,7 @@ dribbles ._35GH ._34IO {
 
 ._1QEWe,
 ._2o06m {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -5833,12 +5834,12 @@ dribbles ._35GH ._34IO {
 
 ._1OCcp {
   text-transform: uppercase;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
 .CrE3q {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -5903,7 +5904,7 @@ dribbles ._35GH ._34IO {
 ._3YXPS {
   opacity: 0;
   padding-top: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -5913,7 +5914,7 @@ dribbles ._35GH ._34IO {
 ._26n6g {
   opacity: 0;
   padding-top: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -5936,7 +5937,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1ksgx {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -5965,7 +5966,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1J2yn {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
@@ -5981,7 +5982,7 @@ dribbles ._35GH ._34IO {
 
 .xn0aB {
   font-size: 14px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding-right: 24px;
@@ -6037,7 +6038,7 @@ dribbles ._35GH ._34IO {
   color: rgba(103, 143, 185, 0.8);
   width: 76px;
   height: 55px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6127,7 +6128,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3debN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-size: 28px;
   line-height: 28px;
   text-transform: uppercase;
@@ -6150,7 +6151,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3_ndg {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -6219,7 +6220,7 @@ dribbles ._35GH ._34IO {
   -ms-flex-pack: center;
   justify-content: center;
   margin-left: -52px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -6466,7 +6467,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3UYss {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6620,7 +6621,7 @@ form ._12n1y {
 
 ._12n1y,
 .VnaIq span {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -6633,7 +6634,7 @@ form ._12n1y {
   margin: 18px 0;
   width: 100%;
   background: rgba(6, 33, 54, 0.5);
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._12n1y:first-child {
@@ -6643,7 +6644,7 @@ form ._12n1y {
 ._12n1y:hover,
 ._12n1y:focus {
   background: rgba(0, 0, 0, 0.1123);
-  border: 1px solid #57d100;
+  border: 1px solid #48C04A;
 }
 
 @media screen and (max-width: 508px) {
@@ -6662,7 +6663,7 @@ form ._12n1y {
   font-size: 14px;
   line-height: 14px;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .M13JP[disabled] {
@@ -6689,13 +6690,13 @@ form ._12n1y {
 }
 
 ._37Oy_ .M13JP {
-  background: #00AFFF;
+  background: #0095D0;
   border: none;
 }
 
 ._37Oy_ .M13JP:hover,
 ._37Oy_ .M13JP:focus {
-  background: #57d100;
+  background: #48C04A;
 }
 
 ._37Oy_ .M13JP[disabled] {
@@ -6796,7 +6797,7 @@ form ._12n1y {
 ._1iBcU,
 ._3OQAJ,
 .KyQLW {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -6848,7 +6849,7 @@ form ._12n1y {
 }
 
 ._2LrKA {
-  background: #00AFFF;
+  background: #0095D0;
 }
 
 ._1S4og {
@@ -6866,7 +6867,7 @@ form ._12n1y {
 
 ._35Eoh {
   text-align: center;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 72px;
@@ -6881,7 +6882,7 @@ form ._12n1y {
 }
 
 ._1Honn {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -6902,7 +6903,7 @@ form ._12n1y {
 
 ._3MbTo {
   text-align: center;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -6956,7 +6957,7 @@ form ._12n1y {
 }
 
 ._1e4LX {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(103, 143, 185, 0.4);
@@ -6965,7 +6966,7 @@ form ._12n1y {
 }
 
 ._1J7fB {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(103, 143, 185, 0.4);
@@ -7014,7 +7015,7 @@ form ._12n1y {
 }
 
 ._3vbhf {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -7099,7 +7100,7 @@ form ._12n1y {
   display: -ms-flexbox;
   display: flex;
   color: rgba(0, 8, 39, 0.86);
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -7170,7 +7171,7 @@ form ._12n1y {
 }
 
 ._3nf8R {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7188,7 +7189,7 @@ form ._12n1y {
 }
 
 ._2tXok {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._2tXok[disabled] {
@@ -7245,7 +7246,7 @@ form ._12n1y {
 }
 
 ._2y6Xw {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7265,7 +7266,7 @@ form ._12n1y {
 
 ._3R_r_ > label {
   cursor: pointer;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -7297,7 +7298,7 @@ form ._12n1y {
 }
 
 ._2fg1f {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -7310,7 +7311,7 @@ form ._12n1y {
   display: inline-block;
   text-transform: none;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._150di {
@@ -7321,7 +7322,7 @@ form ._12n1y {
   flex-grow: 1;
   -ms-flex-align: center;
   align-items: center;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7329,7 +7330,7 @@ form ._12n1y {
 }
 
 .pbRDO {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7362,7 +7363,7 @@ form ._12n1y {
 }
 
 ._1jO5_ {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7387,12 +7388,12 @@ form ._12n1y {
   color: rgba(103, 143, 185, 0.4);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
 ._15Cw9 {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._3SQbI {
@@ -7401,7 +7402,7 @@ form ._12n1y {
 
 .HMy0C {
   color: #FFFFFF;
-  background: #00AFFF;
+  background: #0095D0;
   padding-left: 0;
 }
 
@@ -7419,7 +7420,7 @@ form ._12n1y {
 }
 
 ._31olX {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7440,7 +7441,7 @@ form ._12n1y {
 }
 
 ._3UY9k {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7484,7 +7485,7 @@ form ._12n1y {
 }
 
 .NpeF3 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -7669,12 +7670,12 @@ form ._12n1y {
 
 ._2fwRw {
   text-transform: uppercase;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
 ._35KTo {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 64px;
   height: 20px;
@@ -7691,7 +7692,7 @@ form ._12n1y {
 }
 
 ._3jX9n {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 55px;
@@ -7722,7 +7723,7 @@ form ._12n1y {
 }
 
 ._2VZfh {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -7925,7 +7926,7 @@ form ._12n1y {
 ._3Qk42 {
   font-size: 12px;
   line-height: 12px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 0;
@@ -7963,7 +7964,7 @@ form ._12n1y {
 }
 
 ._1dxvB {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -8013,7 +8014,7 @@ form ._12n1y {
 }
 
 ._2VD5i {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -8074,7 +8075,7 @@ form ._12n1y {
 }
 
 ._1bkDE {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   margin-right: 6px;
@@ -8237,7 +8238,7 @@ form ._12n1y {
 }
 
 .vka9m {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   margin-right: 6px;
@@ -8282,7 +8283,7 @@ form ._12n1y {
 }
 
 ._341rK {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   display: -ms-flexbox;
   display: flex;
@@ -8295,7 +8296,7 @@ form ._12n1y {
   content: "";
   width: 2px;
   height: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgba(103, 143, 185, 0.8);
 }
 
@@ -8376,7 +8377,7 @@ form ._12n1y {
 
 ._2OqId a,
 ._2OqId button {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   color: #2784bd;
 }
@@ -8392,7 +8393,7 @@ form ._12n1y {
 
 ._1lUs3,
 ._2OqId a {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
 }
 
 ._1lUs3 {
@@ -8458,7 +8459,7 @@ form ._12n1y {
   min-height: 50px;
   text-overflow: ellipsis;
   overflow: hidden;
-  border-left: 4px solid #00AFFF;
+  border-left: 4px solid #0095D0;
   margin-bottom: 22px;
 }
 
@@ -8468,7 +8469,7 @@ form ._12n1y {
   margin-left: 10px;
   padding: 10px 0 0;
   font-size: 14px;
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 .gEjmr ._RG6wD ._MS1DF {
@@ -8506,7 +8507,7 @@ form ._12n1y {
 }
 
 ._1vFjj {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -8521,7 +8522,7 @@ form ._12n1y {
 }
 
 ._3Rgm7 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -8586,7 +8587,7 @@ form ._12n1y {
 }
 
 ._22SkP {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   display: -ms-flexbox;
   display: flex;
@@ -8599,7 +8600,7 @@ form ._12n1y {
   content: "";
   width: 2px;
   height: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgba(103, 143, 185, 0.8);
 }
 
@@ -8648,7 +8649,7 @@ form ._12n1y {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -8657,12 +8658,12 @@ form ._12n1y {
   content: "";
   width: 2px;
   height: 2px;
-  border-radius: 12px;
+  border-radius: 0px;
   background-color: rgba(103, 143, 185, 0.8);
 }
 
 ._3bJmr {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
@@ -8711,7 +8712,7 @@ form ._12n1y {
 }
 
 ._1MG96 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   float: right;
@@ -8771,13 +8772,13 @@ form ._12n1y {
 }
 
 ._1bt4K {
-  width: 56px;
-  height: 56px;
+  width: 66px;
+  height: 66px;
   margin-right: 14px;
 }
 
 ._3ucBL {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -8792,7 +8793,7 @@ form ._12n1y {
 }
 
 ._3gGIp {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -8821,7 +8822,7 @@ form ._12n1y {
 }
 
 ._1eOJH {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -9022,7 +9023,7 @@ form ._12n1y {
 
 ._17xgL {
   margin-bottom: 4px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -9086,7 +9087,7 @@ div._3bqe5 > div {
 ._35FcZ {
   display: inline-block;
   word-wrap: normal;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -9098,7 +9099,7 @@ div._3bqe5 > div {
 }
 
 .kKUQF {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -9117,7 +9118,7 @@ div._3bqe5 > div {
 ._2Oo2A {
   min-width: calc(33% - 20px);
   text-align: left;
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 @media screen and (max-width: 508px) {
@@ -9162,10 +9163,10 @@ div._3bqe5 > div {
 }
 
 ._2oi1a {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  background: #00AFFF;
+  background: #0095D0;
   color: #FFFFFF;
   padding: 12px 22px;
 }
@@ -9546,7 +9547,7 @@ div._3bqe5 > div {
 }
 
 ._2bd6H {
-  color: #00AFFF;
+  color: #0095D0;
   transition: color 0.2s ease;
 }
 
@@ -9600,7 +9601,7 @@ div._3bqe5 > div {
   position: absolute;
   top: 0;
   left: 9px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 80px;
@@ -9616,7 +9617,7 @@ div._3bqe5 > div {
 }
 
 ._1GpGz {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 28px;
@@ -9650,7 +9651,7 @@ div._3bqe5 > div {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -9712,10 +9713,10 @@ div._3bqe5 > div {
 }
 
 ._12F3w {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 56px;
-  line-height: 56px;
+  line-height: 66px;
   margin: 24px 0;
   max-width: 768px;
 }
@@ -9745,12 +9746,12 @@ div._3bqe5 > div {
 
 ._HY8RT {
   position: absolute;
-  border: 1px solid #00AFFF;
+  border: 1px solid #0095D0;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   top: -4px;
   left: 0;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 1236px) {
@@ -9767,7 +9768,7 @@ div._3bqe5 > div {
 }
 
 ._1U6VM {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -9891,7 +9892,7 @@ div._3bqe5 > div {
   margin-left: 40px;
   margin-bottom: 44px;
   width: 40%;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -9946,7 +9947,7 @@ div._3bqe5 > div {
 }
 
 ._2cAm4 {
-  color: #00AFFF;
+  color: #0095D0;
   font-size: 16px;
   line-height: 18px;
   padding: 18px;
@@ -10215,7 +10216,7 @@ div._3bqe5 > div {
 
 ._1Q_Pu a:hover,
 ._1Q_Pu a:focus {
-  color: #57d100;
+  color: #48C04A;
 }
 
 ._1Q_Pu p {
@@ -10477,7 +10478,7 @@ div._3bqe5 > div {
 ._3Cj79 {
   padding: 12px 40px;
   margin-left: auto;
-  background: #00AFFF;
+  background: #0095D0;
   color: #FFFFFF;
   border: 0;
 }
@@ -10501,7 +10502,7 @@ div._3bqe5 > div {
 ._1Xbrb,
 ._3tkuf {
   background-color: rgba(0, 8, 39, 0.86);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
   margin-bottom: 24px;
   color: #FFFFFF;
@@ -10543,7 +10544,7 @@ div._3bqe5 > div {
 ._1yV5F {
   text-align: center;
   padding: 12px 40px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._2KK_J {
@@ -10583,11 +10584,11 @@ div._3bqe5 > div {
   color: #FFFFFF;
   padding: 22px 28px;
   margin-bottom: 18px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
 }
 
 ._17BOo .bsAyu {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -10668,7 +10669,7 @@ div._3bqe5 > div {
 }
 
 .wcqil {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -10962,7 +10963,7 @@ div._3bqe5 > div {
 ._3d7ey a,
 ._3d7ey p,
 ._3d7ey span {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -10983,7 +10984,7 @@ div._3bqe5 > div {
 }
 
 ._3GQKy {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
@@ -11328,7 +11329,7 @@ div._3bqe5 > div {
 }
 
 ._3G-jr {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
@@ -11357,7 +11358,7 @@ div._3bqe5 > div {
 }
 
 ._1aThB:hover {
-  background: #57d100;
+  background: #48C04A;
 }
 
 ._1aThB:hover path[data-hover-invert=true] {
@@ -11513,7 +11514,7 @@ div._3bqe5 > div {
 }
 
 ._2uxNN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 24px;
@@ -11601,7 +11602,7 @@ div._3bqe5 > div {
 }
 
 ._2H69I {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -11661,7 +11662,7 @@ div._3bqe5 > div {
   width: 586px;
   margin-left: 12px;
   border: 1px solid rgba(103, 143, 185, 0.15);
-  border-radius: 12px;
+  border-radius: 0px;
   overflow: hidden;
 }
 
@@ -11736,7 +11737,7 @@ div._3bqe5 > div {
 }
 
 .grsTy {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -11804,7 +11805,7 @@ div._3bqe5 > div {
   margin-left: 12px;
   height: 170px;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._2cP6X:first-child {
@@ -11817,7 +11818,7 @@ div._3bqe5 > div {
   }
 
   ._2cP6X:hover {
-    border-radius: 12px;
+    border-radius: 0px;
   }
 }
 
@@ -11925,7 +11926,7 @@ div._3bqe5 > div {
   border-width: 2px;
   width: 24px;
   height: 24px;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 .HkQZ5:after {
@@ -12120,7 +12121,7 @@ div._3bqe5 > div {
 }
 
 ._7otWp {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
@@ -12147,7 +12148,7 @@ div._3bqe5 > div {
 }
 
 ._3ej6u {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background: #141C3E;
@@ -12170,7 +12171,7 @@ div._3bqe5 > div {
   height: 24px;
   -ms-flex: 0 0 24px;
   flex: 0 0 24px;
-  border-radius: 12px;
+  border-radius: 0px;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
@@ -12237,7 +12238,7 @@ div._3bqe5 > div {
 }
 
 .DcoLy ._31RCK > span {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -12302,7 +12303,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   height: 30px;
   padding: 4px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -12375,7 +12376,7 @@ div._3bqe5 > div {
 }
 
 .A57di {
-  background: #00AFFF;
+  background: #0095D0;
   color: #FFFFFF;
 }
 
@@ -12563,7 +12564,7 @@ div._3bqe5 > div {
 .-DD7c {
   display: block;
   margin-top: 9px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -12713,7 +12714,7 @@ div._3bqe5 > div {
 }
 
 ._1CkKO {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -12787,7 +12788,7 @@ div._3bqe5 > div {
 }
 
 ._3i2q0 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -12803,7 +12804,7 @@ div._3bqe5 > div {
 }
 
 ._3f7H0 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -12954,7 +12955,7 @@ div._3bqe5 > div {
   max-width: 1236px;
   padding: 28px 0;
   margin: 0 14px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -13002,7 +13003,7 @@ div._3bqe5 > div {
 ._1pgHm {
   text-transform: uppercase;
   padding: 18px 28px;
-  background-color: #00AFFF;
+  background-color: #0095D0;
 }
 
 @media screen and (max-width: 846px) {
@@ -13036,7 +13037,7 @@ div._3bqe5 > div {
 }
 
 ._3F7tI {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -13120,7 +13121,7 @@ div._3bqe5 > div {
 
 ._13Iad {
   color: #f8f8f8;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
@@ -13206,7 +13207,7 @@ div._3bqe5 > div {
 }
 
 ._24mzx {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -13276,7 +13277,7 @@ div._3bqe5 > div {
 
   ._2_Gw9:before {
     border: 3px solid #FFFFFF;
-    border-radius: 12px;
+    border-radius: 0px;
     content: "";
     height: 66px;
     width: 66px;
@@ -13454,7 +13455,7 @@ div._3bqe5 > div {
 }
 
 ._1SLoN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
@@ -13462,7 +13463,7 @@ div._3bqe5 > div {
   margin: 0 9px 0 0;
   padding: 13px 22px;
   display: block;
-  border-radius: 12px;
+  border-radius: 0px;
   white-space: nowrap;
   transition: all .1s ease-out;
   color: rgba(0, 8, 39, 0.86);
@@ -13473,7 +13474,7 @@ div._3bqe5 > div {
 }
 
 ._1SLoN:hover {
-  background: #57d100;
+  background: #48C04A;
   color: #FFFFFF;
 }
 
@@ -13570,8 +13571,8 @@ div._3bqe5 > div {
 ._166mk {
   background: rgba(0, 8, 39, 0.86);
   color: #FFFFFF;
-  border-radius: 12px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  border-radius: 0px;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -13608,7 +13609,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._1U_qv {
-    padding: 24px 0 24px 24px;
+    padding: 18px 0 18px 18px;
     overflow: hidden;
   }
 }
@@ -13664,7 +13665,7 @@ div._3bqe5 > div {
 
 ._1kLI9 {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._3d3uJ {
@@ -13673,7 +13674,7 @@ div._3bqe5 > div {
 }
 
 ._3MRFY {
-  background-color: #00AFFF;
+  background-color: #0095D0;
   width: 50%;
   max-width: 212px;
 }
@@ -13683,7 +13684,7 @@ div._3bqe5 > div {
 }
 
 ._1T85P {
-  color: #00AFFF;
+  color: #0095D0;
 }
 
 ._3H0B3 {
@@ -13786,7 +13787,7 @@ div._3bqe5 > div {
 }
 
 ._2EVp5 {
-  color: #00AFFF;
+  color: #0095D0;
   font-size: 18px;
   line-height: 22px;
   background: #FFFFFF;
@@ -13861,7 +13862,7 @@ div._3bqe5 > div {
   max-width: 872px;
   margin-left: auto;
   margin-right: auto;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -13891,7 +13892,7 @@ div._3bqe5 > div {
 }
 
 .aPjG8 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -14070,7 +14071,7 @@ div._3bqe5 > div {
 }
 
 ._3BaWr {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 64px;
@@ -14101,12 +14102,12 @@ div._3bqe5 > div {
 
 ._2zNwx h2 {
   margin-bottom: 28px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
 ._2zNwx h3 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   margin: 22px 0;
 }
@@ -14161,7 +14162,7 @@ div._3bqe5 > div {
 }
 
 ._35Ns5 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -14173,7 +14174,7 @@ div._3bqe5 > div {
   display: block;
   margin-bottom: 14px;
   text-align: center;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 508px) {
@@ -14195,7 +14196,7 @@ div._3bqe5 > div {
 }
 
 ._1ssnS {
-  background-color: #00AFFF;
+  background-color: #0095D0;
   margin-bottom: 14px;
   border: 0;
   color: #FFFFFF;
@@ -14204,7 +14205,7 @@ div._3bqe5 > div {
 ._1ssnS.active,
 ._1ssnS:focus,
 ._1ssnS:hover {
-  background-color: #57d100;
+  background-color: #48C04A;
   color: #FFFFFF;
   /* mistakes are pretty common */
   /* work it out to the best of their abilities */
@@ -14227,7 +14228,7 @@ div._3bqe5 > div {
 }
 
 .O93cc {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -14350,7 +14351,7 @@ div._3bqe5 > div {
 ._2-WMb {
   -ms-flex-align: center;
   align-items: center;
-  background-color: #57d100;
+  background-color: #48C04A;
   border-radius: 22px;
   display: -ms-flexbox;
   display: flex;
@@ -14435,7 +14436,7 @@ div._3bqe5 > div {
 
 ._105Oj em,
 .seE-I em {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -14612,7 +14613,7 @@ div._3bqe5 > div {
 }
 
 .zrN-a:hover {
-  background: #57d100;
+  background: #48C04A;
 }
 
 .rr7kJ {
@@ -14643,7 +14644,7 @@ div._3bqe5 > div {
 }
 
 ._2BMyH {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -14681,7 +14682,7 @@ div._3bqe5 > div {
   margin-bottom: 35px;
   padding-top: 9px;
   display: none;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -14902,7 +14903,7 @@ div._3bqe5 > div {
 }
 
 .udCjc {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -15034,25 +15035,13 @@ div._3bqe5 > div {
 
 ._3XXLi {
   position: relative;
-  height: 56px;
-}
-
-@media screen and (max-width: 846px) {
-  ._3XXLi {
-    height: 68px;
-  }
-}
-
-@media screen and (max-width: 508px) {
-  ._3XXLi {
-    height: 58px;
-  }
+  height: 66px;
 }
 
 .R1XAV {
   background: #FFFFFF;
   border: none;
-  height: 56px;
+  height: 66px;
   width: 100%;
   padding: 18px;
   position: fixed;
@@ -15072,13 +15061,131 @@ div._3bqe5 > div {
   padding: 0;
 }
 
+.R1XAV.jMZSBo {
+  width: 100%;
+  min-width: 320px;
+  position: fixed;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e8ebef;
+  z-index: 9;
+  background-color: #ffffff;
+  padding: 0 22px;
+  height: 70px;
+  font-family: 'DriveTribe', Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@media (max-width: 846px) {
+  .R1XAV.jMZSBo {
+    padding: 0px 15px;
+    background-color: #ffffff;
+    border-color: #e8ebef;
+  }
+}
+
+@media (max-width: 586px) {
+  .R1XAV.jMZSBo {
+    font-size: 12px;
+    line-height: 14px;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 508px) {
+  .R1XAV.jMZSBo {
+    height: 66px;
+  }
+}
+
+.R1XAV .fVSfy {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.R1XAV .fVSfy .bUebbF {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-letter-spacing: 1.3px;
+  -moz-letter-spacing: 1.3px;
+  -ms-letter-spacing: 1.3px;
+  letter-spacing: 1.3px;
+  position: relative;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-left: 1px solid #e8ebef;
+  line-height: 1;
+  padding-left: 0;
+}
+
+.R1XAV .fVSfy .bUebbF:before {
+  content: '';
+  box-sizing: content-box;
+  display: block;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 4px;
+  height: 0px;
+  background-color: #FFFFFF;
+}
+
+@media (max-width: 708px) {
+  .R1XAV .fVSfy .bUebbF {
+    display: none;
+    padding: 0;
+    padding-right: 15px;
+  }
+
+  .R1XAV .fVSfy .bUebbF:before {
+    left: 0;
+    right: 20px;
+  }
+}
+
+.R1XAV .fVSfy .hBQeWD {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-letter-spacing: 1.3px;
+  -moz-letter-spacing: 1.3px;
+  -ms-letter-spacing: 1.3px;
+  letter-spacing: 1.3px;
+  position: relative;
+  padding: 10px 0;
+  cursor: pointer;
+  margin: 0 24px 0 0;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 14px;
+}
+
 ._GSL7C {
   border: 1px solid rgba(103, 143, 185, 0.8);
   display: block;
   height: 30px;
   width: 30px;
   position: relative;
-  border-radius: 12px;
+  border-radius: 0px;
   cursor: pointer;
   outline: none;
   overflow: hidden;
@@ -15091,7 +15198,7 @@ div._3bqe5 > div {
 }
 
 ._GSL7C:hover {
-  background: #57d100;
+  background: #48C04A;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
 }
 
@@ -15116,6 +15223,35 @@ div._3bqe5 > div {
   justify-content: flex-start;
 }
 
+._2H55B .jHUdQQ {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #48C04A;
+}
+
+@media (max-width: 586px) {
+  ._2H55B .jHUdQQ {
+    left: 15px;
+  }
+}
+
+._2H55B .jHUdQQ .dOqZCB {
+  position: absolute;
+  font-size: 36px;
+  font-family: 'DriveTribe', Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: translateX(-50%) translateY(0%);
+}
+
+@media (max-width: 586px) {
+  ._2H55B .jHUdQQ .dOqZCB {
+    transform: translateX(0) translateY(0%);
+    font-size: 20px;
+  }
+}
+
 ._2H55B > *,
 ._3BBJg > * {
   display: -ms-flexbox;
@@ -15125,7 +15261,7 @@ div._3bqe5 > div {
   padding: 0;
   margin: 0 24px;
   position: relative;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -15188,7 +15324,7 @@ div._3bqe5 > div {
 ._13sKJ:hover:before {
   display: block;
   content: "";
-  background: #57d100;
+  background: #48C04A;
   height: 4px;
   position: absolute;
   left: 0;
@@ -15198,7 +15334,7 @@ div._3bqe5 > div {
 
 ._13sKJ.HEYnN ._2rsMb path,
 ._13sKJ:hover ._2rsMb path {
-  fill: #57d100;
+  fill: #48C04A;
 }
 
 @media screen and (max-width: 508px) {
@@ -15264,7 +15400,7 @@ div._3bqe5 > div {
 }
 
 ._3YKuQ:hover {
-  background: #57d100;
+  background: #48C04A;
 }
 
 ._3YKuQ:hover path[data-hover-invert=true] {
@@ -15377,7 +15513,7 @@ div._3bqe5 > div {
 }
 
 ._6UUFH {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -15402,7 +15538,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   .BJ1bO {
-    border: 1px solid rgba(0, 8, 39, 0.86);
+    border: 1px solid rgba(103, 143, 185, 0.8);
     height: 32px;
     padding: 0 18px;
     display: -ms-flexbox;
@@ -15434,7 +15570,7 @@ div._3bqe5 > div {
 .ra77F {
   position: relative;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 ._3TYH2 {
@@ -15522,7 +15658,7 @@ div._3bqe5 > div {
   }
 
   ._12GBJ ._1C5MC {
-    font-family: DriveTribe, Helvetica, sans-serif;
+    font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 12px;
@@ -15786,7 +15922,7 @@ div._3bqe5 > div {
 }
 
 ._2LIIc {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: -ms-flexbox;
   display: flex;
@@ -15805,7 +15941,7 @@ div._3bqe5 > div {
 ._3vawV,
 ._3ZFAN,
 ._10G3J {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -15823,7 +15959,7 @@ div._3bqe5 > div {
 }
 
 ._3ZFAN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -16056,7 +16192,7 @@ div._3bqe5 > div {
 }
 
 ._2GM-b {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -16075,7 +16211,7 @@ div._3bqe5 > div {
 ._1Y_xx {
   text-transform: uppercase;
   position: relative;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 64px;
@@ -16085,7 +16221,7 @@ div._3bqe5 > div {
 ._1Y_xx span {
   display: block;
   position: relative;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 64px;
@@ -16249,7 +16385,7 @@ div._3bqe5 > div {
 }
 
 ._3sn4w {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -16335,7 +16471,7 @@ div._3bqe5 > div {
 }
 
 ._1k78U {
-  border-radius: 12px;
+  border-radius: 0px;
   border: 1px solid rgba(0, 8, 39, 0.86);
   display: -ms-flexbox;
   display: flex;
@@ -16354,7 +16490,7 @@ div._3bqe5 > div {
 ._1k78U,
 ._1NG4N,
 .BeWU8 {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -16377,7 +16513,7 @@ div._3bqe5 > div {
 }
 
 ._1NG4N {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -16413,7 +16549,7 @@ div._3bqe5 > div {
 }
 
 ._2bVMA {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -16476,7 +16612,7 @@ div._3bqe5 > div {
 }
 
 ._3ldas span {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -16553,7 +16689,7 @@ div._3bqe5 > div {
 }
 
 ._1betN {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -16599,7 +16735,7 @@ div._3bqe5 > div {
 }
 
 ._2Bf6g {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -16620,7 +16756,7 @@ div._3bqe5 > div {
 }
 
 ._2Jtky {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -16676,7 +16812,7 @@ div._3bqe5 > div {
   display: block;
   color: #FFFFFF;
   font-size: 35px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -16745,7 +16881,7 @@ div._3bqe5 > div {
   margin-right: 14px;
   padding: 9px 0;
   opacity: .4;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -16797,7 +16933,7 @@ div._3bqe5 > div {
   float: right;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -16930,7 +17066,7 @@ div._3bqe5 > div {
 }
 
 .weBNu {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -16992,7 +17128,7 @@ div._3bqe5 > div {
 }
 
 ._2A4Sa {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -17008,7 +17144,7 @@ div._3bqe5 > div {
 }
 
 ._2yIak {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 35px;
   line-height: 35px;
@@ -17114,7 +17250,7 @@ div._3bqe5 > div {
 }
 
 ._2YnA3 > span {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -17136,7 +17272,7 @@ div._3bqe5 > div {
 }
 
 ._14NuX {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -17359,7 +17495,7 @@ div._3bqe5 > div {
   -ms-flex: 0 0 66px;
   flex: 0 0 66px;
   border: 1px solid #FFFFFF;
-  border-radius: 12px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 846px) {
@@ -17393,7 +17529,7 @@ div._3bqe5 > div {
 }
 
 ._61szA {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -17412,7 +17548,7 @@ div._3bqe5 > div {
 }
 
 ._1zuag {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -17464,7 +17600,7 @@ div._3bqe5 > div {
 }
 
 ._21oXk {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
@@ -17508,7 +17644,7 @@ div._3bqe5 > div {
   height: 50px;
   width: 50px;
   border: 1px solid #f8f8f8;
-  border-radius: 12px;
+  border-radius: 0px;
   filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.28));
 }
 
@@ -17604,7 +17740,7 @@ div._3bqe5 > div {
   color: #f8f8f8;
   font-size: 14px;
   line-height: 18px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   display: -ms-flexbox;
   display: flex;
@@ -17663,7 +17799,7 @@ div._3bqe5 > div {
 }
 
 .Q8QGa {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -17775,7 +17911,7 @@ div._3bqe5 > div {
 
 ._3CI0P,
 ._14tWP {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -17785,7 +17921,7 @@ div._3bqe5 > div {
   line-height: 12px;
   display: -ms-flexbox;
   display: flex;
-  background: #00AFFF;
+  background: #0095D0;
   color: #FFFFFF;
   width: 222px;
   padding: 14px 0;
@@ -17794,7 +17930,7 @@ div._3bqe5 > div {
   cursor: pointer;
   -ms-flex-item-align: end;
   align-self: flex-end;
-  border-radius: 2px;
+  border-radius: 0px;
   margin-bottom: 28px;
 }
 
@@ -17840,7 +17976,7 @@ div._3bqe5 > div {
 }
 
 ._3jhvW {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   margin-bottom: 14px;
   color: #2784bd;
@@ -17859,7 +17995,7 @@ div._3bqe5 > div {
 }
 
 ._3LR7v {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
 
@@ -17871,11 +18007,11 @@ div._3bqe5 > div {
 ._1euuK {
   font-weight: 400;
   margin-left: 4px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
 }
 
 ._1m8TD {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   margin-left: auto;
 }
@@ -17897,7 +18033,7 @@ div._3bqe5 > div {
   width: 9px;
   height: 9px;
   border-radius: 9px;
-  background-color: #00AFFF;
+  background-color: #0095D0;
   margin-right: 14px;
 }
 
@@ -18048,7 +18184,7 @@ div._3bqe5 > div {
 
 ._3clb_ {
   word-break: break-word;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -18155,7 +18291,7 @@ div._3bqe5 > div {
 }
 
 ._1sBpq {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   font-size: 44px;
   line-height: 55px;
@@ -18171,7 +18307,7 @@ div._3bqe5 > div {
 
 ._2-lPc {
   color: rgba(103, 143, 185, 0.4);
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin: 14px 0 28px;
@@ -18219,7 +18355,7 @@ div._3bqe5 > div {
 ._1pCN3 {
   font-size: 22px;
   line-height: 22px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: 4px solid rgba(103, 143, 185, 0.4);
@@ -18303,7 +18439,7 @@ div._3bqe5 > div {
   position: absolute;
   top: -248px;
   left: 0;
-  border-radius: 12px;
+  border-radius: 0px;
   border: 4px solid #FFFFFF;
 }
 
@@ -18697,7 +18833,7 @@ nav._1R2o8 {
 ._3zxcs {
   font-size: 22px;
   line-height: 22px;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: 4px solid #ccc;
@@ -18790,7 +18926,7 @@ nav._1R2o8 {
 }
 
 .SMf8G {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -18821,7 +18957,7 @@ nav._1R2o8 {
 }
 
 ._1edwb {
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 12px;
@@ -19677,7 +19813,7 @@ nav._1R2o8 {
   word-break: break-word;
   padding-bottom: 44px;
   color: #FFFFFF;
-  font-family: DriveTribe, Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -20145,7 +20281,7 @@ nav._1R2o8 {
 
 ._1fDUg,
 .b9xa- {
-  background: #00AFFF;
+  background: #0095D0;
 }
 
 ._1fDUg svg,
@@ -20182,19 +20318,4 @@ nav._1R2o8 {
 
 ._13Js3:hover path:last-child {
   stroke: rgba(103, 143, 185, 0.8);
-}
-
-#busy .spinner {
-  animation: spinner 1.2s linear infinite;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url(/assets/images/loader.png);
-  background-size: 100%;
-  margin-left: -90px;
-  margin-top: -90px;
-  position: absolute;
-  height: 180px;
-  width: 180px;
-  left: 50%;
-  top: 50%;
 }
