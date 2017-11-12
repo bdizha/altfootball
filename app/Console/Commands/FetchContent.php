@@ -19,7 +19,7 @@ use App\Jobs\RealMadridJob;
 use App\Jobs\PremierLeagueJob;
 use App\Jobs\SearieAJob;
 use App\Jobs\JuventusJob;
-use App\Jobs\HitcJob;
+use App\Jobs\Football365;
 use App\Jobs\SpanishFootball;
 use Illuminate\Console\Command;
 
@@ -56,12 +56,12 @@ class FetchContent extends Command
      */
     public function handle()
     {
+        dispatch(new Football365());
         dispatch(new Bundesliga());
         dispatch(new Barcelona());
         dispatch(new BarcelonaFC());
         dispatch(new SpanishFootball());
         dispatch(new SearieAJob());
-        dispatch(new HitcJob());
         dispatch(new JuventusJob());
         dispatch(new NewsBreatheChelseaJob());
         dispatch(new NewsGoalJob());

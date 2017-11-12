@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class HitcJob extends NewsJob
+class Football365 extends NewsJob
 {
     protected $domain = "";
     protected $url = "";
@@ -23,7 +23,7 @@ class HitcJob extends NewsJob
     public function __construct()
     {
         $this->fanbase_id = 7;
-        $this->domain = "http://www.hitc.com";
+        $this->domain = "http://www.football365.com/";
         $this->url = "";
     }
 
@@ -40,10 +40,10 @@ class HitcJob extends NewsJob
 
         foreach (range(1, 5) as $page) {
 
-            $url = "http://www.hitc.com/en-gb/sport/football/page/{$page}/";
+            $url = "http://www.football365.com/top-story/page/{$page}/";
 
             $crawler = $client->request('GET', $url);
-            $crawler->filter('.post-header')->each(function (Crawler $node, $i) {
+            $crawler->filter('.articleList__item')->each(function (Crawler $node, $i) {
 
                 if ($node->filter('a')->count()) {
 
@@ -51,11 +51,11 @@ class HitcJob extends NewsJob
 
                     if (!empty($link)) {
 
-                        $url = $this->domain . $link;
+                        $url = $link;
 
-                        $p = Post::where("external_url", $url)->first();
+                        $p = Post::where("external_url", $link)->first();
                         $client = new Client();
-                        $data = $client->request('GET', $url);
+                        $data = $client->request('GET', $link);
 
                         $user = array();
 
@@ -84,13 +84,12 @@ class HitcJob extends NewsJob
                             $post = array();
 
                             $post['credit'] = $this->domain;
-
                             $post['external_url'] = $url;
                             $post['user_id'] = $u->id;
 
                             $summary = $data->filter('meta[property="og:description"]')->attr('content');
 
-                            $post['image'] = $data->filter('meta[property="og:image"]')->attr('content');
+                            $post['image'] = $data->filter('meta[name="twitter:image"]')->attr('content');
                             $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
                             $post['date'] = $data->filter('meta[property="article:published_time"]')->attr('content');
 
@@ -99,11 +98,8 @@ class HitcJob extends NewsJob
                             }
 
                             $content = "";
-                            $data->filter('.post-content p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-
-                                if(strpos($node->html(), 'guardian') === false){
-                                    $content .= "<p>{$node->html()}</p>";
-                                }
+                            $data->filter('.article__body p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
+                                $content .= "<p>{$node->html()}</p>";
                             });
 
                             $post['content'] = $this->cleanHtml($content);
@@ -123,8 +119,6 @@ class HitcJob extends NewsJob
 
                                 echo "updated::: {$p->slug} \n";
                             }
-
-//                        dd($p);
 
                             FanbasePost::where("post_id", $p->id)
                                 ->delete();

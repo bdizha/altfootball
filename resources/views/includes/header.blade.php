@@ -7,7 +7,32 @@
         </div>
         <div class="_2H55B">
             <a class="sc-kgoBCf jHUdQQ" href="/">
-                <span class="dOqZCB"><span style="color: #0095D0">Alt</span>Football</span>
+                <span class="dOqZCB one">
+                    <span>A</span>
+                    <span>l</span>
+                    <span>t</span>
+                    <span>f</span>
+                    <span>o</span>
+                    <span>o</span>
+                    <span>t</span>
+                    <span>b</span>
+                    <span>a</span>
+                    <span>l</span>
+                    <span>l</span>
+                </span>
+                <span class="dOqZCB two">
+                    <span>A</span>
+                    <span>l</span>
+                    <span>t</span>
+                    <span>f</span>
+                    <span>o</span>
+                    <span>o</span>
+                    <span>t</span>
+                    <span>b</span>
+                    <span>a</span>
+                    <span>l</span>
+                    <span>l</span>
+                </span>
             </a>
         </div>
         <div class="_3BBJg">

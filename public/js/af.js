@@ -911,7 +911,6 @@ $(function () {
         self.showUserForm = ko.observable(false);
         self.showItem = ko.observable(false);
         self.showFanbaseForm = ko.observable(false);
-        // self.currentUser = ko.observable(window.currentUser);
         self.showJoinForm = ko.observable(false);
         self.isSignedIn = ko.computed(function () {
             return !!window.isAuthenticated;
@@ -975,26 +974,25 @@ $(function () {
             self.showFanbaseForm(false);
         };
 
-        self.setPage = function (pageId) {
-            $(".page").show();
-            $("#" + pageId).show();
+        self.setPage = function (id) {
+            $(".page").slideDown();
+            $("#page-" + id).slideUp();
         };
 
-        // Sammy(function() {
-        //     this.get('#p/:slug', function() {
-        //         self.setPage("page-post");
-        //     });
-        //
-        //     this.get('#u/:slug', function() {
-        //         self.setPage("page-user");
-        //         $.get("/mail", { mailId: this.params.mailId }, self.chosenMailData);
-        //     });
-        //
-        //     this.get('', function() {
-        //         self.setPage("page-home");
-        //     });
-        //
-        // }).run();
+        Sammy(function() {
+            this.get('#p/:slug', function() {
+                self.setPage("post");
+            });
+
+            this.get('#u/:slug', function() {
+                self.setPage("user");
+            });
+
+            this.get('', function() {
+                self.setPage("welcome");
+            });
+
+        }).run();
     };
 
     ko.extenders.overlay = function(target, option) {

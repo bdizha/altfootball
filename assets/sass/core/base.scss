@@ -3437,7 +3437,7 @@ form {
     margin: 0;
     position: absolute;
     bottom: 0;
-    background: rgba(0, 8, 39, 0.85);
+    background: rgba(0, 149, 208, 0.9);
     left: 0;
     right: 0;
     padding: 14px 14px;
@@ -12001,7 +12001,7 @@ div._3bqe5 {
 }
 
 ._1-0JF {
-  background:rgba(12, 18, 42, 0.95);
+  background: rgba(12, 18, 42, 0.95);
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
@@ -12213,7 +12213,7 @@ div._3bqe5 {
 }
 
 .GLLyX {
-  background:rgba(12, 18, 42, 0.95);
+  background: rgba(12, 18, 42, 0.95);
   position: relative;
 }
 
@@ -14184,19 +14184,102 @@ div._3bqe5 {
     }
     .dOqZCB {
       position: absolute;
+      width: 209px;
+      display: inline-block;
       font-size: 36px;
-      font-family: 'DriveTribe', Helvetica, sans-serif;
+      font-family: $font_sans;
       font-weight: 700;
+      letter-spacing: -4.5px;
       text-transform: uppercase;
       -webkit-transform: translateX(-50%) translateY(0%);
       -ms-transform: translateX(-50%) translateY(0%);
       transform: translateX(-50%) translateY(0%);
-      @media (max-width: 586px) {
-        -webkit-transform: translateX(0) translateY(0%);
-        -ms-transform: translateX(0) translateY(0%);
-        transform: translateX(0) translateY(0%);
-        font-size: 20px;
+      &.one {
+        span {
+          &:nth-child(1) {
+            color: rgba(0, 149, 208, 1);
+          }
+          &:nth-child(2) {
+            color: rgba(0, 149, 208, 0.9);
+          }
+          &:nth-child(3) {
+            color: rgba(0, 149, 208, 0.8);
+          }
+          &:nth-child(4) {
+            color: rgba(0, 149, 208, 0.7);
+          }
+          &:nth-child(5) {
+            color: rgba(0, 149, 208, 0.6);
+          }
+          &:nth-child(6) {
+            color: rgba(0, 149, 208, 0.5);
+          }
+          &:nth-child(7) {
+            color: rgba(0, 149, 208, 0.4);
+          }
+          &:nth-child(8) {
+            color: rgba(0, 149, 208, 0.3);
+          }
+          &:nth-child(9) {
+            color: rgba(0, 149, 208, 0.2);
+          }
+          &:nth-child(10) {
+            color: rgba(0, 149, 208, 0.1);
+          }
+          &:nth-child(11) {
+            color: rgba(0, 149, 208, 0);
+          }
+          &:nth-child(12) {
+            color: rgba(0, 149, 208, 1);
+          }
+        }
       }
+      &.two {
+        span {
+          &:nth-child(1) {
+            color: rgba(72, 192, 74, 0);
+          }
+          &:nth-child(2) {
+            color: rgba(72, 192, 74, 0.1);
+          }
+          &:nth-child(3) {
+            color: rgba(72, 192, 74, 0.2);
+          }
+          &:nth-child(4) {
+            color: rgba(72, 192, 74, 0.3);
+          }
+          &:nth-child(5) {
+            color: rgba(72, 192, 74, 0.4);
+          }
+          &:nth-child(6) {
+            color: rgba(72, 192, 74, 0.5);
+          }
+          &:nth-child(7) {
+            color: rgba(72, 192, 74, 0.6);
+          }
+          &:nth-child(8) {
+            color: rgba(72, 192, 74, 0.7);
+          }
+          &:nth-child(9) {
+            color: rgba(72, 192, 74, 0.8);
+          }
+          &:nth-child(10) {
+            color: rgba(72, 192, 74, 0.9);
+          }
+          &:nth-child(11) {
+            color: rgba(72, 192, 74, 1);
+          }
+          &:nth-child(12) {
+            color: rgba(72, 192, 74, 1);
+          }
+        }
+      }
+    }
+    @media (max-width: 586px) {
+      -webkit-transform: translateX(0) translateY(0%);
+      -ms-transform: translateX(0) translateY(0%);
+      transform: translateX(0) translateY(0%);
+      font-size: 20px;
     }
   }
 }
