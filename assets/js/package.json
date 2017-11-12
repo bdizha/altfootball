@@ -13,6 +13,7 @@
     "materialize": "^1.0.0",
     "materialize-css": "^0.100.1",
     "owl.carousel": "^2.2.0",
-    "require": "^2.4.20"
+    "require": "^2.4.20",
+    "sammy": "^0.7.6"
   }
 }

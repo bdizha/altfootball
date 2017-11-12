@@ -42,7 +42,7 @@ html {
 
 body {
   margin: 0;
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -65,7 +65,7 @@ audio:not([controls]) {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   &:active, &:hover {
     outline-width: 0;
     color: $color_green;
@@ -361,7 +361,7 @@ button {
   line-height: 14px;
   text-align: left;
   padding: 22px 40px;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   cursor: pointer;
   svg {
@@ -420,7 +420,7 @@ button {
 
 ._2e1-n {
   border-color: $color_white;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   &:hover {
     background: $color_white;
@@ -429,7 +429,7 @@ button {
 }
 
 .oFTqy {
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
 }
 
@@ -485,7 +485,7 @@ button {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   opacity: 0;
   transform: translateZ(0);
 }
@@ -514,7 +514,7 @@ button {
   line-height: 28px;
   padding-bottom: 28px;
   margin-bottom: 28px;
-  border-bottom: 4px solid rgba(0, 8, 39, 0.86);
+  border-bottom: 4px solid rgba(0, 8, 39, 0.85);
   flex: 0 0 100%;
 }
 
@@ -529,7 +529,7 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   padding: 18px;
   flex: 0 0 196px;
   text-align: left;
@@ -558,7 +558,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   opacity: 0;
 }
 
@@ -732,7 +732,7 @@ button {
 }
 
 ._1V79j {
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgba(255, 255, 255, 0.85);
   left: 0;
   transform: translateZ(0);
   z-index: 13;
@@ -740,7 +740,6 @@ button {
   top: 0;
   right: 0;
   bottom: 0;
-  opacity: 0.6;
   display: none;
   &.active {
     display: block;
@@ -982,7 +981,7 @@ form {
 
 ._2Kdch {
   position: relative;
-  border-bottom: 1px solid rgba(0, 8, 39, 0.86);
+  border-bottom: 1px solid rgba(0, 8, 39, 0.85);
   padding-right: 28px;
   transition: padding-bottom 0.15s linear;
   ._1u7op {
@@ -1675,14 +1674,15 @@ form {
 }
 
 ._1Gyo9 {
-  border: 4px solid rgba(0, 8, 39, 0.86);
-  color: rgba(0, 8, 39, 0.86);
+  border: 4px solid rgba(103, 143, 185, 0.7);
+  color: rgba(0, 8, 39, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: all 0.1s linear;
   content: attr(data-stamp);
   border-radius: 0px;
+  background: rgba(103, 143, 185, 0.09);
   &:after {
     content: attr(data-stamp);
     font-family: $font_sans;
@@ -1694,7 +1694,7 @@ form {
   }
   &:hover {
     color: $color_white;
-    background-color: rgba(0, 8, 39, 0.86);
+    background-color: rgba(0, 8, 39, 0.85);
   }
 }
 
@@ -2308,7 +2308,7 @@ form {
   margin-bottom: 0;
   font-weight: normal;
   background: rgba(103, 143, 185, 0.15);
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   font-size: 18px;
   line-height: 1.58;
   letter-spacing: -.004em;
@@ -2399,7 +2399,7 @@ form {
   height: 22px;
   border-radius: 0px;
   background: $color_white;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   display: flex;
   position: relative;
   &:hover {
@@ -2412,7 +2412,7 @@ form {
     position: relative;
     left: 5px;
     path {
-      stroke: rgba(0, 8, 39, 0.86);
+      stroke: rgba(0, 8, 39, 0.85);
       stroke-width: 1;
     }
   }
@@ -2529,7 +2529,7 @@ form {
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   padding-top: 9px;
   a:hover {
     text-decoration: underline;
@@ -2695,7 +2695,7 @@ form {
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   font-size: 14px;
   position: absolute;
@@ -2772,7 +2772,7 @@ form {
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   font-size: 14px;
   padding: 6px 14px;
@@ -3107,7 +3107,7 @@ form {
 ._3cmsY {
   font-family: $font_sans;
   font-weight: 700;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   cursor: pointer;
   padding: 9px 18px;
   margin-bottom: 28px;
@@ -3147,7 +3147,7 @@ form {
 ._3LYcH {
   font-size: 22px;
   line-height: 22px;
-  border-bottom: 4px solid rgba(0, 8, 39, 0.86);
+  border-bottom: 4px solid rgba(0, 8, 39, 0.85);
   margin-bottom: 28px;
   width: 100%;
 }
@@ -3292,7 +3292,7 @@ form {
 
 ._1m76a {
   margin: 0 26px;
-  border-top: 1px solid rgba(0, 8, 39, 0.86);
+  border-top: 1px solid rgba(0, 8, 39, 0.85);
   display: flex;
   padding-top: 18px;
 }
@@ -3484,14 +3484,14 @@ dribbles {
 
 .rF2QA {
   display: inline-block;
-  height: 30px;
+  height: 40px;
 }
 
 ._1CwPf {
   &:hover {
     ._GSL7C {
       background: rgba(0, 8, 39, .86);
-      border: 1px solid rgba(0, 8, 39, .86);
+      border: 1px solid rgba(0, 8, 39, .26);
     }
     path {
       fill: $color_white;
@@ -3538,11 +3538,11 @@ dribbles {
   ._34IO {
     position: absolute;
     top: 0;
-    left: 36px;
+    left: 46px;
     color: rgba(103, 143, 185, 0.8);
     font-size: 14px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 40px;
     &._35GH {
       color: rgb(237, 0, 39);
     }
@@ -3638,7 +3638,7 @@ dribbles {
     flex: 0 0 40px;
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(0, 8, 39, 0.86);
+    border: 1px solid rgba(0, 8, 39, 0.85);
     &:after {
       font-size: 14px;
       line-height: 14px;
@@ -3793,7 +3793,7 @@ dribbles {
 
 ._34-mC {
   float: right;
-  width: 30px;
+  width: 40px;
 }
 
 ._1mYFh {
@@ -3856,7 +3856,7 @@ dribbles {
 }
 
 .FnwOT {
-  border: 8px solid rgba(0, 8, 39, 0.86);
+  border: 8px solid rgba(0, 8, 39, 0.85);
   margin-right: 40px;
   padding: 28px 18px 64px;
 }
@@ -4380,7 +4380,7 @@ dribbles {
 }
 
 ._38OvA {
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   &._1H8gB {
     color: rgba(103, 143, 185, 0.8);
   }
@@ -4452,7 +4452,7 @@ dribbles {
 }
 
 ._3bVUr {
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
 }
 
 ._24kFo {
@@ -4833,7 +4833,7 @@ dribbles {
 }
 
 ._28Zwg {
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   height: 2px;
   transform: scaleX(0);
   transform-origin: top left;
@@ -4939,7 +4939,7 @@ dribbles {
   position: relative;
   text-align: center;
   .QbGqA {
-    color: rgba(0, 8, 39, 0.86);
+    color: rgba(0, 8, 39, 0.85);
     white-space: nowrap;
     position: absolute;
     margin: auto;
@@ -5048,7 +5048,7 @@ dribbles {
   width: 28px;
   height: 28px;
   background-color: $color_white;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   cursor: pointer;
   user-select: none;
   &._393Hg {
@@ -5078,7 +5078,7 @@ dribbles {
 }
 
 ._3fNy8, .CmDVS:hover {
-  border: 1px solid rgba(103, 143, 185, 0.8);
+  border: 1px solid rgba(103, 143, 185, 0.2);
 }
 
 ._3fNy8 {
@@ -5087,7 +5087,7 @@ dribbles {
 }
 
 ._2nJET:hover {
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
 }
 
@@ -5317,7 +5317,7 @@ dribbles {
 }
 
 .fFpBH {
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   border: 0;
 }
@@ -6572,7 +6572,7 @@ form {
 
 .zxDoM {
   display: flex;
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
@@ -6584,7 +6584,7 @@ form {
   position: relative;
   transition: opacity 0.1s ease-out;
   &:after {
-    background: rgba(0, 8, 39, 0.86);
+    background: rgba(0, 8, 39, 0.85);
     content: "";
     display: block;
     width: 26px;
@@ -6678,7 +6678,7 @@ form {
   position: relative;
   width: 24px;
   height: 24px;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   cursor: pointer;
   > input {
     display: none;
@@ -6693,7 +6693,7 @@ form {
   left: 5px;
   width: 10px;
   height: 10px;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
 }
 
 ._2crgF {
@@ -7177,7 +7177,7 @@ form {
 ._2AwjV {
   display: block;
   background: $color_white;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   color: rgba(103, 143, 185, 0.4);
   svg {
     float: none;
@@ -7191,7 +7191,7 @@ form {
 
 @media screen and (max-width: 508px) {
   ._2AwjV {
-    border: 1px solid rgba(0, 8, 39, 0.86);
+    border: 1px solid rgba(0, 8, 39, 0.85);
     width: auto;
   }
 }
@@ -7527,7 +7527,7 @@ form {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   cursor: pointer;
   svg {
     z-index: 16;
@@ -8080,8 +8080,8 @@ form {
   font-weight: 700;
   text-transform: uppercase;
   float: right;
-  color: rgba(0, 8, 39, 0.86);
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   padding: 9px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
@@ -9184,7 +9184,7 @@ div._3bqe5 {
   font-weight: 700;
   text-transform: uppercase;
   blockquote {
-    border: 10px solid rgba(0, 8, 39, 0.86);
+    border: 10px solid rgba(0, 8, 39, 0.85);
     padding: 160px 14px 18px;
     p {
       font-size: 28px;
@@ -9765,7 +9765,7 @@ div._3bqe5 {
 }
 
 ._1Xbrb, ._3tkuf {
-  background-color: rgba(0, 8, 39, 0.86);
+  background-color: rgba(0, 8, 39, 0.85);
   border-radius: 0px;
   overflow: hidden;
   margin-bottom: 24px;
@@ -9835,7 +9835,7 @@ div._3bqe5 {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   padding: 22px 28px;
   margin-bottom: 18px;
@@ -9991,7 +9991,7 @@ div._3bqe5 {
     flex: 0 0 40px;
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(0, 8, 39, 0.86);
+    border: 1px solid rgba(0, 8, 39, 0.85);
     &:after {
       font-size: 14px;
       line-height: 14px;
@@ -10186,7 +10186,7 @@ div._3bqe5 {
 }
 
 .zZi01 {
-  border: 8px solid rgba(0, 8, 39, 0.86);
+  border: 8px solid rgba(0, 8, 39, 0.85);
   padding: 28px 18px 64px;
 }
 
@@ -11382,7 +11382,7 @@ div._3bqe5 {
 
 ._23g2_ {
   margin-right: 0;
-  border: 1px solid rgba(103, 143, 185, 0.8);
+  border: 1px solid rgba(103, 143, 185, 0.2);
   svg {
     display: block;
   }
@@ -11480,7 +11480,7 @@ div._3bqe5 {
 }
 
 ._2I-QY {
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   border: 1px solid rgba(103, 143, 185, 0.4);
 }
 
@@ -11491,13 +11491,13 @@ div._3bqe5 {
 }
 
 ._2q7vJ {
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   border: 1px solid rgba(103, 143, 185, 0.4);
 }
 
 ._2SyJe {
   width: 80px;
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
 }
 
@@ -11531,7 +11531,7 @@ div._3bqe5 {
 }
 
 ._1-Zgz, ._1WmTc {
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
 }
 
@@ -11711,7 +11711,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 18px;
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
 }
 
 @media screen and (max-width: 508px) {
@@ -12497,14 +12497,15 @@ div._3bqe5 {
   font-weight: 700;
   font-size: 12px;
   line-height: 14px;
-  background: rgba(103, 143, 185, 0.15);
+  background: rgba(103, 143, 185, 0.09);
   margin: 0 9px 0 0;
   padding: 13px 22px;
   display: block;
   border-radius: 0px;
   white-space: nowrap;
   transition: all .1s ease-out;
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.2);
   &:before {
     content: "#";
   }
@@ -12522,7 +12523,7 @@ div._3bqe5 {
 }
 
 ._2Phzy {
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   position: relative;
 }
@@ -12604,7 +12605,7 @@ div._3bqe5 {
 }
 
 ._166mk {
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   border-radius: 0px;
   font-family: $font_sans;
@@ -13179,7 +13180,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   width: 100%;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -13481,7 +13482,7 @@ div._3bqe5 {
 }
 
 ._12L63 {
-  background: rgba(0, 8, 39, 0.86);
+  background: rgba(0, 8, 39, 0.85);
   color: $color_white;
   display: flex;
   position: relative;
@@ -13678,7 +13679,7 @@ div._3bqe5 {
       }
     }
     ._2iRjb {
-      background: rgba(0, 8, 39, 0.86);
+      background: rgba(0, 8, 39, 0.85);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -14134,19 +14135,20 @@ div._3bqe5 {
 }
 
 ._GSL7C {
-  border: 1px solid rgba(103, 143, 185, 0.8);
+  border: 1px solid rgba(103, 143, 185, 0.2);
   display: block;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   position: relative;
-  border-radius: 0px;
+  border-radius: 0;
   cursor: pointer;
   outline: none;
   overflow: hidden;
+  background: rgba(103, 143, 185, 0.09);
   svg {
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 7px;
+    top: 7px;
   }
   &:hover {
     background: $color_green;
@@ -14274,12 +14276,13 @@ div._3bqe5 {
           }
         }
       }
-    }
-    @media (max-width: 586px) {
-      -webkit-transform: translateX(0) translateY(0%);
-      -ms-transform: translateX(0) translateY(0%);
-      transform: translateX(0) translateY(0%);
-      font-size: 20px;
+      @media (max-width: 586px) {
+        -webkit-transform: translateX(0) translateY(0%);
+        -ms-transform: translateX(0) translateY(0%);
+        transform: translateX(0) translateY(0%);
+        font-size: 20px;
+        letter-spacing: -2.5px;
+      }
     }
   }
 }
@@ -14555,7 +14558,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   .BJ1bO {
-    border: 1px solid rgba(103, 143, 185, 0.8);
+    border: 1px solid rgba(103, 143, 185, 0.2);
     height: 32px;
     padding: 0 18px;
     display: flex;
@@ -14910,7 +14913,7 @@ div._3bqe5 {
 
 ._2LIIc {
   border-radius: 0px;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15402,7 +15405,7 @@ div._3bqe5 {
 
 ._1k78U {
   border-radius: 0px;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15753,8 +15756,8 @@ div._3bqe5 {
 }
 
 ._346nx {
-  color: rgba(0, 8, 39, 0.86);
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(0, 8, 39, 0.85);
 }
 
 .l5jFn {
@@ -15779,7 +15782,7 @@ div._3bqe5 {
 }
 
 .zOPku {
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   position: relative;
   font-size: 28px;
   display: inline;
@@ -15833,7 +15836,7 @@ div._3bqe5 {
 ._2reVj {
   width: 118px;
   height: 53px;
-  border: 1px solid rgba(0, 8, 39, 0.86);
+  border: 1px solid rgba(0, 8, 39, 0.85);
   float: right;
   text-transform: uppercase;
   font-size: 14px;
@@ -15920,7 +15923,7 @@ div._3bqe5 {
   }
   .weBNu {
     background: $color_white;
-    color: rgba(0, 8, 39, 0.86);
+    color: rgba(0, 8, 39, 0.85);
     border-bottom: 1px solid rgba(103, 143, 185, 0.4);
     transition: all 0.1s linear 0.6s;
   }
@@ -17393,7 +17396,7 @@ div._3bqe5 {
 }
 
 .O6y0Q {
-  background-color: rgba(0, 8, 39, 0.86);
+  background-color: rgba(0, 8, 39, 0.85);
 }
 
 .O6y0Q svg {
@@ -17715,7 +17718,7 @@ nav._1R2o8 {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
   cursor: pointer
 }
 
@@ -18042,7 +18045,7 @@ nav._1R2o8 {
 }
 
 .gld7a {
-  background-color: rgba(0, 8, 39, 0.86);
+  background-color: rgba(0, 8, 39, 0.85);
 }
 
 ._2F06s {
@@ -18754,11 +18757,11 @@ nav._1R2o8 {
 }
 
 ._2sG6-, ._3TznZ {
-  border-bottom: 4px solid rgba(0, 8, 39, 0.86);
+  border-bottom: 4px solid rgba(0, 8, 39, 0.85);
 }
 
 ._2sG6- {
-  color: rgba(0, 8, 39, 0.86);
+  color: rgba(0, 8, 39, 0.85);
 }
 
 @media screen and (max-width: 664px) {
@@ -18769,7 +18772,7 @@ nav._1R2o8 {
 
 ._3vwB1 {
   color: $color_white;
-  border-bottom-color: rgba(0, 8, 39, 0.86);
+  border-bottom-color: rgba(0, 8, 39, 0.85);
 }
 
 ._2aPX0 {

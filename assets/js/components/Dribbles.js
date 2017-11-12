@@ -16,8 +16,8 @@ $(function () {
             return self.type() + "-"+ self.typeId();
         });
 
-        console.log("params.has_dribble: " + params.has_dribble);
-        console.log("self.hasDribble: " + self.hasDribble());
+        // console.log("params.has_dribble: " + params.has_dribble);
+        // console.log("self.hasDribble: " + self.hasDribble());
 
         self.save = function () {
 

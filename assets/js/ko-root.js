@@ -26,10 +26,10 @@ $(function () {
             return !!window.isAuthenticated;
         });
 
-        console.log("self.isAuthenticated()");
-        console.log(window.isAuthenticated);
-        console.log("self.isSignedIn()");
-        console.log(self.isSignedIn());
+        // console.log("self.isAuthenticated()");
+        // console.log(window.isAuthenticated);
+        // console.log("self.isSignedIn()");
+        // console.log(self.isSignedIn());
 
         self.showOverlay = ko.computed(function () {
             return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm() || self.showItem();
@@ -40,6 +40,7 @@ $(function () {
         };
 
         self.openItem = function() {
+            console.log("setting this value ::: ");
             self.showItem(true);
         };
 
@@ -90,15 +91,28 @@ $(function () {
         };
 
         Sammy(function() {
-            this.get('#p/:slug', function() {
+            this.get('/p/:slug', function() {
+                console.log('#paging --- #p/:slug');
                 self.setPage("post");
             });
 
-            this.get('#u/:slug', function() {
+            this.get('/u/:slug', function() {
+                console.log('#paging --- #u/:slug');
+                self.setPage("user");
+            });
+
+            this.get('/fanbases', function() {
+                console.log('#paging --- #fanbases');
+                self.setPage("user");
+            });
+
+            this.get('/f/:slug', function() {
+                console.log('#paging --- #f/:slug');
                 self.setPage("user");
             });
 
             this.get('', function() {
+                console.log('#paging --- #');
                 self.setPage("welcome");
             });
 

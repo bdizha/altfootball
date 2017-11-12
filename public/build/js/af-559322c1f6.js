@@ -140,8 +140,8 @@ $(function () {
             return self.type() + "-"+ self.typeId();
         });
 
-        console.log("params.has_dribble: " + params.has_dribble);
-        console.log("self.hasDribble: " + self.hasDribble());
+        // console.log("params.has_dribble: " + params.has_dribble);
+        // console.log("self.hasDribble: " + self.hasDribble());
 
         self.save = function () {
 
@@ -490,6 +490,37 @@ $(function () {
 
 $(function () {
 
+    var PostViewModel = function (params) {
+        var self = this;
+
+        self.post = ko.observable(params.post);
+        self.isShowing = ko.observable(false);
+        self.showItem = ko.observable(params.show_item);
+
+        console.log(">>>>showCallback<<<<");
+        console.log(self.showItem);
+
+        self.showPost = function () {
+            console.log(">>>>post<<<<");
+            // console.log(self.post());
+
+            self.isShowing(true);
+            self.showItem(true);
+        };
+    };
+
+    ko.components.register('post', {
+        viewModel: PostViewModel,
+        template: { element: 'post-template' }
+    });
+});
+/**
+ * Created by batanayi on 2017/08/19.
+ */
+
+
+$(function () {
+
     var PostsViewModel = function (params) {
         var self = this;
 
@@ -497,16 +528,6 @@ $(function () {
         self.posts = ko.observableArray([]);
         self.fanbase = ko.observable(params.fanbase);
         self.page = ko.observable(params.page);
-
-        self.show = function (index, data){
-
-            params.showItem(true);
-
-            self.current(index);
-
-            console.log("self.current");
-            console.log(self.current());
-        };
 
         self.fetchPosts = function () {
             var params = {
@@ -521,7 +542,6 @@ $(function () {
                 type: "get",
                 contentType: "application/json",
                 success: function (response) {
-                    console.log("New posts:");
 
                     var posts = ko.utils.parseJson(response);
                     ko.utils.arrayForEach(posts, function (post) {
@@ -916,10 +936,10 @@ $(function () {
             return !!window.isAuthenticated;
         });
 
-        console.log("self.isAuthenticated()");
-        console.log(window.isAuthenticated);
-        console.log("self.isSignedIn()");
-        console.log(self.isSignedIn());
+        // console.log("self.isAuthenticated()");
+        // console.log(window.isAuthenticated);
+        // console.log("self.isSignedIn()");
+        // console.log(self.isSignedIn());
 
         self.showOverlay = ko.computed(function () {
             return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm() || self.showItem();
@@ -930,6 +950,7 @@ $(function () {
         };
 
         self.openItem = function() {
+            console.log("setting this value ::: ");
             self.showItem(true);
         };
 
@@ -980,15 +1001,28 @@ $(function () {
         };
 
         Sammy(function() {
-            this.get('#p/:slug', function() {
+            this.get('/p/:slug', function() {
+                console.log('#paging --- #p/:slug');
                 self.setPage("post");
             });
 
-            this.get('#u/:slug', function() {
+            this.get('/u/:slug', function() {
+                console.log('#paging --- #u/:slug');
+                self.setPage("user");
+            });
+
+            this.get('/fanbases', function() {
+                console.log('#paging --- #fanbases');
+                self.setPage("user");
+            });
+
+            this.get('/f/:slug', function() {
+                console.log('#paging --- #f/:slug');
                 self.setPage("user");
             });
 
             this.get('', function() {
+                console.log('#paging --- #');
                 self.setPage("welcome");
             });
 

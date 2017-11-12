@@ -92,7 +92,7 @@
                                     <a class="_1XNRF"
                                        href="/f/{{ $post->fanbase->slug }}">
                                                 {{ $post->fanbase->name }}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18 18" class="_1z7Hy">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" class="_1z7Hy">
                                             <g fill="none" fill-rule="evenodd">
                                                 <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                                 <path fill="#FFF"
@@ -201,7 +201,7 @@
                                             <a class="_2XyXQ" href="/u/{{ $post->user->slug }}">
                                                 {{ $post->user->name }}
                                             </a>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                                  viewBox="0 0 18 18"
                                                  class="_1z7Hy _1NCGm RyyhO">
                                                 <g fill="none" fill-rule="evenodd">
@@ -240,7 +240,7 @@
                                 <div class="_1KQuz _1-YRL">
                                     <h3 class="_2o06m _1oBl0">
                                     <span class="_1QEWe">{{ $fanbase->name }}
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                              viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
                                                                                          fill-rule="evenodd"><path
                                                         fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path

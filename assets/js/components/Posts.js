@@ -13,16 +13,6 @@ $(function () {
         self.fanbase = ko.observable(params.fanbase);
         self.page = ko.observable(params.page);
 
-        self.show = function (index, data){
-
-            params.showItem(true);
-
-            self.current(index);
-
-            console.log("self.current");
-            console.log(self.current());
-        };
-
         self.fetchPosts = function () {
             var params = {
                 fanbase_id: self.fanbase(),
@@ -36,7 +26,6 @@ $(function () {
                 type: "get",
                 contentType: "application/json",
                 success: function (response) {
-                    console.log("New posts:");
 
                     var posts = ko.utils.parseJson(response);
                     ko.utils.arrayForEach(posts, function (post) {

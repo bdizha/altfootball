@@ -5,7 +5,7 @@
                 <form data-bind="submit: saveFanbase">
                     <div class="_2p4GS _1Kdw6">
                         <button class="_2L8qZ _1FQjf" data-bind="click: closeFanbaseForm">
-                            <svg width="19" height="19" viewBox="0 0 18 18">
+                            <svg width="24" height="24" viewBox="0 0 18 18">
                                 <g stroke="rgba(103, 143, 185, 0.4)" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
                                     <path d="M2.368 2.282L16.51 16.425M16.218 2.282L2.075 16.425"></path>
                                 </g>

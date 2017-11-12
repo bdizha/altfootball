@@ -127,7 +127,7 @@
                             @include('auth.templates.form')
                             <join-form params="_token: '{{ csrf_token() }}'"></join-form>
                             <a href="/fb" class="ahXq_">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                      viewBox="0 0 18 18" class="_2tOI2">
                                     <path fill="#FEFEFE" fill-rule="evenodd"
                                           d="M17 0H1a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1H9.6v-6.97H7.27V8.3H9.6v-2c0-2.33 1.42-3.6 3.5-3.6 1 0 1.85.08 2.1.12v2.43h-1.44c-1.13 0-1.35.53-1.35 1.32V8.3h2.69l-.35 2.72h-2.34V18h4.59a1 1 0 0 0 .99-1V1a1 1 0 0 0-1-1">
@@ -143,10 +143,10 @@
                 <div>
                     <div class="_2u6Ki _1iE2V">
                         <div class="_3gFQj">
-                            <posts params="page: 0, fanbase: '', showItem: showItem"></posts>
+                            <posts params="page: 0, fanbase: '', show_callback: openItem"></posts>
                         </div>
                         <div class="_3gFQj">
-                            <posts params="page: 1, fanbase: '', showItem: showItem"></posts>
+                            <posts params="page: 1, fanbase: '', show_callback: openItem"></posts>
                         </div>
                     </div>
                     <div class="_2L2jX"></div>
@@ -157,6 +157,7 @@
     @include('templates.dribbles')
     @include('templates.comments')
     @include('templates.posts')
+    @include('templates.post')
 @endsection
 
 @section('js')

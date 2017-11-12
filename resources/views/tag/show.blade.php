@@ -54,10 +54,10 @@
                 <div>
                     <div class="_2u6Ki _1iE2V">
                         <div class="_3gFQj">
-                            <posts params='page: 0, fanbase: ""'></posts>
+                            <posts params='page: 0, fanbase: "", show_callback: openItem'></posts>
                         </div>
                         <div class="_3gFQj">
-                            <posts params='page: 1, fanbase: ""'></posts>
+                            <posts params='page: 1, fanbase: "", show_callback: openItem'></posts>
                         </div>
                     </div>
                     <div class="_2L2jX"></div>
