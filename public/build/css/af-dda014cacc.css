@@ -384,6 +384,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 7px 0 7px 14px;
 }
 
 ._1iE2V:after {
@@ -421,7 +422,7 @@ button {
   line-height: 14px;
   text-align: left;
   padding: 22px 40px;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   cursor: pointer;
 }
@@ -487,7 +488,7 @@ button {
 
 ._2e1-n {
   border-color: #FFFFFF;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
 }
 
@@ -497,7 +498,7 @@ button {
 }
 
 .oFTqy {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
 }
 
@@ -560,7 +561,7 @@ button {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   opacity: 0;
   transform: translateZ(0);
 }
@@ -639,7 +640,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   opacity: 0;
 }
 
@@ -1952,7 +1953,7 @@ form ._2Kdch {
 }
 
 ._3LGNS {
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   text-align: left;
   padding: 18px 26px;
@@ -2004,7 +2005,7 @@ form ._2Kdch {
 
 ._1sHRa {
   position: absolute;
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   bottom: 0;
   padding: 26px;
   border-top: 1px solid rgba(103, 143, 185, 0.4);
@@ -2115,7 +2116,7 @@ form ._2Kdch {
   -ms-flex-pack: center;
   justify-content: center;
   width: 90px;
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   -ms-flex-align: center;
   align-items: center;
 }
@@ -2938,7 +2939,7 @@ form ._2Kdch {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   font-size: 14px;
   position: absolute;
@@ -3025,7 +3026,7 @@ form ._2Kdch {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   font-size: 14px;
   padding: 6px 14px;
@@ -3734,13 +3735,19 @@ form ._2Kdch {
   margin: 0;
   position: absolute;
   bottom: 0;
-  background: rgba(0, 149, 208, 0.9);
   left: 0;
   right: 0;
   padding: 14px 14px;
   color: #FFFFFF;
   text-shadow: 0 1px -1px rgba(0, 8, 39, 0.85);
   border-bottom: 1px solid rgba(103, 143, 185, 0.2);
+  background: #0095D0;
+  /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #0095D0, #48c04a);
+  /* Standard syntax */
 }
 
 .p32Iu .gEjmr {
@@ -3749,17 +3756,44 @@ form ._2Kdch {
   border-top: 1px solid rgba(103, 143, 185, 0.4);
 }
 
+.p32Iu.active,
 .p32Iu:hover {
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
 }
 
+.p32Iu.active ._HY8RT,
 .p32Iu:hover ._HY8RT {
   border: 1px solid #48C04A;
 }
 
+.p32Iu.active ._3DF9,
 .p32Iu:hover ._3DF9 {
   display: block;
   background: rgba(59, 189, 76, 0.9);
+}
+
+.p32Iu.active {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.p32Iu.active ._3bxb0 {
+  margin: 0 auto;
+  max-width: 760px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: 1;
+  flex: 1;
+  opacity: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
 }
 
 dribbles {
@@ -4572,7 +4606,7 @@ dribbles ._35GH ._34IO {
 }
 
 .lOdRy {
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._1XrlP {
@@ -4898,7 +4932,7 @@ dribbles ._35GH ._34IO {
 
 ._2Eh0V {
   margin-bottom: 12px;
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._2Eh0V:last-child {
@@ -4960,7 +4994,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._175AS {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   padding: 22px;
   color: #f8f8f8;
   overflow: hidden;
@@ -5236,7 +5270,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._28Zwg {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   height: 2px;
   transform: scaleX(0);
   transform-origin: top left;
@@ -5508,7 +5542,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2nJET:hover {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
 }
 
@@ -5623,7 +5657,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2uakq ._1KQuz {
-  background: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._2uakq ._12Iv2 {
@@ -5762,7 +5796,7 @@ dribbles ._35GH ._34IO {
 }
 
 .fFpBH {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   border: 0;
 }
@@ -6265,7 +6299,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1S3Ei {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   cursor: default;
 }
 
@@ -6527,7 +6561,7 @@ dribbles ._35GH ._34IO {
     float: left;
     padding-right: 92px;
     padding-top: 64px;
-    background: url(/images/repeat-logo.png) #0c122a;
+    background: linear-gradient(to right, #0095D0, #48c04a);
     position: relative;
   }
 }
@@ -6579,6 +6613,25 @@ form ._12n1y {
   font-size: 20px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.967846);
+}
+
+form ._12n1y {
+  background: linear-gradient(to right, #0095D0, #48C04A);
+}
+
+form ._12n1y:hover,
+form ._12n1y:focus {
+  background: linear-gradient(to right, #48C04A, #0095D0);
+}
+
+form .M13JP {
+  background: #FFFFFF;
+  color: #0095D0;
+}
+
+form .M13JP:hover,
+form .M13JP:focus {
+  color: #48C04A;
 }
 
 ._JD9R {
@@ -6678,7 +6731,6 @@ form ._12n1y {
 ._37Oy_ ._12n1y,
 ._37Oy_ ._15nhh,
 ._37Oy_ .bWRAm,
-._37Oy_ .M13JP,
 ._37Oy_ .VnaIq {
   color: #FFFFFF;
 }
@@ -6691,13 +6743,8 @@ form ._12n1y {
 }
 
 ._37Oy_ .M13JP {
-  background: #0095D0;
+  background: #FFFFFF;
   border: none;
-}
-
-._37Oy_ .M13JP:hover,
-._37Oy_ .M13JP:focus {
-  background: #48C04A;
 }
 
 ._37Oy_ .M13JP[disabled] {
@@ -7115,7 +7162,7 @@ form ._12n1y {
 }
 
 .zxDoM:after {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   content: "";
   display: block;
   width: 26px;
@@ -7231,7 +7278,7 @@ form ._12n1y {
   left: 5px;
   width: 10px;
   height: 10px;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._2crgF {
@@ -7940,7 +7987,7 @@ form ._12n1y {
 }
 
 ._2PUq3 {
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._1qO-x {
@@ -8103,7 +8150,7 @@ form ._12n1y {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   cursor: pointer;
 }
 
@@ -10581,7 +10628,7 @@ div._3bqe5 > div {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   padding: 22px 28px;
   margin-bottom: 18px;
@@ -11568,7 +11615,7 @@ div._3bqe5 > div {
 
 ._11QMn {
   margin-bottom: 0;
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
 }
 
@@ -11659,7 +11706,7 @@ div._3bqe5 > div {
 ._1XEbE {
   display: block;
   position: relative;
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   width: 586px;
   margin-left: 12px;
   border: 1px solid rgba(103, 143, 185, 0.15);
@@ -11713,7 +11760,7 @@ div._3bqe5 > div {
 }
 
 ._1wjeD {
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   padding: 40px 35px;
   padding-bottom: 114px;
 }
@@ -11860,7 +11907,7 @@ div._3bqe5 > div {
 }
 
 ._1-YRL {
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #f8f8f8;
 }
 
@@ -12337,7 +12384,7 @@ div._3bqe5 > div {
 
 ._2SyJe {
   width: 80px;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
 }
 
@@ -12372,7 +12419,7 @@ div._3bqe5 > div {
 
 ._1-Zgz,
 ._1WmTc {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
 }
 
@@ -12892,7 +12939,7 @@ div._3bqe5 > div {
 }
 
 ._1-0JF {
-  background: rgba(12, 18, 42, 0.95);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
@@ -12929,7 +12976,7 @@ div._3bqe5 > div {
   display: flex;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   min-height: 12px;
   margin: 0 -14px 44px;
 }
@@ -13109,7 +13156,7 @@ div._3bqe5 > div {
 
 ._9DqWK {
   height: 92px;
-  background: #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._3JzN1 {
@@ -13130,8 +13177,14 @@ div._3bqe5 > div {
 }
 
 .GLLyX {
-  background: rgba(12, 18, 42, 0.95);
   position: relative;
+  background: #0095D0;
+  /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  /* For Opera 11.1 to 12.0 */
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #0095D0, #48c04a);
+  /* Standard syntax */
 }
 
 ._1Rj2S {
@@ -13174,6 +13227,7 @@ div._3bqe5 > div {
 
 ._2_Gw9 {
   display: block;
+  padding: 7px;
 }
 
 .ahXq_ {
@@ -13271,8 +13325,8 @@ div._3bqe5 > div {
 
   ._2_Gw9 {
     float: left;
-    width: 196px;
-    height: 196px;
+    width: 189px;
+    height: 189px;
     position: relative;
   }
 
@@ -13401,8 +13455,8 @@ div._3bqe5 > div {
   }
 
   ._2_Gw9 {
-    width: 248px;
-    height: 248px;
+    width: 241px;
+    height: 241px;
   }
 
   ._2_Gw9:before {
@@ -13488,7 +13542,7 @@ div._3bqe5 > div {
 }
 
 ._2Phzy {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   position: relative;
 }
@@ -13571,7 +13625,7 @@ div._3bqe5 > div {
 }
 
 ._166mk {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   border-radius: 0px;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
@@ -13682,7 +13736,7 @@ div._3bqe5 > div {
 }
 
 ._3rHE1 {
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._1T85P {
@@ -14495,7 +14549,7 @@ div._3bqe5 > div {
 }
 
 ._12L63 {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
   display: -ms-flexbox;
   display: flex;
@@ -14706,7 +14760,7 @@ div._3bqe5 > div {
   }
 
   ._1qe7q ._2iRjb {
-    background: rgba(0, 8, 39, 0.85);
+    background: linear-gradient(to right, #0095D0, #48c04a);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -14865,7 +14919,7 @@ div._3bqe5 > div {
 }
 
 .GKLAB {
-  background: url(/images/repeat-logo.png) #0c122a repeat;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -15930,7 +15984,7 @@ div._3bqe5 > div {
 
   .qo5ix ._2bU8e ._2LIIc,
   .qo5ix ._2bU8e:nth-child(odd) ._2LIIc {
-    background-color: #141C3E;
+    background: linear-gradient(to right, #0095D0, #48c04a);
     border-color: #FFFFFF;
     color: #FFFFFF;
   }
@@ -16228,7 +16282,7 @@ div._3bqe5 > div {
 }
 
 ._33vOG ._2LIIc {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
 }
 
@@ -16610,7 +16664,7 @@ div._3bqe5 > div {
 }
 
 .C116H ._1k78U {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #FFFFFF;
 }
 
@@ -17838,7 +17892,7 @@ div._3bqe5 > div {
   -ms-flex-positive: 1;
   flex-grow: 1;
   padding: 14px;
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #f8f8f8;
   font-size: 14px;
   line-height: 18px;
@@ -19293,7 +19347,7 @@ nav._1R2o8 {
 ._2q1KC {
   position: relative;
   height: 164px;
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   background-size: cover;
 }
 
@@ -19891,7 +19945,7 @@ nav._1R2o8 {
 }
 
 .FYAkp {
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 .SqxHJ {

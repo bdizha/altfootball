@@ -360,7 +360,7 @@ $(function () {
     });
 });
 /**
- * Created by batanayi on 2017/08/19.
+ * Created by batanayi on 2017/11/12
  */
 
 
@@ -371,17 +371,16 @@ $(function () {
 
         self.post = ko.observable(params.post);
         self.isShowing = ko.observable(false);
-        self.showItem = ko.observable(params.show_item);
+        self.showItem = params.show_item;
 
-        console.log(">>>>showCallback<<<<");
-        console.log(self.showItem);
-
-        self.showPost = function () {
-            console.log(">>>>post<<<<");
-            // console.log(self.post());
-
+        self.show = function () {
             self.isShowing(true);
             self.showItem(true);
+        };
+
+        self.hide = function () {
+            self.isShowing(false);
+            self.showItem(false);
         };
     };
 

@@ -484,7 +484,7 @@ $(function () {
     });
 });
 /**
- * Created by batanayi on 2017/08/19.
+ * Created by batanayi on 2017/11/12
  */
 
 
@@ -495,17 +495,16 @@ $(function () {
 
         self.post = ko.observable(params.post);
         self.isShowing = ko.observable(false);
-        self.showItem = ko.observable(params.show_item);
+        self.showItem = params.show_item;
 
-        console.log(">>>>showCallback<<<<");
-        console.log(self.showItem);
-
-        self.showPost = function () {
-            console.log(">>>>post<<<<");
-            // console.log(self.post());
-
+        self.show = function () {
             self.isShowing(true);
             self.showItem(true);
+        };
+
+        self.hide = function () {
+            self.isShowing(false);
+            self.showItem(false);
         };
     };
 
@@ -942,30 +941,30 @@ $(function () {
         // console.log(self.isSignedIn());
 
         self.showOverlay = ko.computed(function () {
-            return  self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm() || self.showItem();
+            return self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm() || self.showItem();
         });
 
-        self.openJoinForm = function() {
+        self.openJoinForm = function () {
             self.showJoinForm(true);
         };
 
-        self.openItem = function() {
+        self.openItem = function () {
             console.log("setting this value ::: ");
             self.showItem(true);
         };
 
-        self.checkAuth = function() {
+        self.checkAuth = function () {
 
-            if(window.isAuthenticated === false){
+            if (window.isAuthenticated === false) {
                 self.showJoinForm(true);
                 return false;
             }
-            else{
+            else {
                 return true;
             }
         };
 
-        self.hideJoinPopup = function() {
+        self.hideJoinPopup = function () {
             self.showJoinForm(false);
         };
 
@@ -1000,37 +999,62 @@ $(function () {
             $("#page-" + id).slideUp();
         };
 
-        Sammy(function() {
-            this.get('/p/:slug', function() {
-                console.log('#paging --- #p/:slug');
-                self.setPage("post");
-            });
 
-            this.get('/u/:slug', function() {
-                console.log('#paging --- #u/:slug');
-                self.setPage("user");
-            });
+        self.init = function () {
+            console.log("initializing functions :::: ");
+            // var pallet = $(".GLLyX");
+            // var linesTotal = pallet.width();
+            // pallet.prepend("<span class='one'></span>");
+            // pallet.prepend("<span class='two'></span>");
+            //
+            // for (var line = 0; line <= linesTotal; line++) {
+            //     var green = line / linesTotal;
+            //     var blue = 1 - green;
+            //     var color = {
+            //         blue: 'rgba(0, 149, 208, ' + blue + ')',
+            //         green: 'rgba(72, 192, 74, ' + green + ')'
+            //     };
+            //
+            //     var blueSpan = "<span style='background-color: " + color.blue + "'></span>";
+            //     var greenSpan = "<span style='background-color: " + color.green + "'></span>";
+            //
+            //     pallet.children('.one').append(blueSpan);
+            //     pallet.children('.two').append(greenSpan);
+            // }
 
-            this.get('/fanbases', function() {
-                console.log('#paging --- #fanbases');
-                self.setPage("user");
-            });
+        }();
 
-            this.get('/f/:slug', function() {
-                console.log('#paging --- #f/:slug');
-                self.setPage("user");
-            });
-
-            this.get('', function() {
-                console.log('#paging --- #');
-                self.setPage("welcome");
-            });
-
-        }).run();
+        // Sammy(function() {
+        //     this.get('/p/:slug', function() {
+        //         console.log('#paging --- #p/:slug');
+        //         self.setPage("post");
+        //     });
+        //
+        //     this.get('/u/:slug', function() {
+        //         console.log('#paging --- #u/:slug');
+        //         self.setPage("user");
+        //     });
+        //
+        //     this.get('/fanbases', function() {
+        //         console.log('#paging --- #fanbases');
+        //         self.setPage("user");
+        //     });
+        //
+        //     this.get('/f/:slug', function() {
+        //         console.log('#paging --- #f/:slug');
+        //         self.setPage("user");
+        //     });
+        //
+        //     this.get('', function() {
+        //         console.log('#paging --- #');
+        //         self.setPage("welcome");
+        //     });
+        //
+        // }).run();
     };
 
-    ko.extenders.overlay = function(target, option) {
-        target.subscribe(function(newValue) {
+    ko.extenders.overlay = function (target, option) {
+        target.subscribe(function (newValue) {
             console.log(option + ": " + newValue);
         });
         return option;

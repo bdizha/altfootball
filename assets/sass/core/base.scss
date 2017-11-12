@@ -325,6 +325,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
+  padding: 7px 0 7px 14px;
 }
 
 ._1iE2V:after {
@@ -361,7 +362,7 @@ button {
   line-height: 14px;
   text-align: left;
   padding: 22px 40px;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   cursor: pointer;
   svg {
@@ -420,7 +421,7 @@ button {
 
 ._2e1-n {
   border-color: $color_white;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   &:hover {
     background: $color_white;
@@ -429,7 +430,7 @@ button {
 }
 
 .oFTqy {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
 }
 
@@ -485,7 +486,7 @@ button {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   opacity: 0;
   transform: translateZ(0);
 }
@@ -558,7 +559,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   opacity: 0;
 }
 
@@ -1812,7 +1813,7 @@ form {
 }
 
 ._3LGNS {
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   text-align: left;
   padding: 18px 26px;
@@ -1863,7 +1864,7 @@ form {
 
 ._1sHRa {
   position: absolute;
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   bottom: 0;
   padding: 26px;
   border-top: 1px solid rgba(103, 143, 185, 0.4);
@@ -1957,7 +1958,7 @@ form {
     display: flex;
     justify-content: center;
     width: 90px;
-    background-color: #141C3E;
+    background: linear-gradient(to right, #0095D0, #48c04a);
     align-items: center;
     svg {
       width: 28px;
@@ -2695,7 +2696,7 @@ form {
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   font-size: 14px;
   position: absolute;
@@ -2772,7 +2773,7 @@ form {
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   font-size: 14px;
   padding: 6px 14px;
@@ -3437,19 +3438,24 @@ form {
     margin: 0;
     position: absolute;
     bottom: 0;
-    background: rgba(0, 149, 208, 0.9);
     left: 0;
     right: 0;
     padding: 14px 14px;
     color: $color_white;
     text-shadow: 0 1px -1px rgba(0, 8, 39, 0.85);
     border-bottom: 1px solid rgba(103, 143, 185, 0.2);
+    background: #0095D0; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #0095D0, #48c04a); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #0095D0, #48c04a); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #0095D0, #48c04a); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #0095D0, #48c04a); /* Standard syntax */
   }
   .gEjmr {
     padding-bottom: 0;
     box-shadow: none;
     border-top: 1px solid rgba(103, 143, 185, 0.4);
   }
+  &.active,
   &:hover {
     -webkit-box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
     box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.4);
@@ -3459,6 +3465,28 @@ form {
     ._3DF9 {
       display: block;
       background: rgba(59, 189, 76, 0.9);
+    }
+  }
+  &.active {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    ._3bxb0 {
+      margin: 0 auto;
+      max-width: 760px;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex: 1;
+      flex: 1;
+      opacity: 1;
+      overflow-x: hidden;
+      overflow-y: auto;
+      position: relative;
     }
   }
 }
@@ -4211,7 +4239,7 @@ dribbles {
 }
 
 .lOdRy {
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._1XrlP {
@@ -4512,7 +4540,7 @@ dribbles {
 
 ._2Eh0V {
   margin-bottom: 12px;
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   &:last-child {
     margin-bottom: 0;
   }
@@ -4573,7 +4601,7 @@ dribbles {
 }
 
 ._175AS {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   padding: 22px;
   color: #f8f8f8;
   overflow: hidden;
@@ -4833,7 +4861,7 @@ dribbles {
 }
 
 ._28Zwg {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   height: 2px;
   transform: scaleX(0);
   transform-origin: top left;
@@ -5087,7 +5115,7 @@ dribbles {
 }
 
 ._2nJET:hover {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
 }
 
@@ -5186,7 +5214,7 @@ dribbles {
   flex: 0 0 auto;
   margin-left: 0;
   ._1KQuz {
-    background: #0C122A;
+    background: linear-gradient(to right, #0095D0, #48c04a);
   }
   ._12Iv2 {
     display: none;
@@ -5317,7 +5345,7 @@ dribbles {
 }
 
 .fFpBH {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   border: 0;
 }
@@ -5783,7 +5811,7 @@ dribbles {
 }
 
 ._1S3Ei {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   cursor: default;
 }
 
@@ -6036,7 +6064,7 @@ dribbles {
     float: left;
     padding-right: 92px;
     padding-top: 64px;
-    background: url(/images/repeat-logo.png) #0c122a;
+    background: linear-gradient(to right, #0095D0, #48c04a);
     position: relative;
   }
 }
@@ -6089,6 +6117,21 @@ form {
     font-size: 20px;
     line-height: 20px;
     color: rgba(255, 255, 255, 0.9678455);
+  }
+  ._12n1y {
+    background: linear-gradient(to right, $color_light_blue, $color_green);
+    &:hover,
+    &:focus {
+      background: linear-gradient(to right, $color_green, $color_light_blue);
+    }
+  }
+  .M13JP{
+    background: $color_white;
+    color: $color_light_blue;
+    &:hover,
+    &:focus {
+      color: $color_green;
+    }
   }
 }
 
@@ -6180,7 +6223,7 @@ form {
   ._5YHG {
     width: 219px;
   }
-  ._12n1y, ._15nhh, .bWRAm, .M13JP, .VnaIq {
+  ._12n1y, ._15nhh, .bWRAm, .VnaIq {
     color: $color_white;
   }
   .bWRAm {
@@ -6190,11 +6233,8 @@ form {
     margin: 14px 0;
   }
   .M13JP {
-    background: #0095D0;
+    background: $color_white;
     border: none;
-    &:hover, &:focus {
-      background: #48C04A;
-    }
     &[disabled] {
       opacity: 1;
       color: hsla(0, 0%, 100%, 0.5);
@@ -6584,7 +6624,7 @@ form {
   position: relative;
   transition: opacity 0.1s ease-out;
   &:after {
-    background: rgba(0, 8, 39, 0.85);
+    background: linear-gradient(to right, #0095D0, #48c04a);
     content: "";
     display: block;
     width: 26px;
@@ -6693,7 +6733,7 @@ form {
   left: 5px;
   width: 10px;
   height: 10px;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._2crgF {
@@ -7369,7 +7409,7 @@ form {
 }
 
 ._2PUq3 {
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._1qO-x {
@@ -7527,7 +7567,7 @@ form {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   cursor: pointer;
   svg {
     z-index: 16;
@@ -9835,7 +9875,7 @@ div._3bqe5 {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   padding: 22px 28px;
   margin-bottom: 18px;
@@ -10777,7 +10817,7 @@ div._3bqe5 {
 
 ._11QMn {
   margin-bottom: 0;
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
 }
 
@@ -10864,7 +10904,7 @@ div._3bqe5 {
 ._1XEbE {
   display: block;
   position: relative;
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   width: 586px;
   margin-left: 12px;
   border: 1px solid rgba(103, 143, 185, 0.15);
@@ -10917,7 +10957,7 @@ div._3bqe5 {
 }
 
 ._1wjeD {
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   padding: 40px 35px;
   padding-bottom: 114px;
 }
@@ -11062,7 +11102,7 @@ div._3bqe5 {
 }
 
 ._1-YRL {
-  background-color: #0C122A;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #f8f8f8;
 }
 
@@ -11497,7 +11537,7 @@ div._3bqe5 {
 
 ._2SyJe {
   width: 80px;
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
 }
 
@@ -11531,7 +11571,7 @@ div._3bqe5 {
 }
 
 ._1-Zgz, ._1WmTc {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
 }
 
@@ -12001,7 +12041,7 @@ div._3bqe5 {
 }
 
 ._1-0JF {
-  background: rgba(12, 18, 42, 0.95);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
@@ -12036,7 +12076,7 @@ div._3bqe5 {
 ._2jNUh {
   display: flex;
   justify-content: center;
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   min-height: 12px;
   margin: 0 -14px 44px;
 }
@@ -12193,7 +12233,7 @@ div._3bqe5 {
 
 ._9DqWK {
   height: 92px;
-  background: #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._3JzN1 {
@@ -12213,8 +12253,12 @@ div._3bqe5 {
 }
 
 .GLLyX {
-  background: rgba(12, 18, 42, 0.95);
   position: relative;
+  background: #0095D0; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #0095D0, #48c04a); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #0095D0, #48c04a); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #0095D0, #48c04a); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #0095D0, #48c04a); /* Standard syntax */
 }
 
 ._1Rj2S {
@@ -12252,6 +12296,7 @@ div._3bqe5 {
 
 ._2_Gw9 {
   display: block;
+  padding: 7px;
 }
 
 .ahXq_ {
@@ -12334,8 +12379,8 @@ div._3bqe5 {
   }
   ._2_Gw9 {
     float: left;
-    width: 196px;
-    height: 196px;
+    width: 189px;
+    height: 189px;
     position: relative;
     &:before {
       border: 3px solid $color_white;
@@ -12445,8 +12490,8 @@ div._3bqe5 {
     width: 744px;
   }
   ._2_Gw9 {
-    width: 248px;
-    height: 248px;
+    width: 241px;
+    height: 241px;
     &:before {
       border: 3px solid $color_white;
       content: "";
@@ -12523,7 +12568,7 @@ div._3bqe5 {
 }
 
 ._2Phzy {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   position: relative;
 }
@@ -12605,7 +12650,7 @@ div._3bqe5 {
 }
 
 ._166mk {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   border-radius: 0px;
   font-family: $font_sans;
@@ -12707,7 +12752,7 @@ div._3bqe5 {
 }
 
 ._3rHE1 {
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 ._1T85P {
@@ -13482,7 +13527,7 @@ div._3bqe5 {
 }
 
 ._12L63 {
-  background: rgba(0, 8, 39, 0.85);
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
   display: flex;
   position: relative;
@@ -13679,7 +13724,7 @@ div._3bqe5 {
       }
     }
     ._2iRjb {
-      background: rgba(0, 8, 39, 0.85);
+      background: linear-gradient(to right, #0095D0, #48c04a);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -13817,7 +13862,7 @@ div._3bqe5 {
 }
 
 .GKLAB {
-  background: url(/images/repeat-logo.png) #0c122a repeat;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -14827,7 +14872,7 @@ div._3bqe5 {
       }
     }
     ._2LIIc, &:nth-child(odd) ._2LIIc {
-      background-color: #141C3E;
+      background: linear-gradient(to right, #0095D0, #48c04a);
       border-color: $color_white;
       color: $color_white;
     }
@@ -15080,7 +15125,7 @@ div._3bqe5 {
 }
 
 ._33vOG ._2LIIc {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
 }
 
@@ -15431,7 +15476,7 @@ div._3bqe5 {
 }
 
 .C116H ._1k78U {
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: $color_white;
 }
 
@@ -16570,7 +16615,7 @@ div._3bqe5 {
   height: 100%;
   flex-grow: 1;
   padding: 14px;
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   color: #f8f8f8;
   font-size: 14px;
   line-height: 18px;
@@ -17939,7 +17984,7 @@ nav._1R2o8 {
 ._2q1KC {
   position: relative;
   height: 164px;
-  background: url(/images/repeat-logo.png) #0c122a;
+  background: linear-gradient(to right, #0095D0, #48c04a);
   background-size: cover;
 }
 
@@ -18495,7 +18540,7 @@ nav._1R2o8 {
 }
 
 .FYAkp {
-  background-color: #141C3E;
+  background: linear-gradient(to right, #0095D0, #48c04a);
 }
 
 .SqxHJ {
