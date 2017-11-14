@@ -92,6 +92,9 @@ class JuventusJob extends NewsJob
                             $post['image'] = $data->filter('meta[property="og:image"]')->attr('content');
                             $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
 
+                            $post['summary'] = str_replace(" - Juventus.com", "", $post['summary']);
+                            $post['title'] = str_replace(" - Football365", "", $post['title']);
+
                             $dateRaw = $data->filter(".headline-wrapper div")->text();
                             $dateParts = explode(' - in:', trim($dateRaw));
 

@@ -94,7 +94,7 @@
                         </span>
                     </span>
                 </div>
-                {{--<dribbles params='count: post().dribbles.length, type_id: post().id, has_dribble: post().has_dribble, type: "post"'></dribbles>--}}
+                <dribbles params='count: post().dribbles.length, type_id: "sex", has_dribble: post().has_dribble, type: "post"'></dribbles>
             </div>
             <!--ko if: isShowing -->
             <div class="_1Q_Pu">

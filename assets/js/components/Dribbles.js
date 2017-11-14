@@ -13,7 +13,9 @@ $(function () {
         self.type = ko.observable(params.type);
         self.typeId = ko.observable(params.type_id);
         self.classId = ko.computed(function(){
-            return self.type() + "-"+ self.typeId();
+
+            console.log(self.type() + "-"+ self.typeId() + " >>>>>><<<<<< ");
+            return self.type() + "-" + self.typeId();
         });
 
         // console.log("params.has_dribble: " + params.has_dribble);

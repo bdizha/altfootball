@@ -104,6 +104,7 @@ class NewsGoalJob extends NewsJob
 
                                 $post['content'] = $this->cleanHtml($content);
                                 $post['summary'] = substr($post['summary'], 0, 255);
+                                $post['title'] = str_replace("| Goal.com", "", $post['title']);
 
                                 if (empty($p->id)) {
                                     $p = Post::create($post);
@@ -111,7 +112,7 @@ class NewsGoalJob extends NewsJob
 
                                 } else {
                                     $p->content = $post['content'];
-                                    $p->title = $post['title'];
+                                    $p->title = str_replace("| Goal.com", "", $post['title']);
                                     $p->credit = $post['credit'];
                                     $p->image = $post['image'];
                                     $p->created_at = Carbon::parse($post['date']);

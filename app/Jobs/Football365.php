@@ -23,7 +23,7 @@ class Football365 extends NewsJob
     public function __construct()
     {
         $this->fanbase_id = 7;
-        $this->domain = "http://www.football365.com/";
+        $this->domain = "http://www.football365.com";
         $this->url = "";
     }
 
@@ -104,6 +104,8 @@ class Football365 extends NewsJob
 
                             $post['content'] = $this->cleanHtml($content);
                             $post['summary'] = substr($summary, 0, 255);
+                            $post['summary'] = str_replace("Football365 - ", "", $post['summary']);
+                            $post['title'] = str_replace(" - Football365", "", $post['title']);
 
                             if (empty($p->id)) {
                                 $p = Post::create($post);
