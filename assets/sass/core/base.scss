@@ -1686,7 +1686,7 @@ form {
 }
 
 ._1Gyo9 {
-  border: 4px solid rgba(103, 143, 185, 0.7);
+  border: 4px solid rgba(103, 143, 185, 0.2);
   color: rgba(0, 8, 39, 0.7);
   display: flex;
   justify-content: center;
@@ -2462,7 +2462,7 @@ form {
   text-transform: uppercase;
   float: right;
   color: $color_white;
-  padding: 9px 28px;
+  padding: 14px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
   background: $color_light_blue;
@@ -3584,6 +3584,24 @@ dribbles {
     line-height: 40px;
     &._35GH {
       color: rgb(237, 0, 39);
+    }
+  }
+}
+
+._1YCPS{
+  ._13DRk {
+    ._34IO {
+      color: $color_white;
+    }
+    &:hover{
+      ._GSL7C{
+        border: 1px solid $color_white;
+        svg{
+          path{
+            fill: $color_white;
+          }
+        }
+      }
     }
   }
 }
@@ -10028,7 +10046,7 @@ div._3bqe5 {
   ._2kQCw {
     display: block;
     position: fixed;
-    left: 28px;
+    left: 18px;
     top: 118px;
     &._45TY {
       top: 180px;
@@ -11130,7 +11148,7 @@ div._3bqe5 {
   justify-content: space-between;
   align-items: center;
   height: 64px;
-  padding: 0 24px;
+  padding: 0 18px;
 }
 
 @media screen and (max-width: 846px) {
@@ -11405,10 +11423,9 @@ div._3bqe5 {
 
 ._2Q0fU {
   display: flex;
-  width: 24px;
-  height: 24px;
-  flex: 0 0 24px;
-  border-radius: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
   align-items: center;
   justify-content: center;
   margin-right: 12px;
@@ -14180,7 +14197,7 @@ div._3bqe5 {
       position: relative;
       padding: 10px 0;
       cursor: pointer;
-      margin: 0 24px 0 0;
+      margin: 0 18px 0 0;
       font-family: $font_sans;
       font-weight: 700;
       text-transform: uppercase;
@@ -14349,7 +14366,7 @@ div._3bqe5 {
   -ms-flex-align: center;
   align-items: center;
   padding: 0;
-  margin: 0 24px;
+  margin: 0 18px;
   position: relative;
   font-family: $font_sans;
   font-weight: 700;
@@ -18729,16 +18746,15 @@ nav._1R2o8 {
   ._GSL7C {
     border: 1px solid $color_green;
     background: $color_white;
+    ._34IO {
+      color: $color_white;
+    }
     svg {
       path {
         fill: $color_light_blue;
       }
     }
   ._35FcZ {
-
-      ._34IO {
-        color: $color_white;
-      }
     }
     &:hover {
       ._GSL7C {

@@ -12,14 +12,10 @@ $(function () {
         self.hasDribble = ko.observable(Boolean(params.has_dribble));
         self.type = ko.observable(params.type);
         self.typeId = ko.observable(params.type_id);
-        self.classId = ko.computed(function(){
 
-            console.log(self.type() + "-"+ self.typeId() + " >>>>>><<<<<< ");
+        self.classId = ko.computed(function(){
             return self.type() + "-" + self.typeId();
         });
-
-        // console.log("params.has_dribble: " + params.has_dribble);
-        // console.log("self.hasDribble: " + self.hasDribble());
 
         self.save = function () {
 

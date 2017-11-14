@@ -8,9 +8,11 @@ $(function () {
     var PostViewModel = function (params) {
         var self = this;
 
-        self.post = ko.observable(params.post);
+        self.post = params.post;
         self.isShowing = ko.observable(false);
         self.showItem = params.show_item;
+
+        console.log("self.post: ");
 
         self.show = function () {
             self.isShowing(true);

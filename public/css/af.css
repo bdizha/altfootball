@@ -1811,7 +1811,7 @@ form ._2Kdch {
 }
 
 ._1Gyo9 {
-  border: 4px solid rgba(103, 143, 185, 0.7);
+  border: 4px solid rgba(103, 143, 185, 0.2);
   color: rgba(0, 8, 39, 0.7);
   display: -ms-flexbox;
   display: flex;
@@ -2684,7 +2684,7 @@ form ._2Kdch {
   text-transform: uppercase;
   float: right;
   color: #FFFFFF;
-  padding: 9px 28px;
+  padding: 14px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
   background: #0095D0;
@@ -3892,6 +3892,18 @@ dribbles ._35GH ._34IO {
 
 ._13DRk ._34IO._35GH {
   color: #ed0027;
+}
+
+._1YCPS ._13DRk ._34IO {
+  color: #FFFFFF;
+}
+
+._1YCPS ._13DRk:hover ._GSL7C {
+  border: 1px solid #FFFFFF;
+}
+
+._1YCPS ._13DRk:hover ._GSL7C svg path {
+  fill: #FFFFFF;
 }
 
 ._1sUHj {
@@ -10786,7 +10798,7 @@ div._3bqe5 > div {
   ._2kQCw {
     display: block;
     position: fixed;
-    left: 28px;
+    left: 18px;
     top: 118px;
   }
 
@@ -11941,7 +11953,7 @@ div._3bqe5 > div {
   -ms-flex-align: center;
   align-items: center;
   height: 64px;
-  padding: 0 24px;
+  padding: 0 18px;
 }
 
 @media screen and (max-width: 846px) {
@@ -12231,11 +12243,9 @@ div._3bqe5 > div {
 ._2Q0fU {
   display: -ms-flexbox;
   display: flex;
-  width: 24px;
-  height: 24px;
-  -ms-flex: 0 0 24px;
-  flex: 0 0 24px;
-  border-radius: 0px;
+  width: 40px;
+  height: 40px;
+  border-radius: 0;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
@@ -15237,7 +15247,7 @@ div._3bqe5 > div {
   position: relative;
   padding: 10px 0;
   cursor: pointer;
-  margin: 0 24px 0 0;
+  margin: 0 18px 0 0;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -15426,7 +15436,7 @@ div._3bqe5 > div {
   -ms-flex-align: center;
   align-items: center;
   padding: 0;
-  margin: 0 24px;
+  margin: 0 18px;
   position: relative;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
@@ -20159,12 +20169,12 @@ nav._1R2o8 {
   background: #FFFFFF;
 }
 
-._1YCPS ._GSL7C svg path {
-  fill: #0095D0;
+._1YCPS ._GSL7C ._34IO {
+  color: #FFFFFF;
 }
 
-._1YCPS ._GSL7C ._35FcZ ._34IO {
-  color: #FFFFFF;
+._1YCPS ._GSL7C svg path {
+  fill: #0095D0;
 }
 
 ._1YCPS ._GSL7C:hover ._GSL7C svg path {

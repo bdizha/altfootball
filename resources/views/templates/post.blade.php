@@ -2,10 +2,10 @@
     <div class="p32Iu" data-bind="css: { active: isShowing }">
         <div class="_3bxb0">
             <div class="_2WwnI">
-                <a class="_2kQCw" data-bind="attr: { 'href': '/f/' + post().fanbase.slug }">
-                    <div class="_1Gyo9 e_0uO" data-bind="attr: { 'data-stamp': post().fanbase.stamp }"></div>
+                <a class="_2kQCw" data-bind="attr: { 'href': '/f/' + post.fanbase.slug }">
+                    <div class="_1Gyo9 e_0uO" data-bind="attr: { 'data-stamp': post.fanbase.stamp }"></div>
                     <p class="_3FTXM wcqil">
-                        <span data-bind="text: '@' + post().fanbase.slug"></span>
+                        <span data-bind="text: '@' + post.fanbase.slug"></span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" class="G0duV">
                             <g fill="none" fill-rule="evenodd">
                                 <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
@@ -28,14 +28,14 @@
                     </button>
                     <div class="_34TRY _39llS _23ERU">
                         <div class="_3rM3S">
-                            <a class="_2KljY _1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="attr: { href: 'https://www.facebook.com/sharer/sharer.php?u=' + post().share_url }" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" class="bWSPJ">
+                            <a class="_2KljY _1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="attr: { href: 'https://www.facebook.com/sharer/sharer.php?u=' + post.share_url }" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 7 12" class="bWSPJ">
                                     <path fill="#FFF" fill-rule="evenodd" d="M4.16 0c1.83 0 2.6.22 2.6.22l-.37 1.84s-.6-.15-1.16-.15c-.57 0-1.07.17-1.07.66v1.4h2.3l-.15 1.8H4.16V12H1.45V5.76H0v-1.8h1.45v-1.2c0-.53.01-1.35.46-1.86C2.4.37 3.04 0 4.16 0"></path>
                                 </svg>
                                 Facebook
                             </a>
-                            <a class="_2KljY _1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="attr: { href: 'https://twitter.com/intent/tweet?url=' + post().share_url }" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" class="bWSPJ">
+                            <a class="_2KljY _1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" data-bind="attr: { href: 'https://twitter.com/intent/tweet?url=' + post.share_url }" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 15 12" class="bWSPJ">
                                     <path fill="#FFF" fill-rule="evenodd" d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
                                 </svg>
                                 Twitter
@@ -47,26 +47,26 @@
                 </div>
             </div>
             <div class="_4TYO">
-                <a class="_2hvwD" data-bind="attr: { 'href': '/p/' + post().slug }">
+                <a class="_2hvwD" data-bind="attr: { 'href': '/p/' + post.slug }">
                     <div class="_25bvT">
                         <div style="padding-bottom:60.25%;" class="_38L6D">
-                            <img role="presentation" class="_214e9 b00q8" data-bind="attr: { src: post().small_x }">
+                            <img role="presentation" class="_214e9 b00q8" data-bind="attr: { src: post.small_x }">
                         </div>
                     </div>
                     <div class="_3DF9">
-                        <h2 class="_2DyJ3 _3duUm" data-bind="text: post().title_x"></h2>
+                        <h2 class="_2DyJ3 _3duUm" data-bind="text: post.title_x"></h2>
                     </div>
                 </a>
                 <h3 class="_35O2p _3VB1o _3duUm _2L6V9">
                     <span>
-                        <span data-bind="html: post().summary_x"></span>
-                        <a class="_1kgtA _2Oo2A" data-bind="attr: { href: '/p/' + post().slug }, text: post().reading_time"></a>
-                        <span class="_2jvdf" data-bind="text: ' ~' + post().published_at"></span>
+                        <span data-bind="html: post.summary_x"></span>
+                        <a class="_1kgtA _2Oo2A" data-bind="attr: { href: '/p/' + post.slug }, text: post.reading_time"></a>
+                        <span class="_2jvdf" data-bind="text: ' ~' + post.published_at"></span>
                     </span>
                 </h3>
             </div>
             <div class="_35O2p _29Okg _24GTO">
-                <a class="_2Oo2A rF2QA" data-bind="attr: { href: '/p/' + post().slug + '#comments' }">
+                <a class="_2Oo2A rF2QA" data-bind="attr: { href: '/p/' + post.slug + '#comments' }">
                     <span class="_35FcZ _13DRk">
                         <div class="_GSL7C">
                             ﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" version="1.1" width="24" height="24">
@@ -76,7 +76,7 @@
                             </svg>
                         </div>
                         <span class="_34IO">
-                            <!--ko text: post().comments.length --><!--/ko-->
+                            <!--ko text: post.comments.length --><!--/ko-->
                         </span>
                     </span>
                 </a>
@@ -90,28 +90,28 @@
                             </svg>
                         </div>
                         <span class="_34IO">
-                            <!--ko text: post().comments.length --><!--/ko-->
+                            <!--ko text: post.comments.length --><!--/ko-->
                         </span>
                     </span>
                 </div>
-                <dribbles params='count: post().dribbles.length, type_id: "sex", has_dribble: post().has_dribble, type: "post"'></dribbles>
+                <dribbles params='count: post.dribbles.length, type_id: "sex", has_dribble: post.has_dribble, type: "post"'></dribbles>
             </div>
             <!--ko if: isShowing -->
             <div class="_1Q_Pu">
                 <p class="_25BgE">
-                    <span><span data-bind="html: post().summary"></span></span>
+                    <span><span data-bind="html: post.summary"></span></span>
                 </p>
                 <div class="_3tkuf">
                     <div class="_1drt2 _9fE1R NasRD">
                         <div>
-                            <h2 data-bind="html: 'LIKE ' + post().fanbase.name + '?'"></h2>
+                            <h2 data-bind="html: 'LIKE ' + post.fanbase.name + '?'"></h2>
                         </div>
                         <div class="_3OD4J _1yV5F _1MC-v _1h78h">
                             JOIN ALTFOOTBALL
                         </div>
                     </div>
                 </div>
-                <div data-bind="html: post().content"></div>
+                <div data-bind="html: post.content"></div>
             </div>
             <div class="_3tkuf _23YI">
                 <div class="_1drt2 _9fE1R NasRD">
@@ -119,7 +119,7 @@
                         <h2>Never miss a post</h2>
                     </div>
                     <div class="_3OD4J _1yV5F _1MC-v _1h78h">
-                        <span data-bind="html: 'Join ' + post().fanbase.name + '?'"></span>
+                        <span data-bind="html: 'Join ' + post.fanbase.name + '?'"></span>
                     </div>
                 </div>
             </div>
