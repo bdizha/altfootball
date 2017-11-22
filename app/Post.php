@@ -165,7 +165,7 @@ class Post extends Model
         if (!empty($credit)) {
             $credit = str_replace(['http://', 'https://'], '', $credit);
         }
-        return $credit;
+        return trim($credit, "/");
     }
 
     public function getSmallXAttribute()

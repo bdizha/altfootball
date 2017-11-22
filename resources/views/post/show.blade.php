@@ -38,13 +38,9 @@
                             </picture>
                         </div>
                     </div>
-                    @if(!empty($post->credit))
-                        <p class="_2cAm4">CREDIT: <a target="_blank" href="{{ $post->external_url }}">{{ $post->url_x }}</a></p>
-                    @endif
                 </div>
 
                 <div class="_1Q_Pu">
-
                     <div class="_1veAI _1iE2V">
                         <div class="_1-sfe _29LD-">
                             <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
@@ -71,7 +67,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
                     <div>
@@ -121,6 +116,9 @@
                     <div class="_1Q_Pu">
                         <p class="_25BgE">
                             <span><span>{{ $post->summary }}</span></span>
+                             @if(!empty($post->credit))
+                            <span class="_2cAm4"><span>CREDIT:</span> <a target="_blank" href="{{ $post->external_url }}">{{ $post->url_x }}</a></span>
+                            @endif
                         </p>
                         <div class="_3tkuf">
                             <div class="_1drt2 _9fE1R NasRD">
@@ -144,9 +142,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="dqbp5">
-                        @include('post.meta')
-                    </div>
                 </div>
                 <div class="_2xoE4 NasRD _3QYjF">
                     <button class="_1Zj5n _1cG70 _2YLzg">
@@ -160,6 +155,9 @@
                         <div class="_3Cj79 _1geYT">Get more</div>
                     </div>
                 </div>
+            </div>
+            <div class="dqbp5">
+                @include('post.meta')
             </div>
         </article>
         <div id="tackles" class="jwlFt _1zwKC">
