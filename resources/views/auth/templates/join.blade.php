@@ -3,7 +3,7 @@
         <div class="bHN0m">
             <button data-bind="click: hideJoinPopup" class="xy5Fz">
                 <svg width="24" height="24" viewBox="0 0 18 18">
-                    <g stroke="#00AFFF" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                    <g stroke="rgba(103, 143, 185, 0.85)" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
                         <path d="M2.368 2.282L16.51 16.425M16.218 2.282L2.075 16.425"></path>
                     </g>
                 </svg>
@@ -20,7 +20,7 @@
                             <path d="M4.75 6.48h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1m0 3h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1"></path>
                         </g>
                     </svg>
-                    Share 77 views with millions of other fans.
+                    Share views with millions of other fans.
                 </li>
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 18 18">
@@ -48,8 +48,8 @@
                 <li>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                         <g fill="none" fill-rule="evenodd">
-                            <path fill="#00AFFF" d="M16.5 13.1h-2.04A5.6 5.6 0 0 0 9 6.1a5.64 5.64 0 0 0-5.46 7H1.5V4.8h15v8.3zM9 15.87A4.14 4.14 0 1 1 9 7.6a4.14 4.14 0 0 1 0 8.28zM6.94 1.5h4.12l1.25 1.8H5.69l1.25-1.8zm10.31 1.8h-3.12L12.08.32a.75.75 0 0 0-.62-.32H6.54a.75.75 0 0 0-.62.32L3.87 3.3H.75a.75.75 0 0 0-.75.75v9.8c0 .41.34.75.75.75h3.4a5.63 5.63 0 0 0 9.7 0h3.4c.41 0 .75-.34.75-.75v-9.8a.75.75 0 0 0-.75-.75z"></path>
-                            <path fill="#00AFFF" d="M9 13.23a1.5 1.5 0 1 1 0-2.99 1.5 1.5 0 0 1 0 3m0-4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5"></path>
+                            <path fill="rgba(103, 143, 185, 0.85)" d="M16.5 13.1h-2.04A5.6 5.6 0 0 0 9 6.1a5.64 5.64 0 0 0-5.46 7H1.5V4.8h15v8.3zM9 15.87A4.14 4.14 0 1 1 9 7.6a4.14 4.14 0 0 1 0 8.28zM6.94 1.5h4.12l1.25 1.8H5.69l1.25-1.8zm10.31 1.8h-3.12L12.08.32a.75.75 0 0 0-.62-.32H6.54a.75.75 0 0 0-.62.32L3.87 3.3H.75a.75.75 0 0 0-.75.75v9.8c0 .41.34.75.75.75h3.4a5.63 5.63 0 0 0 9.7 0h3.4c.41 0 .75-.34.75-.75v-9.8a.75.75 0 0 0-.75-.75z"></path>
+                            <path fill="rgba(103, 143, 185, 0.85)" d="M9 13.23a1.5 1.5 0 1 1 0-2.99 1.5 1.5 0 0 1 0 3m0-4a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5"></path>
                         </g>
                     </svg>
                     Post your own posts, tackles and dribbles.
@@ -60,14 +60,14 @@
                             <path id="a" d="M2.1.6V4H.4V.6h1.7z"></path>
                         </defs>
                         <g fill="none" fill-rule="evenodd">
-                            <path fill="#00AFFF" d="M4.08 9.5c5.3 0 8.38 1.82 9.96 3.23V2.48C12.15 3.95 8.18 6.08 1.5 5.43v4.2c.91-.09 1.77-.13 2.58-.13m10.71 5.95a.75.75 0 0 1-.64-.37c-.13-.2-3.24-5.18-13.3-3.86a.75.75 0 0 1-.85-.74V4.59a.75.75 0 0 1 .85-.74C10.28 5.06 14.05.48 14.2.28a.75.75 0 0 1 1.33.47V14.7a.75.75 0 0 1-.75.75"></path>
+                            <path fill="rgba(103, 143, 185, 0.85)" d="M4.08 9.5c5.3 0 8.38 1.82 9.96 3.23V2.48C12.15 3.95 8.18 6.08 1.5 5.43v4.2c.91-.09 1.77-.13 2.58-.13m10.71 5.95a.75.75 0 0 1-.64-.37c-.13-.2-3.24-5.18-13.3-3.86a.75.75 0 0 1-.85-.74V4.59a.75.75 0 0 1 .85-.74C10.28 5.06 14.05.48 14.2.28a.75.75 0 0 1 1.33.47V14.7a.75.75 0 0 1-.75.75"></path>
                             <g transform="translate(15 5.45)">
                                 <mask id="b" fill="#fff">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#a"></use>
                                 </mask>
-                                <path fill="#00AFFF" d="M.4.6A1.7 1.7 0 1 1 .4 4" mask="url(#b)"></path>
+                                <path fill="rgba(103, 143, 185, 0.85)" d="M.4.6A1.7 1.7 0 1 1 .4 4" mask="url(#b)"></path>
                             </g>
-                            <path fill="#00AFFF" d="M4.83 13.95h1.3l-.89-2.92H4.03l.8 2.92zm2.32 1.5h-2.9a.75.75 0 0 1-.72-.55l-1.2-4.43a.75.75 0 0 1 .72-.94h2.74c.33 0 .62.21.72.53l1.36 4.42a.75.75 0 0 1-.72.97zm4.76-2.82a.5.5 0 0 1-.5-.5V2.96a.5.5 0 0 1 1 0v9.17a.5.5 0 0 1-.5.5"></path>
+                            <path fill="rgba(103, 143, 185, 0.85)" d="M4.83 13.95h1.3l-.89-2.92H4.03l.8 2.92zm2.32 1.5h-2.9a.75.75 0 0 1-.72-.55l-1.2-4.43a.75.75 0 0 1 .72-.94h2.74c.33 0 .62.21.72.53l1.36 4.42a.75.75 0 0 1-.72.97zm4.76-2.82a.5.5 0 0 1-.5-.5V2.96a.5.5 0 0 1 1 0v9.17a.5.5 0 0 1-.5.5"></path>
                         </g>
                     </svg>
                     Hear from Rio Ferdinand, Gary Neville, Jamie Carragher, and every other football pundit.

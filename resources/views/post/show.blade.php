@@ -14,6 +14,11 @@
         <article>
             <div class="j-W_D _1iE2V">
                 <div class="_1Y7kL">
+                    <div class="_1veAI _1iE2V">
+                        <div class="_1-sfe _29LD-">
+                            <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
+                        </div>
+                    </div>
                     <div class="vowHC _1KXFt">
                         <div class="_23p6h">
                             <picture>
@@ -41,11 +46,6 @@
                 </div>
 
                 <div class="_1Q_Pu">
-                    <div class="_1veAI _1iE2V">
-                        <div class="_1-sfe _29LD-">
-                            <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
-                        </div>
-                    </div>
                     <div class="_1Fx1P _1iE2V _1Ov3j">
                         <div class="_1-sfe CDTi0">
                             <div class="_1l_wG _29Okg">
@@ -146,7 +146,7 @@
                 <div class="_2xoE4 NasRD _3QYjF">
                     <button class="_1Zj5n _1cG70 _2YLzg">
                         <svg width="10" height="10">
-                            <path fill="none" stroke="#00AFFF" stroke-linecap="square" stroke-width="2"
+                            <path fill="none" stroke="rgba(103, 143, 185, 0.85)" stroke-linecap="square" stroke-width="2"
                                   d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
                         </svg>
                     </button>

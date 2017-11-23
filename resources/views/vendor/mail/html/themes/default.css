@@ -29,7 +29,7 @@ blockquote {
 }
 
 a {
-    color: #00AFFF;
+    color: rgba(103, 143, 185, 0.85);
 }
 
 a img {
@@ -216,11 +216,11 @@ img {
 }
 
 .button-blue {
-    background-color: #00AFFF;
-    border-top: 10px solid #00AFFF;
-    border-right: 18px solid #00AFFF;
-    border-bottom: 10px solid #00AFFF;
-    border-left: 18px solid #00AFFF;
+    background-color: rgba(103, 143, 185, 0.85);
+    border-top: 10px solid rgba(103, 143, 185, 0.85);
+    border-right: 18px solid rgba(103, 143, 185, 0.85);
+    border-bottom: 10px solid rgba(103, 143, 185, 0.85);
+    border-left: 18px solid rgba(103, 143, 185, 0.85);
 }
 
 .button-green {

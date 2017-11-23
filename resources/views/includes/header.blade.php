@@ -41,7 +41,7 @@
                 <button class="_13sKJ">
                     <span class="T3zZE">Alerts</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" class="_8e7Ip">
-                        <g fill="none" fill-rule="evenodd" stroke="#00AFFF" stroke-linecap="round"
+                        <g fill="none" fill-rule="evenodd" stroke="rgba(103, 143, 185, 0.85)" stroke-linecap="round"
                            stroke-linejoin="round">
                             <path stroke-width="1.5"
                                   d="M13.85 9.37v2.26l1 2.34H.75l.97-2.37V6.81a6.06 6.06 0 0 1 12.13 0v2.56z"></path>
