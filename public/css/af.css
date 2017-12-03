@@ -405,7 +405,7 @@ button {
   bottom: -8px;
   width: 100%;
   height: 8px;
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -494,7 +494,7 @@ button {
 
 ._2e1-n:hover {
   background: #FFFFFF;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 .oFTqy {
@@ -609,7 +609,7 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 14px;
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   padding: 18px;
   -ms-flex: 0 0 196px;
   flex: 0 0 196px;
@@ -687,7 +687,7 @@ button {
 ._34TRY {
   background: #FFFFFF;
   border: 1px solid #f8f8f8;
-  box-shadow: 0 9px 18px 0 rgba(103, 143, 185, 0.25);
+  box-shadow: 0 9px 18px 0 rgba(103, 143, 185, 0.15);
   width: 300px;
   padding: 28px 28px 0;
   position: absolute;
@@ -749,7 +749,7 @@ button {
 }
 
 ._1VKWj {
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._1VKWj:last-child {
@@ -870,7 +870,7 @@ button {
 }
 
 ._359eg {
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding: 18px 0;
 }
 
@@ -1035,7 +1035,7 @@ form#fanbase-form .b00q8 {
   -ms-flex-align: center;
   align-items: center;
   padding: 44px 26px 18px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -1062,7 +1062,7 @@ form#fanbase-form .b00q8 {
 }
 
 .zoflJ[disabled] {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._1UOSn {
@@ -1077,7 +1077,7 @@ form#fanbase-form .b00q8 {
 
 ._2Kdch {
   position: relative;
-  border-bottom: 1px solid rgba(0, 8, 39, 0.85);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding-right: 28px;
   transition: padding-bottom 0.15s linear;
 }
@@ -1124,7 +1124,7 @@ form#fanbase-form .b00q8 {
   position: absolute;
   right: 0;
   bottom: 0;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
@@ -1260,7 +1260,7 @@ form ._2Kdch {
 }
 
 ._21web {
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   border-radius: 0px;
   overflow: hidden;
   width: 100%;
@@ -1389,7 +1389,7 @@ form ._2Kdch {
 }
 
 ._1fDUg {
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._13Js3 {
@@ -1441,7 +1441,7 @@ form ._2Kdch {
 
 @media screen and (min-width: 846px) {
   ._1jbho {
-    border-right: 1px solid rgba(103, 143, 185, 0.25);
+    border-right: 1px solid rgba(103, 143, 185, 0.15);
   }
 }
 
@@ -1769,13 +1769,8 @@ form ._2Kdch {
   height: 0;
 }
 
-._23p6h {
-  top: 0;
-  left: 0;
+._23p6h img {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: absolute;
 }
 
 ._23p6h ._34TYI {
@@ -1797,7 +1792,7 @@ form ._2Kdch {
 
 .YRuUa {
   position: absolute;
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._3WIsa {
@@ -1823,7 +1818,7 @@ form ._2Kdch {
   content: attr(data-stamp);
   border-radius: 0;
   background: linear-gradient(to right, rgba(0, 149, 208, 0.75), rgba(72, 192, 74, 0.75));
-  box-shadow: 0 1px 8px rgba(103, 143, 185, 0.25);
+  box-shadow: 0 1px 8px rgba(103, 143, 185, 0.15);
 }
 
 ._1Gyo9:after {
@@ -2022,7 +2017,7 @@ form ._2Kdch {
   background: linear-gradient(to right, rgba(0, 8, 39, 0.85), rgba(0, 149, 208, 0.85), rgba(72, 192, 74, 0.85));
   bottom: 0;
   padding: 26px;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._2gW41 {
@@ -2057,7 +2052,7 @@ form ._2Kdch {
 .RgFHG {
   padding-bottom: 18px;
   margin: 18px 26px 0;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -2378,7 +2373,7 @@ form ._2Kdch {
 
 ._5eW3b {
   position: absolute;
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._1NLPK {
@@ -2396,7 +2391,7 @@ form ._2Kdch {
 }
 
 .mD41I img {
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._1sqoT {
@@ -2546,8 +2541,8 @@ form ._2Kdch {
   position: absolute;
   padding: 14px 0;
   background-color: #FFFFFF;
-  border: 1px solid rgba(103, 143, 185, 0.25);
-  box-shadow: 0 0 25px 0 rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
+  box-shadow: 0 0 25px 0 rgba(103, 143, 185, 0.15);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 2;
@@ -2579,7 +2574,7 @@ form ._2Kdch {
 }
 
 ._1FJkk {
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   padding: 8px;
   padding-left: 12px;
   height: 44px;
@@ -2624,14 +2619,14 @@ form ._2Kdch {
   height: 22px;
   border-radius: 0px;
   background: #FFFFFF;
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
 ._1Zj5n:hover {
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._1Zj5n:hover svg > path {
@@ -2658,7 +2653,7 @@ form ._2Kdch {
 }
 
 ._2YLzg:hover svg > path {
-  stroke: rgba(103, 143, 185, 0.25);
+  stroke: rgba(103, 143, 185, 0.15);
 }
 
 ._2YLzg svg {
@@ -2710,7 +2705,7 @@ form ._2Kdch {
 
 ._2LRWs:hover:enabled {
   background: #FFFFFF;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._2A7z5 {
@@ -2731,14 +2726,14 @@ form ._2Kdch {
 
 ._168d9 svg path,
 ._168d9:hover svg path {
-  fill: rgba(103, 143, 185, 0.25);
+  fill: rgba(103, 143, 185, 0.15);
 }
 
 ._3hgGE {
   position: relative;
   margin: -9px 0 22px;
   padding: 12px;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   border-top: 0;
 }
 
@@ -2843,7 +2838,7 @@ form ._2Kdch {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-bottom: 14px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._3R967 {
@@ -2940,7 +2935,7 @@ form ._2Kdch {
 
 ._2jMe6 {
   left: 28px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -3005,7 +3000,7 @@ form ._2Kdch {
 }
 
 .yR_IP {
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
   top: 0;
   right: 0;
   bottom: 0;
@@ -3063,7 +3058,7 @@ form ._2Kdch {
 }
 
 ._3UVYo {
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
 }
 
 ._2IBdP {
@@ -3124,7 +3119,7 @@ form ._2Kdch {
   position: relative;
   width: 100%;
   border-radius: 0px;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   height: 165px;
   cursor: pointer;
 }
@@ -3227,7 +3222,7 @@ form ._2Kdch {
 
 ._2Ne10 {
   text-transform: uppercase;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._7u1-t {
@@ -3313,7 +3308,7 @@ form ._2Kdch {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -3401,7 +3396,7 @@ form ._2Kdch {
 ._3cmsY {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   cursor: pointer;
   padding: 9px 18px;
   margin-bottom: 28px;
@@ -3597,7 +3592,7 @@ form ._2Kdch {
 
 ._1m76a {
   margin: 0 26px;
-  border-top: 1px solid rgba(0, 8, 39, 0.85);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
   display: -ms-flexbox;
   display: flex;
   padding-top: 18px;
@@ -3733,16 +3728,17 @@ form ._2Kdch {
   transition: transform 0.4s cubic-bezier(0, 0.42, 0, 1), opacity 0.3s ease-out;
   margin-bottom: 14px;
   background: #FFFFFF;
-  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.85);
   overflow: hidden;
   position: relative;
-  border-radius: 0px;
+  border-radius: 0;
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 .p32Iu ._4TYO {
-  margin: 0 14px 14px;
-  border: 1px solid rgba(103, 143, 185, 0.25);
-  border-radius: 0px;
+  margin: 0;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
+  margin-bottom: 14px;
 }
 
 .p32Iu ._3DF9 {
@@ -3754,7 +3750,7 @@ form ._2Kdch {
   padding: 14px 14px;
   color: #FFFFFF;
   text-shadow: 0 1px -1px rgba(0, 8, 39, 0.85);
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   background: #0095D0;
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
@@ -3767,12 +3763,12 @@ form ._2Kdch {
 .p32Iu .gEjmr {
   padding-bottom: 0;
   box-shadow: none;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 .p32Iu.active,
 .p32Iu:hover {
-  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.85);
+  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.15);
 }
 
 .p32Iu.active ._HY8RT,
@@ -3945,7 +3941,7 @@ dribbles ._35GH ._34IO {
 ._1XKWB:after {
   display: block;
   content: "";
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
   height: 5px;
   position: absolute;
   top: -28px;
@@ -3969,7 +3965,7 @@ dribbles ._35GH ._34IO {
   font-weight: 700;
   font-size: 35px;
   line-height: 35px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._2VJcs,
@@ -3997,12 +3993,16 @@ dribbles ._35GH ._34IO {
   position: static;
 }
 
+._3bxb0 ._2kQCw:hover {
+  color: #48C04A;
+}
+
 ._3bxb0 .e_0uO {
   -ms-flex: 0 0 40px;
   flex: 0 0 40px;
   width: 40px;
   height: 40px;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   background: rgba(103, 143, 185, 0.09);
   color: rgba(103, 143, 185, 0.85);
 }
@@ -4072,7 +4072,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2G_85 ._3MJAj {
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
   margin-top: 14px;
   margin-bottom: 14px;
   padding: 18px 26px 0;
@@ -4098,11 +4098,11 @@ dribbles ._35GH ._34IO {
 ._326aY {
   margin-top: 18px;
   margin-bottom: 18px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._8vnW9 {
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
   padding: 18px 26px;
 }
 
@@ -4316,16 +4316,16 @@ dribbles ._35GH ._34IO {
 }
 
 ._3tN0i {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
 }
 
 ._1TdTV {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   padding: 14px;
   background-color: #FAFAFA;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   margin-top: 14px;
 }
 
@@ -4471,7 +4471,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3-2aE {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._1XNRF,
@@ -5075,7 +5075,7 @@ dribbles ._35GH ._34IO {
   width: 378px;
   height: 378px;
   margin: 0 auto;
-  border: 8px solid rgba(103, 143, 185, 0.25);
+  border: 8px solid rgba(103, 143, 185, 0.15);
   padding: 26px;
   display: -ms-flexbox;
   display: flex;
@@ -5093,7 +5093,7 @@ dribbles ._35GH ._34IO {
   text-transform: uppercase;
   font-size: 35px;
   line-height: 35px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   position: absolute;
   top: 26px;
   left: 26px;
@@ -5116,14 +5116,14 @@ dribbles ._35GH ._34IO {
   height: auto;
   width: 100%;
   background: #FFFFFF;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
   ._2B984 {
     display: -ms-flexbox;
     display: flex;
-    box-shadow: 0 0 50px -4px rgba(103, 143, 185, 0.25);
+    box-shadow: 0 0 50px -4px rgba(103, 143, 185, 0.15);
   }
 
   ._2B984 > svg {
@@ -5465,7 +5465,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2fax0 {
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._1fEnk {
@@ -5535,7 +5535,7 @@ dribbles ._35GH ._34IO {
   width: 28px;
   height: 28px;
   background-color: #FFFFFF;
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -5544,7 +5544,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2nEcT._393Hg {
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
 }
 
 ._2nEcT > input {
@@ -5574,7 +5574,7 @@ dribbles ._35GH ._34IO {
 
 ._3fNy8,
 .CmDVS:hover {
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._3fNy8 {
@@ -6233,7 +6233,7 @@ dribbles ._35GH ._34IO {
 
 ._3Phfs {
   background: #FFFFFF;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   height: 96px;
   width: 100%;
   padding: 22px;
@@ -6323,7 +6323,7 @@ dribbles ._35GH ._34IO {
 ._30tVm {
   width: 64px;
   height: 4px;
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
   margin-right: 14px;
   cursor: pointer;
 }
@@ -6357,7 +6357,7 @@ dribbles ._35GH ._34IO {
   left: 0;
   width: 100%;
   height: 90px;
-  box-shadow: 0 10px 25px 10px rgba(103, 143, 185, 0.25);
+  box-shadow: 0 10px 25px 10px rgba(103, 143, 185, 0.15);
   z-index: 2;
 }
 
@@ -6453,7 +6453,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2azBk {
-  color: rgba(103, 143, 185, 0.25) !important;
+  color: rgba(103, 143, 185, 0.15) !important;
 }
 
 @media screen and (max-width: 846px) {
@@ -6495,7 +6495,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2hv_i {
-  border-color: rgba(103, 143, 185, 0.25);
+  border-color: rgba(103, 143, 185, 0.15);
 }
 
 .p5bDW {
@@ -6666,7 +6666,7 @@ form ._12n1y:focus {
 }
 
 form .M13JP {
-  background: linear-gradient(to right, rgba(72, 192, 74, 0.85), rgba(103, 143, 185, 0.25));
+  background: linear-gradient(to right, rgba(72, 192, 74, 0.85), rgba(103, 143, 185, 0.15));
   color: #FFFFFF;
   border: 1px solid #FFFFFF;
 }
@@ -6789,7 +6789,7 @@ form .M13JP:focus {
 }
 
 ._37Oy_ .M13JP {
-  background: linear-gradient(to right, rgba(72, 192, 74, 0.85), rgba(103, 143, 185, 0.25));
+  background: linear-gradient(to right, rgba(72, 192, 74, 0.85), rgba(103, 143, 185, 0.15));
 }
 
 ._37Oy_ .M13JP[disabled] {
@@ -6844,7 +6844,7 @@ form .M13JP:focus {
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   padding: 18px 26px;
   margin: 18px auto;
 }
@@ -6950,7 +6950,7 @@ form .M13JP:focus {
 }
 
 ._1iBcU {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   padding: 0 14px;
 }
 
@@ -7013,8 +7013,8 @@ form .M13JP:focus {
 }
 
 ._26DkX {
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding-bottom: 28px;
 }
 
@@ -7053,7 +7053,7 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   text-align: center;
   display: block;
 }
@@ -7062,7 +7062,7 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   text-align: center;
   display: block;
   font-size: 55px;
@@ -7254,7 +7254,7 @@ form .M13JP:focus {
   -ms-flex-align: center;
   align-items: center;
   padding: 44px 26px 18px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -7286,7 +7286,7 @@ form .M13JP:focus {
 }
 
 ._2tXok[disabled] {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._3A9Sb {
@@ -7294,7 +7294,7 @@ form .M13JP:focus {
 }
 
 .ADq5f {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._3Cj2a {
@@ -7307,7 +7307,7 @@ form .M13JP:focus {
   position: relative;
   width: 24px;
   height: 24px;
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   cursor: pointer;
 }
 
@@ -7331,7 +7331,7 @@ form .M13JP:focus {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding-bottom: 4px;
   margin-top: -14px;
   -ms-flex-direction: column;
@@ -7373,7 +7373,7 @@ form .M13JP:focus {
 }
 
 ._3tO7Z {
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   position: relative;
   display: block;
   cursor: text;
@@ -7438,7 +7438,7 @@ form .M13JP:focus {
   line-height: 14px;
   text-transform: uppercase;
   padding-top: 3px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._2ljIX {
@@ -7471,14 +7471,14 @@ form .M13JP:focus {
 
 .VICgz ._1jO5_ {
   transform: translateY(-4px) scale(0.85) translateZ(0);
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 .bInDy {
   position: absolute;
   right: 0;
   bottom: 9px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
@@ -7540,7 +7540,7 @@ form .M13JP:focus {
   font-size: 14px;
   line-height: 14px;
   text-transform: none;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   margin-top: 14px;
 }
 
@@ -7555,7 +7555,7 @@ form .M13JP:focus {
 }
 
 ._3iCHD {
-  border-bottom-color: rgba(103, 143, 185, 0.25);
+  border-bottom-color: rgba(103, 143, 185, 0.15);
 }
 
 ._1E9Zo input {
@@ -7566,7 +7566,7 @@ form .M13JP:focus {
 ._2BA3m {
   height: 228px;
   position: relative;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   background: #FAFAFA;
   cursor: pointer;
 }
@@ -7583,7 +7583,7 @@ form .M13JP:focus {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   margin-bottom: 9px;
   cursor: pointer;
 }
@@ -7790,7 +7790,7 @@ form .M13JP:focus {
   text-transform: uppercase;
   font-size: 55px;
   line-height: 44px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -7827,8 +7827,8 @@ form .M13JP:focus {
 ._2AwjV {
   display: block;
   background: #FFFFFF;
-  border: 1px solid rgba(0, 8, 39, 0.85);
-  color: rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._2AwjV svg {
@@ -7838,12 +7838,12 @@ form .M13JP:focus {
 }
 
 ._2AwjV path {
-  fill: rgba(103, 143, 185, 0.25);
+  fill: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
   ._2AwjV {
-    border: 1px solid rgba(0, 8, 39, 0.85);
+    border: 1px solid rgba(103, 143, 185, 0.15);
     width: auto;
   }
 }
@@ -7859,7 +7859,7 @@ form .M13JP:focus {
 
 ._nbnx {
   margin: 0 0 12px 12px;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   width: 404px;
 }
 
@@ -7884,8 +7884,8 @@ form .M13JP:focus {
 @media screen and (max-width: 508px) {
   ._nbnx {
     border: 0;
-    border-top: 1px solid rgba(103, 143, 185, 0.25);
-    border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+    border-top: 1px solid rgba(103, 143, 185, 0.15);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.15);
     margin-bottom: 9px;
     margin-left: 0;
   }
@@ -8038,7 +8038,7 @@ form .M13JP:focus {
 ._1qO-x {
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding: 35px 0;
   width: 100%;
 }
@@ -8126,7 +8126,7 @@ form .M13JP:focus {
 
 .ivfOh {
   background: #FFFFFF;
-  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   overflow: hidden;
   padding: 18px;
   margin-bottom: 14px;
@@ -8367,7 +8367,7 @@ form .M13JP:focus {
   padding-top: 18px;
   padding-bottom: 14px;
   list-style: disc;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._2Es-V {
@@ -8505,7 +8505,7 @@ form .M13JP:focus {
   background: #FFFFFF;
   margin-bottom: 14px;
   padding: 18px;
-  box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 .gEjmr ._35FcZ,
@@ -8620,7 +8620,7 @@ form .M13JP:focus {
   text-transform: uppercase;
   font-size: 12px;
   line-height: 12px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding: 14px;
   width: 100%;
   display: block;
@@ -8663,7 +8663,7 @@ form .M13JP:focus {
 
 ._55ghi {
   display: none;
-  border-left: 1px dotted rgba(103, 143, 185, 0.25);
+  border-left: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._55ghi ._3fi2B {
@@ -8698,7 +8698,7 @@ form .M13JP:focus {
 }
 
 ._3ZzkS {
-  margin-left: 28px;
+  margin-left: 18px;
   background: rgba(103, 143, 185, 0.15);
   padding: 18px;
   margin-top: 24px;
@@ -8810,7 +8810,7 @@ form .M13JP:focus {
   text-transform: uppercase;
   float: right;
   color: rgba(0, 8, 39, 0.85);
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   padding: 9px 28px;
   font-size: 14px;
   transition: all 0.15s ease-out;
@@ -8900,8 +8900,8 @@ form .M13JP:focus {
 
 ._3p6iW {
   padding: 14px 0;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._3fk-o {
@@ -8920,7 +8920,7 @@ form .M13JP:focus {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 22px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding-bottom: 28px;
 }
 
@@ -9105,7 +9105,7 @@ form .M13JP:focus {
   -ms-flex-align: center;
   align-items: center;
   background-color: #FAFAFA;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 .rb89E {
@@ -9244,8 +9244,8 @@ div._3bqe5 > div {
 ._1zrW5 {
   padding: 0 22px;
   margin-left: 22px;
-  border-left: 1px solid rgba(103, 143, 185, 0.25);
-  border-right: 1px solid rgba(103, 143, 185, 0.25);
+  border-left: 1px solid rgba(103, 143, 185, 0.15);
+  border-right: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -9312,7 +9312,7 @@ div._3bqe5 > div {
   top: 66px;
   left: 0;
   right: 0;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   z-index: 6;
 }
 
@@ -9346,7 +9346,7 @@ div._3bqe5 > div {
     top: auto;
     bottom: 0;
     height: 55px;
-    border-top: 1px solid rgba(103, 143, 185, 0.25);
+    border-top: 1px solid rgba(103, 143, 185, 0.15);
     border-bottom: 0;
     padding-left: 0;
   }
@@ -9650,7 +9650,7 @@ div._3bqe5 > div {
 
 .vrQ3d {
   position: relative;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   margin-bottom: 28px;
 }
 
@@ -9686,7 +9686,7 @@ div._3bqe5 > div {
   left: -1px;
   width: 92px;
   height: 4px;
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
   position: absolute;
 }
 
@@ -9766,24 +9766,7 @@ div._3bqe5 > div {
 }
 
 ._1Fx1P {
-  padding-left: 260px;
-  margin-bottom: 28px;
   position: relative;
-}
-
-@media screen and (max-width: 1236px) {
-  ._1Fx1P {
-    padding-left: 182px;
-  }
-}
-
-@media screen and (max-width: 1158px) {
-  ._1Fx1P {
-    padding-left: 0;
-    max-width: 716px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
 
 ._3BzB6 {
@@ -9808,10 +9791,11 @@ div._3bqe5 > div {
 
 ._12F3w {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 66px;
   margin: 24px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 64px;
   max-width: 768px;
 }
 
@@ -9941,7 +9925,6 @@ div._3bqe5 > div {
 .C8E2s span {
   font-size: 18px;
   line-height: 22px;
-  line-height: 28px;
 }
 
 @media screen and (max-width: 508px) {
@@ -9954,14 +9937,13 @@ div._3bqe5 > div {
 }
 
 ._25BgE {
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 20px;
 }
 
 ._25BgE a,
 ._25BgE span {
-  font-size: 22px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 ._25BgE a {
@@ -10041,15 +10023,14 @@ div._3bqe5 > div {
 }
 
 ._2cAm4 {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
   text-align: left;
   display: block;
   width: 100%;
-  border: 1px solid rgba(103, 143, 185, 0.25);
-  margin-top: 18px;
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
+  margin-top: 28px;
   padding: 14px;
-  background: rgba(103, 143, 185, 0.09);
 }
 
 ._2cAm4 span {
@@ -10063,6 +10044,10 @@ div._3bqe5 > div {
 ._2cAm4 a {
   color: rgba(0, 8, 39, 0.85);
   font-weight: 500;
+}
+
+._2cAm4 a:hover {
+  color: #48C04A;
 }
 
 ._1WBT8 {
@@ -10194,8 +10179,8 @@ div._3bqe5 > div {
   -ms-flex-pack: justify;
   justify-content: space-between;
   float: none;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -10301,9 +10286,7 @@ div._3bqe5 > div {
 }
 
 .vowHC {
-  background-color: #f8f8f8;
-  height: 0;
-  padding-bottom: 56.25%;
+  background-color: #FFFFFF;
 }
 
 ._1Q_Pu {
@@ -10331,6 +10314,7 @@ div._3bqe5 > div {
   font-size: 21px;
   line-height: 28px;
   letter-spacing: -.003em;
+  text-alight: left !important;
 }
 
 ._1Q_Pu p .capital-letter {
@@ -10348,9 +10332,13 @@ div._3bqe5 > div {
   margin-bottom: -0.08em;
 }
 
+._1Q_Pu p strong {
+  text-align: left !important;
+}
+
 ._1Q_Pu p img {
   width: 100%;
-  max-width: 696px;
+  max-width: 100% !important;
 }
 
 @media screen and (max-width: 1158px) {
@@ -10484,7 +10472,7 @@ div._3bqe5 > div {
   bottom: 18px;
   left: -196px;
   width: 170px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding-bottom: 9px;
   font-size: 14px;
 }
@@ -10545,7 +10533,7 @@ div._3bqe5 > div {
   left: 0;
   top: 96px;
   background: #FFFFFF;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   opacity: 0;
   font-size: 14px;
   line-height: 18px;
@@ -10563,7 +10551,7 @@ div._3bqe5 > div {
   margin-left: auto;
   margin-right: auto;
   padding: 9px 0;
-  box-shadow: 0 10px 25px -10px rgba(103, 143, 185, 0.25);
+  box-shadow: 0 10px 25px -10px rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 1280px) {
@@ -10865,7 +10853,7 @@ div._3bqe5 > div {
     flex: 0 0 40px;
     width: 40px;
     height: 40px;
-    border: 1px solid rgba(0, 8, 39, 0.85);
+    border: 1px solid rgba(103, 143, 185, 0.15);
   }
 
   .e_0uO:after {
@@ -11096,7 +11084,7 @@ div._3bqe5 > div {
 ._1MHOe {
   position: relative;
   padding-bottom: 18px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   margin-bottom: 28px;
 }
 
@@ -11228,8 +11216,8 @@ div._3bqe5 > div {
 .XTctS {
   display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding: 14px 0;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -11471,7 +11459,7 @@ div._3bqe5 > div {
   -ms-flex-align: center;
   align-items: center;
   margin-top: 18px;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   padding: 18px;
 }
 
@@ -11617,7 +11605,7 @@ div._3bqe5 > div {
 ._1RyqV ._1RyqV {
   padding: 0;
   margin: 0;
-  margin-right: -24px;
+  margin-right: -19px;
 }
 
 ._1RyqV ._1RyqV ._3HYOY {
@@ -11629,7 +11617,7 @@ div._3bqe5 > div {
   margin-bottom: 0;
   box-shadow: none;
   border-top: none;
-  border-left: 1px dotted rgba(103, 143, 185, 0.25);
+  border-left: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._1RyqV ._1RyqV .gEjmr:last-child {
@@ -11643,8 +11631,7 @@ div._3bqe5 > div {
   font-size: 24px;
   line-height: 22px;
   padding: 24px 0;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
-  color: #FFFFFF;
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -12243,7 +12230,7 @@ div._3bqe5 > div {
   line-height: 28px;
   text-transform: uppercase;
   margin-top: 14px;
-  filter: drop-shadow(0 2px 5px rgba(103, 143, 185, 0.25));
+  filter: drop-shadow(0 2px 5px rgba(103, 143, 185, 0.15));
 }
 
 @media screen and (max-width: 508px) {
@@ -12320,7 +12307,7 @@ div._3bqe5 > div {
 
 ._23g2_ {
   margin-right: 0;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._23g2_ svg {
@@ -12370,7 +12357,7 @@ div._3bqe5 > div {
     justify-content: space-between;
     margin: 0;
     padding: 9px 14px;
-    border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   }
 
   .DcoLy ._31RCK {
@@ -12434,7 +12421,7 @@ div._3bqe5 > div {
 
 ._2I-QY {
   color: rgba(0, 8, 39, 0.85);
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 .k27yJ {
@@ -12445,7 +12432,7 @@ div._3bqe5 > div {
 
 ._2q7vJ {
   color: rgba(0, 8, 39, 0.85);
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._2SyJe {
@@ -12456,7 +12443,7 @@ div._3bqe5 > div {
 
 ._3KPJA {
   width: 80px;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._2ZI7w {
@@ -12590,7 +12577,7 @@ div._3bqe5 > div {
     -ms-flex-direction: row;
     flex-direction: row;
     padding: 10px 0;
-    border-top: 1px solid rgba(103, 143, 185, 0.25);
+    border-top: 1px solid rgba(103, 143, 185, 0.15);
     max-width: 100%;
   }
 }
@@ -12598,15 +12585,15 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._3XlGZ {
     padding: 10px 0;
-    border-top: 1px solid rgba(103, 143, 185, 0.25);
-    border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+    border-top: 1px solid rgba(103, 143, 185, 0.15);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   }
 }
 
 .Pb65u {
   position: relative;
   padding-bottom: 18px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding: 14px;
   padding-left: 0;
   text-align: center;
@@ -12627,7 +12614,7 @@ div._3bqe5 > div {
     -ms-flex: 1;
     flex: 1;
     border-bottom: 0;
-    border-right: 1px solid rgba(103, 143, 185, 0.25);
+    border-right: 1px solid rgba(103, 143, 185, 0.15);
     margin-bottom: 0;
     -ms-flex-pack: center;
     justify-content: center;
@@ -12786,7 +12773,7 @@ div._3bqe5 > div {
   margin-bottom: 14px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (min-width: 924px) {
@@ -13579,7 +13566,7 @@ div._3bqe5 > div {
   white-space: nowrap;
   transition: all .1s ease-out;
   color: rgba(0, 8, 39, 0.85);
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._1SLoN:before {
@@ -13837,7 +13824,7 @@ div._3bqe5 > div {
 }
 
 .wEwHk {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._11gfn {
@@ -13875,7 +13862,7 @@ div._3bqe5 > div {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  box-shadow: 0 1px 8px rgba(103, 143, 185, 0.25);
+  box-shadow: 0 1px 8px rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -13892,7 +13879,7 @@ div._3bqe5 > div {
 }
 
 ._3hdBv {
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
   position: relative;
   padding-top: 28px;
 }
@@ -14237,14 +14224,14 @@ div._3bqe5 > div {
 
 ._5X5FD,
 .mv9zs {
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
   padding: 28px 0 0;
 }
 
 .ZxFDK {
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
   padding: 28px 0 0;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   margin-bottom: 44px;
 }
 
@@ -14366,13 +14353,13 @@ div._3bqe5 > div {
 ._1g8z0 {
   font-size: 12px;
   line-height: 14px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._1g8z0 a {
   font-size: 12px;
   line-height: 14px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._35zqi,
@@ -14385,8 +14372,8 @@ div._3bqe5 > div {
   margin: 18px 0;
   padding: 18px 0;
   margin-bottom: 35px;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 ._35zqi li {
@@ -14413,7 +14400,7 @@ div._3bqe5 > div {
 
 ._3gymQ g,
 ._3U2Oj g {
-  fill: rgba(103, 143, 185, 0.25);
+  fill: rgba(103, 143, 185, 0.15);
 }
 
 ._1fm2Z {
@@ -14584,7 +14571,7 @@ div._3bqe5 > div {
   height: 72px;
   z-index: -1;
   background-color: #FFFFFF;
-  box-shadow: 0 10px 25px -10px rgba(103, 143, 185, 0.25);
+  box-shadow: 0 10px 25px -10px rgba(103, 143, 185, 0.15);
   opacity: 0;
   transform: translateY(-30px) translateZ(0);
   transition: all 0.3s ease-out;
@@ -14647,7 +14634,7 @@ div._3bqe5 > div {
 
 ._12L63._36gJx {
   background: #FFFFFF;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._12L63._36gJx ._3VkOf {
@@ -14655,7 +14642,7 @@ div._3bqe5 > div {
   top: 248px;
   bottom: 0;
   width: 100%;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   border-top: 0;
 }
 
@@ -14898,8 +14885,8 @@ div._3bqe5 > div {
   }
 
   ._12L63.LjaF7._36gJx {
-    border-top: 1px solid rgba(103, 143, 185, 0.25);
-    border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+    border-top: 1px solid rgba(103, 143, 185, 0.15);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.15);
     margin-bottom: 9px;
   }
 }
@@ -15132,7 +15119,7 @@ div._3bqe5 > div {
   position: static;
   overflow: auto;
   transform: none;
-  background: #FAFAFA;
+  background: #FFFFFF;
 }
 
 ._1A3CD.active {
@@ -15171,7 +15158,7 @@ div._3bqe5 > div {
   -ms-flex-pack: justify;
   justify-content: space-between;
   z-index: 8;
-  box-shadow: 0 1px 8px rgba(103, 143, 185, 0.25);
+  box-shadow: 0 1px 8px rgba(103, 143, 185, 0.15);
 }
 
 .R1XAV ._3TYH2 {
@@ -15296,7 +15283,7 @@ div._3bqe5 > div {
 }
 
 ._GSL7C {
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   display: block;
   height: 40px;
   width: 40px;
@@ -15759,7 +15746,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   .BJ1bO {
-    border: 1px solid rgba(103, 143, 185, 0.25);
+    border: 1px solid rgba(103, 143, 185, 0.15);
     height: 32px;
     padding: 0 18px;
     display: -ms-flexbox;
@@ -15795,7 +15782,7 @@ div._3bqe5 > div {
 }
 
 ._3TYH2 {
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   padding: 14px;
 }
 
@@ -16003,7 +15990,7 @@ div._3bqe5 > div {
 }
 
 .qo5ix ._2LIIc {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 .qo5ix ._1gJri:nth-child(odd) {
@@ -16103,7 +16090,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._1gJri {
     padding: 9px 0;
-    border-top: 1px solid rgba(103, 143, 185, 0.25);
+    border-top: 1px solid rgba(103, 143, 185, 0.15);
   }
 }
 
@@ -16144,7 +16131,7 @@ div._3bqe5 > div {
 
 ._2LIIc {
   border-radius: 0px;
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -16497,7 +16484,7 @@ div._3bqe5 > div {
 }
 
 ._3FpSb {
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding: 28px 0;
 }
 
@@ -16532,7 +16519,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._2xjah {
     padding-top: 18px;
-    border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   }
 }
 
@@ -16649,7 +16636,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._2clUd {
     padding: 9px 0;
-    border-top: 1px solid rgba(103, 143, 185, 0.25);
+    border-top: 1px solid rgba(103, 143, 185, 0.15);
   }
 }
 
@@ -16693,7 +16680,7 @@ div._3bqe5 > div {
 
 ._1k78U {
   border-radius: 0px;
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -16845,7 +16832,7 @@ div._3bqe5 > div {
   ._3ldas {
     margin: 0;
     padding: 18px 14px;
-    border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   }
 
   ._3ldas ._1SDQT {
@@ -16915,7 +16902,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 44px;
   line-height: 44px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -17025,7 +17012,7 @@ div._3bqe5 > div {
 
 ._2jBYb {
   background: #FFFFFF;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   margin-top: 14px;
 }
 
@@ -17039,7 +17026,7 @@ div._3bqe5 > div {
 }
 
 ._1uw3W {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 14px;
@@ -17070,7 +17057,7 @@ div._3bqe5 > div {
 
 ._346nx {
   color: rgba(0, 8, 39, 0.85);
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 .l5jFn {
@@ -17124,7 +17111,7 @@ div._3bqe5 > div {
   width: 14px;
   content: "";
   height: 4px;
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 .zOPku:hover:after {
@@ -17134,7 +17121,7 @@ div._3bqe5 > div {
   width: 14px;
   content: "";
   height: 4px;
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._1COxF {
@@ -17150,7 +17137,7 @@ div._3bqe5 > div {
 ._2reVj {
   width: 118px;
   height: 53px;
-  border: 1px solid rgba(0, 8, 39, 0.85);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   float: right;
   text-transform: uppercase;
   font-size: 14px;
@@ -17159,8 +17146,8 @@ div._3bqe5 > div {
 }
 
 ._3HWOZ {
-  color: rgba(103, 143, 185, 0.25);
-  border-color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
+  border-color: rgba(103, 143, 185, 0.15);
 }
 
 ._3r333 {
@@ -17244,7 +17231,7 @@ div._3bqe5 > div {
 ._1xATQ .weBNu {
   background: #FFFFFF;
   color: rgba(0, 8, 39, 0.85);
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   transition: all 0.1s linear 0.6s;
 }
 
@@ -17333,8 +17320,8 @@ div._3bqe5 > div {
 }
 
 .FRwY4 {
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   padding: 28px 0;
   margin-bottom: 28px;
   font-size: 18px;
@@ -17405,7 +17392,7 @@ div._3bqe5 > div {
   display: -ms-flexbox;
   display: flex;
   padding: 14px 18px;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
 }
@@ -17518,8 +17505,8 @@ div._3bqe5 > div {
 ._3cgGL {
   display: -ms-flexbox;
   display: flex;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
-  border-left: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
+  border-left: 1px solid rgba(103, 143, 185, 0.15);
   padding: 14px 18px;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -17600,7 +17587,7 @@ div._3bqe5 > div {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    border-top: 1px solid rgba(103, 143, 185, 0.25);
+    border-top: 1px solid rgba(103, 143, 185, 0.15);
   }
 
   ._3cgGL ._6Jl0_ {
@@ -17653,7 +17640,7 @@ div._3bqe5 > div {
 
 ._2xfQr {
   margin: 0 22px;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -17793,7 +17780,7 @@ div._3bqe5 > div {
 ._3QTtA {
   width: 100%;
   height: 100%;
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
 }
 
 .EYkMg {
@@ -17834,7 +17821,7 @@ div._3bqe5 > div {
 
 .mXKwM {
   width: 100%;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   overflow: hidden;
   height: 0;
   padding-top: 56.25%;
@@ -17938,7 +17925,7 @@ div._3bqe5 > div {
 }
 
 ._3ev6- {
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
 }
 
 ._3ev6- svg {
@@ -18126,7 +18113,7 @@ div._3bqe5 > div {
 ._14tWP {
   font-size: 55px;
   line-height: 55px;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   margin: 64px 0;
 }
 
@@ -18380,7 +18367,7 @@ div._3bqe5 > div {
     height: 405px;
     padding-left: 66px;
     padding-right: 40px;
-    border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+    border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   }
 }
 
@@ -18450,7 +18437,7 @@ div._3bqe5 > div {
 }
 
 ._1dz7N {
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 846px) {
@@ -18527,7 +18514,7 @@ div._3bqe5 > div {
 }
 
 ._2-lPc {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -18554,7 +18541,7 @@ div._3bqe5 > div {
 }
 
 ._1dVfa svg path {
-  stroke: rgba(103, 143, 185, 0.25);
+  stroke: rgba(103, 143, 185, 0.15);
 }
 
 ._1dVfa ._1dJLC {
@@ -18579,12 +18566,12 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border: 4px solid rgba(103, 143, 185, 0.25);
+  border: 4px solid rgba(103, 143, 185, 0.15);
   margin: 0 22px;
   padding: 22px 0;
   text-align: center;
   cursor: pointer;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
   width: 100%;
 }
 
@@ -18615,7 +18602,7 @@ div._3bqe5 > div {
 ._341l1 {
   font-size: 14px;
   line-height: 18px;
-  border: 1px solid rgba(103, 143, 185, 0.25);
+  border: 1px solid rgba(103, 143, 185, 0.15);
   -ms-flex: 1;
   flex: 1;
   -ms-flex-pack: center;
@@ -18765,7 +18752,7 @@ div._3bqe5 > div {
 
 ._1i-5m {
   padding: 18px 14px;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
   font-size: 14px;
 }
 
@@ -18779,7 +18766,7 @@ div._3bqe5 > div {
 
 ._23-G3 {
   padding: 14px 0;
-  border-top: 1px solid rgba(103, 143, 185, 0.25);
+  border-top: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 664px) {
@@ -18909,7 +18896,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   padding: 14px 0;
   margin: 0 14px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   cursor: pointer;
   font-size: 12px;
   line-height: 14px;
@@ -19131,7 +19118,7 @@ nav._1R2o8 {
 
 ._2CSDm {
   font-weight: 700;
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._37mnt {
@@ -19362,7 +19349,7 @@ nav._1R2o8 {
   bottom: 0;
   left: 0;
   right: 0;
-  box-shadow: inset 0 -140px 80px -40px rgba(103, 143, 185, 0.25);
+  box-shadow: inset 0 -140px 80px -40px rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 508px) {
@@ -19582,7 +19569,7 @@ nav._1R2o8 {
   text-transform: uppercase;
   padding: 14px 0;
   margin: 0 14px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   cursor: pointer;
   font-size: 12px;
   line-height: 14px;
@@ -19673,7 +19660,7 @@ nav._1R2o8 {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: rgba(103, 143, 185, 0.25);
+    background-color: rgba(103, 143, 185, 0.15);
     height: 35px;
     z-index: 2;
   }
@@ -19793,7 +19780,7 @@ nav._1R2o8 {
 
 .DZpu2 {
   padding: 0 14px;
-  border-bottom: 1px solid rgba(103, 143, 185, 0.25);
+  border-bottom: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 @media screen and (max-width: 664px) {
@@ -19819,7 +19806,7 @@ nav._1R2o8 {
   -ms-flex-align: center;
   align-items: center;
   padding: 0 14px;
-  border-left: 1px solid rgba(103, 143, 185, 0.25);
+  border-left: 1px solid rgba(103, 143, 185, 0.15);
 }
 
 .nXDDw:first-child {
@@ -19961,7 +19948,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 664px) {
   ._1xaT_ {
-    color: rgba(103, 143, 185, 0.25);
+    color: rgba(103, 143, 185, 0.15);
     font-size: 22px;
     line-height: 22px;
     padding-bottom: 0;
@@ -20099,7 +20086,7 @@ nav._1R2o8 {
   left: 0;
   right: 0;
   background: linear-gradient(to right, rgba(0, 149, 208, 0.75), rgba(72, 192, 74, 0.75));
-  box-shadow: 0 1px 8px rgba(103, 143, 185, 0.25);
+  box-shadow: 0 1px 8px rgba(103, 143, 185, 0.15);
   z-index: 10;
   overflow: hidden;
 }
@@ -20231,7 +20218,7 @@ nav._1R2o8 {
 }
 
 ._3TznZ {
-  color: rgba(103, 143, 185, 0.25);
+  color: rgba(103, 143, 185, 0.15);
 }
 
 ._2sG6-,
@@ -20324,7 +20311,7 @@ nav._1R2o8 {
 }
 
 ._1MM_D {
-  background-color: rgba(103, 143, 185, 0.25);
+  background-color: rgba(103, 143, 185, 0.15);
 }
 
 ._1p_jQ {
@@ -20458,7 +20445,7 @@ nav._1R2o8 {
 }
 
 ._1fDUg {
-  background: rgba(103, 143, 185, 0.25);
+  background: rgba(103, 143, 185, 0.15);
 }
 
 ._13Js3 {

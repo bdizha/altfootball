@@ -82,26 +82,7 @@
                     </div>
                     <div class="vowHC _1KXFt">
                         <div class="_23p6h">
-                            <picture>
-                                <source
-                                        media="(min-width: 1000px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=1236&h=695&fit=crop&crop=faces&q=100">
-                                <source
-                                        media="(min-width: 900px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop&crop=faces&q=100">
-                                <source
-                                        media="(min-width: 650px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=900&h=580&fit=crop&crop=faces&q=100">
-                                <source
-                                        media="(min-width: 465px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=650&h=480&fit=crop&crop=faces&q=100">
-                                <source
-                                        media="(min-width: 260px)"
-                                        srcset="https://altfootball.imgix.net{{ $post->image }}?w=360&h=240&fit=crop&crop=faces&q=100">
-                                <img
-                                        src="https://altfootball.imgix.net{{ $post->image }}?w=1000&h=695&fit=crop&crop=faces&q=100"
-                                        alt="a cute kitten">
-                            </picture>
+                            <img src="http://www.altfootball.com/images/{{ $post->image }}" alt="{{ $post->title }}" />
                         </div>
                         <p class="_25BgE">
                             @if(!empty($post->credit))
