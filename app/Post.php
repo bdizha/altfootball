@@ -173,7 +173,7 @@ class Post extends Model
         if (empty($this->small_image) || $this->needsResizing($this->small_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $params = array("w" => 384, "h" => 310, "crop" => "faces", "fit" => "crop");
+                $params = array("w" => 384, "h" => 310, "crop" => "faces,edges", "fit" => "crop", "auto" => "compress", "fm" => "pjpg");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->small_image = $url;
@@ -190,7 +190,7 @@ class Post extends Model
         if (empty($this->thumb_image) || $this->needsResizing($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $params = array("w" => 100, "h" => 100, "crop" => "faces", "fit" => "crop");
+                $params = array("w" => 100, "h" => 100, "crop" => "faces,edges", "fit" => "crop", "auto" => "compress", "fm" => "pjpg");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->thumb_image = $url;
@@ -207,7 +207,7 @@ class Post extends Model
         if (empty($this->big_image) || $this->needsResizing($this->big_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $params = array("w" => 1000, "h" => 795, "crop" => "faces", "fit" => "crop");
+                $params = array("w" => 1000, "h" => 795, "crop" => "faces,edges", "fit" => "crop", "auto" => "compress", "fm" => "pjpg");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->big_image = $url;
