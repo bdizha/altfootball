@@ -10333,6 +10333,21 @@ div._3bqe5 > div {
   letter-spacing: -.003em;
 }
 
+._1Q_Pu p .capital-letter {
+  --x-height-multiplier: 0.342;
+  --baseline-multiplier: 0.22;
+  letter-spacing: -.02em;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0;
+  font-size: 72px;
+  padding-top: 6px;
+  margin-right: 7px;
+  letter-spacing: -.03em;
+  line-height: 0.83;
+  margin-bottom: -0.08em;
+}
+
 ._1Q_Pu p img {
   width: 100%;
   max-width: 696px;

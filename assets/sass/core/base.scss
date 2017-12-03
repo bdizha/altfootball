@@ -9599,6 +9599,20 @@ div._3bqe5 {
     font-size: 21px;
     line-height: 28px;
     letter-spacing: -.003em;
+    .capital-letter{
+      --x-height-multiplier: 0.342;
+      --baseline-multiplier: 0.22;
+      letter-spacing: -.02em;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 0;
+      font-size: 72px;
+      padding-top: 6px;
+      margin-right: 7px;
+      letter-spacing: -.03em;
+      line-height: 0.83;
+      margin-bottom: -0.08em;
+    }
     img {
       width: 100%;
       max-width: 696px;
