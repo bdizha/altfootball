@@ -3779,7 +3779,7 @@ form ._2Kdch {
 .p32Iu.active ._3DF9,
 .p32Iu:hover ._3DF9 {
   display: block;
-  background: rgba(59, 189, 76, 0.9);
+  background: linear-gradient(to right, rgba(72, 192, 74, 0.85), rgba(0, 149, 208, 0.85), rgba(0, 8, 39, 0.85));
 }
 
 .p32Iu.active {
@@ -5699,6 +5699,10 @@ dribbles ._35GH ._34IO {
 
 ._2uakq ._1KQuz {
   background: linear-gradient(to right, rgba(0, 8, 39, 0.85), rgba(0, 149, 208, 0.85), rgba(72, 192, 74, 0.85));
+}
+
+._2uakq:hover ._1KQuz {
+  background: linear-gradient(to right, rgba(72, 192, 74, 0.85), rgba(0, 149, 208, 0.85), rgba(0, 8, 39, 0.85));
 }
 
 ._2uakq ._12Iv2 {
