@@ -80,29 +80,19 @@
                             </div>
                         </div>
                     </div>
-                    <div class="vowHC _1KXFt">
-                        <div class="_23p6h">
-                            <img src="http://www.altfootball.com/images/{{ $post->image }}" alt="{{ $post->title }}" />
+                    @if(!empty($post->credit))
+                    <div class="_3tkuf _23YI">
+                        <div class="_1drt2 _9fE1R NasRD">
+                            <div>
+                                <h2>CREDIT</h2>
+                            </div>
+                            <a class="_3OD4J _1yV5F _1MC-v _1h78h" target="_blank" href="{{ $post->external_url }}">{{ $post->url_x }}</a>
                         </div>
-                        <p class="_25BgE">
-                            @if(!empty($post->credit))
-                                <span class="_2cAm4"><span>CREDIT:</span> <a target="_blank" href="{{ $post->external_url }}">{{ $post->url_x }}</a></span>
-                            @endif
-                        </p>
                     </div>
+                    @endif
                 </div>
                 <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
                     <div class="_1Q_Pu">
-                        <div class="_3tkuf">
-                            <div class="_1drt2 _9fE1R NasRD">
-                                <div>
-                                    <h2>LIKE {{ $post->fanbase->name }}?</h2>
-                                </div>
-                                <div class="_3OD4J _1yV5F _1MC-v _1h78h">
-                                    JOIN ALTFOOTBALL
-                                </div>
-                            </div>
-                        </div>
                         {!! $post->getHtmlContent() !!}
                     </div>
                     <div class="_3tkuf _23YI">
@@ -146,6 +136,57 @@
                     <div class="_2H69I">YOU MIGHT ALSO LIKE_</div>
                     <div class="_9T4R2">
                         @foreach($siblingPosts as $post)
+                            <div class="_1XEbE">
+                                <div class="_1DRo">
+                                    <div class="_38L6D" style="padding-bottom: 50%;">
+                                        <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_x }}" class="_214e9 b00q8">
+                                    </div>
+                                </div>
+                                <div class="_1wjeD">
+                                    <div class="grsTy">{{ $post->title }}</div>
+                                </div>
+                                <a class="ZE8ka"
+                                   href="/p/{{ $post->slug }}"></a>
+                                <div class="zFsq3 _1iE2V _2ilqp">
+                                    <a class="" href="/u/{{ $post->user->slug }}">
+                                        <div class="_25jNX _3Y-3q" style="width: 40px; height: 40px;">
+                                            <div class="N3r_f">
+                                                <div class="_38L6D" style="padding-bottom: 100%;">
+                                                    <img alt="{{ $post->user->name  }}" role="presentation" src="{{ $post->user->thumb_x }}" class="_214e9 b00q8">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="_2bDpH">
+                                        <p class="_2nWjU _31dto KTIgi">
+                                            <a class="_2XyXQ" href="/u/{{ $post->user->slug }}">
+                                                {{ $post->user->name }}
+                                            </a>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                 viewBox="0 0 18 18"
+                                                 class="_1z7Hy _1NCGm RyyhO">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                                    <path fill="#FFF"
+                                                          d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                                </g>
+                                            </svg>
+                                        </p>
+                                        <div class="_1HPk2">
+                                            <a class="_25LcG" href="/f/{{ $post->fanbase->slug }}">
+                                                {{ $post->fanbase->name }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+                <div>
+                    <div class="_2H69I">FROM THIS FANBASE_</div>
+                    <div class="_9T4R2">
+                        @foreach($trendingPosts as $post)
                             <div class="_1XEbE">
                                 <div class="_1DRo">
                                     <div class="_38L6D" style="padding-bottom: 50%;">

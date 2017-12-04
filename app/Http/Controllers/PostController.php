@@ -43,12 +43,15 @@ class PostController extends Controller
         $fanbases = [];
         $post = Post::where('slug', '=', $slug)->first();
 
-        $trendingPosts = Post::where("id", "<", $post->id)
-            ->where('created_at', '>=', Carbon::now()->subWeek(1))
-            ->orderBy("created_at", "DESC")->take(4)->get();
+        $trendingPosts = Post::whereHas('fanbases', function ($query) use ($post) {
+            $query->where('fanbases.id', $post->fanbase->id);
+        })
+            ->where("id", "!=", $post->fanbase->id)
+            ->orderBy("posts.created_at", "DESC")
+            ->take(3)
+            ->get();
 
-        $siblingPosts = Post::where("id", "<", $post->id)
-            ->inRandomOrder()
+        $siblingPosts = Post::where("id", "<", $post->id - 3)
             ->orderBy("created_at", "DESC")->take(3)->get();
 
         if ($post->fanbase) {

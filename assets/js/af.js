@@ -90,7 +90,14 @@ $(function () {
     $('.owl-three').owlCarousel({
         loop: false,
         nav: true,
-        autoWidth: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            1000:{
+                items: 3
+            }
+        },
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });
