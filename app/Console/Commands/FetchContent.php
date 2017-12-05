@@ -56,6 +56,13 @@ class FetchContent extends Command
      */
     public function handle()
     {
+
+        try {
+            dispatch(new Football365());
+        } catch (Exception $e) {
+
+        }
+
         try {
             dispatch(new ManUJob());
         } catch (Exception $e) {
@@ -64,13 +71,6 @@ class FetchContent extends Command
 
         try {
             dispatch(new NewsBreatheChelseaJob());
-        } catch (Exception $e) {
-
-        }
-
-
-        try {
-            dispatch(new Football365());
         } catch (Exception $e) {
 
         }

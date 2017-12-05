@@ -80,6 +80,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="_23p6h">
+                        <img src="/images/{{ $post->image }}" alt="{{ $post->title }}" />
+                    </div>
                     @if(!empty($post->credit))
                     <div class="_3tkuf _23YI">
                         <div class="_1drt2 _9fE1R NasRD">

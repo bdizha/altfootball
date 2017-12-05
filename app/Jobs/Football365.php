@@ -89,7 +89,7 @@ class Football365 extends NewsJob
 
                             $summary = $data->filter('meta[property="og:description"]')->attr('content');
 
-                            $post['image'] = $data->filter('meta[name="twitter:image"]')->attr('content');
+                            $post['image'] = $data->filter('meta[property="og:image"]')->attr('content');
                             $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
                             $post['date'] = $data->filter('meta[property="article:published_time"]')->attr('content');
 
