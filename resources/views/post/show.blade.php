@@ -100,9 +100,9 @@
                             <div>
                                 <h2>Never miss a post</h2>
                             </div>
-                            <div class="_3OD4J _1yV5F _1MC-v _1h78h">
+                            <a class="_3OD4J _1yV5F _1MC-v _1h78h" href="/f/{{ $post->fanbase->slug }}">
                                Join {{ $post->fanbase->name }}
-                            </div>
+                            </a>
                         </div>
                     </div>
                 </div>

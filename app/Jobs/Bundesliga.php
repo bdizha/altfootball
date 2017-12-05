@@ -7,6 +7,7 @@ use App\Post;
 use App\User;
 use Carbon\Carbon;
 use Goutte\Client;
+use Mockery\Exception;
 use Symfony\Component\DomCrawler\Crawler;
 
 class Bundesliga extends NewsJob
@@ -122,13 +123,18 @@ class Bundesliga extends NewsJob
                             echo "updated::: {$p->slug} \n";
                         }
 
-                        FanbasePost::where("post_id", $p->id)
-                            ->delete();
+                        try {
+                            FanbasePost::where("post_id", $p->id)
+                                ->delete();
 
-                        FanbasePost::create([
-                            'post_id' => $p->id,
-                            'fanbase_id' => $this->fanbase_id
-                        ]);
+                            FanbasePost::create([
+                                'post_id' => $p->id,
+                                'fanbase_id' => $this->fanbase_id
+                            ]);
+
+                        } catch (Exception $e) {
+
+                        }
                     }
                 }
             }

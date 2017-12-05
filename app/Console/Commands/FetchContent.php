@@ -2,24 +2,24 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\ArsenalFC;
 use App\Jobs\Barcelona;
 use App\Jobs\BarcelonaFC;
 use App\Jobs\Bundesliga;
-use App\Jobs\LaLigaJob;
-use App\Jobs\NewsGoalJob;
-use App\Jobs\News90MinJob;
-use App\Jobs\NewsSportslensJob;
-use App\Jobs\NewsBreatheChelseaJob;
 use App\Jobs\FCBayernJob;
-use App\Jobs\ArsenalFC;
-use App\Jobs\ManUJob;
-use App\Jobs\PSG;
-use App\Jobs\LiverpoolJob;
-use App\Jobs\RealMadridJob;
-use App\Jobs\PremierLeagueJob;
-use App\Jobs\SearieAJob;
-use App\Jobs\JuventusJob;
 use App\Jobs\Football365;
+use App\Jobs\JuventusJob;
+use App\Jobs\LaLigaJob;
+use App\Jobs\LiverpoolJob;
+use App\Jobs\ManUJob;
+use App\Jobs\News90MinJob;
+use App\Jobs\NewsBreatheChelseaJob;
+use App\Jobs\NewsGoalJob;
+use App\Jobs\NewsSportslensJob;
+use App\Jobs\PremierLeagueJob;
+use App\Jobs\PSG;
+use App\Jobs\RealMadridJob;
+use App\Jobs\SearieAJob;
 use App\Jobs\SpanishFootball;
 use Illuminate\Console\Command;
 
@@ -56,28 +56,129 @@ class FetchContent extends Command
      */
     public function handle()
     {
-        dispatch(new Football365());
-        dispatch(new Bundesliga());
-        dispatch(new Barcelona());
-        dispatch(new BarcelonaFC());
-        dispatch(new SpanishFootball());
-        dispatch(new SearieAJob());
-        dispatch(new JuventusJob());
-        dispatch(new NewsBreatheChelseaJob());
-        dispatch(new NewsGoalJob());
-        dispatch(new News90MinJob());
-        dispatch(new PremierLeagueJob());
-        dispatch(new LaLigaJob());
-        dispatch(new ManUJob());
-        dispatch(new LiverpoolJob());
-        dispatch(new RealMadridJob());
-        dispatch(new PSG());
-        dispatch(new ArsenalFC());
-        dispatch(new NewsBreatheChelseaJob());
-        dispatch(new FCBayernJob());
-        dispatch(new NewsSportslensJob());
+        try {
+            dispatch(new ManUJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new NewsBreatheChelseaJob());
+        } catch (Exception $e) {
+
+        }
+
+
+        try {
+            dispatch(new Football365());
+        } catch (Exception $e) {
+
+        }
+
+
+        try {
+            dispatch(new Bundesliga());
+        } catch (Exception $e) {
+
+        }
+
+
+        try {
+            dispatch(new Barcelona());
+        } catch (Exception $e) {
+
+        }
+
+
+        try {
+            dispatch(new BarcelonaFC());
+        } catch (Exception $e) {
+
+        }
+
+
+        try {
+            dispatch(new SpanishFootball());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new SearieAJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new JuventusJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new NewsGoalJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new News90MinJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new PremierLeagueJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new LaLigaJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new LiverpoolJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new RealMadridJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new PSG());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new ArsenalFC());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new NewsBreatheChelseaJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new FCBayernJob());
+        } catch (Exception $e) {
+
+        }
+
+        try {
+            dispatch(new NewsSportslensJob());
+        } catch (Exception $e) {
+
+        }
     }
 }
-
-
-//

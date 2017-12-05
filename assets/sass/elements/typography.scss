@@ -9,7 +9,7 @@ h3 { font-size: 28px; }
 h4 { font-size: 20px; }
 h5 { font-size: 16px; }
 h6 {
-	font-size: 12px;
+	font-size: 14px;
 	letter-spacing: .15em;
 	text-transform: uppercase;
 	em {
@@ -194,7 +194,7 @@ article.content {
 .meta {
 	color: $color_light;
 	font-family: $font_sans;
-	font-size: 12px;
+	font-size: 14px;
 	margin: 0 0 ($gap * 2);
 
 	a {
