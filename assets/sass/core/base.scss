@@ -853,6 +853,7 @@ form {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   -webkit-transform-origin: 25% 3%;
   -moz-transform-origin: 25% 3%;
   -ms-transform-origin: 25% 3%;
@@ -4663,6 +4664,9 @@ dribbles {
 
 ._1DRo {
   overflow: hidden;
+  ._214e9{
+    height: auto;
+  }
 }
 
 ._208gk {

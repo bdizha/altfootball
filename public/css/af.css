@@ -947,6 +947,7 @@ form#fanbase-form .b00q8 {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   transform-origin: 25% 3%;
   transition: all 0.4s;
   border-radius: 0;
@@ -5051,6 +5052,10 @@ dribbles ._35GH ._34IO {
 
 ._1DRo {
   overflow: hidden;
+}
+
+._1DRo ._214e9 {
+  height: auto;
 }
 
 ._208gk {
