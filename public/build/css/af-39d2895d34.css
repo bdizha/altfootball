@@ -947,7 +947,6 @@ form#fanbase-form .b00q8 {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   transform-origin: 25% 3%;
   transition: all 0.4s;
   border-radius: 0;
@@ -5723,7 +5722,6 @@ dribbles ._35GH ._34IO {
 
 ._2uakq ._1QEWe {
   font-size: 28px;
-  line-height: 1.4;
 }
 
 @media screen and (max-width: 1236px) {

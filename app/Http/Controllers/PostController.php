@@ -56,6 +56,7 @@ class PostController extends Controller
 
         if ($post->fanbase) {
             $fanbases = Fanbase::where("id", "!=", $post->fanbase->id)
+                ->inRandomOrder()
                 ->orderBy('id', 'asc')->take(3)->get();
         }
 
