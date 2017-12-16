@@ -114,6 +114,8 @@ class Barcelona extends NewsJob
                         $post['content'] = $content;
                         $post['summary'] = substr($summary, 0, 255);
 
+                        $post['title'] = $this->cleanTitle($post['title']);
+
                         if (empty($p->id)) {
                             $p = Post::create($post);
                             echo 'Inserted post: ' . $p->slug . "\n";

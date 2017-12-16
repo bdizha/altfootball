@@ -104,7 +104,7 @@ class NewsGoalJob extends NewsJob
 
                                 $post['content'] = $this->cleanHtml($content);
                                 $post['summary'] = substr($post['summary'], 0, 255);
-                                $post['title'] = str_replace("| Goal.com", "", $post['title']);
+                                $post['title'] = $this->cleanTitle($post['title']);
 
                                 if (empty($p->id)) {
                                     $p = Post::create($post);

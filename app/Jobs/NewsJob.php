@@ -3,10 +3,10 @@
 namespace App\Jobs;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Queue\SerializesModels;
-use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
 
 class NewsJob implements ShouldQueue
 {
@@ -32,11 +32,13 @@ class NewsJob implements ShouldQueue
         //
     }
 
-    public function insertTarget($html){
+    public function insertTarget($html)
+    {
         return str_replace("href=", "target='_blank' href=", $html);
     }
 
-    public function cleanUpDate($string){
+    public function cleanUpDate($string)
+    {
         $months = [
             "Jan" => "January",
             "Feb" => "February",
@@ -54,7 +56,7 @@ class NewsJob implements ShouldQueue
 
         $date = $string;
 
-        foreach($months as $abbr => $month){
+        foreach ($months as $abbr => $month) {
             $date = str_replace($month, $abbr, $date);
             $date = str_replace(",", " ", $date);
             $date = str_replace("  ", " ", $date);
@@ -63,7 +65,8 @@ class NewsJob implements ShouldQueue
         return trim($date);
     }
 
-    public function cleanHtml($html){
+    public function cleanHtml($html)
+    {
         $html = str_replace("<p><br></p>", "", $html);
         $html = str_replace("<p><br></p>", "", $html);
         $html = str_replace("<p>&nbsp;</p>", "", $html);
@@ -71,5 +74,12 @@ class NewsJob implements ShouldQueue
         $html = str_replace("style=", "data-style=", $html);
 
         return $this->insertTarget($html);
+    }
+
+    public function cleanTitle($title)
+    {
+        $titleParts = explode("|", $title);
+        $titleParts = explode(" - ", $titleParts[0]);
+        return trim($titleParts[0]);
     }
 }

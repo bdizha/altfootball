@@ -1651,10 +1651,13 @@ form {
 }
 
 ._23p6h {
+  @media screen and (max-width: 508px) {
+    margin: 0 -14px;
+  }
   img {
     width: 100%;
     display: block;
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
   ._34TYI {
     left: 0;
