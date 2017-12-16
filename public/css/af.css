@@ -2775,7 +2775,7 @@ form ._2Kdch {
   font-size: 14px;
   line-height: 18px;
   color: rgba(0, 8, 39, 0.85);
-  padding-top: 9px;
+  padding-top: 4px;
 }
 
 .KTIgi a:hover {
@@ -3755,11 +3755,7 @@ form ._2Kdch {
 
 .p32Iu ._3DF9 {
   margin: 0;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 14px 14px;
+  padding: 14px;
   color: #FFFFFF;
   border-bottom: 1px solid rgba(103, 143, 185, 0.15);
   background: #0095D0;
@@ -3769,10 +3765,11 @@ form ._2Kdch {
   /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, rgba(0, 8, 39, 0.85), rgba(0, 149, 208, 0.85), rgba(32, 198, 89, 0.85));
   /* Standard syntax */
-  border-radius: 14px;
-  margin-left: 74px;
-  margin-right: 14px;
-  margin-bottom: 14px;
+}
+
+.p32Iu ._3DF9 h2 {
+  border-left: 2px solid rgba(32, 198, 89, 0.85);
+  padding-left: 14px;
 }
 
 .p32Iu .gEjmr {
@@ -3795,6 +3792,11 @@ form ._2Kdch {
 .p32Iu:hover ._3DF9 {
   display: block;
   background: linear-gradient(to right, rgba(32, 198, 89, 0.85), rgba(0, 149, 208, 0.85), rgba(0, 8, 39, 0.85));
+}
+
+.p32Iu.active ._3DF9 h2,
+.p32Iu:hover ._3DF9 h2 {
+  border-left: 2px solid rgba(0, 8, 39, 0.85);
 }
 
 .p32Iu.active {
@@ -9318,6 +9320,7 @@ div._3bqe5 > div {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+  margin-top: -4px;
 }
 
 ._378qt {

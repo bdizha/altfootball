@@ -52,6 +52,7 @@ class PostController extends Controller
             ->get();
 
         $siblingPosts = Post::where("id", "<", $post->id - 3)
+            ->where("id", "!=", $post->fanbase->id)
             ->orderBy("created_at", "DESC")->take(3)->get();
 
         if ($post->fanbase) {
