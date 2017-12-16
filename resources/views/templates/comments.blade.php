@@ -53,7 +53,7 @@
     <!-- /ko -->
     <ul class="_1RyqV" data-bind="foreach: comments(), visible: comments().length > 0">
         <li class="gEjmr" data-bind="attr: { id: 'comment-' + id }">
-            <span class="_3HYOY"></span>
+            {{--<span class="_3HYOY"></span>--}}
             <div class="mkIC1">
                 <a class="" data-bind="attr: { href: '/u/' + user.slug }">
                     <div class="_25jNX _3kBjx">
