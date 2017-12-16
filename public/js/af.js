@@ -1019,7 +1019,7 @@ $(function () {
             //     var blue = 1 - green;
             //     var color = {
             //         blue: 'rgba(0, 149, 208, ' + blue + ')',
-            //         green: 'rgba(72, 192, 74, ' + green + ')'
+            //         green: 'rgba(32, 198, 89, ' + green + ')'
             //     };
             //
             //     var blueSpan = "<span style='background-color: " + color.blue + "'></span>";

@@ -122,9 +122,6 @@
                     </div>
                 </div>
             </div>
-            <div class="dqbp5">
-                @include('post.meta')
-            </div>
         </article>
         <div id="tackles" class="jwlFt _1zwKC">
             <div class="_1gLAu _1iE2V">
