@@ -67,11 +67,10 @@
                 <a class="_1lUs3" data-bind="attr: { href: '/u/' + user.slug }, text: user.name"></a>
                 <dribbles class="_2MdIb" params='count: dribbles_count, type_id: id, has_dribble: has_dribble, type: "comment"'></dribbles>
             </div>
-            <p class="_2OqId">
-                <span>
-                    <span data-bind="html: html_content"></span>
-                </span>
-            </p>
+            <div class="_2OqId">
+                <div class="_FT34Y"></div>
+                <div class="_KL89E" data-bind="html: html_content"></div>
+            </div>
             <div class="W6jQs" data-bind="visible: image">
                 <div class="_1KXFt">
                     <div class="_3WIsa YRuUa _242Fk">
@@ -79,7 +78,7 @@
                     </div>
                 </div>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="_2PRiK">
-                    <path fill="#FFF" fill-rule="evenodd" d="M5.52 6.58L1.5 2.56v.66a.75.75 0 1 1-1.5 0V.8C0 .4.33.05.74.04L3.2 0a.75.75 0 1 1 .03 1.5l-.67.01 4.01 4.01a.75.75 0 0 1-1.06 1.06m7.1 0l4.02-4.02v.66a.75.75 0 1 0 1.5 0V.8a.75.75 0 0 0-.74-.75L14.93 0a.75.75 0 1 0-.03 1.5l.67.01-4.01 4.01a.75.75 0 0 0 1.06 1.06m-7.1 5.1L1.5 15.7v-.66a.75.75 0 1 0-1.5 0v2.43c0 .41.33.75.74.75l2.47.04a.75.75 0 1 0 .03-1.5h-.67l4.01-4.02a.75.75 0 0 0-1.06-1.06m7.1 0l4.02 4.02v-.66a.75.75 0 1 1 1.5 0v2.43c0 .41-.33.75-.74.75l-2.47.04a.75.75 0 1 1-.03-1.5h.67l-4.01-4.02a.75.75 0 0 1 1.06-1.06"></path>
+                    <path fill="rgba(255, 255, 255, 1)" fill-rule="evenodd" d="M5.52 6.58L1.5 2.56v.66a.75.75 0 1 1-1.5 0V.8C0 .4.33.05.74.04L3.2 0a.75.75 0 1 1 .03 1.5l-.67.01 4.01 4.01a.75.75 0 0 1-1.06 1.06m7.1 0l4.02-4.02v.66a.75.75 0 1 0 1.5 0V.8a.75.75 0 0 0-.74-.75L14.93 0a.75.75 0 1 0-.03 1.5l.67.01-4.01 4.01a.75.75 0 0 0 1.06 1.06m-7.1 5.1L1.5 15.7v-.66a.75.75 0 1 0-1.5 0v2.43c0 .41.33.75.74.75l2.47.04a.75.75 0 1 0 .03-1.5h-.67l4.01-4.02a.75.75 0 0 0-1.06-1.06m7.1 0l4.02 4.02v-.66a.75.75 0 1 1 1.5 0v2.43c0 .41-.33.75-.74.75l-2.47.04a.75.75 0 1 1-.03-1.5h.67l-4.01-4.02a.75.75 0 0 1 1.06-1.06"></path>
                 </svg>
             </div>
             <div class="BNBMP">

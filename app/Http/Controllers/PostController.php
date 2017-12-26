@@ -24,7 +24,7 @@ class PostController extends Controller
         $query = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
             ->orderBy('posts.created_at', 'desc')
-            ->offset(($data['page'] * 2))
+            ->offset(($data['page'] * 2) + 1)
             ->limit(2);
 
         if (!empty($data['fanbase_id'])) {

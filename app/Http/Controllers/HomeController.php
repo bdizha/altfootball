@@ -40,10 +40,17 @@ class HomeController extends Controller
             ->take(4)
             ->get();
 
+        $post = Post::with('user')
+            ->where('created_at', "<=", Carbon::now())
+            ->orderBy('created_at', 'desc')
+            ->limit(1)
+            ->first();
+
         return view('welcome', [
             'fanbases' => $fanbases,
             'popularPosts' => $popularPosts,
             'tags' => $tags,
+            'post' => $post,
             'fans' => $fans,
             'user' => $this->getUserArray(),
             'meta' => $this->getMeta()

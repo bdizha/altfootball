@@ -40,7 +40,15 @@
                 </div>
             </div>
             @if(Auth::guard()->check() && Auth::user()->is_active)
-                <div class="_1-0JF">
+                <a class="sc-jwKygS fibZwm" href="/p/{{ $post->slug }}" style="background-image: url(/images/{{ $post->image }});">
+                    <h1 class="sc-btzYZH cBqIJu">
+                        {{ str_limit($post->title, 45) }}
+                        <div class="sc-lhVmIH bfnJOq">
+                            <button class="_3OD4J _1yV5F _1MC-v _1h78h bEORjC">READ NOW</button>
+                        </div>
+                    </h1>
+                </a>
+                <div class="_1-0JF" style="display: none;">
                     <div class="_2jNUh _8kqds"></div>
                     <div class="_2_Chk">
                         <section class="_116es _17c3x">

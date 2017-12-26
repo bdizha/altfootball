@@ -33,8 +33,8 @@
                                 {{ $fanbase->name }}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" class="_1z7Hy">
                                     <g fill="none" fill-rule="evenodd">
-                                        <path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                        <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                        <path fill="rgba(32, 198, 89, 1)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                        <path fill="rgba(255, 255, 255, 1)" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                                     </g>
                                 </svg>
                             </div>
@@ -42,8 +42,8 @@
                                 {{ $fanbase->user->name }}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" class="_1z7Hy">
                                     <g fill="none" fill-rule="evenodd">
-                                        <path fill="#5B9EEC" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                        <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                        <path fill="rgba(32, 198, 89, 1)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                        <path fill="rgba(255, 255, 255, 1)" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                                     </g>
                                 </svg>
                             </a>
@@ -79,7 +79,7 @@
                         <button class="O6y0Q _1h78h _8eFus" data-bind="click: openFanbaseForm">
                             Edit Fanbase
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18">
-                                <g fill="#FFF" fill-rule="evenodd">
+                                <g fill="rgba(255, 255, 255, 1)" fill-rule="evenodd">
                                     <path d="M15.1 4.95L12.96 2.8l1.01-1 2.14 2.13-1 1zm-9.13 7l.38-2.53.09-.09 2.14 2.14-.09.1-2.52.38zm3.32-1.18L7.15 8.63l5.1-5.11 2.15 2.14-5.11 5.1zM17.7 3.4L14.5.21a.77.77 0 0 0-1.06 0L5.12 8.54a.75.75 0 0 0-.21.41l-.58 3.78a.75.75 0 0 0 .86.85l3.77-.57c.16-.03.3-.1.42-.21l8.32-8.33c.3-.3.3-.77 0-1.06z"></path>
                                     <path d="M13.69 11.38a.75.75 0 0 0-.75.75v4.36H1.5V5.06h4.29a.75.75 0 0 0 0-1.5H.75A.75.75 0 0 0 0 4.3v12.93c0 .42.34.75.75.75h12.94c.41 0 .75-.33.75-.75v-5.1a.75.75 0 0 0-.75-.76"></path>
                                 </g>
@@ -96,7 +96,7 @@
                              class="_1z7Hy _8SyER">
                             <g fill="none" fill-rule="evenodd">
                                 <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                <path fill="#FFF" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
+                                <path fill="rgba(255, 255, 255, 1)" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
                                     ></path>
                             </g>
                         </svg>
@@ -134,7 +134,7 @@
                                         <g fill="none" fill-rule="evenodd">
                                             <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
                                                 ></path>
-                                            <path fill="#FFF"
+                                            <path fill="rgba(255, 255, 255, 1)"
                                                   d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
                                                 ></path>
                                         </g>
@@ -211,7 +211,7 @@
                                         <g fill="none" fill-rule="evenodd">
                                             <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
                                                 ></path>
-                                            <path fill="#FFF"
+                                            <path fill="rgba(255, 255, 255, 1)"
                                                   d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
                                                 ></path>
                                         </g>
@@ -224,7 +224,7 @@
                                         <g fill="none" fill-rule="evenodd">
                                             <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"
                                                 ></path>
-                                            <path fill="#FFF"
+                                            <path fill="rgba(255, 255, 255, 1)"
                                                   d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"
                                                 ></path>
                                         </g>
@@ -244,7 +244,7 @@
                         <button class="_2qvTq _1MC-v _1h78h _2yZ_n _1odcZ">
                             <span>Join fanbase</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 24 24">
-                                <path fill="#FFF" fill-rule="evenodd" d="M 11 5 L 11 11 L 5 11 L 5 13 L 11 13 L 11 19 L 13 19 L 13 13 L 19 13 L 19 11 L 13 11 L 13 5 Z "></path>
+                                <path fill="rgba(255, 255, 255, 1)" fill-rule="evenodd" d="M 11 5 L 11 11 L 5 11 L 5 13 L 11 13 L 11 19 L 13 19 L 13 13 L 19 13 L 19 11 L 13 11 L 13 5 Z "></path>
                             </svg>
                         </button>
                     </div>
@@ -267,7 +267,7 @@
                                 <svg width="38" height="38" viewBox="0 0 38 38">
                                     <g fill="none" fill-rule="evenodd">
                                         <path fill="#da1a35" d="M18.62 37.24a18.62 18.62 0 1 0 0-37.24 18.62 18.62 0 0 0 0 37.24z"></path>
-                                        <path transform="scale(0.3) translate(22, 22)" fill="#FFF" d="M39 1C18 1 1 18 1 39s17 38 38 38 38-17 38-38S60 1 39 1zm32.6 28.6l-4.7 8.1h-13l-6.3-10.9 7-12.2h7.8c4.3 4.1 7.5 9.2 9.2 15zM23.2 63.4h-7.7c-4.2-4.1-7.4-9.2-9.1-15l4.6-8h13.1l6.2 10.8-7.1 12.2zm-7.7-48.8h7.7l7.2 12.3-6.2 10.8h-13l-4.7-8.1c1.6-5.8 4.8-11 9-15zm32.9-8.2l3.9 6.8-7.1 12.2H32.7l-7.1-12.2 3.9-6.8c3-.9 6.2-1.4 9.5-1.4 3.3.1 6.4.6 9.4 1.4zM29.5 71.5l-3.9-6.7 7.1-12.2h12.7l7.1 12.2-3.9 6.7c-3 .9-6.2 1.4-9.6 1.4-3.3 0-6.5-.5-9.5-1.4zm33-8.1h-7.7l-7.1-12.3 6.2-10.8H67l4.6 8c-1.7 5.9-4.9 11.1-9.1 15.1z"></path>
+                                        <path transform="scale(0.3) translate(22, 22)" fill="rgba(255, 255, 255, 1)" d="M39 1C18 1 1 18 1 39s17 38 38 38 38-17 38-38S60 1 39 1zm32.6 28.6l-4.7 8.1h-13l-6.3-10.9 7-12.2h7.8c4.3 4.1 7.5 9.2 9.2 15zM23.2 63.4h-7.7c-4.2-4.1-7.4-9.2-9.1-15l4.6-8h13.1l6.2 10.8-7.1 12.2zm-7.7-48.8h7.7l7.2 12.3-6.2 10.8h-13l-4.7-8.1c1.6-5.8 4.8-11 9-15zm32.9-8.2l3.9 6.8-7.1 12.2H32.7l-7.1-12.2 3.9-6.8c3-.9 6.2-1.4 9.5-1.4 3.3.1 6.4.6 9.4 1.4zM29.5 71.5l-3.9-6.7 7.1-12.2h12.7l7.1 12.2-3.9 6.7c-3 .9-6.2 1.4-9.6 1.4-3.3 0-6.5-.5-9.5-1.4zm33-8.1h-7.7l-7.1-12.3 6.2-10.8H67l4.6 8c-1.7 5.9-4.9 11.1-9.1 15.1z"></path>
                                     </g>
                                 </svg>
                             </div>

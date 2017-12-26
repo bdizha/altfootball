@@ -134,7 +134,7 @@
                                                                                                              fill-rule="evenodd"><path
                                                                             fill="rgba(103, 143, 185, 0.95)"
                                                                             d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
-                                                                            fill="#FFF"
+                                                                            fill="rgba(255, 255, 255, 1)"
                                                                             d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
                                                         </span>
                                                     </h3>
