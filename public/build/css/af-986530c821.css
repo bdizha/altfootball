@@ -314,12 +314,12 @@ h2 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
 p span {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -384,7 +384,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 7px 0 7px 14px;
+  padding: 7px 0 7px 16px;
 }
 
 ._1iE2V:after {
@@ -418,10 +418,10 @@ button {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   text-align: left;
-  padding: 22px 40px;
+  padding: 22px 32px;
   background: linear-gradient(to right, rgba(0, 8, 39, 0.95), rgba(0, 149, 208, 0.95), rgba(32, 198, 89, 0.95));
   color: #FFFFFF;
   cursor: pointer;
@@ -448,12 +448,12 @@ button {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   background: #0095D0;
   color: #FFFFFF;
   cursor: pointer;
-  padding: 14px 28px;
+  padding: 16px 28px;
   transition: all 0.1s linear;
   width: 100%;
 }
@@ -514,13 +514,13 @@ button {
 ._2CyDP {
   display: block;
   resize: none;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
 ._2CyDP input,
 ._2CyDP textarea {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -575,7 +575,7 @@ button {
 
 ._3nouD {
   opacity: 0;
-  padding: 44px 40px;
+  padding: 44px 32px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -607,9 +607,9 @@ button {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   border: 1px solid rgba(0, 149, 208, 0.15);
-  padding: 14px;
+  padding: 16px;
   -ms-flex: 0 0 196px;
   flex: 0 0 196px;
   text-align: left;
@@ -713,8 +713,8 @@ button {
 }
 
 .rTjpd {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   background: #FFFFFF;
   box-shadow: 0 -9px 18px 0 rgba(32, 198, 89, 0.15);
   position: absolute;
@@ -775,7 +775,7 @@ button {
 ._35Phm {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: none;
 }
@@ -903,18 +903,18 @@ button {
   font-weight: 400;
   display: block;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 846px) {
   ._1oI4U {
-    padding: 0 14px;
+    padding: 0 16px;
   }
 }
 
 ._1z7Hy {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   margin-left: 3px;
 }
 
@@ -981,7 +981,7 @@ form#fanbase-form .b00q8 {
   max-width: 508px;
   min-height: 100vh;
   margin: 0 auto;
-  padding: 18px 14px;
+  padding: 18px 16px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -999,8 +999,8 @@ form#fanbase-form .b00q8 {
 }
 
 ._33X15 {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   margin-top: -18px;
   margin-bottom: 18px;
 }
@@ -1047,8 +1047,8 @@ form#fanbase-form .b00q8 {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._1ozur {
@@ -1092,7 +1092,7 @@ form#fanbase-form .b00q8 {
 }
 
 ._2CyDP._3-JIN {
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 }
 
 ._2CyDP._3-JIN ._2Kdch ._1u7op {
@@ -1152,7 +1152,7 @@ form#fanbase-form .b00q8 {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   margin: 9px 0;
   padding: 0 18px;
 }
@@ -1177,11 +1177,11 @@ form ._2Kdch {
 
 ._1AUhk,
 ._1u7op {
-  line-height: 14px;
+  line-height: 16px;
 }
 
 ._1AUhk {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   color: #141C3E;
   text-transform: none;
@@ -1299,8 +1299,8 @@ form ._2Kdch {
 
 @media screen and (max-width: 846px) {
   ._1CeIM {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -1326,8 +1326,8 @@ form ._2Kdch {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._3z2sH {
@@ -1358,8 +1358,8 @@ form ._2Kdch {
   padding: 7px 7px 7px 22px;
   -ms-flex-order: 4;
   order: 4;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 846px) {
@@ -1433,8 +1433,8 @@ form ._2Kdch {
 
 @media screen and (max-width: 846px) {
   ._1jbho {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1496,7 +1496,7 @@ form ._2Kdch {
 
 @media screen and (max-width: 508px) {
   ._32k0z {
-    bottom: 14px;
+    bottom: 16px;
     right: -50px;
   }
 }
@@ -1511,13 +1511,13 @@ form ._2Kdch {
   flex-direction: row-reverse;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 ._2aOYp ._32k0z {
   cursor: pointer;
   width: 20px;
-  margin-left: 14px;
+  margin-left: 16px;
   position: relative;
   bottom: auto;
   right: auto;
@@ -1539,7 +1539,7 @@ form ._2Kdch {
   margin-left: auto;
   margin-right: auto;
   margin-left: 0;
-  margin-right: 40px;
+  margin-right: 32px;
 }
 
 @media screen and (max-width: 240px) {
@@ -1553,12 +1553,12 @@ form ._2Kdch {
 
 @media screen and (max-width: 846px) {
   ._1KeJ_ {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding: 14px 0;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding: 16px 0;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-right: 14px;
+    margin-right: 16px;
   }
 }
 
@@ -1606,8 +1606,8 @@ form ._2Kdch {
 
 @media screen and (max-width: 846px) {
   ._1Wugc {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1643,7 +1643,7 @@ form ._2Kdch {
 @media screen and (max-width: 508px) {
   ._177zr {
     display: block;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     text-transform: none;
     font-weight: 400;
     word-break: break-word;
@@ -1656,7 +1656,7 @@ form ._2Kdch {
     font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
     margin-bottom: 22px;
   }
@@ -1715,7 +1715,7 @@ form ._2Kdch {
   font-weight: 400;
   word-break: break-word;
   margin-bottom: 9px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   min-height: 28px;
 }
@@ -1741,8 +1741,8 @@ form ._2Kdch {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -1774,7 +1774,7 @@ form ._2Kdch {
 
 @media screen and (max-width: 508px) {
   ._23p6h {
-    margin: 0 -14px;
+    margin: 0 -16px;
   }
 }
 
@@ -1960,7 +1960,7 @@ form ._2Kdch {
 
 ._3y4sq,
 .vfijW {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ._28Y8c {
@@ -1980,7 +1980,7 @@ form ._2Kdch {
   width: 100%;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -2002,7 +2002,7 @@ form ._2Kdch {
   transform-origin: top center;
   perspective: 500px;
   overflow: hidden;
-  padding: 14px 26px;
+  padding: 16px 26px;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   margin-bottom: 116px;
@@ -2071,21 +2071,21 @@ form ._2Kdch {
 }
 
 ._2-uf5 {
-  -ms-flex: 0 0 40px;
-  flex: 0 0 40px;
-  width: 40px;
-  height: 40px;
-  margin-right: 14px;
+  -ms-flex: 0 0 32px;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
 }
 
 ._2Fd8K {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._2JNmn {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -2099,7 +2099,7 @@ form ._2Kdch {
   display: -ms-flexbox;
   display: flex;
   height: 100%;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   border-radius: 0;
   border: none;
 }
@@ -2152,8 +2152,8 @@ form ._2Kdch {
 
 ._14Ybw ._3B0zP {
   margin-top: 9px;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._2ll1m,
@@ -2184,8 +2184,8 @@ form ._2Kdch {
 ._3bbo_ {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   display: inline;
   margin-bottom: 10px;
   margin-right: 6px;
@@ -2257,8 +2257,8 @@ form ._2Kdch {
 ._1-hq7 ._3bbo_ {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   display: inline;
   margin-right: 6px;
   font-weight: 400;
@@ -2329,8 +2329,8 @@ form ._2Kdch {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   line-height: 18px;
 }
 
@@ -2377,8 +2377,8 @@ form ._2Kdch {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   line-height: 18px;
 }
 
@@ -2446,7 +2446,7 @@ form ._2Kdch {
 
 ._3b08P {
   position: absolute;
-  padding: 14px;
+  padding: 16px;
   top: 0;
   left: 0;
   width: 100%;
@@ -2464,17 +2464,17 @@ form ._2Kdch {
   color: #FFFFFF;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
 ._3cahE {
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._2uxUw {
   display: block;
-  padding: 14px 0;
+  padding: 16px 0;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   width: 100%;
@@ -2506,7 +2506,7 @@ form ._2Kdch {
 }
 
 ._1mT7f {
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   color: #0095D0;
   cursor: pointer;
@@ -2522,7 +2522,7 @@ form ._2Kdch {
 }
 
 ._2u-lb {
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   height: auto;
   resize: none;
@@ -2550,7 +2550,7 @@ form ._2Kdch {
 
 ._145-T {
   position: absolute;
-  padding: 14px 0;
+  padding: 16px 0;
   background-color: #FFFFFF;
   border: 1px solid rgba(0, 149, 208, 0.15);
   box-shadow: 0 0 25px 0 rgba(32, 198, 89, 0.15);
@@ -2576,12 +2576,12 @@ form ._2Kdch {
 }
 
 ._38FYQ {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 
 ._3RaY_ {
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 ._1FJkk {
@@ -2617,12 +2617,12 @@ form ._2Kdch {
 }
 
 ._3H8wE {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 
 ._31mVk {
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 ._1Zj5n {
@@ -2691,8 +2691,8 @@ form ._2Kdch {
   text-transform: uppercase;
   float: right;
   color: #FFFFFF;
-  padding: 14px 28px;
-  font-size: 14px;
+  padding: 16px 28px;
+  font-size: 16px;
   transition: all 0.15s ease-out;
   background: #0095D0;
 }
@@ -2711,7 +2711,7 @@ form ._2Kdch {
   border: 0;
   background: #FFFFFF;
   color: rgba(0, 149, 208, 0.95);
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._2LRWs:hover:enabled {
@@ -2720,8 +2720,8 @@ form ._2Kdch {
 }
 
 ._2A7z5 {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   margin-right: auto;
 }
@@ -2772,7 +2772,7 @@ form ._2Kdch {
 .KTIgi {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: rgba(0, 8, 39, 0.85);
   padding-top: 4px;
@@ -2784,8 +2784,8 @@ form ._2Kdch {
 
 @media screen and (max-width: 508px) {
   .KTIgi {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -2802,7 +2802,7 @@ form ._2Kdch {
 
 ._7y6Vl {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -2823,8 +2823,8 @@ form ._2Kdch {
 
 ._1saq1 a {
   color: #2784bd;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   font-weight: 400;
 }
 
@@ -2840,7 +2840,7 @@ form ._2Kdch {
   margin-top: -28px;
   margin-left: -28px;
   margin-right: -28px;
-  padding: 14px;
+  padding: 16px;
 }
 
 ._18xEM {
@@ -2848,7 +2848,7 @@ form ._2Kdch {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
 }
 
@@ -2866,8 +2866,8 @@ form ._2Kdch {
 
 ._1cT9R,
 ._2ixe- span {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._1cT9R {
@@ -2877,7 +2877,7 @@ form ._2Kdch {
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
-  padding-top: 14px;
+  padding-top: 16px;
 }
 
 ._2Q-Fz {
@@ -2961,7 +2961,7 @@ form ._2Kdch {
   text-transform: uppercase;
   background: linear-gradient(to right, rgba(0, 8, 39, 0.95), rgba(0, 149, 208, 0.95), rgba(32, 198, 89, 0.95));
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 16px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -2981,14 +2981,14 @@ form ._2Kdch {
 }
 
 ._1jArY svg {
-  height: 14px;
-  width: 14px;
+  height: 16px;
+  width: 16px;
   margin-left: 1px;
   margin-top: 1px;
 }
 
 ._2MKR5 {
-  padding: 5px 14px;
+  padding: 5px 16px;
   width: 53px;
   display: -ms-flexbox;
   display: flex;
@@ -3048,8 +3048,8 @@ form ._2Kdch {
   text-transform: uppercase;
   background: linear-gradient(to right, rgba(0, 8, 39, 0.95), rgba(0, 149, 208, 0.95), rgba(32, 198, 89, 0.95));
   color: #FFFFFF;
-  font-size: 14px;
-  padding: 6px 14px;
+  font-size: 16px;
+  padding: 6px 16px;
   bottom: 0;
   right: 0;
 }
@@ -3246,7 +3246,7 @@ form ._2Kdch {
 }
 
 ._7u1-t span {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
 }
 
@@ -3261,7 +3261,7 @@ form ._2Kdch {
   text-overflow: ellipsis;
   font-weight: 700;
   height: 46px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   font-size: 22px;
   line-height: 22px;
 }
@@ -3281,12 +3281,12 @@ form ._2Kdch {
   ._3JWtL {
     height: 37px;
     margin-bottom: 7px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 
   ._3JWtL:after {
-    line-height: 14px;
+    line-height: 16px;
   }
 }
 
@@ -3311,7 +3311,7 @@ form ._2Kdch {
 
 ._2mdao,
 .ih8Th {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -3324,14 +3324,14 @@ form ._2Kdch {
 
 @media screen and (max-width: 508px) {
   ._2mdao {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 ._1w4cZ {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._3ovQm:hover ._2l5oW path {
@@ -3411,7 +3411,7 @@ form ._2Kdch {
   cursor: pointer;
   padding: 9px 18px;
   margin-bottom: 28px;
-  font-size: 14px;
+  font-size: 16px;
   position: relative;
   text-transform: uppercase;
 }
@@ -3421,7 +3421,7 @@ form ._2Kdch {
 }
 
 ._5lS25 {
-  font-size: 14px;
+  font-size: 16px;
   color: #0095D0;
 }
 
@@ -3435,8 +3435,8 @@ form ._2Kdch {
 }
 
 ._101VT {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._3LYcH,
@@ -3477,7 +3477,7 @@ form ._2Kdch {
 
 ._3dGrS {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   margin-top: 9px;
 }
@@ -3533,8 +3533,8 @@ form ._2Kdch {
 
 @media screen and (max-width: 846px) {
   ._2jvD6 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -3560,7 +3560,7 @@ form ._2Kdch {
 
 ._21MHb {
   display: none;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -3616,7 +3616,7 @@ form ._2Kdch {
 ._2fFf8 {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   margin-right: 26px;
   display: -ms-flexbox;
@@ -3641,13 +3641,13 @@ form ._2Kdch {
 }
 
 ._1tu6M {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 22px;
   min-height: 80px;
 }
 
 ._2mTBY {
-  padding: 14px;
+  padding: 16px;
   position: fixed;
   bottom: 44px;
   right: 18px;
@@ -3662,7 +3662,7 @@ form ._2Kdch {
 
 @media screen and (max-width: 508px) {
   ._2mTBY {
-    bottom: 14px;
+    bottom: 16px;
     right: 0;
   }
 
@@ -3676,7 +3676,7 @@ form ._2Kdch {
   background: #FFFFFF;
   border-right: 1px solid rgba(0, 149, 208, 0.15);
   bottom: 0;
-  line-height: 40px;
+  line-height: 32px;
   overflow-x: hidden;
   overflow-y: hidden;
   padding: 12px 8px 52px;
@@ -3700,7 +3700,7 @@ form ._2Kdch {
 }
 
 ._NAV56 ._34GF ._45TY {
-  padding-left: 114px;
+  padding-left: 116px;
   vertical-align: top;
 }
 
@@ -3719,12 +3719,12 @@ form ._2Kdch {
 
 @media screen and (min-width: 1236px) {
   ._1RYG9 {
-    padding-top: 40px;
+    padding-top: 32px;
   }
 }
 
 ._3FuZO {
-  padding-bottom: 40px;
+  padding-bottom: 32px;
   min-height: 0;
 }
 
@@ -3769,7 +3769,7 @@ form ._2Kdch {
 
 .p32Iu {
   transition: transform 0.4s cubic-bezier(0, 0.42, 0, 1), opacity 0.3s ease-out;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   background: #FFFFFF;
   overflow: hidden;
   position: relative;
@@ -3781,12 +3781,12 @@ form ._2Kdch {
   margin: 0;
   border-radius: 0;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .p32Iu ._3DF9 {
-  margin: 14px;
-  padding: 14px;
+  margin: 16px;
+  padding: 16px;
   color: #FFFFFF;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   background: #0095D0;
@@ -3803,13 +3803,14 @@ form ._2Kdch {
 
 .p32Iu ._3DF9 h2 {
   border-left: 2px solid rgba(32, 198, 89, 0.95);
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 .p32Iu .gEjmr {
   padding-bottom: 0;
   box-shadow: none;
   border-top: 1px solid rgba(0, 149, 208, 0.15);
+  border-radius: 7px;
 }
 
 .p32Iu.active,
@@ -3860,7 +3861,7 @@ form ._2Kdch {
 dribbles {
   width: calc(33% - 20px);
   text-align: right;
-  height: 40px;
+  height: 32px;
 }
 
 dribbles:hover ._GSL7C,
@@ -3881,7 +3882,7 @@ dribbles ._35GH ._34IO {
 
 .rF2QA {
   display: inline-block;
-  height: 40px;
+  height: 32px;
 }
 
 ._1CwPf:hover ._GSL7C {
@@ -3933,9 +3934,9 @@ dribbles ._35GH ._34IO {
   top: 0;
   left: 46px;
   color: rgba(0, 149, 208, 0.95);
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 32px;
 }
 
 ._13DRk ._34IO._35GH {
@@ -4027,7 +4028,7 @@ dribbles ._35GH ._34IO {
 ._2VJcs {
   float: right;
   text-decoration: underline;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 35px;
 }
 
@@ -4049,18 +4050,18 @@ dribbles ._35GH ._34IO {
 }
 
 ._3bxb0 .e_0uO {
-  -ms-flex: 0 0 40px;
-  flex: 0 0 40px;
-  width: 40px;
-  height: 40px;
+  -ms-flex: 0 0 32px;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
   border: 1px solid rgba(0, 149, 208, 0.15);
   background: rgba(0, 149, 208, 0.1);
   color: rgba(0, 149, 208, 0.95);
 }
 
 ._3bxb0 .e_0uO:after {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._3bxb0 .e_0uO:hover {
@@ -4072,9 +4073,9 @@ dribbles ._35GH ._34IO {
 ._3bxb0 ._3FTXM {
   -ms-flex: 1;
   flex: 1;
-  margin-left: 14px;
+  margin-left: 16px;
   font-size: 18px;
-  line-height: 40px;
+  line-height: 32px;
   transform: none;
   position: static;
 }
@@ -4107,26 +4108,26 @@ dribbles ._35GH ._34IO {
   justify-content: space-between;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 14px 14px 0;
+  padding: 16px 16px 0;
   margin-bottom: 18px;
   display: none;
 }
 
 @media screen and (max-width: 508px) {
   ._2WwnI {
-    padding: 14px 14px 0;
+    padding: 16px 16px 0;
   }
 }
 
 ._2G_85 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
 ._2G_85 ._3MJAj {
   border-top: 1px solid rgba(0, 149, 208, 0.15);
-  margin-top: 14px;
-  margin-bottom: 14px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   padding: 18px 26px 0;
   display: -ms-flexbox;
   display: flex;
@@ -4138,12 +4139,12 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 508px) {
   ._2G_85 ._3MJAj {
-    padding: 14px 14px 0;
+    padding: 16px 16px 0;
   }
 }
 
 ._2zBw5 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -4193,18 +4194,18 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 508px) {
   ._8vnW9 {
-    padding: 14px;
+    padding: 16px;
   }
 }
 
 ._35O2p {
-  padding: 14px;
+  padding: 16px;
   margin-top: 0;
 }
 
 ._35O2p._2L6V9 {
   border: none !important;
-  padding-top: 14px;
+  padding-top: 16px;
 }
 
 ._46OYH {
@@ -4215,22 +4216,22 @@ dribbles ._35GH ._34IO {
 
 ._24GTO {
   margin-top: 0;
-  padding: 0 14px 14px 0;
+  padding: 0 16px 16px 0;
 }
 
 @media screen and (max-width: 508px) {
   ._35O2p._46OYH {
-    padding: 0 14px 14px;
+    padding: 0 16px 16px;
   }
 }
 
 ._1pPnu {
-  height: 40px;
+  height: 32px;
 }
 
 ._34-mC {
   float: right;
-  width: 40px;
+  width: 32px;
 }
 
 ._1mYFh {
@@ -4242,8 +4243,8 @@ dribbles ._35GH ._34IO {
 }
 
 .r9rA5 {
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 32px;
 }
 
 ._3duUm {
@@ -4286,7 +4287,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3DF9 {
-  margin: 14px 14px 0;
+  margin: 16px 16px 0;
 }
 
 ._3DF9 ._3duUm {
@@ -4302,7 +4303,7 @@ dribbles ._35GH ._34IO {
 
 .FnwOT {
   border: 8px solid rgba(0, 8, 39, 0.95);
-  margin-right: 40px;
+  margin-right: 32px;
   padding: 28px 18px 64px;
 }
 
@@ -4344,14 +4345,14 @@ dribbles ._35GH ._34IO {
   border: 8px solid #FFFFFF;
   color: #FFFFFF;
   position: absolute;
-  right: 14px;
+  right: 16px;
 }
 
 ._3Dt-k {
   position: absolute;
-  right: 14px;
-  bottom: 14px;
-  left: 14px;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
   text-align: right;
   font-size: 28px;
   line-height: 1.4;
@@ -4375,15 +4376,15 @@ dribbles ._35GH ._34IO {
 
 ._1TdTV {
   color: rgba(32, 198, 89, 0.15);
-  padding: 14px;
+  padding: 16px;
   background-color: #F2F2F2;
   border: 1px solid rgba(0, 149, 208, 0.15);
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 ._3D_LL {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .DkiQD {
@@ -4398,7 +4399,7 @@ dribbles ._35GH ._34IO {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   line-height: inherit;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ._2L6V9 a:hover {
@@ -4417,7 +4418,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._4512y {
-  padding: 14px;
+  padding: 16px;
 }
 
 ._3jsIy {
@@ -4457,10 +4458,10 @@ dribbles ._35GH ._34IO {
 
 ._2jvdf {
   color: rgba(0, 149, 208, 0.95);
-  font-size: 14px;
+  font-size: 16px;
   position: absolute;
   top: 50%;
-  right: 14px;
+  right: 16px;
   margin-top: -16px;
 }
 
@@ -4481,7 +4482,7 @@ dribbles ._35GH ._34IO {
   -ms-flex-align: center;
   align-items: center;
   color: rgba(0, 149, 208, 0.95);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ._1pPnu a {
@@ -4491,17 +4492,17 @@ dribbles ._35GH ._34IO {
 
 ._1NHvQ {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  height: 40px;
+  height: 32px;
 }
 
 ._1NHvQ a,
 ._1NHvQ br,
 ._1NHvQ span {
   display: inline;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._2B25b,
@@ -4546,8 +4547,8 @@ dribbles ._35GH ._34IO {
 
 ._1rRTL,
 ._1yAXU {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   position: absolute;
   top: 4px;
   left: 0;
@@ -4767,7 +4768,7 @@ dribbles ._35GH ._34IO {
 
 .iUutM {
   position: relative;
-  padding: 14px;
+  padding: 16px;
   height: 100%;
   left: 0;
   -ms-flex: 1 0;
@@ -4776,7 +4777,7 @@ dribbles ._35GH ._34IO {
 
 @media screen and (min-width: 586px) {
   .iUutM {
-    padding: 14px;
+    padding: 16px;
   }
 }
 
@@ -4792,7 +4793,7 @@ dribbles ._35GH ._34IO {
 ._3H01F {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: #f8f8f8;
   text-transform: uppercase;
@@ -4860,8 +4861,8 @@ dribbles ._35GH ._34IO {
 ._3f32u {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   color: #f8f8f8;
 }
 
@@ -4874,8 +4875,8 @@ dribbles ._35GH ._34IO {
 
 .O0stn {
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   color: #f8f8f8;
 }
 
@@ -4888,7 +4889,7 @@ dribbles ._35GH ._34IO {
 }
 
 .eoVae {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   -webkit-line-clamp: 3;
   max-height: 54px;
@@ -4981,19 +4982,19 @@ dribbles ._35GH ._34IO {
 
 @media screen and (min-width: 508px) {
   ._3zT4K {
-    padding: 0 0 14px;
+    padding: 0 0 16px;
   }
 }
 
 .Vnlgq {
   font-size: 18px;
   line-height: 22px;
-  padding: 0 14px 14px;
+  padding: 0 16px 16px;
 }
 
 @media screen and (min-width: 508px) {
   .Vnlgq {
-    padding: 0 0 14px;
+    padding: 0 0 16px;
     font-size: 22px;
     line-height: 1.4;
   }
@@ -5231,7 +5232,7 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 508px) {
   .QjQqM {
-    padding: 14px;
+    padding: 16px;
   }
 }
 
@@ -5239,16 +5240,16 @@ dribbles ._35GH ._34IO {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   text-align: center;
   margin: 18px 0;
-  padding: 18px 40px;
+  padding: 18px 32px;
 }
 
 @media screen and (max-width: 508px) {
   ._1_mZ1 {
-    margin: 0 14px 14px;
+    margin: 0 16px 16px;
   }
 }
 
@@ -5290,7 +5291,7 @@ dribbles ._35GH ._34IO {
 
 ._271kZ {
   overflow: hidden;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 @media screen and (max-width: 846px) {
@@ -5305,7 +5306,7 @@ dribbles ._35GH ._34IO {
   width: 100%;
   padding: 12px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   transition: all 0.15s ease-out;
 }
@@ -5329,8 +5330,8 @@ dribbles ._35GH ._34IO {
 @media screen and (max-width: 846px) {
   ._1G1nd {
     text-align: left;
-    padding-left: 14px;
-    font-size: 14px;
+    padding-left: 16px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -5366,8 +5367,8 @@ dribbles ._35GH ._34IO {
   height: 2px;
   transform: scaleX(0);
   transform-origin: top left;
-  -ms-flex: 1 0 40px;
-  flex: 1 0 40px;
+  -ms-flex: 1 0 32px;
+  flex: 1 0 32px;
 }
 
 .LmPde {
@@ -5460,7 +5461,7 @@ dribbles ._35GH ._34IO {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   background: #0095D0;
   color: #FFFFFF;
@@ -5492,17 +5493,17 @@ dribbles ._35GH ._34IO {
 
 @media screen and (min-width: 508px) {
   ._1C4sR {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     border-radius: 22px;
     margin-top: 18px;
     margin-bottom: 28px;
-    padding: 14px 55px;
+    padding: 16px 55px;
   }
 
   ._1C4sR svg {
-    width: 14px;
-    top: 14px;
+    width: 16px;
+    top: 16px;
   }
 
   ._1C4sR .QbGqA {
@@ -5606,7 +5607,7 @@ dribbles ._35GH ._34IO {
   position: absolute;
   top: 8px;
   left: 6px;
-  width: 14px;
+  width: 16px;
   height: 10px;
 }
 
@@ -5616,9 +5617,9 @@ dribbles ._35GH ._34IO {
   position: relative;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
-  padding: 9px 14px;
+  padding: 9px 16px;
   -ms-flex: 1;
   flex: 1;
 }
@@ -5678,7 +5679,7 @@ dribbles ._35GH ._34IO {
   }
 
   ._27PIS ._1KQuz {
-    padding: 9px 14px;
+    padding: 9px 16px;
   }
 
   ._27PIS .fFpBH {
@@ -5689,8 +5690,8 @@ dribbles ._35GH ._34IO {
     border: 3px solid #FFFFFF;
     content: "";
     display: block;
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2), inset 0 2px 16px rgba(0, 0, 0, 0.2);
     position: absolute;
     top: 50%;
@@ -5724,8 +5725,8 @@ dribbles ._35GH ._34IO {
   }
 
   ._27PIS ._1QEWe {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   ._27PIS ._1TvPX {
@@ -5778,8 +5779,8 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 846px) {
   ._2uakq ._1KG3g {
-    height: 40px;
-    width: 40px;
+    height: 32px;
+    width: 32px;
     border-width: 2px;
   }
 
@@ -5875,12 +5876,12 @@ dribbles ._35GH ._34IO {
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-top: 0;
-  padding: 14px;
+  padding: 16px;
 }
 
 @media screen and (max-width: 846px) {
   ._1KQuz {
-    padding: 14px 14px 9px;
+    padding: 16px 16px 9px;
   }
 }
 
@@ -5923,8 +5924,8 @@ dribbles ._35GH ._34IO {
 ._12Iv2 {
   -ms-flex: 1;
   flex: 1;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .aX-51 {
@@ -5945,14 +5946,14 @@ dribbles ._35GH ._34IO {
   -ms-flex: 1;
   flex: 1;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._1ie2e {
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -5978,9 +5979,9 @@ dribbles ._35GH ._34IO {
   position: relative;
   -ms-flex-pack: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
-  padding: 9px 14px;
+  padding: 9px 16px;
   -ms-flex: 1;
   flex: 1;
 }
@@ -5992,9 +5993,9 @@ dribbles ._35GH ._34IO {
 }
 
 ._7V-y5 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
-  padding: 9px 14px;
+  padding: 9px 16px;
   text-align: center;
 }
 
@@ -6061,7 +6062,7 @@ dribbles ._35GH ._34IO {
   ._26n6g {
     font-size: 18px;
     line-height: 18px;
-    padding: 22px 14px 0;
+    padding: 22px 16px 0;
   }
 }
 
@@ -6075,7 +6076,7 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 508px) {
   ._1ksgx {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -6110,16 +6111,16 @@ dribbles ._35GH ._34IO {
 }
 
 .xn0aB {
-  font-size: 14px;
+  font-size: 16px;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  padding-right: 14px;
+  padding-right: 16px;
 }
 
 @media screen and (max-width: 508px) {
   .xn0aB {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -6170,8 +6171,8 @@ dribbles ._35GH ._34IO {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   display: inline-block;
 }
 
@@ -6181,7 +6182,7 @@ dribbles ._35GH ._34IO {
     flex: 0 0 20%;
     height: 44px;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -6207,7 +6208,7 @@ dribbles ._35GH ._34IO {
     flex: 0 0 60%;
     height: 44px;
     padding: 0;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -6303,7 +6304,7 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 846px) {
   ._3Phfs {
-    padding: 14px;
+    padding: 16px;
     height: 68px;
   }
 }
@@ -6327,8 +6328,8 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 846px) {
   .EbtUv {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -6378,7 +6379,7 @@ dribbles ._35GH ._34IO {
   width: 64px;
   height: 4px;
   background-color: rgba(32, 198, 89, 0.15);
-  margin-right: 14px;
+  margin-right: 16px;
   cursor: pointer;
 }
 
@@ -6450,13 +6451,13 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 846px) {
   ._3z1ry {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 .UNUAY {
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 ._3ygY6 {
@@ -6512,7 +6513,7 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 846px) {
   ._2azBk {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -6590,7 +6591,7 @@ dribbles ._35GH ._34IO {
     height: 44px;
     padding: 0;
     margin-left: 20%;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -6599,8 +6600,8 @@ dribbles ._35GH ._34IO {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .D8NNT {
@@ -6682,8 +6683,8 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 846px) and (max-width: 846px) {
   ._3MmWw {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -6692,7 +6693,7 @@ dribbles ._35GH ._34IO {
     width: 100%;
     max-width: 378px;
     float: right;
-    padding-left: 14px;
+    padding-left: 16px;
   }
 }
 
@@ -6780,7 +6781,7 @@ form .M13JP:focus {
   line-height: 18px;
   text-transform: none;
   border: 1px solid #FFFFFF;
-  padding: 14px;
+  padding: 16px;
   margin: 18px 0;
   width: 100%;
   background: rgba(6, 33, 54, 0.5);
@@ -6803,15 +6804,15 @@ form .M13JP:focus {
   }
 
   ._12n1y:first-child {
-    margin-top: 14px;
+    margin-top: 16px;
   }
 }
 
 .M13JP {
   padding-top: 18px;
   padding-bottom: 18px;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   width: 100%;
   border-radius: 0;
 }
@@ -6838,7 +6839,7 @@ form .M13JP:focus {
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
-  margin: 14px 0;
+  margin: 16px 0;
 }
 
 ._37Oy_ .M13JP {
@@ -6858,8 +6859,8 @@ form .M13JP:focus {
 
 @media screen and (min-width: 1236px) {
   ._37Oy_ .bWRAm {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 32px;
+    line-height: 32px;
   }
 }
 
@@ -6874,8 +6875,8 @@ form .M13JP:focus {
   ._37Oy_ ._12n1y {
     font-size: 18px;
     line-height: 18px;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 
   ._37Oy_ ._12n1y::-webkit-input-placeholder,
@@ -6888,7 +6889,7 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._37Oy_ .M13JP {
-    padding: 14px 18px;
+    padding: 16px 18px;
   }
 }
 
@@ -6913,14 +6914,14 @@ form .M13JP:focus {
 
 @media screen and (max-width: 846px) {
   ._2cfq3 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 @media screen and (max-width: 768px) {
   ._2cfq3 {
-    margin: 18px 14px;
+    margin: 18px 16px;
     width: auto;
   }
 }
@@ -6946,15 +6947,15 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 508px) {
   ._1iBcU,
   ._3OQAJ,
   .KyQLW {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -6970,20 +6971,20 @@ form .M13JP:focus {
 
 .KyQLW {
   color: #FFFFFF;
-  padding: 14px 66px;
+  padding: 16px 66px;
   position: relative;
 }
 
 .KyQLW svg {
   position: absolute;
-  left: 14px;
+  left: 16px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 @media screen and (max-width: 508px) {
   .KyQLW {
-    padding: 12px 14px;
+    padding: 12px 16px;
     -ms-flex: 1 1 50%;
     flex: 1 1 50%;
     text-align: center;
@@ -7004,7 +7005,7 @@ form .M13JP:focus {
 
 ._1iBcU {
   color: rgba(32, 198, 89, 0.15);
-  padding: 0 14px;
+  padding: 0 16px;
 }
 
 ._3LeFV {
@@ -7030,19 +7031,19 @@ form .M13JP:focus {
 ._1Honn {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: rgba(0, 149, 208, 0.95);
   text-align: center;
-  margin-top: 14px;
+  margin-top: 16px;
   margin-bottom: 12px;
   text-transform: none;
 }
 
 @media screen and (max-width: 508px) {
   ._1Honn {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     margin-bottom: 22px;
   }
 }
@@ -7061,7 +7062,7 @@ form .M13JP:focus {
   ._3MbTo {
     font-size: 18px;
     line-height: 18px;
-    margin: 18px 0 14px;
+    margin: 18px 0 16px;
   }
 }
 
@@ -7127,7 +7128,7 @@ form .M13JP:focus {
   ._1J7fB {
     font-size: 28px;
     line-height: 1.4;
-    padding-top: 14px;
+    padding-top: 16px;
   }
 }
 
@@ -7140,8 +7141,8 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._1e4LX {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -7168,7 +7169,7 @@ form .M13JP:focus {
   line-height: 44px;
   width: 100%;
   padding-bottom: 9px;
-  padding-left: 14px;
+  padding-left: 16px;
   -ms-flex-order: 2;
   order: 2;
 }
@@ -7320,8 +7321,8 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._1FQjf {
@@ -7386,7 +7387,7 @@ form .M13JP:focus {
   justify-content: space-between;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   padding-bottom: 4px;
-  margin-top: -14px;
+  margin-top: -16px;
   -ms-flex-direction: column;
   flex-direction: column;
 }
@@ -7395,8 +7396,8 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -7447,7 +7448,7 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   margin: 0 12px 9px 0;
   padding-left: 18px;
@@ -7471,24 +7472,24 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .pbRDO {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   position: relative;
   text-transform: none;
   width: 100%;
 }
 
 .pbRDO::-webkit-input-placeholder {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   padding-top: 3px;
   color: rgba(32, 198, 89, 0.15);
@@ -7512,8 +7513,8 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   z-index: 14;
   cursor: text;
   top: 7px;
@@ -7569,9 +7570,9 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
-  margin-top: 14px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 16px;
 }
 
 ._3olfT {
@@ -7590,11 +7591,11 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: none;
   color: rgba(32, 198, 89, 0.15);
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 ._1UEBS {
@@ -7634,7 +7635,7 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   color: rgba(32, 198, 89, 0.15);
   margin-bottom: 9px;
@@ -7660,7 +7661,7 @@ form .M13JP:focus {
 }
 
 ._3KE3F textarea {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   margin-top: 4px;
   font-weight: 400;
@@ -7708,7 +7709,7 @@ form .M13JP:focus {
   float: right;
   margin-top: -18px;
   margin-right: -18px;
-  padding: 14px;
+  padding: 16px;
 }
 
 .wF0gS {
@@ -7730,8 +7731,8 @@ form .M13JP:focus {
 
 @media screen and (max-width: 846px) {
   .wF0gS {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -7781,8 +7782,8 @@ form .M13JP:focus {
 
 @media screen and (max-width: 846px) {
   ._3pDTM {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -7853,18 +7854,18 @@ form .M13JP:focus {
 }
 
 ._2RfAJ {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 @media screen and (min-width: 508px) {
   ._109Ed {
-    margin-left: 14px;
+    margin-left: 16px;
   }
 }
 
 @media screen and (max-width: 508px) {
   ._109Ed {
-    margin-left: 14px;
+    margin-left: 16px;
   }
 }
 
@@ -7872,8 +7873,8 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   margin: 72px 0 28px;
 }
 
@@ -7946,9 +7947,9 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._316ua {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
-    margin-right: 14px;
+    margin-right: 16px;
   }
 }
 
@@ -7973,7 +7974,7 @@ form .M13JP:focus {
 ._1ZZCF {
   position: relative;
   width: 100%;
-  min-height: 214px;
+  min-height: 216px;
 }
 
 @media screen and (max-width: 508px) {
@@ -8001,7 +8002,7 @@ form .M13JP:focus {
 @media screen and (max-width: 508px) {
   .I3rsK {
     width: 100%;
-    padding: 14px;
+    padding: 16px;
   }
 }
 
@@ -8013,8 +8014,8 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._3x74z {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     margin-bottom: 4px;
   }
 }
@@ -8026,7 +8027,7 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._1uTTV {
-    font-size: 14px;
+    font-size: 16px;
     padding-bottom: 0;
   }
 }
@@ -8042,7 +8043,7 @@ form .M13JP:focus {
   flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -8064,13 +8065,13 @@ form .M13JP:focus {
 }
 
 ._2W2Nq {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   line-height: 0;
 }
 
 ._3Qk42 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
@@ -8105,7 +8106,7 @@ form .M13JP:focus {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 18px;
-    padding: 14px 0;
+    padding: 16px 0;
   }
 }
 
@@ -8132,7 +8133,7 @@ form .M13JP:focus {
 }
 
 .tzRB1 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   margin-left: 35px;
   color: rgba(0, 149, 208, 0.95);
@@ -8153,8 +8154,8 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._19KIr {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     margin-right: 4px;
   }
 }
@@ -8166,8 +8167,8 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._2VD5i {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -8178,17 +8179,18 @@ form .M13JP:focus {
 }
 
 .ivfOh {
-  background: rgba(0, 149, 208, 0.1);
   box-shadow: 0 1px 4px 0 rgba(0, 8, 39, 0.085);
   border: 1px solid rgba(0, 149, 208, 0.15);
   overflow: hidden;
-  padding: 14px;
-  margin-bottom: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: rgba(0, 149, 208, 0.25);
+  border-radius: 7px;
 }
 
 @media screen and (max-width: 508px) {
   .ivfOh {
-    margin: 0 -14px;
+    margin: 0 -16px;
   }
 }
 
@@ -8201,7 +8203,7 @@ form .M13JP:focus {
 }
 
 ._1HA3l ._1bkDE {
-  line-height: 14px;
+  line-height: 16px;
 }
 
 ._1HA3l ._1bkDE:hover {
@@ -8210,7 +8212,7 @@ form .M13JP:focus {
 
 .BB62- {
   color: rgba(0, 149, 208, 0.95);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   padding-top: 2px;
 }
@@ -8218,13 +8220,13 @@ form .M13JP:focus {
 ._2l14J {
   width: 32px;
   height: 32px;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._1bkDE {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 6px;
 }
 
@@ -8279,7 +8281,7 @@ form .M13JP:focus {
 .W6jQs img {
   width: 100%;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 ._242Fk {
@@ -8289,8 +8291,8 @@ form .M13JP:focus {
 
 ._2PRiK {
   position: absolute;
-  bottom: 14px;
-  right: 14px;
+  bottom: 16px;
+  right: 16px;
   display: none;
 }
 
@@ -8302,7 +8304,7 @@ form .M13JP:focus {
 
 ._255I1 {
   position: relative;
-  padding-top: 14px;
+  padding-top: 16px;
   padding-left: 22px;
   transition: opacity 0.5s linear;
 }
@@ -8322,8 +8324,8 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._255I1 {
-    margin-right: -14px;
-    padding-right: 14px;
+    margin-right: -16px;
+    padding-right: 16px;
     margin-left: -25px;
     padding-left: 25px;
   }
@@ -8339,8 +8341,8 @@ form .M13JP:focus {
 }
 
 ._2R136 {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   position: absolute;
   right: 0;
 }
@@ -8360,7 +8362,7 @@ form .M13JP:focus {
 }
 
 .ZQJT_ {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: rgba(0, 149, 208, 0.95);
   padding-top: 2px;
@@ -8371,7 +8373,7 @@ form .M13JP:focus {
 }
 
 ._3wbbZ .vka9m {
-  line-height: 14px;
+  line-height: 16px;
 }
 
 ._3wbbZ .vka9m:hover {
@@ -8381,13 +8383,13 @@ form .M13JP:focus {
 .l5aOu {
   width: 32px;
   height: 32px;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 .vka9m {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 6px;
 }
 
@@ -8401,7 +8403,7 @@ form .M13JP:focus {
 }
 
 .JvaAC {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   margin-bottom: 6px;
 }
@@ -8416,10 +8418,10 @@ form .M13JP:focus {
   color: rgba(0, 149, 208, 0.95);
   -ms-flex-align: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   padding-top: 18px;
-  padding-bottom: 14px;
+  padding-bottom: 16px;
   list-style: disc;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
 }
@@ -8448,7 +8450,7 @@ form .M13JP:focus {
 }
 
 ._1AiRW {
-  padding-top: 14px;
+  padding-top: 16px;
   margin-top: -1px;
 }
 
@@ -8493,7 +8495,7 @@ form .M13JP:focus {
 ._1CwzX {
   position: absolute;
   left: 0;
-  top: 14px;
+  top: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -8511,7 +8513,7 @@ form .M13JP:focus {
 ._3kBjx {
   width: 32px;
   height: 32px;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._2OqId {
@@ -8521,7 +8523,7 @@ form .M13JP:focus {
   line-height: 16px;
   background: rgba(0, 149, 208, 0.85);
   display: block;
-  padding: 14px;
+  padding: 16px;
   color: #FFFFFF;
   border-radius: 7px;
 }
@@ -8569,7 +8571,7 @@ form .M13JP:focus {
 
 ._1lUs3 {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   margin-right: 6px;
 }
 
@@ -8580,9 +8582,11 @@ form .M13JP:focus {
 .gEjmr {
   position: relative;
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
-  margin-bottom: 14px;
-  padding: 14px;
+  margin-bottom: 16px;
+  padding: 16px;
   border: 1px solid rgba(0, 149, 208, 0.15);
+  background: rgba(0, 149, 208, 0.25);
+  border-radius: 7px;
 }
 
 .gEjmr ._35FcZ,
@@ -8595,7 +8599,7 @@ form .M13JP:focus {
 }
 
 .gEjmr ._2MdIb {
-  top: 4px;
+  top: 13px;
   right: 46px;
 }
 
@@ -8638,7 +8642,7 @@ form .M13JP:focus {
   line-height: 21px;
   margin-left: 10px;
   padding: 10px 0 0;
-  font-size: 14px;
+  font-size: 16px;
   color: #0095D0;
 }
 
@@ -8651,7 +8655,7 @@ form .M13JP:focus {
 }
 
 ._3gFQj .gEjmr {
-  padding: 14px;
+  padding: 16px;
   border-bottom: none;
 }
 
@@ -8664,15 +8668,15 @@ form .M13JP:focus {
 }
 
 .WiM0L {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   position: absolute;
   right: 0;
 }
 
 @media screen and (max-width: 508px) {
   .WiM0L {
-    right: -14px;
+    right: -16px;
   }
 }
 
@@ -8695,10 +8699,10 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
-  padding: 14px;
+  padding: 16px;
   width: 100%;
   display: block;
   text-align: center;
@@ -8718,7 +8722,7 @@ form .M13JP:focus {
 
 .BNBMP {
   color: rgba(0, 149, 208, 0.65);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   list-style: disc;
   position: relative;
@@ -8775,10 +8779,10 @@ form .M13JP:focus {
 }
 
 ._3ZzkS {
-  margin-left: 14px;
+  margin-left: 16px;
   background: rgba(0, 149, 208, 0.1);
-  padding: 14px;
-  margin-top: 14px;
+  padding: 16px;
+  margin-top: 16px;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -8831,7 +8835,7 @@ form .M13JP:focus {
 ._3bJmr {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   color: rgba(0, 149, 208, 0.95);
   margin: 12px 0 9px;
@@ -8865,8 +8869,8 @@ form .M13JP:focus {
 }
 
 ._2F2p0 .BNBMP {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   padding: 9px 0;
 }
 
@@ -8885,7 +8889,7 @@ form .M13JP:focus {
   color: rgba(0, 8, 39, 0.85);
   border: 1px solid rgba(0, 149, 208, 0.15);
   padding: 9px 28px;
-  font-size: 14px;
+  font-size: 16px;
   transition: all 0.15s ease-out;
 }
 
@@ -8922,7 +8926,7 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   .d8Mn3 {
-    padding: 14px;
+    padding: 16px;
   }
 }
 
@@ -8940,7 +8944,7 @@ form .M13JP:focus {
 ._1bt4K {
   width: 66px;
   height: 66px;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._3ucBL {
@@ -8962,9 +8966,9 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._28yfS {
@@ -8972,7 +8976,7 @@ form .M13JP:focus {
 }
 
 ._3p6iW {
-  padding: 14px 0;
+  padding: 16px 0;
   border-top: 1px solid rgba(0, 149, 208, 0.15);
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
 }
@@ -9012,8 +9016,8 @@ form .M13JP:focus {
 
 .bJr5i {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 16px;
+  right: 16px;
   display: -ms-flexbox;
   display: flex;
   z-index: 4;
@@ -9026,7 +9030,7 @@ form .M13JP:focus {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 .XTju0 {
@@ -9184,7 +9188,7 @@ form .M13JP:focus {
 .rb89E {
   -ms-flex: 1;
   flex: 1;
-  padding: 18px 14px;
+  padding: 18px 16px;
 }
 
 ._17xgL {
@@ -9192,8 +9196,8 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._1rdQq {
@@ -9214,7 +9218,7 @@ div._3bqe5 > div {
 }
 
 ._2_y5d {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
@@ -9230,17 +9234,17 @@ div._3bqe5 > div {
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._2FV23 {
-  padding: 14px 14px 0;
+  padding: 16px 16px 0;
 }
 
 @media screen and (max-width: 508px) {
   ._29Okg {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -9272,7 +9276,7 @@ div._3bqe5 > div {
 .rF2QA {
   position: relative;
   cursor: pointer;
-  padding: 0 14px 0;
+  padding: 0 16px 0;
 }
 
 @media screen and (max-width: 508px) {
@@ -9342,13 +9346,13 @@ div._3bqe5 > div {
 }
 
 ._3Y-3q {
-  width: 40px;
+  width: 32px;
 }
 
 ._2bDpH,
 ._3Y-3q {
   float: left;
-  height: 40px;
+  height: 32px;
 }
 
 ._2bDpH {
@@ -9358,7 +9362,7 @@ div._3bqe5 > div {
   flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-left: 14px;
+  padding-left: 16px;
 }
 
 ._1HPk2,
@@ -9404,7 +9408,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 846px) {
   ._378qt {
     top: 68px;
-    padding: 0 14px;
+    padding: 0 16px;
   }
 
   ._378qt:after {
@@ -9455,14 +9459,14 @@ div._3bqe5 > div {
 }
 
 .Ofajv:after {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 846px) {
   .Ofajv {
     border-width: 2px;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -9470,8 +9474,8 @@ div._3bqe5 > div {
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   margin-left: 26px;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 846px) {
@@ -9483,7 +9487,7 @@ div._3bqe5 > div {
 ._mHwf > a,
 ._mHwf > button,
 ._mHwf > div {
-  margin: 0 14px;
+  margin: 0 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -9507,7 +9511,7 @@ div._3bqe5 > div {
   .mThhK {
     display: block;
     position: relative;
-    margin-right: 14px;
+    margin-right: 16px;
     z-index: 1;
     transform: scale(0.8);
   }
@@ -9521,7 +9525,7 @@ div._3bqe5 > div {
   .fHCTs {
     position: absolute;
     top: -4px;
-    left: 40px;
+    left: 32px;
     padding: 0;
     opacity: 0;
     transform: translateZ(-300px);
@@ -9550,7 +9554,7 @@ div._3bqe5 > div {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -14px;
+    left: -16px;
     width: 300px;
   }
 }
@@ -9588,7 +9592,7 @@ div._3bqe5 > div {
 
 .jfRCH {
   line-height: 18px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 846px) {
@@ -9598,8 +9602,8 @@ div._3bqe5 > div {
 }
 
 ._2mthE {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   color: rgba(0, 149, 208, 0.95);
 }
 
@@ -9730,7 +9734,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   .vrQ3d {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 
@@ -9826,15 +9830,15 @@ div._3bqe5 > div {
   .j-W_D {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 @media screen and (max-width: 846px) {
   .j-W_D {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
     padding-top: 18px;
   }
 }
@@ -9908,7 +9912,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 1236px) {
   ._2qt9e {
-    left: 14px;
+    left: 16px;
   }
 }
 
@@ -9923,7 +9927,7 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   position: absolute;
   top: 0;
@@ -9952,14 +9956,14 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._27YDA {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 }
 
 @media screen and (max-width: 846px) {
   ._5VFgk {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 }
@@ -10039,7 +10043,7 @@ div._3bqe5 > div {
   position: relative;
   padding-right: 38px;
   float: right;
-  margin-left: 40px;
+  margin-left: 32px;
   margin-bottom: 44px;
   width: 40%;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
@@ -10049,7 +10053,7 @@ div._3bqe5 > div {
 
 .jMpNK blockquote {
   border: 10px solid rgba(0, 8, 39, 0.95);
-  padding: 160px 14px 18px;
+  padding: 160px 16px 18px;
 }
 
 .jMpNK blockquote p {
@@ -10074,7 +10078,7 @@ div._3bqe5 > div {
     width: 90%;
     float: none;
     margin: 28px 0;
-    padding-right: 14px;
+    padding-right: 16px;
   }
 }
 
@@ -10103,7 +10107,7 @@ div._3bqe5 > div {
   width: 100%;
   background: linear-gradient(to right, rgba(0, 8, 39, 0.95), rgba(0, 149, 208, 0.95), rgba(32, 198, 89, 0.95));
   margin-top: 28px;
-  padding: 14px;
+  padding: 16px;
 }
 
 ._2cAm4 span {
@@ -10212,7 +10216,7 @@ div._3bqe5 > div {
 }
 
 ._2gXFy {
-  padding: 14px;
+  padding: 16px;
   position: relative;
 }
 
@@ -10224,9 +10228,9 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._1Ov3j {
-    margin-top: 14px;
+    margin-top: 16px;
     padding-right: 0;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 
@@ -10259,7 +10263,7 @@ div._3bqe5 > div {
   display: flex;
   border-top: none;
   border-bottom: none;
-  padding: 14px;
+  padding: 16px;
   -ms-flex-pack: justify;
   justify-content: space-between;
   float: none;
@@ -10288,7 +10292,7 @@ div._3bqe5 > div {
 ._1l_wG a,
 ._1l_wG button,
 ._1l_wG div {
-  margin: 0 14px;
+  margin: 0 16px;
 }
 
 ._1l_wG a:first-child,
@@ -10298,16 +10302,16 @@ div._3bqe5 > div {
 }
 
 ._1l_wG dribbles button:first-child {
-  margin-left: 14px;
+  margin-left: 16px;
 }
 
 ._1l_wG ._24GTO {
   margin-top: 0;
-  padding: 0 14px 0 0;
+  padding: 0 16px 0 0;
 }
 
 ._1l_wG .rF2QA {
-  padding: 0 14px 0 0;
+  padding: 0 16px 0 0;
 }
 
 ._210LR ._24GTO {
@@ -10317,7 +10321,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._1l_wG {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -10352,8 +10356,8 @@ div._3bqe5 > div {
   ._1Y7kL {
     margin-left: 0;
     margin-right: 0;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -10511,7 +10515,7 @@ div._3bqe5 > div {
 }
 
 ._2Qf5d {
-  margin-top: 14px;
+  margin-top: 16px;
   max-width: 960px;
 }
 
@@ -10558,7 +10562,7 @@ div._3bqe5 > div {
   width: 170px;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   padding-bottom: 9px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1158px) {
@@ -10595,7 +10599,7 @@ div._3bqe5 > div {
 
 ._9fE1R {
   position: relative;
-  padding: 14px;
+  padding: 16px;
   margin-top: 24px;
 }
 
@@ -10612,7 +10616,7 @@ div._3bqe5 > div {
   background: #FFFFFF;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   opacity: 0;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -10642,8 +10646,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2pnaG {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -10655,15 +10659,15 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._2pnaG {
-    font-size: 14px;
-    line-height: 14px;
-    padding: 9px 14px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 9px 16px;
     padding-right: 55px;
   }
 }
 
 ._3Cj79 {
-  padding: 12px 40px;
+  padding: 12px 32px;
   margin-left: auto;
   background: #0095D0;
   color: #FFFFFF;
@@ -10680,7 +10684,7 @@ div._3bqe5 > div {
   position: absolute;
   cursor: pointer;
   top: 0;
-  right: 14px;
+  right: 16px;
   padding: 9px;
   width: 35px;
   height: 100%;
@@ -10709,7 +10713,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._3tkuf {
-    margin: 0 -14px;
+    margin: 0 -16px;
   }
 
   ._1drt2 {
@@ -10727,7 +10731,7 @@ div._3bqe5 > div {
 
 ._1yV5F {
   text-align: center;
-  padding: 12px 40px;
+  padding: 12px 32px;
   border-radius: 0;
 }
 
@@ -10737,7 +10741,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._3OD4J {
-    margin-top: 14px;
+    margin-top: 16px;
   }
 }
 
@@ -10762,7 +10766,7 @@ div._3bqe5 > div {
 
 ._17BOo {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   background: linear-gradient(to right, rgba(0, 8, 39, 0.95), rgba(0, 149, 208, 0.95), rgba(32, 198, 89, 0.95));
   color: #FFFFFF;
@@ -10782,7 +10786,7 @@ div._3bqe5 > div {
 }
 
 ._1Do0W {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -10834,7 +10838,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 1236px) {
   ._1lNSv {
-    left: 14px;
+    left: 16px;
   }
 }
 
@@ -10849,7 +10853,7 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   position: absolute;
   top: 0;
@@ -10914,16 +10918,16 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .e_0uO {
-    -ms-flex: 0 0 40px;
-    flex: 0 0 40px;
-    width: 40px;
-    height: 40px;
+    -ms-flex: 0 0 32px;
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
     border: 1px solid rgba(0, 149, 208, 0.15);
   }
 
   .e_0uO:after {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -10931,16 +10935,16 @@ div._3bqe5 > div {
   ._3FTXM {
     -ms-flex: 1;
     flex: 1;
-    margin-left: 14px;
+    margin-left: 16px;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 32px;
     transform: none;
   }
 }
 
 @media screen and (max-width: 508px) {
   ._3FTXM {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -10975,7 +10979,7 @@ div._3bqe5 > div {
 }
 
 ._2IXjg {
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 9px;
   display: block;
   display: -ms-flexbox;
@@ -11022,8 +11026,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3pY5R {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -11067,7 +11071,7 @@ div._3bqe5 > div {
 ._2Oafo {
   width: 100%;
   max-width: 716px;
-  margin: 14px auto;
+  margin: 16px auto;
   margin: 0 auto;
 }
 
@@ -11082,8 +11086,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2Oafo {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -11119,7 +11123,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   .RrPUh p,
   .RrPUh span {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     line-height: 22px;
   }
@@ -11132,8 +11136,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .zZi01 {
-    margin-left: 14px;
-    margin-right: 14px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 }
 
@@ -11155,8 +11159,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._1MHOe {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 32px;
+    margin-right: 32px;
   }
 }
 
@@ -11171,7 +11175,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3GQKy {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 }
@@ -11203,15 +11207,15 @@ div._3bqe5 > div {
 }
 
 ._23lBg {
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   padding-left: 208px;
 }
 
 @media screen and (max-width: 846px) {
   ._23lBg {
     padding-left: 0;
-    margin-top: 40px;
-    margin-right: 14px;
+    margin-top: 32px;
+    margin-right: 16px;
   }
 }
 
@@ -11248,7 +11252,7 @@ div._3bqe5 > div {
   }
 
   ._3cWLS ._1MHOe {
-    margin-left: 40px;
+    margin-left: 32px;
   }
 }
 
@@ -11261,20 +11265,20 @@ div._3bqe5 > div {
 
 ._3cGe8 {
   color: rgba(0, 149, 208, 0.95);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
-  padding: 14px 0;
+  padding: 16px 0;
 }
 
 @media screen and (max-width: 716px) {
   ._3cGe8 {
-    margin-left: 14px;
+    margin-left: 16px;
   }
 }
 
 @media screen and (max-width: 976px) {
   ._3cGe8 {
-    margin: 0 14px;
+    margin: 0 16px;
   }
 }
 
@@ -11283,7 +11287,7 @@ div._3bqe5 > div {
   display: flex;
   border-top: 1px solid rgba(0, 149, 208, 0.15);
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
-  padding: 14px 0;
+  padding: 16px 0;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 28px;
@@ -11308,7 +11312,7 @@ div._3bqe5 > div {
 .Yyq1F a,
 .Yyq1F button,
 .Yyq1F div {
-  margin: 0 14px;
+  margin: 0 16px;
 }
 
 .Yyq1F a:first-child,
@@ -11319,7 +11323,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .Yyq1F {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -11350,7 +11354,7 @@ div._3bqe5 > div {
 
 .qPTpG {
   margin: 0 auto;
-  margin-top: 14px;
+  margin-top: 16px;
   max-width: 960px;
 }
 
@@ -11365,7 +11369,7 @@ div._3bqe5 > div {
 @media screen and (min-width: 1158px) {
   .qPTpG {
     margin: 0;
-    margin-top: 14px;
+    margin-top: 16px;
   }
 }
 
@@ -11388,7 +11392,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   .Hyeve {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 }
@@ -11417,8 +11421,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3LTD2 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -11482,8 +11486,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .ylwz1 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -11513,7 +11517,7 @@ div._3bqe5 > div {
 }
 
 ._23YI {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 ._3Z0E3 {
@@ -11525,12 +11529,12 @@ div._3bqe5 > div {
   align-items: center;
   margin-top: 18px;
   border: 1px solid rgba(0, 149, 208, 0.15);
-  padding: 14px;
+  padding: 16px;
 }
 
 ._1aThB {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   transition: all 0.1s linear;
 }
 
@@ -11544,8 +11548,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._1aThB {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -11615,8 +11619,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .jwlFt {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -11642,8 +11646,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._1zwKC {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -11670,7 +11674,6 @@ div._3bqe5 > div {
 ._1RyqV ._1RyqV {
   padding: 0;
   margin: 0;
-  margin-right: -15px;
 }
 
 ._1RyqV ._1RyqV ._3HYOY {
@@ -11678,10 +11681,11 @@ div._3bqe5 > div {
 }
 
 ._1RyqV ._1RyqV .gEjmr {
-  padding: 14px;
+  padding: 16px;
   box-shadow: none;
   border: none;
   border-left: 1px solid rgba(0, 149, 208, 0.15);
+  margin-top: 16px;
 }
 
 ._2uxNN {
@@ -11690,7 +11694,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 22px;
-  padding: 0px 0 14px 0;
+  padding: 0px 0 16px 0;
 }
 
 @media screen and (max-width: 508px) {
@@ -11705,7 +11709,7 @@ div._3bqe5 > div {
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
   background: #FFFFFF;
   margin-bottom: 22px;
-  padding: 14px;
+  padding: 16px;
   box-shadow: 0 1px 4px 0 rgba(103, 143, 185, 0.95);
 }
 
@@ -11876,7 +11880,7 @@ div._3bqe5 > div {
 }
 
 ._25LcG {
-  font-size: 14px;
+  font-size: 16px;
   color: #f8f8f8;
 }
 
@@ -11885,8 +11889,8 @@ div._3bqe5 > div {
 }
 
 ._1wjeD {
-  padding: 40px 35px;
-  padding-bottom: 114px;
+  padding: 32px 35px;
+  padding-bottom: 116px;
 }
 
 @media screen and (max-width: 1236px) {
@@ -11904,7 +11908,7 @@ div._3bqe5 > div {
 }
 
 ._2MI6h {
-  font-size: 14px;
+  font-size: 16px;
   padding-bottom: 4px;
 }
 
@@ -12055,7 +12059,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 846px) {
   .cB9oA {
     top: 68px;
-    padding: 0 14px;
+    padding: 0 16px;
   }
 
   .cB9oA:after {
@@ -12103,14 +12107,14 @@ div._3bqe5 > div {
 }
 
 .HkQZ5:after {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 846px) {
   .HkQZ5 {
     border-width: 2px;
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -12119,7 +12123,7 @@ div._3bqe5 > div {
   flex: 1 1 100%;
   margin-left: 24px;
   font-size: 16px;
-  line-height: 14px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 846px) {
@@ -12131,7 +12135,7 @@ div._3bqe5 > div {
 ._2qjq9 > a,
 ._2qjq9 > button,
 ._2qjq9 > div {
-  margin: 0 14px;
+  margin: 0 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -12166,7 +12170,7 @@ div._3bqe5 > div {
   ._3VA_m {
     display: block;
     position: relative;
-    margin-right: 14px;
+    margin-right: 16px;
     z-index: 1;
     transform: scale(0.8);
   }
@@ -12227,7 +12231,7 @@ div._3bqe5 > div {
 }
 
 ._11d79 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -12238,8 +12242,8 @@ div._3bqe5 > div {
 }
 
 .Orvqg {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   color: #666;
 }
 
@@ -12276,7 +12280,7 @@ div._3bqe5 > div {
 }
 
 ._1FMfz {
-  transform: translateY(14px);
+  transform: translateY(16px);
 }
 
 @media screen and (max-width: 508px) {
@@ -12292,7 +12296,7 @@ div._3bqe5 > div {
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  margin-top: 14px;
+  margin-top: 16px;
   filter: drop-shadow(0 2px 5px rgba(32, 198, 89, 0.15));
 }
 
@@ -12333,15 +12337,15 @@ div._3bqe5 > div {
 ._2Q0fU {
   display: -ms-flexbox;
   display: flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 0;
+  width: 32px;
+  height: 32px;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
   margin-right: 12px;
   transition: all 0.1s linear;
+  border-radius: 7px;
 }
 
 ._2Q0fU:last-child {
@@ -12396,7 +12400,7 @@ div._3bqe5 > div {
   flex-direction: column;
   -ms-flex-align: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   text-align: center;
   width: 133px;
 }
@@ -12419,7 +12423,7 @@ div._3bqe5 > div {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 0;
-    padding: 9px 14px;
+    padding: 9px 16px;
     border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   }
 
@@ -12429,7 +12433,7 @@ div._3bqe5 > div {
   }
 
   .DcoLy ._31RCK span {
-    font-size: 14px;
+    font-size: 16px;
     display: inline;
   }
 }
@@ -12463,7 +12467,7 @@ div._3bqe5 > div {
 ._1iAGF {
   min-width: 80px;
   display: block;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   height: 30px;
   padding: 4px;
@@ -12529,7 +12533,7 @@ div._3bqe5 > div {
 
 ._1fuqz {
   color: rgba(0, 149, 208, 0.95);
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
@@ -12563,7 +12567,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._2z8Aq {
     margin: 18px 0;
-    padding-left: 14px;
+    padding-left: 16px;
   }
 }
 
@@ -12588,7 +12592,7 @@ div._3bqe5 > div {
 
 @media screen and (min-width: 508px) {
   ._1fsZ8 {
-    margin-right: 14px;
+    margin-right: 16px;
   }
 }
 
@@ -12607,7 +12611,7 @@ div._3bqe5 > div {
   margin-right: auto;
 }
 
-@media screen and (max-width: 214px) {
+@media screen and (max-width: 216px) {
   ._3XlGZ {
     margin-left: 0;
     margin-right: 0;
@@ -12618,14 +12622,14 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3XlGZ {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 @media screen and (min-width: 846px) {
   ._3XlGZ {
-    margin-left: 40px;
+    margin-left: 32px;
     -ms-flex: 1 1 20%;
     flex: 1 1 20%;
   }
@@ -12657,7 +12661,7 @@ div._3bqe5 > div {
   position: relative;
   padding-bottom: 18px;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
-  padding: 14px;
+  padding: 16px;
   padding-left: 0;
   text-align: center;
 }
@@ -12694,12 +12698,12 @@ div._3bqe5 > div {
 .DdJUj {
   display: block;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._3UkdP {
-  width: 14px;
+  width: 16px;
 }
 
 @media screen and (min-width: 508px) {
@@ -12720,7 +12724,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .C6GXY {
-    right: 14px;
+    right: 16px;
     display: none;
   }
 }
@@ -12771,8 +12775,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2D-j4 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -12833,7 +12837,7 @@ div._3bqe5 > div {
 }
 
 ._3VqBn {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   padding-top: 35px;
   padding-bottom: 30px;
   background-color: rgba(32, 198, 89, 0.15);
@@ -12872,8 +12876,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._1feHN {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -12888,7 +12892,7 @@ div._3bqe5 > div {
 }
 
 .cHuZj {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
 }
@@ -12911,7 +12915,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 916px) {
   ._34o6h {
-    padding: 14px 28px;
+    padding: 16px 28px;
   }
 }
 
@@ -12921,7 +12925,7 @@ div._3bqe5 > div {
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 ._2ROcL:last-child {
@@ -12948,23 +12952,23 @@ div._3bqe5 > div {
   flex-direction: column;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 14px;
+  margin: 0 16px;
 }
 
 ._3i2q0 {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
 }
 
 ._1b0W4,
 ._3i2q0 {
-  line-height: 14px;
+  line-height: 16px;
 }
 
 ._1b0W4 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ._3f7H0 {
@@ -13045,7 +13049,7 @@ div._3bqe5 > div {
   font-family: DriveTribe Condensed, Helvetica, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: #FFFFFF;
   position: absolute;
@@ -13057,9 +13061,9 @@ div._3bqe5 > div {
 ._1-0JF {
   background: linear-gradient(to right, rgba(0, 8, 39, 0.95), rgba(0, 149, 208, 0.95), rgba(32, 198, 89, 0.95));
   color: #f8f8f8;
-  padding: 44px 14px;
+  padding: 44px 16px;
   position: relative;
-  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.05);
   margin: 0;
 }
 
@@ -13076,14 +13080,14 @@ div._3bqe5 > div {
 }
 
 .yDDll {
-  padding: 0 14px 44px;
+  padding: 0 16px 44px;
 }
 
 @media screen and (max-width: 1028px) {
   .yDDll {
     display: block;
     margin: 0 0 22px;
-    padding: 0 14px;
+    padding: 0 16px;
   }
 }
 
@@ -13094,7 +13098,7 @@ div._3bqe5 > div {
   justify-content: center;
   background: linear-gradient(to right, rgba(0, 8, 39, 0.95), rgba(0, 149, 208, 0.95), rgba(32, 198, 89, 0.95));
   min-height: 12px;
-  margin: 0 -14px 44px;
+  margin: 0 -16px 44px;
 }
 
 ._8kqds {
@@ -13118,7 +13122,7 @@ div._3bqe5 > div {
   width: 100%;
   max-width: 1236px;
   padding: 28px 0;
-  margin: 0 14px;
+  margin: 0 16px;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -13134,7 +13138,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 924px) {
   ._2vcr4 {
     padding: 28px 0;
-    margin: 0 14px;
+    margin: 0 16px;
   }
 }
 
@@ -13211,7 +13215,7 @@ div._3bqe5 > div {
 ._7YHcU {
   text-transform: uppercase;
   margin-bottom: 22px;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ._17c3x {
@@ -13276,7 +13280,7 @@ div._3bqe5 > div {
 }
 
 ._3JzN1 {
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 ._3JzN1 div {
@@ -13287,8 +13291,8 @@ div._3bqe5 > div {
   color: #f8f8f8;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
 }
 
@@ -13331,13 +13335,13 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3Khdi {
-    min-height: 40px;
+    min-height: 32px;
   }
 }
 
 @media screen and (max-width: 508px) {
   ._3Khdi {
-    min-height: 40px;
+    min-height: 32px;
   }
 }
 
@@ -13350,8 +13354,8 @@ div._3bqe5 > div {
   display: block;
   color: #FFFFFF;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   position: relative;
   margin-top: 18px;
   padding-top: 18px;
@@ -13482,7 +13486,7 @@ div._3bqe5 > div {
     font-family: DriveTribe Condensed, Helvetica, sans-serif;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     color: #FFFFFF;
     position: absolute;
@@ -13619,8 +13623,8 @@ div._3bqe5 > div {
 ._1SLoN {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   background: rgba(0, 149, 208, 0.1);
   margin: 0 9px 0 0;
   padding: 13px 22px;
@@ -13671,7 +13675,7 @@ div._3bqe5 > div {
 
 @media screen and (min-width: 508px) {
   ._1k5bL {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
     border-radius: 7px;
   }
@@ -13704,7 +13708,7 @@ div._3bqe5 > div {
   z-index: 1;
   opacity: 0;
   top: 0;
-  padding: 14px 18px;
+  padding: 16px 18px;
   position: absolute;
   background: linear-gradient(90deg, #fff 0, rgba(255, 255, 255, 0.95) 70%, rgba(255, 255, 255, 0.15));
   left: 0;
@@ -13768,7 +13772,7 @@ div._3bqe5 > div {
 }
 
 ._1U_qv {
-  padding: 14px;
+  padding: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -13803,8 +13807,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2KNH4 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-bottom: 0;
@@ -13908,8 +13912,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._11gfn {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -13950,7 +13954,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._3hdBv {
-    padding-bottom: 14px;
+    padding-bottom: 16px;
   }
 }
 
@@ -13968,7 +13972,7 @@ div._3bqe5 > div {
 ._2EVp5 svg {
   right: 18px;
   margin-top: 5px;
-  margin-left: 14px;
+  margin-left: 16px;
 }
 
 ._2EVp5 path {
@@ -13980,7 +13984,7 @@ div._3bqe5 > div {
     top: auto;
     right: auto;
     bottom: 0;
-    left: 14px;
+    left: 16px;
   }
 }
 
@@ -14008,8 +14012,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._1xsYJ {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -14021,7 +14025,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._1xsYJ .aPjG8 {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 
@@ -14053,8 +14057,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3yl6Y {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-bottom: 18px;
   }
 }
@@ -14075,12 +14079,12 @@ div._3bqe5 > div {
 }
 
 ._3WrZO {
-  transform: translateX(14px) translateY(16px) rotate(-90deg) scale(1.2);
+  transform: translateX(16px) translateY(16px) rotate(-90deg) scale(1.2);
 }
 
 @media screen and (max-width: 508px) {
   ._3WrZO {
-    transform: translateX(14px) translateY(12px) rotate(-90deg) scale(1);
+    transform: translateX(16px) translateY(12px) rotate(-90deg) scale(1);
   }
 }
 
@@ -14124,8 +14128,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3nlN8 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -14216,8 +14220,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._18Ur_ {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
     height: auto;
     margin-top: 0;
     padding: 0;
@@ -14282,7 +14286,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2zNwx {
-    padding: 12px 14px;
+    padding: 12px 16px;
   }
 }
 
@@ -14318,8 +14322,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .bHN0m {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -14333,14 +14337,14 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   color: rgba(0, 8, 39, 0.85);
   width: 100%;
   padding-top: 18px;
   padding-bottom: 18px;
   display: block;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   text-align: center;
   border-radius: 0;
 }
@@ -14365,7 +14369,7 @@ div._3bqe5 > div {
 
 ._1ssnS {
   background-color: #0095D0;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   border: 0;
   color: #FFFFFF;
 }
@@ -14388,10 +14392,10 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._27HZP {
-    width: 40px;
-    height: 40px;
-    margin-bottom: 14px;
-    margin-top: 14px;
+    width: 32px;
+    height: 32px;
+    margin-bottom: 16px;
+    margin-top: 16px;
   }
 }
 
@@ -14415,20 +14419,20 @@ div._3bqe5 > div {
 }
 
 ._1g8z0 {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   color: rgba(32, 198, 89, 0.15);
 }
 
 ._1g8z0 a {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   color: rgba(32, 198, 89, 0.15);
 }
 
 ._35zqi,
 .d3Gx3 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -14493,15 +14497,15 @@ div._3bqe5 > div {
 }
 
 .d3Gx3 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: #141C3E;
 }
 
 @media screen and (max-width: 508px) {
   .d3Gx3 {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -14532,7 +14536,7 @@ div._3bqe5 > div {
 
 ._1a2gI {
   color: #FFFFFF;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
 }
 
@@ -14547,7 +14551,7 @@ div._3bqe5 > div {
 ._3AKLf {
   display: -ms-flexbox;
   display: flex;
-  margin: 14px;
+  margin: 16px;
 }
 
 ._3AKLf button {
@@ -14576,7 +14580,7 @@ div._3bqe5 > div {
 ._3y3Fm {
   width: 100%;
   background: #F2F2F2;
-  padding: 18px 14px;
+  padding: 18px 16px;
   display: -ms-flexbox;
   display: flex;
   cursor: pointer;
@@ -14586,20 +14590,20 @@ div._3bqe5 > div {
   -ms-flex: 0 0 32px;
   flex: 0 0 32px;
   height: 32px;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._1esqq {
   -ms-flex: 1 1 100%;
   flex: 1 1 100%;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._105Oj,
 .seE-I {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._105Oj em,
@@ -14716,7 +14720,7 @@ div._3bqe5 > div {
 }
 
 ._2iRjb {
-  padding: 22px 14px 14px;
+  padding: 22px 16px 16px;
 }
 
 @media screen and (min-width: 508px) {
@@ -14761,11 +14765,11 @@ div._3bqe5 > div {
 }
 
 ._2P1mw {
-  padding: 14px 26px;
+  padding: 16px 26px;
   transition: background-color .1s linear;
   transition: all .1s ease-out;
   transform-origin: bottom right;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
 }
 
@@ -14786,9 +14790,9 @@ div._3bqe5 > div {
 
 .rr7kJ {
   width: calc(100% - 28px);
-  bottom: 14px;
-  right: 14px;
-  left: 14px;
+  bottom: 16px;
+  right: 16px;
+  left: 16px;
   height: 35px;
   padding: 0;
   text-align: center;
@@ -14817,7 +14821,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 22px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -14829,7 +14833,7 @@ div._3bqe5 > div {
 }
 
 ._1gZlE {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -14838,7 +14842,7 @@ div._3bqe5 > div {
 }
 
 ._3es_m {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   float: left;
   margin-top: 28px;
@@ -14877,7 +14881,7 @@ div._3bqe5 > div {
     left: 0;
     width: 300px;
     height: 300px;
-    padding: 18px 40px 24px 14px;
+    padding: 18px 32px 24px 16px;
   }
 
   ._1qe7q ._1ORHw {
@@ -14887,7 +14891,7 @@ div._3bqe5 > div {
   ._1qe7q ._1gZlE,
   ._1qe7q ._2BMyH,
   ._1qe7q ._3es_m {
-    margin-left: 14px;
+    margin-left: 16px;
   }
 
   ._1qe7q ._2BMyH {
@@ -14896,8 +14900,8 @@ div._3bqe5 > div {
   }
 
   ._1qe7q ._1gZlE {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   ._1qe7q ._3es_m,
@@ -14914,8 +14918,8 @@ div._3bqe5 > div {
   }
 
   ._1gZlE {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 
   ._12L63.LjaF7 {
@@ -14977,8 +14981,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .EjRC7 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -14998,7 +15002,7 @@ div._3bqe5 > div {
 }
 
 ._36Qac button {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -15021,10 +15025,10 @@ div._3bqe5 > div {
 }
 
 ._2VZI8 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   float: right;
-  padding: 14px 26px;
+  padding: 16px 26px;
   position: relative;
   top: -12px;
 }
@@ -15054,8 +15058,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3WCIL {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -15090,7 +15094,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._1bKba {
-    margin: -14px;
+    margin: -16px;
   }
 }
 
@@ -15210,7 +15214,7 @@ div._3bqe5 > div {
   border: none;
   height: 66px;
   width: 100%;
-  padding: 14px;
+  padding: 16px;
   position: fixed;
   backface-visibility: hidden;
   top: 0;
@@ -15246,13 +15250,13 @@ div._3bqe5 > div {
   font-family: 'DriveTribe', Helvetica, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
 }
 
 @media (max-width: 846px) {
   .R1XAV.jMZSBo {
-    padding: 0px 14px;
+    padding: 0px 16px;
     background-color: #ffffff;
     border-color: #e8ebef;
   }
@@ -15260,8 +15264,8 @@ div._3bqe5 > div {
 
 @media (max-width: 586px) {
   .R1XAV.jMZSBo {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
@@ -15292,7 +15296,7 @@ div._3bqe5 > div {
   -ms-letter-spacing: 1.3px;
   letter-spacing: 1.3px;
   position: relative;
-  padding: 10px 14px;
+  padding: 10px 16px;
   cursor: pointer;
   line-height: 1;
   padding-left: 0;
@@ -15303,8 +15307,8 @@ div._3bqe5 > div {
   box-sizing: content-box;
   display: block;
   position: absolute;
-  left: 14px;
-  right: 14px;
+  left: 16px;
+  right: 16px;
   bottom: 4px;
   height: 0;
   background-color: #FFFFFF;
@@ -15314,7 +15318,7 @@ div._3bqe5 > div {
   .R1XAV .fVSfy .bUebbF {
     display: none;
     padding: 0;
-    padding-right: 14px;
+    padding-right: 16px;
   }
 
   .R1XAV .fVSfy .bUebbF:before {
@@ -15341,15 +15345,15 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._GSL7C {
   border: 1px solid rgba(0, 149, 208, 0.15);
   display: block;
-  height: 40px;
-  width: 40px;
+  height: 32px;
+  width: 32px;
   position: relative;
   border-radius: 7px;
   cursor: pointer;
@@ -15360,8 +15364,8 @@ div._3bqe5 > div {
 
 ._GSL7C svg {
   position: absolute;
-  left: 7px;
-  top: 7px;
+  left: 3px;
+  top: 3px;
 }
 
 ._GSL7C:hover {
@@ -15371,7 +15375,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .R1XAV {
-    padding: 14px 24px;
+    padding: 16px 24px;
     height: 68px;
   }
 }
@@ -15399,7 +15403,7 @@ div._3bqe5 > div {
 
 @media (max-width: 586px) {
   ._2H55B .jHUdQQ {
-    left: 14px;
+    left: 16px;
   }
 }
 
@@ -15531,8 +15535,8 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._2H55B > :after {
@@ -15564,12 +15568,12 @@ div._3bqe5 > div {
 @media screen and (max-width: 846px) {
   ._2H55B > *,
   ._3BBJg > * {
-    margin: 0 14px;
+    margin: 0 16px;
   }
 
   ._2H55B > :after,
   ._3BBJg > :after {
-    right: -14px;
+    right: -16px;
   }
 }
 
@@ -15577,7 +15581,7 @@ div._3bqe5 > div {
   ._2H55B > *,
   ._3BBJg > * {
     margin: 0 1px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 
@@ -15611,7 +15615,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._13sKJ.HEYnN:before,
   ._13sKJ:hover:before {
-    bottom: calc(50% - 14px);
+    bottom: calc(50% - 16px);
     height: 2px;
     left: 12px;
     right: 12px;
@@ -15633,7 +15637,7 @@ div._3bqe5 > div {
   transition: all 0.2s cubic-bezier(0, 0.42, 0, 1);
   padding-left: 0;
   margin-left: 0;
-  margin-right: 14px;
+  margin-right: 16px;
   padding-right: 0;
 }
 
@@ -15680,8 +15684,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3YKuQ {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
   }
 }
 
@@ -15723,9 +15727,9 @@ div._3bqe5 > div {
 }
 
 .X4CNn {
-  width: 40px;
-  height: 40px;
-  margin-left: 14px;
+  width: 32px;
+  height: 32px;
+  margin-left: 16px;
   padding-right: 0;
 }
 
@@ -15787,8 +15791,8 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   padding: 18px 44px;
   margin-left: 0;
   white-space: nowrap;
@@ -15801,7 +15805,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._6UUFH {
     padding: 0 22px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
     display: none;
   }
@@ -15846,7 +15850,7 @@ div._3bqe5 > div {
 
 ._3TYH2 {
   border: 1px solid rgba(0, 149, 208, 0.15);
-  padding: 14px;
+  padding: 16px;
 }
 
 ._3TYH2:after {
@@ -15863,7 +15867,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   .l4oHd {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
     padding: 4px 22px 4px 0;
   }
@@ -15925,17 +15929,17 @@ div._3bqe5 > div {
     position: absolute;
     width: auto;
     left: 0;
-    right: 14px;
+    right: 16px;
   }
 
   ._12GBJ ._1C5MC {
     font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
     display: block;
-    margin-left: 14px;
+    margin-left: 16px;
   }
 }
 
@@ -15979,8 +15983,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._17hDZ {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -16008,14 +16012,14 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .uARmY {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 ._1DH32 {
   background-color: #F2F2F2;
-  padding-top: 40px;
+  padding-top: 32px;
   padding-bottom: 500px;
 }
 
@@ -16027,7 +16031,7 @@ div._3bqe5 > div {
 
 @media screen and (min-width: 1236px) {
   ._1DH32 {
-    padding-top: 40px;
+    padding-top: 32px;
   }
 }
 
@@ -16041,7 +16045,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 846px) {
   .qo5ix,
   .uARmY {
-    padding: 0 14px;
+    padding: 0 16px;
   }
 }
 
@@ -16071,8 +16075,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .qo5ix {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -16135,8 +16139,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2eEDw {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -16147,7 +16151,7 @@ div._3bqe5 > div {
 }
 
 ._1gJri {
-  padding: 18px 40px 18px 14px;
+  padding: 18px 32px 18px 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -16174,7 +16178,7 @@ div._3bqe5 > div {
   height: 52px;
   -ms-flex: 0 0 52px;
   flex: 0 0 52px;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -16189,7 +16193,7 @@ div._3bqe5 > div {
 }
 
 ._2hpiT {
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._2LIIc {
@@ -16224,7 +16228,7 @@ div._3bqe5 > div {
   ._3vawV,
   ._3ZFAN,
   ._10G3J {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -16423,8 +16427,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .lStfn {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -16449,7 +16453,7 @@ div._3bqe5 > div {
     flex: 0 0 68px;
     width: 68px;
     height: 68px;
-    margin-right: 14px;
+    margin-right: 16px;
   }
 }
 
@@ -16473,7 +16477,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._2GM-b {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
     margin-bottom: 9px;
   }
@@ -16574,8 +16578,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2xjah {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -16627,15 +16631,15 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._289iX {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 @media screen and (max-width: 508px) {
   ._289iX {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -16709,8 +16713,8 @@ div._3bqe5 > div {
 }
 
 ._1HFhM {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._1k78U {
@@ -16718,7 +16722,7 @@ div._3bqe5 > div {
   height: 104px;
   -ms-flex: 0 0 104px;
   flex: 0 0 104px;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._2VnWb {
@@ -16726,8 +16730,8 @@ div._3bqe5 > div {
   height: 104px;
   -ms-flex: 0 0 104px;
   flex: 0 0 104px;
-  margin-right: 14px;
-  margin-right: 14px;
+  margin-right: 16px;
+  margin-right: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -16773,7 +16777,7 @@ div._3bqe5 > div {
   ._1k78U,
   ._1NG4N,
   .BeWU8 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -16808,8 +16812,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2s5zP {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -16831,8 +16835,8 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._2bVMA {
     background: #F2F2F2;
-    font-size: 14px;
-    padding: 18px 14px 9px;
+    font-size: 16px;
+    padding: 18px 16px 9px;
     margin-bottom: 0;
   }
 }
@@ -16865,7 +16869,7 @@ div._3bqe5 > div {
   justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin-left: -14px;
+  margin-left: -16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -16877,7 +16881,7 @@ div._3bqe5 > div {
 
 ._3ldas {
   display: block;
-  margin: 0 0 44px 14px;
+  margin: 0 0 44px 16px;
   text-align: center;
   position: relative;
 }
@@ -16894,7 +16898,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   ._3ldas {
     margin: 0;
-    padding: 18px 14px;
+    padding: 18px 16px;
     border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   }
 
@@ -16908,8 +16912,8 @@ div._3bqe5 > div {
   }
 
   ._3ldas span {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
     display: inline;
   }
 }
@@ -16927,7 +16931,7 @@ div._3bqe5 > div {
   }
 
   ._1xRat ._1SDQT {
-    margin-left: 14px;
+    margin-left: 16px;
   }
 
   ._1xRat span {
@@ -16939,8 +16943,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._1b7NZ {
-    margin-left: -14px;
-    margin-right: -14px;
+    margin-left: -16px;
+    margin-right: -16px;
   }
 }
 
@@ -16978,7 +16982,7 @@ div._3bqe5 > div {
 ._3ScYF {
   position: absolute;
   right: 0;
-  width: 40px;
+  width: 32px;
 }
 
 @media screen and (max-width: 508px) {
@@ -17008,8 +17012,8 @@ div._3bqe5 > div {
 ._2Bf6g {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   text-transform: uppercase;
   color: rgba(0, 149, 208, 0.95);
 }
@@ -17029,9 +17033,9 @@ div._3bqe5 > div {
 ._2Jtky {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 14px;
-  padding-left: 14px;
+  font-size: 16px;
+  line-height: 16px;
+  padding-left: 16px;
 }
 
 ._2q8iq {
@@ -17052,7 +17056,7 @@ div._3bqe5 > div {
 }
 
 ._3_hj3 > li {
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._3_hj3 > li:nth-child(6n+6) {
@@ -17063,7 +17067,7 @@ div._3bqe5 > div {
   position: relative;
   top: auto;
   background: #141C3E;
-  padding: 40px 0;
+  padding: 32px 0;
   margin-top: 248px;
 }
 
@@ -17076,7 +17080,7 @@ div._3bqe5 > div {
 ._2jBYb {
   background: #FFFFFF;
   color: rgba(32, 198, 89, 0.15);
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 ._3qJ9g {
@@ -17092,7 +17096,7 @@ div._3bqe5 > div {
   color: rgba(32, 198, 89, 0.15);
   font-size: 55px;
   line-height: 55px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 ._3PIXO {
@@ -17106,10 +17110,10 @@ div._3bqe5 > div {
   border: 1px solid #FFFFFF;
   color: #FFFFFF;
   padding: 6.2px;
-  margin-top: 14px;
+  margin-top: 16px;
   text-transform: uppercase;
   text-align: center;
-  line-height: 14px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 508px) {
@@ -17149,7 +17153,7 @@ div._3bqe5 > div {
   position: relative;
   font-size: 28px;
   display: inline;
-  margin-right: 14px;
+  margin-right: 16px;
   padding: 9px 0;
   opacity: .4;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
@@ -17171,7 +17175,7 @@ div._3bqe5 > div {
   position: absolute;
   bottom: 3px;
   left: 0;
-  width: 14px;
+  width: 16px;
   content: "";
   height: 4px;
   background: rgba(32, 198, 89, 0.15);
@@ -17181,7 +17185,7 @@ div._3bqe5 > div {
   position: absolute;
   bottom: 3px;
   left: 0;
-  width: 14px;
+  width: 16px;
   content: "";
   height: 4px;
   background: rgba(32, 198, 89, 0.15);
@@ -17203,7 +17207,7 @@ div._3bqe5 > div {
   border: 1px solid rgba(0, 149, 208, 0.15);
   float: right;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
 }
@@ -17225,7 +17229,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .DhAPt {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 }
 
@@ -17325,7 +17329,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2_s6A {
-    padding: 0 14px;
+    padding: 0 16px;
   }
 }
 
@@ -17340,8 +17344,8 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   border-bottom: 1px solid rgba(0, 149, 208, 0.95);
   background: #141C3E;
   color: #FFFFFF;
@@ -17373,12 +17377,12 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._36BXl {
-    padding: 0 14px;
+    padding: 0 16px;
   }
 }
 
 ._3zf2G svg {
-  margin-left: 14px;
+  margin-left: 16px;
   transform: translateY(-1px);
 }
 
@@ -17393,8 +17397,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   .FRwY4 {
-    padding: 14px 0;
-    margin-bottom: 14px;
+    padding: 16px 0;
+    margin-bottom: 16px;
   }
 }
 
@@ -17404,7 +17408,7 @@ div._3bqe5 > div {
 }
 
 .SHcyL {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -17454,7 +17458,7 @@ div._3bqe5 > div {
 ._10Rvu {
   display: -ms-flexbox;
   display: flex;
-  padding: 14px 18px;
+  padding: 16px 18px;
   border-top: 1px solid rgba(0, 149, 208, 0.15);
   -ms-flex: 0 0 100%;
   flex: 0 0 100%;
@@ -17474,15 +17478,15 @@ div._3bqe5 > div {
 }
 
 ._6Jl0_ {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 508px) {
   ._6Jl0_ {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
@@ -17524,8 +17528,8 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @media screen and (min-width: 508px) {
@@ -17546,7 +17550,7 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -17570,7 +17574,7 @@ div._3bqe5 > div {
   display: flex;
   border-top: 1px solid rgba(0, 149, 208, 0.15);
   border-left: 1px solid rgba(0, 149, 208, 0.15);
-  padding: 14px 18px;
+  padding: 16px 18px;
   -ms-flex-direction: column;
   flex-direction: column;
   -ms-flex-pack: justify;
@@ -17622,7 +17626,7 @@ div._3bqe5 > div {
     flex: 1 1 10%;
     border-top: 0;
     border-bottom: 0;
-    padding: 0 14px;
+    padding: 0 16px;
   }
 }
 
@@ -17740,8 +17744,8 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._3twB7 {
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -17752,7 +17756,7 @@ div._3bqe5 > div {
   flex: 1 1 100%;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  padding-right: 14px;
+  padding-right: 16px;
 }
 
 ._2nCgx {
@@ -17813,15 +17817,15 @@ div._3bqe5 > div {
   ._61szA {
     -ms-flex: 0 0 92px;
     flex: 0 0 92px;
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 16px;
+    line-height: 16px;
   }
 }
 
 ._1zuag {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   margin-top: 12px;
@@ -17835,7 +17839,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._1zuag {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 12px;
   }
 }
@@ -17858,7 +17862,7 @@ div._3bqe5 > div {
 }
 
 ._25xRM {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -17874,8 +17878,8 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 ._3dwR_ {
@@ -17932,7 +17936,7 @@ div._3bqe5 > div {
 
 ._2Eb44 {
   background-color: #F2F2F2;
-  padding-top: 40px;
+  padding-top: 32px;
 }
 
 @media screen and (min-width: 924px) {
@@ -17979,8 +17983,8 @@ div._3bqe5 > div {
 }
 
 ._2CNre svg {
-  height: 14px;
-  width: 14px;
+  height: 16px;
+  width: 16px;
 }
 
 ._2CNre svg path {
@@ -17992,7 +17996,7 @@ div._3bqe5 > div {
 }
 
 ._3ev6- svg {
-  height: 14px;
+  height: 16px;
   width: 18px;
 }
 
@@ -18006,10 +18010,10 @@ div._3bqe5 > div {
   height: 100%;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  padding: 14px;
+  padding: 16px;
   background: linear-gradient(to right, rgba(0, 8, 39, 0.95), rgba(0, 149, 208, 0.95), rgba(32, 198, 89, 0.95));
   color: #f8f8f8;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
@@ -18086,7 +18090,7 @@ div._3bqe5 > div {
 
 ._3iVZg {
   margin-top: 9px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -18188,14 +18192,14 @@ div._3bqe5 > div {
 }
 
 ._3CI0P {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   display: -ms-flexbox;
   display: flex;
   background: #0095D0;
   color: #FFFFFF;
   width: 222px;
-  padding: 14px 0;
+  padding: 16px 0;
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
@@ -18218,12 +18222,12 @@ div._3bqe5 > div {
 
 ._3ocT_ {
   padding: 28px 35px;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   background-color: #FFFFFF;
 }
 
 ._3ocT_:hover {
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
 ._3ocT_:hover ._3jhvW {
@@ -18232,9 +18236,9 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 508px) {
   ._3ocT_ {
-    padding: 18px 14px;
+    padding: 18px 16px;
     border-radius: 4px;
-    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -18249,13 +18253,13 @@ div._3bqe5 > div {
 ._3jhvW {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
   color: #2784bd;
 }
 
 ._2z54n,
 ._3jhvW {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
 }
 
@@ -18305,7 +18309,7 @@ div._3bqe5 > div {
   height: 9px;
   border-radius: 9px;
   background-color: #0095D0;
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._1Sih2 {
@@ -18429,7 +18433,7 @@ div._3bqe5 > div {
   ._2TjVm {
     height: 405px;
     padding-left: 66px;
-    padding-right: 40px;
+    padding-right: 32px;
     border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   }
 }
@@ -18442,7 +18446,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   ._2TjVm {
-    margin: 28px 14px;
+    margin: 28px 16px;
     padding: 0;
   }
 }
@@ -18472,7 +18476,7 @@ div._3bqe5 > div {
 
 ._3xrOh {
   word-break: break-word;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   margin-top: 18px;
 }
@@ -18566,13 +18570,13 @@ div._3bqe5 > div {
   font-weight: 700;
   font-size: 44px;
   line-height: 55px;
-  padding: 0 14px;
+  padding: 0 16px;
 }
 
 ._1L4n0 {
   font-size: 18px;
   line-height: 22px;
-  padding: 0 14px;
+  padding: 0 16px;
   max-width: 1028px;
 }
 
@@ -18581,7 +18585,7 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 14px 0 28px;
+  margin: 16px 0 28px;
 }
 
 ._2-lPc svg {
@@ -18600,7 +18604,7 @@ div._3bqe5 > div {
 }
 
 ._1dVfa svg {
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._1dVfa svg path {
@@ -18663,7 +18667,7 @@ div._3bqe5 > div {
 }
 
 ._341l1 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   border: 1px solid rgba(0, 149, 208, 0.15);
   -ms-flex: 1;
@@ -18796,12 +18800,12 @@ div._3bqe5 > div {
   -ms-flex-align: center;
   align-items: center;
   max-height: 80px;
-  padding: 0 14px 18px;
+  padding: 0 16px 18px;
 }
 
 @media screen and (max-width: 664px) {
   ._3jt-p {
-    padding: 0 18px 14px;
+    padding: 0 18px 16px;
   }
 }
 
@@ -18815,9 +18819,9 @@ div._3bqe5 > div {
 }
 
 ._1i-5m {
-  padding: 18px 14px;
+  padding: 18px 16px;
   border-top: 1px solid rgba(0, 149, 208, 0.15);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 664px) {
@@ -18829,7 +18833,7 @@ div._3bqe5 > div {
 }
 
 ._23-G3 {
-  padding: 14px 0;
+  padding: 16px 0;
   border-top: 1px solid rgba(0, 149, 208, 0.15);
 }
 
@@ -18877,7 +18881,7 @@ div._3bqe5 > div {
 
 ._8eFus svg {
   position: absolute;
-  width: 14px;
+  width: 16px;
   top: 16px;
   right: 18px;
 }
@@ -18896,7 +18900,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 326px) {
   ._8eFus {
-    margin-left: 114px;
+    margin-left: 116px;
   }
 }
 
@@ -18958,12 +18962,12 @@ div._3bqe5 > div {
 
 ._2qTcl {
   text-transform: uppercase;
-  padding: 14px 0;
-  margin: 0 14px;
+  padding: 16px 0;
+  margin: 0 16px;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   cursor: pointer;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   transition: all .2s ease-out;
 }
 
@@ -18977,7 +18981,7 @@ div._3bqe5 > div {
 
 ._3Xu34 {
   margin-top: 12px;
-  padding: 12px 14px;
+  padding: 12px 16px;
 }
 
 @media screen and (max-width: 664px) {
@@ -19072,7 +19076,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 1158px) {
   ._3rBNC {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 }
@@ -19086,7 +19090,7 @@ nav._1R2o8 {
 }
 
 ._1CR7h svg {
-  margin-right: 14px;
+  margin-right: 16px;
 }
 
 ._1CR7h svg path {
@@ -19138,7 +19142,7 @@ nav._1R2o8 {
 
 ._1pVqQ {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 18px;
@@ -19166,7 +19170,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 664px) {
   ._1pVqQ {
-    padding-top: 14px;
+    padding-top: 16px;
   }
 
   ._1pVqQ:first-child {
@@ -19176,7 +19180,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 664px) {
   ._1KC1j {
-    padding-bottom: 14px;
+    padding-bottom: 16px;
   }
 }
 
@@ -19233,7 +19237,7 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 12px;
   color: rgba(0, 8, 39, 0.85);
   cursor: pointer;
@@ -19241,7 +19245,7 @@ nav._1R2o8 {
 
 ._21SpA {
   color: rgba(0, 149, 208, 0.95);
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 9px;
 }
 
@@ -19352,12 +19356,12 @@ nav._1R2o8 {
   -ms-flex-align: center;
   align-items: center;
   max-height: 80px;
-  padding: 0 14px 18px;
+  padding: 0 16px 18px;
 }
 
 @media screen and (max-width: 664px) {
   ._3jt-p {
-    padding: 0 18px 14px;
+    padding: 0 18px 16px;
   }
 }
 
@@ -19367,7 +19371,7 @@ nav._1R2o8 {
 
 .TzCC1 {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ._2q1KC {
@@ -19547,7 +19551,7 @@ nav._1R2o8 {
 
 ._1VJcf {
   position: relative;
-  width: 40px;
+  width: 32px;
   margin-right: -20px;
 }
 
@@ -19631,12 +19635,12 @@ nav._1R2o8 {
 
 ._2qTcl {
   text-transform: uppercase;
-  padding: 14px 0;
-  margin: 0 14px;
+  padding: 16px 0;
+  margin: 0 16px;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
   cursor: pointer;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
   transition: all .2s ease-out;
 }
 
@@ -19650,7 +19654,7 @@ nav._1R2o8 {
 
 ._3Xu34 {
   margin-top: 12px;
-  padding: 12px 14px;
+  padding: 12px 16px;
 }
 
 @media screen and (max-width: 664px) {
@@ -19743,7 +19747,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 1158px) {
   ._1kh2T {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -19828,8 +19832,8 @@ nav._1R2o8 {
 ._2i-9F {
   text-transform: uppercase;
   padding-left: 7px;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .j5L9g {
@@ -19843,7 +19847,7 @@ nav._1R2o8 {
 }
 
 .DZpu2 {
-  padding: 0 14px;
+  padding: 0 16px;
   border-bottom: 1px solid rgba(0, 149, 208, 0.15);
 }
 
@@ -19869,7 +19873,7 @@ nav._1R2o8 {
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
-  padding: 0 14px;
+  padding: 0 16px;
   border-left: 1px solid rgba(0, 149, 208, 0.15);
 }
 
@@ -19883,11 +19887,11 @@ nav._1R2o8 {
   }
 
   .nXDDw:first-child {
-    padding-left: 14px;
+    padding-left: 16px;
   }
 
   .nXDDw:last-child {
-    padding-right: 14px;
+    padding-right: 16px;
   }
 }
 
@@ -19900,8 +19904,8 @@ nav._1R2o8 {
 }
 
 ._2OsaV {
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 664px) {
@@ -20065,7 +20069,7 @@ nav._1R2o8 {
 .lPfhU {
   margin-right: 12px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -20095,7 +20099,7 @@ nav._1R2o8 {
   -ms-flex-align: center;
   align-items: center;
   height: 28px;
-  font-size: 14px;
+  font-size: 16px;
   max-width: 150px;
   font-weight: 700;
   border: 1px solid #3a5897;
@@ -20104,14 +20108,14 @@ nav._1R2o8 {
 @media screen and (max-width: 1158px) {
   ._2Wivq,
   .wgdCT {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 @media screen and (max-width: 664px) {
   ._2Wivq,
   .wgdCT {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -20270,7 +20274,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 1158px) {
   ._3rBNC {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
 }
@@ -20339,8 +20343,8 @@ nav._1R2o8 {
 }
 
 ._3icdW {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
 }
 
 .vklpv {
@@ -20350,20 +20354,20 @@ nav._1R2o8 {
   flex-direction: column;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-left: 14px;
-  height: 40px;
+  margin-left: 16px;
+  height: 32px;
   color: #FFFFFF;
 }
 
 .lt6XA {
   white-space: nowrap;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 24px;
 }
 
 ._37ior {
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   line-height: 12px;
   color: #FFFFFF;
@@ -20483,8 +20487,8 @@ nav._1R2o8 {
   padding: 7px 7px 7px 22px;
   -ms-flex-order: 4;
   order: 4;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 @media screen and (max-width: 846px) {
@@ -20566,7 +20570,7 @@ nav._1R2o8 {
   line-height: 60px;
   margin-left: 12%;
   width: 380px;
-  text-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 
 .fibZwm .bfnJOq {
@@ -20583,7 +20587,7 @@ nav._1R2o8 {
   font-family: 'DriveTribe',Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 16px;
   -webkit-letter-spacing: 1px;
   -moz-letter-spacing: 1px;
