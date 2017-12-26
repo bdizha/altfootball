@@ -156,7 +156,6 @@ class Post extends Model
 
         $html = $this->html();
         $content = str_replace($searches, '', $html);
-        $content = nl2br($content);
         return str_replace("height=", "", str_replace("width=", "", $content));
     }
 
@@ -273,6 +272,7 @@ class Post extends Model
     public function html()
     {
         $html = $this->content;
+        $html = nl2br($html);
         $html = str_replace("<p><br></p>", "", $html);
         $html = str_replace("<p> </p>", "", $html);
         $html = str_replace("<p><br></p>", "", $html);
