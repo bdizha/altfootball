@@ -272,7 +272,7 @@ class Post extends Model
     public function html()
     {
         $html = $this->content;
-        $html = nl2br($html);
+//        $html = nl2br($html);
         $html = str_replace("<p><br></p>", "", $html);
         $html = str_replace("<p> </p>", "", $html);
         $html = str_replace("<p><br></p>", "", $html);
