@@ -154,7 +154,8 @@ class Post extends Model
 </p>'
         ];
 
-        $content = str_replace($searches, '', $this->content);
+        $html = $this->html();
+        $content = str_replace($searches, '', $html);
         $content = nl2br($content);
         return str_replace("height=", "", str_replace("width=", "", $content));
     }
@@ -267,6 +268,19 @@ class Post extends Model
         } catch (Exception $e) {
             return false;
         }
+    }
+
+    public function html()
+    {
+        $html = $this->content;
+        $html = str_replace("<p><br></p>", "", $html);
+        $html = str_replace("<p> </p>", "", $html);
+        $html = str_replace("<p><br></p>", "", $html);
+        $html = str_replace("<p>&nbsp;</p>", "", $html);
+        $html = str_replace("<br><br>", "<br>", $html);
+        $html = str_replace("style=", "data-style=", $html);
+
+        return $this->insertTarget($html);
     }
 
     public function needsResizing($url)

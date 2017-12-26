@@ -68,6 +68,7 @@ class NewsJob implements ShouldQueue
     public function cleanHtml($html)
     {
         $html = str_replace("<p><br></p>", "", $html);
+        $html = str_replace("<p> </p>", "", $html);
         $html = str_replace("<p><br></p>", "", $html);
         $html = str_replace("<p>&nbsp;</p>", "", $html);
         $html = str_replace("<br><br>", "<br>", $html);
