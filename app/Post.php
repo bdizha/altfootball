@@ -280,7 +280,7 @@ class Post extends Model
         $html = str_replace("<br><br>", "<br>", $html);
         $html = str_replace("style=", "data-style=", $html);
 
-        return $this->insertTarget($html);
+        return $html;
     }
 
     public function needsResizing($url)
