@@ -190,7 +190,7 @@ class Post extends Model
         if (empty($this->thumb_image) || $this->needsResizing($this->thumb_image)) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $params = array("w" => 100, "h" => 100, "crop" => "faces,edges", "fit" => "crop", "auto" => "compress", "fm" => "pjpg");
+                $params = array("w" => 200, "h" => 200, "crop" => "faces,edges", "fit" => "crop", "auto" => "compress", "fm" => "pjpg");
                 $url = $builder->createURL($this->image, $params);
 
                 $this->thumb_image = $url;
@@ -272,7 +272,6 @@ class Post extends Model
     public function html()
     {
         $html = $this->content;
-//        $html = nl2br($html);
         $html = str_replace("<p><br></p>", "", $html);
         $html = str_replace("<p> </p>", "", $html);
         $html = str_replace("<p><br></p>", "", $html);
