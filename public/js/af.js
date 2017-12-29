@@ -541,7 +541,7 @@ $(function () {
                 page: self.page()
             };
 
-            self.page(self.page() + 2);
+            self.page(self.page() + 1);
 
             $.ajax("/posts", {
                 data: params,
@@ -1009,25 +1009,25 @@ $(function () {
 
         self.init = function () {
             console.log("initializing functions :::: ");
-            // var pallet = $(".GLLyX");
-            // var linesTotal = pallet.width();
-            // pallet.prepend("<span class='one'></span>");
-            // pallet.prepend("<span class='two'></span>");
-            //
-            // for (var line = 0; line <= linesTotal; line++) {
-            //     var green = line / linesTotal;
-            //     var blue = 1 - green;
-            //     var color = {
-            //         blue: 'rgba(0, 149, 208, ' + blue + ')',
-            //         green: 'rgba(32, 198, 89, ' + green + ')'
-            //     };
-            //
-            //     var blueSpan = "<span style='background-color: " + color.blue + "'></span>";
-            //     var greenSpan = "<span style='background-color: " + color.green + "'></span>";
-            //
-            //     pallet.children('.one').append(blueSpan);
-            //     pallet.children('.two').append(greenSpan);
-            // }
+            var pallets = $("._1SLoN");
+
+            var colors = [
+                '_B34JK',
+                '_GRT78',
+                '_RRTGY',
+                '_PRT78',
+                '_ORT78'
+            ];
+
+            $.each(pallets, function(key, pallet){
+                console.log("key vs value", key, pallet);
+
+                var random = Math.floor(Math.random() * colors.length);
+                // console.log("random :::: ", random);
+                // console.log("color :::: ", colors[random]);
+
+                $(pallet).addClass(colors[random]);
+            });
 
         }();
 

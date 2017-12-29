@@ -147,17 +147,50 @@
                     </div>
                 </div>
             @endif
-            <div id="feed" class="_1RYG9">
-                <div>
-                    <div class="_2u6Ki _1iE2V">
-                        <div class="_3gFQj">
-                            <posts params="page: 0, fanbase: '', show_callback: openItem"></posts>
+            <div class="sc-fONwsr gDVFix" data-reactid="42">
+                <div class="sc-hEsumM jUVmGT" data-reactid="43">
+                    <div class="sc-ktHwxA lhpVsy" data-reactid="103">
+                        <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc" data-reactid="104">
+                            <a class="sc-cJSrbW hDKkOF" href="/tribes" data-reactid="105">
+                                <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
+                                    <span class="sc-hmzhuo gqKiYI" data-reactid="107">Hot</span>
+                                    <span class="sc-frDJqD lXCHc" data-reactid="108">Fanbases</span>
+                                </div>
+                                <span class="sc-kvZOFW fTNgKg" data-reactid="109">+ See more</span>
+                            </a>
+                            <ul class="sc-bbmXgH jOkXFw" wrap="true" data-reactid="110">
+                                @foreach($fanbases as $k => $fanbase)
+                                <li class="sc-hqyNC hcKELX" data-reactid="111">
+                                    <a class="sc-jbKcbu gnullG" href="/f/{{ $fanbase->slug }}" data-reactid="112">
+                                        <div class="sc-dNLxif gSvadq" data-reactid="113">
+                                            <div style="padding-bottom:100%;" class="_38L6D" data-reactid="114">
+                                                <img alt="{{ $fanbase->name }}" role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="160" height="160" data-reactid="115" />
+                                            </div>
+                                        </div>
+                                        <h4 class="sc-jqCOkK dfpDYt" data-reactid="116">{{ $fanbase->name }}</h4>
+                                        <div class="sc-uJMKN jbQyuy" data-reactid="117">The official fanbase</div>
+                                    </a>
+                                </li>
+                                @endforeach
+                            </ul>
                         </div>
-                        <div class="_3gFQj">
-                            <posts params="page: 1, fanbase: '', show_callback: openItem"></posts>
+                        <div class="sc-cmTdod iyxBpt" data-reactid="139"></div>
+                    </div>
+                </div>
+                <div class="sc-rBLzX SsCsq" data-reactid="172">
+                    <div class="sc-CtfFt kjnMtm" data-reactid="173">
+                        <div class="sc-bMvGRv eKbmbh sc-cJSrbW hDKkOF" data-reactid="174">
+                            <div class="sc-ksYbfQ dbOCGf" data-reactid="175">
+                                <span class="sc-hmzhuo gqKiYI" data-reactid="176">Top</span>
+                                <span class="sc-frDJqD lXCHc" data-reactid="177">Stories</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="_2L2jX"></div>
+                    <div class="sc-laTMn jJAQkL" data-reactid="178">
+                        <div class="sc-CtfFt kjnMtm" data-reactid="179">
+                            <posts params="page: 0, fanbase: '', show_callback: openItem"></posts>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

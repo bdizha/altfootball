@@ -19,7 +19,7 @@ $(function () {
                 page: self.page()
             };
 
-            self.page(self.page() + 2);
+            self.page(self.page() + 1);
 
             $.ajax("/posts", {
                 data: params,
