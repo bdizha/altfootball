@@ -131,7 +131,7 @@ class Post extends Model
 
     public function getSummaryXAttribute()
     {
-        return str_limit($this->summary, 210);
+        return str_limit($this->summary, 255);
     }
 
     /**

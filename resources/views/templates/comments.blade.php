@@ -45,7 +45,7 @@
                         </label>
                         <input type="file" name="media-upload" id="media-upload" data-bind="fileInput: fileData" accept="image/*">
                     </div>
-                    <button type="submit" class="_1kqns" data-bind="enable: canSubmitComment" disabled="">Post</button>
+                    <button type="submit" class="3OD4J _1yV5F _1h78h" data-bind="enable: canSubmitComment" disabled="">Post</button>
                 </div>
             </div>
         </form>
