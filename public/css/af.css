@@ -4978,6 +4978,7 @@ dribbles ._35GH ._34IO {
 
 ._3bVUr {
   color: rgba(0, 8, 39, 0.85);
+  background-color: #F0F2F4;
 }
 
 ._24kFo {
@@ -5098,10 +5099,7 @@ dribbles ._35GH ._34IO {
 }
 
 .YgLNn {
-  background-color: #F0F2F4;
   overflow: hidden;
-  box-shadow: 0 1px 4px 0 rgba(0, 149, 208, 0.25);
-  border-radius: 7px;
 }
 
 ._3wAPn {
