@@ -120,6 +120,46 @@
                             </div>
                         </div>
                     </div>
+                    <div class="_3VSm9 _3bVUr _2GMT0">
+                        <div class="_24kFo">
+                            <div class="_3zT4K">TRENDING POSTS_</div>
+                            <div class="_3broS">
+                                @foreach($siblingPosts as $post)
+                                    <div class="_2Eh0V _2bbto YgLNn">
+                                        <div class="_1XrlP _25JSo">
+                                            <a class="_2xn_m _238kJ" href="/p/{{ $post->slug }}">
+                                                <div class="_1w60_">
+                                                    <div class="_2pUFC _3Xaa0">
+                                                        <img alt="" role="presentation" src="{{ $post->small_x }}" class="b00q8" style="width: 100%" />
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div class="_2fUiv _3lJNV">
+                                                <a class="_3H01F _135mL _38OvA" href="/p/{{ $post->slug }}">{{ $post->title }}</a>
+                                                <div class="_3RbBo">
+                                                    <a class="" href="/u/{{ $post->user->slug }}">
+                                                        <div class="_3lGf- sc-jTzLTM kGoDGv">
+                                                            <div class="sc-fjdhpX dAAOAM">
+                                                                <div class="_38L6D" style="padding-bottom: 100%;">
+                                                                    <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->user->thumb_x }}" class="_214e9 b00q8" width="60" height="60" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="zv5pR E6O3i">
+                                                        <a class="_3f32u _38OvA" href="/u/{{ $post->user->slug }}">{{ $post->user->name }}</a>
+                                                        <a class="O0stn _38OvA" href="/f/{{ $post->fanbase->slug }}">
+                                                            {{ $post->fanbase->name }}
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="_2xoE4 NasRD _3QYjF">
                     <button class="_1Zj5n _1cG70 _2YLzg">
@@ -139,59 +179,6 @@
     </div>
     <div class="_11QMn">
         <div class="_5M-3F">
-            <div>
-                <div class="_2H69I">YOU MIGHT ALSO LIKE_</div>
-                <div class="_9T4R2">
-                    @foreach($siblingPosts as $post)
-                        <div class="_1XEbE">
-                            <div class="_1DRo">
-                                <div class="_38L6D" style="padding-bottom: 50%;">
-                                    <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_x }}"
-                                         class="_214e9 b00q8">
-                                </div>
-                            </div>
-                            <div class="_1wjeD">
-                                <div class="grsTy">{{ $post->title }}</div>
-                            </div>
-                            <a class="ZE8ka"
-                               href="/p/{{ $post->slug }}"></a>
-                            <div class="zFsq3 _1iE2V _2ilqp">
-                                <a class="" href="/u/{{ $post->user->slug }}">
-                                    <div class="_25jNX _3Y-3q" style="width: 40px; height: 40px;">
-                                        <div class="N3r_f">
-                                            <div class="_38L6D" style="padding-bottom: 100%;">
-                                                <img alt="{{ $post->user->name  }}" role="presentation"
-                                                     src="{{ $post->user->thumb_x }}" class="_214e9 b00q8">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="_2bDpH">
-                                    <p class="_2nWjU _31dto KTIgi">
-                                        <a class="_2XyXQ" href="/u/{{ $post->user->slug }}">
-                                            {{ $post->user->name }}
-                                        </a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             viewBox="0 0 18 18"
-                                             class="_1z7Hy _1NCGm RyyhO">
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                                <path fill="rgba(255, 255, 255, 1)"
-                                                      d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                            </g>
-                                        </svg>
-                                    </p>
-                                    <div class="_1HPk2">
-                                        <a class="_25LcG" href="/f/{{ $post->fanbase->slug }}">
-                                            {{ $post->fanbase->name }}
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
             <div>
                 <div class="_2H69I">FROM THIS FANBASE_</div>
                 <div class="_9T4R2">

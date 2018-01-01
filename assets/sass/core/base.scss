@@ -325,7 +325,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 7px 0 7px 16px;
+  padding: 0;
 }
 
 ._1iE2V:after {
@@ -4422,6 +4422,7 @@ dribbles {
   height: 100%;
   flex: 1 0;
   padding: 28px;
+  background-color: #F0F2F4;
 }
 
 ._3H01F {
@@ -4630,6 +4631,9 @@ dribbles {
   display: flex;
   flex-direction: column;
   width: 100%;
+  ._2Eh0V{
+    background: transparent;
+  }
 }
 
 @media screen and (min-width: 586px) {
@@ -4693,9 +4697,10 @@ dribbles {
 }
 
 .YgLNn {
-  background-color: $color_white;
-  box-shadow: 0 2px 6px 0 rgba(32, 198, 89, 0.15), inset 0 -1px 0 0 rgba(32, 198, 89, 0.15);
+  background-color: #F0F2F4;
   overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0, 149, 208, 0.25);
+  border-radius: 7px;
 }
 
 ._3wAPn {
@@ -9160,7 +9165,7 @@ div._3bqe5 {
 
 ._12F3w {
   font-family: $font_sans;
-  margin: 24px 0;
+  margin: 40px 0 24px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 62px;
@@ -19148,41 +19153,43 @@ nav._1R2o8 {
   max-width: 1444px;
   margin: 0 auto;
   height: 530px;
-  .cBqIJu {
-    position: relative;
-    color: $color_white;
+}
+
+.cBqIJu {
+  position: relative;
+  color: $color_white;
+  font-family: 'DriveTribe', Helvetica, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin-left: 12%;
+  width: 380px;
+  text-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+}
+
+.bfnJOq {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -80px;
+  right: -30px;
+  left: 0;
+  .bEORjC {
+    color: #ffffff;
     font-family: 'DriveTribe', Helvetica, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 60px;
-    line-height: 60px;
-    margin-left: 12%;
-    width: 380px;
-    text-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
-  }
-  .bfnJOq {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    position: absolute;
-    bottom: -80px;
-    right: -30px;
-    left: 0;
-    .bEORjC {
-      color: #ffffff;
-      font-family: 'DriveTribe', Helvetica, sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 16px;
-      line-height: 16px;
-      -webkit-letter-spacing: 1px;
-      -moz-letter-spacing: 1px;
-      -ms-letter-spacing: 1px;
-      letter-spacing: 1px;
-      width: 160px;
-      height: 50px;
-    }
+    font-size: 16px;
+    line-height: 16px;
+    -webkit-letter-spacing: 1px;
+    -moz-letter-spacing: 1px;
+    -ms-letter-spacing: 1px;
+    letter-spacing: 1px;
+    width: 160px;
+    height: 50px;
   }
 }
 

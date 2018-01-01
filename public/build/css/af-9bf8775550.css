@@ -384,7 +384,7 @@ button {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 7px 0 7px 16px;
+  padding: 0;
 }
 
 ._1iE2V:after {
@@ -4808,6 +4808,7 @@ dribbles ._35GH ._34IO {
   -ms-flex: 1 0;
   flex: 1 0;
   padding: 28px;
+  background-color: #F0F2F4;
 }
 
 ._3H01F {
@@ -5028,6 +5029,10 @@ dribbles ._35GH ._34IO {
   width: 100%;
 }
 
+._3broS ._2Eh0V {
+  background: transparent;
+}
+
 @media screen and (min-width: 586px) {
   ._3broS {
     -ms-flex-direction: row;
@@ -5093,9 +5098,10 @@ dribbles ._35GH ._34IO {
 }
 
 .YgLNn {
-  background-color: #FFFFFF;
-  box-shadow: 0 2px 6px 0 rgba(32, 198, 89, 0.15), inset 0 -1px 0 0 rgba(32, 198, 89, 0.15);
+  background-color: #F0F2F4;
   overflow: hidden;
+  box-shadow: 0 1px 4px 0 rgba(0, 149, 208, 0.25);
+  border-radius: 7px;
 }
 
 ._3wAPn {
@@ -9884,7 +9890,7 @@ div._3bqe5 > div {
 
 ._12F3w {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
-  margin: 24px 0;
+  margin: 40px 0 24px;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 62px;
@@ -20620,7 +20626,7 @@ nav._1R2o8 {
   height: 530px;
 }
 
-.fibZwm .cBqIJu {
+.cBqIJu {
   position: relative;
   color: #FFFFFF;
   font-family: 'DriveTribe', Helvetica, sans-serif;
@@ -20633,7 +20639,7 @@ nav._1R2o8 {
   text-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
 }
 
-.fibZwm .bfnJOq {
+.bfnJOq {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
@@ -20642,7 +20648,7 @@ nav._1R2o8 {
   left: 0;
 }
 
-.fibZwm .bfnJOq .bEORjC {
+.bfnJOq .bEORjC {
   color: #ffffff;
   font-family: 'DriveTribe', Helvetica, sans-serif;
   font-weight: 700;

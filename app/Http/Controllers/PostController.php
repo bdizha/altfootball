@@ -46,14 +46,16 @@ class PostController extends Controller
         $trendingPosts = Post::whereHas('fanbases', function ($query) use ($post) {
             $query->where('fanbases.id', $post->fanbase->id);
         })
-            ->where("id", "!=", $post->fanbase->id)
+            ->where("id", "!=", $post->id)
             ->orderBy("posts.created_at", "DESC")
             ->take(3)
             ->get();
 
+        $contentLength = strlen($post->content);
+
         $siblingPosts = Post::where("id", "<", $post->id - 3)
-            ->where("id", "!=", $post->fanbase->id)
-            ->orderBy("created_at", "DESC")->take(3)->get();
+            ->where("id", "!=", $post->id)
+            ->orderBy("created_at", "DESC")->take(floor($contentLength / 1000) + 2)->get();
 
         if ($post->fanbase) {
             $fanbases = Fanbase::where("id", "!=", $post->fanbase->id)
