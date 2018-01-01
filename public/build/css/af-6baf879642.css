@@ -4808,7 +4808,7 @@ dribbles ._35GH ._34IO {
   -ms-flex: 1 0;
   flex: 1 0;
   padding: 28px;
-  background-color: #F0F2F4;
+  background-color: #FFFFFF;
 }
 
 ._3H01F {
@@ -4978,7 +4978,7 @@ dribbles ._35GH ._34IO {
 
 ._3bVUr {
   color: rgba(0, 8, 39, 0.85);
-  background-color: #F0F2F4;
+  background: rgba(0, 149, 208, 0.085);
 }
 
 ._24kFo {
@@ -8545,7 +8545,7 @@ form .M13JP:focus {
   position: relative;
   font-size: 16px;
   line-height: 16px;
-  background: rgba(0, 149, 208, 0.05);
+  background: rgba(0, 149, 208, 0.085);
   display: block;
   padding: 16px;
   border-radius: 4px;
@@ -8582,7 +8582,7 @@ form .M13JP:focus {
   left: -10px;
   margin-top: -10px;
   display: inline-block;
-  border-right: 10px solid rgba(0, 149, 208, 0.05);
+  border-right: 10px solid rgba(0, 149, 208, 0.085);
   border-bottom: 10px solid transparent;
   cursor: pointer;
   border-top: 10px solid transparent;

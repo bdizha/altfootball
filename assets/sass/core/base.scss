@@ -1691,7 +1691,7 @@ form {
 
 ._1Gyo9 {
   border: none;
-  color: $color-white;
+  color: $color_white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -4422,7 +4422,7 @@ dribbles {
   height: 100%;
   flex: 1 0;
   padding: 28px;
-  background-color: #F0F2F4;
+  background-color: $color_white;
 }
 
 ._3H01F {
@@ -4584,7 +4584,7 @@ dribbles {
 
 ._3bVUr {
   color: rgba(0, 8, 39, 0.85);
-  background-color: #F0F2F4;
+  background: rgba(0, 149, 208, 0.085);
 }
 
 ._24kFo {
@@ -7928,7 +7928,7 @@ form {
   position: relative;
   font-size: 16px;
   line-height: 16px;
-  background: rgba(0, 149, 208, 0.05);
+  background: rgba(0, 149, 208, 0.085);
   display: block;
   padding: 16px;
   border-radius: 4px;
@@ -7956,7 +7956,7 @@ form {
     left: -10px;
     margin-top: -10px;
     display: inline-block;
-    border-right: 10px solid rgba(0, 149, 208, 0.05);
+    border-right: 10px solid rgba(0, 149, 208, 0.085);
     border-bottom: 10px solid transparent;
     cursor: pointer;
     border-top: 10px solid transparent;
