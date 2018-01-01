@@ -151,7 +151,7 @@
                 <div class="sc-hEsumM jUVmGT" data-reactid="43">
                     <div class="sc-ktHwxA lhpVsy" data-reactid="103">
                         <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc" data-reactid="104">
-                            <a class="sc-cJSrbW hDKkOF" href="/tribes" data-reactid="105">
+                            <a class="sc-cJSrbW hDKkOF" href="/fanbases" data-reactid="105">
                                 <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
                                     <span class="sc-hmzhuo gqKiYI" data-reactid="107">Hot</span>
                                     <span class="sc-frDJqD lXCHc" data-reactid="108">Fanbases</span>
