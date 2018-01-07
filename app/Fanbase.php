@@ -4,9 +4,8 @@ namespace App;
 
 use Auth;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Redis;
-use MartinBean\Database\Eloquent\Sluggable;
 use Imgix\UrlBuilder;
+use MartinBean\Database\Eloquent\Sluggable;
 
 class Fanbase extends Model
 {
@@ -32,7 +31,7 @@ class Fanbase extends Model
         'big_cover'
     ];
 
-    protected $appends = ['initials', 'is_owner', 'follower', 'small_x', 'thumb_x',  'big_x', 'cover_x'];
+    protected $appends = ['initials', 'is_owner', 'camel', 'follower', 'small_x', 'thumb_x', 'big_x', 'cover_x'];
 
     public function getInitialsAttribute()
     {
@@ -69,7 +68,7 @@ class Fanbase extends Model
 
     public function users()
     {
-        return  $this->hasMany(Follower::class, 'followable_id', 'id')
+        return $this->hasMany(Follower::class, 'followable_id', 'id')
             ->orderBy("created_at", "DESC");
     }
 
@@ -100,6 +99,15 @@ class Fanbase extends Model
         $follower->type = 2;
 
         return $follower;
+    }
+
+
+    public function getCamelAttribute()
+    {
+        $camel = ucwords($this->name);
+        $camel = str_replace(" ", "", $camel);
+        $camel = str_replace("'", "", $camel);
+        return $camel;
     }
 
 

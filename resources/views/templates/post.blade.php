@@ -16,11 +16,10 @@
                                 <img role="presentation" data-bind="attr: { src: post.thumb_x }" class="_214e9 b00q8" width="20" height="20">
                             </div>
                         </div>
-                        <span class="sc-hXRMBi lehvYd" data-bind="text: post.user.name"></span>
+                        <span class="sc-hXRMBi lehvYd" data-bind="text: post.user.name + '&nbsp;'"></span>
                     </span>
-                    <span class="sc-bsbRJL OAKhl">in</span>
                     <div class="sc-epnACN YkbCv" data-bind="attr: { 'href': '/f/' + post.fanbase.slug }">
-                        <span data-bind="text: post.fanbase.name"></span>
+                        <span data-bind="text: '@' + post.fanbase.camel"></span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18" class="_1z7Hy">
                             <g fill="none" fill-rule="evenodd">
                                 <path fill="rgba(32, 198, 89, 1)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>

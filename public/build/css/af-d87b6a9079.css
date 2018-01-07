@@ -4545,7 +4545,7 @@ dribbles ._35GH ._34IO {
 
 ._1XNRF,
 ._3-2aE {
-  text-transform: uppercase;
+  color: rgba(103, 143, 185, 0.85);
 }
 
 ._2VAHq {
@@ -4587,8 +4587,9 @@ dribbles ._35GH ._34IO {
 }
 
 ._3Xf-w ._1XNRF {
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
+  display: block;
 }
 
 ._3Xf-w ._1XNRF:hover {
@@ -10447,7 +10448,6 @@ div._3bqe5 > div {
 }
 
 ._1Q_Pu p img {
-  width: 100%;
   max-width: 100% !important;
 }
 
@@ -20857,7 +20857,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-hrWEMg */
 
 .fneZyH {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   display: -ms-flexbox;
@@ -20894,7 +20894,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-epnACN */
 
 .YkbCv {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   color: rgba(103, 143, 185, 0.85);
@@ -20988,7 +20988,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-kjoXOD */
 
 .kYFvfn {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   margin-right: 5px;
@@ -21001,7 +21001,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-cHGsZl */
 
 .fXspcU {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   color: rgba(103, 143, 185, 0.85);
@@ -21010,7 +21010,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-TOsTZ */
 
 .jrQrPO {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
@@ -21090,15 +21090,14 @@ nav._1R2o8 {
 .fTNgKg {
   padding-left: 10px;
   white-space: nowrap;
-  color: #525860;
   font-size: 14px;
   line-height: 16px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
+  color: rgba(103, 143, 185, 0.85);
 }
 
 /* sc-component-id: sc-hqyNC */
@@ -21108,7 +21107,7 @@ nav._1R2o8 {
   display: flex;
   margin-right: 20px;
   margin-bottom: 20px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -21470,7 +21469,7 @@ nav._1R2o8 {
   padding: 0px 15px 10px;
   margin: 0px -15px 10px;
   overflow: hidden;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -21573,7 +21572,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-hzDkRC */
 
 .kXjlPz {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
@@ -21598,7 +21597,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-jhAzac */
 
 .cpeAaF {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
@@ -21622,7 +21621,7 @@ nav._1R2o8 {
   border-bottom: none;
   margin-bottom: 25px;
   position: relative;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -21918,7 +21917,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-laTMn */
 
 .bUuMKH {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
@@ -21949,7 +21948,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-hGoxap */
 
 .lhTWPj {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   font-size: 14px;
@@ -21979,7 +21978,7 @@ nav._1R2o8 {
   border-bottom: none;
   margin-bottom: 25px;
   position: relative;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -22112,7 +22111,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-fzsDOv */
 
 .iHVmwM {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   margin-right: 5px;
@@ -22125,14 +22124,14 @@ nav._1R2o8 {
 /* sc-component-id: sc-gPWkxV */
 
 .fhUFWx {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   color: rgba(103, 143, 185, 0.85);
 }
 
 .Ymjpr {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   background-color: #f9fafc;
@@ -22147,7 +22146,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-jVODtj */
 
 .hoHLMb {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
@@ -22171,7 +22170,7 @@ nav._1R2o8 {
   padding: 0px 15px 10px;
   margin: 0px -15px 10px;
   overflow: hidden;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -22426,7 +22425,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-clNaTc */
 
 .bueqql {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   display: -ms-flexbox;
@@ -22456,7 +22455,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-kasBVs */
 
 .iwHsKT {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   color: rgba(103, 143, 185, 0.85);
@@ -22584,7 +22583,7 @@ nav._1R2o8 {
   color: #525860;
   font-size: 14px;
   line-height: 16px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
@@ -22599,7 +22598,7 @@ nav._1R2o8 {
   display: flex;
   margin-right: 20px;
   margin-bottom: 20px;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -22641,7 +22640,7 @@ nav._1R2o8 {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.4;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
@@ -22651,7 +22650,7 @@ nav._1R2o8 {
   margin-bottom: 10px;
   font-size: 18px;
   line-height: 1.4;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
@@ -23103,7 +23102,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-hARARD */
 
 .edgHWr {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "DriveTribe", "Roboto Condensed", "Averta", "Roboto", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   background-color: #f9fafc;

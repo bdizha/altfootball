@@ -82,9 +82,8 @@
                                                     {{ $post->user->name }}
                                                 </a>
                                                 <span>
-                                                    <span>in<br></span>
                                                     <a class="_1XNRF" href="/f/{{ $post->fanbase->slug }}">
-                                                        {{ $post->fanbase->name }}
+                                                        {{ '@'.$post->fanbase->camel }}
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                                              viewBox="0 0 18 18" class="_1z7Hy">
                                                             <g fill="none" fill-rule="evenodd">
