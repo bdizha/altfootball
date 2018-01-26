@@ -22,7 +22,7 @@ class HomeController extends Controller
      */
     protected function index(Request $request)
     {
-        $fanbases = Fanbase::orderBy('id', 'asc')->take(9)->get();
+        $bases = Fanbase::orderBy('id', 'asc')->take(10)->get();
 
         $date = Carbon::now()->subDays(7);
 
@@ -46,11 +46,19 @@ class HomeController extends Controller
             ->limit(1)
             ->first();
 
+        $posts = Post::with('user')
+            ->where('created_at', "<=", Carbon::now())
+            ->where("id", "!=", $post->id)
+            ->orderBy('created_at', 'desc')
+            ->limit(6)
+            ->get();
+
         return view('welcome', [
-            'fanbases' => $fanbases,
+            'bases' => $bases,
             'popularPosts' => $popularPosts,
             'tags' => $tags,
             'post' => $post,
+            'posts' => $posts,
             'fans' => $fans,
             'user' => $this->getUserArray(),
             'meta' => $this->getMeta()

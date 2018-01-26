@@ -59,125 +59,125 @@ class FetchContent extends Command
 
         try {
             dispatch(new Football365());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new ManUJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new NewsBreatheChelseaJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
 
         try {
             dispatch(new Bundesliga());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
 
         try {
             dispatch(new Barcelona());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
 
         try {
             dispatch(new BarcelonaFC());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
 
         try {
             dispatch(new SpanishFootball());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new SearieAJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new JuventusJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new NewsGoalJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new News90MinJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new PremierLeagueJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new LaLigaJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new LiverpoolJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new RealMadridJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new PSG());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new ArsenalFC());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new NewsBreatheChelseaJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new FCBayernJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
 
         try {
             dispatch(new NewsSportslensJob());
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
 
         }
     }

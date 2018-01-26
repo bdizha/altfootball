@@ -1174,7 +1174,7 @@ jQuery.Velocity ? console.log("Velocity is already loaded. You may be needlessly
       clearTimeout(this._timer);
     }, emit: function () {
       this.state == Vb && (this._input.tapCount = this.count, this.manager.emit(this.options.event, this._input));
-    } }), hc.VERSION = "2.0.4", hc.defaults = { domEvents: !1, touchAction: Jb, enable: !0, inputTarget: null, inputClass: null, preset: [[ec, { enable: !1 }], [cc, { enable: !1 }, ["rotate"]], [fc, { direction: X }], [bc, { direction: X }, ["swipe"]], [gc], [gc, { event: "doubletap", taps: 2 }, ["tap"]], [dc]], cssProps: { userSelect: "default", touchSelect: "none", touchCallout: "none", contentZooming: "none", userDrag: "none", tapHighlightColor: "rgba(0,0,0,0)" } };var ic = 1,
+    } }), hc.VERSION = "2.0.4", hc.defaults = { domEvents: !1, touchAction: Jb, enable: !0, inputTarget: null, inputClass: null, preset: [[ec, { enable: !1 }], [cc, { enable: !1 }, ["rotate"]], [fc, { direction: X }], [bc, { direction: X }, ["swipe"]], [gc], [gc, { event: "doubletap", taps: 2 }, ["tap"]], [dc]], cssProps: { userSelect: "default", touchSelect: "none", touchCallout: "none", contentZooming: "none", userDrag: "none", tapHighlightColor: "rgba(0, 8, 39,0)" } };var ic = 1,
       jc = 2;kc.prototype = { set: function (a) {
       return n(this.options, a), a.touchAction && this.touchAction.update(), a.inputTarget && (this.input.destroy(), this.input.target = a.inputTarget, this.input.init()), this;
     }, stop: function (a) {
@@ -6081,11 +6081,11 @@ if (jQuery) {
 
       setTimeout(function () {
         btn.css({
-          transform: 'translate3d(0,0,0)',
+          transform: 'translate3d(0, 8, 39)',
           transition: 'transform .2s'
         });
         anchor.css({
-          transform: 'translate3d(0,0,0)',
+          transform: 'translate3d(0, 8, 39)',
           transition: 'transform .2s cubic-bezier(0.550, 0.055, 0.675, 0.190)'
         });
       }, 20);

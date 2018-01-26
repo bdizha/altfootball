@@ -140,6 +140,7 @@ class Fanbase extends Model
     public function getThumbXAttribute()
     {
         if (strpos($this->image, 'http') !== false) {
+            dd('...');
             $this->saveImage();
         }
 

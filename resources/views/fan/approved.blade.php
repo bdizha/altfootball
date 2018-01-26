@@ -3,7 +3,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18"
      class="_1z7Hy _2JeVL">
     <g fill="none" fill-rule="evenodd">
-        <path fill="rgba(103, 143, 185, 0.95)"
+        <path fill="rgba(17, 102, 146, 0.85)"
               d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
         <path
                 fill="rgba(255, 255, 255, 1)"
@@ -19,7 +19,7 @@
         class="_1z7Hy _2JeVL">
       <g
               fill="none" fill-rule="evenodd">
-         <path fill="rgba(103, 143, 185, 0.95)"
+         <path fill="rgba(17, 102, 146, 0.85)"
                d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
          <path
                  fill="rgba(255, 255, 255, 1)"

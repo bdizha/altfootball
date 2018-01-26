@@ -60,7 +60,7 @@
 
   &:after {
     background-color: $switch-unchecked-bg;
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 149, 208, 0.95), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 149, 208, 0.98), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -74,13 +74,13 @@ input[type=checkbox]:checked:not(:disabled).tabbed:focus ~ .lever::before {
 input[type=checkbox]:not(:disabled) ~ .lever:active:before,
 input[type=checkbox]:not(:disabled).tabbed:focus ~ .lever::before {
   transform: scale(2.4);
-  background-color: rgba(0,0,0,.08);
+  background-color: rgba(0, 8, 39,.08);
 }
 
 // Disabled Styles
 .switch input[type=checkbox][disabled] + .lever {
   cursor: default;
-  background-color: rgba(0,0,0,.12);
+  background-color: rgba(0, 8, 39,.12);
 }
 
 .switch label input[type=checkbox][disabled] + .lever:after,

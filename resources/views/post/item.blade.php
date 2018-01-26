@@ -1,59 +1,74 @@
-<div class="p32Iu">
-    <div class="_3bxb0">
-        <div class="_2WwnI">
-            @include('post.meta')
-            <div class="r9rA5">
-                <button class="_2KGdb _34-mC">
-                    <div class="_1CwPf">
-                        <div class="_GSL7C">
-                            ﻿<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" version="1.1" width="24" height="24">
-                                <g id="surface1">
-                                    <path fill="rgba(103, 143, 185, 0.95)" d="M 18 2 C 16.34375 2 15 3.34375 15 5 C 15 5.195313 15.027344 5.375 15.0625 5.5625 L 7.9375 9.71875 C 7.414063 9.273438 6.742188 9 6 9 C 4.34375 9 3 10.34375 3 12 C 3 13.65625 4.34375 15 6 15 C 6.742188 15 7.414063 14.726563 7.9375 14.28125 L 15.0625 18.4375 C 15.027344 18.625 15 18.804688 15 19 C 15 20.65625 16.34375 22 18 22 C 19.65625 22 21 20.65625 21 19 C 21 17.34375 19.65625 16 18 16 C 17.257813 16 16.585938 16.273438 16.0625 16.71875 L 8.9375 12.5625 C 8.972656 12.375 9 12.195313 9 12 C 9 11.804688 8.972656 11.625 8.9375 11.4375 L 16.0625 7.28125 C 16.585938 7.726563 17.257813 8 18 8 C 19.65625 8 21 6.65625 21 5 C 21 3.34375 19.65625 2 18 2 Z "/>
-                                </g>
-                            </svg>
-                        </div>
-                    </div>
-                </button>
-                <div class="_34TRY _39llS _23ERU">
-                    <div class="_3rM3S">
-                        <a class="_2KljY _1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($post->share_url) }}" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" class="bWSPJ">
-                                <path fill="rgba(255, 255, 255, 1)" fill-rule="evenodd" d="M4.16 0c1.83 0 2.6.22 2.6.22l-.37 1.84s-.6-.15-1.16-.15c-.57 0-1.07.17-1.07.66v1.4h2.3l-.15 1.8H4.16V12H1.45V5.76H0v-1.8h1.45v-1.2c0-.53.01-1.35.46-1.86C2.4.37 3.04 0 4.16 0"></path>
-                            </svg>
-                            Facebook
-                        </a>
-                        <a class="_2KljY _1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);" href="https://twitter.com/intent/tweet?url={{ urlencode($post->share_url) }}" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12" class="bWSPJ">
-                                <path fill="rgba(255, 255, 255, 1)" fill-rule="evenodd" d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
-                            </svg>
-                            Twitter
-                        </a>
-                    </div>
+<li class="sc-dqBHgY gEVQKf" data-reactid="181">
+    <a class="sc-gxMtzJ ljjFes">
+        <div class="sc-eXEjpC gESGAG" data-reactid="183">
+            <div class="sc-ibxdXY hKmwtp" data-reactid="184">
+                <div style="padding-bottom:100%;" class="_38L6D" data-reactid="185">
+                    <img alt="{{ $post->title }}" role="presentation" src="{{ $post->thumb_x }}" role="presentation" class="_214e9 b00q8" width="200" height="200"/>
                 </div>
             </div>
         </div>
-        <div class="_4TYO">
-            <a class="_2hvwD" href="{{ route('post.show', ['slug' => $post->slug]) }}">
-                <div class="_25bvT">
-                    <div style="padding-bottom:56.25%;" class="_38L6D">
-                        <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_x }}" class="_214e9 b00q8">
+        <div class="sc-dfVpRl bcqOPV sdads">
+            <div class="sc-bwCtUz bgTWiC">
+                <span class="sc-hrWEMg fneZyH">
+                    <div class="sc-eTuwsz dDnmGN">
+                        <div style="padding-bottom:100%;" class="_38L6D">
+                            <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->thumb_x }}"
+                                 class="_214e9 b00q8" width="20" height="20">
+                        </div>
+                    </div>
+                    <span class="sc-hXRMBi lehvYd">
+                        {{ $post->user->name }}
+                    </span>
+                </span>
+                <div class="sc-epnACN YkbCv" href="/f/{{ $post->fanbase->slug }}">
+                    <div class="_74oom">
+                        <div class="_eeohz">
+                            <span>{{ $post->fanbase->name }}</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18"
+                                 class="_1z7Hy">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="rgba(0, 149, 208, 0.85)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                    <path fill="rgba(255, 255, 255, 1)"
+                                          d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="_csp04">
+                            <span class="_82161">•</span>
+                            <span class="_iuvin _ov9ai">
+                                <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="_3DF9">
-                    <h2 class="_2DyJ3 _3duUm">{{ $post->title }}</h2>
+            </div>
+            <h2 class="sc-esjQYD fPOHUM">{{ $post->title_x }}</h2>
+            <div class="sc-kIPQKe jzIbtI">{{ $post->summary_x }}</div>
+            <div class="_1l_wG _29Okg">
+                <div class="_2Oo2A rF2QA" href="/p/{{ $post->slug }}#tackles">
+                    <span class="_35FcZ">Comments<span class="_3HP-Q"> (10)</span></span>
                 </div>
-            </a>
-            <h3 class="_35O2p _3VB1o _3duUm _2L6V9">
-                <span>
-                    <span>{{ $post->summary }}</span>
-                    <a class="_1kgtA _2Oo2A" href="{{ route('post.show', ['slug' => $post->slug]) }}">
-                        {{ $post->reading_time }}
-                    </a>
-                    <span class="_2jvdf">{{ ' ~' . $post->published_at }}</span>
-                </span>
-            </h3>
+                <div class="_8m6WC rF2QA">
+                    <span class="_35FcZ">Repost</span>
+                </div>
+                <div class="_3yFg8 rF2QA">
+                    <div>
+                        <span class="_35FcZ">Dribbles</span>
+                        <span class="_3HP-Q">(26)</span>
+                    </div>
+                    <button class="">
+                        <div class="_1_VaP">
+                            <svg width="24" height="23" viewBox="-2 -4 24 23">
+                                <path d="M17.58 3.234c.28.68.42 1.395.42 2.145 0 .82-.17 1.59-.51 2.32-.34.723-.814 1.34-1.423 1.842-.445.41-1.594 1.46-3.445 3.146L9.44 15.592c-.13.105-.275.158-.44.158-.163 0-.31-.05-.44-.156-.573-.516-2.08-1.893-4.516-4.13C2.884 10.407 2.22 9.81 2.057 9.67c-.047-.048-.1-.095-.158-.14C1.3 9.02.84 8.41.51 7.69.182 6.97.012 6.205 0 5.396c-.01-.738.13-1.453.423-2.144.27-.656.656-1.236 1.16-1.74C2.567.504 3.745 0 5.116 0c.75 0 1.462.164 2.136.492.673.328 1.256.79 1.75 1.39.49-.6 1.074-1.062 1.748-1.39C11.424.164 12.135 0 12.885 0c1.372 0 2.55.498 3.534 1.494.5.504.89 1.084 1.16 1.74zm-7.595-.42c-.246.327-.574.49-.984.49-.41 0-.732-.163-.98-.492-.35-.457-.78-.814-1.29-1.072-.51-.258-1.046-.386-1.61-.386-.995 0-1.86.37-2.583 1.107-.375.38-.662.81-.86 1.308-.224.515-.33 1.06-.318 1.634 0 .598.122 1.17.37 1.714.244.546.596 1.006 1.053 1.38.024.036.07.077.14.124.01.012.025.03.037.053.21.188.76.686 1.65 1.494l.844.775c1.688 1.53 2.87 2.61 3.55 3.23.54-.493 1.442-1.314 2.708-2.46 1.583-1.467 2.737-2.52 3.464-3.166l.038-.035c.446-.363.798-.815 1.055-1.354.26-.562.386-1.154.386-1.775 0-.58-.105-1.12-.316-1.64-.2-.49-.486-.925-.86-1.3-.727-.726-1.59-1.09-2.585-1.09-.563 0-1.1.126-1.61.378s-.94.613-1.292 1.082z"
+                                      fill="#000" fill-rule="evenodd" opacity="1" class="outline"
+                                      transform="translate(0, 0) translate(-8.999749973649159, -7.875) scale(1, 1) translate(8.999749973649159, 7.875) rotate(0, 8.999749973649159, 7.875) skewX(0) skewY(0) "></path>
+                                <path d="M17.58 3.234c.28.68.42 1.395.42 2.145 0 .82-.17 1.59-.51 2.32-.34.723-.814 1.34-1.423 1.842-.445.41-1.594 1.46-3.445 3.146L9.44 15.592c-.13.105-.275.158-.44.158-.163 0-.31-.05-.44-.156-.573-.516-2.08-1.893-4.516-4.13C2.884 10.407 2.22 9.81 2.057 9.67c-.047-.048-.1-.095-.158-.14C1.3 9.02.84 8.41.51 7.69.182 6.97.012 6.205 0 5.396c-.01-.738.13-1.453.423-2.144.27-.656.656-1.236 1.16-1.74C2.567.504 3.745 0 5.116 0c.75 0 1.462.164 2.136.492.673.328 1.256.79 1.75 1.39.49-.6 1.074-1.062 1.748-1.39C11.424.164 12.135 0 12.885 0c1.372 0 2.55.498 3.534 1.494.5.504.89 1.084 1.16 1.74z"
+                                      fill="rgba(0, 8, 39, 0.65)" fill-rule="evenodd" opacity="0" class="heart"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
         </div>
-        @include('post.actions')
-        <comments params='comments: {!! $post->limited_comments !!}, type_id: {{ $post->id }}, level: 0, root: $root, class: "items"'></comments>
-    </div>
-</div>
+    </a>
+</li>

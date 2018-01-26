@@ -34,6 +34,7 @@
         });
     </script>
     <script src="{{ elixir('js/af.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="fb-root"></div>
@@ -48,7 +49,7 @@
     <div>
         <div>
             <div>
-                <div class="_1A3CD" data-bind="css: { active: showOverlay() }">
+                <div class="{{ empty($class) ? "_1A3CD" : $class }}" data-bind="css: { active: showOverlay() }">
                     <div class="_1V79j" data-bind="click: closeSettingsForm, css: { active: showOverlay() }"></div>
                     @include('includes.header')
                     <div class="container">

@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app', ['class'=> '_3RTYI'])
 
 @section('title', 'Altfootball')
 
@@ -140,7 +140,7 @@
                                                         <div class="_3lGf- sc-jTzLTM kGoDGv">
                                                             <div class="sc-fjdhpX dAAOAM">
                                                                 <div class="_38L6D" style="padding-bottom: 100%;">
-                                                                    <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->user->thumb_x }}" class="_214e9 b00q8" width="60" height="60" />
+                                                                    <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->user->small_x }}" class="_214e9 b00q8" width="60" height="60" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -163,7 +163,7 @@
                 <div class="_2xoE4 NasRD _3QYjF">
                     <button class="_1Zj5n _1cG70 _2YLzg">
                         <svg width="10" height="10">
-                            <path fill="none" stroke="rgba(103, 143, 185, 0.95)" stroke-linecap="square"
+                            <path fill="none" stroke="rgba(17, 102, 146, 0.85)" stroke-linecap="square"
                                   stroke-width="2"
                                   d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
                         </svg>

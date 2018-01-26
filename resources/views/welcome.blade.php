@@ -56,14 +56,14 @@
                             <div class="_7YHcU">Join the Fanbases you like to tune your feed</div>
                             <div class="VDPbh">
                                 <div class="_1fZBx">
-                                    @foreach($fanbases as $k => $fanbase)
-                                    <a class="_pRC7 _46Jbt @if($k >= 6)_45VFC @endif" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}">
+                                    @foreach($bases as $k => $base)
+                                    <a class="_pRC7 _46Jbt @if($k >= 6)_45VFC @endif" data-stamp="{{ $base->stamp }}" href="/f/{{ $base->slug }}">
                                         <div class="_3BoA_">
                                             <div style="padding-bottom:100%;" class="_38L6D">
-                                                <img role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                <img role="presentation" src="{{ $base->thumb_x }}" class="_214e9 b00q8" width="200" height="200">
                                             </div>
                                         </div>
-                                        <p class="_2mbtl">{{ $fanbase->name }}</p>
+                                        <p class="_2mbtl">{{ $base->name }}</p>
                                     </a>
                                     @endforeach
                                 </div>
@@ -119,14 +119,14 @@
             @else
                 <div class="GLLyX">
                     <div class="_323ok _3Xaa0">
-                        @foreach($fanbases as $fanbase)
-                            <a class="_2_Gw9" data-stamp="{{ $fanbase->stamp }}" href="/f/{{ $fanbase->slug }}">
+                        @foreach($bases as $base)
+                            <a class="_2_Gw9" data-stamp="{{ $base->stamp }}" href="/f/{{ $base->slug }}">
                                 <div class="_204wR">
                                     <div style="padding-bottom:100%;" class="_38L6D">
-                                        <img alt="" role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="200" height="200">
+                                        <img alt="" role="presentation" src="{{ $base->thumb_x }}" class="_214e9 b00q8" width="200" height="200">
                                     </div>
                                 </div>
-                                <p class="Dpcfa">{{ $fanbase->name }}</p>
+                                <p class="Dpcfa">{{ $base->name }}</p>
                             </a>
                         @endforeach
                     </div>
@@ -150,7 +150,7 @@
             <div class="sc-fONwsr gDVFix" data-reactid="42">
                 <div class="sc-hEsumM jUVmGT" data-reactid="43">
                     <div class="sc-ktHwxA lhpVsy" data-reactid="103">
-                        <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc" data-reactid="104">
+                        <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc">
                             <a class="sc-cJSrbW hDKkOF" href="/fanbases" data-reactid="105">
                                 <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
                                     <span class="sc-hmzhuo gqKiYI" data-reactid="107">Hot</span>
@@ -159,15 +159,15 @@
                                 <span class="sc-kvZOFW fTNgKg" data-reactid="109">+ See more</span>
                             </a>
                             <ul class="sc-bbmXgH jOkXFw" wrap="true" data-reactid="110">
-                                @foreach($fanbases as $k => $fanbase)
+                                @foreach($bases as $k => $base)
                                 <li class="sc-hqyNC hcKELX" data-reactid="111">
-                                    <a class="sc-jbKcbu gnullG" href="/f/{{ $fanbase->slug }}" data-reactid="112">
+                                    <a class="sc-jbKcbu gnullG" href="/f/{{ $base->slug }}" data-reactid="112">
                                         <div class="sc-dNLxif gSvadq" data-reactid="113">
                                             <div style="padding-bottom:100%;" class="_38L6D" data-reactid="114">
-                                                <img alt="{{ $fanbase->name }}" role="presentation" src="{{ $fanbase->thumb_x }}" class="_214e9 b00q8" width="160" height="160" data-reactid="115" />
+                                                <img alt="{{ $base->name }}" role="presentation" src="{{ $base->thumb_x }}" class="_214e9 b00q8" width="160" height="160" data-reactid="115" />
                                             </div>
                                         </div>
-                                        <h4 class="sc-jqCOkK dfpDYt" data-reactid="116">{{ $fanbase->name }}</h4>
+                                        <h4 class="sc-jqCOkK dfpDYt" data-reactid="116">{{ $base->name }}</h4>
                                         <div class="sc-uJMKN jbQyuy" data-reactid="117">The official fanbase</div>
                                     </a>
                                 </li>

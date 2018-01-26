@@ -1,0 +1,6 @@
+AltFootball task list:
+
+---- complete the home page posts list
+---- users profile page
+---- fanbases page
+---- tags page

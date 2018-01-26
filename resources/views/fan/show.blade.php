@@ -103,7 +103,7 @@
                         <button class="_2EVp5" data-bind="click: openFanbaseForm">
                             Create a fanbase
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
-                                <path fill="rgba(103, 143, 185, 0.95)" fill-rule="evenodd"
+                                <path fill="rgba(17, 102, 146, 0.85)" fill-rule="evenodd"
                                       d="M 11 5 L 11 11 L 5 11 L 5 13 L 11 13 L 11 19 L 13 19 L 13 13 L 19 13 L 19 11 L 13 11 L 13 5 Z "></path>
                             </svg>
                         </button>
@@ -132,7 +132,7 @@
                                                                  height="24"
                                                                  viewBox="0 0 18 18" class="_1z7Hy aX-51"><g fill="none"
                                                                                                              fill-rule="evenodd"><path
-                                                                            fill="rgba(103, 143, 185, 0.95)"
+                                                                            fill="rgba(17, 102, 146, 0.85)"
                                                                             d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path
                                                                             fill="rgba(255, 255, 255, 1)"
                                                                             d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
@@ -198,7 +198,7 @@
                     <button class="_1VKWj _29zpU" style="opacity: 1; transform: translateY(0px) translateZ(0px);"
                             data-bind="click: openUserForm">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bWSPJ">
-                            <g fill="none" fill-rule="evenodd" stroke="rgba(103, 143, 185, 0.95)" stroke-linecap="round"
+                            <g fill="none" fill-rule="evenodd" stroke="rgba(17, 102, 146, 0.85)" stroke-linecap="round"
                                stroke-linejoin="round">
                                 <path stroke-width="1.5"
                                       d="M5.65 9.07l-.58 3.78 3.78-.58 8.32-8.32-3.2-3.2-1.37 1.37z"></path>

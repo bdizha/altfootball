@@ -97,7 +97,7 @@ ul.side-nav.fixed {
     line-height: 44px;
 
     &.active {
-      background-color: rgba(0,0,0,.05);
+      background-color: rgba(0, 8, 39,.05);
     }
 
     a {
@@ -384,13 +384,13 @@ a.button-collapse.top-nav {
 .flat-text {
   height: 25px;
   width: 80%;
-  background-color: rgba(0,0,0,.15);
+  background-color: rgba(0, 8, 39,.15);
   display: block;
   margin: 27px auto;
   &.small {
     width: 25%;
     height: 25px;
-    background-color: rgba(0,0,0,.15);
+    background-color: rgba(0, 8, 39,.15);
   }
   &.full-width {
     width: 100%;
@@ -734,7 +734,7 @@ pre[class*="language-"] {
       text-align: center;
       background-color: #fff;
       border-radius: 3px;
-      box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+      box-shadow: 0 2px 4px 0 rgba(0, 8, 39,.1);
       height: 24px;
       width: 24px;
       position: absolute;
@@ -909,7 +909,7 @@ body.parallax-demo footer {
   }
 
   .txlive-langselector-marker {
-    border-bottom: 4px solid rgba(0,0,0,.61);
+    border-bottom: 4px solid rgba(0, 8, 39,.61);
   }
 
 

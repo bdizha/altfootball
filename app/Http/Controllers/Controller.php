@@ -13,6 +13,8 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
+    protected $access_token = '';
+
     protected function saveImageFile($base64String = '', $table, $recordId)
     {
         $imagePart = '/' . $table . '/' . md5($recordId) . '.jpg';

@@ -18,7 +18,7 @@ $(function () {
             }
         });
 
-        self.token = ko.observable(params._token);
+        // self.token = ko.observable(document.getById(._token);
 
         self.focusedEmail = ko.observable(false);
 
