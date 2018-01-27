@@ -7,13 +7,14 @@
         </div>
         <div class="_2H55B">
             <a class="sc-kgoBCf jHUdQQ" href="/">
-                <span class="dOqZCB one">
-                   ALT
-                </span>
-                <span class="dOqZCB two">
-                    FOOTBALL
-                </span>
+                <div class="words">
+                    <span class="dOqZCB one">ALT</span>
+                    <span class="dOqZCB two">FOOTBALL</span>
+                </div>
             </a>
+            <div class="fields" data-bind="foreach: [<?php echo implode(',', range(1, 6)); ?>]">
+                <div class="square"></div>
+            </div>
         </div>
         <div class="_3BBJg">
             @if(Auth::guard()->check() && Auth::user()->is_active)

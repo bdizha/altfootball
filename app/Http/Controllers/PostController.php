@@ -27,9 +27,9 @@ class PostController extends Controller
             ->offset(($data['page'] * 2) + 1)
             ->limit(2);
 
-        if (!empty($data['fanbase_id'])) {
+        if (!empty($data['base_id'])) {
             $posts = $query->whereHas('fanbases', function ($query) use ($data) {
-                $query->where('fanbases.id', $data['fanbase_id']);
+                $query->where('fanbases.id', $data['base_id']);
             })->get();
         } else {
             $posts = $query->get();
@@ -48,7 +48,7 @@ class PostController extends Controller
         })
             ->where("id", "!=", $post->id)
             ->orderBy("posts.created_at", "DESC")
-            ->take(3)
+            ->take(9)
             ->get();
 
         $contentLength = strlen($post->content);
@@ -69,8 +69,8 @@ class PostController extends Controller
         return view('post.show', [
             'comments' => json_encode($post->comments->toArray(), JSON_HEX_APOS),
             'post' => $post,
-            'siblingPosts' => $siblingPosts,
             'fanbases' => $fanbases,
+            'siblingPosts' => $siblingPosts,
             'trendingPosts' => $trendingPosts,
             'user' => $this->getUserArray()
         ]);

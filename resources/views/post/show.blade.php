@@ -13,73 +13,79 @@
         <?php $postId = $post->id ?>
         <article>
             <div class="j-W_D _1iE2V">
-                <div class="_1Y7kL">
-                    <div class="_1veAI _1iE2V">
-                        <div class="_1-sfe _29LD-">
-                            <div class="_23p6h">
-                                <img src="http://altfootball.com/images/{{ $post->image }}" alt="{{ $post->title }}"/>
-                            </div>
-                            <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
-                            <div class="_3qkzJ">
-                                <p class="_2B25b">
-                                    <span class="_2jvdf">{{ $post->published_at }}</span>
-                                </p>
-                                <p class="TATrW">{{ $post->views }} Views</p>
-                            </div>
-                            @if(false)
-                                <div class="_3tkuf _23YI">
-                                    <div class="_1drt2 _9fE1R NasRD">
-                                        <div>
-                                            <h2>CREDIT</h2>
+                <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
+                    <div class="_1Q_Pu">
+                        <div class="_1Y7kL">
+                            <div class="_1veAI _1iE2V">
+                                <div class="_1-sfe _29LD-">
+                                    <div class="_23p6h">
+                                        <img src="http://altfootball.com/images/{{ $post->image }}"
+                                             alt="{{ $post->title }}"/>
+                                    </div>
+                                    <div class="_76TYH">
+                                        <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
+                                        <div class="_3qkzJ">
+                                            <p class="_2B25b">
+                                                <span class="_2jvdf">{{ $post->published_at }}</span>
+                                            </p>
+                                            <p class="TATrW">{{ $post->views }} Views</p>
                                         </div>
-                                        <a class="_3OD4J _1yV5F _1MC-v _1h78h" target="_blank"
-                                           href="{{ $post->external_url }}">{{ $post->url_x }}</a>
-                                    </div>
-                                </div>
-                            @endif
-                            <div class="_1Fx1P _1iE2V _1Ov3j">
-                                <div class="_1-sfe CDTi0">
-                                    <div class="_1l_wG _29Okg">
-                                        @include('post.actions')
-                                    </div>
-                                    <div class="_3o2ca">
-                                        <a class="_2Q0fU p1Di1"
-                                           href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($post->share_url) }}"
-                                           target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12"
-                                                 viewBox="0 0 7 12">
-                                                <path fill="rgba(255, 255, 255, 1)" fill-rule="evenodd"
-                                                      d="M4.16 0c1.83 0 2.6.22 2.6.22l-.37 1.84s-.6-.15-1.16-.15c-.57 0-1.07.17-1.07.66v1.4h2.3l-.15 1.8H4.16V12H1.45V5.76H0v-1.8h1.45v-1.2c0-.53.01-1.35.46-1.86C2.4.37 3.04 0 4.16 0"></path>
-                                            </svg>
-                                        </a>
-                                        <a class="_2Q0fU _3cqrr"
-                                           href="https://twitter.com/intent/tweet?url={{ urlencode($post->share_url) }}"
-                                           target="_blank">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12"
-                                                 viewBox="0 0 15 12">
-                                                <path fill="rgba(255, 255, 255, 1)" fill-rule="evenodd"
-                                                      d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="dqbp5">
-                                <div class="_2gXFy">
-                                    <div class="_3PwOQ sc-jTzLTM kGoDGv">
-                                        <div class="sc-fjdhpX dAAOAM">
-                                            <div class="_38L6D" style="padding-bottom: 100%;">
-                                                <img alt="{{ $post->title }}" role="presentation"
-                                                     src="{{ $post->user->thumb_x }}" class="_214e9 b00q8" width="60"
-                                                     height="60">
+                                        @if(false)
+                                            <div class="_3tkuf _23YI">
+                                                <div class="_1drt2 _9fE1R NasRD">
+                                                    <div>
+                                                        <h2>CREDIT</h2>
+                                                    </div>
+                                                    <a class="_3OD4J _1yV5F _1MC-v _1h78h" target="_blank"
+                                                       href="{{ $post->external_url }}">{{ $post->url_x }}</a>
+                                                </div>
+                                            </div>
+                                        @endif
+                                        <div class="_1Fx1P _1iE2V _1Ov3j">
+                                            <div class="_1-sfe CDTi0">
+                                                <div class="_1l_wG _29Okg">
+                                                    @include('post.actions')
+                                                </div>
+                                                <div class="_3o2ca">
+                                                    <a class="_2Q0fU p1Di1"
+                                                       href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($post->share_url) }}"
+                                                       target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12"
+                                                             viewBox="0 0 7 12">
+                                                            <path fill="rgba(255, 255, 255, 1)" fill-rule="evenodd"
+                                                                  d="M4.16 0c1.83 0 2.6.22 2.6.22l-.37 1.84s-.6-.15-1.16-.15c-.57 0-1.07.17-1.07.66v1.4h2.3l-.15 1.8H4.16V12H1.45V5.76H0v-1.8h1.45v-1.2c0-.53.01-1.35.46-1.86C2.4.37 3.04 0 4.16 0"></path>
+                                                        </svg>
+                                                    </a>
+                                                    <a class="_2Q0fU _3cqrr"
+                                                       href="https://twitter.com/intent/tweet?url={{ urlencode($post->share_url) }}"
+                                                       target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="12"
+                                                             viewBox="0 0 15 12">
+                                                            <path fill="rgba(255, 255, 255, 1)" fill-rule="evenodd"
+                                                                  d="M10.24 0c.83 0 1.58.34 2.13.9h.05c.4 0 1.2-.1 1.98-.66 0 0 .04.64-1.23 1.63 0 0 1.18-.1 1.66-.45 0 0-.11.41-1.54 1.7 0 0 .48 7.01-6.87 8.73 0 0-.72.15-1.75.15A7.78 7.78 0 0 1 0 10.61s.37.07.93.07c.96 0 2.47-.2 3.49-1.32-.08 0-2.07-.02-2.7-2.07 0 0 .29.06.62.06.21 0 .43-.03.61-.1 0 0-2.32-.49-2.28-3.02 0 0 .53.39 1.05.39l.14-.01s-2.09-1.78-.8-4c0 0 2.65 3.13 5.99 3.13l.3-.01A2.99 2.99 0 0 1 10.25 0"></path>
+                                                        </svg>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="_1pPnu _2Nd08">
-                                        <div class="">
+                                        <div class="dqbp5">
+                                            <div class="_2gXFy">
+                                                <div class="_3PwOQ sc-jTzLTM kGoDGv">
+                                                    <div class="sc-fjdhpX dAAOAM">
+                                                        <div class="_38L6D" style="padding-bottom: 100%;">
+                                                            <img alt="{{ $post->title }}" role="presentation"
+                                                                 src="{{ $post->user->thumb_x }}" class="_214e9 b00q8"
+                                                                 width="60"
+                                                                 height="60">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="_1pPnu _2Nd08">
+                                                    <div class="">
                                             <span class="_1NHvQ _3Xf-w">
                                                 <a class="_2XyXQ" href="/u/{{ $post->user->slug }}">
                                                     {{ $post->user->name }}
+                                                    <span class="_3RTYJ">posted in</span>
                                                 </a>
                                                 <span>
                                                     <a class="_1XNRF" href="/f/{{ $post->fanbase->slug }}">
@@ -96,92 +102,110 @@
                                                     </a>
                                                 </span>
                                             </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="_23YI">
+                                                <a class="_3OD4J _1yV5F _1h78h" href="/f/{{ $post->fanbase->slug }}">
+                                                    Join {{ $post->fanbase->name }}
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="_23YI">
-                                    <a class="_3OD4J _1yV5F _1h78h" href="/f/{{ $post->fanbase->slug }}">
-                                        Join {{ $post->fanbase->name }}
-                                    </a>
-                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="_3BzB6 _1Fx1P _1iE2V _3wPPl">
-                    <div class="_1Q_Pu">
                         {!! $post->getHtmlContent() !!}
                         <div id="tackles" class="jwlFt _1zwKC">
                             <div class="_1gLAu _1iE2V">
                                 <div class="_1-sfe">
-                                    <comments params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
+                                    <comments
+                                            params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="_3VSm9 _3bVUr _2GMT0">
-                        <div class="_24kFo">
-                            <div class="_3zT4K">TRENDING POSTS_</div>
-                            <div class="_3broS">
-                                @foreach($siblingPosts as $post)
-                                    <div class="_2Eh0V _2bbto YgLNn">
-                                        <div class="_1XrlP _25JSo">
-                                            <a class="_2xn_m _238kJ" href="/p/{{ $post->slug }}">
-                                                <div class="_1w60_">
-                                                    <div class="_2pUFC _3Xaa0">
-                                                        <img alt="" role="presentation" src="{{ $post->small_x }}" class="b00q8" style="width: 100%" />
+                    <div class="_34FTR">
+                        <div class="_3VSm9 _3bVUr _2GMT0">
+                            <div class="_3zT4K">UP NEXT_</div>
+                            <ul>
+                                @foreach(range(0,5) as $key)
+                                    @include('post.item', ['post' => $trendingPosts[$key]])
+                                @endforeach
+                            </ul>
+                            <div class="_24kFo">
+                                <div class="_3zT4K">TRENDING POSTS_</div>
+                                <div class="_3broS">
+                                    @foreach($siblingPosts as $post)
+                                        <div class="_2Eh0V _2bbto YgLNn">
+                                            <div class="_1XrlP _25JSo">
+                                                <a class="_2xn_m _238kJ" href="/p/{{ $post->slug }}">
+                                                    <div class="_1w60_">
+                                                        <div class="_2pUFC _3Xaa0">
+                                                            <img alt="" role="presentation" src="{{ $post->small_x }}"
+                                                                 class="b00q8" style="width: 100%"/>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                            <div class="_2fUiv _3lJNV">
-                                                <a class="_3H01F _135mL _38OvA" href="/p/{{ $post->slug }}">{{ $post->title }}</a>
-                                                <div class="_3RbBo">
-                                                    <a class="" href="/u/{{ $post->user->slug }}">
-                                                        <div class="_3lGf- sc-jTzLTM kGoDGv">
-                                                            <div class="sc-fjdhpX dAAOAM">
-                                                                <div class="_38L6D" style="padding-bottom: 100%;">
-                                                                    <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->user->small_x }}" class="_214e9 b00q8" width="60" height="60" />
+                                                </a>
+                                                <div class="_2fUiv _3lJNV">
+                                                    <a class="_3H01F _135mL _38OvA"
+                                                       href="/p/{{ $post->slug }}">{{ $post->title }}</a>
+                                                    <div class="_3RbBo">
+                                                        <a class="" href="/u/{{ $post->user->slug }}">
+                                                            <div class="_3lGf- sc-jTzLTM kGoDGv">
+                                                                <div class="sc-fjdhpX dAAOAM">
+                                                                    <div class="_38L6D" style="padding-bottom: 100%;">
+                                                                        <img alt="{{ $post->user->name }}"
+                                                                             role="presentation"
+                                                                             src="{{ $post->user->small_x }}"
+                                                                             class="_214e9 b00q8" width="60"
+                                                                             height="60"/>
+                                                                    </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </a>
-                                                    <div class="zv5pR E6O3i">
-                                                        <a class="_3f32u _38OvA" href="/u/{{ $post->user->slug }}">{{ $post->user->name }}</a>
-                                                        <a class="O0stn _38OvA" href="/f/{{ $post->fanbase->slug }}">
-                                                            {{ $post->fanbase->name }}
                                                         </a>
+                                                        <div class="zv5pR E6O3i">
+                                                            <a class="_3f32u _38OvA"
+                                                               href="/u/{{ $post->user->slug }}">{{ $post->user->name }}</a>
+                                                            <a class="O0stn _38OvA"
+                                                               href="/f/{{ $post->fanbase->slug }}">
+                                                                {{ $post->fanbase->name }}
+                                                            </a>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                @endforeach
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="_2xoE4 NasRD _3QYjF">
-                    <button class="_1Zj5n _1cG70 _2YLzg">
-                        <svg width="10" height="10">
-                            <path fill="none" stroke="rgba(17, 102, 146, 0.85)" stroke-linecap="square"
-                                  stroke-width="2"
-                                  d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
-                        </svg>
-                    </button>
-                    <div class="_2pnaG NasRD">
-                        <h2>Like this?</h2>
-                        <div class="_3Cj79 _1geYT">Get more</div>
-                    </div>
+            </div>
+            <div class="_2xoE4 NasRD _3QYjF">
+                <button class="_1Zj5n _1cG70 _2YLzg">
+                    <svg width="10" height="10">
+                        <path fill="none" stroke="rgba(17, 102, 146, 0.85)" stroke-linecap="square"
+                              stroke-width="2"
+                              d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
+                    </svg>
+                </button>
+                <div class="_2pnaG NasRD">
+                    <h2>Like this?</h2>
+                    <div class="_3Cj79 _1geYT">Get more</div>
                 </div>
             </div>
-        </article>
+    </div>
+    </article>
     </div>
     <div class="_11QMn">
         <div class="_5M-3F">
             <div>
                 <div class="_2H69I">FROM THIS FANBASE_</div>
                 <div class="_9T4R2">
-                    @foreach($trendingPosts as $post)
+                    @foreach(range(6,8) as $key)
+                        <?php $post = $trendingPosts[$key] ?>
                         <div class="_1XEbE">
                             <div class="_1DRo">
                                 <div class="_38L6D" style="padding-bottom: 50%;">
