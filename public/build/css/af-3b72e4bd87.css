@@ -9854,7 +9854,6 @@ div._3bqe5 > div {
 }
 
 .j-W_D {
-  overflow: hidden;
   width: 100%;
   max-width: 1180px;
   margin-left: auto;
@@ -21426,8 +21425,10 @@ nav._1R2o8 {
   padding: 22px;
 }
 
-._34FTR ._24kFo {
-  display: none;
+@media (max-width: 846px) {
+  ._34FTR ._24kFo {
+    display: none;
+  }
 }
 
 @media (max-width: 846px) {
