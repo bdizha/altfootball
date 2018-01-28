@@ -1,5 +1,5 @@
 <li class="sc-dqBHgY gEVQKf" data-reactid="181">
-    <a class="sc-gxMtzJ ljjFes">
+    <a class="sc-gxMtzJ ljjFes" href="/p/{{ $post->slug }}">
         <div class="sc-eXEjpC gESGAG" data-reactid="183">
             <div class="sc-ibxdXY hKmwtp" data-reactid="184">
                 <div style="padding-bottom:100%;" class="_38L6D" data-reactid="185">
@@ -38,6 +38,7 @@
                             <span class="_iuvin _ov9ai">
                                 <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
                             </span>
+                            <span class="_2jvdf">{{ $post->published_at }}</span>
                         </div>
                     </div>
                 </div>

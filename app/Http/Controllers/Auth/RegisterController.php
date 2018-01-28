@@ -122,7 +122,7 @@ class RegisterController extends Controller
 
     public function redirectToProvider()
     {
-        return Socialite::driver('facebook')->redirect();
+        return Socialite::with('facebook')->redirect();
     }
 
     public function handleProviderCallback(Request $request)
@@ -130,7 +130,8 @@ class RegisterController extends Controller
         if (!empty($request['error'])) {
             return redirect()->to('/');
         } else {
-            $facebookUser = Socialite::driver('facebook')->user();
+            $facebookUser = Socialite::with('facebook')->user();
+            dd($facebookUser);
 
             $ipAddress = new CaptureIpTrait;
             $user = User::where("email", $facebookUser->getEmail())->first();

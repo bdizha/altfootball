@@ -69,42 +69,7 @@
                                             </div>
                                         </div>
                                         <div class="dqbp5">
-                                            <div class="_2gXFy">
-                                                <div class="_3PwOQ sc-jTzLTM kGoDGv">
-                                                    <div class="sc-fjdhpX dAAOAM">
-                                                        <div class="_38L6D" style="padding-bottom: 100%;">
-                                                            <img alt="{{ $post->title }}" role="presentation"
-                                                                 src="{{ $post->user->thumb_x }}" class="_214e9 b00q8"
-                                                                 width="60"
-                                                                 height="60">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="_1pPnu _2Nd08">
-                                                    <div class="">
-                                            <span class="_1NHvQ _3Xf-w">
-                                                <a class="_2XyXQ" href="/u/{{ $post->user->slug }}">
-                                                    {{ $post->user->name }}
-                                                    <span class="_3RTYJ">posted in</span>
-                                                </a>
-                                                <span>
-                                                    <a class="_1XNRF" href="/f/{{ $post->fanbase->slug }}">
-                                                        {{ '@'.$post->fanbase->camel }}
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                                             viewBox="0 0 18 18" class="_1z7Hy">
-                                                            <g fill="none" fill-rule="evenodd">
-                                                                <path fill="rgba(32, 198, 89, 1)"
-                                                                      d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                                                <path fill="rgba(255, 255, 255, 1)"
-                                                                      d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                                            </g>
-                                                        </svg>
-                                                    </a>
-                                                </span>
-                                            </span>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            @include('post.user')
                                             <div class="_23YI">
                                                 <a class="_3OD4J _1yV5F _1h78h" href="/f/{{ $post->fanbase->slug }}">
                                                     Join {{ $post->fanbase->name }}
@@ -115,12 +80,14 @@
                                 </div>
                             </div>
                         </div>
-                        {!! $post->getHtmlContent() !!}
-                        <div id="tackles" class="jwlFt _1zwKC">
-                            <div class="_1gLAu _1iE2V">
-                                <div class="_1-sfe">
-                                    <comments
-                                            params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
+                        <div class="_67FRT">
+                            {!! $post->getHtmlContent() !!}
+                            <div id="tackles" class="jwlFt _1zwKC">
+                                <div class="_1gLAu _1iE2V">
+                                    <div class="_1-sfe">
+                                        <comments
+                                                params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -142,8 +109,7 @@
                                                 <a class="_2xn_m _238kJ" href="/p/{{ $post->slug }}">
                                                     <div class="_1w60_">
                                                         <div class="_2pUFC _3Xaa0">
-                                                            <img alt="" role="presentation" src="{{ $post->small_x }}"
-                                                                 class="b00q8" style="width: 100%"/>
+                                                            <img alt="" role="presentation" src="{{ $post->small_x }}" class="b00q8" style="width: 100%; height: 100%"/>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -151,27 +117,7 @@
                                                     <a class="_3H01F _135mL _38OvA"
                                                        href="/p/{{ $post->slug }}">{{ $post->title }}</a>
                                                     <div class="_3RbBo">
-                                                        <a class="" href="/u/{{ $post->user->slug }}">
-                                                            <div class="_3lGf- sc-jTzLTM kGoDGv">
-                                                                <div class="sc-fjdhpX dAAOAM">
-                                                                    <div class="_38L6D" style="padding-bottom: 100%;">
-                                                                        <img alt="{{ $post->user->name }}"
-                                                                             role="presentation"
-                                                                             src="{{ $post->user->small_x }}"
-                                                                             class="_214e9 b00q8" width="60"
-                                                                             height="60"/>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </a>
-                                                        <div class="zv5pR E6O3i">
-                                                            <a class="_3f32u _38OvA"
-                                                               href="/u/{{ $post->user->slug }}">{{ $post->user->name }}</a>
-                                                            <a class="O0stn _38OvA"
-                                                               href="/f/{{ $post->fanbase->slug }}">
-                                                                {{ $post->fanbase->name }}
-                                                            </a>
-                                                        </div>
+                                                        @include('post.user')
                                                     </div>
                                                 </div>
                                             </div>
@@ -196,8 +142,7 @@
                     <div class="_3Cj79 _1geYT">Get more</div>
                 </div>
             </div>
-    </div>
-    </article>
+        </article>
     </div>
     <div class="_11QMn">
         <div class="_5M-3F">
@@ -238,8 +183,8 @@
                                              viewBox="0 0 18 18"
                                              class="_1z7Hy _1NCGm RyyhO">
                                             <g fill="none" fill-rule="evenodd">
-                                                <path fill="#33BB66" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                                <path fill="rgba(255, 255, 255, 1)"
+                                                <path fill="rgba(255, 255, 255, 1)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                                <path fill="rgba(32, 198, 89, 1)"
                                                       d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                                             </g>
                                         </svg>
