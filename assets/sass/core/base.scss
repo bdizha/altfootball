@@ -4588,9 +4588,6 @@ dribbles {
 ._34FTR {
   background: rgba(56, 82, 119, 0.065);
   .bgTWiC {
-    .lehvYd {
-      display: none;
-    }
     .dDnmGN {
       width: 24px;
       height: 24px;
@@ -5368,8 +5365,8 @@ dribbles {
 @media screen and (max-width: 846px) {
   ._2uakq {
     ._1KG3g {
-      height: 32px;
-      width: 32px;
+      height: 44px;
+      width: 44px;
       border-width: 2px;
       .gzgzI {
         font-size: 22px;
@@ -5412,7 +5409,7 @@ dribbles {
   color: $color_white;
   content: attr(data-stamp);
   font-family: $font_serif;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
   line-height: 44px;
@@ -8715,7 +8712,6 @@ div._3bqe5 {
   height: 20px;
   display: flex;
   align-items: center;
-  margin-top: -4px;
 }
 
 ._378qt {
@@ -11113,8 +11109,9 @@ div._3bqe5 {
 
 ._25LcG {
   font-size: 16px;
-  color: #f8f8f8;
+  color: $color_white;
   &:hover {
+    color: $color_white;
     text-decoration: underline;
   }
 }
@@ -12524,6 +12521,7 @@ div._3bqe5 {
     float: left;
     width: 189px;
     height: 189px;
+    font-weight: 700;
     position: relative;
     &:before {
       border: 3px solid $color_white;
@@ -12563,7 +12561,7 @@ div._3bqe5 {
   }
   .Dpcfa {
     font-family: $font_serif;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
@@ -12654,7 +12652,7 @@ div._3bqe5 {
       color: $color_white;
       content: attr(data-stamp);
       font-family: $font_serif;
-      font-weight: 400;
+      font-weight: 700;
       text-transform: uppercase;
       font-size: 35px;
       text-align: center;
@@ -19344,7 +19342,7 @@ nav._1R2o8 {
       -ms-flex-direction: row;
       flex-direction: row;
       max-width: 100%;
-      color: rgba(56, 82, 119, 0.75);
+      color: rgba(0, 149, 208, 0.85);
       ._iadoq, ._iadoq:visited {
         color: #262626;
         -webkit-box-flex: 0;
@@ -20028,12 +20026,6 @@ nav._1R2o8 {
   ._3VSm9 {
     width: auto;
   }
-  .fPOHUM {
-    font-size: 16px;
-    line-height: 16px;
-    padding-bottom: 5px;
-    text-transform: none;
-  }
   .bcqOPV {
     display: block;
     -ms-flex-direction: column;
@@ -20042,8 +20034,52 @@ nav._1R2o8 {
     align-items: flex-start;
     -ms-flex-pack: center;
     justify-content: center;
+    .fPOHUM {
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: none;
+      max-height: 16px;
+      overflow: hidden;
+      margin-bottom: 5px;
+    }
+    @media (max-width: 1158px) and (min-width: 846px) {
+      .bgTWiC {
+        -webkit-flex-direction: initial;
+        -ms-flex-direction: initial;
+        flex-direction: initial;
+      }
+    }
+
+    @media (max-width: 508px) {
+      .bgTWiC {
+        -webkit-flex-direction: initial;
+        -ms-flex-direction: initial;
+        flex-direction: initial;
+      }
+    }
+    @media (max-width: 846px) {
+      .bgTWiC {
+        .fneZyH {
+          margin-bottom: 5px;
+        }
+        .YkbCv{
+          display: block;
+        }
+      }
+    }
     .YkbCv {
       ._74oom {
+        ._eeohz{
+          margin-right: 10px;
+          &:after {
+            margin-left: 9px;
+            content: '';
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            background-color: rgba(56, 82, 119, 0.75);
+          }
+        }
         ._csp04 {
           ._ov9ai {
             display: none;
@@ -20058,8 +20094,12 @@ nav._1R2o8 {
   .ljjFes {
     height: 110px;
     .jzIbtI {
+      display: block;
       margin-bottom: 0;
-      height: 32px;
+      height: 50px;
+      @media (max-width: 508px) {
+        height: 52px;
+      }
       overflow: hidden;
     }
   }

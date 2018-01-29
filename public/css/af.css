@@ -4979,10 +4979,6 @@ dribbles ._35GH ._34IO {
   background: rgba(56, 82, 119, 0.065);
 }
 
-._34FTR .bgTWiC .lehvYd {
-  display: none;
-}
-
 ._34FTR .bgTWiC .dDnmGN {
   width: 24px;
   height: 24px;
@@ -5819,8 +5815,8 @@ dribbles ._35GH ._34IO {
 
 @media screen and (max-width: 846px) {
   ._2uakq ._1KG3g {
-    height: 32px;
-    width: 32px;
+    height: 44px;
+    width: 44px;
     border-width: 2px;
   }
 
@@ -5864,7 +5860,7 @@ dribbles ._35GH ._34IO {
   color: #FFFFFF;
   content: attr(data-stamp);
   font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
   line-height: 44px;
@@ -9409,7 +9405,6 @@ div._3bqe5 > div {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  margin-top: -4px;
 }
 
 ._378qt {
@@ -11928,10 +11923,11 @@ div._3bqe5 > div {
 
 ._25LcG {
   font-size: 16px;
-  color: #f8f8f8;
+  color: #FFFFFF;
 }
 
 ._25LcG:hover {
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
@@ -13476,6 +13472,7 @@ div._3bqe5 > div {
     float: left;
     width: 189px;
     height: 189px;
+    font-weight: 700;
     position: relative;
   }
 
@@ -13522,7 +13519,7 @@ div._3bqe5 > div {
 
   .Dpcfa {
     font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 18px;
@@ -13630,7 +13627,7 @@ div._3bqe5 > div {
     color: #FFFFFF;
     content: attr(data-stamp);
     font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
-    font-weight: 400;
+    font-weight: 700;
     text-transform: uppercase;
     font-size: 35px;
     text-align: center;
@@ -20738,7 +20735,7 @@ nav._1R2o8 {
   -ms-flex-direction: row;
   flex-direction: row;
   max-width: 100%;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
 }
 
 .YkbCv ._74oom ._eeohz ._iadoq,
@@ -21375,13 +21372,6 @@ nav._1R2o8 {
   width: auto;
 }
 
-._34FTR .fPOHUM {
-  font-size: 16px;
-  line-height: 16px;
-  padding-bottom: 5px;
-  text-transform: none;
-}
-
 ._34FTR .bcqOPV {
   display: block;
   -ms-flex-direction: column;
@@ -21390,6 +21380,52 @@ nav._1R2o8 {
   align-items: flex-start;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+._34FTR .bcqOPV .fPOHUM {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: none;
+  max-height: 16px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1158px) and (min-width: 846px) {
+  ._34FTR .bcqOPV .bgTWiC {
+    -ms-flex-direction: initial;
+    flex-direction: initial;
+  }
+}
+
+@media (max-width: 508px) {
+  ._34FTR .bcqOPV .bgTWiC {
+    -ms-flex-direction: initial;
+    flex-direction: initial;
+  }
+}
+
+@media (max-width: 846px) {
+  ._34FTR .bcqOPV .bgTWiC .fneZyH {
+    margin-bottom: 5px;
+  }
+
+  ._34FTR .bcqOPV .bgTWiC .YkbCv {
+    display: block;
+  }
+}
+
+._34FTR .bcqOPV .YkbCv ._74oom ._eeohz {
+  margin-right: 10px;
+}
+
+._34FTR .bcqOPV .YkbCv ._74oom ._eeohz:after {
+  margin-left: 9px;
+  content: '';
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: rgba(56, 82, 119, 0.75);
 }
 
 ._34FTR .bcqOPV .YkbCv ._74oom ._csp04 ._ov9ai {
@@ -21405,9 +21441,16 @@ nav._1R2o8 {
 }
 
 ._34FTR .ljjFes .jzIbtI {
+  display: block;
   margin-bottom: 0;
-  height: 32px;
+  height: 50px;
   overflow: hidden;
+}
+
+@media (max-width: 508px) {
+  ._34FTR .ljjFes .jzIbtI {
+    height: 52px;
+  }
 }
 
 ._34FTR ._3broS ._2Eh0V {

@@ -16,14 +16,11 @@
                                  class="_214e9 b00q8" width="20" height="20">
                         </div>
                     </div>
-                    <span class="sc-hXRMBi lehvYd">
-                        {{ $post->user->name }}
-                    </span>
                 </span>
                 <div class="sc-epnACN YkbCv" href="/f/{{ $post->fanbase->slug }}">
                     <div class="_74oom">
                         <div class="_eeohz">
-                            <span>{{ $post->fanbase->name }}</span>
+                            <span>{{ '@' . $post->fanbase->camel }}</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18"
                                  class="_1z7Hy">
                                 <g fill="none" fill-rule="evenodd">
@@ -34,7 +31,6 @@
                             </svg>
                         </div>
                         <div class="_csp04">
-                            <span class="_82161">•</span>
                             <span class="_iuvin _ov9ai">
                                 <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
                             </span>

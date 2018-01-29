@@ -30,7 +30,6 @@
                                 </svg>
                             </div>
                             <div class="_csp04">
-                                <span class="_82161">•</span>
                                 <span class="_iuvin _ov9ai">
                                     <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
                                 </span>
