@@ -41,8 +41,8 @@ html {
 }
 
 body {
-  margin: 0;
-  color: rgba(0, 8, 39, 1);
+  margin: 22px;
+  color: rgb(56, 82, 119);
 }
 
 article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
@@ -65,7 +65,7 @@ audio:not([controls]) {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   &:active, &:hover {
     outline-width: 0;
     color: $color_green;
@@ -2324,7 +2324,7 @@ form {
   height: 44px;
   margin-bottom: 0;
   border-radius: 4px;
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
 }
 
 ._26cuW {
@@ -2549,7 +2549,7 @@ form {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   padding-top: 4px;
   a:hover {
     text-decoration: underline;
@@ -3623,7 +3623,7 @@ dribbles {
     position: absolute;
     top: 0;
     left: 34px;
-    color: rgba(56, 82, 119, 0.75);
+    color: rgba(0, 149, 208, 0.85);
     font-size: 16px;
     font-weight: 700;
     line-height: 32px;
@@ -4115,7 +4115,7 @@ dribbles {
 }
 
 ._2jvdf {
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   font-size: 16px;
 }
 
@@ -4141,7 +4141,7 @@ dribbles {
 
 .TATrW {
   align-items: center;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   font-size: 16px;
 }
 
@@ -4176,7 +4176,7 @@ dribbles {
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    background-color: rgba(56, 82, 119, 0.75);
+    background-color: rgba(0, 149, 208, 0.85);
   }
 }
 
@@ -4185,7 +4185,7 @@ dribbles {
 }
 
 ._1XNRF, ._3-2aE {
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
 }
 
 ._2VAHq {
@@ -4227,7 +4227,7 @@ dribbles {
 ._3Xf-w ._1XNRF {
   font-size: 16px;
   line-height: 16px;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   font-weight: 400;
   &:hover {
     color: $color_green;
@@ -4517,7 +4517,7 @@ dribbles {
 }
 
 ._38OvA {
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   &._1H8gB {
     color: rgba(0, 149, 208, 0.98);
   }
@@ -4587,7 +4587,7 @@ dribbles {
 }
 
 ._3bVUr {
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
 }
 
 ._34FTR {
@@ -5095,7 +5095,7 @@ dribbles {
   position: relative;
   text-align: center;
   .QbGqA {
-    color: rgba(0, 8, 39, 1);
+    color: #385277;
     white-space: nowrap;
     position: absolute;
     margin: auto;
@@ -6746,7 +6746,7 @@ form {
 
 .zxDoM {
   display: flex;
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
@@ -8122,7 +8122,7 @@ form {
 }
 
 .BNBMP {
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   font-size: 16px;
   line-height: 12px;
   list-style: disc;
@@ -8269,7 +8269,7 @@ form {
   font-weight: 700;
   text-transform: uppercase;
   float: right;
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   border: 1px solid rgba(56, 82, 119, 0.15);
   padding: 9px 28px;
   font-size: 16px;
@@ -8616,7 +8616,7 @@ div._3bqe5 {
 
 ._3HP-Q {
   margin-left: 4px;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   font-weight: normal;
 }
 
@@ -10100,7 +10100,7 @@ div._3bqe5 {
   }
   ._23YI {
     ._1h78h {
-      background: rgba(56, 82, 119, 0.75);
+      background: rgba(0, 149, 208, 0.85);
       &:hover {
         background: rgba(56, 82, 119, 0.85)
       }
@@ -11688,7 +11688,7 @@ div._3bqe5 {
 }
 
 ._2I-QY {
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   border: 1px solid rgba(56, 82, 119, 0.15);
 }
 
@@ -11699,7 +11699,7 @@ div._3bqe5 {
 }
 
 ._2q7vJ {
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   border: 1px solid rgba(56, 82, 119, 0.15);
 }
 
@@ -11919,7 +11919,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 18px;
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
 }
 
 @media screen and (max-width: 508px) {
@@ -12496,7 +12496,7 @@ div._3bqe5 {
     padding-bottom: 100%;
   }
   ._1Rj2S {
-    background: rgba(0, 8, 39, 1);
+    background: #385277;
     ._2hXuE {
       width: 90%;
       margin: 0 auto;
@@ -13390,7 +13390,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   width: 100%;
   padding-top: 18px;
   padding-bottom: 18px;
@@ -15812,7 +15812,7 @@ div._3bqe5 {
 }
 
 ._346nx {
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   border: 1px solid rgba(56, 82, 119, 0.15);
 }
 
@@ -15838,7 +15838,7 @@ div._3bqe5 {
 }
 
 .zOPku {
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   position: relative;
   font-size: 28px;
   display: inline;
@@ -15979,7 +15979,7 @@ div._3bqe5 {
   }
   .weBNu {
     background: $color_white;
-    color: rgba(0, 8, 39, 1);
+    color: #385277;
     border-bottom: 1px solid rgba(56, 82, 119, 0.15);
     transition: all 0.1s linear 0.6s;
   }
@@ -17454,7 +17454,7 @@ div._3bqe5 {
 }
 
 .O6y0Q {
-  background-color: rgba(0, 8, 39, 1);
+  background-color: #385277;
 }
 
 .O6y0Q svg {
@@ -17776,7 +17776,7 @@ nav._1R2o8 {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 12px;
-  color: rgba(0, 8, 39, 1);
+  color: #385277;
   cursor: pointer
 }
 
@@ -18014,7 +18014,7 @@ nav._1R2o8 {
 }
 
 .gld7a {
-  background-color: rgba(0, 8, 39, 1);
+  background-color: #385277;
 }
 
 ._2F06s {
@@ -18774,7 +18774,7 @@ nav._1R2o8 {
 
 ._3vwB1 {
   color: $color_white;
-  border-bottom-color: rgba(0, 8, 39, 1);
+  border-bottom-color: #385277;
 }
 
 ._2aPX0 {
@@ -19097,7 +19097,6 @@ nav._1R2o8 {
 }
 
 .jzIbtI {
-  color: rgba(0, 8, 39, 0.85);
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 10px;
@@ -19332,7 +19331,7 @@ nav._1R2o8 {
         width: 2px;
         height: 2px;
         border-radius: 50%;
-        background-color: rgba(56, 82, 119, 0.75);
+        background-color: rgba(0, 149, 208, 0.85);
       }
       ._iadoq, ._iadoq:visited {
         color: #262626;
@@ -19363,7 +19362,7 @@ nav._1R2o8 {
       align-items: baseline;
       ._82161 {
         display: inline;
-        color: rgba(56, 82, 119, 0.75);
+        color: rgba(0, 149, 208, 0.85);
         margin-left: 10px;
         margin-right: 10px;
         @media (max-width: 846px) {
@@ -19446,7 +19445,7 @@ nav._1R2o8 {
 .dbBPlH {
   font-size: 16px;
   line-height: 14px;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   margin-left: 5px;
 }
 
@@ -19493,7 +19492,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
 }
 
 .jrQrPO {
@@ -19649,7 +19648,7 @@ nav._1R2o8 {
 }
 
 .jbQyuy {
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   font-size: 16px;
   line-height: 14px;
   max-height: 64px;
@@ -20020,10 +20019,6 @@ nav._1R2o8 {
         -webkit-flex-direction: initial;
         -ms-flex-direction: initial;
         flex-direction: initial;
-        margin-bottom: 3px;
-        -ms-flex-align: center;
-        align-items: center;
-        margin-top: 3px;
       }
     }
     @media (max-width: 846px) {
@@ -20233,7 +20228,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 14px;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   white-space: nowrap;
   margin-top: 1px;
 }
@@ -20647,7 +20642,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 14px;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   white-space: nowrap;
   margin-top: 1px;
 }
@@ -20778,7 +20773,7 @@ nav._1R2o8 {
 }
 
 .cCXHYP {
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   text-align: center;
   padding: 40px 0px 60px;
 }
@@ -20827,7 +20822,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
 }
 
 .Ymjpr {
@@ -21165,7 +21160,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
 }
 
 @media (max-width: 1158px) and (min-width: 846px) {
@@ -21221,7 +21216,7 @@ nav._1R2o8 {
 .gscUmG {
   font-size: 16px;
   line-height: 14px;
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   margin-left: 5px;
 }
 
@@ -21356,7 +21351,7 @@ nav._1R2o8 {
 }
 
 .dDweOi {
-  color: rgba(56, 82, 119, 0.75);
+  color: rgba(0, 149, 208, 0.85);
   font-size: 16px;
   line-height: 1.4;
   max-height: 64px;

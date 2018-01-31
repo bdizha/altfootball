@@ -7,7 +7,6 @@ use App\Post;
 use Craft\Exception;
 use Illuminate\Http\Request;
 use Auth;
-use Illuminate\Support\Facades\Redis;
 
 class FanbaseController extends Controller
 {

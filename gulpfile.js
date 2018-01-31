@@ -18,8 +18,6 @@ elixir.config.assetsPath = 'assets/';
 elixir(function(mix) {
     mix.sass(path + '.scss');
 
-    // mix.version('public/css/af.css');
-
     mix.copy([
         'assets/js/node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
     ], 'public/css/vendors.css');
