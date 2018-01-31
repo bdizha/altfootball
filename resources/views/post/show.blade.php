@@ -24,12 +24,6 @@
                                     </div>
                                     <div class="_76TYH">
                                         <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
-                                        <div class="_3qkzJ">
-                                            <p class="_2B25b">
-                                                <span class="_2jvdf">{{ $post->published_at }}</span>
-                                            </p>
-                                            <p class="TATrW">{{ $post->views }} Views</p>
-                                        </div>
                                         @if(false)
                                             <div class="_3tkuf _23YI">
                                                 <div class="_1drt2 _9fE1R NasRD">
@@ -68,8 +62,8 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        @include('post.user')
                                         <div class="dqbp5">
-                                            @include('post.user')
                                             <div class="_23YI">
                                                 <a class="_3OD4J _1yV5F _1h78h" href="/f/{{ $post->fanbase->slug }}">
                                                     Join {{ $post->fanbase->name }}
