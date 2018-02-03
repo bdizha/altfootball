@@ -90,12 +90,12 @@
                             <div id="_3Xaa0">
                                 <div class="vYJ4Q">
                                     <div class="_2pUFC _3Xaa0">
-                                        <img alt="Altfootball" role="presentation" src="/images/auth-logo.png"/>
+                                        <img alt="Altfootball" role="presentation" src="/images/error.png"/>
                                     </div>
                                 </div>
                                 <div class="PRK0X">
                                     <div class="_3MmWw">
-                                        <img alt="Altfootball" role="presentation" src="/images/green-logo.png" class="D8NNT"/>
+                                        <img alt="Altfootball" role="presentation" src="/images/error.png" class="D8NNT"/>
                                         @yield('content')
                                     </div>
                                 </div>
