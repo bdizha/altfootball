@@ -910,7 +910,7 @@ form {
   width: 32px;
   height: 32px;
   margin-top: -18px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 @media screen and (min-width: 508px) {
@@ -924,7 +924,7 @@ form {
 ._1Wm73 {
   font-size: 28px;
   line-height: 1.4;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 @media screen and (min-width: 508px) {
@@ -1564,7 +1564,7 @@ form {
   order: 1;
   font-size: 35px;
   line-height: 35px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 @media screen and (max-width: 508px) {
@@ -2320,13 +2320,13 @@ form {
 
 ._3fi2B {
   border: 1px solid rgba(56, 82, 119, 0.15);
-  padding: 8px 16px;
-  height: 44px;
+  padding: 11px 22px;
+  height: 110px;
   margin-bottom: 0;
   border-radius: 22px;
   color: #385277;
   &:hover,
-  &:focus{
+  &:focus {
     border: 1px solid $color_green;
   }
 }
@@ -3177,7 +3177,7 @@ form {
 }
 
 ._2imp3 {
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 ._25ugo {
@@ -3780,7 +3780,7 @@ dribbles {
   position: relative;
   @media screen and (max-width: 508px) {
     .rF2QA {
-      margin-bottom: 18px;
+      margin-bottom: 22px;
     }
   }
   &:hover {
@@ -3795,7 +3795,7 @@ dribbles {
   justify-content: space-between;
   align-items: flex-start;
   padding: 22px 0;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   display: none;
 }
 
@@ -3832,7 +3832,7 @@ dribbles {
 
 ._326aY {
   margin-top: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   border-bottom: 1px solid rgba(56, 82, 119, 0.15);
 }
 
@@ -3924,7 +3924,7 @@ dribbles {
 }
 
 ._3duUm {
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 ._2DyJ3 {
@@ -5810,7 +5810,7 @@ dribbles {
 ._2S2GN {
   font-size: 44px;
   line-height: 44px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   line-height: 1;
 }
 
@@ -6466,7 +6466,7 @@ form {
 
 ._3OQAJ {
   display: block;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   text-align: center;
 }
 
@@ -7229,7 +7229,7 @@ form {
 
 @media screen and (max-width: 508px) {
   .bYSiZ {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 }
 
@@ -7656,7 +7656,7 @@ form {
 ._3CHps {
   display: flex;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 ._1HA3l {
@@ -9336,7 +9336,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._25BgE, .C8E2s {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
     font-size: 24px;
     line-height: 1.4;
   }
@@ -9492,7 +9492,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._3mDqW {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 }
 
@@ -10070,7 +10070,7 @@ div._3bqe5 {
   background: rgba(32, 198, 89, 0.25);
   color: $color_white;
   padding: 22px 28px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   font-family: $font_sans;
   .bsAyu {
     font-family: $font_sans;
@@ -10099,6 +10099,9 @@ div._3bqe5 {
   margin-bottom: 0;
   .bgTWiC {
     margin-top: 22px;
+    @media screen and (max-width: 508px) {
+      margin-top: 0;
+    }
   }
   ._1pPnu {
     height: 44px;
@@ -10517,7 +10520,7 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._23lBg {
     margin-top: 4px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 }
 
@@ -11091,13 +11094,13 @@ div._3bqe5 {
   &:hover {
     box-shadow: 0 1px 4px 0 rgba(255, 255, 255, 0.95);
     background: rgba(255, 255, 255, 0.035);
-    ._1DRo{
+    ._1DRo {
       img {
         transform: scale(1.2);
       }
     }
   }
-  .bgTWiC{
+  .bgTWiC {
     box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.30), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
     border-radius: 22px;
     width: auto;
@@ -11105,28 +11108,28 @@ div._3bqe5 {
     bottom: 0px;
     left: 22px;
     right: 22px;
-    .YkbCv{
-      ._74oom{
-        ._eeohz{
+    .YkbCv {
+      ._74oom {
+        ._eeohz {
           color: $color_white;
           &:after {
             background-color: $color_white;
           }
-          svg{
-            path{
+          svg {
+            path {
               fill: $color_white;
-              &:nth-child(2){
+              &:nth-child(2) {
                 fill: $color_green;
               }
             }
           }
         }
-        ._csp04{
-          ._2jvdf{
+        ._csp04 {
+          ._2jvdf {
             color: $color_white;
           }
-          ._ov9ai{
-            > button{
+          ._ov9ai {
+            > button {
               border: 1px solid rgba(255, 255, 255, 1);
               background: rgba(255, 255, 255, 1);
               color: $color_green;
@@ -11700,7 +11703,7 @@ div._3bqe5 {
 ._35OoN {
   width: 133px;
   height: 133px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   flex: 0 0 133px;
 }
 
@@ -12734,7 +12737,6 @@ div._3bqe5 {
 
 ._14sEb {
   width: 100%;
-  overflow: hidden;
   position: relative;
   display: flex;
 }
@@ -12746,16 +12748,18 @@ div._3bqe5 {
 ._1SLoN {
   font-family: $font_sans;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 14px;
   background: rgba(56, 82, 119, 0.065);
-  margin: 0 -1px 0;
-  padding: 13px 22px;
+  margin: 0 11px 0;
+  padding: 14px 22px;
   display: block;
-  border-radius: 0;
   white-space: nowrap;
   transition: all .1s ease-out;
   text-transform: uppercase;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
+  border-radius: 22px;
+  background: $color_white;
   &:before {
     content: "#";
   }
@@ -12794,14 +12798,12 @@ div._3bqe5 {
 
 @media screen and (min-width: 508px) {
   ._1k5bL {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 14px;
-    border-radius: 0;
   }
 }
 
 ._3ohNX {
-  overflow-x: hidden;
   width: 100%;
 }
 
@@ -12858,12 +12860,12 @@ div._3bqe5 {
 ._166mk {
   background: rgba(0, 149, 208, 0.98);
   color: $color_white;
-  border-radius: 2px;
+  border-radius: 22px;
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 18px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 16px;
   margin-right: 9px;
   text-align: center;
   display: flex;
@@ -13033,7 +13035,7 @@ div._3bqe5 {
 @media screen and (max-width: 508px) {
   ._11gfn {
     margin-top: 12px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 }
 
@@ -13165,7 +13167,7 @@ div._3bqe5 {
   ._3yl6Y {
     padding-left: 16px;
     padding-right: 16px;
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 }
 
@@ -13503,7 +13505,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 44px;
   line-height: 44px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   margin-top: 44px;
 }
 
@@ -14283,7 +14285,6 @@ div._3bqe5 {
     z-index: 9;
     background: $color_green;
     padding: 0 22px;
-    height: 44px;
     font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
@@ -14321,6 +14322,7 @@ div._3bqe5 {
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
+    height: 66px;
     .bUebbF {
       display: -webkit-box;
       display: -webkit-flex;
@@ -14437,8 +14439,8 @@ div._3bqe5 {
   .jHUdQQ {
     position: absolute;
     left: 50%;
-    top: 0px;
-    margin-left: -83px;
+    top: 0;
+    margin-left: -73px;
     z-index: 20;
     .dOqZCB {
       position: absolute;
@@ -14449,6 +14451,7 @@ div._3bqe5 {
       letter-spacing: -0.5px;
       text-transform: uppercase;
       color: $color_white;
+      top: 12px;
       &.one {
         font-weight: 400;
         left: 12px;
@@ -15611,7 +15614,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._37yvi {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 }
 
@@ -15694,7 +15697,7 @@ div._3bqe5 {
 ._1q_tt {
   width: 133px;
   height: 133px;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 @media screen and (max-width: 508px) {
@@ -15934,7 +15937,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._1COxF {
-    margin-bottom: 18px;
+    margin-bottom: 22px;
   }
 }
 
@@ -16163,7 +16166,7 @@ div._3bqe5 {
 ._29rpw {
   text-decoration: underline;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 22px;
 }
 
 ._3bJ_b {
@@ -19111,6 +19114,7 @@ nav._1R2o8 {
   line-height: 22px;
   padding-bottom: 14px;
   font-weight: bold;
+  overflow: hidden;
 }
 
 @media (max-width: 1158px) and (min-width: 846px) {
@@ -19122,12 +19126,12 @@ nav._1R2o8 {
 
 @media (max-width: 586px) {
   .fPOHUM {
-    max-height: 37px;
     .bcqOPV {
       dribbles {
         display: none;
       }
     }
+    max-height: 15px;
     font-size: 16px;
     line-height: 18px;
     margin-bottom: 5px;
@@ -19136,8 +19140,8 @@ nav._1R2o8 {
 
 @media (max-width: 326px) {
   .fPOHUM {
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 14px;
+    line-height: 14px;
     padding-bottom: 5px;
   }
 }
@@ -19148,36 +19152,25 @@ nav._1R2o8 {
   margin-bottom: 22px;
 }
 
-@media (max-width: 1158px) and (min-width: 846px) {
-  .jzIbtI {
-    display: none;
-  }
-}
-
 @media (max-width: 586px) {
   .jzIbtI {
-    display: none;
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 11px;
   }
 }
 
 @media (max-width: 508px) {
   .jzIbtI {
-    display: none;
     font-size: 16px;
-    line-height: 18px;
-    margin-bottom: 5px;
+    line-height: 16px;
+    margin-bottom: 11px;
   }
 }
 
 @media (max-width: 326px) {
   .jzIbtI {
-    display: none;
-    font-size: 16px;
-    line-height: 18px;
-    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 11px;
   }
 }
 
@@ -19623,16 +19616,14 @@ nav._1R2o8 {
 }
 
 .fTNgKg {
-  padding-left: 10px;
+  padding-left: 22px;
   white-space: nowrap;
   font-size: 16px;
   line-height: 16px;
   font-family: $font_sans;
-  font-weight: 700;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: rgba(0, 149, 208, 0.75);
   margin-right: 22px;
 }
 
@@ -20020,9 +20011,12 @@ nav._1R2o8 {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   border-bottom: 1px solid rgba(56, 82, 119, 0.15);
-  .bgTWiC{
+  .bgTWiC {
     margin-top: 22px;
     margin-bottom: 0;
+    @media screen and (max-width: 508px) {
+      margin-top: 0;
+    }
   }
   ._29Okg {
     .rF2QA {
@@ -20107,7 +20101,7 @@ nav._1R2o8 {
       margin-bottom: 0;
       height: 50px;
       @media (max-width: 508px) {
-        height: 52px;
+        height: 48px;
       }
       overflow: hidden;
     }
@@ -20138,6 +20132,7 @@ nav._1R2o8 {
   .gEVQKf {
     border-bottom: 1px solid rgba(56, 82, 119, 0.15);
     padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -21937,14 +21932,17 @@ nav._1R2o8 {
 
 .logo {
   position: relative;
-  width: 166px;
-  height: 44px;
+  width: 146px;
+  height: 66px;
   .icons {
     display: block;
     position: absolute;
     left: 0;
-    top: -7px;
+    top: 0;
     width: 56px;
     z-index: -1;
+    height: 66px;
+    line-height: 66px;
+    padding-top: 5px;
   }
 }

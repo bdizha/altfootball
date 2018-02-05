@@ -44,7 +44,7 @@
                 <h1 class="sc-btzYZH cBqIJu">
                     {{ str_limit($post->title, 45) }}
                     <div class="sc-lhVmIH bfnJOq">
-                        <button class="_3OD4J _1yV5F _1MC-v _1h78h bEORjC">READ NOW</button>
+                        <button class="_3OD4J _1yV5F _1MC-v _1h78h">READ NOW</button>
                     </div>
                 </h1>
             </a>
