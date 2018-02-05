@@ -155,41 +155,8 @@
                             <div class="_1wjeD">
                                 <div class="grsTy">{{ $post->title }}</div>
                             </div>
-                            <a class="ZE8ka"
-                               href="/p/{{ $post->slug }}"></a>
-                            <div class="zFsq3 _1iE2V _2ilqp">
-                                <a class="" href="/u/{{ $post->user->slug }}">
-                                    <div class="_25jNX _3Y-3q" style="width: 40px; height: 40px;">
-                                        <div class="N3r_f">
-                                            <div class="_38L6D" style="padding-bottom: 100%;">
-                                                <img alt="{{ $post->user->name  }}" role="presentation"
-                                                     src="{{ $post->user->thumb_x }}" class="_214e9 b00q8">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="_2bDpH">
-                                    <p class="_2nWjU _31dto KTIgi">
-                                        <a class="_2XyXQ" href="/u/{{ $post->user->slug }}">
-                                            {{ $post->user->name }}
-                                        </a>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             viewBox="0 0 18 18"
-                                             class="_1z7Hy _1NCGm RyyhO">
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path fill="rgba(255, 255, 255, 1)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                                <path fill="rgba(32, 198, 89, 1)"
-                                                      d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                            </g>
-                                        </svg>
-                                    </p>
-                                    <div class="_1HPk2">
-                                        <a class="_25LcG" href="/f/{{ $post->fanbase->slug }}">
-                                            {{ $post->fanbase->name }}
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <a class="ZE8ka" href="/p/{{ $post->slug }}"></a>
+                            @include('post.user')
                         </div>
                     @endforeach
                 </div>
