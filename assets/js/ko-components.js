@@ -290,7 +290,7 @@ $(function () {
             }
         });
 
-        // self.token = ko.observable(document.getById(._token);
+        self.token = ko.observable(params._token);
 
         self.focusedEmail = ko.observable(false);
 
@@ -321,12 +321,12 @@ $(function () {
 
         self.proceed = function () {
 
-            if (self.email.length === 0) {
+            if (self.email().length === 0) {
                 self.canGo(false);
                 return false;
             }
 
-            self.email.isModified(true);
+            console.log("testing...");
 
             self.isSubmitted(true);
 

@@ -36,7 +36,7 @@
     <script src="{{ elixir('js/af.js') }}"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body data-bind="css: { active: showOverlay() }">
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];

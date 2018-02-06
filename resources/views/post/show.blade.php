@@ -79,8 +79,7 @@
                             <div id="tackles" class="jwlFt _1zwKC">
                                 <div class="_1gLAu _1iE2V">
                                     <div class="_1-sfe">
-                                        <comments
-                                                params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
+                                        <comments params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
                                     </div>
                                 </div>
                             </div>

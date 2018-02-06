@@ -18,11 +18,10 @@
                              href="http://altfootball.dev/p/tuanzebe-joins-aston-villa-on-loan#tackles">
                             <span class="_35FcZ _13DRk">
                                 <div class="_GSL7C">
-                                    ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" version="1.1"
-                                          width="24" height="24">
-                                        <g id="surface1">
-                                            <path fill="rgba(56, 82, 119, 0.75)" style=" "
-                                                  d="M 3 6 L 3 26 L 12.585938 26 L 16 29.414063 L 19.414063 26 L 29 26 L 29 6 Z M 5 8 L 27 8 L 27 24 L 18.585938 24 L 16 26.585938 L 13.414063 24 L 5 24 Z M 9 11 L 9 13 L 23 13 L 23 11 Z M 9 15 L 9 17 L 23 17 L 23 15 Z M 9 19 L 9 21 L 19 21 L 19 19 Z "></path>
+                                    ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1" width="24" height="24" class="_3gymQ">
+                                        <g fill="#666" fill-rule="evenodd">
+                                            <path d="M16 13.33H5.2a.76.76 0 0 0-.4.11l-3.3 1.99V1.5H16v11.83zM16.75 0h-16A.75.75 0 0 0 0 .75v16a.75.75 0 0 0 1.14.64l4.26-2.56h11.35c.41 0 .75-.33.75-.75V.75a.75.75 0 0 0-.75-.75z"></path>
+                                            <path d="M4.75 6.48h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1m0 3h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1"></path>
                                         </g>
                                     </svg>
                                 </div>

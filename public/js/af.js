@@ -421,7 +421,7 @@ $(function () {
             }
         });
 
-        // self.token = ko.observable(document.getById(._token);
+        self.token = ko.observable(params._token);
 
         self.focusedEmail = ko.observable(false);
 
@@ -452,12 +452,12 @@ $(function () {
 
         self.proceed = function () {
 
-            if (self.email.length === 0) {
+            if (self.email().length === 0) {
                 self.canGo(false);
                 return false;
             }
 
-            self.email.isModified(true);
+            console.log("testing...");
 
             self.isSubmitted(true);
 
@@ -942,13 +942,20 @@ $(function () {
             return !!window.isAuthenticated;
         });
 
-        // console.log("self.isAuthenticated()");
-        // console.log(window.isAuthenticated);
-        // console.log("self.isSignedIn()");
-        // console.log(self.isSignedIn());
-
         self.showOverlay = ko.computed(function () {
-            return self.showJoinForm() || self.showUserForm() || self.showFanbaseForm() || self.showSettingsForm() || self.showItem();
+            var showOverlay = self.showJoinForm() ||
+                self.showUserForm() ||
+                self.showFanbaseForm() ||
+                self.showSettingsForm() ||
+                self.showItem();
+
+            if (showOverlay) {
+                $("body").addClass("active");
+            }
+            else {
+                $("body").removeClass("active");
+            }
+            return showOverlay;
         });
 
         self.openJoinForm = function () {
@@ -961,7 +968,6 @@ $(function () {
         };
 
         self.checkAuth = function () {
-
             if (window.isAuthenticated === false) {
                 self.showJoinForm(true);
                 return false;
@@ -1019,7 +1025,7 @@ $(function () {
                 '_ORT78'
             ];
 
-            $.each(pallets, function(key, pallet){
+            $.each(pallets, function (key, pallet) {
                 console.log("key vs value", key, pallet);
 
                 var random = Math.floor(Math.random() * colors.length);
