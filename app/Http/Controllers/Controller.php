@@ -35,7 +35,7 @@ class Controller extends BaseController
         } else {
             $user = new User();
             $user->image = env("APP_URL") . "/images/pundit-main.jpg";
-            $user->thumb_x = env("APP_URL") . "/images/pundit-main.jpg";
+            $user->thumb_image = env("APP_URL") . "/images/pundit-main.jpg";
         }
 
         $userArray = [
