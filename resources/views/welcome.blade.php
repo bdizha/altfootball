@@ -143,7 +143,7 @@
                                                 </div>
                                             </div>
                                             <h4 class="sc-jqCOkK dfpDYt" data-reactid="116">{{ $base->name }}</h4>
-                                            <div class="sc-uJMKN jbQyuy" data-reactid="117">The official fanbase</div>
+                                            <div class="sc-uJMKN jbQyuy" data-reactid="117">{{ $base->description }}</div>
                                         </a>
                                     </li>
                                 @endforeach
@@ -158,6 +158,10 @@
                             <div class="sc-ksYbfQ dbOCGf" data-reactid="175">
                                 <span class="sc-hmzhuo gqKiYI" data-reactid="176">Top</span>
                                 <span class="sc-frDJqD lXCHc" data-reactid="177">Stories</span>
+                            </div>
+                            <div class="sc-hAXbOi eJBJfm">
+                                <button class="sc-kLIISr cORlPk">Discover</button>
+                                <button class="sc-kLIISr iUbryo">My Feed</button>
                             </div>
                         </div>
                     </div>

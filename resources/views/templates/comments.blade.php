@@ -20,7 +20,7 @@
                         <span>@ManchesterFootball!</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18" class="_1z7Hy">
                             <g fill="none" fill-rule="evenodd">
-                                <path fill="rgba(17, 102, 146, 0.85)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                <path fill="rgba(32, 198, 89, 0.95)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                 <path fill="rgba(255, 255, 255, 1)" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                             </g>
                         </svg>
@@ -43,7 +43,7 @@
                 <div class="_3hgGE" data-bind="visible: fileData().dataURL">
                     <button class="_1Zj5n _1PzVp" type="button">
                         <svg width="10" height="10">
-                            <path fill="none" stroke="rgba(17, 102, 146, 0.85)" stroke-linecap="square" stroke-width="2" d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
+                            <path fill="none" stroke="rgba(51, 74, 108, 0.45)" stroke-linecap="square" stroke-width="2" d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
                         </svg>
                     </button>
                     <img class="b00q8" data-bind="attr: { src: fileData().dataURL }, visible: fileData().dataURL">
@@ -53,9 +53,9 @@
                         <label for="media-upload" class="NOB1F">
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="21" viewBox="0 0 27 21">
                                 <g fill="none" fill-rule="evenodd">
-                                    <path stroke="#95A0AF" stroke-width="1.8" d="M9.93 1.32l-2.18 3.5H1.8c-.5 0-.9.4-.9.9V19.2c0 .5.4.9.9.9h22.9c.5 0 .9-.4.9-.9V5.72c0-.5-.4-.9-.9-.9h-5.95l-2.18-3.5A.9.9 0 0 0 15.8.9h-5.1a.9.9 0 0 0-.77.42z"></path>
-                                    <ellipse cx="13.25" cy="12.1" stroke="#95A0AF" e-width="1.8" rx="5.19" ry="5.15"></ellipse>
-                                    <path fill="#95A0AF" d="M20.95 8.9a.9.9 0 1 0 0-1.78c-.5 0-.9.4-.9.89s.4.89.9.89"></path>
+                                    <path stroke="rgba(51, 74, 108, 0.45)" stroke-width="1.8" d="M9.93 1.32l-2.18 3.5H1.8c-.5 0-.9.4-.9.9V19.2c0 .5.4.9.9.9h22.9c.5 0 .9-.4.9-.9V5.72c0-.5-.4-.9-.9-.9h-5.95l-2.18-3.5A.9.9 0 0 0 15.8.9h-5.1a.9.9 0 0 0-.77.42z"></path>
+                                    <ellipse cx="13.25" cy="12.1" stroke="rgba(51, 74, 108, 0.45)" e-width="1.8" rx="5.19" ry="5.15"></ellipse>
+                                    <path fill="rgba(51, 74, 108, 0.45)" d="M20.95 8.9a.9.9 0 1 0 0-1.78c-.5 0-.9.4-.9.89s.4.89.9.89"></path>
                                 </g>
                             </svg>
                         </label>
@@ -84,7 +84,7 @@
                             <span>@ManchesterFootball!</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18" class="_1z7Hy">
                                 <g fill="none" fill-rule="evenodd">
-                                    <path fill="rgba(17, 102, 146, 0.85)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                    <path fill="rgba(32, 198, 89, 0.95)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
                                     <path fill="rgba(255, 255, 255, 1)" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                                 </g>
                             </svg>
@@ -126,7 +126,7 @@
             </div>
             <!-- ko if: $parent.level() > 0 && $index() === 0 && $parent.isList() == false -->
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="_1CwzX">
-                <g fill="rgba(17, 102, 146, 0.85)" fill-rule="evenodd">
+                <g fill="rgba(51, 74, 108, 0.45)" fill-rule="evenodd">
                     <path d="M12.57 6.5H1.54V1.54h1.17A.77.77 0 0 0 2.7 0H.77A.77.77 0 0 0 0 .77v6.46c0 .42.34.77.77.77h11.77l.03-1.5z"></path>
                     <path d="M13.82 6.7l-4.5-4.5a.77.77 0 1 0-1.08 1.1l3.11 3.12.87.73-.72.84-3.2 3.2a.77.77 0 0 0 1.09 1.1l4.46-4.47c.3-.3.3-.79 0-1.09l-.03-.02"></path>
                 </g>
@@ -168,9 +168,9 @@
                         <label for="media-upload" class="NOB1F">
                             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="21" viewBox="0 0 27 21">
                                 <g fill="none" fill-rule="evenodd">
-                                    <path stroke="#95A0AF" stroke-width="1.8" d="M9.93 1.32l-2.18 3.5H1.8c-.5 0-.9.4-.9.9V19.2c0 .5.4.9.9.9h22.9c.5 0 .9-.4.9-.9V5.72c0-.5-.4-.9-.9-.9h-5.95l-2.18-3.5A.9.9 0 0 0 15.8.9h-5.1a.9.9 0 0 0-.77.42z"></path>
-                                    <ellipse cx="13.25" cy="12.1" stroke="#95A0AF" stroke-width="1.8" rx="5.19" ry="5.15"></ellipse>
-                                    <path fill="#95A0AF" d="M20.95 8.9a.9.9 0 1 0 0-1.78c-.5 0-.9.4-.9.89s.4.89.9.89"></path>
+                                    <path stroke="rgba(51, 74, 108, 0.45)" stroke-width="1.8" d="M9.93 1.32l-2.18 3.5H1.8c-.5 0-.9.4-.9.9V19.2c0 .5.4.9.9.9h22.9c.5 0 .9-.4.9-.9V5.72c0-.5-.4-.9-.9-.9h-5.95l-2.18-3.5A.9.9 0 0 0 15.8.9h-5.1a.9.9 0 0 0-.77.42z"></path>
+                                    <ellipse cx="13.25" cy="12.1" stroke="rgba(51, 74, 108, 0.45)" stroke-width="1.8" rx="5.19" ry="5.15"></ellipse>
+                                    <path fill="rgba(51, 74, 108, 0.45)" d="M20.95 8.9a.9.9 0 1 0 0-1.78c-.5 0-.9.4-.9.89s.4.89.9.89"></path>
                                 </g>
                             </svg>
                         </label>

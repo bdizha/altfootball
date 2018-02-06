@@ -4483,7 +4483,7 @@ dribbles ._35GH ._34IO {
 
 ._2jvdf {
   color: rgba(17, 102, 146, 0.65);
-  font-size: 14px;
+  font-size: 16px;
 }
 
 ._3qkzJ ._2jvdf {
@@ -6887,7 +6887,7 @@ form .M13JP:focus {
 }
 
 ._37Oy_ ._12n1y {
-  color: rgba(0, 8, 39, 0.96);
+  color: #334a6b;
 }
 
 ._37Oy_ .bWRAm {
@@ -13843,6 +13843,7 @@ div._3bqe5 > div {
   justify-content: center;
   -ms-flex: 0 0 44px;
   flex: 0 0 44px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
 }
 
 ._166mk:before {
@@ -14565,11 +14566,6 @@ div._3bqe5 > div {
   transform-origin: top left;
 }
 
-._3gymQ g,
-._3U2Oj g {
-  fill: rgba(17, 102, 146, 0.85);
-}
-
 ._1fm2Z {
   background: #FFFFFF;
   z-index: 9;
@@ -15285,7 +15281,7 @@ div._3bqe5 > div {
   position: static;
   overflow: auto;
   transform: none;
-  background: rgba(56, 82, 119, 0.065);
+  background: #FFFFFF;
 }
 
 ._1A3CD.active {
@@ -15331,7 +15327,7 @@ div._3bqe5 > div {
 }
 
 .R1XAV ._3BBJg {
-  color: #FFFFFF;
+  color: rgba(32, 198, 89, 0.98);
 }
 
 .R1XAV ._3TYH2 {
@@ -15350,7 +15346,6 @@ div._3bqe5 > div {
   align-items: center;
   box-shadow: 0 0 4px rgba(0, 8, 39, 0.14), 0 4px 8px rgba(0, 8, 39, 0.28);
   z-index: 9;
-  background: rgba(32, 198, 89, 0.98);
   padding: 0 22px;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
@@ -15447,7 +15442,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: rgba(32, 198, 89, 0.98);
 }
 
 ._GSL7C {
@@ -15515,7 +15510,7 @@ div._3bqe5 > div {
   font-weight: 700;
   letter-spacing: -0.5px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: rgba(32, 198, 89, 0.98);
   top: 12px;
 }
 
@@ -20753,8 +20748,8 @@ nav._1R2o8 {
   -ms-flex-align: baseline;
   align-items: baseline;
   max-width: 240px;
-  font-size: 14px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .YkbCv ._74oom ._eeohz {
@@ -21443,7 +21438,7 @@ nav._1R2o8 {
 }
 
 ._34FTR .bcqOPV .YkbCv ._74oom ._csp04 ._2jvdf {
-  font-size: 14x;
+  font-size: 16px;
 }
 
 ._34FTR .ljjFes .jzIbtI {
@@ -21717,8 +21712,8 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border: 1px solid #1d1e20;
-  background: #ffffff;
+  border: 1px solid #334a6b;
+  background: #FFFFFF;
   cursor: pointer;
   padding: 10px 15px;
   margin-right: 20px;
@@ -21731,8 +21726,8 @@ nav._1R2o8 {
 }
 
 .fcHuW:hover {
-  background: #1d1e20;
-  color: #ffffff;
+  background: #334a6b;
+  color: #FFFFFF;
 }
 
 .gDVFix {
@@ -21740,8 +21735,6 @@ nav._1R2o8 {
   display: flex;
   margin: 0 auto;
   max-width: 1180px;
-  background-color: #FFFFFF;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
 }
 
 @media (max-width: 846px) {
@@ -21767,7 +21760,7 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border: 1px solid #1d1e20;
+  border: 1px solid #334a6b;
   background: #ffffff;
   cursor: pointer;
   padding: 10px 15px;
@@ -21781,7 +21774,7 @@ nav._1R2o8 {
 }
 
 .gtTavk:hover {
-  background: #1d1e20;
+  background: #334a6b;
   color: #ffffff;
 }
 
@@ -21845,6 +21838,69 @@ nav._1R2o8 {
 
 .SsCsq .kjnMtm post:first-child li {
   padding-top: 0;
+}
+
+.eJBJfm {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.eJBJfm .cORlPk {
+  padding: 15px;
+  color: rgba(51, 74, 108, 0.45);
+  cursor: pointer;
+  position: relative;
+  -webkit-letter-spacing: 1.2px;
+  -moz-letter-spacing: 1.2px;
+  -ms-letter-spacing: 1.2px;
+  letter-spacing: 1.2px;
+  font-family: 'DriveTribe',Helvetica,sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.eJBJfm .cORlPk:before {
+  content: '';
+  box-sizing: content-box;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 0px;
+  background-color: #334a6b;
+}
+
+.eJBJfm .iUbryo {
+  padding: 15px;
+  color: #334a6b;
+  cursor: default;
+  position: relative;
+  -webkit-letter-spacing: 1.2px;
+  -moz-letter-spacing: 1.2px;
+  -ms-letter-spacing: 1.2px;
+  letter-spacing: 1.2px;
+  font-family: 'DriveTribe',Helvetica,sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.eJBJfm .iUbryo:before {
+  content: '';
+  box-sizing: content-box;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  height: 2px;
+  background-color: #334a6b;
 }
 
 @media (max-width: 1180px) {
