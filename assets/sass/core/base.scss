@@ -3636,9 +3636,9 @@ dribbles {
     position: absolute;
     top: 0;
     left: 34px;
-    color: rgba(17, 102, 146, 0.65);
+    color: rgba(51, 74, 108, 0.65);
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 32px;
     &._35GH {
       color: rgb(237, 0, 39);
@@ -4128,7 +4128,7 @@ dribbles {
 }
 
 ._2jvdf {
-  color: rgba(17, 102, 146, 0.65);
+  color: rgba(51, 74, 108, 0.65);
   font-size: 16px;
 }
 
@@ -9681,7 +9681,7 @@ div._3bqe5 {
   max-width: 664px;
   padding: 22px;
   height: 100%;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.30), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(51, 74, 107, 0.15), 0 2px 4px rgba(51, 74, 107, 0.15);
   background: $color_white;
   ._1h78h {
     &:hover,
@@ -11096,7 +11096,7 @@ div._3bqe5 {
     }
   }
   .bgTWiC {
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.30), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(51, 74, 107, 0.15), 0 2px 4px rgba(51, 74, 107, 0.15);
     border-radius: 22px;
     width: auto;
     position: absolute;
@@ -12752,7 +12752,7 @@ div._3bqe5 {
   white-space: nowrap;
   transition: all .1s ease-out;
   text-transform: uppercase;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(51, 74, 107, 0.15), 0 2px 4px rgba(51, 74, 107, 0.15);
   border-radius: 22px;
   background: $color_white;
   &:before {
@@ -12867,7 +12867,7 @@ div._3bqe5 {
   align-items: center;
   justify-content: center;
   flex: 0 0 44px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(51, 74, 107, 0.15), 0 2px 4px rgba(51, 74, 107, 0.15);
   &:before {
     content: "#";
     transform: translateY(-1px);
@@ -19113,16 +19113,19 @@ nav._1R2o8 {
 }
 
 .fPOHUM {
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 18px;
+  line-height: 18px;
   padding-bottom: 14px;
   font-weight: bold;
   overflow: hidden;
+  &h2{
+    text-transform: none;
+  }
 }
 
 @media (max-width: 1158px) and (min-width: 846px) {
   .fPOHUM {
-    font-size: 18px;
+    font-size: 22px;
     line-height: 22px;
   }
 }
@@ -19134,10 +19137,10 @@ nav._1R2o8 {
         display: none;
       }
     }
-    max-height: 15px;
+    max-height: 16px;
     font-size: 16px;
-    line-height: 18px;
-    margin-bottom: 5px;
+    line-height: 16px;
+    margin-bottom: 6px;
   }
 }
 
@@ -19266,7 +19269,7 @@ nav._1R2o8 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.30), 0 0 2px rgba(0, 8, 39, 0.12), 0 2px 4px rgba(0, 8, 39, 0.24);
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(51, 74, 107, 0.15), 0 2px 4px rgba(51, 74, 107, 0.15);
   border-radius: 22px;
   width: 100%;
   position: relative;
@@ -19274,7 +19277,7 @@ nav._1R2o8 {
 
 @media (max-width: 326px) {
   .bgTWiC {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
@@ -19371,8 +19374,9 @@ nav._1R2o8 {
       -ms-flex-direction: row;
       flex-direction: row;
       max-width: 100%;
-      color: rgba(17, 102, 146, 0.65);
+      color: rgba(51, 74, 107, 0.95);
       margin-right: 10px;
+      font-weight: 700;
       &:after {
         margin-left: 9px;
         content: '';
@@ -19675,7 +19679,7 @@ nav._1R2o8 {
 
 .dfpDYt {
   height: auto;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-size: 18px;
   line-height: 18px;
   font-family: $font_sans;
@@ -20010,22 +20014,19 @@ nav._1R2o8 {
 }
 
 .gEVQKf {
-  padding: 22px 22px 22px 56px;
+  padding: 22px 0 22px 56px;
   overflow: hidden;
   font-family: $font_sans;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   border-bottom: 1px solid rgba(56, 82, 119, 0.15);
   .bgTWiC {
-    margin-top: 22px;
-    margin-bottom: 0;
-    @media screen and (max-width: 508px) {
-      margin-top: 0;
-    }
+    margin-top: 0;
+    margin-bottom: 22px;
   }
   ._29Okg {
     .rF2QA {
-      padding: 0 22px 0 0;
+      padding: 0;
       color: rgba(0, 8, 39, 0.85);
     }
   }
@@ -20052,13 +20053,14 @@ nav._1R2o8 {
     align-items: flex-start;
     -ms-flex-pack: center;
     justify-content: center;
+    padding-right: 22px;
     .fPOHUM {
-      font-size: 16px;
-      line-height: 16px;
+      font-size: 18px;
+      line-height: 18px;
       text-transform: none;
-      max-height: 16px;
+      max-height: 18px;
       overflow: hidden;
-      margin-bottom: 5px;
+      margin-bottom: 6px;
     }
     @media (max-width: 1158px) and (min-width: 846px) {
       .bgTWiC {
@@ -20078,7 +20080,7 @@ nav._1R2o8 {
     @media (max-width: 846px) {
       .bgTWiC {
         .fneZyH {
-          margin-bottom: 5px;
+          margin-bottom: 6px;
         }
         .YkbCv {
           display: block;
@@ -20569,7 +20571,7 @@ nav._1R2o8 {
   align-items: flex-end;
   .cORlPk {
     padding: 15px;
-    color: rgba(51, 74, 108, 0.45);
+    color: rgba(51, 74, 108, 0.65);
     cursor: pointer;
     position: relative;
     -webkit-letter-spacing: 1.2px;
@@ -21094,7 +21096,7 @@ nav._1R2o8 {
     display: none;
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
@@ -21103,7 +21105,7 @@ nav._1R2o8 {
     display: none;
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
@@ -21112,7 +21114,7 @@ nav._1R2o8 {
     display: none;
     font-size: 16px;
     line-height: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
@@ -21228,13 +21230,13 @@ nav._1R2o8 {
     -webkit-box-align: flex-start;
     -ms-flex-align: flex-start;
     align-items: flex-start;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
 @media (max-width: 326px) {
   .ijCDIP {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
   }
 }
 
@@ -22039,6 +22041,11 @@ strong {
   position: relative;
   width: 138px;
   height: 66px;
+  .words{
+    position: absolute;
+    left: 44px;
+    top: 22px;
+  }
   .icons {
     display: block;
     position: absolute;

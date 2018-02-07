@@ -34,8 +34,6 @@ class Controller extends BaseController
             $user = Auth::user();
         } else {
             $user = new User();
-            $user->image = env("APP_URL") . "/images/pundit-main.jpg";
-            $user->thumb_image = env("APP_URL") . "/images/pundit-main.jpg";
         }
 
         $userArray = [

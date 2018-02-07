@@ -125,7 +125,7 @@
             <div class="_2xoE4 NasRD _3QYjF">
                 <button class="_1Zj5n _1cG70 _2YLzg">
                     <svg width="10" height="10">
-                        <path fill="none" stroke="rgba(51, 74, 108, 0.45)" stroke-linecap="square"
+                        <path fill="none" stroke="rgba(51, 74, 108, 0.65)" stroke-linecap="square"
                               stroke-width="2"
                               d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
                     </svg>

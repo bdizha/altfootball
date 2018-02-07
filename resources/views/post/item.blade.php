@@ -1,4 +1,5 @@
 <li class="sc-dqBHgY gEVQKf" data-reactid="181">
+    @include('post.user')
     <a class="sc-gxMtzJ ljjFes" href="/p/{{ $post->slug }}">
         <div class="sc-eXEjpC gESGAG" data-reactid="183">
             <div class="sc-ibxdXY hKmwtp" data-reactid="184">
@@ -11,8 +12,6 @@
             <h2 class="sc-esjQYD fPOHUM">{{ $post->title_x }}</h2>
             <div class="sc-kIPQKe jzIbtI">{{ $post->summary_x }}</div>
             @include('post.actions')
-
         </div>
     </a>
-    @include('post.user')
 </li>
