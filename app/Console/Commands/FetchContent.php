@@ -56,6 +56,29 @@ class FetchContent extends Command
      */
     public function handle()
     {
+        try {
+            dispatch(new LiverpoolJob());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
+            dispatch(new RealMadridJob());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
+            dispatch(new PSG());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
+            dispatch(new ArsenalFC());
+        } catch (\Exception $e) {
+
+        }
 
         try {
             dispatch(new Football365());
@@ -135,30 +158,6 @@ class FetchContent extends Command
 
         try {
             dispatch(new LaLigaJob());
-        } catch (\Exception $e) {
-
-        }
-
-        try {
-            dispatch(new LiverpoolJob());
-        } catch (\Exception $e) {
-
-        }
-
-        try {
-            dispatch(new RealMadridJob());
-        } catch (\Exception $e) {
-
-        }
-
-        try {
-            dispatch(new PSG());
-        } catch (\Exception $e) {
-
-        }
-
-        try {
-            dispatch(new ArsenalFC());
         } catch (\Exception $e) {
 
         }
