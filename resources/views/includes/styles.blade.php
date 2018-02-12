@@ -369,7 +369,7 @@
         display:flex;
         z-index:6;
         position:fixed;
-        top:70px;
+        top:66px;
         max-width:1444px;
         width:100%;
         left:50%;
@@ -1620,4 +1620,4 @@
     .jMqtqW{margin-left:20px;color:#ffffff;font-size:40px;line-height:12px;font-family:'DriveTribe',Helvetica,sans-serif;font-weight:400;font-weight:bold;white-space:nowrap;text-transform:none;margin-top:-10px;}
     /* sc-component-id: sc-jtHxuu */
 
-    .kMymTC{position:absolute;top:0;left:0;}.kMymTC img{width:100%;height:100%;}.kMymTC:after{content:"";position:absolute;top:0;bottom:0;left:0;right:0;box-shadow:inset 0px -100px 80px -40px rgba(0,0,0,0.3);}</style>
+    .kMymTC{position:absolute;top:0;left:0;}.kMymTC:after{content:"";position:absolute;top:0;bottom:0;left:0;right:0;box-shadow:inset 0px -100px 80px -40px rgba(0,0,0,0.3);}</style>
