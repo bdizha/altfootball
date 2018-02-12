@@ -27,9 +27,9 @@ class PostController extends Controller
             ->offset(($data['page'] * 2) + 1)
             ->limit(2);
 
-        if (!empty($data['base_id'])) {
+        if (!empty($data['fanbase_id'])) {
             $posts = $query->whereHas('fanbases', function ($query) use ($data) {
-                $query->where('fanbases.id', $data['base_id']);
+                $query->where('fanbases.id', $data['fanbase_id']);
             })->get();
         } else {
             $posts = $query->get();
