@@ -57,6 +57,13 @@
                     </div>
                 </div>
                 @include('auth.templates.join')
+                @include('templates.dribbles')
+                @include('templates.comments')
+                @include('templates.posts')
+                @include('templates.post')
+                @include('fanbase.templates.form')
+                @include('templates.follow')
+                @include('includes.styles')
                 @yield('modal')
             </div>
         </div>

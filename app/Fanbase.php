@@ -190,7 +190,7 @@ class Fanbase extends Model
 
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $params = array("w" => 1905, "h" => 476);
+                $params = array("w" => 1444, "h" => 455);
                 $url = $builder->createURL($this->cover, $params);
 
                 $this->big_cover = $url;

@@ -1,58 +1,39 @@
 <?php
 
-/**
- * Laravel - A PHP Framework For Web Artisans
- *
- * @package  Laravel
- * @author   Taylor Otwell <taylor@laravel.com>
- */
+function compute($array)
+{
+    $sequences = [];
 
-/*
-|--------------------------------------------------------------------------
-| Register The Auto Loader
-|--------------------------------------------------------------------------
-|
-| Composer provides a convenient, automatically generated class loader for
-| our application. We just need to utilize it! We'll simply require it
-| into the script here so that we don't have to worry about manual
-| loading any of our classes later on. It feels great to relax.
-|
-*/
+    $sequence = [];
+    foreach ($array as $key => $item) {
+        if($key === 5){
+            print_r($sequences);
+        }
+        $sequences = sequence($array, $sequences, $key, $key + 1);
+    }
 
-require __DIR__.'/../bootstrap/autoload.php';
+    print_r($sequences);
+}
 
-/*
-|--------------------------------------------------------------------------
-| Turn On The Lights
-|--------------------------------------------------------------------------
-|
-| We need to illuminate PHP development, so let us turn on the lights.
-| This bootstraps the framework and gets it ready for use, then it
-| will load up this application so that we can run it and send
-| the responses back to the browser and delight our users.
-|
-*/
+function sequence($array, $sequences, $key1, $key2){
+    $sequence = [];
+    foreach($array as $key => $item){
+        if($key1 < $key && ($key2 != $key || $key2 == $key1)) {
+            $sequence[] = $array[$key];
+        }
+    }
 
-$app = require_once __DIR__.'/../bootstrap/app.php';
+    $sequences[] = $sequence;
 
-/*
-|--------------------------------------------------------------------------
-| Run The Application
-|--------------------------------------------------------------------------
-|
-| Once we have the application, we can handle the incoming request
-| through the kernel, and send the associated response back to
-| the client's browser allowing them to enjoy the creative
-| and wonderful application we have prepared for them.
-|
-*/
+    echo count($array). " vs {$key2}\n";
 
-$kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+    $key2 = $key2 + 1;
+    if($key2 >= count($array)){
+        return $sequences;
+    }
+    return sequence($array, $sequences, $key1, $key2);
+}
 
-$response = $kernel->handle(
-    $request = Illuminate\Http\Request::capture()
-);
+$A = [6, 10, 6, 9, 7, 8];
 
-$response->send();
-
-$kernel->terminate($request, $response);
+compute($A);

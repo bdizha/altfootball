@@ -2,7 +2,7 @@
     <nav class="R1XAV jMZSBo" id="header">
         <div class="sc-kAzzGY fVSfy">
             <div class="sc-ckVGcZ bUebbF">
-                <a class="sc-brqgnP hBQeWD" href="/fanbases">
+                <a class="sc-brqgnP hBQeWD" href="/">
                     <div class="logo">
                         <div class="icons">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="square" viewBox="0 0 26 26" version="1.1" width="44px" height="44px">

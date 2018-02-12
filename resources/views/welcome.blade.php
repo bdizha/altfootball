@@ -153,31 +153,22 @@
                     </div>
                 </div>
                 <div class="sc-rBLzX SsCsq" data-reactid="172">
-                    <div class="sc-CtfFt kjnMtm" data-reactid="173">
-                        <div class="sc-bMvGRv eKbmbh sc-cJSrbW hDKkOF" data-reactid="174">
-                            <div class="sc-ksYbfQ dbOCGf" data-reactid="175">
-                                <span class="sc-hmzhuo gqKiYI" data-reactid="176">Top</span>
-                                <span class="sc-frDJqD lXCHc" data-reactid="177">Stories</span>
-                            </div>
-                            <div class="sc-hAXbOi eJBJfm">
-                                <button class="sc-kLIISr cORlPk">Discover</button>
-                                <button class="sc-kLIISr iUbryo">My Feed</button>
-                            </div>
+                    <div class="sc-dTdPqK hQzEkt">
+                        <div class="sc-krDsej eqEjAX sc-frDJqD epAMjP">
+                            <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">Top</span><span class="sc-jbKcbu fAtzSi">Stories</span></div>
+                            <div class="sc-dliRfk dpeeXK"><button class="sc-kLIISr cORlPk">Discover</button><button class="sc-kLIISr iUbryo">My Feed</button></div>
                         </div>
                     </div>
-                    <div class="sc-laTMn jJAQkL" data-reactid="178">
-                        <div class="sc-CtfFt kjnMtm" data-reactid="179">
+                    <div class="sc-itybZL QJDdz">
+                        <div class="sc-dTdPqK hQzEkt">
                             <posts params="page: 0, fanbase: '', show_callback: openItem"></posts>
                         </div>
+                        <div></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    @include('templates.dribbles')
-    @include('templates.comments')
-    @include('templates.posts')
-    @include('templates.post')
 @endsection
 
 @section('js')

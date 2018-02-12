@@ -289,12 +289,15 @@ button {
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba(17, 102, 146, 0.65);
 }
+
 ::-moz-placeholder { /* Firefox 19+ */
   color: rgba(17, 102, 146, 0.65);
 }
+
 :-ms-input-placeholder { /* IE 10+ */
   color: rgba(17, 102, 146, 0.65);
 }
+
 :-moz-placeholder { /* Firefox 18- */
   color: rgba(17, 102, 146, 0.65);
 }
@@ -6259,7 +6262,7 @@ dribbles {
 }
 
 form {
-  .bWRAm{
+  .bWRAm {
     font-weight: 700;
     font-size: 44px;
     line-height: 44px;
@@ -6787,13 +6790,20 @@ form {
   }
 }
 
-._3UwsA {
-  opacity: 0.4;
+.zxDoM {
+  opacity: 1;
   &:hover {
-    opacity: 1;
+    opacity: 0.4;
+    color: $color_white;
+    &._3UwsA {
+      opacity: 1;
+    }
   }
   &:after {
     transform: scaleX(0);
+  }
+  &._3UwsA {
+    opacity: 0.4;
   }
 }
 
@@ -13757,6 +13767,10 @@ div._3bqe5 {
   transition: filter 0.1s linear;
   &:not(.CHgJc):hover {
     filter: brightness(125%);
+    color: $color_white;
+    ._2iRjb{
+      opacity: 1;
+    }
     .zrN-a {
       transform: translateZ(0);
       filter: brightness(175%);
@@ -13791,6 +13805,7 @@ div._3bqe5 {
 
 ._2iRjb {
   padding: 22px 22px;
+  opacity: 0.4;
 }
 
 @media screen and (min-width: 508px) {
@@ -13814,6 +13829,7 @@ div._3bqe5 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  padding: 0 22px 22px 22px;
 }
 
 @media screen and (max-width: 508px) {
@@ -13847,10 +13863,15 @@ div._3bqe5 {
 }
 
 .zrN-a {
-  background: #141C3E;
+  background: transparent;
   color: $color_white;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 22px;
+  border-radius: 22px;
+  border: 1px solid $color_white;
   &:hover {
-    background: #48C04A;
+    background: $color_red;
   }
 }
 
@@ -13891,7 +13912,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._2BMyH {
-    margin-bottom: 9px;
+    margin-bottom: 22px;
     font-size: 18px;
     line-height: 18px;
   }
@@ -13915,9 +13936,9 @@ div._3bqe5 {
 }
 
 ._3hQ2Q {
-  border-top: 8px solid $color_white;
+  border-top: 11px solid $color_white;
   margin-bottom: 22px;
-  padding-top: 9px;
+  padding-top: 22px;
   display: none;
   font-family: $font_sans;
   font-weight: 700;
@@ -13941,16 +13962,14 @@ div._3bqe5 {
     }
     ._2iRjb {
       position: absolute;
-      bottom: 28px;
+      bottom: 73px;
       left: 0;
-      width: 300px;
-      height: 300px;
-      padding: 18px 32px 24px 16px;
+      padding: 22px;
     }
     ._1ORHw {
       transform: translateY(-9px);
     }
-    ._1gZlE, ._2BMyH, ._3es_m {
+    ._1gZlE, ._3es_m {
       margin-left: 16px;
     }
     ._2BMyH {
@@ -13963,6 +13982,9 @@ div._3bqe5 {
     }
     ._3es_m, ._3hQ2Q {
       display: block;
+      position: absolute;
+      left: 22px;
+      bottom: 22px;
     }
   }
 }
@@ -14077,7 +14099,7 @@ div._3bqe5 {
 }
 
 .GKLAB {
-  background: rgba(32, 198, 89, 0.25);
+  background: rgba(32, 198, 89, 0.75);
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -18519,9 +18541,11 @@ nav._1R2o8 {
 }
 
 .FYAkp {
-  background: rgba(32, 198, 89, 0.35);
+  background: $color_red;
+  border: 1px solid $color_red;
   &:hover {
-    background: rgba(32, 198, 89, 0.25);
+    background: $color_green;
+    border: 1px solid $color_white;
   }
 }
 
@@ -19118,7 +19142,7 @@ nav._1R2o8 {
   padding-bottom: 14px;
   font-weight: bold;
   overflow: hidden;
-  &h2{
+  &h2 {
     text-transform: none;
   }
 }
@@ -20578,7 +20602,7 @@ nav._1R2o8 {
     -moz-letter-spacing: 1.2px;
     -ms-letter-spacing: 1.2px;
     letter-spacing: 1.2px;
-    font-family: 'DriveTribe',Helvetica,sans-serif;
+    font-family: 'DriveTribe', Helvetica, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
@@ -20604,7 +20628,7 @@ nav._1R2o8 {
     -moz-letter-spacing: 1.2px;
     -ms-letter-spacing: 1.2px;
     letter-spacing: 1.2px;
-    font-family: 'DriveTribe',Helvetica,sans-serif;
+    font-family: 'DriveTribe', Helvetica, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 14px;
@@ -22041,7 +22065,7 @@ strong {
   position: relative;
   width: 138px;
   height: 66px;
-  .words{
+  .words {
     position: absolute;
     left: 44px;
     top: 22px;
@@ -22056,8 +22080,8 @@ strong {
     height: 66px;
     line-height: 66px;
     padding-top: 5px;
-    svg{
-      &.square{
+    svg {
+      &.square {
         position: absolute;
         height: 20px;
         width: 23px;
@@ -22066,14 +22090,14 @@ strong {
         left: 9px;
         z-index: 99;
       }
-      &.ball{
+      &.ball {
         position: absolute;
         height: 21px;
         top: 23px;
         left: -2px;
         z-index: 99;
       }
-      &.bubble{
+      &.bubble {
         position: absolute;
         height: 80px;
         top: 2px;
