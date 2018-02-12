@@ -125,7 +125,7 @@
                                 <section class="sc-dXfzlN glYIFw">
                                     <div class="sc-dvpmds jHgdae">
                                         <h3 class="sc-dwztqd jmBYQQ">
-                                            <span class="sc-fgrSAo HltCu">Tribe</span>
+                                            <span class="sc-fgrSAo HltCu">Base</span>
                                         </h3>
                                     </div>
                                 </section>
@@ -140,10 +140,8 @@
                                 <div class="sc-dHIava ewTGPx">
                                     <div class="sc-jhaWeW fKnQYk _1KXFt">
                                         <div class="_23p6h">
-                                            <img
-                                                    src="https://drivetribe.imgix.net/erhM64oNT6CJIgvHi_9axg?w=100&amp;h=100&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges"
-                                                    role="presentation" alt="" class="_2PoG-" width="35" height="35"
-                                                    style="opacity: 1;"></div>
+                                            <img src="https://drivetribe.imgix.net/erhM64oNT6CJIgvHi_9axg?w=100&amp;h=100&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges" role="presentation" alt="" class="_2PoG-" width="35" height="35" style="opacity: 1;">
+                                        </div>
                                     </div>
                                 </div>
                                 <h4 class="sc-sPYgB wnKAA">{{ $fanbase->name }}</h4>
