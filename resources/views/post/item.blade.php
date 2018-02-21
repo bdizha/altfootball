@@ -1,5 +1,4 @@
 <li class="sc-dqBHgY gEVQKf" data-reactid="181">
-    @include('post.user')
     <a class="sc-gxMtzJ ljjFes" href="/p/{{ $post->slug }}">
         <div class="sc-eXEjpC gESGAG" data-reactid="183">
             <div class="sc-ibxdXY hKmwtp" data-reactid="184">

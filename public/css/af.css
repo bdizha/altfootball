@@ -25,7 +25,7 @@
   font-style: inherit;
   font-size: 100%;
   font-family: inherit;
-  line-height: 1.8;
+  line-height: 28px;
   vertical-align: baseline;
   word-wrap: break-word;
   -webkit-tap-highlight-color: transparent;
@@ -33,7 +33,7 @@
 
 br,
 line {
-  line-height: 1.8;
+  line-height: 18px;
   display: block;
   height: 1.8em;
 }
@@ -1688,7 +1688,7 @@ form ._2Kdch {
   -ms-flex-order: 1;
   order: 1;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
   margin-bottom: 9px;
 }
 
@@ -1705,7 +1705,7 @@ form ._2Kdch {
   -ms-flex-order: 1;
   order: 1;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
   margin-bottom: 22px;
 }
 
@@ -4041,7 +4041,7 @@ dribbles ._35GH ._34IO {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
   color: rgba(17, 102, 146, 0.85);
 }
 
@@ -4054,7 +4054,7 @@ dribbles ._35GH ._34IO {
   float: right;
   text-decoration: underline;
   font-size: 16px;
-  line-height: 35px;
+  line-height: 32px;
 }
 
 ._3bxb0 {
@@ -5206,7 +5206,7 @@ dribbles ._35GH ._34IO {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
   color: rgba(17, 102, 146, 0.85);
   position: absolute;
   top: 26px;
@@ -6766,8 +6766,8 @@ dribbles ._35GH ._34IO {
 
 form .bWRAm {
   font-weight: 700;
-  font-size: 44px;
-  line-height: 44px;
+  font-size: 34px;
+  line-height: 32px;
 }
 
 form ._12n1y {
@@ -6795,7 +6795,7 @@ form .M13JP:focus {
 @media screen and (max-width: 508px) {
   .bWRAm {
     font-size: 28px;
-    line-height: 1.4;
+    line-height: 26px;
   }
 }
 
@@ -6804,14 +6804,14 @@ form .M13JP:focus {
 }
 
 ._15nhh {
-  font-size: 55px;
-  line-height: 55px;
+  font-size: 44px;
+  line-height: 40px;
 }
 
 @media screen and (max-width: 508px) {
   ._15nhh {
     font-size: 35px;
-    line-height: 35px;
+    line-height: 32px;
   }
 }
 
@@ -6823,7 +6823,7 @@ form .M13JP:focus {
 
 .VnaIq span {
   font-size: 18px;
-  line-height: 22px;
+  line-height: 18px;
   margin: 22px 0;
 }
 
@@ -6892,7 +6892,7 @@ form .M13JP:focus {
 
 ._37Oy_ .bWRAm {
   font-size: 24px;
-  line-height: 24px;
+  line-height: 22px;
   font-weight: 700;
   margin: 22px 0;
 }
@@ -6922,7 +6922,7 @@ form .M13JP:focus {
 @media screen and (max-width: 326px) {
   ._37Oy_ .bWRAm {
     font-size: 28px;
-    line-height: 1.4;
+    line-height: 26px;
   }
 }
 
@@ -6942,8 +6942,6 @@ form .M13JP:focus {
 ._2cfq3 {
   width: 100%;
   max-width: 768px;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid rgba(56, 82, 119, 0.15);
   padding: 18px 22px;
   margin: 22px auto;
@@ -7002,7 +7000,7 @@ form .M13JP:focus {
   ._3OQAJ,
   .KyQLW {
     font-size: 16px;
-    line-height: 12px;
+    line-height: 14px;
   }
 }
 
@@ -7064,13 +7062,13 @@ form .M13JP:focus {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 72px;
-  line-height: 72px;
+  line-height: 68px;
 }
 
 @media screen and (max-width: 846px) {
   ._35Eoh {
     font-size: 35px;
-    line-height: 35px;
+    line-height: 32px;
   }
 }
 
@@ -7078,7 +7076,7 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 16px;
   color: rgba(0, 149, 208, 0.98);
   text-align: center;
   margin-top: 16px;
@@ -7100,7 +7098,7 @@ form .M13JP:focus {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
-  line-height: 1.4;
+  line-height: 26px;
   margin: 28px 0;
 }
 
@@ -7632,14 +7630,13 @@ form .M13JP:focus {
 
 @media screen and (max-width: 508px) {
   ._3olfT {
-    line-height: 35px;
+    line-height: 32px;
   }
 }
 
 ._3UY9k {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
   text-transform: none;
@@ -12021,14 +12018,14 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 35px;
-  line-height: 35px;
+  font-size: 32px;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 1180px) {
   .grsTy {
     font-size: 28px;
-    line-height: 28px;
+    line-height: 26px;
   }
 }
 
@@ -14517,7 +14514,7 @@ div._3bqe5 > div {
 @media screen and (max-width: 508px) {
   .O93cc {
     font-size: 35px;
-    line-height: 35px;
+    line-height: 32px;
     width: 200px;
     margin-top: 4px;
   }
@@ -16878,7 +16875,7 @@ div._3bqe5 > div {
 
   ._1xRat span {
     font-size: 35px;
-    line-height: 35px;
+    line-height: 32px;
     text-align: left;
   }
 }
@@ -17364,7 +17361,7 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
 }
 
 @media screen and (max-width: 508px) {
@@ -17506,7 +17503,7 @@ div._3bqe5 > div {
 @media screen and (min-width: 1180px) {
   ._14NuX {
     font-size: 28px;
-    line-height: 35px;
+    line-height: 32px;
   }
 }
 
@@ -18026,7 +18023,7 @@ div._3bqe5 > div {
 @media screen and (min-width: 846px) {
   .Q8QGa {
     font-size: 28px;
-    line-height: 35px;
+    line-height: 32px;
   }
 }
 
@@ -18405,7 +18402,7 @@ div._3bqe5 > div {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
 }
 
 @media screen and (min-width: 846px) {
@@ -18832,7 +18829,7 @@ div._3bqe5 > div {
   ._8eFus {
     margin-left: 126px;
     height: 35px;
-    line-height: 35px;
+    line-height: 32px;
   }
 
   ._8eFus svg {
@@ -19149,7 +19146,7 @@ nav._1R2o8 {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
   color: #ccc;
   padding-top: 35px;
 }
@@ -19958,7 +19955,7 @@ nav._1R2o8 {
 @media screen and (max-width: 1158px) {
   ._1xaT_ {
     font-size: 35px;
-    line-height: 35px;
+    line-height: 32px;
   }
 }
 
@@ -20522,10 +20519,10 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 56px;
+  line-height: 52px;
   margin-left: 12%;
-  width: 380px;
+  width: 480px;
   text-shadow: 0 0 22px rgba(0, 0, 0, 0.2);
 }
 
@@ -20977,7 +20974,7 @@ nav._1R2o8 {
 
 .hDKkOF {
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
   position: relative;
   margin-bottom: 35px;
   display: -ms-flexbox;
@@ -22567,7 +22564,7 @@ nav._1R2o8 {
 
 .kEAroc {
   font-size: 35px;
-  line-height: 35px;
+  line-height: 32px;
   position: relative;
   margin-bottom: 35px;
   display: -ms-flexbox;
