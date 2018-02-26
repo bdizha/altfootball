@@ -287,19 +287,19 @@ button {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
 }
 
 .bnINm {
@@ -4157,7 +4157,7 @@ dribbles {
 
 .TATrW {
   align-items: center;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   font-size: 16px;
 }
 
@@ -4192,7 +4192,7 @@ dribbles {
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    background-color: rgba(17, 102, 146, 0.65);
+    background-color: #95a0af;
   }
 }
 
@@ -4201,7 +4201,7 @@ dribbles {
 }
 
 ._1XNRF, ._3-2aE {
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
 }
 
 ._2VAHq {
@@ -4243,7 +4243,7 @@ dribbles {
 ._3Xf-w ._1XNRF {
   font-size: 16px;
   line-height: 16px;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   font-weight: 400;
   &:hover {
     color: $color_green;
@@ -4251,7 +4251,7 @@ dribbles {
 }
 
 ._3RTYJ {
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   font-weight: 400;
 }
 
@@ -4619,8 +4619,8 @@ dribbles {
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAmCAMAAADp2asXAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAACQUExURUxpccPDw9ra2m9vbwAAAAAAADExMf///wAAABoaGk9PT7q6uqurqwsLCycnJz4+PtDQ0JycnIyMjPf3915eXvz8/E9PT/39/RMTE4CAgAAAAJqamv////////r6+u/v7yUlJeXl5f///5ycnOXl5XNzc/Hx8f///xUVFf///+zs7P///+bm5gAAAM7Ozv///2fVensAAAAvdFJOUwCow1cBCCnqAhNAnY0WIDW2f2/hSeo99g1lBYT87vDXG8/6d8oL4sgM5szrkgl660OiZwAAAHRJREFUKM/ty7cSggAABNFVUQFzwizmjPz/39k4YuFWtm55bw7eHR6ny63+alnswT3/rIDzUSC7CrAziPYCJCsB+gbVkgDtVIDh+DsE9OTBpCtAbSBAZSEQNgWIygJ0RgJMDWYNAdYbAeKtAHODlkHIv997AkLqIVOXVU84AAAAAElFTkSuQmCC);
       content: '';
       position: absolute;
-      left: -57px;
-      top: 0px;
+      left: -46px;
+      top: 0;
       width: 39px;
       height: 38px;
       background-position: 50% 50%;
@@ -4631,6 +4631,7 @@ dribbles {
   .gESGAG {
     width: 54px;
     height: 54px;
+    margin-right: 11px;
   }
   ._1l_wG {
     display: none;
@@ -8143,7 +8144,7 @@ form {
 }
 
 .BNBMP {
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   font-size: 16px;
   line-height: 12px;
   list-style: disc;
@@ -8637,7 +8638,7 @@ div._3bqe5 {
 
 ._3HP-Q {
   margin-left: 4px;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   font-weight: normal;
 }
 
@@ -13540,11 +13541,11 @@ div._3bqe5 {
 ._1g8z0 {
   font-size: 16px;
   line-height: 16px;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   a {
     font-size: 16px;
     line-height: 16px;
-    color: rgba(17, 102, 146, 0.65);
+    color: #95a0af;
     &:hover {
       color: $color_green;
     }
@@ -19414,7 +19415,7 @@ nav._1R2o8 {
         width: 2px;
         height: 2px;
         border-radius: 50%;
-        background-color: rgba(17, 102, 146, 0.65);
+        background-color: #95a0af;
       }
       ._iadoq, ._iadoq:visited {
         color: #262626;
@@ -19445,7 +19446,7 @@ nav._1R2o8 {
       align-items: baseline;
       ._82161 {
         display: inline;
-        color: rgba(17, 102, 146, 0.65);
+        color: #95a0af;
         margin-left: 10px;
         margin-right: 10px;
         @media (max-width: 846px) {
@@ -19464,7 +19465,7 @@ nav._1R2o8 {
           border: 1px solid rgba(17, 102, 146, 0.85);
           line-height: 18px;
           padding: 4px 11px;
-          color: rgba(17, 102, 146, 0.65);
+          color: #95a0af;
           display: block;
           font-size: 13px;
           font-weight: 700;
@@ -19529,7 +19530,7 @@ nav._1R2o8 {
 .dbBPlH {
   font-size: 16px;
   line-height: 14px;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   margin-left: 5px;
 }
 
@@ -19575,7 +19576,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
 }
 
 .jrQrPO {
@@ -19729,7 +19730,7 @@ nav._1R2o8 {
 }
 
 .jbQyuy {
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   font-size: 16px;
   line-height: 14px;
   max-height: 64px;
@@ -20064,12 +20065,12 @@ nav._1R2o8 {
 
 ._34FTR {
   .gEVQKf {
-    padding: 22px;
+    padding: 11px;
     margin: 0 0 8px;
     overflow: visible;
     background: $color_white;
     border-radius: 8px;
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.3), 0 0 2px rgba(51, 74, 107, 0.15), 0 2px 4px rgba(51, 74, 107, 0.15);
+    box-shadow: 0 1px 0.5px rgba(0,0,0,0.13);
     @media (max-width: 846px) {
       margin: 0 22px 8px;
     }
@@ -20195,7 +20196,7 @@ nav._1R2o8 {
   display: flex;
   background: rgba(17, 102, 146, 0.08);
   padding: 10px;
-  border-radius: 8px;
+  border-radius: 4px;
   border-left: 4px solid rgba(0, 149, 208, 0.65);
 }
 
@@ -20307,7 +20308,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 14px;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   white-space: nowrap;
   margin-top: 1px;
 }
@@ -20779,7 +20780,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 14px;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   white-space: nowrap;
   margin-top: 1px;
 }
@@ -20910,7 +20911,7 @@ nav._1R2o8 {
 }
 
 .cCXHYP {
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   text-align: center;
   padding: 40px 0px 60px;
 }
@@ -20959,7 +20960,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
 }
 
 .Ymjpr {
@@ -21297,7 +21298,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
 }
 
 @media (max-width: 1158px) and (min-width: 846px) {
@@ -21353,7 +21354,7 @@ nav._1R2o8 {
 .gscUmG {
   font-size: 16px;
   line-height: 14px;
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   margin-left: 5px;
 }
 
@@ -21488,7 +21489,7 @@ nav._1R2o8 {
 }
 
 .dDweOi {
-  color: rgba(17, 102, 146, 0.65);
+  color: #95a0af;
   font-size: 16px;
   line-height: 1.4;
   max-height: 64px;
@@ -21973,7 +21974,7 @@ strong {
       font-family: $font_serif;
       font-weight: 700;
       text-transform: uppercase;
-      color: rgba(17, 102, 146, 0.65);
+      color: #95a0af;
       font-size: 60px;
       line-height: 60px;
       width: 72px;
