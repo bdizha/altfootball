@@ -43,19 +43,15 @@ class PostController extends Controller
         $fanbases = [];
         $post = Post::where('slug', '=', $slug)->first();
 
+        $contentLength = strlen($post->content);
+
         $trendingPosts = Post::whereHas('fanbases', function ($query) use ($post) {
             $query->where('fanbases.id', $post->fanbase->id);
         })
             ->where("id", "!=", $post->id)
             ->orderBy("posts.created_at", "DESC")
-            ->take(9)
+            ->take(floor($contentLength / 4000) + 17)
             ->get();
-
-        $contentLength = strlen($post->content);
-
-        $siblingPosts = Post::where("id", "<", $post->id - 3)
-            ->where("id", "!=", $post->id)
-            ->orderBy("created_at", "DESC")->take(floor($contentLength / 1000) + 2)->get();
 
         if ($post->fanbase) {
             $fanbases = Fanbase::where("id", "!=", $post->fanbase->id)
@@ -70,7 +66,6 @@ class PostController extends Controller
             'comments' => json_encode($post->comments->toArray(), JSON_HEX_APOS),
             'post' => $post,
             'fanbases' => $fanbases,
-            'siblingPosts' => $siblingPosts,
             'trendingPosts' => $trendingPosts,
             'user' => $this->getUserArray()
         ]);

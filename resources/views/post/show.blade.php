@@ -89,35 +89,10 @@
                         <div class="_3VSm9 _3bVUr _2GMT0">
                             <div class="_3zT4K">UP NEXT_</div>
                             <ul>
-                                @foreach(range(0,5) as $key)
+                                @foreach(range(0,12) as $key)
                                     @include('post.item', ['post' => $trendingPosts[$key]])
                                 @endforeach
                             </ul>
-                            <div class="_24kFo">
-                                <div class="_3zT4K">TRENDING POSTS_</div>
-                                <div class="_3broS">
-                                    @foreach($siblingPosts as $post)
-                                        <div class="_2Eh0V _2bbto YgLNn">
-                                            <div class="_1XrlP _25JSo">
-                                                <a class="_2xn_m _238kJ" href="/p/{{ $post->slug }}">
-                                                    <div class="_1w60_">
-                                                        <div class="_2pUFC _3Xaa0">
-                                                            <img alt="" role="presentation" src="{{ $post->small_x }}" class="b00q8" style="width: 100%; height: 100%"/>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                                <div class="_2fUiv _3lJNV">
-                                                    <a class="_3H01F _135mL _38OvA"
-                                                       href="/p/{{ $post->slug }}">{{ $post->title }}</a>
-                                                    <div class="_3RbBo">
-                                                        @include('post.user')
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    @endforeach
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,7 +117,8 @@
             <div>
                 <div class="_2H69I">FROM THIS FANBASE_</div>
                 <div class="_9T4R2">
-                    @foreach(range(6,8) as $key)
+                    @foreach(range(13,17) as $key)
+                        <?php if(empty($trendingPosts[$key])) continue; ?>
                         <?php $post = $trendingPosts[$key] ?>
                         <div class="_1XEbE">
                             <div class="_1DRo">
