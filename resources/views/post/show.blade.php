@@ -22,6 +22,7 @@
                                         <img src="http://altfootball.com/images/{{ $post->image }}"
                                              alt="{{ $post->title }}"/>
                                     </div>
+                                    @include('post.user')
                                     <div class="_76TYH">
                                         <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
                                         @if(false)
@@ -60,14 +61,6 @@
                                                         </svg>
                                                     </a>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        @include('post.user')
-                                        <div class="dqbp5">
-                                            <div class="_23YI">
-                                                <a class="_3OD4J _1yV5F _1h78h" href="/f/{{ $post->fanbase->slug }}">
-                                                    Join {{ $post->fanbase->name }}
-                                                </a>
                                             </div>
                                         </div>
                                     </div>

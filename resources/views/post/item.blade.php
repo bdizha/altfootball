@@ -10,6 +10,7 @@
             </div>
         </div>
         <div class="sc-dfVpRl bcqOPV">
+            @include('post.user')
             <h2 class="sc-esjQYD fPOHUM">{{ $post->title_x }}</h2>
             <div class="sc-kIPQKe jzIbtI">{{ $post->summary_x }}</div>
             @include('post.actions')
