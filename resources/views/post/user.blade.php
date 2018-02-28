@@ -10,7 +10,7 @@
     <div class="sc-epnACN YkbCv" href="/f/{{ $post->fanbase->slug }}">
         <div class="_74oom">
             <div class="_eeohz">
-                <span>{{ '@' . $post->fanbase->camel }}</span>
+                <span>{{ $post->fanbase->camel }}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18"
                      class="_1z7Hy">
                     <g fill="none" fill-rule="evenodd">

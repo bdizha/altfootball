@@ -42,11 +42,18 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name', 'is_self', 'follower', 'small_x', 'thumb_x'];
+    protected $appends = ['name', 'camel', 'is_self', 'follower', 'small_x', 'thumb_x'];
 
     public function getNameAttribute()
     {
         return $this->first_name . " " . $this->last_name;
+    }
+
+
+    public function getCamelAttribute()
+    {
+        $camel = strtolower(str_slug($this->name, "_"));
+        return "@" . $camel;
     }
 
     /**

@@ -1,6 +1,7 @@
 <template id="post-template">
     <li class="sc-kfGgVZ jPkKYs">
         <a class="sc-esjQYD dhoZJA" data-bind="attr: { 'href': '/p/' + post.slug }">
+            <div class="rEYTKJ"></div>
             <div class="sc-gwVKww hNTroW">
                 <div class="sc-hXRMBi bAHZak">
                     <div class="_38L6D" style="padding-bottom: 100%;">
@@ -19,7 +20,7 @@
                                      class="_214e9 b00q8" width="20" height="20">
                             </div>
                         </div>
-                        <span class="sc-esOvli fEsEXJ" data-bind="text: post.user.name"></span></span>
+                        <span class="sc-esOvli fEsEXJ" data-bind="text: post.user.camel"></span></span>
                     <span class="sc-gqPbQI kfQynb"></span>
                     <span class="sc-hMFtBS VacYB" data-bind="text: post.published_at"></span>
                 </div>

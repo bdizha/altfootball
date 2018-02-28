@@ -104,10 +104,8 @@ class Fanbase extends Model
 
     public function getCamelAttribute()
     {
-        $camel = ucwords($this->name);
-        $camel = str_replace(" ", "", $camel);
-        $camel = str_replace("'", "", $camel);
-        return $camel;
+        $camel = strtolower(str_slug($this->name, "_"));
+        return "@" . $camel;
     }
 
 
