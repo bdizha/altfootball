@@ -8,6 +8,7 @@
                         <img alt="" role="presentation" data-bind="attr: { src: post.thumb_x }" class="_214e9 b00q8"
                              width="200" height="200">
                     </div>
+                    <div class="_3Xaa0"></div>
                 </div>
             </div>
             <div class="sc-dfVpRl bcqOPV">

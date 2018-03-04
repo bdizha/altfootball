@@ -342,6 +342,7 @@ button {
   bottom: 0;
   left: 0;
   padding: 0;
+  background: rgba(21, 205, 114, 0.85);
 }
 
 ._1iE2V:after {
@@ -1706,7 +1707,6 @@ form {
     }
   }
   ._3Xaa0 {
-    background: rgba(87, 209, 0, 0.7);
   }
 }
 
@@ -5535,12 +5535,6 @@ dribbles {
 @media screen and (max-width: 846px) {
   ._1KQuz {
     padding: 22px 9px;
-  }
-}
-
-@media screen and (max-width: 508px) {
-  ._1KQuz {
-    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -11334,6 +11328,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 924px) {
   ._2cP6X {
+    margin-bottom: 8px;
     width: 100%;
     height: 100px;
   }
@@ -19317,6 +19312,10 @@ nav._1R2o8 {
   width: 100%;
   position: relative;
   padding: 0;
+
+  @media (max-width: 846px) {
+    margin: 22px 22px 0;
+  }
 }
 
 @media (max-width: 326px) {
@@ -19514,6 +19513,14 @@ nav._1R2o8 {
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.129412) 0px 1px 0.5px;
     overflow: visible;
+    ._3Xaa0{
+      background: rgba(0, 201, 255, 0.35);
+    }
+    &:hover{
+      ._3Xaa0{
+        background: rgba(21, 205, 114, 0.15);
+      }
+    }
     .ljjFes {
       background: transparent;
       border-width: 8px;
