@@ -15,7 +15,7 @@ $(function () {
         self.type_id = ko.observable(params.type_id);
         self.isList = ko.observable(params.is_list);
         self.level = ko.observable(params.level);
-        self.comments = ko.observableArray(params.comments);
+        self.comments = ko.isObservable(params.comments) ? params.comments : ko.observableArray(params.comments);
         self.image = ko.observable('');
         self.currentCommentId = ko.observable(0);
         self.root = ko.observable(params.root);
@@ -23,6 +23,8 @@ $(function () {
         self.commentsCount = ko.computed(function () {
             return self.comments().length;
         });
+
+        console.log(self.comments(), 'params.comments');
 
         self.canSubmitComment = ko.computed(function () {
             return self.newCommentText().length > 0;

@@ -67,6 +67,7 @@
                 @include('templates.page-post')
                 @include('templates.dribbles')
                 @include('templates.comments')
+                @include('templates.user')
                 @yield('modal')
             </div>
         </div>

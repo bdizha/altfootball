@@ -747,7 +747,7 @@ button {
 }
 
 ._1V79j {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.985);
   left: 0;
   transform: translateZ(0);
   z-index: 13;
@@ -3552,10 +3552,12 @@ form {
     }
   }
   .gEjmr {
-    padding-bottom: 0;
-    box-shadow: none;
-    border-top: 1px solid rgba(56, 82, 119, 0.15);
-    border-radius: 4px;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
+    margin-bottom: 22px;
+    padding: 16px;
+    background: rgba(17, 102, 146, 0.085);
+    border-radius: 8px;
   }
   &.active,
   &:hover {
@@ -4641,7 +4643,7 @@ dribbles {
 
 ._34FTR,
 ._2V52z {
-  background: rgba(56, 82, 119, 0.065);
+  background: rgba(17, 102, 146, 0.085);
   .gEVQKf {
     .bgTWiC {
       .dDnmGN {
@@ -8003,7 +8005,6 @@ form {
   position: relative;
   font-size: 16px;
   line-height: 16px;
-  background: rgba(56, 82, 119, 0.065);
   display: block;
   padding: 16px;
   border-radius: 4px;
@@ -8031,7 +8032,7 @@ form {
     left: -10px;
     margin-top: -10px;
     display: inline-block;
-    border-right: 10px solid rgba(56, 82, 119, 0.065);
+    border-right: 10px solid rgba(17, 102, 146, 0.085);
     border-bottom: 10px solid transparent;
     cursor: pointer;
     border-top: 10px solid transparent;
@@ -8056,9 +8057,11 @@ form {
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
   margin-bottom: 22px;
   padding: 16px;
-  border: 1px solid rgba(56, 82, 119, 0.15);
-  background: $color_white;
-  border-radius: 4px;
+  background: rgba(17, 102, 146, 0.085);
+  border-radius: 8px;
+  ._2OqId{
+    padding: 16px 0;
+  }
   ._35FcZ,
   ._3HP-Q {
     display: none;
@@ -11134,11 +11137,10 @@ div._3bqe5 {
     }
   }
   .bgTWiC {
-    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
     border-radius: 8px;
     width: auto;
     position: absolute;
-    bottom: 0px;
+    bottom: 22px;
     left: 22px;
     right: 22px;
     .YkbCv {
@@ -11162,6 +11164,7 @@ div._3bqe5 {
             color: $color_white;
           }
           ._ov9ai {
+            display: none;
             > button {
               border: 1px solid rgba(255, 255, 255, 1);
               background: transparent;
@@ -12784,7 +12787,7 @@ div._3bqe5 {
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  background: rgba(56, 82, 119, 0.065);
+  background: rgba(17, 102, 146, 0.085);
   margin: 0 4px 0;
   padding: 11px 22px;
   display: block;
@@ -19840,7 +19843,7 @@ nav._1R2o8 {
   position: relative;
   width: 40%;
   padding-top: 40px;
-  background: rgba(56, 82, 119, 0.065);
+  background: rgba(17, 102, 146, 0.085);
 }
 
 @media (max-width: 1180px) {
@@ -22149,6 +22152,11 @@ strong {
   }
 }
 
+user,
+post {
+  width: 100%;
+}
+
 ._3oju3 {
   padding: 22px;
   border: none;
@@ -22163,6 +22171,7 @@ strong {
   position: relative;
   z-index: 2;
   background: rgba(17, 102, 146, 0.09);
+  border-radius: 8px;
   ._2Fofa {
     flex: auto 0;
     opacity: 0.9;

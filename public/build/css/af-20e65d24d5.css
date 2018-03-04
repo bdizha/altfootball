@@ -843,7 +843,7 @@ button {
 }
 
 ._1V79j {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.985);
   left: 0;
   transform: translateZ(0);
   z-index: 13;
@@ -3857,10 +3857,12 @@ form ._2Kdch {
 }
 
 .p32Iu .gEjmr {
-  padding-bottom: 0;
-  box-shadow: none;
-  border-top: 1px solid rgba(56, 82, 119, 0.15);
-  border-radius: 4px;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
+  margin-bottom: 22px;
+  padding: 16px;
+  background: rgba(17, 102, 146, 0.085);
+  border-radius: 8px;
 }
 
 .p32Iu.active,
@@ -5022,7 +5024,7 @@ dribbles ._35GH ._34IO {
 
 ._34FTR,
 ._2V52z {
-  background: rgba(56, 82, 119, 0.065);
+  background: rgba(17, 102, 146, 0.085);
 }
 
 ._34FTR .gEVQKf .bgTWiC .dDnmGN,
@@ -8603,7 +8605,6 @@ form .M13JP:focus {
   position: relative;
   font-size: 16px;
   line-height: 16px;
-  background: rgba(56, 82, 119, 0.065);
   display: block;
   padding: 16px;
   border-radius: 4px;
@@ -8640,7 +8641,7 @@ form .M13JP:focus {
   left: -10px;
   margin-top: -10px;
   display: inline-block;
-  border-right: 10px solid rgba(56, 82, 119, 0.065);
+  border-right: 10px solid rgba(17, 102, 146, 0.085);
   border-bottom: 10px solid transparent;
   cursor: pointer;
   border-top: 10px solid transparent;
@@ -8666,9 +8667,12 @@ form .M13JP:focus {
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
   margin-bottom: 22px;
   padding: 16px;
-  border: 1px solid rgba(56, 82, 119, 0.15);
-  background: #FFFFFF;
-  border-radius: 4px;
+  background: rgba(17, 102, 146, 0.085);
+  border-radius: 8px;
+}
+
+.gEjmr ._2OqId {
+  padding: 16px 0;
 }
 
 .gEjmr ._35FcZ,
@@ -11934,11 +11938,10 @@ div._3bqe5 > div {
 }
 
 ._1XEbE .bgTWiC {
-  box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
   border-radius: 8px;
   width: auto;
   position: absolute;
-  bottom: 0px;
+  bottom: 22px;
   left: 22px;
   right: 22px;
 }
@@ -11961,6 +11964,10 @@ div._3bqe5 > div {
 
 ._1XEbE .bgTWiC .YkbCv ._74oom ._csp04 ._2jvdf {
   color: #FFFFFF;
+}
+
+._1XEbE .bgTWiC .YkbCv ._74oom ._csp04 ._ov9ai {
+  display: none;
 }
 
 ._1XEbE .bgTWiC .YkbCv ._74oom ._csp04 ._ov9ai > button {
@@ -13740,7 +13747,7 @@ div._3bqe5 > div {
   font-weight: 700;
   font-size: 14px;
   line-height: 14px;
-  background: rgba(56, 82, 119, 0.065);
+  background: rgba(17, 102, 146, 0.085);
   margin: 0 4px 0;
   padding: 11px 22px;
   display: block;
@@ -21194,7 +21201,7 @@ nav._1R2o8 {
   position: relative;
   width: 40%;
   padding-top: 40px;
-  background: rgba(56, 82, 119, 0.065);
+  background: rgba(17, 102, 146, 0.085);
 }
 
 @media (max-width: 1180px) {
@@ -23339,6 +23346,11 @@ strong {
   left: 4px;
 }
 
+user,
+post {
+  width: 100%;
+}
+
 ._3oju3 {
   padding: 22px;
   border: none;
@@ -23353,6 +23365,7 @@ strong {
   position: relative;
   z-index: 2;
   background: rgba(17, 102, 146, 0.09);
+  border-radius: 8px;
 }
 
 ._3oju3 ._2Fofa {

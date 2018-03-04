@@ -9,10 +9,10 @@
                 </div>
             </div>
         </span>
-        <div class="sc-epnACN YkbCv" data-bind="attr: { href: '/f/' + user.fanbase.slug }">
+        <div class="sc-epnACN YkbCv" data-bind="attr: { href: _.isNull(user.fanbase) ? '/u/' +  user.slug : '/f/' + user.fanbase.slug }">
             <div class="_74oom">
                 <div class="_eeohz">
-                    <span data-bind="text: user.fanbase.camel"></span>
+                    <span data-bind="text: _.isNull(user.fanbase) ? user.camel : user.fanbase.camel "></span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18"
                          class="_1z7Hy">
                         <g fill="none" fill-rule="evenodd">
@@ -23,10 +23,10 @@
                     </svg>
                 </div>
                 <div class="_csp04">
-                    <div class="_iuvin _ov9ai" data-bind="attr: { href: '/f/' + user.fanbase.slug }">
+                    <div class="_iuvin _ov9ai" data-bind="attr: { href: _.isNull(user.fanbase) ? '/u/' +  user.slug : '/f/' + user.fanbase.slug }">
                         <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
                     </div>
-                    <span class="_2jvdf" data-bind="text: user.updated_at"></span>
+                    <span class="_2jvdf" data-bind="text: published_at"></span>
                 </div>
             </div>
         </div>

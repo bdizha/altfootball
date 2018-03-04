@@ -45,12 +45,18 @@ class PostController extends Controller
 
         $contentLength = strlen($post->content);
 
-        $trendingPosts = Post::whereHas('fanbases', function ($query) use ($post) {
+        $trendingPosts = Post::where("id", "!=", $post->id)
+            ->orderBy("posts.views", "DESC")
+            ->where("created_at", ">", Carbon::now()->subWeek(1))
+            ->limit(floor($contentLength / 4000) + 20)
+            ->get();
+
+        $siblingPosts = Post::whereHas('fanbases', function ($query) use ($post) {
             $query->where('fanbases.id', $post->fanbase->id);
         })
             ->where("id", "!=", $post->id)
             ->orderBy("posts.created_at", "DESC")
-            ->take(floor($contentLength / 4000) + 17)
+            ->limit(6)
             ->get();
 
         if ($post->fanbase) {
@@ -67,6 +73,7 @@ class PostController extends Controller
             'post' => $post,
             'fanbases' => $fanbases,
             'trendingPosts' => $trendingPosts,
+            'siblingPosts' => $siblingPosts,
             'user' => $this->getUserArray()
         ]);
     }

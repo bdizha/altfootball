@@ -74,7 +74,8 @@
                             <div id="tackles" class="jwlFt _1zwKC">
                                 <div class="_1gLAu _1iE2V">
                                     <div class="_1-sfe">
-                                        <comments params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
+                                        <comments
+                                                params='comments: {!! $comments !!}, type_id: {{ $postId }}, user: {!! $user !!}, level: 0, root: $root, is_list: false'></comments>
                                     </div>
                                 </div>
                             </div>
@@ -84,8 +85,8 @@
                         <div class="_3VSm9 _3bVUr _2GMT0">
                             <div class="_3zT4K">UP NEXT_</div>
                             <ul>
-                                @foreach(range(0,12) as $key)
-                                    @include('post.item', ['post' => $trendingPosts[$key]])
+                                @foreach($trendingPosts as $trendingPost)
+                                    @include('post.item', ['post' => $trendingPost])
                                 @endforeach
                             </ul>
                         </div>
@@ -112,23 +113,10 @@
             <div>
                 <div class="_2H69I">FROM THIS FANBASE_</div>
                 <div class="_9T4R2">
-                    @foreach(range(13,17) as $key)
-                        <?php if(empty($trendingPosts[$key])) continue; ?>
-                        <?php $post = $trendingPosts[$key] ?>
-                        <div class="_1XEbE">
-                            <div class="_1DRo">
-                                <div class="_38L6D" style="padding-bottom: 50%;">
-                                    <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_x }}"
-                                         class="_214e9 b00q8">
-                                </div>
-                            </div>
-                            <div class="_1wjeD">
-                                <div class="grsTy">{{ $post->title }}</div>
-                            </div>
-                            <a class="ZE8ka" href="/p/{{ $post->slug }}"></a>
-                            @include('post.user')
-                        </div>
-                    @endforeach
+                    @include("post.siblings", ['range' => range(0,2) ])
+                </div>
+                <div class="_9T4R2">
+                    @include("post.siblings", ['range' => range(3,5) ])
                 </div>
             </div>
             <div>

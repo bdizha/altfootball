@@ -42,7 +42,7 @@ class User extends Authenticatable
         'save_to' => 'slug',
     ];
 
-    protected $appends = ['name', 'camel', 'is_self', 'follower', 'small_x', 'thumb_x'];
+    protected $appends = ['name', 'camel', 'is_self', 'fanbase', 'follower', 'small_x', 'thumb_x'];
 
     public function getNameAttribute()
     {
@@ -101,6 +101,11 @@ class User extends Authenticatable
     public function getFanbases()
     {
         return User::has('fanbases')->get();
+    }
+
+    public function getFanbaseAttribute()
+    {
+        return $this->fanbases->first();
     }
 
     public function getsent()

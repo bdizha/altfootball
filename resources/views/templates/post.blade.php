@@ -11,8 +11,7 @@
                 </div>
             </div>
             <div class="sc-dfVpRl bcqOPV">
-                <user params="item: post"></user>
-                @include('post.user')
+                <user params="user: post.user, published_at: post.published_at"></user>
                 <h2 class="sc-esjQYD fPOHUM" data-bind="text: post.title_x"></h2>
                 <div class="sc-kIPQKe jzIbtI" data-bind="text: post.summary_x"></div>
                 <actions params="item: post"></actions>

@@ -11,6 +11,8 @@ $(function () {
         self.post = params.post;
         self.isShowing = ko.observable(false);
 
+        console.log("post post", params.post());
+
         self.show = function () {
             self.isShowing(true);
             self.showItem(true);

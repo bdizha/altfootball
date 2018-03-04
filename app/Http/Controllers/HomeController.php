@@ -32,7 +32,7 @@ class HomeController extends Controller
 
         $tags = Tag::withCount('posts')
             ->orderBy("posts_count", "DESC")
-            ->take(12)
+            ->limit(200)
             ->get();
 
         $fans = User::withCount('posts')

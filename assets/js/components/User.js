@@ -9,6 +9,7 @@ $(function () {
         var self = this;
 
         self.user = params.user;
+        self.published_at = params.published_at;
         self.isShowing = ko.observable(false);
 
         self.show = function () {

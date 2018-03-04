@@ -34,6 +34,7 @@ elixir(function(mix) {
         'assets/js/node_modules/lodash/dist/lodash.min.js',
         'assets/js/node_modules/ko-infinitescroll/index.js',
         'assets/js/node_modules/owl.carousel/dist/owl.carousel.min.js',
+        'assets/js/node_modules/underscore/underscore-min.js'
 
     ], 'public/js/vendors.js');
 
