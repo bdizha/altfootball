@@ -14,8 +14,9 @@
                     <div class="_14sEb _1z2cn">
                         <div class="_3ohNX">
                             <div class="_373gh">
-                                <div class="_166mk"></div>
-                                @include("tag.list")
+                                <div class="owl-carousel owl-tags owl-theme">
+                                    @include("tag.list")
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -120,7 +121,7 @@
                     </section>
                 </div>
             </div>
-            <div class="sc-fONwsr gDVFix" data-reactid="42">
+            <div class="sc-fONwsr gDVFix">
                 <div class="sc-hEsumM jUVmGT" data-reactid="43">
                     <div class="sc-ktHwxA lhpVsy" data-reactid="103">
                         <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc">
@@ -129,9 +130,9 @@
                                     <span class="sc-hmzhuo gqKiYI" data-reactid="107">Hot</span>
                                     <span class="sc-frDJqD lXCHc" data-reactid="108">Fanbases</span>
                                 </div>
-                                <span class="sc-kvZOFW fTNgKg" data-reactid="109">+ See more</span>
+                                <span class="sc-kvZOFW fTNgKg">+ See more</span>
                             </a>
-                            <ul class="sc-bbmXgH jOkXFw" wrap="true" data-reactid="110">
+                            <ul class="sc-bbmXgH jOkXFw owl-carousel owl-bases owl-theme">
                                 @foreach($bases as $k => $base)
                                     <li class="sc-hqyNC hcKELX" data-reactid="111">
                                         <a class="sc-jbKcbu gnullG" href="/f/{{ $base->slug }}" data-reactid="112">
@@ -143,7 +144,8 @@
                                                 </div>
                                             </div>
                                             <h4 class="sc-jqCOkK dfpDYt" data-reactid="116">{{ $base->name }}</h4>
-                                            <div class="sc-uJMKN jbQyuy" data-reactid="117">{{ $base->description }}</div>
+                                            <div class="sc-uJMKN jbQyuy"
+                                                 data-reactid="117">{{ $base->description }}</div>
                                         </a>
                                     </li>
                                 @endforeach
@@ -155,8 +157,12 @@
                 <div class="sc-rBLzX SsCsq" data-reactid="172">
                     <div class="sc-dTdPqK hQzEkt">
                         <div class="sc-krDsej eqEjAX sc-frDJqD epAMjP">
-                            <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">Top</span><span class="sc-jbKcbu fAtzSi">Stories</span></div>
-                            <div class="sc-dliRfk dpeeXK"><button class="sc-kLIISr cORlPk">Discover</button><button class="sc-kLIISr iUbryo">My Feed</button></div>
+                            <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">Top</span><span
+                                        class="sc-jbKcbu fAtzSi">Stories</span></div>
+                            <div class="sc-dliRfk dpeeXK">
+                                <button class="sc-kLIISr cORlPk">Discover</button>
+                                <button class="sc-kLIISr iUbryo">My Feed</button>
+                            </div>
                         </div>
                     </div>
                     <div class="sc-itybZL QJDdz">
@@ -169,6 +175,10 @@
             </div>
         </div>
     </div>
+    <!-- ko if: showItem() -->
+    <span data-bind="text: post().title_x"></span>
+    <page-post params="post: post"></page-post>
+    <!-- /ko -->
 @endsection
 
 @section('js')

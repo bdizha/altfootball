@@ -51,7 +51,7 @@
     bottom: -8px;
     width: 100%;
     height: 8px;
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -69,7 +69,7 @@
   line-height: 14px;
   text-align: left;
   padding: 22px 40px;
-  background: rgba(32, 198, 89, 0.25);
+  background: rgba(21,205,114, 0.25);
   color: #fff;
   cursor: pointer;
   svg {
@@ -79,7 +79,7 @@
 }
 
 ._1MC-v {
-  background-color: #2788D3;
+  background-color: rgba(0, 201, 255, 0.85);
 }
 
 ._1geYT {
@@ -88,9 +88,9 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 14px;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   background: #fff;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   cursor: pointer;
   padding: 14px 28px;
   transition: all .1s linear;
@@ -105,16 +105,16 @@
 
 ._2e1-n {
   border-color: #fff;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
   &:hover {
     background: #fff;
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
   }
 }
 
 .oFTqy {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
 }
 
@@ -168,7 +168,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   opacity: 0;
   transform: translateZ(0);
 }
@@ -197,7 +197,7 @@
   line-height: 1.4;
   padding-bottom: 28px;
   margin-bottom: 28px;
-  border-bottom: 4px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 4px solid rgba(0, 201, 255, 0.95);
   flex: 0 0 100%;
 }
 
@@ -222,13 +222,13 @@
 }
 
 ._1OI3o {
-  border-color: #2788D3;
-  color: #2788D3;
+  border-color: rgba(0, 201, 255, 0.85);
+  color: rgba(0, 201, 255, 0.85);
 }
 
 ._3Ej8o {
   border: 0;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 .aYiOF {
@@ -241,7 +241,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   opacity: 0;
 }
 
@@ -254,7 +254,7 @@
 ._1zDR7 {
   background: #fff;
   border: 1px solid #f8f8f8;
-  box-shadow: 0 9px 18px 0 rgba(0, 149, 208, 0.98);
+  box-shadow: 0 9px 18px 0 rgba(0, 201, 255, 0.95);
   width: 300px;
   padding: 28px 28px 0;
   position: fixed;
@@ -278,7 +278,7 @@
   width: 14px;
   height: 14px;
   background: #fff;
-  box-shadow: 0 -9px 18px 0 rgba(17, 102, 146, 0.85);
+  box-shadow: 0 -9px 18px 0 rgba(0, 201, 255, 0.95);
   position: absolute;
   left: 0;
 }
@@ -309,21 +309,21 @@
 }
 
 ._1VKWj {
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   &:last-child {
     border-bottom: 0;
   }
 }
 
 ._2KljY {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   path {
-    fill: #2788D3;
+    fill: rgba(0, 201, 255, 0.85);
   }
 }
 
 .d25Pz {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._35Phm {
@@ -398,7 +398,7 @@
 }
 
 ._359eg {
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding: 18px 0;
   svg {
     margin-right: 18px;
@@ -543,7 +543,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 44px 26px 18px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -566,9 +566,9 @@
 }
 
 .zoflJ {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   &[disabled] {
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -584,7 +584,7 @@
 
 ._2Kdch {
   position: relative;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding-right: 28px;
   transition: padding-bottom .15s linear;
 }
@@ -607,14 +607,14 @@
 
 ._1fTaL ._16KIM {
   transform: translateY(-18px) scale(0.85) translateZ(0);
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._2LSh0 {
   position: absolute;
   right: 0;
   bottom: 0;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   opacity: 0;
   transition: color .2s ease-out,opacity .25s ease-out;
   font-family: DriveTribe,Helvetica,sans-serif;
@@ -622,7 +622,7 @@
 }
 
 ._2eqbF {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
 }
 
 ._37XUn {
@@ -630,7 +630,7 @@
 }
 
 ._1u7op {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -687,7 +687,7 @@
 }
 
 ._21web {
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   border-radius: 0px;
   overflow: hidden;
   width: 100%;
@@ -780,7 +780,7 @@
 
 @media screen and (min-width: 846px) {
   ._1jbho {
-    border-right: 1px solid rgba(0, 149, 208, 0.98);
+    border-right: 1px solid rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -1088,7 +1088,7 @@
     justify-content: space-between;
     margin: 0;
     padding: 9px 14px;
-    border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
     ._31RCK {
       margin: 9px 0 9px 18px;
       float: left;
@@ -1146,8 +1146,8 @@
 }
 
 ._2I-QY {
-  color: rgba(0, 149, 208, 0.98);
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
+  border: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 .k27yJ {
@@ -1157,19 +1157,19 @@
 }
 
 ._2q7vJ {
-  color: rgba(0, 149, 208, 0.98);
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
+  border: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._2SyJe {
   width: 80px;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
 }
 
 ._3KPJA {
   width: 80px;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._2ZI7w {
@@ -1191,18 +1191,18 @@
 }
 
 ._1fuqz {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 14px;
   text-transform: uppercase;
 }
 
 ._1-Zgz, ._1WmTc {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
 }
 
 .A57di {
-  background: #2788D3;
+  background: rgba(0, 201, 255, 0.85);
   color: #fff;
 }
 
@@ -1212,7 +1212,7 @@
 
 .zxDoM {
   display: flex;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -1224,7 +1224,7 @@
   position: relative;
   transition: opacity .1s ease-out;
   &:after {
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
     content: "";
     display: block;
     width: 26px;
@@ -1287,7 +1287,7 @@
   margin-left: 3px;
   margin-top: 3px;
   font-weight: 400;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -1344,7 +1344,7 @@
     flex: 0 0 100%;
     flex-direction: row;
     padding: 10px 0;
-    border-top: 1px solid rgba(0, 149, 208, 0.98);
+    border-top: 1px solid rgba(0, 201, 255, 0.95);
     max-width: 100%;
   }
 }
@@ -1352,15 +1352,15 @@
 @media screen and (max-width: 508px) {
   ._3XlGZ {
     padding: 10px 0;
-    border-top: 1px solid rgba(0, 149, 208, 0.98);
-    border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+    border-top: 1px solid rgba(0, 201, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   }
 }
 
 .Pb65u {
   position: relative;
   padding-bottom: 18px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding: 14px;
   padding-left: 0;
   text-align: center;
@@ -1379,7 +1379,7 @@
   .Pb65u {
     flex: 1;
     border-bottom: 0;
-    border-right: 1px solid rgba(0, 149, 208, 0.98);
+    border-right: 1px solid rgba(0, 201, 255, 0.95);
     margin-bottom: 0;
     justify-content: center;
     display: flex;
@@ -1388,7 +1388,7 @@
 }
 
 ._12g8o {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 .DdJUj {
@@ -1470,7 +1470,7 @@
 }
 
 ._28Zwg {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   height: 2px;
   transform: scaleX(0);
   transform-origin: top left;
@@ -1528,7 +1528,7 @@
 }
 
 ._2nJET:hover {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
 }
 
@@ -1731,7 +1731,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   border-top: 0;
   padding: 14px;
 }
@@ -1744,13 +1744,13 @@
 
 @media screen and (max-width: 508px) {
   ._1KQuz {
-    border-top: 1px solid rgba(0, 149, 208, 0.98);
-    border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+    border-top: 1px solid rgba(0, 201, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   }
 }
 
 .fFpBH {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
   border: 0;
 }
@@ -1919,7 +1919,7 @@
   margin-bottom: 14px;
   padding-top: 35px;
   padding-bottom: 30px;
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (min-width: 924px) {
@@ -2020,7 +2020,7 @@
 
 .YRuUa {
   position: absolute;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
 }
 
 ._3WIsa {
@@ -2143,7 +2143,7 @@
 }
 
 ._3LGNS {
-  background: rgba(32, 198, 89, 0.25);
+  background: rgba(21,205,114, 0.25);
   color: #fff;
   text-align: left;
   padding: 18px 26px;
@@ -2194,10 +2194,10 @@
 
 ._1sHRa {
   position: absolute;
-  background: rgba(32, 198, 89, 0.25);
+  background: rgba(21,205,114, 0.25);
   bottom: 0;
   padding: 26px;
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._2gW41 {
@@ -2222,7 +2222,7 @@
 .Xr6ka {
   position: absolute;
   top: 28px;
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -2246,7 +2246,7 @@
 
 ._2jMe6 {
   left: 28px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -2259,7 +2259,7 @@
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
   font-size: 14px;
   position: absolute;
@@ -2303,7 +2303,7 @@
 }
 
 .yR_IP {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   top: 0;
   right: 0;
   bottom: 0;
@@ -2336,7 +2336,7 @@
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
   font-size: 14px;
   padding: 6px 14px;
@@ -2358,7 +2358,7 @@
 }
 
 ._3UVYo {
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
 }
 
 ._2IBdP {
@@ -2400,7 +2400,7 @@
 ._1mT7f {
   font-size: 14px;
   position: relative;
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   cursor: pointer;
   margin-left: 18px;
   display: flex;
@@ -2428,7 +2428,7 @@
   position: relative;
   width: 100%;
   border-radius: 0px;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   height: 165px;
   cursor: pointer;
   &._2W9Nv {
@@ -2520,14 +2520,14 @@
 
 ._2Ne10 {
   text-transform: uppercase;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._7u1-t {
   display: flex;
   margin-bottom: 7px;
   align-items: center;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   span {
     font-size: 14px;
     line-height: 12px;
@@ -2599,7 +2599,7 @@
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -2623,7 +2623,7 @@
   cursor: pointer;
   &[disabled] {
     cursor: default;
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
     svg path {
       fill: #666;
     }
@@ -2639,7 +2639,7 @@
     fill: #666;
   }
   &[disabled] {
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
     cursor: default;
     ._2l5oW path {
       fill: #666;
@@ -2655,7 +2655,7 @@
 }
 
 ._26cuW {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -2732,7 +2732,7 @@
 
 ._5lS25 {
   font-size: 14px;
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
 }
 
 ._22BIt {
@@ -2758,7 +2758,7 @@
 ._3LYcH {
   font-size: 22px;
   line-height: 22px;
-  border-bottom: 4px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 4px solid rgba(0, 201, 255, 0.95);
   margin-bottom: 28px;
   width: 100%;
 }
@@ -2817,8 +2817,8 @@
 }
 
 ._1Gyo9 {
-  border: 4px solid rgba(0, 149, 208, 0.98);
-  color: rgba(0, 149, 208, 0.98);
+  border: 4px solid rgba(0, 201, 255, 0.95);
+  color: rgba(0, 201, 255, 0.95);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2835,7 +2835,7 @@
   }
   &:hover {
     color: #fff;
-    background-color: rgba(0, 149, 208, 0.98);
+    background-color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -2860,7 +2860,7 @@
 .RgFHG {
   padding-bottom: 18px;
   margin: 18px 26px 0;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   display: flex;
   align-items: center;
 }
@@ -2917,7 +2917,7 @@
     display: flex;
     justify-content: center;
     width: 90px;
-    background: rgba(32, 198, 89, 0.25);
+    background: rgba(21,205,114, 0.25);
     align-items: center;
     svg {
       width: 28px;
@@ -3131,7 +3131,7 @@
 
 ._5eW3b {
   position: absolute;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
 }
 
 ._1NLPK {
@@ -3180,7 +3180,7 @@
   line-height: 1.4;
   text-transform: uppercase;
   margin-top: 14px;
-  filter: drop-shadow(0 2px 5px rgba(0, 149, 208, 0.98));
+  filter: drop-shadow(0 2px 5px rgba(0, 201, 255, 0.95));
 }
 
 @media screen and (max-width: 508px) {
@@ -3215,7 +3215,7 @@
 }
 
 .mD41I img {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
 }
 
 ._1sqoT {
@@ -3292,8 +3292,8 @@
   position: absolute;
   padding: 14px 0;
   background-color: #fff;
-  border: 1px solid rgba(0, 149, 208, 0.98);
-  box-shadow: 0 0 25px 0 rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
+  box-shadow: 0 0 25px 0 rgba(0, 201, 255, 0.95);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 2;
@@ -3309,12 +3309,12 @@
 }
 
 ._1FJkk {
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   padding: 8px;
   padding-left: 12px;
   height: 44px;
   margin-bottom: 0;
-  placeholder-color: rgba(0, 149, 208, 0.98);
+  placeholder-color: rgba(0, 201, 255, 0.95);
 }
 
 .Q4jwH {
@@ -3351,11 +3351,11 @@
   height: 22px;
   border-radius: 0px;
   background: #fff;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   display: flex;
   position: relative;
   &:hover {
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
     svg > path {
       stroke: #fff;
     }
@@ -3364,7 +3364,7 @@
     position: relative;
     left: 5px;
     path {
-      stroke: rgba(0, 149, 208, 0.98);
+      stroke: rgba(0, 201, 255, 0.95);
       stroke-width: 1;
     }
   }
@@ -3376,7 +3376,7 @@
   &:hover {
     background: #fff;
     svg > path {
-      stroke: rgba(0, 149, 208, 0.98);
+      stroke: rgba(0, 201, 255, 0.95);
     }
   }
   svg {
@@ -3400,13 +3400,13 @@
   font-weight: 700;
   text-transform: uppercase;
   float: right;
-  color: rgba(0, 149, 208, 0.98);
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   padding: 9px 28px;
   font-size: 14px;
   transition: all .15s ease-out;
   &:hover:enabled {
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
     color: #fff;
   }
   &[disabled] {
@@ -3418,10 +3418,10 @@
 ._2LRWs {
   border: 0;
   background: #fff;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   &:hover:enabled {
     background: #fff;
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -3441,7 +3441,7 @@
 
 ._168d9 {
   svg path, &:hover svg path {
-    fill: rgba(0, 149, 208, 0.98);
+    fill: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -3449,7 +3449,7 @@
   position: relative;
   margin: -9px 0 22px;
   padding: 12px;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   border-top: 0;
 }
 
@@ -3471,7 +3471,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  border: 1px solid #2788D3;
+  border: 1px solid rgba(0, 201, 255, 0.85);
 }
 
 .KTIgi {
@@ -3480,7 +3480,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   padding-top: 9px;
   a:hover {
     text-decoration: underline;
@@ -3568,7 +3568,7 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 14px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._3R967 {
@@ -3579,7 +3579,7 @@
 }
 
 ._2ixe- span {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._1cT9R, ._2ixe- span {
@@ -3768,7 +3768,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 12px;
-  background: #2788D3;
+  background: rgba(0, 201, 255, 0.85);
   color: #fff;
   border-radius: 18px;
   margin: 0 auto 44px;
@@ -3777,7 +3777,7 @@
   position: relative;
   text-align: center;
   .QbGqA {
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
     white-space: nowrap;
     position: absolute;
     margin: auto;
@@ -3817,7 +3817,7 @@
 }
 
 ._2fax0 {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
 }
 
 ._1fEnk {
@@ -3876,11 +3876,11 @@
   width: 28px;
   height: 28px;
   background-color: #fff;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   cursor: pointer;
   user-select: none;
   &._393Hg {
-    background-color: rgba(0, 149, 208, 0.98);
+    background-color: rgba(0, 201, 255, 0.95);
   }
   > input {
     display: none;
@@ -4051,7 +4051,7 @@
 }
 
 ._3UGMt {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   width: 76px;
   height: 55px;
   font-family: DriveTribe,Helvetica,sans-serif;
@@ -4169,7 +4169,7 @@
 
 ._3Phfs {
   background: #fff;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   height: 96px;
   width: 100%;
   padding: 22px;
@@ -4247,7 +4247,7 @@
 ._30tVm {
   width: 64px;
   height: 4px;
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   margin-right: 14px;
   cursor: pointer;
   &:last-child {
@@ -4263,7 +4263,7 @@
 }
 
 ._1S3Ei {
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   cursor: default;
 }
 
@@ -4277,7 +4277,7 @@
   left: 0;
   width: 100%;
   height: 90px;
-  box-shadow: 0 10px 25px 10px rgba(0, 149, 208, 0.98);
+  box-shadow: 0 10px 25px 10px rgba(0, 201, 255, 0.95);
   z-index: 2;
 }
 
@@ -4372,7 +4372,7 @@
 }
 
 ._2azBk {
-  color: rgba(0, 149, 208, 0.98) !important;
+  color: rgba(0, 201, 255, 0.95) !important;
 }
 
 @media screen and (max-width: 846px) {
@@ -4412,11 +4412,11 @@
 }
 
 ._2hv_i {
-  border-color: rgba(0, 149, 208, 0.98);
+  border-color: rgba(0, 201, 255, 0.95);
 }
 
 .p5bDW {
-  border-color: #2788D3;
+  border-color: rgba(0, 201, 255, 0.85);
 }
 
 ._2WyvV {
@@ -4694,7 +4694,7 @@
   max-width: 768px;
   margin-left: auto;
   margin-right: auto;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   padding: 18px 26px;
   margin: 18px auto;
 }
@@ -4782,7 +4782,7 @@
 }
 
 ._2LrKA {
-  background: #2788D3;
+  background: rgba(0, 201, 255, 0.85);
 }
 
 ._1S4og {
@@ -4790,7 +4790,7 @@
 }
 
 ._1iBcU {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   padding: 0 14px;
 }
 
@@ -4827,7 +4827,7 @@
   white-space: nowrap;
   transition: all .1s ease-out;
   &:hover {
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
     color: #fff;
   }
 }
@@ -4844,7 +4844,7 @@
 }
 
 ._2Phzy {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
   position: relative;
 }
@@ -4926,7 +4926,7 @@
 }
 
 ._166mk {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
   border-radius: 0px;
   font-family: DriveTribe,Helvetica,sans-serif;
@@ -4979,7 +4979,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   text-align: center;
   margin-top: 14px;
   margin-bottom: 12px;
@@ -5037,8 +5037,8 @@
 }
 
 ._26DkX {
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding-bottom: 28px;
   ._1e4LX {
     margin-bottom: 9px;
@@ -5076,7 +5076,7 @@
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   text-align: center;
   display: block;
 }
@@ -5085,7 +5085,7 @@
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   text-align: center;
   display: block;
   font-size: 55px;
@@ -5203,7 +5203,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 44px 26px 18px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -5231,9 +5231,9 @@
 }
 
 ._2tXok {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   &[disabled] {
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -5242,7 +5242,7 @@
 }
 
 .ADq5f {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._3Cj2a {
@@ -5270,13 +5270,13 @@
   left: 5px;
   width: 10px;
   height: 10px;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
 }
 
 ._2crgF {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding-bottom: 4px;
   margin-top: -14px;
   flex-direction: column;
@@ -5316,7 +5316,7 @@
 ._266GY {
   height: 228px;
   position: relative;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   background: $color_gray;
   cursor: pointer;
 }
@@ -5333,12 +5333,12 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 12px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   cursor: pointer;
 }
 
 ._21SpA {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 14px;
   margin-bottom: 9px;
 }
@@ -5361,7 +5361,7 @@
 }
 
 ._3tO7Z {
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   position: relative;
   display: block;
   cursor: text;
@@ -5417,7 +5417,7 @@
     line-height: 14px;
     text-transform: uppercase;
     padding-top: 3px;
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -5450,14 +5450,14 @@
 
 .VICgz ._1jO5_ {
   transform: translateY(-4px) scale(0.85) translateZ(0);
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 .bInDy {
   position: absolute;
   right: 0;
   bottom: 9px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   opacity: 0;
   transition: color .2s ease-out,opacity .25s ease-out;
   font-family: DriveTribe,Helvetica,sans-serif;
@@ -5465,7 +5465,7 @@
 }
 
 ._15Cw9 {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
 }
 
 ._3SQbI {
@@ -5474,7 +5474,7 @@
 
 .HMy0C {
   color: #fff;
-  background: #2788D3;
+  background: rgba(0, 201, 255, 0.85);
   padding-left: 0;
 }
 
@@ -5519,7 +5519,7 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: none;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   margin-top: 14px;
 }
 
@@ -5531,7 +5531,7 @@
   position: relative;
   width: 28px;
   height: 14px;
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   border-radius: 11px;
   cursor: pointer;
   &:before {
@@ -5558,7 +5558,7 @@
 
 ._3aYbF {
   display: flex;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._2dzDT {
@@ -5571,7 +5571,7 @@
   width: 12px;
   margin-top: 7px;
   margin-right: 18px;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 .F6UPh {
@@ -5583,7 +5583,7 @@
 
 ._3vR-Q {
   display: flex;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._38P-N svg {
@@ -5657,7 +5657,7 @@
 }
 
 ._3iCHD {
-  border-bottom-color: rgba(0, 149, 208, 0.98);
+  border-bottom-color: rgba(0, 201, 255, 0.95);
 }
 
 ._1E9Zo input {
@@ -5873,7 +5873,7 @@
   text-transform: uppercase;
   font-size: 55px;
   line-height: 44px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -5911,20 +5911,20 @@
   display: block;
   background: #fff;
   border: 1px solid rgba(0, 8, 39, 0.86);
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   svg {
     float: none;
     transform: scale(1.2) translateY(0);
     margin-left: 44px;
   }
   path {
-    fill: rgba(0, 149, 208, 0.98);
+    fill: rgba(0, 201, 255, 0.95);
   }
 }
 
 @media screen and (max-width: 508px) {
   ._2AwjV {
-    border: 1px solid rgba(0, 149, 208, 0.98);
+    border: 1px solid rgba(0, 201, 255, 0.95);
     width: auto;
   }
 }
@@ -5940,7 +5940,7 @@
 
 ._nbnx {
   margin: 0 0 12px 12px;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   width: 404px;
 }
 
@@ -5965,8 +5965,8 @@
 @media screen and (max-width: 508px) {
   ._nbnx {
     border: 0;
-    border-top: 1px solid rgba(0, 149, 208, 0.98);
-    border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+    border-top: 1px solid rgba(0, 201, 255, 0.95);
+    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
     margin-bottom: 9px;
     margin-left: 0;
   }
@@ -5983,7 +5983,7 @@
 .TATrW {
   display: flex;
   align-items: center;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 14px;
 }
 
@@ -6114,7 +6114,7 @@
 
 ._1qO-x {
   display: flex;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding: 35px 0;
   width: 100%;
   &:first-child {
@@ -6155,7 +6155,7 @@
   font-size: 14px;
   line-height: 18px;
   margin-left: 35px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -6200,7 +6200,7 @@
   padding-top: 14px;
   background-color: #fff;
   .ODDw0 {
-    border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -6221,7 +6221,7 @@
 }
 
 .BB62- {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 14px;
   line-height: 18px;
   padding-top: 2px;
@@ -6259,7 +6259,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   cursor: pointer;
   svg {
     z-index: 16;
@@ -6356,7 +6356,7 @@
 .ZQJT_ {
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   padding-top: 2px;
 }
 
@@ -6402,14 +6402,14 @@
 
 ._3Njiy {
   display: flex;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   align-items: center;
   font-size: 14px;
   line-height: 12px;
   padding-top: 18px;
   padding-bottom: 14px;
   list-style: disc;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._2Es-V {
@@ -6428,7 +6428,7 @@
     width: 2px;
     height: 2px;
     border-radius: 0px;
-    background-color: rgba(0, 149, 208, 0.98);
+    background-color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -6584,7 +6584,7 @@
   text-transform: uppercase;
   font-size: 14px;
   line-height: 12px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding: 14px;
   width: 100%;
   display: block;
@@ -6601,13 +6601,13 @@
 }
 
 .BNBMP {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 14px;
   line-height: 12px;
   padding-top: 18px;
   padding-bottom: 14px;
   list-style: disc;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._1aSFb {
@@ -6626,7 +6626,7 @@
     width: 2px;
     height: 2px;
     border-radius: 0px;
-    background-color: rgba(0, 149, 208, 0.98);
+    background-color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -6680,7 +6680,7 @@
     width: 2px;
     height: 2px;
     border-radius: 0px;
-    background-color: rgba(0, 149, 208, 0.98);
+    background-color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -6689,7 +6689,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 12px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   margin: 12px 0 9px;
   &:after {
     clear: both;
@@ -6730,8 +6730,8 @@
   font-weight: 700;
   text-transform: uppercase;
   float: right;
-  color: rgba(0, 149, 208, 0.98);
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   padding: 9px 28px;
   font-size: 14px;
   transition: all .15s ease-out;
@@ -6748,7 +6748,7 @@
 }
 
 ._2jvdf {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 14px;
   line-height: 1;
 }
@@ -6782,19 +6782,19 @@
 
 ._2B25b {
   padding-right: 9px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   &:after {
     margin-left: 9px;
     content: "";
     width: 2px;
     height: 2px;
     border-radius: 0px;
-    background-color: rgba(0, 149, 208, 0.98);
+    background-color: rgba(0, 201, 255, 0.95);
   }
 }
 
 ._3-2aE {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._1XNRF, ._3-2aE {
@@ -6895,8 +6895,8 @@
 
 ._3p6iW {
   padding: 14px 0;
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._3fk-o {
@@ -6914,7 +6914,7 @@
   text-transform: uppercase;
   font-size: 22px;
   line-height: 22px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding-bottom: 28px;
 }
 
@@ -7114,7 +7114,7 @@
   font-size: 14px;
   line-height: 18px;
   ._3MJAj {
-    border-top: 1px solid rgba(0, 149, 208, 0.98);
+    border-top: 1px solid rgba(0, 201, 255, 0.95);
     margin-top: 14px;
     margin-bottom: 14px;
     padding: 18px 26px 0;
@@ -7138,11 +7138,11 @@
 ._326aY {
   margin-top: 18px;
   margin-bottom: 18px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 ._8vnW9 {
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
   padding: 18px 26px;
   li {
     padding-bottom: 9px;
@@ -7178,7 +7178,7 @@
 }
 
 ._35O2p {
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
   padding: 18px 26px;
   margin-top: 18px;
 }
@@ -7241,7 +7241,7 @@
 }
 
 .FnwOT {
-  border: 8px solid rgba(0, 149, 208, 0.98);
+  border: 8px solid rgba(0, 201, 255, 0.95);
   margin-right: 40px;
   padding: 28px 18px 64px;
 }
@@ -7308,16 +7308,16 @@
 }
 
 ._3tN0i {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 400;
 }
 
 ._1TdTV {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   padding: 14px;
   background-color: $color_gray;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   margin-top: 14px;
 }
 
@@ -7334,7 +7334,7 @@
   display: flex;
   align-items: center;
   background-color: $color_gray;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 .rb89E {
@@ -7421,7 +7421,7 @@ div._3bqe5 {
 
 ._3HP-Q {
   margin-left: 4px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 .kKUQF {
@@ -7475,8 +7475,8 @@ div._3bqe5 {
 ._1zrW5 {
   padding: 0 22px;
   margin-left: 22px;
-  border-left: 1px solid rgba(0, 149, 208, 0.98);
-  border-right: 1px solid rgba(0, 149, 208, 0.98);
+  border-left: 1px solid rgba(0, 201, 255, 0.95);
+  border-right: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -7490,7 +7490,7 @@ div._3bqe5 {
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  background: #2788D3;
+  background: rgba(0, 201, 255, 0.85);
   color: #fff;
   padding: 12px 22px;
 }
@@ -7536,7 +7536,7 @@ div._3bqe5 {
   top: 96px;
   left: 0;
   right: 0;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   z-index: 6;
 }
@@ -7558,7 +7558,7 @@ div._3bqe5 {
     top: auto;
     bottom: 0;
     height: 55px;
-    border-top: 1px solid rgba(0, 149, 208, 0.98);
+    border-top: 1px solid rgba(0, 201, 255, 0.95);
     border-bottom: 0;
     padding-left: 0;
     &:after {
@@ -7727,7 +7727,7 @@ div._3bqe5 {
 ._2mthE {
   font-size: 14px;
   line-height: 14px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 846px) {
@@ -7834,7 +7834,7 @@ div._3bqe5 {
 }
 
 ._2bd6H {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   transition: color .2s ease;
 }
 
@@ -7844,7 +7844,7 @@ div._3bqe5 {
 
 .vrQ3d {
   position: relative;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   margin-bottom: 28px;
 }
 
@@ -7875,7 +7875,7 @@ div._3bqe5 {
   left: -1px;
   width: 92px;
   height: 4px;
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   position: absolute;
 }
 
@@ -8158,7 +8158,7 @@ div._3bqe5 {
   font-weight: 700;
   text-transform: uppercase;
   blockquote {
-    border: 10px solid rgba(0, 149, 208, 0.98);
+    border: 10px solid rgba(0, 201, 255, 0.95);
     padding: 160px 14px 18px;
     p {
       font-size: 28px;
@@ -8206,7 +8206,7 @@ div._3bqe5 {
 }
 
 ._2cAm4 {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 14px;
   line-height: 18px;
   padding: 18px 0 9px;
@@ -8329,8 +8329,8 @@ div._3bqe5 {
 
 .CDTi0 {
   display: flex;
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding: 14px 0;
   justify-content: space-between;
   float: none;
@@ -8547,7 +8547,7 @@ div._3bqe5 {
   bottom: 18px;
   left: -196px;
   width: 170px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding-bottom: 9px;
   font-size: 14px;
 }
@@ -8603,7 +8603,7 @@ div._3bqe5 {
   left: 0;
   top: 96px;
   background: #fff;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   opacity: 0;
   font-size: 14px;
   line-height: 18px;
@@ -8621,7 +8621,7 @@ div._3bqe5 {
   margin-left: auto;
   margin-right: auto;
   padding: 9px 0;
-  box-shadow: 0 10px 25px -10px rgba(0, 149, 208, 0.98);
+  box-shadow: 0 10px 25px -10px rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 1280px) {
@@ -8658,7 +8658,7 @@ div._3bqe5 {
 ._3Cj79 {
   padding: 12px 40px;
   margin-left: auto;
-  background: #2788D3;
+  background: rgba(0, 201, 255, 0.85);
   color: #fff;
   border: 0;
 }
@@ -8746,7 +8746,7 @@ div._3bqe5 {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   color: #fff;
   padding: 22px 28px;
   margin-bottom: 18px;
@@ -9176,7 +9176,7 @@ div._3bqe5 {
 ._1H8gB {
   font-size: 9px;
   line-height: 11px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   text-transform: uppercase;
 }
 
@@ -9190,7 +9190,7 @@ div._3bqe5 {
 ._38OvA {
   color: rgba(0, 8, 39,.96);
   &._1H8gB {
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -9202,7 +9202,7 @@ div._3bqe5 {
 }
 
 ._3VSm9 {
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   color: #f8f8f8;
   z-index: 1;
   padding-bottom: 88px;
@@ -9550,7 +9550,7 @@ div._3bqe5 {
 }
 
 .zZi01 {
-  border: 8px solid rgba(0, 149, 208, 0.98);
+  border: 8px solid rgba(0, 201, 255, 0.95);
   padding: 28px 18px 64px;
 }
 
@@ -9573,7 +9573,7 @@ div._3bqe5 {
 ._1MHOe {
   position: relative;
   padding-bottom: 18px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   margin-bottom: 28px;
 }
 
@@ -9684,7 +9684,7 @@ div._3bqe5 {
 }
 
 ._3cGe8 {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 14px;
   line-height: 18px;
   padding: 14px 0;
@@ -9704,8 +9704,8 @@ div._3bqe5 {
 
 .XTctS {
   display: flex;
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding: 14px 0;
   justify-content: space-between;
   margin-bottom: 28px;
@@ -9931,7 +9931,7 @@ div._3bqe5 {
   align-items: center;
   margin-top: 18px;
   margin-bottom: 28px;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   height: 77px;
   padding: 12px 35px 12px 9px;
 }
@@ -9941,7 +9941,7 @@ div._3bqe5 {
   height: 52px;
   transition: all .1s linear;
   &:hover {
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
     path[data-hover-invert=true] {
       fill: #fff;
     }
@@ -9995,7 +9995,7 @@ div._3bqe5 {
   line-height: 22px;
   padding-top: 44px;
   padding-bottom: 28px;
-  border-top: 4px solid rgba(0, 149, 208, 0.98);
+  border-top: 4px solid rgba(0, 201, 255, 0.95);
 }
 
 .jwlFt {
@@ -10074,7 +10074,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 22px;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   padding-bottom: 22px;
 }
 
@@ -10148,7 +10148,7 @@ div._3bqe5 {
 ._11QMn {
   background-color: $color_gray;
   margin-bottom: 72px;
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   color: #f8f8f8;
 }
 
@@ -10391,7 +10391,7 @@ div._3bqe5 {
   ._2cP6X {
     width: 100%;
     height: 100px;
-    border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -10470,7 +10470,7 @@ div._3bqe5 {
     display: block;
   }
   &:hover {
-    background-color: rgba(0, 149, 208, 0.98);
+    background-color: rgba(0, 201, 255, 0.95);
     svg path {
       fill: #fff;
     }
@@ -10564,7 +10564,7 @@ div._3bqe5 {
 
 ._1m76a {
   margin: 0 26px;
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
   display: flex;
   padding-top: 18px;
 }
@@ -10730,7 +10730,7 @@ div._3bqe5 {
   &:after {
     display: block;
     content: "";
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
     height: 5px;
     position: absolute;
     top: -28px;
@@ -10755,7 +10755,7 @@ div._3bqe5 {
   font-weight: 700;
   font-size: 35px;
   line-height: 35px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._2VJcs, ._3vb09 {
@@ -10800,7 +10800,7 @@ div._3bqe5 {
 }
 
 ._175AS {
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   padding: 22px;
   color: #f8f8f8;
   overflow: hidden;
@@ -10836,7 +10836,7 @@ div._3bqe5 {
   width: 378px;
   height: 378px;
   margin: 0 auto;
-  border: 8px solid rgba(0, 149, 208, 0.98);
+  border: 8px solid rgba(0, 201, 255, 0.95);
   padding: 26px;
   display: flex;
   justify-content: center;
@@ -10857,7 +10857,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 35px;
   line-height: 35px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   position: absolute;
   top: 26px;
   left: 26px;
@@ -10879,13 +10879,13 @@ div._3bqe5 {
   height: auto;
   width: 100%;
   background: #fff;
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
   ._2B984 {
     display: flex;
-    box-shadow: 0 0 50px -4px rgba(0, 149, 208, 0.98);
+    box-shadow: 0 0 50px -4px rgba(0, 201, 255, 0.95);
     > svg {
       top: 22px;
     }
@@ -11091,7 +11091,7 @@ div._3bqe5 {
 }
 
 ._1-0JF {
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   color: #f8f8f8;
   padding: 44px 14px;
   position: relative;
@@ -11126,7 +11126,7 @@ div._3bqe5 {
 ._2jNUh {
   display: flex;
   justify-content: center;
-  background: rgba(32, 198, 89, 0.25);
+  background: rgba(21,205,114, 0.25);
   min-height: 12px;
   margin: 0 -14px 44px;
 }
@@ -11192,7 +11192,7 @@ div._3bqe5 {
 ._1pgHm {
   text-transform: uppercase;
   padding: 18px 28px;
-  background-color: #2788D3;
+  background-color: rgba(0, 201, 255, 0.85);
 }
 
 @media screen and (max-width: 846px) {
@@ -11290,7 +11290,7 @@ div._3bqe5 {
 }
 
 .GLLyX {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   position: relative;
 }
 
@@ -11325,7 +11325,7 @@ div._3bqe5 {
     width: 196px;
     height: 1px;
     top: 0;
-    background-color: rgba(0, 149, 208, 0.98);
+    background-color: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -11535,10 +11535,10 @@ div._3bqe5 {
 }
 
 ._1MaDU {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   margin-top: 12px;
   a {
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
     margin-top: 12px;
     margin: 0;
     a {
@@ -11615,17 +11615,17 @@ div._3bqe5 {
 }
 
 ._3MRFY {
-  background-color: #2788D3;
+  background-color: rgba(0, 201, 255, 0.85);
   width: 50%;
   max-width: 212px;
 }
 
 ._3rHE1 {
-  background: rgba(32, 198, 89, 0.25);
+  background: rgba(21,205,114, 0.25);
 }
 
 ._1T85P {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
 }
 
 ._3H0B3 {
@@ -11660,7 +11660,7 @@ div._3bqe5 {
 }
 
 .wEwHk {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._11gfn {
@@ -11708,11 +11708,11 @@ div._3bqe5 {
 ._2aiW- {
   margin-left: 3px;
   font-weight: 400;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._3hdBv {
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
   position: relative;
   padding-top: 28px;
 }
@@ -11724,11 +11724,11 @@ div._3bqe5 {
 }
 
 ._2EVp5 {
-  color: #2788D3;
+  color: rgba(0, 201, 255, 0.85);
   font-size: 18px;
   line-height: 22px;
   background: #fff;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   padding-right: 0;
   padding-left: 0;
   text-transform: uppercase;
@@ -11911,7 +11911,7 @@ div._3bqe5 {
 
 @media screen and (min-width: 846px) {
   ._2KkkC {
-    border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -12037,14 +12037,14 @@ div._3bqe5 {
 }
 
 ._5X5FD, .mv9zs {
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
   padding: 28px 0 0;
 }
 
 .ZxFDK {
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
   padding: 28px 0 0;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   margin-bottom: 44px;
 }
 
@@ -12173,8 +12173,8 @@ div._3bqe5 {
   margin: 18px 0;
   padding: 18px 0;
   margin-bottom: 35px;
-  border-top: 1px solid rgba(0, 149, 208, 0.98);
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-top: 1px solid rgba(0, 201, 255, 0.95);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   li {
     position: relative;
     padding-left: 35px;
@@ -12198,7 +12198,7 @@ div._3bqe5 {
 }
 
 ._3gymQ g, ._3U2Oj g {
-  fill: rgba(0, 149, 208, 0.98);
+  fill: rgba(0, 201, 255, 0.95);
 }
 
 ._1fm2Z {
@@ -12214,7 +12214,7 @@ div._3bqe5 {
 
 ._2-WMb {
   align-items: center;
-  background-color: #2788D3;
+  background-color: rgba(0, 201, 255, 0.85);
   border-radius: 8px;
   display: flex;
   height: 22px;
@@ -12291,7 +12291,7 @@ div._3bqe5 {
 
 ._105Oj {
   display: block;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   margin-top: 4px;
 }
 
@@ -12315,7 +12315,7 @@ div._3bqe5 {
   height: 72px;
   z-index: -1;
   background-color: #fff;
-  box-shadow: 0 10px 25px -10px rgba(0, 149, 208, 0.98);
+  box-shadow: 0 10px 25px -10px rgba(0, 201, 255, 0.95);
   opacity: 0;
   transform: translateY(-30px) translateZ(0);
   transition: all .3s ease-out;
@@ -12365,13 +12365,13 @@ div._3bqe5 {
   }
   &._36gJx {
     background: #fff;
-    color: rgba(0, 149, 208, 0.98);
+    color: rgba(0, 201, 255, 0.95);
     ._3VkOf {
       position: absolute;
       top: 248px;
       bottom: 0;
       width: 100%;
-      border: 1px solid rgba(0, 149, 208, 0.98);
+      border: 1px solid rgba(0, 201, 255, 0.95);
       border-top: 0;
     }
   }
@@ -12442,7 +12442,7 @@ div._3bqe5 {
   background: #141C3E;
   color: #fff;
   &:hover {
-    background: #2788D3;
+    background: rgba(0, 201, 255, 0.85);
   }
 }
 
@@ -12532,7 +12532,7 @@ div._3bqe5 {
       }
     }
     ._2iRjb {
-      background: rgba(0, 149, 208, 0.98);
+      background: rgba(0, 201, 255, 0.95);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -12590,8 +12590,8 @@ div._3bqe5 {
       padding: 12px 18px;
     }
     &._36gJx {
-      border-top: 1px solid rgba(0, 149, 208, 0.98);
-      border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+      border-top: 1px solid rgba(0, 201, 255, 0.95);
+      border-bottom: 1px solid rgba(0, 201, 255, 0.95);
       margin-bottom: 9px;
     }
   }
@@ -12670,7 +12670,7 @@ div._3bqe5 {
 }
 
 .GKLAB {
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -12821,7 +12821,7 @@ div._3bqe5 {
 
 .R1XAV {
   background: #fff;
-  border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+  border-bottom: 1px solid rgba(0, 201, 255, 0.95);
   height: 96px;
   width: 100%;
   padding: 22px;
@@ -12916,7 +12916,7 @@ div._3bqe5 {
   &.HEYnN:before, &:hover:before {
     display: block;
     content: "";
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
     height: 4px;
     position: absolute;
     left: 0;
@@ -12980,7 +12980,7 @@ div._3bqe5 {
   height: 52px;
   transition: all .1s linear;
   &:hover {
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
     path[data-hover-invert=true] {
       fill: #fff;
     }
@@ -13104,7 +13104,7 @@ div._3bqe5 {
   white-space: nowrap;
   display: flex;
   align-items: center;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -13118,7 +13118,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   .BJ1bO {
-    border: 1px solid rgba(0, 149, 208, 0.98);
+    border: 1px solid rgba(0, 201, 255, 0.95);
     height: 32px;
     padding: 0 18px;
     display: flex;
@@ -13370,7 +13370,7 @@ div._3bqe5 {
   ._3ldas {
     margin: 0;
     padding: 18px 14px;
-    border-bottom: 1px solid rgba(0, 149, 208, 0.98);
+    border-bottom: 1px solid rgba(0, 201, 255, 0.95);
     ._1SDQT {
       margin: 9px 0 9px 18px;
       float: left;
@@ -13434,7 +13434,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 44px;
   line-height: 44px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -13480,7 +13480,7 @@ div._3bqe5 {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 @media screen and (max-width: 508px) {
@@ -13539,7 +13539,7 @@ div._3bqe5 {
 
 ._2jBYb {
   background: #fff;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   margin-top: 14px;
 }
 
@@ -13553,7 +13553,7 @@ div._3bqe5 {
 }
 
 ._1uw3W {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 14px;
@@ -13583,7 +13583,7 @@ div._3bqe5 {
 }
 
 ._346nx {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   border: 1px solid rgba(0, 8, 39, 0.86);
 }
 
@@ -13609,7 +13609,7 @@ div._3bqe5 {
 }
 
 .zOPku {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   position: relative;
   font-size: 28px;
   display: inline;
@@ -13636,7 +13636,7 @@ div._3bqe5 {
     width: 14px;
     content: "";
     height: 4px;
-    background: rgba(0, 149, 208, 0.98);
+    background: rgba(0, 201, 255, 0.95);
   }
 }
 
@@ -13647,7 +13647,7 @@ div._3bqe5 {
   width: 14px;
   content: "";
   height: 4px;
-  background: rgba(0, 149, 208, 0.98);
+  background: rgba(0, 201, 255, 0.95);
 }
 
 ._1COxF {
@@ -13672,8 +13672,8 @@ div._3bqe5 {
 }
 
 ._3HWOZ {
-  color: rgba(0, 149, 208, 0.98);
-  border-color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
+  border-color: rgba(0, 201, 255, 0.95);
 }
 
 ._3r333 {
@@ -13711,7 +13711,7 @@ div._3bqe5 {
 ._3QTtA {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
 }
 
 .EYkMg {
@@ -13750,7 +13750,7 @@ div._3bqe5 {
 
 .mXKwM {
   width: 100%;
-  border: 1px solid rgba(0, 149, 208, 0.98);
+  border: 1px solid rgba(0, 201, 255, 0.95);
   overflow: hidden;
   height: 0;
   padding-top: 56.25%;
@@ -13839,7 +13839,7 @@ div._3bqe5 {
 }
 
 ._3ev6- {
-  background-color: rgba(0, 149, 208, 0.98);
+  background-color: rgba(0, 201, 255, 0.95);
   svg {
     height: 14px;
     width: 18px;
@@ -13854,7 +13854,7 @@ div._3bqe5 {
   height: 100%;
   flex-grow: 1;
   padding: 14px;
-  background: rgba(32, 198, 89, 0.25);
+  background: rgba(21,205,114, 0.25);
   color: #f8f8f8;
   font-size: 14px;
   line-height: 18px;
@@ -14008,7 +14008,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 55px;
   line-height: 55px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   margin: 64px 0;
 }
 
@@ -14067,7 +14067,7 @@ div._3bqe5 {
 }
 
 ._2z54n {
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   display: flex;
 }
 
@@ -14108,7 +14108,7 @@ div._3bqe5 {
   width: 9px;
   height: 9px;
   border-radius: 9px;
-  background-color: #2788D3;
+  background-color: rgba(0, 201, 255, 0.85);
   margin-right: 14px;
 }
 
@@ -14119,7 +14119,7 @@ div._3bqe5 {
   svg {
     margin-right: 14px;
     path {
-      fill: rgba(0, 149, 208, 0.98);
+      fill: rgba(0, 201, 255, 0.95);
     }
   }
   .mCF2b {
@@ -14139,11 +14139,11 @@ div._3bqe5 {
   font-family: DriveTribe,Helvetica,sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border: 4px solid rgba(0, 149, 208, 0.98);
+  border: 4px solid rgba(0, 201, 255, 0.95);
   padding: 22px 0;
   text-align: center;
   cursor: pointer;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   width: 100%;
 }
 
@@ -14172,7 +14172,7 @@ div._3bqe5 {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 18px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   white-space: nowrap;
   &:first-child {
     padding-left: 0;
@@ -14207,7 +14207,7 @@ div._3bqe5 {
 
 ._2CSDm {
   font-weight: 700;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
 }
 
 ._37mnt {
@@ -14226,7 +14226,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 35px;
   line-height: 35px;
-  color: rgba(0, 149, 208, 0.98);
+  color: rgba(0, 201, 255, 0.95);
   padding-top: 35px;
 }
 

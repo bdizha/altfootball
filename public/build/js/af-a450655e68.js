@@ -68,18 +68,40 @@ $(function () {
     $('.owl-four').owlCarousel({
         loop: false,
         nav: true,
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    });
+
+    $('.owl-bases').owlCarousel({
+        loop: false,
+        nav: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            1000:{
+                items: 2
+            }
+        },
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    });
+
+    $('.owl-tags').owlCarousel({
+        loop: false,
+        nav: true,
         responsive:{
             0:{
                 items: 1
             },
             300:{
-                items: 2
+                items: 4
             },
             600:{
-                items: 3
+                items: 6
             },
             1000:{
-                items: 4
+                items: 8
             }
         },
         navContainerClass: '_2KkkC',
@@ -495,14 +517,11 @@ $(function () {
 
 $(function () {
 
-    var PostViewModel = function (params) {
+    var PagePostViewModel = function (params) {
         var self = this;
 
         self.post = params.post;
         self.isShowing = ko.observable(false);
-        self.showItem = params.show_item;
-
-        console.log("self.post: ");
 
         self.show = function () {
             self.isShowing(true);
@@ -513,11 +532,46 @@ $(function () {
             self.isShowing(false);
             self.showItem(false);
         };
+
+        self.init = function () {
+            console.log(params.post().slug, "posting");
+            var url = "/p/" + params.post().slug;
+            window.history.pushState({}, "", url);
+        }();
+    };
+
+    ko.components.register('page-post', {
+        viewModel: PagePostViewModel,
+        template: {element: 'page-post-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/11/12
+ */
+
+
+$(function () {
+
+    var PostViewModel = function (params) {
+        var self = this;
+
+        self.post = params.post;
+        self.isShowing = ko.observable(false);
+        self.showItem = params.show_item;
+        self.type = ko.observable('post');
+
+        self.show = function () {
+            self.isShowing(true);
+        };
+
+        self.hide = function () {
+            self.isShowing(false);
+        };
     };
 
     ko.components.register('post', {
         viewModel: PostViewModel,
-        template: { element: 'post-template' }
+        template: {element: 'post-template'}
     });
 });
 /**
@@ -749,6 +803,33 @@ $(function () {
     });
 });
 /**
+ * Created by batanayi on 2018/03/04
+ */
+
+
+$(function () {
+
+    var UserViewModel = function (params) {
+        var self = this;
+
+        self.user = params.user;
+        self.isShowing = ko.observable(false);
+
+        self.show = function () {
+            self.isShowing(true);
+        };
+
+        self.hide = function () {
+            self.isShowing(false);
+        };
+    };
+
+    ko.components.register('user', {
+        viewModel: UserViewModel,
+        template: {element: 'user-template'}
+    });
+});
+/**
  * Created by batanayi on 2017/08/19.
  */
 
@@ -962,9 +1043,27 @@ $(function () {
             self.showJoinForm(true);
         };
 
-        self.openItem = function () {
-            console.log("setting this value ::: ");
+        self.openItem = function (item) {
+            if (item.type() === "post") {
+                self.setPost(item.post);
+            }
+            else if (item.type === "base") {
+
+            }
+            else if (item.type === "user") {
+
+            }
+
             self.showItem(true);
+        };
+
+        self.closeItem = function () {
+            self.showItem(false);
+        };
+
+        self.post = ko.observable({});
+        self.setPost = function (item) {
+            self.post(item);
         };
 
         self.checkAuth = function () {
@@ -1003,7 +1102,6 @@ $(function () {
         };
 
         self.closeFanbaseForm = function () {
-            console.log('closing this form :: RootViewModel');
             self.showFanbaseForm(false);
         };
 
@@ -1012,9 +1110,7 @@ $(function () {
             $("#page-" + id).slideUp();
         };
 
-
         self.init = function () {
-            console.log("initializing functions :::: ");
             var pallets = $("._1SLoN");
 
             var colors = [
@@ -1029,41 +1125,10 @@ $(function () {
                 console.log("key vs value", key, pallet);
 
                 var random = Math.floor(Math.random() * colors.length);
-                // console.log("random :::: ", random);
-                // console.log("color :::: ", colors[random]);
-
                 $(pallet).addClass(colors[random]);
             });
 
         }();
-
-        // Sammy(function() {
-        //     this.get('/p/:slug', function() {
-        //         console.log('#paging --- #p/:slug');
-        //         self.setPage("post");
-        //     });
-        //
-        //     this.get('/u/:slug', function() {
-        //         console.log('#paging --- #u/:slug');
-        //         self.setPage("user");
-        //     });
-        //
-        //     this.get('/fanbases', function() {
-        //         console.log('#paging --- #fanbases');
-        //         self.setPage("user");
-        //     });
-        //
-        //     this.get('/f/:slug', function() {
-        //         console.log('#paging --- #f/:slug');
-        //         self.setPage("user");
-        //     });
-        //
-        //     this.get('', function() {
-        //         console.log('#paging --- #');
-        //         self.setPage("welcome");
-        //     });
-        //
-        // }).run();
     };
 
     ko.extenders.overlay = function (target, option) {

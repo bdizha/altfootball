@@ -64,6 +64,9 @@
                 @include('fanbase.templates.form')
                 @include('templates.follow')
                 @include('includes.styles')
+                @include('templates.page-post')
+                @include('templates.dribbles')
+                @include('templates.comments')
                 @yield('modal')
             </div>
         </div>

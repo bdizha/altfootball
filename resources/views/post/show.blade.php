@@ -68,7 +68,9 @@
                             </div>
                         </div>
                         <div class="_67FRT">
-                            {!! $post->getHtmlContent() !!}
+                            <div>
+                                {!! $post->getHtmlContent() !!}
+                            </div>
                             <div id="tackles" class="jwlFt _1zwKC">
                                 <div class="_1gLAu _1iE2V">
                                     <div class="_1-sfe">
@@ -170,8 +172,6 @@
             </div>
         </div>
     </div>
-    @include('templates.dribbles')
-    @include('templates.comments')
 @endsection
 
 @section('js')

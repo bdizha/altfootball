@@ -11,22 +11,19 @@ $(function () {
         self.post = params.post;
         self.isShowing = ko.observable(false);
         self.showItem = params.show_item;
-
-        console.log("self.post: ");
+        self.type = ko.observable('post');
 
         self.show = function () {
             self.isShowing(true);
-            self.showItem(true);
         };
 
         self.hide = function () {
             self.isShowing(false);
-            self.showItem(false);
         };
     };
 
     ko.components.register('post', {
         viewModel: PostViewModel,
-        template: { element: 'post-template' }
+        template: {element: 'post-template'}
     });
 });

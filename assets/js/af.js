@@ -68,18 +68,40 @@ $(function () {
     $('.owl-four').owlCarousel({
         loop: false,
         nav: true,
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    });
+
+    $('.owl-bases').owlCarousel({
+        loop: false,
+        nav: true,
+        responsive:{
+            0:{
+                items: 1
+            },
+            1000:{
+                items: 2
+            }
+        },
+        navContainerClass: '_2KkkC',
+        navClass: ['_1JesO', '_1JesO LmPde']
+    });
+
+    $('.owl-tags').owlCarousel({
+        loop: false,
+        nav: true,
         responsive:{
             0:{
                 items: 1
             },
             300:{
-                items: 2
+                items: 4
             },
             600:{
-                items: 3
+                items: 6
             },
             1000:{
-                items: 4
+                items: 8
             }
         },
         navContainerClass: '_2KkkC',

@@ -364,14 +364,11 @@ $(function () {
 
 $(function () {
 
-    var PostViewModel = function (params) {
+    var PagePostViewModel = function (params) {
         var self = this;
 
         self.post = params.post;
         self.isShowing = ko.observable(false);
-        self.showItem = params.show_item;
-
-        console.log("self.post: ");
 
         self.show = function () {
             self.isShowing(true);
@@ -382,11 +379,46 @@ $(function () {
             self.isShowing(false);
             self.showItem(false);
         };
+
+        self.init = function () {
+            console.log(params.post().slug, "posting");
+            var url = "/p/" + params.post().slug;
+            window.history.pushState({}, "", url);
+        }();
+    };
+
+    ko.components.register('page-post', {
+        viewModel: PagePostViewModel,
+        template: {element: 'page-post-template'}
+    });
+});
+/**
+ * Created by batanayi on 2017/11/12
+ */
+
+
+$(function () {
+
+    var PostViewModel = function (params) {
+        var self = this;
+
+        self.post = params.post;
+        self.isShowing = ko.observable(false);
+        self.showItem = params.show_item;
+        self.type = ko.observable('post');
+
+        self.show = function () {
+            self.isShowing(true);
+        };
+
+        self.hide = function () {
+            self.isShowing(false);
+        };
     };
 
     ko.components.register('post', {
         viewModel: PostViewModel,
-        template: { element: 'post-template' }
+        template: {element: 'post-template'}
     });
 });
 /**
@@ -615,6 +647,33 @@ $(function () {
     ko.components.register('terms', {
         viewModel: TermsViewModel,
         template: {element: 'terms-template'}
+    });
+});
+/**
+ * Created by batanayi on 2018/03/04
+ */
+
+
+$(function () {
+
+    var UserViewModel = function (params) {
+        var self = this;
+
+        self.user = params.user;
+        self.isShowing = ko.observable(false);
+
+        self.show = function () {
+            self.isShowing(true);
+        };
+
+        self.hide = function () {
+            self.isShowing(false);
+        };
+    };
+
+    ko.components.register('user', {
+        viewModel: UserViewModel,
+        template: {element: 'user-template'}
     });
 });
 /**

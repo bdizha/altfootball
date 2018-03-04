@@ -46,9 +46,27 @@ $(function () {
             self.showJoinForm(true);
         };
 
-        self.openItem = function () {
-            console.log("setting this value ::: ");
+        self.openItem = function (item) {
+            if (item.type() === "post") {
+                self.setPost(item.post);
+            }
+            else if (item.type === "base") {
+
+            }
+            else if (item.type === "user") {
+
+            }
+
             self.showItem(true);
+        };
+
+        self.closeItem = function () {
+            self.showItem(false);
+        };
+
+        self.post = ko.observable({});
+        self.setPost = function (item) {
+            self.post(item);
         };
 
         self.checkAuth = function () {
@@ -87,7 +105,6 @@ $(function () {
         };
 
         self.closeFanbaseForm = function () {
-            console.log('closing this form :: RootViewModel');
             self.showFanbaseForm(false);
         };
 
@@ -96,9 +113,7 @@ $(function () {
             $("#page-" + id).slideUp();
         };
 
-
         self.init = function () {
-            console.log("initializing functions :::: ");
             var pallets = $("._1SLoN");
 
             var colors = [
@@ -113,41 +128,10 @@ $(function () {
                 console.log("key vs value", key, pallet);
 
                 var random = Math.floor(Math.random() * colors.length);
-                // console.log("random :::: ", random);
-                // console.log("color :::: ", colors[random]);
-
                 $(pallet).addClass(colors[random]);
             });
 
         }();
-
-        // Sammy(function() {
-        //     this.get('/p/:slug', function() {
-        //         console.log('#paging --- #p/:slug');
-        //         self.setPage("post");
-        //     });
-        //
-        //     this.get('/u/:slug', function() {
-        //         console.log('#paging --- #u/:slug');
-        //         self.setPage("user");
-        //     });
-        //
-        //     this.get('/fanbases', function() {
-        //         console.log('#paging --- #fanbases');
-        //         self.setPage("user");
-        //     });
-        //
-        //     this.get('/f/:slug', function() {
-        //         console.log('#paging --- #f/:slug');
-        //         self.setPage("user");
-        //     });
-        //
-        //     this.get('', function() {
-        //         console.log('#paging --- #');
-        //         self.setPage("welcome");
-        //     });
-        //
-        // }).run();
     };
 
     ko.extenders.overlay = function (target, option) {
