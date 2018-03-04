@@ -68,6 +68,7 @@ $(function () {
     $('.owl-four').owlCarousel({
         loop: false,
         nav: true,
+        variableWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });
@@ -75,14 +76,7 @@ $(function () {
     $('.owl-bases').owlCarousel({
         loop: false,
         nav: true,
-        responsive:{
-            0:{
-                items: 1
-            },
-            1000:{
-                items: 2
-            }
-        },
+        variableWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });
@@ -90,20 +84,7 @@ $(function () {
     $('.owl-tags').owlCarousel({
         loop: false,
         nav: true,
-        responsive:{
-            0:{
-                items: 1
-            },
-            300:{
-                items: 4
-            },
-            600:{
-                items: 6
-            },
-            1000:{
-                items: 8
-            }
-        },
+        variableWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });
@@ -112,14 +93,7 @@ $(function () {
     $('.owl-three').owlCarousel({
         loop: false,
         nav: true,
-        responsive:{
-            0:{
-                items: 1
-            },
-            1000:{
-                items: 3
-            }
-        },
+        variableWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });
@@ -128,20 +102,7 @@ $(function () {
     $('.owl-five').owlCarousel({
         loop: false,
         nav: true,
-        responsive:{
-            0:{
-                items: 1
-            },
-            300:{
-                items: 2
-            },
-            600:{
-                items: 3
-            },
-            1000:{
-                items: 5
-            }
-        },
+        variableWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });

@@ -21,36 +21,39 @@
                     <div class="_1Y7kL">
                         <div class="_1veAI _1iE2V">
                             <div class="_1-sfe _29LD-">
-                                <div class="_23p6h">
-                                    <img data-bind="attr: { src: post().big_x, alt: post().title }">
-                                </div>
-                                <div class="sc-bwCtUz bgTWiC">
+                                <div class="HTKEr">
+                                    <div class="_23p6h">
+                                        <img data-bind="attr: { src: post().big_x, alt: post().title }">
+                                    </div>
+                                    <div class="sc-bwCtUz bgTWiC">
                                     <span class="sc-hrWEMg fneZyH">
                                         <div class="sc-eTuwsz dDnmGN">
                                             <div style="padding-bottom:100%;" class="_38L6D">
-                                                <img data-bind="attr: { src: post().fanbase.thumb_x, alt: post().fanbase.camel }" class="_214e9 b00q8" width="20" height="20">
+                                                <img data-bind="attr: { src: post().fanbase.thumb_x, alt: post().fanbase.camel }"
+                                                     class="_214e9 b00q8" width="20" height="20">
                                             </div>
                                         </div>
                                     </span>
-                                    <div class="sc-epnACN YkbCv" href="/f/searie-a">
-                                        <div class="_74oom">
-                                            <div class="_eeohz">
-                                                <span>@searie_a</span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                                     viewBox="0 0 18 18" class="_1z7Hy">
-                                                    <g fill="none" fill-rule="evenodd">
-                                                        <path fill="rgba(21,205,114, 0.95)"
-                                                              d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
-                                                        <path fill="rgba(255, 255, 255, 1)"
-                                                              d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                            <div class="_csp04">
-                                                <div class="_iuvin _ov9ai" href="/f/searie-a">
-                                                    <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
+                                        <div class="sc-epnACN YkbCv" href="/f/searie-a">
+                                            <div class="_74oom">
+                                                <div class="_eeohz">
+                                                    <span>@searie_a</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                                         viewBox="0 0 18 18" class="_1z7Hy">
+                                                        <g fill="none" fill-rule="evenodd">
+                                                            <path fill="rgba(21,205,114, 0.95)"
+                                                                  d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
+                                                            <path fill="rgba(255, 255, 255, 1)"
+                                                                  d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
+                                                        </g>
+                                                    </svg>
                                                 </div>
-                                                <span class="_2jvdf">Jan 20</span>
+                                                <div class="_csp04">
+                                                    <div class="_iuvin _ov9ai" href="/f/searie-a">
+                                                        <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
+                                                    </div>
+                                                    <span class="_2jvdf">Jan 20</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -65,9 +68,12 @@
                                                          href="http://altfootball.dev/p/chelsea-how-the-transfer-recruitment-process-works#tackles">
                                                         <span class="_35FcZ _13DRk">
                                                             <div class="_GSL7C">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1" width="24" height="24"
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                     viewBox="0 0 24 24" version="1.1" width="24"
+                                                                     height="24"
                                                                      class="_3gymQ">
-                                                                    <g fill="rgba(51, 74, 108, 0.65)" fill-rule="evenodd">
+                                                                    <g fill="rgba(51, 74, 108, 0.65)"
+                                                                       fill-rule="evenodd">
                                                                         <path d="M16 13.33H5.2a.76.76 0 0 0-.4.11l-3.3 1.99V1.5H16v11.83zM16.75 0h-16A.75.75 0 0 0 0 .75v16a.75.75 0 0 0 1.14.64l4.26-2.56h11.35c.41 0 .75-.33.75-.75V.75a.75.75 0 0 0-.75-.75z"></path>
                                                                         <path d="M4.75 6.48h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1m0 3h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1"></path>
                                                                     </g>
@@ -81,7 +87,9 @@
                                                     <div class="_8m6WC rF2QA">
                                                         <span class="_35FcZ _13DRk">
                                                             <div class="_GSL7C">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1" width="24" height="24">
+                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                     viewBox="0 0 24 24" version="1.1" width="24"
+                                                                     height="24">
                                                                     <g class="style-scope yt-icon">
                                                                         <path fill="rgba(51, 74, 108, 0.65)"
                                                                               d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"
@@ -147,7 +155,8 @@
                         <div id="tackles" class="jwlFt _1zwKC">
                             <div class="_1gLAu _1iE2V">
                                 <div class="_1-sfe">
-                                    <comments params='comments: post().comments, type_id: post().id, user: post().user, level: 0, root: $root, is_list: false'></comments>
+                                    <comments
+                                            params='comments: post().comments, type_id: post().id, user: post().user, level: 0, root: $root, is_list: false'></comments>
                                 </div>
                             </div>
                         </div>

@@ -792,9 +792,32 @@ button {
       -webkit-transform: translateX(-50%);
       ._1Q_Pu {
         max-width: 100%;
-        padding: 0;
+        padding: 22px 0;
         box-shadow: none;
         background: transparent;
+        .bgTWiC {
+          position: absolute;
+          bottom: 22px;
+          left: 0;
+          right: 0;
+          background: rgba(17, 102, 146, 0.35);
+          .dDnmGN {
+            margin-right: 0px;
+          }
+          padding: 0;
+          @media (max-width: 846px) {
+            margin: 22px 0 0;
+          }
+        }
+
+        .HTKEr {
+          position: relative;
+        }
+        ._67FRT {
+          @media (max-width: 846px) {
+            padding: 0;
+          }
+        }
       }
     }
   }
@@ -4641,8 +4664,7 @@ dribbles {
   color: #334a6b;
 }
 
-._34FTR,
-._2V52z {
+._34FTR {
   background: rgba(17, 102, 146, 0.085);
   .gEVQKf {
     .bgTWiC {
@@ -8053,7 +8075,7 @@ form {
   padding: 16px;
   background: rgba(17, 102, 146, 0.085);
   border-radius: 8px;
-  ._2OqId{
+  ._2OqId {
     padding: 16px 0;
   }
   ._35FcZ,
@@ -12918,7 +12940,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._1U_qv {
-    padding: 22px 0 22px 22px;
+    padding: 8px 0 0;
     overflow: hidden;
   }
 }
@@ -19371,6 +19393,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   color: rgba(0, 8, 39, 0.75);
   width: 100%;
+  padding-left: 22px;
   div {
     -webkit-box-align: stretch;
     -webkit-align-items: stretch;
@@ -19513,11 +19536,11 @@ nav._1R2o8 {
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.129412) 0px 1px 0.5px;
     overflow: visible;
-    ._3Xaa0{
+    ._3Xaa0 {
       background: rgba(0, 201, 255, 0.35);
     }
-    &:hover{
-      ._3Xaa0{
+    &:hover {
+      ._3Xaa0 {
         background: rgba(21, 205, 114, 0.15);
       }
     }
