@@ -57,11 +57,17 @@ $(function () {
 
             }
 
-            self.showItem(true);
+            self.closeItem();
+
+            setTimeout(function () {
+                self.showItem(true);
+            }, 300);
         };
 
         self.closeItem = function () {
             self.showItem(false);
+            var url = "/";
+            window.history.pushState({}, "", url);
         };
 
         self.post = ko.observable({});

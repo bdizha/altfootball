@@ -155,14 +155,16 @@
                         <div id="tackles" class="jwlFt _1zwKC">
                             <div class="_1gLAu _1iE2V">
                                 <div class="_1-sfe">
-                                    <comments
-                                            params='comments: post().comments, type_id: post().id, user: post().user, level: 0, root: $root, is_list: false'></comments>
+                                    <comments params='comments: post().comments, type_id: post().id, user: post().user, level: 0, root: $root, is_list: false'>
+                                    </comments>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <posts params="page: 0, fanbase: '', show_callback: openItem"></posts>
+                <div class="_34FTR">
+                    <posts params="page: 0, fanbase: '', show_callback: openItem"></posts>
+                </div>
             </div>
         </div>
     </div>

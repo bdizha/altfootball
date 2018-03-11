@@ -4,8 +4,7 @@
             <div class="sc-eTuwsz dDnmGN">
                 <div style="padding-bottom:100%;" class="_38L6D">
                     <img data-bind="attr: { alt: user.name , src: user.thumb_x }" role="presentation"
-                         class="_214e9 b00q8"
-                         width="20" height="20">
+                         class="_214e9 b00q8">
                 </div>
             </div>
         </span>

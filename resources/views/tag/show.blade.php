@@ -23,19 +23,9 @@
                 <div class="">
                     <div class="_1ht8_">
                         <div class="_3FaZ4">
-                            <div class="owl-carousel owl-five owl-theme">
+                            <div class="owl-carousel owl-theme">
                                 @foreach($bases as $k => $base)
-                                    <a class="_38Ked" href="/f/{{ $base->slug }}">
-                                        <div class="_271kZ">
-                                            <div class="">
-                                                <div class="_38L6D" style="padding-bottom: 100%;">
-                                                    <img alt="" role="presentation" src="{{ $base->small_x }}" class="_214e9 b00q8" width="200" height="200">
-                                                </div>
-                                            </div>
-                                            <button class="_1Szys _1MC-v _1h78h">Join</button>
-                                        </div>
-                                        <h3 class="_1G1nd">{{ $base->name }}</h3>
-                                    </a>
+                                    @include('fanbase.base')
                                 @endforeach
                             </div>
                         </div>
@@ -49,18 +39,10 @@
             </div>
         </div>
         <h3 class="_1BusK _3MbTo">Top Posts</h3>
-        <div class="_1RYG9">
-            <div id="feed">
-                <div>
-                    <div class="_2u6Ki _1iE2V">
-                        <div class="_3gFQj">
-                            <posts params='page: 0, fanbase: "", show_callback: openItem'></posts>
-                        </div>
-                        <div class="_3gFQj">
-                            <posts params='page: 1, fanbase: "", show_callback: openItem'></posts>
-                        </div>
-                    </div>
-                    <div class="_2L2jX"></div>
+        <div id="feed" class="_2zNwx">
+            <div class="sc-itybZL QJDdz">
+                <div class="sc-dTdPqK hQzEkt">
+                    <posts params="page: 0, fanbase: '', show_callback: openItem"></posts>
                 </div>
             </div>
         </div>

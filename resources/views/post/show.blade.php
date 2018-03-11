@@ -81,15 +81,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="_34FTR">
-                        <div class="_3VSm9 _3bVUr _2GMT0">
-                            <div class="_3zT4K">UP NEXT_</div>
-                            <ul>
-                                @foreach($trendingPosts as $trendingPost)
-                                    @include('post.item', ['post' => $trendingPost])
-                                @endforeach
-                            </ul>
-                        </div>
+                    <div class="_34FTR _3VSm9 _3bVUr _2GMT0">
+                        <div class="_3zT4K">UP NEXT_</div>
+                        <ul>
+                            @foreach($trendingPosts as $trendingPost)
+                                @include('post.item', ['post' => $trendingPost])
+                            @endforeach
+                        </ul>
                     </div>
                 </div>
             </div>

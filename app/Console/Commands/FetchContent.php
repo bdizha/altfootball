@@ -21,6 +21,7 @@ use App\Jobs\PSG;
 use App\Jobs\RealMadridJob;
 use App\Jobs\SearieAJob;
 use App\Jobs\SpanishFootball;
+use App\Jobs\TotalSportekJob;
 use Illuminate\Console\Command;
 
 class FetchContent extends Command
@@ -56,6 +57,12 @@ class FetchContent extends Command
      */
     public function handle()
     {
+        try {
+            dispatch(new TotalSportekJob());
+        } catch (\Exception $e) {
+
+        }
+
         try {
             dispatch(new LiverpoolJob());
         } catch (\Exception $e) {

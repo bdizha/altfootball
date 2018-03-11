@@ -25,7 +25,7 @@
                     <span class="sc-hMFtBS VacYB" data-bind="text: post.published_at"></span>
                 </div>
                 <h2 class="sc-hrWEMg eidVfh" data-bind="text: post.title_x"></h2>
-                <div class="sc-eTuwsz fxlLOH" data-bind="text: post.summary_x"></div>
+                <div class="sc-eTuwsz fxlLOH" data-bind="html: post.summary_x"></div>
                 <button class="sc-hORach jpXAka" eventid="Click" data-tracking="post - bump - add">
                     <div class="_1_VaP">
                         <svg width="24" height="23" viewBox="-2 -4 24 23">

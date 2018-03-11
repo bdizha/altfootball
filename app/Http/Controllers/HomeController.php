@@ -27,8 +27,14 @@ class HomeController extends Controller
         $date = Carbon::now()->subDays(7);
 
         $popularPosts = Post::orderBy('views', 'desc')
-            ->where('created_at', '>=', $date)
+//            ->where('created_at', '>=', $date)
             ->take(3)->get();
+
+        $recentPosts = Post::orderBy('views', 'desc')
+//            ->where('created_at', '>=', $date)
+            ->offset(3)
+            ->take(12)->get();
+
 
         $tags = Tag::withCount('posts')
             ->orderBy("posts_count", "DESC")
@@ -40,24 +46,18 @@ class HomeController extends Controller
             ->take(4)
             ->get();
 
-        $post = Post::with('user')
-            ->where('created_at', "<=", Carbon::now())
-            ->orderBy('created_at', 'desc')
-            ->limit(1)
-            ->first();
-
         $posts = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
-            ->where("id", "!=", $post->id)
+            ->offset(15)
             ->orderBy('created_at', 'desc')
             ->limit(6)
             ->get();
 
         return view('welcome', [
             'bases' => $bases,
+            'recentPosts' => $recentPosts,
             'popularPosts' => $popularPosts,
             'tags' => $tags,
-            'post' => $post,
             'posts' => $posts,
             'fans' => $fans,
             'user' => $this->getUserArray(),

@@ -10,7 +10,7 @@
     <div class="">
         <div>
             <div class="_1U_qv">
-                <div class="_2QjgM">
+                <div class="_2QjgM _GTYIO">
                     <div class="_14sEb _1z2cn">
                         <div class="_3ohNX">
                             <div class="_373gh">
@@ -40,15 +40,18 @@
                     </div>
                 </div>
             </div>
-            <a class="sc-jwKygS fibZwm" href="/p/{{ $post->slug }}"
-               style="background-image: url(/images/{{ $post->image }});">
-                <h1 class="sc-btzYZH cBqIJu">
-                    {{ str_limit($post->title, 45) }}
-                    <div class="sc-lhVmIH bfnJOq">
-                        <button class="_3OD4J _1yV5F _1MC-v _1h78h">READ NOW</button>
+            <div class="_1ht8E_ _GTYIO">
+                <div class="_3FaZ4E">
+                    <div class="owl-carousel owl-theme">
+                        @foreach($recentPosts as $post)
+                            <a class="sc-jwKygS _56FGY filter" href="/p/{{ $post->slug }}">
+                                <img alt="" role="presentation" src="{{ $post->thumb_x }}" class="b00q8" width="200"
+                                     height="200">
+                            </a>
+                        @endforeach
                     </div>
-                </h1>
-            </a>
+                </div>
+            </div>
             <div class="_1-0JF" style="display: none;">
                 <div class="_2jNUh _8kqds"></div>
                 <div class="_2_Chk">
@@ -58,16 +61,7 @@
                         <div class="VDPbh">
                             <div class="_1fZBx">
                                 @foreach($bases as $k => $base)
-                                    <a class="_pRC7 _46Jbt @if($k >= 6)_45VFC @endif" data-stamp="{{ $base->stamp }}"
-                                       href="/f/{{ $base->slug }}">
-                                        <div class="_3BoA_">
-                                            <div style="padding-bottom:100%;" class="_38L6D">
-                                                <img role="presentation" src="{{ $base->thumb_x }}" class="_214e9 b00q8"
-                                                     width="200" height="200">
-                                            </div>
-                                        </div>
-                                        <p class="_2mbtl">{{ $base->name }}</p>
-                                    </a>
+                                    @include('fanbase.base')
                                 @endforeach
                             </div>
                         </div>
@@ -132,24 +126,17 @@
                                 </div>
                                 <span class="sc-kvZOFW fTNgKg">+ See more</span>
                             </a>
-                            <ul class="sc-bbmXgH jOkXFw owl-carousel owl-bases owl-theme">
-                                @foreach($bases as $k => $base)
-                                    <li class="sc-hqyNC hcKELX" data-reactid="111">
-                                        <a class="sc-jbKcbu gnullG" href="/f/{{ $base->slug }}" data-reactid="112">
-                                            <div class="sc-dNLxif gSvadq" data-reactid="113">
-                                                <div style="padding-bottom:100%;" class="_38L6D" data-reactid="114">
-                                                    <img alt="{{ $base->name }}" role="presentation"
-                                                         src="{{ $base->thumb_x }}" class="_214e9 b00q8" width="160"
-                                                         height="160" data-reactid="115"/>
-                                                </div>
-                                            </div>
-                                            <h4 class="sc-jqCOkK dfpDYt" data-reactid="116">{{ $base->name }}</h4>
-                                            <div class="sc-uJMKN jbQyuy"
-                                                 data-reactid="117">{{ $base->description }}</div>
-                                        </a>
-                                    </li>
-                                @endforeach
-                            </ul>
+                            <div class="_1ht8_">
+                                <div class="_1ht8_">
+                                    <div class="_3FaZ4">
+                                        <div class="owl-carousel owl-five owl-theme">
+                                            @foreach($bases as $k => $base)
+                                                @include('fanbase.base')
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="sc-cmTdod iyxBpt" data-reactid="139"></div>
                     </div>

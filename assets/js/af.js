@@ -7,7 +7,7 @@ $(function () {
 
     $('a._2Q0fU, a._29zpU').on('click', function (e) {
 
-        if($(this).hasAttribute("onclick")){
+        if ($(this).hasAttribute("onclick")) {
             return false;
         }
         var
@@ -20,7 +20,7 @@ $(function () {
             ',location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1');
 
 
-        if($(this).parent().hasClass('_3rM3S')){
+        if ($(this).parent().hasClass('_3rM3S')) {
             $(this).parent().parent().addClass('_23ERU');
         }
 
@@ -30,27 +30,27 @@ $(function () {
         }
     });
 
-    var toogleShare = function(){
+    var toogleShare = function () {
         console.log("clicking");
 
         var sibling = $(this).siblings('._34TRY');
         var siblings = $('._34TRY');
-        if(sibling.hasClass("_23ERU")){
+        if (sibling.hasClass("_23ERU")) {
             siblings.addClass("_23ERU");
             sibling.removeClass("_23ERU");
         }
-        else{
+        else {
             siblings.addClass("_23ERU");
         }
     };
 
     $("._34-mC").on('click', toogleShare);
 
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         var fixable = $("._1YCPS");
         var fan = $("._2kQCw");
 
-        if(fixable.length > 0){
+        if (fixable.length > 0) {
 
             if (fixable.offset().top > 100) {
                 fixable.addClass("_210LR");
@@ -65,44 +65,9 @@ $(function () {
         }
     });
 
-    $('.owl-four').owlCarousel({
-        loop: false,
-        nav: true,
-        variableWidth: true,
-        navContainerClass: '_2KkkC',
-        navClass: ['_1JesO', '_1JesO LmPde']
-    });
-
-    $('.owl-bases').owlCarousel({
-        loop: false,
-        nav: true,
-        variableWidth: true,
-        navContainerClass: '_2KkkC',
-        navClass: ['_1JesO', '_1JesO LmPde']
-    });
-
-    $('.owl-tags').owlCarousel({
-        loop: false,
-        nav: true,
-        variableWidth: true,
-        navContainerClass: '_2KkkC',
-        navClass: ['_1JesO', '_1JesO LmPde']
-    });
-
-
-    $('.owl-three').owlCarousel({
-        loop: false,
-        nav: true,
-        variableWidth: true,
-        navContainerClass: '_2KkkC',
-        navClass: ['_1JesO', '_1JesO LmPde']
-    });
-
-
-    $('.owl-five').owlCarousel({
-        loop: false,
-        nav: true,
-        variableWidth: true,
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        autoWidth: true,
         navContainerClass: '_2KkkC',
         navClass: ['_1JesO', '_1JesO LmPde']
     });
