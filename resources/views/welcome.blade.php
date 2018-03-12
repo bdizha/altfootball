@@ -45,8 +45,7 @@
                     <div class="owl-carousel owl-theme">
                         @foreach($recentPosts as $post)
                             <a class="sc-jwKygS _56FGY filter" href="/p/{{ $post->slug }}">
-                                <img alt="" role="presentation" src="{{ $post->thumb_x }}" class="b00q8" width="200"
-                                     height="200">
+                                <img alt="" role="presentation" src="{{ $post->image }}" class="b00q8">
                             </a>
                         @endforeach
                     </div>
