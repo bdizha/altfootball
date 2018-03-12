@@ -58,7 +58,7 @@ class FetchContent extends Command
     public function handle()
     {
         try {
-            dispatch(new TotalSportekJob());
+//            dispatch(new TotalSportekJob());
         } catch (\Exception $e) {
 
         }
