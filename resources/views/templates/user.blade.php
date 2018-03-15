@@ -2,7 +2,7 @@
     <div class="sc-bwCtUz bgTWiC">
         <span class="sc-hrWEMg fneZyH">
             <div class="sc-eTuwsz dDnmGN">
-                <div style="padding-bottom:100%;" class="_38L6D">
+                <div  class="_38L6D">
                     <img data-bind="attr: { alt: user.name , src: user.thumb_x }" role="presentation"
                          class="_214e9 b00q8">
                 </div>
@@ -25,7 +25,9 @@
                     <div class="_iuvin _ov9ai" data-bind="attr: { href: _.isNull(user.fanbase) ? '/u/' +  user.slug : '/f/' + user.fanbase.slug }">
                         <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
                     </div>
+                    <!-- ko if: published_at.length > 0 -->
                     <span class="_2jvdf" data-bind="text: published_at"></span>
+                    <!-- /ko -->
                 </div>
             </div>
         </div>

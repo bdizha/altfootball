@@ -60,7 +60,7 @@
                         <div class="N3r_f">
                             <div class="_38L6D" style="padding-bottom: 100%;">
                                 <img alt="" role="presentation" src="{{ $user->thumb_x }}" class="_214e9 b00q8"
-                                     width="60" height="60">
+                                     >
                             </div>
                         </div>
                     </div>

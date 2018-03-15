@@ -1,13 +1,13 @@
 <template id="post-template">
     <li class="sc-dqBHgY gEVQKf" data-reactid="181">
-        <a class="sc-gxMtzJ ljjFes" data-bind="click: openItem.bind(post)">
+        <a class="sc-gxMtzJ ljjFes" data-bind="attr: { href: '/p/' + post.slug }">
             <div class="rEYTKJ"></div>
             <div class="sc-eXEjpC gESGAG" data-reactid="183">
                 <div class="sc-ibxdXY hKmwtp" data-reactid="184">
-                    <div style="padding-bottom:100%;" class="_38L6D" data-reactid="185">
+                    <div  class="_38L6D" data-reactid="185">
                         <figure class="filter">
                             <img alt="" role="presentation" data-bind="attr: { src: post.thumb_x }"
-                                 width="200" height="200">
+                                 >
                         </figure>
                     </div>
                     {{--<div class="_35KLTY"></div>--}}

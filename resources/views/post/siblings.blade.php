@@ -3,7 +3,7 @@
     <?php $post = $siblingPosts[$key] ?>
     <div class="_1XEbE">
         <div class="_1DRo">
-            <div class="_38L6D" style="padding-bottom: 50%;">
+            <div class="_38L6D" >
                 <img alt="{{ $post->title }}" role="presentation" src="{{ $post->small_x }}"
                      class="_214e9 b00q8">
             </div>

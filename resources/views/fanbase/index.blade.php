@@ -31,7 +31,7 @@
                                                 <div class="_3ta8l">
                                                     <div class="">
                                                         <div class="_38L6D" style="padding-bottom: 100%;">
-                                                            <img alt="" role="presentation" src="{{ $fanbase->big_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                            <img alt="" role="presentation" src="{{ $fanbase->big_x }}" class="_214e9 b00q8" >
                                                         </div>
                                                     </div>
                                                 </div>
@@ -69,7 +69,7 @@
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
                                                     </div>
                                                 </div>
                                             </div>
@@ -102,7 +102,7 @@
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
                                                     </div>
                                                 </div>
                                             </div>
@@ -138,7 +138,7 @@
                                                 <div class="_3ta8l">
                                                     <div class="">
                                                         <div class="_38L6D" style="padding-bottom: 100%;">
-                                                            <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                            <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
                                                         </div>
                                                     </div>
                                                 </div>
@@ -171,7 +171,7 @@
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
                                                     </div>
                                                 </div>
                                             </div>
@@ -204,7 +204,7 @@
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" width="200" height="200">
+                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
                                                     </div>
                                                 </div>
                                             </div>

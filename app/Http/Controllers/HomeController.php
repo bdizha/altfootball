@@ -25,16 +25,12 @@ class HomeController extends Controller
         $bases = Fanbase::orderBy('id', 'asc')->take(10)->get();
 
         $date = Carbon::now()->subDays(7);
-
         $popularPosts = Post::orderBy('views', 'desc')
-//            ->where('created_at', '>=', $date)
-            ->take(3)->get();
-
-        $recentPosts = Post::orderBy('views', 'desc')
-//            ->where('created_at', '>=', $date)
-            ->offset(3)
+            ->where('created_at', '>=', $date)
             ->take(12)->get();
 
+        $recentPosts = Post::orderBy('created_at', 'desc')
+            ->take(12)->get();
 
         $tags = Tag::withCount('posts')
             ->orderBy("posts_count", "DESC")
@@ -48,7 +44,7 @@ class HomeController extends Controller
 
         $posts = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
-            ->offset(15)
+            ->offset(16)
             ->orderBy('created_at', 'desc')
             ->limit(6)
             ->get();

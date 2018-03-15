@@ -23,7 +23,7 @@
                     <button class="_2lkdt" type="submit" data-bind="enable: canSubmitComment" disabled="">
                         <span data-icon="send" class="">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                                <path fill="rgba(0, 201, 255, 0.85)" fill-opacity=".45" d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path>
+                                <path fill="rgb(107, 203, 239)" fill-opacity=".45" d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path>
                             </svg>
                         </span>
                     </button>
@@ -31,7 +31,7 @@
                 <div class="_3FA_l">
                     <div class="_29E8b">
                         <label for="media-upload" class="NOB1F">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="rgba(0, 201, 255, 0.85)" fill-opacity=".5" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="rgb(107, 203, 239)" fill-opacity=".5" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"></path></svg>
                         </label>
                         <input type="file" name="media-upload" id="media-upload" data-bind="fileInput: fileData" accept="image/*">
                     </div>
@@ -42,7 +42,7 @@
     <!-- /ko -->
     <ul class="_1RyqV" data-bind="foreach: comments(), visible: comments().length > 0">
         <li class="gEjmr" data-bind="attr: { id: 'comment-' + id }">
-            <user params="user: user"></user>
+            <user params="user: user, published_at: published_at"></user>
             <div class="_2OqId">
                 <div class="_FT34Y"></div>
                 <div class="_KL89E" data-bind="html: html_content"></div>
@@ -58,10 +58,7 @@
                 </svg>
             </div>
             <div class="BNBMP">
-                <div class="_1aSFb" data-bind="text: published_at"></div>
-                <div class="_22SkP">
-                    <button  data-bind="click: $parent.reply">Reply</button>
-                </div>
+                <button class="_qv64e _GHIYR" data-bind="click: $parent.reply">Reply</button>
             </div>
             <div class="_55ghi">
                 <reply-form params='comment: $data, user: user, callback: $parent.update'></reply-form>
@@ -83,28 +80,37 @@
 <template id='reply-form-template'>
     <div class="ivfOh _3ZzkS">
         <form class="_33rbn ODDw0" data-bind="submit: saveReply">
-            <div data-bind="fileDrag: fileData">
-                <div class="sc-bdVaJa fBUmFc">
-                    <div>
-                        <textarea placeholder="What are your thoughts?" data-bind="value: replyText, valueUpdate: 'afterkeyup'" class="_3fi2B _2u-lb"></textarea>
-                    </div>
-                    <img style="height: 100px;" class="b00q8" data-bind="attr: { src: fileData().dataURL }, visible: fileData().dataURL">
+            <div data-bind="fileDrag: fileData" class="filedrag">
+                <div class="_3hgGE" data-bind="visible: fileData().dataURL">
+                    <button class="_1Zj5n _1PzVp" type="button">
+                        <svg width="10" height="10">
+                            <path fill="none" stroke="rgba(51, 74, 108, 0.65)" stroke-linecap="square" stroke-width="2" d="M1.64 1.6L8.3 8.26M8.16 1.6L1.51 8.26"></path>
+                        </svg>
+                    </button>
+                    <img class="b00q8" data-bind="attr: { src: fileData().dataURL }, visible: fileData().dataURL">
                 </div>
-                <div class="_3FA_l">
-                    <div class="_2A7z5 _29E8b">
-                        <label for="media-upload" class="NOB1F">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="21" viewBox="0 0 27 21">
-                                <g fill="none" fill-rule="evenodd">
-                                    <path stroke="rgba(51, 74, 108, 0.65)" stroke-width="1.8" d="M9.93 1.32l-2.18 3.5H1.8c-.5 0-.9.4-.9.9V19.2c0 .5.4.9.9.9h22.9c.5 0 .9-.4.9-.9V5.72c0-.5-.4-.9-.9-.9h-5.95l-2.18-3.5A.9.9 0 0 0 15.8.9h-5.1a.9.9 0 0 0-.77.42z"></path>
-                                    <ellipse cx="13.25" cy="12.1" stroke="rgba(51, 74, 108, 0.65)" stroke-width="1.8" rx="5.19" ry="5.15"></ellipse>
-                                    <path fill="rgba(51, 74, 108, 0.65)" d="M20.95 8.9a.9.9 0 1 0 0-1.78c-.5 0-.9.4-.9.89s.4.89.9.89"></path>
-                                </g>
-                            </svg>
-                        </label>
-                        <input type="file" name="media-upload" id="media-upload" data-bind="fileInput: fileData" accept="image/*" />
+                <div class="_3oju3">
+                    <div class="_2bXVy">
+                        <div tabindex="-1" class="_3F6QL _2WovP">
+                            <textarea placeholder="Type a response..." class="_2S1VP" data-bind="value: replyText, valueUpdate: 'afterkeyup', event: { focus: checkAuth }" contenteditable="true" data-tab="1" dir="ltr" spellcheck="true">Type a response</textarea>
+                        </div>
                     </div>
                     <button class="_2LRWs _1kqns" data-bind="click: cancel" type="button">Cancel</button>
-                    <button type="submit" class="_1kqns" data-bind="enable: canSubmitReply">Post</button>
+                    <button class="_2lkdt" type="submit" data-bind="enable: canSubmitReply" disabled="">
+                        <span data-icon="send" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="rgb(107, 203, 239)" fill-opacity=".45" d="M1.101 21.757L23.8 12.028 1.101 2.3l.011 7.912 13.623 1.816-13.623 1.817-.011 7.912z"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="_3FA_l">
+                    <div class="_29E8b">
+                        <label for="media-upload" class="NOB1F">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="rgb(107, 203, 239)" fill-opacity=".5" d="M1.816 15.556v.002c0 1.502.584 2.912 1.646 3.972s2.472 1.647 3.974 1.647a5.58 5.58 0 0 0 3.972-1.645l9.547-9.548c.769-.768 1.147-1.767 1.058-2.817-.079-.968-.548-1.927-1.319-2.698-1.594-1.592-4.068-1.711-5.517-.262l-7.916 7.915c-.881.881-.792 2.25.214 3.261.959.958 2.423 1.053 3.263.215l5.511-5.512c.28-.28.267-.722.053-.936l-.244-.244c-.191-.191-.567-.349-.957.04l-5.506 5.506c-.18.18-.635.127-.976-.214-.098-.097-.576-.613-.213-.973l7.915-7.917c.818-.817 2.267-.699 3.23.262.5.501.802 1.1.849 1.685.051.573-.156 1.111-.589 1.543l-9.547 9.549a3.97 3.97 0 0 1-2.829 1.171 3.975 3.975 0 0 1-2.83-1.173 3.973 3.973 0 0 1-1.172-2.828c0-1.071.415-2.076 1.172-2.83l7.209-7.211c.157-.157.264-.579.028-.814L11.5 4.36a.572.572 0 0 0-.834.018l-7.205 7.207a5.577 5.577 0 0 0-1.645 3.971z"></path></svg>
+                        </label>
+                        <input type="file" name="media-upload" id="media-upload" data-bind="fileInput: fileData" accept="image/*">
+                    </div>
                 </div>
             </div>
         </form>

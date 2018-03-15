@@ -2028,11 +2028,11 @@
 }
 
 .blue-grey.darken-4 {
-  background-color: rgba(0, 201, 255, 0.85) !important;
+  background-color: rgb(107, 203, 239) !important;
 }
 
 .blue-grey-text.text-darken-4 {
-  color: rgba(0, 201, 255, 0.85) !important;
+  color: rgb(107, 203, 239) !important;
 }
 
 .grey {

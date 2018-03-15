@@ -1,9 +1,9 @@
 <div class="sc-bwCtUz bgTWiC">
     <span class="sc-hrWEMg fneZyH">
         <div class="sc-eTuwsz dDnmGN">
-            <div style="padding-bottom:100%;" class="_38L6D">
+            <div  class="_38L6D">
                 <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->thumb_x }}"
-                     class="_214e9 b00q8" width="20" height="20">
+                     class="_214e9 b00q8" >
             </div>
         </div>
     </span>

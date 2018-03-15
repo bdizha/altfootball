@@ -129,7 +129,7 @@
                                 <div class="_2lssz">
                                     <div class="_38L6D" style="padding-bottom: 100%;">
                                         <img alt="" role="presentation" src="{{ $fanbase->thumb_x }}"
-                                             class="_214e9 b00q8" width="200" height="200">
+                                             class="_214e9 b00q8" >
                                     </div>
                                 </div>
                             </div>

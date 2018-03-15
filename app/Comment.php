@@ -1,9 +1,11 @@
 <?php
 
 namespace App;
+
+use Auth;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
-use Auth;
+
 class Comment extends Model
 {
     /**
@@ -64,6 +66,30 @@ class Comment extends Model
 
     public function getPublishedAtAttribute()
     {
-        return Carbon::parse($this->created_at)->diffForHumans();
+        $createdAt = Carbon::parse($this->created_at);
+        $lastMonth = Carbon::now()->subMonth(1);
+        $now = Carbon::now()->subMonth(1);
+
+        $updatedAt = $createdAt->diffForHumans(null, true);
+
+        $updatedAt = str_replace("hours", "h", $updatedAt);
+        $updatedAt = str_replace("hour", "h", $updatedAt);
+        $updatedAt = str_replace("minutes", "m", $updatedAt);
+        $updatedAt = str_replace("minute", "m", $updatedAt);
+        $updatedAt = str_replace("weeks", "w", $updatedAt);
+        $updatedAt = str_replace("week", "w", $updatedAt);
+        $updatedAt = str_replace("days", "d", $updatedAt);
+        $updatedAt = str_replace("day", "d", $updatedAt);
+        $updatedAt = str_replace(" ", "", $updatedAt);
+
+        if ($lastMonth->gt($createdAt)) {
+            $updatedAt = $createdAt->format("M d");
+        }
+
+        if (!$createdAt->isSameYear($now)) {
+            $updatedAt = $createdAt->format("d M Y");
+        }
+
+        return $updatedAt;
     }
 }

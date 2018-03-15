@@ -80,7 +80,7 @@
                                         <div class="_1Bm3M">david jones</div>
                                         <div class="_25jNX X4CNn">
                                             <div class="N3r_f">
-                                                <div style="padding-bottom:100%;" class="_38L6D"></div>
+                                                <div  class="_38L6D"></div>
                                             </div>
                                             <!-- react-empty: 39 -->
                                         </div>

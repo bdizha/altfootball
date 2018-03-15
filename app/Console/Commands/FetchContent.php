@@ -21,7 +21,7 @@ use App\Jobs\PSG;
 use App\Jobs\RealMadridJob;
 use App\Jobs\SearieAJob;
 use App\Jobs\SpanishFootball;
-use App\Jobs\TotalSportekJob;
+use App\Post;
 use Illuminate\Console\Command;
 
 class FetchContent extends Command
@@ -57,6 +57,9 @@ class FetchContent extends Command
      */
     public function handle()
     {
+
+        Post::where("content", '')->delete();
+
         try {
 //            dispatch(new TotalSportekJob());
         } catch (\Exception $e) {

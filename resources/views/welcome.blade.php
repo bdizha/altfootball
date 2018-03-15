@@ -45,7 +45,7 @@
                     <div class="owl-carousel owl-theme">
                         @foreach($recentPosts as $post)
                             <a class="sc-jwKygS _56FGY filter" href="/p/{{ $post->slug }}">
-                                <img alt="" role="presentation" src="/images/{{ $post->image }}" class="b00q8">
+                                <img alt="" role="presentation"  src="{{ $post->thumb_x }}">
                             </a>
                         @endforeach
                     </div>
@@ -74,7 +74,7 @@
                                     <div class="_1nAwr">
                                         <div class="WCfW6">
                                             <div class="_1ZxE5">
-                                                <div style="padding-bottom:100%;" class="_38L6D">
+                                                <div  class="_38L6D">
                                                     <img alt="{{ $post->title }}" role="presentation"
                                                          src="{{ $post->thumb_x }}" class="_214e9 b00q8">
                                                 </div>
@@ -99,7 +99,7 @@
                                 <a class="_Kj1Z _3JzN1" href="/u/{{ $fan->slug }}">
                                     <div class="_25jNX" style="width:66px;height:66px;">
                                         <div class="N3r_f">
-                                            <div style="padding-bottom:100%;" class="_38L6D">
+                                            <div  class="_38L6D">
                                                 <img alt="{{ $fan->name }}" role="presentation"
                                                      src="{{ $fan->thumb_x }}" class="_214e9 b00q8">
                                             </div>

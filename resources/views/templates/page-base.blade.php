@@ -6,7 +6,7 @@
                 <div class="sc-hXRMBi bAHZak">
                     <div class="_38L6D" style="padding-bottom: 100%;">
                         <img alt="" role="presentation" data-bind="attr: { src: post.thumb_x }" class="_214e9 b00q8"
-                             width="200" height="200">
+                             >
                     </div>
                 </div>
             </div>
@@ -17,7 +17,7 @@
                             <div class="_38L6D" style="padding-bottom: 100%;">
                                 <img alt="" role="presentation"
                                      src="https://graph.facebook.com/10211548695939804/picture?type=square&amp;width=100&amp;height=100"
-                                     class="_214e9 b00q8" width="20" height="20">
+                                     class="_214e9 b00q8" >
                             </div>
                         </div>
                         <span class="sc-esOvli fEsEXJ" data-bind="text: post.user.camel"></span></span>

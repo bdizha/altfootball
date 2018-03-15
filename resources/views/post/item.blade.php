@@ -3,9 +3,9 @@
         <div class="rEYTKJ"></div>
         <div class="sc-eXEjpC gESGAG" data-reactid="183">
             <div class="sc-ibxdXY hKmwtp" data-reactid="184">
-                <div style="padding-bottom:100%;" class="_38L6D" data-reactid="185">
+                <div  class="_38L6D" data-reactid="185">
                     <img alt="{{ $post->title }}" role="presentation" src="{{ $post->thumb_x }}" role="presentation"
-                         class="_214e9 b00q8" width="200" height="200"/>
+                         class="_214e9 b00q8" />
                 </div>
             </div>
         </div>

@@ -86,7 +86,7 @@
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
                                                         <img alt="" role="presentation"
                                                              src="https://graph.facebook.com/10211548695939804/picture?type=square&amp;width=200&amp;height=200"
-                                                             class="_214e9 b00q8" width="60" height="60">
+                                                             class="_214e9 b00q8" >
                                                     </div>
                                                 </div>
                                             </div>
