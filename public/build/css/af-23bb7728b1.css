@@ -1003,7 +1003,6 @@ svg:hover path {
 }
 
 ._56FGY {
-  width: 200px;
   height: 200px;
   display: block;
   background-repeat: no-repeat;
@@ -8312,6 +8311,19 @@ form .M13JP:focus {
   margin-top: 24px;
 }
 
+.ivfOh.active {
+  background: rgba(0, 0, 0, 0.5);
+  display: block;
+  position: fixed;
+  overflow: auto;
+  overflow-x: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+}
+
 @media screen and (max-width: 508px) {
   .ivfOh {
     background: #FFFFFF;
@@ -8367,6 +8379,15 @@ form .M13JP:focus {
   clear: both;
   content: "";
   display: block;
+}
+
+.ODDw0.active {
+  max-width: 600px;
+  position: absolute;
+  width: 100%;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 ._1jiMH {
@@ -12092,7 +12113,6 @@ div._3bqe5 > div {
 .grsTy {
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   font-size: 32px;
   line-height: 28px;
 }
@@ -13954,6 +13974,11 @@ div._3bqe5 > div {
 
 .owl-carousel .owl-stage-outer {
   overflow: hidden;
+}
+
+._3FaZ4E .owl-carousel .owl-item img {
+  height: 200px;
+  width: auto;
 }
 
 @media screen and (max-width: 508px) {
@@ -20930,7 +20955,7 @@ nav._1R2o8 {
 .YkbCv ._74oom ._csp04 ._ov9ai {
   display: block;
   position: absolute;
-  right: 16px;
+  right: -6px;
   top: 0;
 }
 
@@ -20975,12 +21000,16 @@ nav._1R2o8 {
 }
 
 .hQzEkt .gEVQKf .ljjFes {
-  background: transparent;
   border-width: 0;
 }
 
 .hQzEkt .gEVQKf .ljjFes .bcqOPV {
   width: 100%;
+  padding-right: 22px;
+}
+
+.hQzEkt .gEVQKf .ljjFes .bcqOPV .fPOHUM {
+  display: none;
 }
 
 .hQzEkt .gEVQKf .rEYTKJ {

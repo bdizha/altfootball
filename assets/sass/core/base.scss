@@ -915,7 +915,6 @@ svg {
 }
 
 ._56FGY {
-  width: 200px;
   height: 200px;
   display: block;
   background-repeat: no-repeat;
@@ -11338,7 +11337,6 @@ div._3bqe5 {
 .grsTy {
   font-family: $font_sans;
   font-weight: 700;
-  text-transform: uppercase;
   font-size: 32px;
   line-height: 28px;
 }
@@ -13032,6 +13030,15 @@ div._3bqe5 {
 .owl-carousel {
   .owl-stage-outer {
     overflow: hidden;
+  }
+}
+
+._3FaZ4E {
+  .owl-carousel {
+    .owl-item img {
+      height: 200px;
+      width: auto;
+    }
   }
 }
 
@@ -19584,7 +19591,7 @@ nav._1R2o8 {
       ._ov9ai {
         display: block;
         position: absolute;
-        right: 16px;
+        right: -6px;
         top: 0;
         @media (max-width: 846px) {
           display: none;
@@ -19627,10 +19634,13 @@ nav._1R2o8 {
     box-shadow: rgba(0, 0, 0, 0.129412) 0px 1px 0.5px;
     overflow: visible;
     .ljjFes {
-      background: transparent;
       border-width: 0;
       .bcqOPV {
         width: 100%;
+        padding-right: 22px;
+        .fPOHUM {
+          display: none;
+        }
       }
     }
     .rEYTKJ {

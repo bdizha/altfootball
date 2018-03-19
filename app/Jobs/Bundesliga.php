@@ -91,6 +91,7 @@ class Bundesliga extends NewsJob
                         $post["image"] = $ogImage;
 
                         $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
+                        $post['title'] = str_replace(" | bundesliga.com", "", $post['title']);
 
                         $dateRaw = $data->filter('time[class="timeago"]')->attr('datetime');
 

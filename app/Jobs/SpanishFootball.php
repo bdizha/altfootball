@@ -95,6 +95,7 @@ class SpanishFootball extends NewsJob
                         $post["image"] = $ogImage;
 
                         $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
+                        $post['title'] = str_replace(" - MARCA in English", "", $post['title']);
 
                         $dateRaw = $data->filter('meta[property="article:modified_time"]')->attr('content');
 
