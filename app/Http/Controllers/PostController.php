@@ -47,7 +47,7 @@ class PostController extends Controller
 
         $trendingPosts = Post::where("id", "!=", $post->id)
             ->orderBy("posts.views", "DESC")
-            ->where("created_at", ">", Carbon::now()->subWeek(1))
+//            ->where("created_at", ">", Carbon::now()->subWeek(1))
             ->limit(floor($contentLength / 4000) + 20)
             ->get();
 

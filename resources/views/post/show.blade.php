@@ -18,11 +18,11 @@
                         <div class="_1Y7kL">
                             <div class="_1veAI _1iE2V">
                                 <div class="_1-sfe _29LD-">
+                                    @include('post.user')
                                     <div class="_23p6h">
                                         <img src="http://altfootball.com/images/{{ $post->image }}"
                                              alt="{{ $post->title }}"/>
                                     </div>
-                                    @include('post.user')
                                     <div class="_76TYH">
                                         <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
                                         @if(false)
@@ -38,8 +38,21 @@
                                         @endif
                                         <div class="_1Fx1P _1iE2V _1Ov3j">
                                             <div class="_1-sfe CDTi0">
-                                                <div class="_1l_wG _29Okg">
-                                                    @include('post.actions')
+                                                <div class="imgSwy">
+                                                    <div class="sc-lkqHmb jPrmng">
+                                                        @include('post.actions')
+                                                    </div>
+                                                    <div class="sc-krvtoX hzEOQv">
+                                                        <button class="sc-dUjcNx kXXKHw" data-tracking="post - tooltip - opened">
+                                                            <div class="_32tSU">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 3 17" class="_32tSU">
+                                                                    <g fill="rgba(51, 74, 108, 0.75)" fill-rule="evenodd">
+                                                                        <path d="M2.2.69a1.15 1.15 0 1 1-2.1.92A1.15 1.15 0 0 1 2.2.7M2.2 7.87a1.15 1.15 0 1 1-2.1.92 1.15 1.15 0 0 1 2.1-.92M2.2 15.04a1.15 1.15 0 1 1-2.1.93 1.15 1.15 0 0 1 2.1-.93"></path>
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                                 <div class="_3o2ca">
                                                     <a class="_2Q0fU p1Di1"

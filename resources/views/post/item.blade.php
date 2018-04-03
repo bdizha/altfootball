@@ -1,5 +1,5 @@
 <li class="sc-dqBHgY gEVQKf" data-reactid="181">
-    <a class="sc-gxMtzJ ljjFes" href="/p/{{ $post->slug }}">
+    <div class="sc-gxMtzJ ljjFes">
         <div class="rEYTKJ"></div>
         <div class="sc-eXEjpC gESGAG" data-reactid="183">
             <div class="sc-ibxdXY hKmwtp" data-reactid="184">
@@ -12,8 +12,7 @@
         <div class="sc-dfVpRl bcqOPV">
             @include('post.user')
             <h2 class="sc-esjQYD fPOHUM">{{ $post->title_x }}</h2>
-            <div class="sc-kIPQKe jzIbtI">{{ $post->summary_x }}</div>
-            @include('post.actions')
+            <a class="sc-kIPQKe jzIbtI" href="/p/{{ $post->slug }}">{{ $post->summary_x }}</a>
         </div>
-    </a>
+    </div>
 </li>

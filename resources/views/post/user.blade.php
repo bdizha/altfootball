@@ -1,15 +1,15 @@
 <div class="sc-bwCtUz bgTWiC">
     <span class="sc-hrWEMg fneZyH">
         <div class="sc-eTuwsz dDnmGN">
-            <div  class="_38L6D">
+            <a class="_38L6D" href="/f/{{ $post->fanbase->slug }}">
                 <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->thumb_x }}"
                      class="_214e9 b00q8" >
-            </div>
+            </a>
         </div>
     </span>
-    <div class="sc-epnACN YkbCv" href="/f/{{ $post->fanbase->slug }}">
+    <div class="sc-epnACN YkbCv">
         <div class="_74oom">
-            <div class="_eeohz">
+            <a class="_eeohz" href="/f/{{ $post->fanbase->slug }}">
                 <span>{{ $post->fanbase->camel }}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 18 18"
                      class="_1z7Hy">
@@ -19,7 +19,7 @@
                               d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path>
                     </g>
                 </svg>
-            </div>
+            </a>
             <div class="_csp04">
                 <div class="_iuvin _ov9ai" href="/f/{{ $post->fanbase->slug }}">
                     <button class="_qv64e _iokts _4tgw8 _njrw0">Follow</button>
