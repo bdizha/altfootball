@@ -4644,6 +4644,9 @@ dribbles {
 
 ._2GMT0 {
   width: 428px;
+  @media screen and (max-width: 508px) {
+    width: 100%;
+  }
 }
 
 ._3bVUr {
@@ -8105,7 +8108,7 @@ form {
     top: 11px;
     right: 33px;
   }
-  .WiM0L{
+  .WiM0L {
     width: 33px;
     height: 33px;
     position: absolute;
@@ -9889,6 +9892,14 @@ div._3bqe5 {
 ._3wPPl {
   position: relative;
   padding-left: 0;
+  @media screen and (max-width: 508px) {
+    .bgTWiC {
+      .dDnmGN{
+        width: 36px;
+        height: 36px;
+      }
+    }
+  }
 }
 
 ._3t1OC {
@@ -19400,24 +19411,20 @@ nav._1R2o8 {
 
 @media (max-width: 586px) {
   .gESGAG {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     margin-right: 22px;
   }
 }
 
 @media (max-width: 508px) {
   .gESGAG {
-    width: 130px;
-    height: 130px;
     margin-right: 22px;
   }
 }
 
 @media (max-width: 326px) {
   .gESGAG {
-    width: 110px;
-    height: 110px;
     margin-right: 22px;
   }
 }
@@ -19566,6 +19573,7 @@ nav._1R2o8 {
       -ms-flex-direction: row;
       flex-direction: row;
       max-width: 100%;
+      display: flex;
       color: $color_light_blue;
       margin-right: 10px;
       font-weight: 700;
@@ -19705,8 +19713,8 @@ nav._1R2o8 {
         .gESGAG {
           margin-right: 0;
         }
-        .bcqOPV{
-          .bgTWiC{
+        .bcqOPV {
+          .bgTWiC {
             margin-top: 11px;
             position: static;
             top: auto;
