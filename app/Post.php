@@ -34,7 +34,7 @@ class Post extends Model
 
     protected $wordsPerMinute = 170;
 
-    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'title_x', 'summary_x', 'has_dribble', 'hide', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x', 'url_x'];
+    protected $appends = ['comments', 'limited_comments', 'dribbles', 'published_at', 'title_x', 'summary_x', 'content_array', 'content_x', 'has_dribble', 'hide', 'fanbase', 'share_url', 'reading_time', 'small_x', 'thumb_x', 'big_x', 'url_x'];
 
     public function getPublishedAtAttribute()
     {
@@ -153,9 +153,36 @@ class Post extends Model
         return str_limit($this->title, 56);
     }
 
+    protected $contentArray = [];
+    protected $contentX = "";
+    protected $contentIndex = 0;
+    protected $contentCurrent = "";
+
     public function getSummaryXAttribute()
     {
         return str_limit($this->summary, 400);
+    }
+
+    protected function recursiveString($limit = 556)
+    {
+        $currentCurrent = str_limit(str_replace($this->contentCurrent, "", $this->content), $limit, "");
+        if (empty($currentCurrent)) {
+            return;
+        } else {
+            $this->contentCurrent = $currentCurrent;
+            $this->contentArray[] = $currentCurrent;
+        }
+    }
+
+    public function getContentXAttribute()
+    {
+        $this->recursiveString();
+        return $this->contentArray[0] . "...";
+    }
+
+    public function getContentArrayAttribute()
+    {
+        return $this->contentArray;
     }
 
     /**
