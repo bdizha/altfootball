@@ -335,7 +335,7 @@ button {
 ::-webkit-input-placeholder,
 ::-moz-placeholder,
 :-ms-input-placeholder {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 .bnINm {
@@ -596,7 +596,7 @@ button {
 
 ._3Ej8o {
   border: 0;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 .aYiOF {
@@ -703,7 +703,7 @@ button {
 }
 
 .d25Pz {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._35Phm {
@@ -1053,7 +1053,7 @@ form .b00q8 {
 
 ._1fTaL ._16KIM {
   transform: translateY(-18px) scale(0.85) translateZ(0);
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._1fTaL ._2LSh0 {
@@ -1121,7 +1121,7 @@ form._2rf1 ._1u7op {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background: rgba(60, 179, 113, 0.85);
+  background: rgb(153, 173, 183);
 }
 
 .vf_FQ {
@@ -1661,7 +1661,7 @@ form._2rf1 ._1u7op {
 }
 
 ._23p6h ._3Xaa0 {
-  background: rgba(60, 179, 113, 0.85);
+  background: rgb(153, 173, 183);
 }
 
 .YRuUa {
@@ -2351,7 +2351,7 @@ form._2rf1 ._1u7op {
 
 .NOB1F[disabled] {
   cursor: default;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 .NOB1F[disabled] svg path {
@@ -2392,7 +2392,7 @@ form._2rf1 ._1u7op {
   padding-left: 12px;
   height: 44px;
   margin-bottom: 0;
-  placeholder-color: #95a0af;
+  placeholder-color: rgb(153, 173, 183);
 }
 
 ._26cuW {
@@ -2444,7 +2444,7 @@ form._2rf1 ._1u7op {
   padding-left: 12px;
   height: auto;
   margin-bottom: 0;
-  placeholder-color: #95a0af;
+  placeholder-color: rgb(153, 173, 183);
 }
 
 .Q4jwH {
@@ -2563,7 +2563,7 @@ form._2rf1 ._1u7op {
 ._2LRWs {
   border: 0;
   background: #fff;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._2LRWs:hover:enabled {
@@ -2713,7 +2713,7 @@ form._2rf1 ._1u7op {
 }
 
 ._2ixe- span {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._1cT9R,
@@ -3094,7 +3094,7 @@ form._2rf1 ._1u7op {
   margin-bottom: 7px;
   -ms-flex-align: center;
   align-items: center;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._7u1-t span {
@@ -3191,7 +3191,7 @@ form._2rf1 ._1u7op {
 }
 
 ._3ovQm[disabled] {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   cursor: default;
 }
 
@@ -4025,7 +4025,7 @@ form._2rf1 ._1u7op {
 }
 
 ._2jvdf {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   font-size: 12px;
   line-height: 1;
 }
@@ -4039,7 +4039,7 @@ form._2rf1 ._1u7op {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   font-size: 12px;
 }
 
@@ -4074,7 +4074,7 @@ form._2rf1 ._1u7op {
 
 ._2B25b {
   padding-right: 9px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._2B25b:after {
@@ -4083,7 +4083,7 @@ form._2rf1 ._1u7op {
   width: 2px;
   height: 2px;
   border-radius: 3px;
-  background-color: #95a0af;
+  background-color: rgb(153, 173, 183);
 }
 
 ._3-2aE {
@@ -4417,7 +4417,7 @@ form._2rf1 ._1u7op {
 ._1H8gB {
   font-size: 9px;
   line-height: 11px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   text-transform: uppercase;
 }
 
@@ -4433,7 +4433,7 @@ form._2rf1 ._1u7op {
 }
 
 ._38OvA._1H8gB {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 .eoVae {
@@ -5697,7 +5697,7 @@ form._2rf1 ._1u7op {
 }
 
 ._3UGMt {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   width: 76px;
   height: 55px;
   font-family: DriveTribe, Helvetica, sans-serif;
@@ -6526,7 +6526,7 @@ form._2rf1 ._1u7op {
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   text-align: center;
   margin-top: 14px;
   margin-bottom: 12px;
@@ -7629,7 +7629,7 @@ form._2rf1 ._1u7op {
   font-size: 14px;
   line-height: 18px;
   margin-left: 35px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 @media screen and (max-width: 508px) {
@@ -7701,7 +7701,7 @@ form._2rf1 ._1u7op {
 }
 
 .BB62- {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   font-size: 14px;
   line-height: 18px;
   padding-top: 2px;
@@ -7854,7 +7854,7 @@ form._2rf1 ._1u7op {
 .ZQJT_ {
   font-size: 14px;
   line-height: 18px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   padding-top: 2px;
 }
 
@@ -7905,7 +7905,7 @@ form._2rf1 ._1u7op {
 ._3Njiy {
   display: -ms-flexbox;
   display: flex;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   -ms-flex-align: center;
   align-items: center;
   font-size: 12px;
@@ -7936,7 +7936,7 @@ form._2rf1 ._1u7op {
   width: 2px;
   height: 2px;
   border-radius: 3px;
-  background-color: #95a0af;
+  background-color: rgb(153, 173, 183);
 }
 
 ._1AiRW {
@@ -8185,7 +8185,7 @@ form._2rf1 ._1u7op {
 }
 
 .BNBMP {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   font-size: 12px;
   line-height: 12px;
   list-style: disc;
@@ -8234,7 +8234,7 @@ form._2rf1 ._1u7op {
   width: 2px;
   height: 2px;
   border-radius: 3px;
-  background-color: #95a0af;
+  background-color: rgb(153, 173, 183);
 }
 
 ._3ZzkS {
@@ -8289,7 +8289,7 @@ form._2rf1 ._1u7op {
   width: 2px;
   height: 2px;
   border-radius: 3px;
-  background-color: #95a0af;
+  background-color: rgb(153, 173, 183);
 }
 
 ._3bJmr {
@@ -8297,7 +8297,7 @@ form._2rf1 ._1u7op {
   font-weight: 700;
   font-size: 12px;
   line-height: 12px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   margin: 12px 0 9px;
 }
 
@@ -8720,7 +8720,7 @@ div._3bqe5 > div {
 
 ._3HP-Q {
   margin-left: 4px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 .kKUQF {
@@ -9057,7 +9057,7 @@ div._3bqe5 > div {
 ._2mthE {
   font-size: 12px;
   line-height: 14px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 @media screen and (max-width: 846px) {
@@ -9556,7 +9556,7 @@ div._3bqe5 > div {
 }
 
 ._2cAm4 {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   font-size: 14px;
   line-height: 18px;
   padding: 18px 0 9px;
@@ -10641,7 +10641,7 @@ div._3bqe5 > div {
 }
 
 ._3cGe8 {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   font-size: 14px;
   line-height: 18px;
   padding: 14px 0;
@@ -11741,7 +11741,7 @@ div._3bqe5 > div {
 }
 
 ._23g2_:hover {
-  background-color: #95a0af;
+  background-color: rgb(153, 173, 183);
 }
 
 ._23g2_:hover svg path {
@@ -11891,7 +11891,7 @@ div._3bqe5 > div {
 }
 
 ._1fuqz {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   font-size: 12px;
   text-transform: uppercase;
 }
@@ -11938,7 +11938,7 @@ div._3bqe5 > div {
   margin-left: 3px;
   margin-top: 3px;
   font-weight: 400;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 @media screen and (max-width: 508px) {
@@ -12051,7 +12051,7 @@ div._3bqe5 > div {
 }
 
 ._12g8o {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 .DdJUj {
@@ -12714,7 +12714,7 @@ div._3bqe5 > div {
   width: 196px;
   height: 1px;
   top: 0;
-  background-color: #95a0af;
+  background-color: rgb(153, 173, 183);
 }
 
 ._2tOI2,
@@ -13290,7 +13290,7 @@ div._3bqe5 > div {
 ._2aiW- {
   margin-left: 3px;
   font-weight: 400;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._3hdBv {
@@ -13310,7 +13310,7 @@ div._3bqe5 > div {
   font-size: 18px;
   line-height: 22px;
   background: #fff;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   padding-right: 0;
   padding-left: 0;
   text-transform: uppercase;
@@ -13950,7 +13950,7 @@ div._3bqe5 > div {
 
 ._105Oj {
   display: block;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   margin-top: 4px;
 }
 
@@ -15599,7 +15599,7 @@ div._3bqe5 > div {
 
 ._3VsO_ {
   margin-left: 3px;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._2Jxh7 {
@@ -16091,7 +16091,7 @@ div._3bqe5 > div {
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 @media screen and (max-width: 508px) {
@@ -17340,7 +17340,7 @@ div._3bqe5 > div {
 }
 
 ._2z54n {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   display: -ms-flexbox;
   display: flex;
 }
@@ -18346,7 +18346,7 @@ nav._1R2o8 {
 }
 
 ._21SpA {
-  color: #95a0af;
+  color: rgb(153, 173, 183);
   font-size: 12px;
   margin-bottom: 9px;
 }
@@ -18487,7 +18487,7 @@ nav._1R2o8 {
   ._1i-5m {
     border-top: none;
     padding: 0 18px 9px;
-    color: #95a0af;
+    color: rgb(153, 173, 183);
   }
 }
 
@@ -19469,7 +19469,7 @@ nav._1R2o8 {
   padding-top: 4px;
   position: relative;
   border-bottom: 4px solid #fff;
-  color: #95a0af;
+  color: rgb(153, 173, 183);
 }
 
 ._3rBNC:after {

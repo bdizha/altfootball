@@ -1,6 +1,5 @@
 <li class="sc-dqBHgY gEVQKf" data-reactid="181">
     <div class="sc-gxMtzJ ljjFes">
-        <div class="rEYTKJ"></div>
         <div class="sc-eXEjpC gESGAG" data-reactid="183">
             <div class="sc-ibxdXY hKmwtp" data-reactid="184">
                 <div  class="_38L6D" data-reactid="185">

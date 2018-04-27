@@ -40,17 +40,6 @@
                     </div>
                 </div>
             </div>
-            <div class="_1ht8E_ _GTYIO">
-                <div class="_3FaZ4E">
-                    <div class="owl-carousel owl-theme">
-                        @foreach($recentPosts as $post)
-                            <a class="sc-jwKygS _56FGY" href="/p/{{ $post->slug }}">
-                                <img alt="" role="presentation"  src="http://www.altfootball.com/images{{ $post->image }}">
-                            </a>
-                        @endforeach
-                    </div>
-                </div>
-            </div>
             <div class="_1-0JF" style="display: none;">
                 <div class="_2jNUh _8kqds"></div>
                 <div class="_2_Chk">

@@ -29,7 +29,7 @@ blockquote {
 }
 
 a {
-    color: #95a0af;
+    color: rgb(153, 173, 183);
 }
 
 a img {
@@ -216,7 +216,7 @@ img {
 }
 
 .button-blue {
-    background-color: #95a0af;
+    background-color: rgb(153, 173, 183);
     border-top: 10px solid rgba(103, 143, 185, 0.85);
     border-right: 18px solid rgba(103, 143, 185, 0.85);
     border-bottom: 10px solid rgba(103, 143, 185, 0.85);
