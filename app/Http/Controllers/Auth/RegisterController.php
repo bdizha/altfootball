@@ -131,7 +131,6 @@ class RegisterController extends Controller
             return redirect()->to('/');
         } else {
             $facebookUser = Socialite::with('facebook')->user();
-            dd($facebookUser);
 
             $ipAddress = new CaptureIpTrait;
             $user = User::where("email", $facebookUser->getEmail())->first();
