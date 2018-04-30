@@ -5,11 +5,6 @@
                 <a class="sc-brqgnP hBQeWD" href="/">
                     <div class="logo">
                         <div class="icons">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="square" viewBox="0 0 26 26" version="1.1" width="44px" height="44px">
-                                <g id="surface1">
-                                    <path fill="#FFFFFF" d="M 21.125 2 L 4.875 2 C 2.183594 2 0 4.183594 0 6.875 L 0 19.125 C 0 21.816406 2.183594 24 4.875 24 L 21.125 24 C 23.816406 24 26 21.816406 26 19.125 L 26 6.875 C 26 4.183594 23.816406 2 21.125 2 Z "/>
-                                </g>
-                            </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="ball" viewBox="0 0 48 48" version="1.1" width="44px" height="44px">
                                 <g id="surface1">
                                     <path style=" fill:#FFFFFF;" d="M 44 24 C 44 35.046875 35.046875 44 24 44 C 12.953125 44 4 35.046875 4 24 C 4 12.953125 12.953125 4 24 4 C 35.046875 4 44 12.953125 44 24 Z "/>

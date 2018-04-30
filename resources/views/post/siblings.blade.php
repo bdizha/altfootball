@@ -1,6 +1,6 @@
 @foreach($range as $key)
-    <?php if(empty($siblingPosts[$key])) continue; ?>
-    <?php $post = $siblingPosts[$key] ?>
+    <?php if(empty($posts["sibling"][$key])) continue; ?>
+    <?php $post = $posts["sibling"][$key] ?>
     <div class="_1XEbE">
         <div class="_1DRo">
             <div class="_38L6D" >

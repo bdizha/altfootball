@@ -58,12 +58,12 @@
                         <h3 class="_3F7tI">Popular posts</h3>
                         <div class="_7YHcU">See what everyone's talking about</div>
                         <div class="VDPbh">
-                            @foreach($popularPosts as $post)
+                            @foreach($posts['popular'] as $post)
                                 <a class="_3c_ba _9DqWK" href="/p/{{ $post->slug }}">
                                     <div class="_1nAwr">
                                         <div class="WCfW6">
                                             <div class="_1ZxE5">
-                                                <div  class="_38L6D">
+                                                <div class="_38L6D">
                                                     <img alt="{{ $post->title }}" role="presentation"
                                                          src="{{ $post->thumb_x }}" class="_214e9 b00q8">
                                                 </div>
@@ -88,7 +88,7 @@
                                 <a class="_Kj1Z _3JzN1" href="/u/{{ $fan->slug }}">
                                     <div class="_25jNX" style="width:66px;height:66px;">
                                         <div class="N3r_f">
-                                            <div  class="_38L6D">
+                                            <div class="_38L6D">
                                                 <img alt="{{ $fan->name }}" role="presentation"
                                                      src="{{ $fan->thumb_x }}" class="_214e9 b00q8">
                                             </div>
@@ -126,10 +126,46 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="sc-cmTdod iyxBpt" data-reactid="139"></div>
+                        <div class="_TY876">
+                            <div class="sc-krDsej eqEjAX sc-frDJqD epAMjP">
+                                <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">Popular</span><span class="sc-jbKcbu fAtzSi">Stories</span></div>
+                            </div>
+                            <ol class="_FGT65">
+                                @foreach($posts['popular'] as $k => $post)
+                                    <li class="_89GHT">
+                                        <div class="_CFG34">{{ str_pad($k + 1, 2, "0", STR_PAD_LEFT) }}</div>
+                                        <div class="_56KHY">
+                                            <a class="_GJ585" href="/p/{{ $post->slug }}">
+                                                <h3 class="_23GTY">{{ $post->title }}</h3>
+                                            </a>
+                                            <div class="_ETY90">
+                                                <div class="_89RTY">
+                                                    <div class="_43HGJ">
+                                                        <div class="_23RTY">
+                                                            <div class="_98HTY">
+                                                                <span>Posted in</span>
+                                                                <a class="_GTYKY"
+                                                                   href="/f/{{ $post->fanbase->slug }}">{{ $post->fanbase->camel }}</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="_YURM4">
+                                                            <div class="_TYMN3">
+                                                                <time class="_FVT43">{{ $post->published_at }}</time>
+                                                                <span class="_D45RT"></span>
+                                                                <span class="_23FRT">{{ $post->reading_time }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
+                            </ol>
+                        </div>
                     </div>
                 </div>
-                <div class="sc-rBLzX SsCsq" data-reactid="172">
+                <div class="sc-rBLzX SsCsq">
                     <div class="sc-dTdPqK hQzEkt">
                         <div class="sc-krDsej eqEjAX sc-frDJqD epAMjP">
                             <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">Top</span><span

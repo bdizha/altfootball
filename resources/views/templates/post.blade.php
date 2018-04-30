@@ -66,18 +66,6 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="sc-krvtoX hzEOQv">
-                                        <button class="sc-dUjcNx kXXKHw" data-tracking="post - tooltip - opened">
-                                            <div class="_32tSU">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="14"
-                                                     viewBox="0 0 3 17" class="_32tSU">
-                                                    <g fill="rgba(125, 160, 177, 0.75)" fill-rule="evenodd">
-                                                        <path d="M2.2.69a1.15 1.15 0 1 1-2.1.92A1.15 1.15 0 0 1 2.2.7M2.2 7.87a1.15 1.15 0 1 1-2.1.92 1.15 1.15 0 0 1 2.1-.92M2.2 15.04a1.15 1.15 0 1 1-2.1.93 1.15 1.15 0 0 1 2.1-.93"></path>
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                        </button>
-                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -10,8 +10,7 @@
             <header class="sc-cbMPqi jmwvyD" style="margin-top: 0px; opacity: 1;">
                 <div class="sc-jtHxuu kMymTC _1KXFt">
                     <div class="_23p6h">
-                        <img src="{{ $fanbase->cover_x }}" role="presentation" alt="" class="_2PoG-" width="1444"
-                             height="455" style="opacity: 1;">
+                        <img src="{{ $fanbase->cover_x }}" role="presentation" alt="" class="_2PoG-" style="opacity: 1;display: none">
                     </div>
                 </div>
                 <div class="sc-gMcBNU bVsJja">
@@ -76,7 +75,7 @@
                                     <div class="sc-isBZXS cvlUzR">
                                         <div class="sc-dKEPtC cmkzdN sc-frDJqD hfyEYu">
                                             <div class="sc-kvZOFW jomFZs">
-                                                <span class="sc-hqyNC dBwCTy">base</span>
+                                                <span class="sc-hqyNC dBwCTy">Fanbase</span>
                                                 <span class="sc-jbKcbu fAtzSi">leader</span>
                                             </div>
                                         </div>
@@ -100,7 +99,7 @@
                                             <a class="" href="/u/{{ $fanbase->user->slug }}/members">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="14"
                                                      viewBox="0 0 18 14" class="sc-cCVOAp eVkXGE">
-                                                    <path fill-rule="evenodd"
+                                                    <path fill="rgba(125, 160, 177, 0.65)" fill-rule="evenodd"
                                                           d="M6.7 1.5C8 1.5 9 2.5 9 4c0 1.3-1 2.4-2.3 2.4-1.4 0-2.5-1-2.5-2.4s1-2.5 2.5-2.5M9.2 7c1-.7 1.4-1.8 1.4-3 0-2.2-1.8-4-4-4-2 0-4 1.8-4 4 0 1.2.7 2.3 1.5 3-2 1-3.5 3-4 5.8 0 .4.2.8.6.8.4 0 .8-.2 1-.6.4-3 2.6-5 5-5 2.5 0 4.7 2 5.2 5 0 .4.4.7.8.7.5 0 .8-.5.7-1-.5-2.6-2-4.7-4-5.7m4.8 0c.6-.8 1-1.7 1-2.7 0-2.2-1.8-4-4-4-.5 0-.8.4-.8.8 0 .5.3 1 .8 1 1.3 0 2.4 1 2.4 2.3 0 1-.4 1.7-1.2 2.2-.4.2-.5.6-.3 1 .3.2.5.4.8.4 1.8.5 3.3 2.4 3.7 4.6 0 .4.4.6.7.6h.2c.4 0 .7-.4.6-.8C17.5 10 16 8 14.2 7"></path>
                                                 </svg>
                                                 129.2K
@@ -125,7 +124,7 @@
                                 <section class="sc-dXfzlN glYIFw">
                                     <div class="sc-dvpmds jHgdae">
                                         <h3 class="sc-dwztqd jmBYQQ">
-                                            <span class="sc-fgrSAo HltCu">Base</span>
+                                            <span class="sc-fgrSAo HltCu">Members</span>
                                         </h3>
                                     </div>
                                 </section>
@@ -134,43 +133,42 @@
                     </div>
                 </div>
                 <div class="sc-izvnbC ZnxSI">
-                    <div class="sc-kAdXeD iDXYFq">
-                        <nav class="sc-hCaUpS gsjplB">
-                            <div class="sc-bSbAYC SQrrC">
-                                <div class="sc-dHIava ewTGPx">
-                                    <div class="sc-jhaWeW fKnQYk _1KXFt">
-                                        <div class="_23p6h">
-                                            <img src="https://drivetribe.imgix.net/erhM64oNT6CJIgvHi_9axg?w=100&amp;h=100&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges" role="presentation" alt="" class="_2PoG-" width="35" height="35" style="opacity: 1;">
-                                        </div>
+                    <nav class="sc-hCaUpS gsjplB">
+                        <div class="sc-bSbAYC SQrrC">
+                            <div class="sc-dHIava ewTGPx">
+                                <div class="sc-jhaWeW fKnQYk _1KXFt">
+                                    <div class="_23p6h">
+                                        <img src="https://drivetribe.imgix.net/erhM64oNT6CJIgvHi_9axg?w=100&amp;h=100&amp;fm=pjpg&amp;auto=compress&amp;fit=crop&amp;crop=faces,edges" role="presentation" alt="" class="_2PoG-" width="35" height="35" style="opacity: 1;">
                                     </div>
                                 </div>
-                                <h4 class="sc-sPYgB wnKAA">{{ $fanbase->name }}</h4>
                             </div>
-                            <div class="sc-guztPN XmkOi">
-                                <a class="sc-koErNt fiUhFF" href="/u/{{ $fanbase->user->slug }}">Stories</a>
-                                <button class="sc-cNnxps kxvlui">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">
-                                        <path fill="#666" fill-rule="evenodd"
-                                              d="M2.88 1.44a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="sc-dPPMrM bJPofi">
-                        <posts params="page: 0, fanbase: {{ $fanbase->id }}, show_callback: openItem"></posts>
-                        <div></div>
-                        <div class="sc-geAPOV jnThVp">
-                            <div class="sc-bJTOcE esqHzl">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                     class="sc-PLyBE bXNvfK">
-                                    <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round"
-                                       stroke-linejoin="round">
-                                        <path stroke-width="1.5"
-                                              d="M1.65 9.07l-.58 3.78 3.78-.58 8.32-8.32-3.2-3.2L8.6 2.12z"></path>
-                                        <path d="M11.1 5.67L8.09 2.64M5.3 11.49L2.25 8.46"></path>
-                                    </g>
+                            <h4 class="sc-sPYgB wnKAA">{{ $fanbase->name }}</h4>
+                        </div>
+                        <div class="sc-guztPN XmkOi">
+                            <a class="sc-koErNt fiUhFF" href="/u/{{ $fanbase->user->slug }}">Stories</a>
+                            <button class="sc-cNnxps kxvlui">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="3" viewBox="0 0 18 3">
+                                    <path fill="#666" fill-rule="evenodd"
+                                          d="M2.88 1.44a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0zm7.2 0a1.44 1.44 0 1 1-2.88 0 1.44 1.44 0 0 1 2.88 0z"></path>
                                 </svg>
+                            </button>
+                        </div>
+                    </nav>
+                    <div class="sc-dPPMrM bJPofi">
+                        <div class="sc-rBLzX SsCsq">
+                            <div class="sc-dTdPqK hQzEkt">
+                                <div class="sc-krDsej eqEjAX sc-frDJqD epAMjP">
+                                    <div class="sc-dvpmds jHgdae">
+                                        <h3 class="sc-dwztqd jmBYQQ">
+                                            <span class="sc-fgrSAo HltCu">Stories</span>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sc-itybZL QJDdz">
+                                <div class="sc-dTdPqK hQzEkt">
+                                    <posts params="page: 0, fanbase: {{ $fanbase->id }}, show_callback: openItem"></posts>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -24,14 +24,6 @@ class HomeController extends Controller
     {
         $bases = Fanbase::orderBy('id', 'asc')->take(10)->get();
 
-        $date = Carbon::now()->subDays(7);
-        $popularPosts = Post::orderBy('views', 'desc')
-            ->where('created_at', '>=', $date)
-            ->take(12)->get();
-
-        $recentPosts = Post::orderBy('created_at', 'desc')
-            ->take(12)->get();
-
         $tags = Tag::withCount('posts')
             ->orderBy("posts_count", "DESC")
             ->limit(200)
@@ -42,19 +34,24 @@ class HomeController extends Controller
             ->take(4)
             ->get();
 
-        $posts = Post::with('user')
+        $posts = [];
+        $posts['popular'] = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
-            ->offset(16)
+            ->orderBy('created_at', 'desc')
+            ->take(5)
+            ->get();
+
+        $posts['top'] = Post::with('user')
+            ->where('created_at', "<=", Carbon::now())
+            ->offset(5)
             ->orderBy('created_at', 'desc')
             ->limit(6)
             ->get();
 
         return view('welcome', [
             'bases' => $bases,
-            'recentPosts' => $recentPosts,
-            'popularPosts' => $popularPosts,
-            'tags' => $tags,
             'posts' => $posts,
+            'tags' => $tags,
             'fans' => $fans,
             'user' => $this->getUserArray(),
             'meta' => $this->getMeta()

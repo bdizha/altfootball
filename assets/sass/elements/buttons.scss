@@ -17,13 +17,13 @@
 	&:hover,
 	&:focus{
 		background-color: $color_white;
-		color: $color_green;
+		color: $color_light_green;
 		outline: none;
 	}
 	&.btn-primary{
 		&:hover,
 		&:focus{
-			background-color: $color_green;
+			background-color: $color_light_green;
 			color: $color_white
 		}
 	}

@@ -180,15 +180,14 @@ class Fanbase extends Model
 
     public function getCoverXAttribute()
     {
-        if (strpos($this->cover, '1444') !== false) {
+        if (strpos($this->cover, '1024') !== false) {
             $this->saveCover();
         }
 
-        if (empty($this->big_cover) || strpos($this->cover, '1444') === false) {
-
+        if (empty($this->big_cover) || strpos($this->cover, '1024') === false) {
             try {
                 $builder = new UrlBuilder("altfootball.imgix.net");
-                $params = array("w" => 1444, "h" => 455);
+                $params = array("w" => 1024, "h" => 455);
                 $url = $builder->createURL($this->cover, $params);
 
                 $this->big_cover = $url;
