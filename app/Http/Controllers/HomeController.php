@@ -35,15 +35,15 @@ class HomeController extends Controller
             ->get();
 
         $posts = [];
-        $posts['popular'] = Post::with('user')
+        $posts['hot'] = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
             ->orderBy('created_at', 'desc')
-            ->take(5)
+            ->take(11)
             ->get();
 
         $posts['top'] = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
-            ->offset(5)
+            ->offset(11)
             ->orderBy('created_at', 'desc')
             ->limit(6)
             ->get();

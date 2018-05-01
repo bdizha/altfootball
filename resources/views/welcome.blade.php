@@ -40,67 +40,57 @@
                     </div>
                 </div>
             </div>
-            <div class="_1-0JF" style="display: none;">
+            <div class="_1-0JF">
                 <div class="_2jNUh _8kqds"></div>
                 <div class="_2_Chk">
-                    <section class="_116es _17c3x">
-                        <h3 class="_3F7tI">Fanbases recommended for you</h3>
-                        <div class="_7YHcU">Join the Fanbases you like to tune your feed</div>
-                        <div class="VDPbh">
-                            <div class="_1fZBx">
-                                @foreach($bases as $k => $base)
-                                    @include('fanbase.base')
-                                @endforeach
+                    @if(Auth::guard()->check())
+                        <section class="_116es _17c3x">
+                            <h3 class="_3F7tI">Fanbases recommended for you</h3>
+                            <div class="_7YHcU">Join the Fanbases you like to tune your feed</div>
+                            <div class="VDPbh">
+                                <div class="_1fZBx">
+                                    <div class="owl-carousel owl-five owl-theme">
+                                        @foreach($bases as $k => $base)
+                                            @include('fanbase.base')
+                                        @endforeach
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section class="_380IN _17c3x">
-                        <h3 class="_3F7tI">Popular posts</h3>
-                        <div class="_7YHcU">See what everyone's talking about</div>
-                        <div class="VDPbh">
-                            @foreach($posts['popular'] as $post)
-                                <a class="_3c_ba _9DqWK" href="/p/{{ $post->slug }}">
-                                    <div class="_1nAwr">
-                                        <div class="WCfW6">
-                                            <div class="_1ZxE5">
+                        </section>
+                        <section class="dncIF _17c3x">
+                            <h3 class="_3F7tI">Most influential people</h3>
+                            <div class="_7YHcU">Follow the people making an impact</div>
+                            <div class="VDPbh">
+                                @foreach($fans as $fan)
+                                    <a class="_Kj1Z _3JzN1" href="/u/{{ $fan->slug }}">
+                                        <div class="_25jNX">
+                                            <div class="N3r_f">
                                                 <div class="_38L6D">
-                                                    <img alt="{{ $post->title }}" role="presentation"
-                                                         src="{{ $post->thumb_x }}" class="_214e9 b00q8">
+                                                    <img alt="{{ $fan->name }}" role="presentation"
+                                                         src="{{ $fan->thumb_x }}" class="_214e9 b00q8">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="_2ll1m">
-                                                <span class="_3bbo_">
-                                                    {{ str_limit($post->title, 60) }}
-                                                </span>
-                                            <span class="FMK9E">{{ str_limit($post->summary, 28) }}</span>
+                                        <div class="_13Iad">
+                                            {{ $fan->name }}
                                         </div>
-                                    </div>
-                                </a>
-                            @endforeach
-                        </div>
-                    </section>
-                    <section class="dncIF _17c3x">
-                        <h3 class="_3F7tI">Most influential people</h3>
-                        <div class="_7YHcU">Follow the people making an impact</div>
-                        <div class="VDPbh">
-                            @foreach($fans as $fan)
-                                <a class="_Kj1Z _3JzN1" href="/u/{{ $fan->slug }}">
-                                    <div class="_25jNX" style="width:66px;height:66px;">
-                                        <div class="N3r_f">
-                                            <div class="_38L6D">
-                                                <img alt="{{ $fan->name }}" role="presentation"
-                                                     src="{{ $fan->thumb_x }}" class="_214e9 b00q8">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="_3RaY_ _13Iad">
-                                        {{ $fan->name }}
-                                    </p>
-                                </a>
-                            @endforeach
-                        </div>
-                    </section>
+                                    </a>
+                                @endforeach
+                            </div>
+                        </section>
+                    @else
+                        <section class="_FTR56">
+                            <h1 class="_35Eoh">ALTFOOTBALL</h1>
+                            <h3 class="_1Honn">The new home of footballing</h3>
+                            <div class="_2cfq3"><span class="_3OQAJ">Join ALTFOOTBALL to get stories directly to your inbox</span>
+                                <div class="_1KXd6">
+                                    <a href="/register" class="_1ssnS _35Ns5">Sign in with Email</a>
+                                    <span class="_1iBcU">Or</span>
+                                    <a href="/fb" class="MAYYh _35Ns5">Sign in with Facebook</a>
+                                </div>
+                            </div>
+                        </section>
+                    @endif
                 </div>
             </div>
             <div class="sc-fONwsr gDVFix">
@@ -128,10 +118,11 @@
                         </div>
                         <div class="_TY876">
                             <div class="sc-krDsej eqEjAX sc-frDJqD epAMjP">
-                                <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">Popular</span><span class="sc-jbKcbu fAtzSi">Stories</span></div>
+                                <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">HOT</span><span
+                                            class="sc-jbKcbu fAtzSi">Stories</span></div>
                             </div>
                             <ol class="_FGT65">
-                                @foreach($posts['popular'] as $k => $post)
+                                @foreach($posts['hot'] as $k => $post)
                                     <li class="_89GHT">
                                         <div class="_CFG34">{{ str_pad($k + 1, 2, "0", STR_PAD_LEFT) }}</div>
                                         <div class="_56KHY">

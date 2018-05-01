@@ -40,19 +40,18 @@ class PostController extends Controller
 
     public function show(Request $request, $slug)
     {
-        $fanbases = [];
+        $bases = [];
         $post = Post::where('slug', '=', $slug)->first();
 
         $posts = [];
-
-        $posts["trending"] = Post::where("id", "!=", $post->id)
+        $posts["hot"] = Post::where("id", "!=", $post->id)
             ->orderBy("posts.views", "DESC")
             ->where("created_at", ">", Carbon::now()->subWeek(1))
             ->where("id", "!=", $post->id)
             ->limit(12)
             ->get();
 
-        $posts["sibling"] = Post::whereHas('fanbases', function ($query) use ($post) {
+        $posts["siblings"] = Post::whereHas('fanbases', function ($query) use ($post) {
             $query->where('fanbases.id', $post->fanbase->id);
         })
             ->where("id", "!=", $post->id)
@@ -61,7 +60,7 @@ class PostController extends Controller
             ->get();
 
         if ($post->fanbase) {
-            $fanbases = Fanbase::where("id", "!=", $post->fanbase->id)
+            $bases = Fanbase::where("id", "!=", $post->fanbase->id)
                 ->inRandomOrder()
                 ->orderBy('id', 'asc')->take(3)->get();
         }
@@ -72,7 +71,7 @@ class PostController extends Controller
         return view('post.show', [
             'comments' => json_encode($post->comments->toArray(), JSON_HEX_APOS),
             'post' => $post,
-            'fanbases' => $fanbases,
+            'bases' => $bases,
             'posts' => $posts,
             'user' => $this->getUserArray()
         ]);

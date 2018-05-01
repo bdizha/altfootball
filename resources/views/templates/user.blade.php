@@ -15,7 +15,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48"
                          class="_1z7Hy">
                         <g id="surface1">
-                            <path style=" fill:#FFFFFF;" d="M 44 24 C 44 35.046875 35.046875 44 24 44 C 12.953125 44 4 35.046875 4 24 C 4 12.953125 12.953125 4 24 4 C 35.046875 4 44 12.953125 44 24 Z "></path>
+                            <path style=" fill: transparent;" d="M 44 24 C 44 35.046875 35.046875 44 24 44 C 12.953125 44 4 35.046875 4 24 C 4 12.953125 12.953125 4 24 4 C 35.046875 4 44 12.953125 44 24 Z "></path>
                             <path style="fill:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke:#35C733;stroke-opacity:1;stroke-miterlimit:10;" d="M 16 21 L 10 19 "></path>
                             <path style="fill:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke:#35C733;stroke-opacity:1;stroke-miterlimit:10;" d="M 24 9 L 24 15 "></path>
                             <path style="fill:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;stroke:#35C733;stroke-opacity:1;stroke-miterlimit:10;" d="M 19 30 L 15 36 "></path>

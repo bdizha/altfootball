@@ -15,156 +15,6 @@
   src: local("DriveTribe Condensed"), url("https://assets.drivetribe.com/v2.3.3-150-g4badbfe0/uniform-extra-condensed.woff2") format("woff2"), url("https://assets.drivetribe.com/v2.3.3-150-g4badbfe0/uniform-extra-condensed.woff") format("woff"), url("https://assets.drivetribe.com/v2.3.3-150-g4badbfe0/uniform-extra-condensed.ttf") format("ttf");
 }
 
-/* latin */
-
-@font-face {
-  font-family: 'Product Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Product Sans"), local("ProductSans-Regular"), url(https://fonts.gstatic.com/s/productsans/v9/pxiDypQkot1TnFhsFMOfGShVF9eO.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* greek-ext */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-/* greek */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-/* vietnamese */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
-/* cyrillic-ext */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCRc4EsA.woff2) format("woff2");
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-
-/* cyrillic */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfABc4EsA.woff2) format("woff2");
-  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-
-/* greek-ext */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCBc4EsA.woff2) format("woff2");
-  unicode-range: U+1F00-1FFF;
-}
-
-/* greek */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBxc4EsA.woff2) format("woff2");
-  unicode-range: U+0370-03FF;
-}
-
-/* vietnamese */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfCxc4EsA.woff2) format("woff2");
-  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-
-/* latin-ext */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfChc4EsA.woff2) format("woff2");
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-
-/* latin */
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  src: local("Roboto Bold"), local("Roboto-Bold"), url(https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -458,7 +308,7 @@ textarea {
 }
 
 body {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   background: #FFFFFF;
   -webkit-overflow-scrolling: touch;
@@ -466,7 +316,7 @@ body {
 
 h1,
 h2 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -476,7 +326,7 @@ p {
 }
 
 p a {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -582,7 +432,7 @@ button {
 }
 
 ._1h78h {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -608,7 +458,7 @@ button {
 }
 
 ._1geYT {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -655,7 +505,7 @@ button {
 }
 
 ._2e1-n:hover {
-  background: rgba(69, 193, 78, 0.35);
+  background: #002C43;
   color: #FFFFFF;
 }
 
@@ -670,7 +520,7 @@ button {
 
 ._2CyDP,
 .cgtnr {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -748,7 +598,7 @@ button {
 }
 
 ._2zEgR {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -767,7 +617,7 @@ button {
 }
 
 ._2JpJc {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -903,7 +753,7 @@ button {
 }
 
 ._29zpU {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   clear: both;
@@ -944,7 +794,7 @@ button {
 }
 
 ._35Phm {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -962,7 +812,7 @@ button {
 }
 
 ._27Mgd {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   display: block;
@@ -1098,7 +948,7 @@ button {
 
 ._1oI4U {
   padding: 0 22px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   display: block;
   text-transform: uppercase;
@@ -1180,6 +1030,8 @@ svg:hover path {
 
 ._25jNX {
   position: relative;
+  height: 55px;
+  width: 55px;
 }
 
 .N3r_f {
@@ -1271,7 +1123,7 @@ svg:hover path {
 }
 
 ._2TaIJ {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -1353,7 +1205,7 @@ svg:hover path {
   color: rgba(0, 50, 75, 0.65);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -1376,7 +1228,7 @@ svg:hover path {
 
 ._1u7op {
   color: #da1a35;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -1550,7 +1402,7 @@ form ._2Kdch {
 }
 
 .vwhZ_ {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -1807,7 +1659,7 @@ form ._2Kdch {
   justify-content: center;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   width: 100%;
@@ -1877,7 +1729,7 @@ form ._2Kdch {
 @media screen and (max-width: 508px) {
   .Y5qEv {
     display: block;
-    font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -1962,7 +1814,7 @@ form ._2Kdch {
   word-wrap: break-word;
   margin-right: 0;
   min-height: 28px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -2049,7 +1901,7 @@ form ._2Kdch {
 
 ._1Gyo9:after {
   content: attr(data-stamp);
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -2151,7 +2003,7 @@ form ._2Kdch {
 .FSUgb:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -2179,7 +2031,7 @@ form ._2Kdch {
 }
 
 ._28Y8c {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -2193,7 +2045,7 @@ form ._2Kdch {
   text-align: left;
   padding: 18px 26px;
   width: 100%;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -2247,7 +2099,7 @@ form ._2Kdch {
 }
 
 ._2gW41 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -2301,7 +2153,7 @@ form ._2Kdch {
 ._2JNmn {
   font-size: 16px;
   line-height: 16px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -2330,7 +2182,7 @@ form ._2Kdch {
   height: 100%;
   color: #f8f8f8;
   border: 1px solid #141C3E;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -2382,7 +2234,7 @@ form ._2Kdch {
   width: 100%;
   height: 100%;
   padding: 18px 26px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -2397,7 +2249,7 @@ form ._2Kdch {
 }
 
 ._3bbo_ {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
@@ -2465,12 +2317,12 @@ form ._2Kdch {
   flex-direction: column;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   text-transform: uppercase;
 }
 
 ._1-hq7 ._3bbo_ {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
@@ -2541,7 +2393,7 @@ form ._2Kdch {
 ._1OggK,
 ._28liP,
 .FMK9E {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -2589,7 +2441,7 @@ form ._2Kdch {
 }
 
 ._3xUes {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -2677,7 +2529,7 @@ form ._2Kdch {
 ._3Zur7 {
   display: inline;
   color: #FFFFFF;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -2690,7 +2542,7 @@ form ._2Kdch {
 ._2uxUw {
   display: block;
   padding: 22px 0;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   width: 100%;
   max-width: 716px;
@@ -2760,7 +2612,7 @@ form ._2Kdch {
 
 ._26cuW {
   color: rgba(0, 50, 75, 0.65);
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -2911,7 +2763,7 @@ form ._2Kdch {
 }
 
 ._1kqns {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   float: right;
@@ -3002,7 +2854,7 @@ form ._2Kdch {
 }
 
 .KTIgi {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -3024,7 +2876,7 @@ form ._2Kdch {
 ._7ROiA {
   cursor: pointer;
   line-height: inherit;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -3044,7 +2896,7 @@ form ._2Kdch {
 }
 
 ._1saq1 button {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   color: #2784bd;
 }
@@ -3127,7 +2979,7 @@ form ._2Kdch {
 }
 
 ._3KCF8 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -3155,7 +3007,7 @@ form ._2Kdch {
   position: absolute;
   top: 28px;
   color: rgba(0, 50, 75, 0.65);
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3188,7 +3040,7 @@ form ._2Kdch {
 }
 
 ._1tRa2 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(69, 193, 78, 0.25);
@@ -3275,7 +3127,7 @@ form ._2Kdch {
 }
 
 ._2KQbF {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(69, 193, 78, 0.25);
@@ -3334,7 +3186,7 @@ form ._2Kdch {
 ._2IBdP:after {
   color: #FFFFFF;
   content: attr(data-total);
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 22px;
@@ -3637,7 +3489,7 @@ form ._2Kdch {
 }
 
 ._3cmsY {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   border: 1px solid rgba(56, 82, 119, 0.15);
   cursor: pointer;
@@ -3673,7 +3525,7 @@ form ._2Kdch {
 
 ._3LYcH,
 ._101VT {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -3691,7 +3543,7 @@ form ._2Kdch {
 }
 
 ._25ugo {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 18px;
 }
@@ -3723,7 +3575,7 @@ form ._2Kdch {
 }
 
 ._30g4J {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -3771,13 +3623,13 @@ form ._2Kdch {
 }
 
 ._21MHb {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .XmFjj {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -3846,7 +3698,7 @@ form ._2Kdch {
 }
 
 ._2fFf8 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
@@ -4062,7 +3914,7 @@ form ._2Kdch {
 .p32Iu.active ._3DF9,
 .p32Iu:hover ._3DF9 {
   display: block;
-  background: rgba(69, 193, 78, 0.35);
+  background: #002C43;
 }
 
 .p32Iu.active ._3DF9 h2,
@@ -4208,7 +4060,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3vb09 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 35px;
   line-height: 42px;
@@ -4461,7 +4313,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3VB1o a {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   line-height: inherit;
 }
@@ -4505,7 +4357,7 @@ dribbles ._35GH ._34IO {
 ._2nUtC a,
 ._2nUtC p,
 ._2nUtC span {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -4565,7 +4417,7 @@ dribbles ._35GH ._34IO {
 
 ._3tN0i {
   color: rgba(0, 50, 75, 0.65);
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
 }
 
@@ -4591,7 +4443,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2L6V9 a {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   line-height: inherit;
   font-size: 16px;
@@ -4623,7 +4475,7 @@ dribbles ._35GH ._34IO {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   width: 96px;
@@ -4680,7 +4532,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1pPnu a {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -4895,7 +4747,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2s4xW {
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -5000,7 +4852,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3H01F {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -5075,7 +4927,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3f32u {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -5215,7 +5067,7 @@ dribbles ._35GH ._34IO {
 ._3zT4K {
   font-size: 22px;
   line-height: 1.4;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   padding: 0 18px 28px;
   text-transform: uppercase;
@@ -5348,7 +5200,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2vzGK {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 18px;
   margin-top: 12px;
@@ -5383,7 +5235,7 @@ dribbles ._35GH ._34IO {
 }
 
 .A8eM3 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -5480,7 +5332,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1_mZ1 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -5583,7 +5435,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1G1nd {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -5616,11 +5468,11 @@ dribbles ._35GH ._34IO {
 }
 
 ._1JesO {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
-  padding: 28px 18px;
+  padding: 22px 11px;
   transition: opacity .1s ease-out;
   color: rgba(0, 50, 75, 0.65);
 }
@@ -5719,7 +5571,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1C4sR {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -5965,7 +5817,7 @@ dribbles ._35GH ._34IO {
     color: #FFFFFF;
     content: attr(data-stamp);
     display: block;
-    font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 22px;
@@ -6085,7 +5937,7 @@ dribbles ._35GH ._34IO {
   top: 50%;
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -6117,7 +5969,7 @@ dribbles ._35GH ._34IO {
 .RNhYX:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 28px;
@@ -6164,7 +6016,7 @@ dribbles ._35GH ._34IO {
 
 ._1QEWe,
 ._2o06m {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -6219,12 +6071,12 @@ dribbles ._35GH ._34IO {
 
 ._1OCcp {
   text-transform: uppercase;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
 .CrE3q {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -6289,7 +6141,7 @@ dribbles ._35GH ._34IO {
 ._3YXPS {
   opacity: 0;
   padding-top: 28px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -6299,7 +6151,7 @@ dribbles ._35GH ._34IO {
 ._26n6g {
   opacity: 0;
   padding-top: 28px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -6322,7 +6174,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1ksgx {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -6351,7 +6203,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1J2yn {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: underline;
@@ -6367,7 +6219,7 @@ dribbles ._35GH ._34IO {
 
 .xn0aB {
   font-size: 16px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   padding-right: 16px;
@@ -6423,7 +6275,7 @@ dribbles ._35GH ._34IO {
   color: rgba(0, 50, 75, 0.65);
   width: 76px;
   height: 55px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -6513,7 +6365,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3debN {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-size: 28px;
   line-height: 1.4;
   text-transform: uppercase;
@@ -6536,7 +6388,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3_ndg {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-decoration: underline;
 }
@@ -6605,7 +6457,7 @@ dribbles ._35GH ._34IO {
   -ms-flex-pack: center;
   justify-content: center;
   margin-left: -52px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -6852,7 +6704,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3UYss {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -6961,7 +6813,7 @@ dribbles ._35GH ._34IO {
 form .bWRAm {
   font-weight: 700;
   font-size: 34px;
-  line-height: 42px;
+  line-height: 34px;
 }
 
 form ._12n1y {
@@ -6976,7 +6828,7 @@ form ._12n1y:focus {
 }
 
 form .M13JP {
-  background: rgba(69, 193, 78, 0.35);
+  background: #002C43;
   color: #FFFFFF;
 }
 
@@ -6998,8 +6850,8 @@ form .M13JP:focus {
 }
 
 ._15nhh {
-  font-size: 44px;
-  line-height: 40px;
+  font-size: 34px;
+  line-height: 34px;
 }
 
 @media screen and (max-width: 508px) {
@@ -7023,7 +6875,7 @@ form .M13JP:focus {
 
 ._12n1y,
 .VnaIq span {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -7184,7 +7036,7 @@ form .M13JP:focus {
 ._1iBcU,
 ._3OQAJ,
 .KyQLW {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -7254,7 +7106,7 @@ form .M13JP:focus {
 
 ._35Eoh {
   text-align: center;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 72px;
@@ -7269,7 +7121,7 @@ form .M13JP:focus {
 }
 
 ._1Honn {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -7290,7 +7142,7 @@ form .M13JP:focus {
 
 ._3MbTo {
   text-align: center;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -7324,7 +7176,7 @@ form .M13JP:focus {
 }
 
 ._FGT65 ._89GHT {
-  margin-bottom: 11px;
+  margin-bottom: 0;
   display: -ms-flexbox;
   display: flex;
 }
@@ -7337,7 +7189,7 @@ form .M13JP:focus {
 
 ._FGT65 ._89GHT ._CFG34 ._CFR45 {
   display: inline-block;
-  width: 50px;
+  width: 100px;
 }
 
 ._FGT65 ._89GHT ._CFG34 ._CFR45 ._214e9 {
@@ -7406,6 +7258,7 @@ form .M13JP:focus {
 
 ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY {
   font-weight: bold;
+  color: rgba(0, 50, 75, 0.65);
 }
 
 ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 {
@@ -7484,7 +7337,7 @@ form .M13JP:focus {
 }
 
 ._1e4LX {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(0, 50, 75, 0.65);
@@ -7493,7 +7346,7 @@ form .M13JP:focus {
 }
 
 ._1J7fB {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(0, 50, 75, 0.65);
@@ -7542,7 +7395,7 @@ form .M13JP:focus {
 }
 
 ._3vbhf {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -7621,7 +7474,7 @@ form .M13JP:focus {
   display: -ms-flexbox;
   display: flex;
   color: #00324B;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -7701,7 +7554,7 @@ form .M13JP:focus {
 }
 
 ._3nf8R {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -7776,7 +7629,7 @@ form .M13JP:focus {
 }
 
 ._2y6Xw {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -7796,7 +7649,7 @@ form .M13JP:focus {
 
 ._3R_r_ > label {
   cursor: pointer;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -7828,7 +7681,7 @@ form .M13JP:focus {
 }
 
 ._2fg1f {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -7852,7 +7705,7 @@ form .M13JP:focus {
   flex-grow: 1;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -7860,7 +7713,7 @@ form .M13JP:focus {
 }
 
 .pbRDO {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -7893,7 +7746,7 @@ form .M13JP:focus {
 }
 
 ._1jO5_ {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -7918,7 +7771,7 @@ form .M13JP:focus {
   color: rgba(0, 50, 75, 0.65);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -7950,7 +7803,7 @@ form .M13JP:focus {
 }
 
 ._31olX {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -7971,7 +7824,7 @@ form .M13JP:focus {
 }
 
 ._3UY9k {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -8014,7 +7867,7 @@ form .M13JP:focus {
 }
 
 .NpeF3 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -8199,12 +8052,12 @@ form .M13JP:focus {
 
 ._2fwRw {
   text-transform: uppercase;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
 ._35KTo {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 64px;
   height: 20px;
@@ -8221,7 +8074,7 @@ form .M13JP:focus {
 }
 
 ._3jX9n {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 55px;
@@ -8252,7 +8105,7 @@ form .M13JP:focus {
 }
 
 ._2VZfh {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -8455,7 +8308,7 @@ form .M13JP:focus {
 ._3Qk42 {
   font-size: 16px;
   line-height: 12px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 0;
@@ -8493,7 +8346,7 @@ form .M13JP:focus {
 }
 
 ._1dxvB {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -8543,7 +8396,7 @@ form .M13JP:focus {
 }
 
 ._2VD5i {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -8618,7 +8471,7 @@ form .M13JP:focus {
 }
 
 ._1bkDE {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-right: 6px;
@@ -8790,7 +8643,7 @@ form .M13JP:focus {
 }
 
 .vka9m {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   margin-right: 6px;
@@ -8835,7 +8688,7 @@ form .M13JP:focus {
 }
 
 ._341rK {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   display: -ms-flexbox;
   display: flex;
@@ -8935,7 +8788,7 @@ form .M13JP:focus {
 
 ._2OqId a,
 ._2OqId button {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   color: #2784bd;
 }
@@ -8968,7 +8821,7 @@ form .M13JP:focus {
 
 ._1lUs3,
 ._2OqId a {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
 }
 
 ._1lUs3 {
@@ -9093,7 +8946,7 @@ form .M13JP:focus {
 }
 
 ._1vFjj {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
 }
 
@@ -9108,7 +8961,7 @@ form .M13JP:focus {
 }
 
 ._3Rgm7 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -9173,7 +9026,7 @@ form .M13JP:focus {
 }
 
 ._22SkP {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   display: -ms-flexbox;
   display: flex;
@@ -9231,7 +9084,7 @@ form .M13JP:focus {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -9245,7 +9098,7 @@ form .M13JP:focus {
 }
 
 ._3bJmr {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 12px;
@@ -9294,7 +9147,7 @@ form .M13JP:focus {
 }
 
 ._1MG96 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   float: right;
@@ -9360,7 +9213,7 @@ form .M13JP:focus {
 }
 
 ._3ucBL {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -9375,7 +9228,7 @@ form .M13JP:focus {
 }
 
 ._3gGIp {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -9404,7 +9257,7 @@ form .M13JP:focus {
 }
 
 ._1eOJH {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -9544,7 +9397,7 @@ form .M13JP:focus {
   ._3IQ6i:after {
     color: #FFFFFF;
     content: attr(data-count);
-    font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 22px;
@@ -9577,7 +9430,7 @@ form .M13JP:focus {
   ._3IQ6i:after {
     color: #FFFFFF;
     content: attr(data-count);
-    font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 35px;
@@ -9605,7 +9458,7 @@ form .M13JP:focus {
 
 ._17xgL {
   margin-bottom: 4px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -9669,7 +9522,7 @@ div._3bqe5 > div {
 ._35FcZ {
   display: inline-block;
   word-wrap: normal;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -9681,7 +9534,7 @@ div._3bqe5 > div {
 }
 
 .kKUQF {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
 }
 
@@ -9747,7 +9600,7 @@ div._3bqe5 > div {
 }
 
 ._2oi1a {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background: rgba(0, 50, 75, 0.65);
@@ -10185,7 +10038,7 @@ div._3bqe5 > div {
   position: absolute;
   top: 0;
   left: 9px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 80px;
@@ -10201,7 +10054,7 @@ div._3bqe5 > div {
 }
 
 ._1GpGz {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.4;
@@ -10298,7 +10151,7 @@ div._3bqe5 > div {
 }
 
 ._12F3w {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   margin: 22px 0 22px;
   font-weight: 700;
   text-transform: uppercase;
@@ -10354,7 +10207,7 @@ div._3bqe5 > div {
 }
 
 ._1U6VM {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -10476,7 +10329,7 @@ div._3bqe5 > div {
   margin-left: 32px;
   margin-bottom: 44px;
   width: 40%;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -10560,7 +10413,7 @@ div._3bqe5 > div {
 }
 
 ._2cAm4:hover {
-  background: rgba(69, 193, 78, 0.35);
+  background: #002C43;
 }
 
 ._1WBT8 {
@@ -11084,7 +10937,8 @@ div._3bqe5 > div {
   margin-top: 22px;
 }
 
-._9fE1R h2 {
+._9fE1R ._TY894 h2 {
+  font-weight: 400;
   line-height: 18px;
   display: inline;
 }
@@ -11174,7 +11028,7 @@ div._3bqe5 > div {
 
 ._1Xbrb,
 ._3tkuf {
-  background: rgba(69, 193, 78, 0.35);
+  background: #002C43;
   border-radius: 0;
   overflow: hidden;
   margin-bottom: 22px;
@@ -11255,11 +11109,11 @@ div._3bqe5 > div {
   color: #FFFFFF;
   padding: 22px 28px;
   margin-bottom: 22px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
 }
 
 ._17BOo .bsAyu {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -11355,7 +11209,7 @@ div._3bqe5 > div {
 }
 
 .wcqil {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -11649,7 +11503,7 @@ div._3bqe5 > div {
 ._3d7ey a,
 ._3d7ey p,
 ._3d7ey span {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -11670,7 +11524,7 @@ div._3bqe5 > div {
 }
 
 ._3GQKy {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
@@ -12015,7 +11869,7 @@ div._3bqe5 > div {
 }
 
 ._3G-jr {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
@@ -12134,6 +11988,23 @@ div._3bqe5 > div {
   max-width: 100%;
 }
 
+#tackles {
+  padding: 44px 22px;
+  position: fixed;
+  top: 67px;
+  right: 22px;
+  width: 80px;
+  border: 1px solid rgba(125, 160, 177, 0.22);
+  box-shadow: 0 2px 2px 0 rgba(56, 82, 119, 0.15), 0 0 0 1px rgba(56, 82, 119, 0.15);
+  padding-top: 31px;
+  background: #FFFFFF;
+  bottom: 56px;
+}
+
+#tackles.active {
+  max-width: 341px;
+}
+
 @media screen and (max-width: 1280px) {
   ._1zwKC {
     margin-left: 0;
@@ -12181,7 +12052,7 @@ div._3bqe5 > div {
 }
 
 ._2uxNN {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -12268,7 +12139,7 @@ div._3bqe5 > div {
 }
 
 ._2H69I {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -12292,8 +12163,8 @@ div._3bqe5 > div {
 ._9T4R2 {
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 55px;
-  margin-left: -12px;
+  padding-bottom: 44px;
+  margin: 0;
 }
 
 @media screen and (max-width: 508px) {
@@ -12324,14 +12195,18 @@ div._3bqe5 > div {
 ._1XEbE {
   display: block;
   position: relative;
-  width: 586px;
+  width: 286px;
   border-radius: 0;
   overflow: hidden;
   background: #002C43;
 }
 
+._1XEbE .hzEOQv {
+  display: none;
+}
+
 ._1XEbE:hover {
-  background: rgba(255, 255, 255, 0.035);
+  background: #45c14e;
 }
 
 ._1XEbE:hover ._1DRo img {
@@ -12425,7 +12300,7 @@ div._3bqe5 > div {
 
 ._1wjeD {
   padding: 22px;
-  padding-bottom: 116px;
+  padding-bottom: 80px;
 }
 
 @media screen and (max-width: 1180px) {
@@ -12446,17 +12321,19 @@ div._3bqe5 > div {
 }
 
 .grsTy {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  color: #FFFFFF;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 28px;
-}
-
-@media screen and (max-width: 1180px) {
-  .grsTy {
-    font-size: 28px;
-    line-height: 26px;
-  }
+  overflow: hidden;
+  max-height: 55px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  line-height: 18px;
+  font-size: 18px;
+  min-height: 55px;
 }
 
 ._2ilqp {
@@ -12823,7 +12700,7 @@ div._3bqe5 > div {
 }
 
 ._7otWp {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 22px;
@@ -12850,7 +12727,7 @@ div._3bqe5 > div {
 }
 
 ._3ej6u {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   background: #141C3E;
@@ -12939,7 +12816,7 @@ div._3bqe5 > div {
 }
 
 .DcoLy ._31RCK > span {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -13004,7 +12881,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   height: 22px;
   padding: 22px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -13265,7 +13142,7 @@ div._3bqe5 > div {
 .-DD7c {
   display: block;
   margin-top: 9px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -13415,7 +13292,7 @@ div._3bqe5 > div {
 }
 
 ._1CkKO {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -13489,7 +13366,7 @@ div._3bqe5 > div {
 }
 
 ._3i2q0 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
@@ -13505,7 +13382,7 @@ div._3bqe5 > div {
 }
 
 ._3f7H0 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -13524,6 +13401,13 @@ div._3bqe5 > div {
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
+  max-width: 678px;
+}
+
+@media screen and (max-width: 548px) {
+  ._1fZBx {
+    max-width: 320px;
+  }
 }
 
 ._pRC7 {
@@ -13553,7 +13437,7 @@ div._3bqe5 > div {
 ._pRC7:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 28px;
@@ -13579,7 +13463,7 @@ div._3bqe5 > div {
 }
 
 ._2mbtl {
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
@@ -13592,8 +13476,8 @@ div._3bqe5 > div {
 }
 
 ._1-0JF {
-  background: rgba(69, 193, 78, 0.25);
-  color: #f8f8f8;
+  background: #002C43;
+  color: #FFFFFF;
   padding: 44px 16px;
   position: relative;
   box-shadow: 0 2px 22px 0 rgba(0, 0, 0, 0.05);
@@ -13656,7 +13540,7 @@ div._3bqe5 > div {
   max-width: 1180px;
   padding: 28px 0;
   margin: 0 16px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -13718,17 +13602,11 @@ div._3bqe5 > div {
 ._2_Chk {
   margin: 0 auto;
   width: 100%;
-  max-width: 1180px;
+  max-width: 1024px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-}
-
-@media screen and (max-width: 1158px) {
-  ._2_Chk {
-    max-width: 1028px;
-  }
 }
 
 @media screen and (max-width: 1028px) {
@@ -13738,7 +13616,7 @@ div._3bqe5 > div {
 }
 
 ._3F7tI {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -13756,12 +13634,32 @@ div._3bqe5 > div {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: 348px;
+  min-height: 330px;
 }
 
 ._116es {
-  -ms-flex: 0 0 456px;
-  flex: 0 0 456px;
+  -ms-flex: 0 0 678px;
+  flex: 0 0 678px;
+}
+
+._FTR56 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+}
+
+._FTR56 ._35Eoh {
+  color: #FFFFFF;
+}
+
+._FTR56 ._2cfq3 {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+._FTR56 ._1Honn {
+  color: rgba(255, 255, 255, 0.75);
+  text-transform: uppercase;
+  font-size: 22px;
+  margin: 22px 22px 44px;
 }
 
 @media screen and (max-width: 1210px) {
@@ -13807,6 +13705,135 @@ div._3bqe5 > div {
   flex: 1;
 }
 
+.VDPbh ._FGT65 {
+  padding: 0px;
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+}
+
+.VDPbh ._FGT65 ._89GHT {
+  margin-bottom: 22px;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.VDPbh ._FGT65 ._89GHT ._CFG34 {
+  color: rgba(0, 50, 75, 0.65);
+  fill: rgba(0, 50, 75, 0.65);
+  font-size: 34px;
+}
+
+.VDPbh ._FGT65 ._89GHT ._CFG34 ._CFR45 {
+  display: inline-block;
+  width: 80px;
+}
+
+.VDPbh ._FGT65 ._89GHT ._CFG34 ._CFR45 ._214e9 {
+  width: 100%;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY {
+  margin-left: 16px;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._GJ585 {
+  width: 100%;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._GJ585 ._23GTY {
+  max-height: 36px;
+  min-height: 36px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 {
+  margin-bottom: 0;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY {
+  margin-bottom: 0;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ {
+  display: block;
+  width: 100%;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY {
+  font-weight: 400;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY {
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 {
+  font-weight: 400;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 ._TYMN3 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 ._TYMN3 ._D45RT {
+  padding-right: .3em;
+  padding-left: .3em;
+  font-size: 16px;
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 ._TYMN3 ._D45RT:after {
+  content: '\00B7';
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 ._TYMN3 ._23FRT {
+  white-space: nowrap;
+  padding-left: 0;
+}
+
+.VDPbh ._38Ked {
+  background: #002C43;
+  border: 1px solid rgba(125, 160, 177, 0.11);
+  margin-bottom: 4px;
+}
+
+.VDPbh ._38Ked:hover {
+  background: #45c14e;
+}
+
+.VDPbh ._38Ked ._271kZ {
+  margin-bottom: 18px;
+}
+
+.VDPbh ._38Ked ._1G1nd {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 4px;
+}
+
+.VDPbh ._38Ked .jbQyuy {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.VDPbh ._1JesO {
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 0;
+}
+
 ._9DqWK {
   height: 92px;
   background: rgba(69, 193, 78, 0.25);
@@ -13817,12 +13844,12 @@ div._3bqe5 > div {
 }
 
 ._3JzN1 div {
-  color: #f8f8f8;
+  margin-right: 11px;
 }
 
 ._13Iad {
   color: #f8f8f8;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 16px;
@@ -13900,7 +13927,7 @@ div._3bqe5 > div {
 }
 
 ._24mzx {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -13991,7 +14018,7 @@ div._3bqe5 > div {
   ._2_Gw9:after {
     color: #FFFFFF;
     content: attr(data-stamp);
-    font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 28px;
@@ -14011,7 +14038,7 @@ div._3bqe5 > div {
   }
 
   .Dpcfa {
-    font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -14119,7 +14146,7 @@ div._3bqe5 > div {
   ._2_Gw9:after {
     color: #FFFFFF;
     content: attr(data-stamp);
-    font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 35px;
@@ -14148,7 +14175,7 @@ div._3bqe5 > div {
 }
 
 ._1SLoN {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-size: 14px;
   line-height: 14px;
   background: #FFFFFF;
@@ -14258,7 +14285,7 @@ div._3bqe5 > div {
   background: rgba(69, 193, 78, 0.85);
   color: #FFFFFF;
   border-radius: 0px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -14291,11 +14318,10 @@ div._3bqe5 > div {
 }
 
 ._1U_qv {
-  padding: 11px 22px;
-  margin-left: 0;
-  margin-bottom: 22px;
+  padding: 0;
+  margin: 22px;
   background: transparent;
-  height: 52px;
+  height: 38px;
   overflow: hidden;
 }
 
@@ -14607,7 +14633,7 @@ div._3bqe5 > div {
   max-width: 872px;
   margin-left: auto;
   margin-right: auto;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -14637,7 +14663,7 @@ div._3bqe5 > div {
 }
 
 .aPjG8 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -14816,7 +14842,7 @@ div._3bqe5 > div {
 }
 
 ._3BaWr {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 64px;
@@ -14847,12 +14873,12 @@ div._3bqe5 > div {
 
 ._2zNwx h2 {
   margin-bottom: 28px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
 ._2zNwx h3 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   margin: 22px 0;
 }
@@ -14911,7 +14937,7 @@ div._3bqe5 > div {
 }
 
 ._35Ns5 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -14975,11 +15001,11 @@ div._3bqe5 > div {
 }
 
 .O93cc {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 44px;
-  line-height: 44px;
+  font-size: 34px;
+  line-height: 32px;
   margin: 44px 0;
 }
 
@@ -15181,7 +15207,7 @@ div._3bqe5 > div {
 
 ._105Oj em,
 .seE-I em {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -15401,7 +15427,7 @@ div._3bqe5 > div {
 }
 
 ._2BMyH {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -15439,7 +15465,7 @@ div._3bqe5 > div {
   margin-bottom: 22px;
   padding-top: 22px;
   display: none;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -15659,7 +15685,7 @@ div._3bqe5 > div {
 }
 
 .udCjc {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 28px;
@@ -15830,7 +15856,7 @@ div._3bqe5 > div {
   box-shadow: 0 0 4px rgba(0, 8, 39, 0.14), 0 4px 8px rgba(0, 8, 39, 0.28);
   z-index: 9;
   padding: 0 22px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -15920,7 +15946,7 @@ div._3bqe5 > div {
   padding: 10px 0;
   cursor: pointer;
   margin: 0 18px 0 0;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -15968,6 +15994,10 @@ div._3bqe5 > div {
   text-align: left;
 }
 
+.eetbSx .gwBfwM:last-child {
+  margin-right: 0;
+}
+
 .eetbSx .gwBfwM ._1_VaP {
   display: -ms-flexbox;
   display: flex;
@@ -15975,7 +16005,6 @@ div._3bqe5 > div {
   justify-content: flex-start;
   -ms-flex-align: start;
   align-items: start;
-  margin-left: -2px;
 }
 
 .eetbSx .gwBfwM ._1_VaP svg:not(:root) {
@@ -15986,12 +16015,12 @@ div._3bqe5 > div {
   display: inline-block;
   position: relative;
   height: 22px;
-  width: 22px;
+  width: 30px;
 }
 
 .eetbSx .gwBfwM ._1_VaP ._TYRW3 svg {
   position: absolute;
-  top: 4px;
+  top: 0;
   left: 2px;
 }
 
@@ -16059,7 +16088,7 @@ div._3bqe5 > div {
   position: absolute;
   display: inline-block;
   font-size: 22px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   letter-spacing: -0.5px;
   text-transform: uppercase;
@@ -16085,7 +16114,7 @@ div._3bqe5 > div {
   align-items: center;
   padding: 0;
   position: relative;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -16284,7 +16313,7 @@ div._3bqe5 > div {
 }
 
 ._6UUFH {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -16411,7 +16440,7 @@ div._3bqe5 > div {
   }
 
   ._12GBJ ._1C5MC {
-    font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -16694,7 +16723,7 @@ div._3bqe5 > div {
 ._3vawV,
 ._3ZFAN,
 ._10G3J {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -16712,7 +16741,7 @@ div._3bqe5 > div {
 }
 
 ._3ZFAN {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -16945,7 +16974,7 @@ div._3bqe5 > div {
 }
 
 ._2GM-b {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -16964,7 +16993,7 @@ div._3bqe5 > div {
 ._1Y_xx {
   text-transform: uppercase;
   position: relative;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 64px;
@@ -16974,7 +17003,7 @@ div._3bqe5 > div {
 ._1Y_xx span {
   display: block;
   position: relative;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 64px;
@@ -17138,7 +17167,7 @@ div._3bqe5 > div {
 }
 
 ._3sn4w {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -17243,7 +17272,7 @@ div._3bqe5 > div {
 ._1k78U,
 ._1NG4N,
 .BeWU8 {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -17266,7 +17295,7 @@ div._3bqe5 > div {
 }
 
 ._1NG4N {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -17302,7 +17331,7 @@ div._3bqe5 > div {
 }
 
 ._2bVMA {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
@@ -17365,7 +17394,7 @@ div._3bqe5 > div {
 }
 
 ._3ldas span {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
@@ -17442,7 +17471,7 @@ div._3bqe5 > div {
 }
 
 ._1betN {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -17488,7 +17517,7 @@ div._3bqe5 > div {
 }
 
 ._2Bf6g {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -17509,7 +17538,7 @@ div._3bqe5 > div {
 }
 
 ._2Jtky {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -17565,7 +17594,7 @@ div._3bqe5 > div {
   display: block;
   color: #FFFFFF;
   font-size: 35px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -17634,7 +17663,7 @@ div._3bqe5 > div {
   margin-right: 16px;
   padding: 9px 0;
   opacity: .4;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -17686,7 +17715,7 @@ div._3bqe5 > div {
   float: right;
   text-transform: uppercase;
   font-size: 16px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -17819,7 +17848,7 @@ div._3bqe5 > div {
 }
 
 .weBNu {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -17881,7 +17910,7 @@ div._3bqe5 > div {
 }
 
 ._2A4Sa {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -17897,7 +17926,7 @@ div._3bqe5 > div {
 }
 
 ._2yIak {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 35px;
   line-height: 42px;
@@ -18003,7 +18032,7 @@ div._3bqe5 > div {
 }
 
 ._2YnA3 > span {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -18025,7 +18054,7 @@ div._3bqe5 > div {
 }
 
 ._14NuX {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -18282,7 +18311,7 @@ div._3bqe5 > div {
 }
 
 ._61szA {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -18301,7 +18330,7 @@ div._3bqe5 > div {
 }
 
 ._1zuag {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -18353,7 +18382,7 @@ div._3bqe5 > div {
 }
 
 ._21oXk {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -18493,7 +18522,7 @@ div._3bqe5 > div {
   color: #f8f8f8;
   font-size: 16px;
   line-height: 18px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   display: -ms-flexbox;
   display: flex;
@@ -18552,7 +18581,7 @@ div._3bqe5 > div {
 }
 
 .Q8QGa {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 22px;
@@ -18664,7 +18693,7 @@ div._3bqe5 > div {
 
 ._3CI0P,
 ._14tWP {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -18729,7 +18758,7 @@ div._3bqe5 > div {
 }
 
 ._3jhvW {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   margin-bottom: 22px;
   color: #2784bd;
@@ -18748,7 +18777,7 @@ div._3bqe5 > div {
 }
 
 ._3LR7v {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
 }
 
@@ -18760,11 +18789,11 @@ div._3bqe5 > div {
 ._1euuK {
   font-weight: 400;
   margin-left: 4px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
 }
 
 ._1m8TD {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   margin-left: auto;
 }
@@ -18854,7 +18883,7 @@ div._3bqe5 > div {
 .VGksr:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -18886,7 +18915,7 @@ div._3bqe5 > div {
   .VGksr:after {
     color: #FFFFFF;
     content: attr(data-stamp);
-    font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 55px;
@@ -18937,7 +18966,7 @@ div._3bqe5 > div {
 
 ._3clb_ {
   word-break: break-word;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -19044,7 +19073,7 @@ div._3bqe5 > div {
 }
 
 ._1sBpq {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   font-size: 44px;
   line-height: 55px;
@@ -19060,7 +19089,7 @@ div._3bqe5 > div {
 
 ._2-lPc {
   color: rgba(0, 50, 75, 0.65);
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   margin: 22px 0 28px;
@@ -19108,7 +19137,7 @@ div._3bqe5 > div {
 ._1pCN3 {
   font-size: 22px;
   line-height: 22px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: 4px solid rgba(0, 50, 75, 0.65);
@@ -19248,7 +19277,7 @@ div._3bqe5 > div {
 ._2UPZy:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -19588,7 +19617,7 @@ nav._1R2o8 {
 ._3zxcs {
   font-size: 22px;
   line-height: 22px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: 4px solid #ccc;
@@ -19681,7 +19710,7 @@ nav._1R2o8 {
 }
 
 .SMf8G {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -19712,7 +19741,7 @@ nav._1R2o8 {
 }
 
 ._1edwb {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -19807,7 +19836,7 @@ nav._1R2o8 {
 ._2UPZy:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -20483,7 +20512,7 @@ nav._1R2o8 {
   word-break: break-word;
   padding-bottom: 44px;
   color: #FFFFFF;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 44px;
@@ -21038,7 +21067,7 @@ nav._1R2o8 {
 .cBqIJu {
   position: relative;
   color: #FFFFFF;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 56px;
@@ -21059,7 +21088,7 @@ nav._1R2o8 {
 
 .bfnJOq .bEORjC {
   color: #ffffff;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -21226,7 +21255,7 @@ nav._1R2o8 {
 }
 
 .fneZyH {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   display: -ms-flexbox;
@@ -21275,7 +21304,7 @@ nav._1R2o8 {
 }
 
 .YkbCv {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 500;
   -webkit-font-smoothing: antialiased;
   color: rgba(0, 8, 39, 0.75);
@@ -21307,6 +21336,7 @@ nav._1R2o8 {
 }
 
 .YkbCv ._74oom ._eeohz {
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-direction: row;
@@ -21316,9 +21346,9 @@ nav._1R2o8 {
   display: flex;
   color: #002C43;
   margin-right: 10px;
-  font-weight: 700;
-  line-height: 16px;
-  font-size: 16px;
+  font-weight: bold;
+  line-height: 14px;
+  font-size: 14px;
 }
 
 .YkbCv ._74oom ._eeohz:after {
@@ -21548,7 +21578,7 @@ nav._1R2o8 {
 }
 
 .kYFvfn {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   margin-right: 5px;
@@ -21559,14 +21589,14 @@ nav._1R2o8 {
 }
 
 .fXspcU {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   color: rgba(0, 50, 75, 0.65);
 }
 
 .jrQrPO {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
@@ -21619,13 +21649,13 @@ nav._1R2o8 {
 }
 
 .gqKiYI {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .lXCHc {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   margin-left: 5px;
@@ -21636,7 +21666,7 @@ nav._1R2o8 {
   white-space: nowrap;
   font-size: 16px;
   line-height: 16px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -21649,7 +21679,7 @@ nav._1R2o8 {
   display: flex;
   margin-right: 22px;
   margin-bottom: 0;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -21685,7 +21715,7 @@ nav._1R2o8 {
   margin-bottom: 6px;
   font-size: 18px;
   line-height: 18px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
@@ -21695,7 +21725,7 @@ nav._1R2o8 {
   margin-bottom: 22px;
   font-size: 18px;
   line-height: 18px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
@@ -21895,7 +21925,7 @@ nav._1R2o8 {
 .cBqIJu {
   position: relative;
   color: #ffffff;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 60px;
@@ -21951,7 +21981,7 @@ nav._1R2o8 {
 
 .cnpsLn {
   color: #ffffff;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -21985,7 +22015,7 @@ nav._1R2o8 {
 .gEVQKf {
   padding: 22px 0 22px 56px;
   overflow: hidden;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   position: relative;
@@ -22280,7 +22310,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-hzDkRC */
 
 .kXjlPz {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
@@ -22305,7 +22335,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-jhAzac */
 
 .cpeAaF {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
@@ -22329,7 +22359,7 @@ nav._1R2o8 {
   border-bottom: none;
   margin-bottom: 25px;
   position: relative;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -22419,7 +22449,7 @@ nav._1R2o8 {
 }
 
 .fcHuW {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: 1px solid #002C43;
@@ -22467,7 +22497,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-jtRfpW */
 
 .gtTavk {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   border: 1px solid #002C43;
@@ -22490,7 +22520,7 @@ nav._1R2o8 {
 
 .bEORjC {
   color: #FFFFFF;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -22699,7 +22729,7 @@ nav._1R2o8 {
 }
 
 .bUuMKH {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
@@ -22730,7 +22760,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-hGoxap */
 
 .lhTWPj {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
@@ -22760,7 +22790,7 @@ nav._1R2o8 {
   border-bottom: none;
   margin-bottom: 25px;
   position: relative;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -22891,7 +22921,7 @@ nav._1R2o8 {
 /* sc-component-id: sc-fzsDOv */
 
 .iHVmwM {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   margin-right: 5px;
@@ -22904,14 +22934,14 @@ nav._1R2o8 {
 /* sc-component-id: sc-gPWkxV */
 
 .fhUFWx {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   color: rgba(0, 50, 75, 0.65);
 }
 
 .Ymjpr {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   background-color: #f9fafc;
@@ -22924,7 +22954,7 @@ nav._1R2o8 {
 }
 
 .hoHLMb {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
@@ -22944,7 +22974,7 @@ nav._1R2o8 {
   padding: 0px 15px 10px;
   margin: 0px -15px 10px;
   overflow: hidden;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -23181,7 +23211,7 @@ nav._1R2o8 {
 }
 
 .bueqql {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   display: -ms-flexbox;
@@ -23205,7 +23235,7 @@ nav._1R2o8 {
 }
 
 .iwHsKT {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   color: rgba(0, 50, 75, 0.65);
@@ -23299,13 +23329,13 @@ nav._1R2o8 {
 }
 
 .gwOwd {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .btOujb {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   margin-left: 5px;
@@ -23317,7 +23347,7 @@ nav._1R2o8 {
   color: #525860;
   font-size: 16px;
   line-height: 16px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
@@ -23330,7 +23360,7 @@ nav._1R2o8 {
   display: flex;
   margin-right: 20px;
   margin-bottom: 20px;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
 }
@@ -23366,7 +23396,7 @@ nav._1R2o8 {
   margin-bottom: 22px;
   font-size: 18px;
   line-height: 1.4;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
@@ -23376,7 +23406,7 @@ nav._1R2o8 {
   margin-bottom: 22px;
   font-size: 18px;
   line-height: 1.4;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
 }
@@ -23570,7 +23600,7 @@ nav._1R2o8 {
 .bIOiDW {
   position: relative;
   color: #ffffff;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 60px;
@@ -23626,7 +23656,7 @@ nav._1R2o8 {
 
 .fSmQUy {
   color: #ffffff;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -23652,7 +23682,7 @@ nav._1R2o8 {
 
 .kXBqXY {
   color: #ffffff;
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
@@ -23776,7 +23806,7 @@ nav._1R2o8 {
 }
 
 .edgHWr {
-  font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   background-color: #f9fafc;
@@ -23827,7 +23857,7 @@ strong {
 
 .iBpMqP .fYnwAL .edZIuC {
   display: inline-block;
-  font-family: "DriveTribe", "DriveTribe", "Roboto", "Averta", "Roboto", serif;
+  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
   font-weight: 700;
   text-transform: uppercase;
   color: rgba(0, 50, 75, 0.65);
@@ -24053,10 +24083,10 @@ post {
 
 ._3oju3 ._2bXVy ._3F6QL ._2S1VP {
   padding: 0;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
-  max-height: 200px;
-  min-height: 160px;
+  max-height: 42px;
+  min-height: 42px;
   outline: none;
   overflow-x: hidden;
   overflow-y: auto;
@@ -24064,13 +24094,13 @@ post {
   white-space: pre-wrap;
   word-wrap: break-word;
   z-index: 1;
-  line-height: 20px;
+  line-height: 18px;
   width: 100%;
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  color: #00324B;
+  color: #002C43;
 }
 
 ._3oju3 ._2lkdt {

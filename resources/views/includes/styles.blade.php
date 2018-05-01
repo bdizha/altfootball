@@ -3280,7 +3280,6 @@
         -webkit-font-smoothing: antialiased;
         font-size: 16px;
         line-height: 16px;
-        color: rgba(0, 50, 75, 0.65);
         margin-bottom: 20px;
     }
 

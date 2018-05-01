@@ -1,7 +1,17 @@
 <template id='comments-template'>
     <!-- ko if: level() === 0 && isList() === false -->
     <div class="_2uxNN">
-        Responses (<span data-bind="text: commentsCount"></span>)
+        <button class="_GwBfW5">
+            <div class="_TYRW3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" version="1.1" width="48px" height="48px" class="_3gymQ">
+                    <g fill="rgba(125, 160, 177, 0.75)" fill-rule="evenodd">
+                        <path d="M16 13.33H5.2a.76.76 0 0 0-.4.11l-3.3 1.99V1.5H16v11.83zM16.75 0h-16A.75.75 0 0 0 0 .75v16a.75.75 0 0 0 1.14.64l4.26-2.56h11.35c.41 0 .75-.33.75-.75V.75a.75.75 0 0 0-.75-.75z"></path>
+                        <path d="M4.75 6.48h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1m0 3h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1"></path>
+                    </g>
+                </svg>
+            </div>
+            <div class="_FFPR2" data-bind="text: commentsCount">0</div>
+        </button>
     </div>
     <div class="ivfOh">
         <form class="_33rbn ODDw0" data-bind="submit: saveComment">
