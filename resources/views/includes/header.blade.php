@@ -1,4 +1,4 @@
-<header class="_3XXLi">
+<header class="_3XXLi@if(Auth::guard()->check()) _FGT78@endif">
     <nav class="R1XAV jMZSBo" id="header">
         <div class="sc-kAzzGY fVSfy">
             <div class="sc-ckVGcZ bUebbF">

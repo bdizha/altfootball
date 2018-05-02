@@ -11,15 +11,15 @@
         <div>
             <div class="_1U_qv">
                 <div class="_2QjgM _GTYIO">
-                    <div class="_14sEb _1z2cn">
-                        <div class="_3ohNX">
-                            <div class="_373gh">
-                                <div class="owl-carousel owl-tags owl-theme">
-                                    @include("tag.list")
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {{--<div class="_14sEb _1z2cn">--}}
+                        {{--<div class="_3ohNX">--}}
+                            {{--<div class="_373gh">--}}
+                                {{--<div class="owl-carousel owl-tags owl-theme">--}}
+                                    {{--@include("tag.list")--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
                     <div class="_2v6JB">
                         <div class="_2BZH3 E7_yx">
                             <button class="_1JesO _2tGOx" disabled="">
@@ -163,7 +163,7 @@
                                         class="sc-jbKcbu fAtzSi">Stories</span></div>
                             <div class="sc-dliRfk dpeeXK">
                                 <button class="sc-kLIISr cORlPk">Discover</button>
-                                <button class="sc-kLIISr iUbryo">My Feed</button>
+                                <button class="sc-kLIISr iUbryo">In Box</button>
                             </div>
                         </div>
                     </div>
