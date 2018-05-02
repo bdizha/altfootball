@@ -39,7 +39,7 @@ class FootballJourney extends NewsJob
         $client = new Client();
 
         $crawler = $client->request('GET', $this->url);
-        $crawler->filter('a.headline')->each(function (Crawler $node, $i) {
+        $crawler->filter('figure a')->each(function (Crawler $node, $i) {
 
             $link = $node->attr("href");
 
