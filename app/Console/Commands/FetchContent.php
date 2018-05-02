@@ -10,7 +10,7 @@ use App\Jobs\Bundesliga;
 use App\Jobs\FCBayernJob;
 use App\Jobs\Football365;
 use App\Jobs\FootballLondonJob;
-use App\Jobs\FootballJourneyJOb;
+use App\Jobs\FootballJourneyJob;
 use App\Jobs\JuventusJob;
 use App\Jobs\LaLigaJob;
 use App\Jobs\LiverpoolJob;
@@ -75,7 +75,7 @@ class FetchContent extends Command
         }
 
         try {
-            dispatch(new FootballJourneyJOb());
+            dispatch(new FootballJourneyJob());
         } catch (\Exception $e) {
 
         }
