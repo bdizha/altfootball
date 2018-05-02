@@ -2,7 +2,7 @@
     <span class="sc-hrWEMg fneZyH">
         <div class="sc-eTuwsz dDnmGN">
             <a class="_38L6D" href="/f/{{ $post->fanbase->slug }}">
-                <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->thumb_x }}"
+                <img alt="{{ $post->user->name }}" role="presentation" src="{{ $post->user->small_x }}"
                      class="_214e9 b00q8" >
             </a>
         </div>
