@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Jobs;
+
+use App\FanbasePost;
 use App\Post;
 use App\User;
-use App\FanbasePost;
 use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
@@ -21,9 +22,9 @@ class FootballJourney extends NewsJob
      */
     public function __construct()
     {
-        $this->fanbase_id = 8;
-        $this->domain = "https://www.football.london/";
-        $this->url = "https://www.football.london/";
+        $this->fanbase_id = 6;
+        $this->url = "https://www.manchestereveningnews.co.uk/sport/football/football-news/";
+        $this->domain = "https://www.manchestereveningnews.co.uk/";
     }
 
     /**
@@ -35,113 +36,104 @@ class FootballJourney extends NewsJob
     {
 
         echo ":::::: " . $this->domain . " ::::::\n";
-
         $client = new Client();
 
-        foreach (range(1, 3) as $page) {
+        $crawler = $client->request('GET', $this->url);
+        $crawler->filter('a.headline')->each(function (Crawler $node, $i) {
 
-//            $crawler = $client->request('GET', $this->url . $page);
+            $link = $node->attr("href");
 
-            $posts = Post::where("external_url", "like", "%sportslens%")->get();
+            if (!empty($link)) {
 
-            foreach ($posts as $post) {
-                $link = $post->external_url;
+                $url = $link;
 
-                if (!empty($link)) {
+                $p = Post::where("external_url", $url)->first();
+                $client = new Client();
+                $data = $client->request('GET', $url);
 
-                    $url = $link;
-                    $p = Post::where("external_url", $url)->first();
-                    $client = new Client();
-                    $data = $client->request('GET', $url);
+                $user = array();
 
-                    $user = array();
+                if ($data->filter('.article-body')->count()) {
 
-                    if ($data->filter('.thecontent')->count()) {
+                    $user['first_name'] = "Manchester";
+                    $user['last_name'] = "Football";
+                    $user['nickname'] = 'menews';
+                    $user['email'] = strtolower($user['nickname']) . "@manchestereveningnews.co.uk";
+                    $user['password'] = bcrypt($user['email']);
+                    $user['image'] = "https://i2-prod.manchestereveningnews.co.uk/incoming/article14537568.ece/ALTERNATES/s458/GettyImages-924152144.jpg";
 
-                        $author = $data->filter('.postauthor .author a')->text();
+                    $u = User::where("email", $user['email'])->first();
 
-                        $nameArr = explode(" ", $author);
-
-                        if (!empty($nameArr[1])) {
-
-                            $user['first_name'] = $nameArr[0];
-                            $user['last_name'] = "&nbsp;";
-                            $user['nickname'] = $nameArr[0];
-                            $user['email'] = strtolower($nameArr[0]) . "@soccerlens.com";
-                            $user['password'] = bcrypt($user['email']);
-
-                            $u = User::where("email", $user['email'])->first();
-
-                            if (empty($u->id)) {
-                                $u = User::create(
-                                    $user
-                                );
-                            } else {
-                                $u->first_name = $user['first_name'];
-                                $u->last_name = $user['last_name'];
-                                $u->nickname = $user['nickname'];
-                                $u->save();
-                            }
-
-                            $post = array();
-
-                            $post['credit'] = $this->domain;
-                            $post['external_url'] = $url;
-                            $post['user_id'] = $u->id;
-
-                            if ($data->filter('.thecontent img')->count() &&
-                                $data->filter('.post-info .date')->count()
-                            ) {
-
-                                $post['image'] = $data->filter('.thecontent img')->attr("data-layzr");
-                                $post['title'] = $data->filter('.single-title')->text();
-                                $post['date'] = $this->cleanUpDate($data->filter('.post-info .date')->text());
-                                $post['created_at'] = Carbon::parse($post['date']);
-
-                                $content = "";
-                                $summary = "";
-                                $data->filter('.thecontent p')->each(function (Crawler $node, $i) use (&$content, &$summary){
-                                    if ($i == 0) {
-                                        $summary = str_limit($node->text(), 250);
-                                    }
-                                    $content .= "<p>{$node->html()}</p>";
-                                });
-
-                                $content = str_replace("<p><br></p>", "", $content);
-                                $post['content'] = str_replace("<p><span style=\"background-color: initial; font-size: 1em;\"><br></span></p>", "", $content);
-                                $post['summary'] = $summary;
-
-                                if (empty($p->id)) {
-                                    $p = Post::create($post);
-
-                                    echo 'Inserted post: ' . $p->slug . "\n";
-
-                                } else {
-                                    $p->content = $post['content'];
-                                    $p->title = $post['title'];
-                                    $p->image = $post['image'];
-                                    $p->credit = $post['credit'];
-                                    $p->created_at = Carbon::parse($post['date']);
-                                    $p->save();
-
-                                    echo "updated::: {$p->slug} \n";
-                                }
-
-                                $fb = FanbasePost::where("post_id", $p->id)
-                                    ->where("fanbase_id", $this->fanbase_id)
-                                    ->first();
-
-                                if (empty($fb->id)) {
-                                    FanbasePost::create([
-                                        'post_id' => $p->id,
-                                        'fanbase_id' => $this->fanbase_id
-                                    ]);
-                                }
-                            }
-                        }
+                    if (empty($u->id)) {
+                        $u = User::create(
+                            $user
+                        );
+                    } else {
+                        $u->first_name = $user['first_name'];
+                        $u->last_name = $user['last_name'];
+                        $u->nickname = $user['nickname'];
+                        $u->save();
                     }
+
+                    $post = array();
+
+                    $post['credit'] = $this->domain;
+                    $post['external_url'] = $url;
+                    $post['user_id'] = $u->id;
+
+                    $summary = $data->filter('meta[property="og:description"]')->attr('content');
+
+
+                    if ($data->filter('meta[name="og:image"]')->count() > 0) {
+                        $ogImage = $data->filter('meta[name="og:image"]')->attr('content');
+                    } else {
+                        $ogImage = $data->filter('meta[property="og:image"]')->attr('content');
+                    }
+
+                    $post["image"] = $ogImage;
+
+                    $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
+
+                    $dateRaw = $data->filter('meta[property="article:published_time"]')->attr('content');
+
+                    $post['date'] = $dateRaw;
+                    $post['created_at'] = $this->cleanUpDate(Carbon::parse($post['date']));
+
+                    $content = "";
+                    $data->filter('.article-body p')->each(function (Crawler $node, $i) use (&$content) {
+                        $content .= "<p>{$node->html()}</p>";
+                    });
+
+                    $content = $this->cleanHtml($content);
+                    $post['content'] = $content;
+                    $post['summary'] = substr($summary, 0, 255);
+
+//                    dd($post);
+
+                    if (empty($p->id)) {
+                        $p = Post::create($post);
+                        echo 'Inserted post: ' . $p->slug . "\n";
+
+                    } else {
+                        $p->content = $post['content'];
+                        $p->title = $post['title'];
+                        $p->image = $post['image'];
+                        $p->credit = $post['credit'];
+                        $p->created_at = Carbon::parse($post['date']);
+                        $p->save();
+
+                        echo "updated::: {$p->slug} \n";
+                    }
+
+                    FanbasePost::where("post_id", $p->id)
+                        ->delete();
+
+                    FanbasePost::create([
+                        'post_id' => $p->id,
+                        'fanbase_id' => $this->fanbase_id
+                    ]);
                 }
             }
-        }
+        });
     }
 }

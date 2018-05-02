@@ -9,6 +9,8 @@ use App\Jobs\BBCFootball;
 use App\Jobs\Bundesliga;
 use App\Jobs\FCBayernJob;
 use App\Jobs\Football365;
+use App\Jobs\FootballLondon;
+use App\Jobs\FootballJourney;
 use App\Jobs\JuventusJob;
 use App\Jobs\LaLigaJob;
 use App\Jobs\LiverpoolJob;
@@ -20,7 +22,6 @@ use App\Jobs\PremierLeagueJob;
 use App\Jobs\PSG;
 use App\Jobs\RealMadridJob;
 use App\Jobs\SearieAJob;
-use App\Jobs\FootballLondon;
 use App\Post;
 use Illuminate\Console\Command;
 
@@ -59,6 +60,12 @@ class FetchContent extends Command
     {
 
         Post::where("content", '')->delete();
+
+        try {
+            dispatch(new FootballJourney());
+        } catch (\Exception $e) {
+
+        }
 
         try {
             dispatch(new FootballLondon());
