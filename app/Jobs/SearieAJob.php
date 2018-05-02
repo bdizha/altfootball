@@ -24,7 +24,7 @@ class SearieAJob extends NewsJob
     {
         $this->fanbase_id = 33;
         $this->domain = "http://www.skysports.com";
-        $this->url = "http://www.skysports.com/premier-league";
+        $this->url = "http://www.skysports.com/serie-a";
     }
 
     /**

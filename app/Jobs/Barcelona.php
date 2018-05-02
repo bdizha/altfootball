@@ -39,7 +39,7 @@ class Barcelona extends NewsJob
         $client = new Client();
 
         $crawler = $client->request('GET', $this->url);
-        $crawler->filter('.content-item ')->each(function (Crawler $node, $i) {
+        $crawler->filter('.content-item')->each(function (Crawler $node, $i) {
 
             if ($node->filter('a')->count()) {
 

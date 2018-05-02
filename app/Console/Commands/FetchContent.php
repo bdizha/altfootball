@@ -5,6 +5,7 @@ namespace App\Console\Commands;
 use App\Jobs\ArsenalFC;
 use App\Jobs\Barcelona;
 use App\Jobs\BarcelonaFC;
+use App\Jobs\BBCFootball;
 use App\Jobs\Bundesliga;
 use App\Jobs\FCBayernJob;
 use App\Jobs\Football365;
@@ -20,7 +21,6 @@ use App\Jobs\PremierLeagueJob;
 use App\Jobs\PSG;
 use App\Jobs\RealMadridJob;
 use App\Jobs\SearieAJob;
-use App\Jobs\SpanishFootball;
 use App\Post;
 use Illuminate\Console\Command;
 
@@ -57,6 +57,14 @@ class FetchContent extends Command
      */
     public function handle()
     {
+
+        Post::where("content", '')->delete();
+
+        try {
+            dispatch(new BBCFootball());
+        } catch (\Exception $e) {
+        }
+
 
         Post::where("content", '')->delete();
 
