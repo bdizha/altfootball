@@ -8,9 +8,9 @@
                 </div>
             </div>
         </span>
-        <div class="sc-epnACN YkbCv" data-bind="attr: { href: _.isNull(user.fanbase) ? '/u/' +  user.slug : '/f/' + user.fanbase.slug }">
+        <div class="sc-epnACN YkbCv">
             <div class="_74oom">
-                <div class="_eeohz">
+                <a class="_eeohz" data-bind="attr: { href: _.isNull(user.fanbase) ? '/u/' +  user.slug : '/f/' + user.fanbase.slug }">
                     <span data-bind="text: _.isNull(user.fanbase) ? user.camel : user.fanbase.camel "></span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48"
                          class="_1z7Hy">
@@ -24,7 +24,7 @@
                             <path style=" fill:#35C733;" d="M 16 21 L 24 15 L 32 21 L 29 30 L 19 30 Z M 29.984375 4.9375 C 28.09375 4.335938 26.089844 4 24 4 C 21.910156 4 19.90625 4.335938 18.015625 4.9375 L 16.375 7.8125 L 24 10 L 31 8 Z M 42 26 L 44 24 C 44 19.03125 42.179688 14.496094 39.179688 11 L 37 11.3125 L 37 19.4375 Z M 32.1875 34.8125 L 27.9375 41.5625 L 30.21875 43.003906 C 34.699219 41.535156 38.472656 38.527344 40.933594 34.605469 L 40.125 31.75 Z M 11.0625 19.4375 L 11 11.3125 L 8.820313 11 C 5.820313 14.496094 4 19.03125 4 24 L 6 26 Z M 7.875 31.75 L 7.066406 34.605469 C 9.527344 38.527344 13.296875 41.535156 17.78125 43 L 19.9375 41.4375 L 15.8125 34.8125 Z "></path>
                         </g>
                     </svg>
-                </div>
+                </a>
                 <div class="_csp04">
                     <!-- ko if: published_at.length > 0 -->
                     <span class="_2jvdf" data-bind="text: published_at"></span>
