@@ -16,11 +16,11 @@ use App\Jobs\ManUJob;
 use App\Jobs\News90MinJob;
 use App\Jobs\NewsBreatheChelseaJob;
 use App\Jobs\NewsGoalJob;
-use App\Jobs\NewsSportslensJob;
 use App\Jobs\PremierLeagueJob;
 use App\Jobs\PSG;
 use App\Jobs\RealMadridJob;
 use App\Jobs\SearieAJob;
+use App\Jobs\FootballLondon;
 use App\Post;
 use Illuminate\Console\Command;
 
@@ -59,6 +59,12 @@ class FetchContent extends Command
     {
 
         Post::where("content", '')->delete();
+
+        try {
+            dispatch(new FootballLondon());
+        } catch (\Exception $e) {
+
+        }
 
         try {
             dispatch(new BBCFootball());
@@ -188,12 +194,6 @@ class FetchContent extends Command
 
         try {
             dispatch(new FCBayernJob());
-        } catch (\Exception $e) {
-
-        }
-
-        try {
-            dispatch(new NewsSportslensJob());
         } catch (\Exception $e) {
 
         }

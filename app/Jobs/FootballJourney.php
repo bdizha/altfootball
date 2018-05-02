@@ -8,7 +8,7 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class NewsSportslensJob extends NewsJob
+class FootballJourney extends NewsJob
 {
     protected $domain = "";
     protected $url = "";
@@ -22,8 +22,8 @@ class NewsSportslensJob extends NewsJob
     public function __construct()
     {
         $this->fanbase_id = 8;
-        $this->domain = "http://sportslens.com";
-        $this->url = "http://sportslens.com/page/";
+        $this->domain = "https://www.football.london/";
+        $this->url = "https://www.football.london/";
     }
 
     /**
