@@ -5071,6 +5071,7 @@ dribbles {
   align-items: center;
 }
 
+
 ._1JesO {
   font-family: $font_sans;
   font-weight: 700;
@@ -5079,11 +5080,12 @@ dribbles {
   padding: 22px 11px;
   transition: opacity .1s ease-out;
   color: $color_light_blue;
-  &.disabled {
-    opacity: 0.2;
+}
+&.disabled {
+  ._1JesO {
+    opacity: 0.85;
   }
 }
-
 ._28Zwg {
   background: rgba(69, 193, 78, 0.25);
   height: 2px;
@@ -12821,7 +12823,7 @@ div._3bqe5 {
     background: $color_blue;
     border: 1px solid rgba(125, 160, 177, 0.11);
     margin-bottom: 4px;
-    &:hover{
+    &:hover {
       background: $color_green;
     }
     ._271kZ {
@@ -14672,7 +14674,7 @@ div._3bqe5 {
 ._3XXLi {
   position: relative;
   height: 66px;
-  &._FGT78{
+  &._FGT78 {
     ._3BBJg > :last-child {
       background: rgba(69, 193, 78, 0.85);
     }
@@ -21156,6 +21158,11 @@ nav._1R2o8 {
 
 ._23FRT {
   padding-left: 22px;
+  .VDPbh {
+    ._1JesO {
+      color: $color_light_blue;
+    }
+  }
 }
 
 .bJPofi {

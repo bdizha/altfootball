@@ -5476,8 +5476,8 @@ dribbles ._35GH ._34IO {
   color: rgba(0, 50, 75, 0.65);
 }
 
-._1JesO.disabled {
-  opacity: 0.2;
+.disabled ._1JesO {
+  opacity: 0.85;
 }
 
 ._28Zwg {
@@ -22532,6 +22532,10 @@ nav._1R2o8 {
 
 ._23FRT {
   padding-left: 22px;
+}
+
+._23FRT .VDPbh ._1JesO {
+  color: rgba(0, 50, 75, 0.65);
 }
 
 .bJPofi .SsCsq {
