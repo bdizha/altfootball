@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class BBCFootball extends NewsJob
+class FootballLondonJob extends NewsJob
 {
     protected $domain = "";
     protected $url = "";
@@ -22,9 +22,9 @@ class BBCFootball extends NewsJob
      */
     public function __construct()
     {
-        $this->fanbase_id = 34;
-        $this->url = "https://www.bbc.com/sport/football";
-        $this->domain = "https://www.bbc.com/";
+        $this->fanbase_id = 8;
+        $this->domain = "https://www.football.london/";
+        $this->url = "https://www.football.london/";
     }
 
     /**
@@ -39,29 +39,28 @@ class BBCFootball extends NewsJob
         $client = new Client();
 
         $crawler = $client->request('GET', $this->url);
-        $crawler->filter('a.faux-block-link__overlay')->each(function (Crawler $node, $i) {
+        $crawler->filter('figure a')->each(function (Crawler $node, $i) {
 
-            $link = $this->domain . $node->attr("href");
+            $link = $node->attr("href");
 
 //            dd($link);
 
             if (!empty($link)) {
 
                 $url = $link;
-
                 $p = Post::where("external_url", $url)->first();
                 $client = new Client();
                 $data = $client->request('GET', $url);
 
                 $user = array();
 
-                if ($data->filter('.story-body')->count()) {
-                    $user['first_name'] = "BBC";
-                    $user['last_name'] = "Football";
-                    $user['nickname'] = 'football';
-                    $user['email'] = strtolower($user['nickname']) . "@bbc.com";
+                if ($data->filter('.article-body')->count()) {
+                    $user['first_name'] = "Greg";
+                    $user['last_name'] = "Johnson";
+                    $user['nickname'] = 'gregianjohnson';
+                    $user['email'] = $user['nickname'] . "@football.london";
                     $user['password'] = bcrypt($user['email']);
-                    $user['image'] = "https://s3.amazonaws.com/bbc-uploads/JbiltrRDmdgsrc1d7e7Rp8S7D1DS5Rs0amDio5clq3rKlsl1S1Rl9A4kStA.jpg";
+                    $user['image'] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjA6L1NLkHr0rnmI-r5F6LpKfXhxQE9eu03JdGim0VVT77eyYZ";
 
                     $u = User::where("email", $user['email'])->first();
 
@@ -84,7 +83,6 @@ class BBCFootball extends NewsJob
 
                     $summary = $data->filter('meta[property="og:description"]')->attr('content');
 
-
                     if ($data->filter('meta[name="og:image"]')->count() > 0) {
                         $ogImage = $data->filter('meta[name="og:image"]')->attr('content');
                     } else {
@@ -94,21 +92,22 @@ class BBCFootball extends NewsJob
                     $post["image"] = $ogImage;
 
                     $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
-                    $post['title'] = str_replace(" - MARCA in English", "", $post['title']);
 
-                    $dateRaw = $data->filter('meta[property="rnews:datePublished"]')->attr('content');
+                    $dateRaw = $data->filter('meta[property="article:published_time"]')->attr('content');
 
                     $post['date'] = $dateRaw;
                     $post['created_at'] = $this->cleanUpDate(Carbon::parse($post['date']));
 
                     $content = "";
-                    $data->filter('.story-body p')->each(function (Crawler $node, $i) use (&$content) {
+                    $data->filter('.article-body p')->each(function (Crawler $node, $i) use (&$content) {
                         $content .= "<p>{$node->html()}</p>";
                     });
 
                     $content = $this->cleanHtml($content);
                     $post['content'] = $content;
                     $post['summary'] = substr($summary, 0, 255);
+
+//                    dd($post);
 
                     if (empty($p->id)) {
                         $p = Post::create($post);

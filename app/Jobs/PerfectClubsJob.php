@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class FootballLondon extends NewsJob
+class PerfectClubsJob extends NewsJob
 {
     protected $domain = "";
     protected $url = "";
@@ -22,9 +22,9 @@ class FootballLondon extends NewsJob
      */
     public function __construct()
     {
-        $this->fanbase_id = 8;
-        $this->domain = "https://www.football.london/";
-        $this->url = "https://www.football.london/";
+        $this->fanbase_id = 12;
+        $this->url = "http://www.italianfootballdaily.com/news/";
+        $this->domain = "http://www.italianfootballdaily.com/";
     }
 
     /**
@@ -39,7 +39,7 @@ class FootballLondon extends NewsJob
         $client = new Client();
 
         $crawler = $client->request('GET', $this->url);
-        $crawler->filter('figure a')->each(function (Crawler $node, $i) {
+        $crawler->filter('.infinite-post a')->each(function (Crawler $node, $i) {
 
             $link = $node->attr("href");
 
@@ -48,19 +48,20 @@ class FootballLondon extends NewsJob
             if (!empty($link)) {
 
                 $url = $link;
+
                 $p = Post::where("external_url", $url)->first();
                 $client = new Client();
                 $data = $client->request('GET', $url);
 
                 $user = array();
 
-                if ($data->filter('.article-body')->count()) {
-                    $user['first_name'] = "Greg";
-                    $user['last_name'] = "Johnson";
-                    $user['nickname'] = 'gregianjohnson';
-                    $user['email'] = $user['nickname'] . "@football.london";
+                if ($data->filter('.mvp-content-box')->count()) {
+                    $user['first_name'] = "Italian";
+                    $user['last_name'] = "Football";
+                    $user['nickname'] = 'italian';
+                    $user['email'] = strtolower($user['nickname']) . "@italianfootballdaily.com";
                     $user['password'] = bcrypt($user['email']);
-                    $user['image'] = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjA6L1NLkHr0rnmI-r5F6LpKfXhxQE9eu03JdGim0VVT77eyYZ";
+                    $user['image'] = "https://www.getfootballnewsitaly.com/wp-content/themes/frenchfootballnews-responsive/img/logo.png";
 
                     $u = User::where("email", $user['email'])->first();
 
@@ -82,6 +83,8 @@ class FootballLondon extends NewsJob
                     $post['user_id'] = $u->id;
 
                     $summary = $data->filter('meta[property="og:description"]')->attr('content');
+                    $summary = str_replace(" | IFD", "", $summary);
+
 
                     if ($data->filter('meta[name="og:image"]')->count() > 0) {
                         $ogImage = $data->filter('meta[name="og:image"]')->attr('content');
@@ -99,7 +102,7 @@ class FootballLondon extends NewsJob
                     $post['created_at'] = $this->cleanUpDate(Carbon::parse($post['date']));
 
                     $content = "";
-                    $data->filter('.article-body p')->each(function (Crawler $node, $i) use (&$content) {
+                    $data->filter('.mvp-content-box p')->each(function (Crawler $node, $i) use (&$content) {
                         $content .= "<p>{$node->html()}</p>";
                     });
 

@@ -5,23 +5,24 @@ namespace App\Console\Commands;
 use App\Jobs\ArsenalFC;
 use App\Jobs\Barcelona;
 use App\Jobs\BarcelonaFC;
-use App\Jobs\BBCFootball;
+use App\Jobs\BBCFootballJob;
 use App\Jobs\Bundesliga;
 use App\Jobs\FCBayernJob;
 use App\Jobs\Football365;
-use App\Jobs\FootballLondon;
-use App\Jobs\FootballJourney;
+use App\Jobs\FootballLondonJob;
+use App\Jobs\FootballJourneyJOb;
 use App\Jobs\JuventusJob;
 use App\Jobs\LaLigaJob;
 use App\Jobs\LiverpoolJob;
 use App\Jobs\ManUJob;
 use App\Jobs\News90MinJob;
-use App\Jobs\NewsBreatheChelseaJob;
+use App\Jobs\FrenchFootballJob;
 use App\Jobs\NewsGoalJob;
 use App\Jobs\PremierLeagueJob;
-use App\Jobs\PSG;
+use App\Jobs\NewsPSGJob;
 use App\Jobs\RealMadridJob;
 use App\Jobs\SearieAJob;
+use App\Jobs\PerfectClubsJob;
 use App\Post;
 use Illuminate\Console\Command;
 
@@ -62,19 +63,31 @@ class FetchContent extends Command
         Post::where("content", '')->delete();
 
         try {
-            dispatch(new FootballJourney());
+//            dispatch(new FrenchFootballJob());
         } catch (\Exception $e) {
 
         }
 
         try {
-            dispatch(new FootballLondon());
+            dispatch(new PerfectClubsJob());
         } catch (\Exception $e) {
 
         }
 
         try {
-            dispatch(new BBCFootball());
+            dispatch(new FootballJourneyJOb());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
+            dispatch(new FootballLondonJob());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
+            dispatch(new BBCFootballJob());
         } catch (\Exception $e) {
         }
 
@@ -100,7 +113,7 @@ class FetchContent extends Command
         }
 
         try {
-            dispatch(new PSG());
+            dispatch(new NewsPSGJob());
         } catch (\Exception $e) {
 
         }
@@ -119,12 +132,6 @@ class FetchContent extends Command
 
         try {
             dispatch(new ManUJob());
-        } catch (\Exception $e) {
-
-        }
-
-        try {
-            dispatch(new NewsBreatheChelseaJob());
         } catch (\Exception $e) {
 
         }

@@ -9,7 +9,7 @@ use Carbon\Carbon;
 use Goutte\Client;
 use Symfony\Component\DomCrawler\Crawler;
 
-class FootballJourney extends NewsJob
+class FootballJourneyJob extends NewsJob
 {
     protected $domain = "";
     protected $url = "";
