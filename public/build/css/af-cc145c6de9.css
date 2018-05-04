@@ -7215,7 +7215,7 @@ form .M13JP:focus {
 }
 
 ._FGT65 ._89GHT ._56KHY {
-  margin-left: 0;
+  margin-left: 11;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
@@ -13766,7 +13766,6 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
-  width: 44px;
   padding-top: 0;
   white-space: nowrap;
   -ms-flex-negative: 0;
