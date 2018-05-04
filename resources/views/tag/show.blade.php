@@ -18,7 +18,7 @@
             </div>
         @endif
         <div class="_26DkX">
-            <h3 class="_3MbTo">Top Bases</h3>
+            <h3 class="_3MbTo">Top Fanbases</h3>
             <div class="_1SVpA _2QjgM">
                 <div class="">
                     <div class="_1ht8_">
