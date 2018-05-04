@@ -13233,7 +13233,7 @@ div._3bqe5 {
   text-transform: uppercase;
   box-shadow: 0 1px 0.5px rgba(153, 173, 183, 0.33);
   border: 1px solid rgba(153, 173, 183, 0.22);
-  border-radius: 22px;
+  border-radius: 11px;
   &:before {
     content: "#";
   }
@@ -14741,6 +14741,9 @@ div._3bqe5 {
 ._3XXLi {
   position: relative;
   height: 66px;
+  ._1Bm3M{
+    color: $color_white;
+  }
   &._FGT78 {
     ._3BBJg > :last-child {
       background: #b7e6c2;
@@ -15155,7 +15158,8 @@ div._3bqe5 {
 }
 
 ._1Bm3M {
-  color: #FFFFFF;
+  color: $color_green;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 846px) {
