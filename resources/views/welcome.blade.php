@@ -11,15 +11,15 @@
         <div>
             <div class="_1U_qv">
                 <div class="_2QjgM _GTYIO">
-                    {{--<div class="_14sEb _1z2cn">--}}
-                        {{--<div class="_3ohNX">--}}
-                            {{--<div class="_373gh">--}}
-                                {{--<div class="owl-carousel owl-tags owl-theme">--}}
-                                    {{--@include("tag.list")--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-                    {{--</div>--}}
+                    <div class="_14sEb _1z2cn">
+                        <div class="_3ohNX">
+                            <div class="_373gh">
+                                <div class="owl-carousel owl-tags owl-theme">
+                                    @include("tag.list")
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="_2v6JB">
                         <div class="_2BZH3 E7_yx">
                             <button class="_1JesO _2tGOx" disabled="">
@@ -41,7 +41,6 @@
                 </div>
             </div>
             <div class="_1-0JF">
-                <div class="_2jNUh _8kqds"></div>
                 <div class="_2_Chk">
                     @if(Auth::guard()->check())
                         <section class="_116es _17c3x">
@@ -80,14 +79,25 @@
                         </section>
                     @else
                         <section class="_FTR56">
-                            <h1 class="_35Eoh">ALTFOOTBALL</h1>
-                            <h3 class="_1Honn">The new home of footballing</h3>
-                            <div class="_2cfq3"><span class="_3OQAJ">Join ALTFOOTBALL to get stories directly to your inbox</span>
-                                <div class="_1KXd6">
-                                    <a href="/register" class="_1ssnS _35Ns5">Sign in with Email</a>
-                                    <span class="_1iBcU">Or</span>
-                                    <a href="/fb" class="MAYYh _35Ns5">Sign in with Facebook</a>
-                                </div>
+                            <div class="bHN0m">
+                                <h1 class="O93cc" id="signInPanelHeader">Join the new home of footballing</h1>
+                                <a href="/fb" class="MAYYh _35Ns5">Sign in with Facebook</a>
+                                <a href="/register" class="_1ssnS _35Ns5">Sign in with Email</a>
+                                <div class="d3Gx3">If you already have an account you can use the buttons above to log back in.</div>
+                                <ul class="sc-bZQynM iBpMqP">
+                                    <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">01</span>
+                                        <p class="sc-dnqmqq juVprg"><strong>Exclusive</strong> access to your favourite footballers,
+                                            clubs and fanbases</p></li>
+                                    <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">02</span>
+                                        <p class="sc-dnqmqq juVprg"><strong>Talk</strong> to your favourite celebs in our live chat</p></li>
+                                    <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">03</span>
+                                        <p class="sc-dnqmqq juVprg"><strong>Discuss</strong> and debate the day's big talking points in
+                                            football</p></li>
+                                </ul>
+                                <p class="_3XRsF _1g8z0">
+                                    By signing in you agree to our
+                                    <a class="_3u2Sm" target="_blank" href="/terms">Terms of Use, Privacy Policy &amp; Use of Cookies</a>
+                                </p>
                             </div>
                         </section>
                     @endif
@@ -163,7 +173,7 @@
                                         class="sc-jbKcbu fAtzSi">Stories</span></div>
                             <div class="sc-dliRfk dpeeXK">
                                 <button class="sc-kLIISr cORlPk">Discover</button>
-                                <button class="sc-kLIISr iUbryo">In Box</button>
+                                <button class="sc-kLIISr iUbryo">Inbox</button>
                             </div>
                         </div>
                     </div>

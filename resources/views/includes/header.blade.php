@@ -1,4 +1,4 @@
-<header class="_3XXLi@if(Auth::guard()->check()) _FGT78@endif">
+<header class="_3XXLi{{ !Auth::guard()->check() ? ' _FGT78' : '' }}">
     <nav class="R1XAV jMZSBo" id="header">
         <div class="sc-kAzzGY fVSfy">
             <div class="sc-ckVGcZ bUebbF">

@@ -31,7 +31,7 @@
                                                 <div class="_3ta8l">
                                                     <div class="">
                                                         <div class="_38L6D" style="padding-bottom: 100%;">
-                                                            <img alt="" role="presentation" src="{{ $fanbase->big_x }}" class="_214e9 b00q8" >
+                                                            <img alt="" role="presentation" src="{{ $fanbase->big_x }}" class="_214e9" >
                                                         </div>
                                                     </div>
                                                 </div>
@@ -39,12 +39,11 @@
                                                     <div class="_3hQ2Q">{{ str_pad(++$k, 2, 0, STR_PAD_LEFT) }}</div>
                                                     <h3 class="_2BMyH">
                                                         {{ $fanbase->name }}
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="rgba(69, 193, 78, 0.95)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="rgba(255, 255, 255, 1)" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
+                                                        @include("svg.ball")
                                                     </h3>
                                                     <p class="_1gZlE">{{ $fanbase->description }}</p>
                                                 </div>
                                                 <div class="_3DEPd _2oYlQ">
-                                                    <span class="_3es_m _2e1-n _1geYT">View Tribe</span>
                                                     <follow params="follower: {{ $fanbase->follower->toJson() }}, inactive_text: 'Join', active_text: 'Joined', class: 'items'"></follow>
                                                 </div>
                                             </a>
@@ -65,11 +64,11 @@
                                 <div class="_2eSI4">
                                     <div class="owl-carousel owl-five owl-theme">
                                         @foreach($fanbases as $k => $fanbase)
-                                        <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                        <a class="_12L63" href="/f/{{ $fanbase->slug }}">
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
+                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9" >
                                                     </div>
                                                 </div>
                                             </div>
@@ -98,18 +97,18 @@
                                 <div class="_2eSI4">
                                     <div class="owl-carousel owl-five owl-theme">
                                         @foreach($fanbases as $k => $fanbase)
-                                        <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                        <a class="_12L63" href="/f/{{ $fanbase->slug }}">
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
+                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9" >
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="_2iRjb">
                                                 <h3 class="_2BMyH">
                                                     {{ $fanbase->name }}
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 18 18" class="_1z7Hy _1ORHw"><g fill="none" fill-rule="evenodd"><path fill="rgba(69, 193, 78, 0.95)" d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path><path fill="rgba(255, 255, 255, 1)" d="M12.38 5.17l1.58 1.58-6.09 6.08L4.04 9l1.58-1.58 2.25 2.25"></path></g></svg>
+                                                    @include("svg.ball")
                                                 </h3>
                                                 <p class="_1gZlE">{{ $fanbase->description }}</p>
                                             </div>
@@ -134,11 +133,11 @@
                                 <div class="_2eSI4">
                                     <div class="owl-carousel owl-five owl-theme">
                                         @foreach($fanbases as $k => $fanbase)
-                                            <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                            <a class="_12L63" href="/f/{{ $fanbase->slug }}">
                                                 <div class="_3ta8l">
                                                     <div class="">
                                                         <div class="_38L6D" style="padding-bottom: 100%;">
-                                                            <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
+                                                            <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9" >
                                                         </div>
                                                     </div>
                                                 </div>
@@ -167,11 +166,11 @@
                                 <div class="_2eSI4">
                                     <div class="owl-carousel owl-five owl-theme">
                                         @foreach($fanbases as $k => $fanbase)
-                                        <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                        <a class="_12L63" href="/f/{{ $fanbase->slug }}">
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
+                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9" >
                                                     </div>
                                                 </div>
                                             </div>
@@ -200,11 +199,11 @@
                                 <div class="_2eSI4">
                                     <div class="owl-carousel owl-five owl-theme">
                                         @foreach($fanbases as $k => $fanbase)
-                                        <a class="_12L63 undefined" href="/f/{{ $fanbase->slug }}">
+                                        <a class="_12L63" href="/f/{{ $fanbase->slug }}">
                                             <div class="_3ta8l">
                                                 <div class="">
                                                     <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9 b00q8" >
+                                                        <img alt="" role="presentation" src="{{ $fanbase->small_x }}" class="_214e9" >
                                                     </div>
                                                 </div>
                                             </div>

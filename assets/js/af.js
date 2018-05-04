@@ -65,12 +65,18 @@ $(function () {
         }
     });
 
-    $('.owl-carousel').owlCarousel({
-        loop: true,
+    var owlSettings = {
         autoWidth: true,
-        navContainerClass: '_2KkkC',
+        loop: false,
+        rewind: false,
+        navRewind: false,
+        dots: false,
+        nav: true,
+        navText: ['prev', 'next'],
         navClass: ['_1JesO', '_1JesO LmPde']
-    });
+    };
+
+    $('.owl-carousel').owlCarousel(owlSettings);
 });
 
 $(window).bind('resize', function () {

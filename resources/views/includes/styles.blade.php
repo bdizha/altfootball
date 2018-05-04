@@ -212,7 +212,7 @@
             -ms-flex-direction: column;
             flex-direction: column;
             position: fixed;
-            top: 70px;
+            top: 66px;
             bottom: 0;
             left: 0;
             right: 0;
@@ -229,10 +229,10 @@
     /* sc-component-id: sc-dphlzf */
     .cKoGdg {
         position: relative;
-        padding: 15px 0;
+        padding: 14px 22px;
         text-align: center;
         text-transform: uppercase;
-        border-radius: 0;
+        border-radius: 11px;
         font-family: 'DriveTribe', Helvetica, sans-serif;
         font-weight: 700;
         -webkit-letter-spacing: 1px;
@@ -241,16 +241,10 @@
         letter-spacing: 1px;
         font-size: 14px;
         line-height: 16px;
-        border: 1px solid #002C43;
+        border: none;
         width: 100%;
-        background: #ffffff;
         color: #002C43;
-    }
-
-    @media (max-width: 846px) {
-        .cKoGdg {
-            padding: 10px 0;
-        }
+        background: rgba(0, 44, 67, 0.25);
     }
 
     /* sc-component-id: sc-fCPvlr */
@@ -295,7 +289,6 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        color: rgba(125, 160, 177, 0.65);
     }
 
     .hKaISF a:hover {
@@ -329,7 +322,6 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        color: rgba(125, 160, 177, 0.65);
     }
 
     .ffPLas a {
@@ -411,7 +403,7 @@
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
-        display: flex;
+        display: none;
         z-index: 6;
         position: fixed;
         top: 66px;
@@ -426,7 +418,7 @@
 
     @media (max-width: 508px) {
         .gsjplB {
-            top: 40px;
+            display: none;
         }
     }
 
@@ -466,7 +458,7 @@
         display: flex;
         z-index: 6;
         position: fixed;
-        top: 70px;
+        top: 66px;
         max-width: 1024px;
         width: 100%;
         left: 50%;
@@ -2356,16 +2348,10 @@
         }
     }
 
-    @media (max-width: 846px) {
-        .eqEjAX {
-            display: none;
-        }
-    }
-
     /* sc-component-id: sc-dTdPqK */
 
     .hQzEkt {
-        margin-left: 70px;
+        margin-left: 66px;
     }
 
     @media (max-width: 1158px) {
@@ -2396,7 +2382,7 @@
 
     .lcydDl {
         width: 675px;
-        margin-left: 70px;
+        margin-left: 66px;
         width: 710px;
     }
 
@@ -2545,18 +2531,8 @@
         text-transform: uppercase;
         font-size: 14px;
         line-height: 14px;
-    }
-
-    .iUbryo:before {
-        content: '';
-        box-sizing: content-box;
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0px;
-        height: 2px;
-        background-color: rgba(69, 193, 78, 0.85);
+        background: rgba(69, 193, 78, 0.25);
+        border-radius: 11px;
     }
 
     @media (max-width: 846px) {
@@ -3208,12 +3184,11 @@
         }
     }
 
-    /* sc-component-id: sc-hkbPbT */
+    /* remove some meta details here */
 
     .bcrVrW {
         padding: 22px;
         border-bottom: 1px solid #e8ebef;
-        text-align: center;
     }
 
     @media (max-width: 1158px) {
@@ -3224,7 +3199,7 @@
 
     @media (max-width: 846px) {
         .bcrVrW {
-            padding: 10px 15px;
+            padding: 22px;
             border-bottom: none;
         }
     }
@@ -3371,7 +3346,7 @@
             -webkit-flex: 0 0 50%;
             -ms-flex: 0 0 50%;
             flex: 0 0 50%;
-            margin-right: 15px;
+            margin-right: 22px;
         }
     }
 
@@ -3411,7 +3386,7 @@
         .kgnzRz {
             display: block;
             position: relative;
-            top: -5px;
+            top: 0px;
         }
     }
 
@@ -3527,13 +3502,7 @@
         flex-direction: column;
     }
 
-    @media (max-width: 846px) {
-        .jHgdae {
-            display: none;
-        }
-    }
-
-    /* sc-component-id: sc-dwztqd */
+    /* remove some meta details here */
 
     .jmBYQQ {
         display: -webkit-box;
@@ -3553,13 +3522,7 @@
         margin-bottom: 5px;
     }
 
-    @media (max-width: 846px) {
-        .jmBYQQ {
-            display: none;
-        }
-    }
-
-    /* sc-component-id: sc-fgrSAo */
+    /* removed some meta details here */
 
     .HltCu {
         font-family: 'DriveTribe', Helvetica, sans-serif;
@@ -3567,7 +3530,7 @@
         margin-right: 5px;
     }
 
-    /* sc-component-id: sc-jHXLhC */
+    /* removed some meta details here */
 
     .cieSf {
         margin-left: auto;
@@ -3784,12 +3747,12 @@
         -webkit-order: 1;
         -ms-flex-order: 1;
         order: 1;
-        height: 455px;
+        height: 231px;
     }
 
     @media (max-width: 1158px) {
         .jmwvyD {
-            height: 280px;
+            height: 180px;
         }
     }
 
@@ -3831,7 +3794,7 @@
 
     .bVsJja {
         position: absolute;
-        left: 88px;
+        left: 44px;
         bottom: -53px;
         display: -webkit-box;
         display: -webkit-flex;
@@ -3846,26 +3809,31 @@
 
     @media (max-width: 1158px) {
         .bVsJja {
-            left: 50px;
+            left: 22px;
         }
     }
 
     @media (max-width: 846px) {
         .bVsJja {
+
+        }
+        .bVsJja .jMqtqW{
             display: none;
         }
     }
-
-    /* sc-component-id: sc-dYzWWc */
 
     .fZBlIg {
         width: 175px;
         height: 175px;
         padding: 5px;
         background: #002C43;
+        border-radius: 11px;
+        overflow: hidden;
     }
 
-    /* sc-component-id: sc-iLVFha */
+    .fZBlIg img{
+        border-radius: 11px;
+    }
 
     .efawYm {
         width: 165px;

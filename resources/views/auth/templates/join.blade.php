@@ -12,7 +12,7 @@
             <h1 class="O93cc" id="signInPanelHeader">Join the new home of footballing</h1>
             <a href="/fb" class="MAYYh _35Ns5">Sign in with Facebook</a>
             <a href="/register" class="_1ssnS _35Ns5">Sign in with Email</a>
-            <p class="d3Gx3">If you already have an account you can use the buttons above to log back in</p>
+            <div class="d3Gx3">If you already have an account you can use the buttons above to log back in</div>
             <ul class="sc-bZQynM iBpMqP">
                 <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">01</span>
                     <p class="sc-dnqmqq juVprg"><strong>Exclusive</strong> access to your favourite footballers,
