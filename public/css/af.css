@@ -7197,7 +7197,6 @@ form .M13JP:focus {
   color: #45c14e;
   font-size: 40px;
   line-height: 40px;
-  width: 44px;
   padding-top: 0;
   white-space: nowrap;
   -ms-flex-negative: 0;
@@ -7215,7 +7214,7 @@ form .M13JP:focus {
 }
 
 ._FGT65 ._89GHT ._56KHY {
-  margin-left: 11;
+  margin-left: 11px;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
@@ -13782,7 +13781,7 @@ div._3bqe5 > div {
 }
 
 .VDPbh ._FGT65 ._89GHT ._56KHY {
-  margin-left: 16px;
+  margin-left: 11px;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
