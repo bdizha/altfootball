@@ -14926,10 +14926,10 @@ div._3bqe5 > div {
 
 .bHN0m {
   width: 100%;
-  max-width: 508px;
+  max-width: 608px;
   margin-left: auto;
   margin-right: auto;
-  padding: 39px 52px;
+  padding: 33px 44px;
 }
 
 .bHN0m svg:hover g {
@@ -22603,15 +22603,20 @@ nav._1R2o8 {
 }
 
 .SsCsq {
-  padding-top: 60px;
-  width: 60%;
   background: #FFFFFF;
-  padding-right: 22px;
   border: 1px solid rgba(125, 160, 177, 0.22);
 }
 
 .SsCsq .kjnMtm post:first-child li {
   padding-top: 0;
+}
+
+@media (max-width: 1024px) {
+  .SsCsq {
+    padding-right: 22px;
+    padding-top: 60px;
+    width: 60%;
+  }
 }
 
 ._23FRT {
