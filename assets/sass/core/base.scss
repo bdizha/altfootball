@@ -378,9 +378,8 @@ button {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 16px;
-  line-height: 14px;
   text-align: left;
-  padding: 22px 32px;
+  padding: 22px 33px;
   background: $color_red;
   color: $color_white;
   cursor: pointer;
@@ -406,7 +405,7 @@ button {
   background: $color_light_blue;
   color: $color_white;
   cursor: pointer;
-  padding: 16px 28px;
+  padding: 11px 33px;
   transition: all 0.1s linear;
   &[disabled] {
     opacity: 0.4;
@@ -10324,7 +10323,7 @@ div._3bqe5 {
 ._1yV5F {
   text-align: center;
   padding: 11px 22px;
-  border-radius: 0px;
+  border-radius: 11px;
   display: block;
 }
 
@@ -10334,7 +10333,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 508px) {
   ._3OD4J {
-    margin-top: 16px;
+    margin-top: 11px;
   }
 }
 
@@ -21215,8 +21214,7 @@ nav._1R2o8 {
   }
 }
 
-
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   .SsCsq {
     padding-right: 22px;
     padding-top: 60px;
@@ -21226,6 +21224,7 @@ nav._1R2o8 {
 
 ._23FRT {
   padding-left: 22px;
+  padding-right: 22px;
   .VDPbh {
     ._1JesO {
       color: $color_light_blue;
