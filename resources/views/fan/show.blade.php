@@ -7,62 +7,58 @@
 @section('content')
     <div class="">
         <div>
-            <div class="_5YTUI">
-                <div class="_2KNH4">
-                    <div class="_1jbho">
-                        <div class="Cu7qw">
-                            <div class="_1KeJ_">
-                                <button class="_32k0z" data-bind="click: openSettingsForm">
-                                    <div class="_13Js3">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             viewBox="0 0 18 18"
-                                             class="_13Js3">
-                                            <g fill="none" fill-rule="evenodd">
-                                                <path fill="rgba(255, 255, 255, 0.86)"
-                                                      d="M2.31 14.9l-1.03.63-.77 1.6.62.62 1.57-.8.38-.69 5.89-5.89-1.14-.99zM10.3 4.8L8.83 6.29l3.1 3.21 1.53-1.52 4.55-4.55L14.85.26 10.3 4.8zm0 1.8l4.26-4.26.43.44-4.26 4.26-.44-.43zm.99 1l4.26-4.26.44.43-4.27 4.27-.43-.44z"></path>
-                                                <path stroke="rgba(255, 255, 255, 0.86)" stroke-linecap="round"
-                                                      stroke-linejoin="round"
-                                                      stroke-width="1.5"
-                                                      d="M14.75 16.51l-8.2-7.87-1.2-1.07A3.5 3.5 0 0 1 .85 3.43l1.97 1.9c1.61.04 2.4-.84 2.43-2.26L3.04.97A3.5 3.5 0 0 1 7.6 5.3l2.29 2.2 7.03 6.75-2.16 2.25z"></path>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </button>
-                                <div class="_25jNX">
-                                    <div class="N3r_f">
-                                        <div class="_38L6D" style="padding-bottom: 100%;">
-                                            <img alt="{{ $user->name }}" role="presentation" src="{{ $user->small_x }}"
-                                                 class="_214e9 b00q8">
-                                        </div>
-                                    </div>
+            <div class="_2KNH4">
+                <div class="_1jbho">
+                    <div class="Cu7qw">
+                        <div class="_1KeJ_">
+                            <button class="_32k0z" data-bind="click: openSettingsForm">
+                                <div class="_13Js3">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 18 18"
+                                         class="_13Js3">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path fill="rgba(255, 255, 255, 0.86)"
+                                                  d="M2.31 14.9l-1.03.63-.77 1.6.62.62 1.57-.8.38-.69 5.89-5.89-1.14-.99zM10.3 4.8L8.83 6.29l3.1 3.21 1.53-1.52 4.55-4.55L14.85.26 10.3 4.8zm0 1.8l4.26-4.26.43.44-4.26 4.26-.44-.43zm.99 1l4.26-4.26.44.43-4.27 4.27-.43-.44z"></path>
+                                            <path stroke="rgba(255, 255, 255, 0.86)" stroke-linecap="round"
+                                                  stroke-linejoin="round"
+                                                  stroke-width="1.5"
+                                                  d="M14.75 16.51l-8.2-7.87-1.2-1.07A3.5 3.5 0 0 1 .85 3.43l1.97 1.9c1.61.04 2.4-.84 2.43-2.26L3.04.97A3.5 3.5 0 0 1 7.6 5.3l2.29 2.2 7.03 6.75-2.16 2.25z"></path>
+                                        </g>
+                                    </svg>
                                 </div>
-                            </div>
-                            <div class="_1Wugc undefined">
-                                @include('fan.approved')
-                                @if($user->bio)
-                                    <p class="_14d4a">{{ $user->bio }}</p>
-                                @endif
-                                @if($user->website)
-                                    <a rel="nofollow" target="_blank" class="_30-Mx" href="{{ $user->website }}"></a>
-                                @endif
-                                <div class="_2aOYp">
-                                    @if(!$user->is_self)
-                                        <follow params="follower: {{ $user->follower->toJson() }}, active_text: 'unfollow', inactive_text: 'follow', class: 'user'"></follow>
-                                    @endif
+                            </button>
+                            <div class="_25jNX">
+                                <div class="N3r_f">
+                                    <div class="_38L6D" style="padding-bottom: 100%;">
+                                        <img alt="{{ $user->name }}" role="presentation" src="{{ $user->small_x }}"
+                                             class="_214e9 b00q8">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="GHC_I">
-                            <p class="_177zr">{{ $user->bio }}</p>
-                            @if(!empty($user->website))
-                                <a rel="nofollow" target="_blank" class="Y5qEv"
-                                   href="{{ $user->website }}">{{ $user->getDomain() }}</a>
+                        <div class="_1Wugc undefined">
+                            @include('fan.approved')
+                            @if($user->bio)
+                                <p class="_14d4a">{{ $user->bio }}</p>
                             @endif
+                            @if($user->website)
+                                <a rel="nofollow" target="_blank" class="_30-Mx" href="{{ $user->website }}"></a>
+                            @endif
+                            <div class="_2aOYp">
+                                @if(!$user->is_self)
+                                    <follow params="follower: {{ $user->follower->toJson() }}, active_text: 'unfollow', inactive_text: 'follow', class: 'user'"></follow>
+                                @endif
+                            </div>
                         </div>
                     </div>
+                    <div class="GHC_I">
+                        <p class="_177zr">{{ $user->bio }}</p>
+                        @if(!empty($user->website))
+                            <a rel="nofollow" target="_blank" class="Y5qEv"
+                               href="{{ $user->website }}">{{ $user->getDomain() }}</a>
+                        @endif
+                    </div>
                 </div>
-            </div>
-            <div class="_2KNH4">
                 <div class="_3XlGZ">
                     <div class="_12g8o Pb65u"><span><span class="DdJUj">dribbles</span><span class="-DD7c">113.7K</span></span>
                     </div>

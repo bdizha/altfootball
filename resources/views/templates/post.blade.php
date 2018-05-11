@@ -21,11 +21,11 @@
                                                    href="http://altfootball.local/p/they-have-messi-alonso-rues-argentines-influence-against-chelsea#tackles">
                                                     <div class="_TYRW3">
                                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                             version="1.1" width="22px" height="22px"
+                                                             version="1.1" width="24px" height="24px"
                                                              class="_3gymQ">
-                                                            <g fill="rgba(125, 160, 177, 0.75)" fill-rule="evenodd">
-                                                                <path d="M16 13.33H5.2a.76.76 0 0 0-.4.11l-3.3 1.99V1.5H16v11.83zM16.75 0h-16A.75.75 0 0 0 0 .75v16a.75.75 0 0 0 1.14.64l4.26-2.56h11.35c.41 0 .75-.33.75-.75V.75a.75.75 0 0 0-.75-.75z"></path>
-                                                                <path d="M4.75 6.48h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1m0 3h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0 0 1"></path>
+                                                            <g style=" fill:rgba(125, 160, 177, 0.75);">
+                                                                <path fill="none" d="M0 0h24v24H0V0z"/>
+                                                                <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H6l-2 2V4h16v12z"/>
                                                             </g>
                                                         </svg>
                                                     </div>
@@ -35,11 +35,10 @@
                                             <button class="sc-gxMtzJ gwBfwM">
                                                 <div class="_1_VaP">
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                         version="1.1" width="22px" height="22px">
-                                                        <g class="style-scope yt-icon">
-                                                            <path fill="rgba(125, 160, 177, 0.75)"
-                                                                  d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"
-                                                                  class="style-scope yt-icon"></path>
+                                                         version="1.1" width="24px" height="24px">
+                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
+                                                            <path d="M0 0h24v24H0z" fill="none"/>
+                                                            <path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/>
                                                         </g>
                                                     </svg>
                                                     <span class="sc-dfVpRl lkOqlM">0</span>
@@ -47,19 +46,23 @@
                                             </button>
                                             <button class="sc-gxMtzJ gwBfwM">
                                                 <div class="_1_VaP">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                                                         version="1.1" width="22px" height="22px">
-                                                        <g id="surface1">
-                                                            <path style=" fill:rgba(125, 160, 177, 0.75);"
-                                                                  d="M 24 34 L 42 14 L 6 14 Z "></path>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                         version="1.1" width="24px" height="24px">
+                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
+                                                            <path opacity="0.87" fill="none" d="M24,24H0L0,0l24,0V24z"/>
+                                                        </g>
+                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
+                                                            <path d="M16.59,8.59L12,13.17L7.41,8.59L6,10l6,6l6-6L16.59,8.59z"/>
                                                         </g>
                                                     </svg>
                                                     <span class="sc-dfVpRl lkOqlM">0</span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"
-                                                         version="1.1" width="22px" height="22px">
-                                                        <g id="surface1">
-                                                            <path style=" fill:rgba(125, 160, 177, 0.75);"
-                                                                  d="M 24 14 L 42 34 L 6 34 Z "></path>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                                         version="1.1" width="24px" height="24px">
+                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
+                                                            <path fill="none" d="M0,0h24v24H0V0z"/>
+                                                        </g>
+                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
+                                                            <path d="M12,8l-6,6l1.41,1.41L12,10.83l4.59,4.58L18,14L12,8z"/>
                                                         </g>
                                                     </svg>
                                                 </div>
@@ -75,18 +78,18 @@
         </div>
         <div class="_67FRT">
             {{--<div id="tackles" class="jwlFt _1zwKC">--}}
-                {{--<div class="_1gLAu _1iE2V">--}}
-                    {{--<div class="_1-sfe">--}}
-                        {{--<comments params='{--}}
-                        {{--comments: post.comments,--}}
-                        {{--type_id: post.id,--}}
-                        {{--user: post.user,--}}
-                        {{--level: 0,--}}
-                        {{--root: $data,--}}
-                        {{--is_list: false--}}
-                        {{--}'></comments>--}}
-                    {{--</div>--}}
-                {{--</div>--}}
+            {{--<div class="_1gLAu _1iE2V">--}}
+            {{--<div class="_1-sfe">--}}
+            {{--<comments params='{--}}
+            {{--comments: post.comments,--}}
+            {{--type_id: post.id,--}}
+            {{--user: post.user,--}}
+            {{--level: 0,--}}
+            {{--root: $data,--}}
+            {{--is_list: false--}}
+            {{--}'></comments>--}}
+            {{--</div>--}}
+            {{--</div>--}}
             {{--</div>--}}
         </div>
     </li>

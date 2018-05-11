@@ -34,13 +34,12 @@
                                     <div class="_1Y7kL">
                                         <div class="_1veAI _1iE2V">
                                             <div class="_1-sfe _29LD-">
-                                                @include('post.user')
+                                                <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
                                                 <div class="_23p6h">
                                                     <img src="http://altfootball.com/images/{{ $post->image }}"
                                                          alt="{{ $post->title }}"/>
                                                 </div>
                                                 <div class="_76TYH">
-                                                    <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
                                                     <div class="_1Fx1P _1iE2V _1Ov3j">
                                                         <div class="_1-sfe CDTi0">
                                                             <div class="imgSwy">
@@ -48,6 +47,10 @@
                                                                     @include('post.actions')
                                                                 </div>
                                                             </div>
+                                                            <div class="_89HJT">
+                                                                {!! $post->summary !!}
+                                                            </div>
+                                                            @include('post.user')
                                                             <div class="_3o2ca">
                                                                 <a class="_2Q0fU p1Di1"
                                                                    href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($post->share_url) }}"
