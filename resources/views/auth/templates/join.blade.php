@@ -14,14 +14,28 @@
             <a href="/register" class="_1ssnS _35Ns5">Sign in with Email</a>
             <div class="d3Gx3">If you already have an account you can use the buttons above to log back in</div>
             <ul class="sc-bZQynM iBpMqP">
-                <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">01</span>
-                    <p class="sc-dnqmqq juVprg"><strong>Exclusive</strong> access to your favourite footballers,
-                        clbs and fanbases</p></li>
-                <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">02</span>
-                    <p class="sc-dnqmqq juVprg"><strong>Talk</strong> to your favourite celebs in our live chat</p></li>
-                <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">03</span>
-                    <p class="sc-dnqmqq juVprg"><strong>Discuss</strong> and debate the day's big talking points in
-                        football</p></li>
+                <li class="sc-gzVnrw fYnwAL">
+                    <div class="sc-htoDjs edZIuC">
+                        @include("svg.outline-filter_1")
+                    </div>
+                    <p class="sc-dnqmqq juVprg"><strong>Exclusive</strong> access to your favourite
+                        footballers and fanbases</p>
+                </li>
+                <li class="sc-gzVnrw fYnwAL">
+                    <div class="sc-htoDjs edZIuC">
+                        @include("svg.outline-filter_2")
+                    </div>
+                    <p class="sc-dnqmqq juVprg"><strong>Talk</strong> to your favourite celebs in
+                        our live chat</p>
+                </li>
+                <li class="sc-gzVnrw fYnwAL">
+                    <div class="sc-htoDjs edZIuC">
+                        @include("svg.outline-filter_3")
+                    </div>
+                    <p class="sc-dnqmqq juVprg"><strong>Discuss</strong> and debate the day's big
+                        talking points in
+                        football</p>
+                </li>
             </ul>
             <p class="_3XRsF _1g8z0">
                 By signing in you agree to our

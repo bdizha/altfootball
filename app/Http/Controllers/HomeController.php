@@ -38,12 +38,12 @@ class HomeController extends Controller
         $posts['hot'] = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
             ->orderBy('created_at', 'desc')
-            ->take(11)
+            ->take(5)
             ->get();
 
         $posts['top'] = Post::with('user')
             ->where('created_at', "<=", Carbon::now())
-            ->offset(11)
+            ->offset(5)
             ->orderBy('created_at', 'desc')
             ->limit(6)
             ->get();

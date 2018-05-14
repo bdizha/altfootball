@@ -63,6 +63,11 @@ class FetchContent extends Command
         Post::where("content", '')->delete();
 
         try {
+            dispatch(new BBCFootballJob());
+        } catch (\Exception $e) {
+        }
+
+        try {
             dispatch(new FourFourTwoJob());
         } catch (\Exception $e) {
 
@@ -90,11 +95,6 @@ class FetchContent extends Command
             dispatch(new FootballLondonJob());
         } catch (\Exception $e) {
 
-        }
-
-        try {
-            dispatch(new BBCFootballJob());
-        } catch (\Exception $e) {
         }
 
 

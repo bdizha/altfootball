@@ -46,25 +46,8 @@
                                             </button>
                                             <button class="sc-gxMtzJ gwBfwM">
                                                 <div class="_1_VaP">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                         version="1.1" width="24px" height="24px">
-                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
-                                                            <path opacity="0.87" fill="none" d="M24,24H0L0,0l24,0V24z"/>
-                                                        </g>
-                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
-                                                            <path d="M16.59,8.59L12,13.17L7.41,8.59L6,10l6,6l6-6L16.59,8.59z"/>
-                                                        </g>
-                                                    </svg>
+                                                    @include("svg.hand")
                                                     <span class="sc-dfVpRl lkOqlM">0</span>
-                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                         version="1.1" width="24px" height="24px">
-                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
-                                                            <path fill="none" d="M0,0h24v24H0V0z"/>
-                                                        </g>
-                                                        <g style=" fill:rgba(125, 160, 177, 0.75);">
-                                                            <path d="M12,8l-6,6l1.41,1.41L12,10.83l4.59,4.58L18,14L12,8z"/>
-                                                        </g>
-                                                    </svg>
                                                 </div>
                                             </button>
                                         </div>
