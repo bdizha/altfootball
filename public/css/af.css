@@ -14364,7 +14364,7 @@ div._3bqe5 > div {
 
 ._1U_qv {
   padding: 0;
-  margin: 22px;
+  margin: 11px 22px;
   background: transparent;
   height: 38px;
   overflow: hidden;
@@ -14949,7 +14949,7 @@ div._3bqe5 > div {
 
 @media screen and (max-width: 846px) {
   .bHN0m {
-    padding: 22px;
+    padding: 0;
   }
 }
 
@@ -15023,6 +15023,12 @@ div._3bqe5 > div {
   font-size: 34px;
   line-height: 32px;
   margin: 44px 0 22px;
+}
+
+@media screen and (max-width: 508px) {
+  .O93cc {
+    margin: 22px 0;
+  }
 }
 
 ._1g8z0 {
