@@ -2366,18 +2366,18 @@
 
     @media (max-width: 846px) {
         .QJDdz {
-            padding-top: 25px;
+            padding-top: 22px;
         }
     }
 
     @media (max-width: 548px) {
-        .hQzEkt .gEVQKf{
-            border-left: none;
-            border-right: none;
-        }
-        .QJDdz .hQzEkt{
-            padding: 0;
-        }
+        /*.hQzEkt .gEVQKf{*/
+            /*border-left: none;*/
+            /*border-right: none;*/
+        /*}*/
+        /*.QJDdz .hQzEkt{*/
+            /*padding: 0;*/
+        /*}*/
     }
 
     /* sc-component-id: sc-eMigcr */
@@ -2391,7 +2391,6 @@
     /* sc-component-id: sc-fzsDOv */
 
     .lcydDl {
-        width: 675px;
         margin-left: 66px;
         width: 710px;
     }
@@ -2400,7 +2399,7 @@
         .lcydDl {
             width: 100%;
             margin-left: 0;
-            padding: 0 15px;
+            padding: 0 11px;
         }
     }
 

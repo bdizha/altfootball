@@ -83,20 +83,26 @@
                                 <h1 class="O93cc" id="signInPanelHeader">Join the new home of footballing</h1>
                                 <a href="/fb" class="MAYYh _35Ns5">Sign in with Facebook</a>
                                 <a href="/register" class="_1ssnS _35Ns5">Sign in with Email</a>
-                                <div class="d3Gx3">If you already have an account you can use the buttons above to log back in.</div>
+                                <div class="d3Gx3">If you already have an account you can use the buttons above to log
+                                    back in.
+                                </div>
                                 <ul class="sc-bZQynM iBpMqP">
                                     <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">01</span>
-                                        <p class="sc-dnqmqq juVprg"><strong>Exclusive</strong> access to your favourite footballers,
+                                        <p class="sc-dnqmqq juVprg"><strong>Exclusive</strong> access to your favourite
+                                            footballers,
                                             clubs and fanbases</p></li>
                                     <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">02</span>
-                                        <p class="sc-dnqmqq juVprg"><strong>Talk</strong> to your favourite celebs in our live chat</p></li>
+                                        <p class="sc-dnqmqq juVprg"><strong>Talk</strong> to your favourite celebs in
+                                            our live chat</p></li>
                                     <li class="sc-gzVnrw fYnwAL"><span class="sc-htoDjs edZIuC">03</span>
-                                        <p class="sc-dnqmqq juVprg"><strong>Discuss</strong> and debate the day's big talking points in
+                                        <p class="sc-dnqmqq juVprg"><strong>Discuss</strong> and debate the day's big
+                                            talking points in
                                             football</p></li>
                                 </ul>
                                 <p class="_3XRsF _1g8z0">
                                     By signing in you agree to our
-                                    <a class="_3u2Sm" target="_blank" href="/terms">Terms of Use, Privacy Policy &amp; Use of Cookies</a>
+                                    <a class="_3u2Sm" target="_blank" href="/terms">Terms of Use, Privacy Policy &amp;
+                                        Use of Cookies</a>
                                 </p>
                             </div>
                         </section>
@@ -127,9 +133,11 @@
                             </div>
                         </div>
                         <div class="_TY876">
-                            <div class="sc-krDsej eqEjAX sc-frDJqD epAMjP">
-                                <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">HOT</span><span
-                                            class="sc-jbKcbu fAtzSi">Stories</span></div>
+                            <div class="sc-cJSrbW hDKkOF">
+                                <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
+                                    <span class="sc-hmzhuo gqKiYI" data-reactid="107">Hot</span>
+                                    <span class="sc-frDJqD lXCHc" data-reactid="108">Stories</span>
+                                </div>
                             </div>
                             <ol class="_FGT65">
                                 @foreach($posts['hot'] as $k => $post)

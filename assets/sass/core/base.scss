@@ -4961,7 +4961,8 @@ dribbles {
   border-radius: 5.5px;
   border: 1px solid rgba(125, 160, 177, 0.11);
   margin-bottom: 4px;
-  box-shadow: 0 1px 3px 0 rgba(51, 74, 107, 0.16), 0 0 0 1px rgba(51, 74, 107, 0.1);
+  -webkit-box-shadow: 0 2px 2px 0 rgba(132, 131, 145,0.14), 0 3px 1px -2px rgba(132, 131, 145,0.12), 0 1px 5px 0 rgba(132, 131, 145,0.2);
+  box-shadow: 0 2px 2px 0 rgba(132, 131, 145,0.14), 0 3px 1px -2px rgba(132, 131, 145,0.12), 0 1px 5px 0 rgba(132, 131, 145,0.2);
   margin-left: 2px;
   &:hover {
     ._1Szys, ._3Yasi {
@@ -6661,7 +6662,8 @@ form {
   margin: 0;
   ._89GHT {
     border: 1px solid rgba(125, 160, 177, 0.11);
-    box-shadow: 0 1px 3px 0 rgba(51, 74, 107, 0.16), 0 0 0 1px rgba(51, 74, 107, 0.1);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(132, 131, 145,0.14), 0 3px 1px -2px rgba(132, 131, 145,0.12), 0 1px 5px 0 rgba(132, 131, 145,0.2);
+    box-shadow: 0 2px 2px 0 rgba(132, 131, 145,0.14), 0 3px 1px -2px rgba(132, 131, 145,0.12), 0 1px 5px 0 rgba(132, 131, 145,0.2);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -13917,7 +13919,7 @@ div._3bqe5 {
 
 @media screen and (max-width: 846px) {
   .bHN0m {
-    padding: 22px;
+    padding: 0;
   }
 }
 
@@ -13989,6 +13991,9 @@ div._3bqe5 {
   font-size: 34px;
   line-height: 32px;
   margin: 44px 0 22px;
+  @media screen and (max-width: 508px) {
+    margin: 22px 0;
+  }
 }
 
 ._1g8z0 {
@@ -19955,7 +19960,8 @@ nav._1R2o8 {
     margin-bottom: 11px;
     border-radius: 5.5px;
     border: 1px solid rgba(125, 160, 177, 0.11);
-    box-shadow: 0 1px 3px 0 rgba(51, 74, 107, 0.16), 0 0 0 1px rgba(51, 74, 107, 0.1);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(132, 131, 145,0.14), 0 3px 1px -2px rgba(132, 131, 145,0.12), 0 1px 5px 0 rgba(132, 131, 145,0.2);
+    box-shadow: 0 2px 2px 0 rgba(132, 131, 145,0.14), 0 3px 1px -2px rgba(132, 131, 145,0.12), 0 1px 5px 0 rgba(132, 131, 145,0.2);
     overflow: visible;
     .ljjFes {
       border-width: 0;
@@ -19969,9 +19975,6 @@ nav._1R2o8 {
     }
     .rEYTKJ {
       left: -35px;
-    }
-    @media (max-width: 846px) {
-      margin-top: 22px;
     }
     @media (max-width: 846px) {
       .ljjFes {
@@ -20756,7 +20759,7 @@ nav._1R2o8 {
   }
 }
 
-@media (max-width: 846px) {
+@media (max-width: 846px) {.
   .gEVQKf {
     border-bottom: 1px solid rgba(56, 82, 119, 0.15);
     padding-left: 0;
