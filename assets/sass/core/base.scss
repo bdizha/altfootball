@@ -42,7 +42,7 @@ html {
 
 body {
   margin: 0;
-  color: #00324B;
+  color: $color_blue;
   font-size: 18px;
   line-height: 22px;
   background: $color_white;
@@ -75,7 +75,7 @@ audio:not([controls]) {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  color: #00324B;
+  color: $color_blue;
   &:active, &:hover {
     outline-width: 0;
     color: $color_light_green;
@@ -569,6 +569,7 @@ button {
   &.owl-tags {
     .owl-item {
       width: auto !important;
+      margin-bottom: 5.5px;
     }
   }
 }
@@ -1370,7 +1371,7 @@ form {
 }
 
 ._1fDUg, .b9xa- {
-  background: $color_blue;
+  background: $bg_blue;
 }
 
 ._1fDUg svg, .b9xa- svg {
@@ -2395,7 +2396,7 @@ form {
   height: 42px;
   margin-bottom: 0;
   border-radius: 0px;
-  color: #00324B;
+  color: $color_blue;
   line-height: 42px;
   &:hover,
   &:focus {
@@ -2633,7 +2634,7 @@ form {
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
-  color: #00324B;
+  color: $color_blue;
   padding-top: 4px;
   a:hover {
     text-decoration: underline;
@@ -3603,7 +3604,7 @@ form {
     }
     ._3DF9 {
       display: block;
-      background: $color_blue;
+      background: $bg_blue;
       h2 {
         border-left: 2px solid rgba(0, 8, 39, 0.95);
       }
@@ -4560,7 +4561,7 @@ dribbles {
 }
 
 ._38OvA {
-  color: #00324B;
+  color: $color_blue;
   &._1H8gB {
     color: rgba(0, 50, 75, 0.65);
   }
@@ -4633,7 +4634,7 @@ dribbles {
 }
 
 ._3bVUr {
-  color: #00324B;
+  color: $color_blue;
 }
 
 ._34FTR {
@@ -5172,7 +5173,7 @@ dribbles {
   position: relative;
   text-align: center;
   .QbGqA {
-    color: #00324B;
+    color: $color_blue;
     white-space: nowrap;
     position: absolute;
     margin: auto;
@@ -5413,14 +5414,14 @@ dribbles {
 }
 
 ._2uakq {
-  background: $color_blue;
+  background: $bg_blue;
   flex-direction: row;
   height: 100%;
   max-width: 100%;
   flex: 0 0 auto;
   margin-left: 0;
   ._1KQuz {
-    background: $color_blue;
+    background: $bg_blue;
   }
   &:hover {
     ._1KQuz {
@@ -6329,7 +6330,7 @@ form {
     }
   }
   .M13JP {
-    background: $color_blue;
+    background: $bg_blue;
     color: $color_white;
     &:hover,
     &:focus {
@@ -6480,7 +6481,7 @@ form {
   max-width: 768px;
   padding: 22px;
   margin: 22px auto;
-  background: $color_blue;
+  background: $bg_blue;
   filter: saturate(100%) brightness(110%) contrast(100%);
 }
 
@@ -6798,7 +6799,7 @@ form {
   border-top: 1px solid rgba(56, 82, 119, 0.15);
   border-bottom: 1px solid rgba(56, 82, 119, 0.15);
   padding-bottom: 28px;
-  background: $color_blue;
+  background: $bg_blue;
   ._1e4LX {
     margin-bottom: 9px;
     padding-bottom: 18px;
@@ -6963,7 +6964,7 @@ form {
 
 .zxDoM {
   display: flex;
-  color: #00324B;
+  color: $color_blue;
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
@@ -7016,6 +7017,15 @@ form {
   }
   &._3UwsA {
     opacity: 0.4;
+  }
+}
+
+.SsCsq{
+  .zxDoM {
+    &:hover {
+      opacity: 1;
+      color: $color_blue;
+    }
   }
 }
 
@@ -8527,7 +8537,7 @@ form {
   font-weight: 700;
   text-transform: uppercase;
   float: right;
-  color: #00324B;
+  color: $color_blue;
   border: 1px solid rgba(56, 82, 119, 0.15);
   padding: 9px 28px;
   font-size: 16px;
@@ -9693,7 +9703,7 @@ div._3bqe5 {
   margin-top: 28px;
   padding: 16px;
   &:hover {
-    background: $color_blue;
+    background: $bg_blue;
   }
 }
 
@@ -10281,7 +10291,7 @@ div._3bqe5 {
 }
 
 ._1Xbrb, ._3tkuf {
-  background: $color_blue;
+  background: $bg_blue;
   border-radius: 5.5px;
   overflow: hidden;
   margin-bottom: 22px;
@@ -11377,7 +11387,7 @@ div._3bqe5 {
   margin-right: 11px;
   border-radius: 5.5px;
   overflow: hidden;
-  background: $color_blue;
+  background: $bg_blue;
   .hzEOQv {
     display: none;
   }
@@ -12022,7 +12032,7 @@ div._3bqe5 {
 }
 
 ._2I-QY {
-  color: #00324B;
+  color: $color_blue;
   border: 1px solid rgba(56, 82, 119, 0.15);
 }
 
@@ -12033,7 +12043,7 @@ div._3bqe5 {
 }
 
 ._2q7vJ {
-  color: #00324B;
+  color: $color_blue;
   border: 1px solid rgba(56, 82, 119, 0.15);
 }
 
@@ -12253,7 +12263,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 18px;
-  color: #00324B;
+  color: $color_blue;
 }
 
 @media screen and (max-width: 508px) {
@@ -12544,7 +12554,7 @@ div._3bqe5 {
 }
 
 ._1-0JF {
-  background: $color_blue;
+  background: $bg_blue;
   color: $color_white;
   padding: 44px 16px;
   position: relative;
@@ -12900,7 +12910,7 @@ div._3bqe5 {
     }
   }
   ._38Ked {
-    background: $color_blue;
+    background: $bg_blue;
     border: 1px solid rgba(125, 160, 177, 0.11);
     margin-bottom: 4px;
     &:hover {
@@ -13022,7 +13032,7 @@ div._3bqe5 {
     padding-bottom: 100%;
   }
   ._1Rj2S {
-    background: #00324B;
+    background: $bg_blue;
     ._2hXuE {
       width: 90%;
       margin: 0 auto;
@@ -14222,7 +14232,7 @@ div._3bqe5 {
 }
 
 ._12L63 {
-  background: #00324B;
+  background: $bg_blue;
   color: $color_white;
   display: flex;
   position: relative;
@@ -14435,7 +14445,7 @@ div._3bqe5 {
       }
     }
     ._2iRjb {
-      background: $color_blue;
+      background: $bg_blue;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -14578,7 +14588,7 @@ div._3bqe5 {
 }
 
 .GKLAB {
-  background: $color_blue;
+  background: $bg_blue;
   min-height: 100vh;
   overflow: hidden;
   padding-bottom: 44px;
@@ -14738,8 +14748,8 @@ div._3bqe5 {
   height: 66px;
   &._FGT78 {
     ._3BBJg > :last-child {
-      background: rgba(69, 193, 78, 0.95);
-      color: $color_white;
+      background: rgba(69, 193, 78, 0.25);
+      color: rgba(69, 193, 78, 0.95);
     }
     ._1Bm3M {
       color: $color_white;
@@ -16426,7 +16436,7 @@ div._3bqe5 {
 }
 
 ._346nx {
-  color: #00324B;
+  color: $color_blue;
   border: 1px solid rgba(56, 82, 119, 0.15);
 }
 
@@ -16452,7 +16462,7 @@ div._3bqe5 {
 }
 
 .zOPku {
-  color: #00324B;
+  color: $color_blue;
   position: relative;
   font-size: 28px;
   display: inline;
@@ -16593,7 +16603,7 @@ div._3bqe5 {
   }
   .weBNu {
     background: $color_white;
-    color: #00324B;
+    color: $color_blue;
     border-bottom: 1px solid rgba(56, 82, 119, 0.15);
     transition: all 0.1s linear 0.6s;
   }
@@ -18068,7 +18078,7 @@ div._3bqe5 {
 }
 
 .O6y0Q {
-  background-color: #00324B;
+  background-color: $color_blue;
 }
 
 .O6y0Q svg {
@@ -18390,7 +18400,7 @@ nav._1R2o8 {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  color: #00324B;
+  color: $color_blue;
   cursor: pointer
 }
 
@@ -18628,7 +18638,7 @@ nav._1R2o8 {
 }
 
 .gld7a {
-  background-color: #00324B;
+  background-color: $color_blue;
 }
 
 ._2F06s {
@@ -19080,7 +19090,7 @@ nav._1R2o8 {
 .FYAkp {
   background: $color_red;
   &:hover {
-    background: $color_blue;
+    background: $bg_blue;
   }
 }
 
@@ -19365,7 +19375,7 @@ nav._1R2o8 {
 
 ._3vwB1 {
   color: $color_white;
-  border-bottom-color: #00324B;
+  border-bottom-color: $color_blue;
 }
 
 ._2aPX0 {
@@ -21037,7 +21047,7 @@ nav._1R2o8 {
 }
 
 .fcHuW:hover {
-  background: $color_blue;
+  background: $bg_blue;
   color: $color_white;
 }
 
@@ -21094,7 +21104,7 @@ nav._1R2o8 {
 }
 
 .gtTavk:hover {
-  background: $color_blue;
+  background: $bg_blue;
   color: #ffffff;
 }
 

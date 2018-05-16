@@ -350,16 +350,12 @@
 
     /* sc-component-id: sc-cCVOAp */
     .eVkXGE {
-        margin-right: 5px;
-        width: 23px;
-        height: 17px;
+        margin-right: 11px;
     }
 
     /* sc-component-id: sc-cfWELz */
     .eqSeMm {
-        margin-right: 5px;
-        width: 24px;
-        height: 20px;
+        margin-right: 11px;
     }
 
     /* sc-component-id: sc-kAdXeD */
@@ -3192,11 +3188,8 @@
             width: 100%;
         }
     }
-
-    /* remove some meta details here */
-
     .bcrVrW {
-        padding: 22px;
+        padding: 22px 0;
         border-bottom: 1px solid #e8ebef;
     }
 
@@ -3215,6 +3208,7 @@
 
     @media (max-width: 846px) {
         .bcrVrW {
+            margin-top: 44px;
             -webkit-order: 2;
             -ms-flex-order: 2;
             order: 2;
@@ -3290,10 +3284,10 @@
         font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
         font-weight: 700;
         -webkit-font-smoothing: antialiased;
-        font-size: 18px;
+        font-size: 22px;
         line-height: 22px;
         text-transform: none;
-        margin-bottom: 5px;
+        margin-bottom: 5.5px;
         -webkit-box-pack: justify;
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
@@ -3306,9 +3300,9 @@
             display: -webkit-flex;
             display: -ms-flexbox;
             display: flex;
-            font-size: 16px;
-            line-height: 18px;
-            margin-top: 10px;
+            font-size: 22px;
+            line-height: 22px;
+            margin-top: 11px;
         }
     }
 
@@ -3319,15 +3313,6 @@
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
-    }
-
-    @media (max-width: 846px) {
-        .lbyJvT {
-            -webkit-box-pack: justify;
-            -webkit-justify-content: space-between;
-            -ms-flex-pack: justify;
-            justify-content: space-between;
-        }
     }
 
     .bQCpPs {
@@ -3836,12 +3821,12 @@
         height: 175px;
         padding: 5px;
         background: #002C43;
-        border-radius: 5.5px;
+        border-radius: 50%;
         overflow: hidden;
     }
 
     .fZBlIg img{
-        border-radius: 5.5px;
+        border-radius: 50%;
     }
 
     .efawYm {

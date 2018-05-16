@@ -651,6 +651,7 @@ button {
 
 .owl-carousel.owl-tags .owl-item {
   width: auto !important;
+  margin-bottom: 5.5px;
 }
 
 .aYiOF {
@@ -6919,7 +6920,7 @@ form .M13JP:focus {
 }
 
 ._37Oy_ ._12n1y {
-  color: #041f30;
+  color: #00324B;
 }
 
 ._37Oy_ .bWRAm {
@@ -7546,6 +7547,11 @@ form .M13JP:focus {
 
 .zxDoM._3UwsA {
   opacity: 0.4;
+}
+
+.SsCsq .zxDoM:hover {
+  opacity: 1;
+  color: #00324B;
 }
 
 ._2p4GS {
@@ -13991,7 +13997,7 @@ div._3bqe5 > div {
   }
 
   ._1Rj2S {
-    background: #00324B;
+    background: #041f30;
   }
 
   ._1Rj2S ._2hXuE {
@@ -15113,7 +15119,7 @@ div._3bqe5 > div {
 .d3Gx3 {
   font-size: 16px;
   line-height: 18px;
-  color: #041f30;
+  color: #00324B;
   margin: 22px 0;
 }
 
@@ -15280,7 +15286,7 @@ div._3bqe5 > div {
 }
 
 ._12L63 {
-  background: #00324B;
+  background: #041f30;
   color: #FFFFFF;
   display: -ms-flexbox;
   display: flex;
@@ -15846,8 +15852,8 @@ div._3bqe5 > div {
 }
 
 ._3XXLi._FGT78 ._3BBJg > :last-child {
-  background: rgba(69, 193, 78, 0.95);
-  color: #FFFFFF;
+  background: rgba(69, 193, 78, 0.25);
+  color: rgba(69, 193, 78, 0.95);
 }
 
 ._3XXLi._FGT78 ._1Bm3M {
@@ -16271,7 +16277,7 @@ div._3bqe5 > div {
 }
 
 ._1Bm3M {
-  color: #041f30;
+  color: #00324B;
   text-transform: uppercase;
 }
 
@@ -21319,7 +21325,7 @@ nav._1R2o8 {
   max-width: 100%;
   display: -ms-flexbox;
   display: flex;
-  color: #041f30;
+  color: #00324B;
   margin-right: 11px;
   font-weight: bold;
 }
@@ -22215,7 +22221,7 @@ nav._1R2o8 {
   display: -ms-flexbox;
   display: flex;
   padding: 11px;
-  border-left: 4px solid #041f30;
+  border-left: 4px solid #00324B;
   border-radius: 0px;
   background-color: #f8f9fa;
 }
@@ -22425,7 +22431,7 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border: 1px solid #041f30;
+  border: 1px solid #00324B;
   background: #FFFFFF;
   cursor: pointer;
   padding: 11px 15px;
@@ -22473,7 +22479,7 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border: 1px solid #041f30;
+  border: 1px solid #00324B;
   background: #ffffff;
   cursor: pointer;
   padding: 11px 15px;
@@ -22607,12 +22613,12 @@ nav._1R2o8 {
   right: 0;
   bottom: 0px;
   height: 0px;
-  background-color: #041f30;
+  background-color: #00324B;
 }
 
 .eJBJfm .iUbryo {
   padding: 15px;
-  color: #041f30;
+  color: #00324B;
   cursor: default;
   position: relative;
   -webkit-letter-spacing: 1.2px;
@@ -22637,7 +22643,7 @@ nav._1R2o8 {
   right: 0;
   bottom: 0px;
   height: 2px;
-  background-color: #041f30;
+  background-color: #00324B;
 }
 
 @media (max-width: 1180px) {
@@ -24084,7 +24090,7 @@ post {
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
-  color: #041f30;
+  color: #00324B;
 }
 
 ._3oju3 ._2lkdt {
