@@ -121,15 +121,14 @@
                 </div>
             </div>
             <div class="sc-fONwsr gDVFix">
-                <div class="sc-hEsumM jUVmGT" data-reactid="43">
-                    <div class="sc-ktHwxA lhpVsy" data-reactid="103">
+                <div class="sc-hEsumM jUVmGT">
+                    <div class="sc-ktHwxA lhpVsy">
                         <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc">
-                            <a class="sc-cJSrbW hDKkOF" href="/fanbases" data-reactid="105">
-                                <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
-                                    <span class="sc-hmzhuo gqKiYI" data-reactid="107">Hot</span>
-                                    <span class="sc-frDJqD lXCHc" data-reactid="108">Fanbases</span>
+                            <a class="sc-cJSrbW hDKkOF" href="/fanbases">
+                                @include("includes.heading", ["top" => "Hot", "title" => "Fanbases"])
+                                <div class="sc-dliRfk dpeeXK">
+                                    <button class="sc-kLIISr cORlPk">+ See more</button>
                                 </div>
-                                <span class="sc-kvZOFW fTNgKg">+ See more</span>
                             </a>
                             <div class="_1ht8_">
                                 <div class="_1ht8_">
@@ -145,13 +144,10 @@
                         </div>
                         <div class="_TY876">
                             <div class="sc-cJSrbW hDKkOF">
-                                <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
-                                    <span class="sc-hmzhuo gqKiYI" data-reactid="107">Hot</span>
-                                    <span class="sc-frDJqD lXCHc" data-reactid="108">Stories</span>
-                                </div>
+                                @include("includes.heading", ["top" => "Top", "title" => "Stories"])
                             </div>
                             <ol class="_FGT65">
-                                @foreach($posts['hot'] as $k => $post)
+                                @foreach($posts['top'] as $k => $post)
                                     <li class="_89GHT">
                                         <div class="_CFG34">
                                             @include("svg.outline-filter_" . ($k + 1))
@@ -190,8 +186,7 @@
                 <div class="sc-rBLzX SsCsq">
                     <div class="sc-dTdPqK hQzEkt">
                         <div class="sc-krDsej eqEjAX sc-frDJqD epAMjP">
-                            <div class="sc-kvZOFW jomFZs"><span class="sc-hqyNC dBwCTy">Top</span><span
-                                        class="sc-jbKcbu fAtzSi">Stories</span></div>
+                            @include("includes.heading", ["top" => "Hot", "title" => "Stories"])
                             <div class="sc-dliRfk dpeeXK">
                                 <button class="sc-kLIISr cORlPk">Discover</button>
                                 <button class="sc-kLIISr iUbryo">Inbox</button>

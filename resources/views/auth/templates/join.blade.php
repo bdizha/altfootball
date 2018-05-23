@@ -3,7 +3,7 @@
         <div class="bHN0m">
             <button data-bind="click: hideJoinPopup" class="xy5Fz">
                 <svg width="24" height="24" viewBox="0 0 18 18">
-                    <g stroke="rgba(125, 160, 177, 0.65)" stroke-width="2" fill="none" fill-rule="evenodd"
+                    <g stroke="rgb(153, 173, 183)" stroke-width="2" fill="none" fill-rule="evenodd"
                        stroke-linecap="square">
                         <path d="M2.368 2.282L16.51 16.425M16.218 2.282L2.075 16.425"></path>
                     </g>

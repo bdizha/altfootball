@@ -10,7 +10,7 @@
          class="_1z7Hy _2JeVL">
       <g
               fill="none" fill-rule="evenodd">
-         <path fill="rgba(125, 160, 177, 0.65)"
+         <path fill="rgb(153, 173, 183)"
                d="M0 9a9 9 0 1 0 18 0A9 9 0 0 0 0 9z"></path>
          <path
                  fill="rgba(255, 255, 255, 1)"

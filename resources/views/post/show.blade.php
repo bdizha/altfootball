@@ -35,6 +35,7 @@
                                         <div class="_1veAI _1iE2V">
                                             <div class="_1-sfe _29LD-">
                                                 <h1 class="_12F3w iAiuJ">{{ $post->title }}</h1>
+                                                @include('post.user')
                                                 <div class="_23p6h">
                                                     <img src="http://altfootball.com/images/{{ $post->image }}"
                                                          alt="{{ $post->title }}"/>
@@ -50,7 +51,6 @@
                                                             <div class="_89HJT">
                                                                 {!! $post->summary !!}
                                                             </div>
-                                                            @include('post.user')
                                                             <div class="_3o2ca">
                                                                 <a class="_2Q0fU p1Di1"
                                                                    href="https://www.facebook.com/sharer/sharer.php?u={{ urlencode($post->share_url) }}"
