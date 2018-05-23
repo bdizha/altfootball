@@ -10,19 +10,6 @@
     <div class="sc-jQMNup gOlyXF">
         <div class="sc-bJHhxl kIfuXn">
             <div class="sc-TuwoP ciGfof">
-                <div class="sc-cFlXAS bWrukB sc-kafWEX fZwvCP" style="display: block;">
-                    <div class="sc-feJyhm keidcv"
-                         style="position: sticky; top: 123px; bottom: auto; height: auto; justify-content: flex-start;">
-                        <div class="sc-iELTvK dWbSTj">
-                            <div class="sc-iHhHRJ hLRQek">
-                                <div class="_TY876">
-                                    <div class="_2H69I">UP NEXT_</div>
-                                    @include("post.hot")
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="sc-izvnbC ZnxSI">
                     <div class="sc-dPPMrM bJPofi">
                         <div class="sc-rBLzX SsCsq _23FRT">
@@ -119,6 +106,19 @@
                                             @include('fanbase.base')
                                         @endforeach
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sc-cFlXAS bWrukB sc-kafWEX fZwvCP" style="display: block;">
+                    <div class="sc-feJyhm keidcv"
+                         style="position: sticky; top: 123px; bottom: auto; height: auto; justify-content: flex-start;">
+                        <div class="sc-iELTvK dWbSTj">
+                            <div class="sc-iHhHRJ hLRQek">
+                                <div class="_TY876">
+                                    <div class="_2H69I">UP NEXT_</div>
+                                    @include("post.hot")
                                 </div>
                             </div>
                         </div>

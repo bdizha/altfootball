@@ -3241,14 +3241,6 @@
         }
     }
 
-    /* sc-component-id: sc-iHhHRJ */
-
-    @media (max-width: 846px) {
-        .hLRQek {
-            display: none;
-        }
-    }
-
     /* sc-component-id: sc-OxbzP */
 
     .huGLRC {
