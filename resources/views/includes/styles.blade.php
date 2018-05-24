@@ -3699,6 +3699,8 @@
             -ms-flex: 1 1 90%;
             flex: 1 1 90%;
             width: 90%;
+            border-left: none;
+            box-shadow: none;
         }
     }
 
