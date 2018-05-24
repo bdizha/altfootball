@@ -3816,8 +3816,8 @@
     .fZBlIg {
         width: 175px;
         height: 175px;
-        padding: 5px;
-        background: #002C43;
+        padding: 0;
+        background: transparent;
         border-radius: 50%;
         overflow: hidden;
     }

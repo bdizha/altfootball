@@ -49,8 +49,6 @@ class PremierLeagueJob extends NewsJob
 
                     $url = $link;
 
-//                    dd($url);
-
                     $p = Post::where("external_url", $url)->first();
                     $client = new Client();
                     $data = $client->request('GET', $url);

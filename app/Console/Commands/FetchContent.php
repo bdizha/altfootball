@@ -23,6 +23,8 @@ use App\Jobs\NewsPSGJob;
 use App\Jobs\RealMadridJob;
 use App\Jobs\SearieAJob;
 use App\Jobs\PerfectClubsJob;
+use App\Jobs\TotalSportekJob;
+use App\Jobs\SkySportsJob;
 use App\Post;
 use Illuminate\Console\Command;
 
@@ -63,6 +65,24 @@ class FetchContent extends Command
         Post::where("content", '')->delete();
 
         try {
+            dispatch(new SkySportsJob());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
+            dispatch(new TotalSportekJob());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
+            dispatch(new PremierLeagueJob());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
             dispatch(new BBCFootballJob());
         } catch (\Exception $e) {
         }
@@ -93,15 +113,6 @@ class FetchContent extends Command
 
         try {
             dispatch(new FootballLondonJob());
-        } catch (\Exception $e) {
-
-        }
-
-
-        Post::where("content", '')->delete();
-
-        try {
-//            dispatch(new TotalSportekJob());
         } catch (\Exception $e) {
 
         }
@@ -163,13 +174,6 @@ class FetchContent extends Command
 
         }
 
-
-        try {
-            dispatch(new SpanishFootball());
-        } catch (\Exception $e) {
-
-        }
-
         try {
             dispatch(new SearieAJob());
         } catch (\Exception $e) {
@@ -190,12 +194,6 @@ class FetchContent extends Command
 
         try {
             dispatch(new News90MinJob());
-        } catch (\Exception $e) {
-
-        }
-
-        try {
-            dispatch(new PremierLeagueJob());
         } catch (\Exception $e) {
 
         }

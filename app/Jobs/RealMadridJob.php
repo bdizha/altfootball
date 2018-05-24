@@ -119,29 +119,22 @@ class RealMadridJob extends NewsJob
                                 }
                             }
 
+                            $summary = $data->filter('meta[property="og:description"]')->attr('content');
+
                             $content = "";
-                            $data->filter('.m_text_content p')->each(function (Crawler $node, $i) use (&$content, &$summary) {
-
-                                if ($i > 0 || !empty($summary)) {
-                                    $content .= "<p>{$node->html()}</p>";
-                                }
-
-                                if (empty($summary)) {
-                                    if ($i == 0) {
-                                        $summary = $node->text();
-                                    }
-                                }
+                            $data->filter('.m_text_content p')->each(function (Crawler $node, $i) use (&$content) {
+                                $content .= "<p>{$node->html()}</p>";
                             });
 
                             $post['content'] = str_replace("<br>", "", $content);
-
-//                        dd($post);
+                            $post['summary'] = substr($summary, 0, 255);
 
                             if (empty($p->id)) {
                                 $p = Post::create($post);
 
                                 echo 'Inserted post: ' . $post['title'] . "\n";
                             } else {
+
                                 $p->content = $post['content'];
                                 $p->title = $post['title'];
                                 $p->image = $post['image'];
