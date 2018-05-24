@@ -82,12 +82,7 @@ class SkySportsJob extends NewsJob
 
                     $summary = $data->filter('meta[property="og:description"]')->attr('content');
 
-
-                    if ($data->filter('meta[name="og:image"]')->count() > 0) {
-                        $ogImage = $data->filter('meta[name="og:image"]')->attr('content');
-                    } else {
-                        $ogImage = $data->filter('meta[property="og:image"]')->attr('content');
-                    }
+                    $ogImage = $data->filter('.widge-figure__image')->attr('src');
 
                     $post["image"] = $ogImage;
                     $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
