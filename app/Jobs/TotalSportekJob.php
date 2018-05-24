@@ -41,7 +41,7 @@ class TotalSportekJob extends NewsJob
 
             $crawler = $client->request('GET', $this->url . $page . "/");
 
-            $crawler->filter('.entry-header .entry-title a')->each(function (Crawler $node, $i) {
+            $crawler->filter('.content .entry-header .entry-title a')->each(function (Crawler $node, $i) {
                 $link = $node->attr("href");
 
                 if (!empty($link)) {
