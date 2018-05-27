@@ -50,7 +50,7 @@ class User extends Authenticatable
 
     public function getCamelAttribute()
     {
-        $camel = strtolower(str_slug(ucwords($this->name), ""));
+        $camel = str_slug(ucwords($this->name), "");
         return "@" . $camel;
     }
 
