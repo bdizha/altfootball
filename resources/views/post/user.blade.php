@@ -32,9 +32,13 @@
     <div class="sc-krvtoX hzEOQv">
         <button class="sc-dUjcNx kXXKHw" data-tracking="post - tooltip - opened">
             <div class="_32tSU">
-                <svg xmlns="http://www.w3.org/2000/svg" width="4" height="18" viewBox="0 0 3 17" class="_32tSU">
-                    <g fill="rgba(125, 160, 177, 0.75)" fill-rule="evenodd">
-                        <path d="M2.2.69a1.15 1.15 0 1 1-2.1.92A1.15 1.15 0 0 1 2.2.7M2.2 7.87a1.15 1.15 0 1 1-2.1.92 1.15 1.15 0 0 1 2.1-.92M2.2 15.04a1.15 1.15 0 1 1-2.1.93 1.15 1.15 0 0 1 2.1-.93"></path>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+                    <g id="Bounding_Boxes">
+                        <path fill="none" d="M0,0h24v24H0V0z" />
+                    </g>
+                    <g fill="rgba(125, 160, 177, 0.75)" id="Sharp">
+                        <path d="M12,8c1.1,0,2-0.9,2-2s-0.9-2-2-2s-2,0.9-2,2S10.9,8,12,8z M12,10c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S13.1,10,12,10z
+		                    M12,16c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S13.1,16,12,16z" />
                     </g>
                 </svg>
             </div>

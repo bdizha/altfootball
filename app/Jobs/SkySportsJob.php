@@ -81,10 +81,9 @@ class SkySportsJob extends NewsJob
                     $post['user_id'] = $u->id;
 
                     $summary = $data->filter('meta[property="og:description"]')->attr('content');
+                    $image = $data->filter('.widge-figure__body img')->attr('data-src');
 
-                    $ogImage = $data->filter('.widge-figure__image')->attr('src');
-
-                    $post["image"] = $ogImage;
+                    $post["image"] = $image;
                     $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
 
                     $dateRaw = $data->filter(".article__header-date-time")->text();

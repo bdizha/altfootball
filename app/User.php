@@ -3,13 +3,11 @@
 namespace App;
 
 use Auth;
+use DB;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Support\Facades\Redis;
-use MartinBean\Database\Eloquent\Sluggable;
-use DB;
-use Carbon\Carbon;
 use Imgix\UrlBuilder;
+use MartinBean\Database\Eloquent\Sluggable;
 
 class User extends Authenticatable
 {
@@ -52,7 +50,7 @@ class User extends Authenticatable
 
     public function getCamelAttribute()
     {
-        $camel = strtolower(str_slug($this->name, "_"));
+        $camel = strtolower(str_slug(ucwords($this->name), ""));
         return "@" . $camel;
     }
 
@@ -86,14 +84,14 @@ class User extends Authenticatable
 
     public function received()
     {
-        return  $this->belongsToMany(User::class, 'followers', 'followable_id', 'id')
+        return $this->belongsToMany(User::class, 'followers', 'followable_id', 'id')
             ->where('type', Follower::type_user)
             ->orderBy("created_at", "DESC");
     }
 
     public function fanbases()
     {
-        return  $this->belongsToMany(Fanbase::class, 'followers', 'user_id', 'id')
+        return $this->belongsToMany(Fanbase::class, 'followers', 'user_id', 'id')
             ->where('type', Follower::type_fanbase)
             ->orderBy("created_at", "DESC");
     }
@@ -133,7 +131,7 @@ class User extends Authenticatable
         $user = Auth::user();
 
         if (Auth::guard()->check()) {
-            $follower = Follower::where('user_id',  $user->id)
+            $follower = Follower::where('user_id', $user->id)
                 ->where('followable_id', $this->id)
                 ->where('type', 'App\User')
                 ->first();
@@ -254,21 +252,23 @@ class User extends Authenticatable
         return $meta;
     }
 
-    public function toKoJs(){
+    public function toKoJs()
+    {
         $userArray = [];
 
         $fields = $this->appends;
         $fields = array_merge(['id'], $fields);
         $fields = array_merge($this->fillable, $fields);
 
-        foreach($fields as $field){
+        foreach ($fields as $field) {
             $userArray[$field] = $this->$field;
         }
 
         return json_encode($userArray);
     }
 
-    public function needsResizing($url){
+    public function needsResizing($url)
+    {
         return strpos($url, '.com') !== false;
     }
 }

@@ -1433,6 +1433,7 @@ form ._2Kdch {
   -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
+  margin-right: -7px;
 }
 
 ._32tSU:hover g {
@@ -21265,13 +21266,6 @@ nav._1R2o8 {
   }
 }
 
-@media (max-width: 508px) {
-  .dDnmGN {
-    width: 22px;
-    height: 22px;
-  }
-}
-
 .dDnmGN img {
   border-radius: 5.5px;
   width: 100%;
@@ -21425,7 +21419,7 @@ nav._1R2o8 {
   padding: 22px;
   margin-bottom: 11px;
   border-radius: 5.5px;
-  border: 1px solid rgba(125, 160, 177, 0.11);
+  border: 1px solid rgba(125, 160, 177, 0.25);
   box-shadow: 0 2px 2px 0 rgba(132, 131, 145, 0.14), 0 3px 1px -2px rgba(132, 131, 145, 0.12), 0 1px 5px 0 rgba(132, 131, 145, 0.2);
   overflow: visible;
 }
@@ -21452,6 +21446,19 @@ nav._1R2o8 {
 }
 
 @media (max-width: 846px) {
+  .hQzEkt .gEVQKf {
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgba(125, 160, 177, 0.25);
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    margin-bottom: 0;
+  }
+
+  .hQzEkt .gEVQKf:hover {
+    box-shadow: none;
+  }
+
   .hQzEkt .gEVQKf .ljjFes .gESGAG {
     margin-right: 11px;
   }

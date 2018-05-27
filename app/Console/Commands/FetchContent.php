@@ -71,6 +71,12 @@ class FetchContent extends Command
         }
 
         try {
+            dispatch(new JuventusJob());
+        } catch (\Exception $e) {
+
+        }
+
+        try {
             dispatch(new TotalSportekJob());
         } catch (\Exception $e) {
 
@@ -176,12 +182,6 @@ class FetchContent extends Command
 
         try {
             dispatch(new SearieAJob());
-        } catch (\Exception $e) {
-
-        }
-
-        try {
-            dispatch(new JuventusJob());
         } catch (\Exception $e) {
 
         }

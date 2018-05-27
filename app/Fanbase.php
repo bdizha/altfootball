@@ -104,7 +104,7 @@ class Fanbase extends Model
 
     public function getCamelAttribute()
     {
-        $camel = strtolower(str_slug($this->name, "_"));
+        $camel = strtolower(str_slug(ucwords($this->name), ""));
         return "@" . $camel;
     }
 
