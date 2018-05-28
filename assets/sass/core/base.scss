@@ -5068,8 +5068,9 @@ dribbles {
   font-size: 16px;
   padding: 22px 11px;
   transition: opacity .1s ease-out;
-  color: $color_light_blue;
+  color: $color_green;
   &.disabled {
+    color: $color_light_blue;
     opacity: 0.3;
   }
 }
@@ -6670,9 +6671,11 @@ form {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    padding: 0;
+    padding: 11px;
     margin-bottom: 11px;
     border-radius: 5.5px;
+    border: 1px solid rgba(125, 160, 177, 0.11);
+    box-shadow: 0 2px 2px 0 rgba(132, 131, 145, 0.14), 0 3px 1px -2px rgba(132, 131, 145, 0.12), 0 1px 5px 0 rgba(132, 131, 145, 0.2);
     ._CFG34 {
       color: $color_green;
       fill: $color_green;
@@ -6711,8 +6714,8 @@ form {
           -webkit-box-orient: vertical;
           margin-bottom: 5.5px;
           text-transform: uppercase;
-          line-height: 16px;
-          font-size: 16px;
+          line-height: 14px;
+          font-size: 14px;
         }
       }
       ._ETY90 {
@@ -7022,7 +7025,7 @@ form {
   }
 }
 
-.SsCsq{
+.SsCsq {
   .zxDoM {
     &:hover {
       opacity: 1;
@@ -10198,8 +10201,8 @@ div._3bqe5 {
 
 ._9fE1R {
   position: relative;
-  padding: 16px;
-  margin-top: 22px;
+  padding: 22px;
+  margin-top: 0;
   ._TY894 {
     h2 {
       font-weight: 400;
@@ -10293,11 +10296,12 @@ div._3bqe5 {
 }
 
 ._1Xbrb, ._3tkuf {
-  background: $bg_blue;
+  background: transparent;
   border-radius: 5.5px;
   overflow: hidden;
   margin-bottom: 22px;
-  color: $color_white;
+  border: 1px solid rgba(125, 160, 177, 0.11);
+  box-shadow: 0 2px 2px 0 rgba(132, 131, 145, 0.14), 0 3px 1px -2px rgba(132, 131, 145, 0.12), 0 1px 5px 0 rgba(132, 131, 145, 0.2);
 }
 
 @media screen and (max-width: 508px) {
@@ -11389,7 +11393,9 @@ div._3bqe5 {
   margin-right: 11px;
   border-radius: 5.5px;
   overflow: hidden;
-  background: $bg_blue;
+  border: 1px solid rgba(125, 160, 177, 0.11);
+  margin-bottom: 4px;
+  box-shadow: 0 2px 2px 0 rgba(132, 131, 145, 0.14), 0 3px 1px -2px rgba(132, 131, 145, 0.12), 0 1px 5px 0 rgba(132, 131, 145, 0.2);
   .hzEOQv {
     display: none;
   }
@@ -11411,13 +11417,11 @@ div._3bqe5 {
     .YkbCv {
       ._74oom {
         ._eeohz {
-          color: rgba(255, 255, 255, 0.65);
           &:after {
-            background-color: $color_white;
+            //background-color: $color_white;
           }
           svg {
             path {
-              fill: $color_white;
               &:nth-child(2) {
                 fill: $color_light_green;
               }
@@ -11488,20 +11492,26 @@ div._3bqe5 {
   padding-bottom: 4px;
 }
 
-.grsTy {
-  color: $color_white;
-  font-weight: 700;
-  overflow: hidden;
-  max-height: 55px;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  margin-bottom: 4px;
-  text-transform: uppercase;
-  line-height: 18px;
-  font-size: 18px;
-  min-height: 55px;
+._1XEbE {
+  .grsTy {
+    font-weight: 700;
+    overflow: hidden;
+    max-height: 55px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    line-height: 18px;
+    font-size: 18px;
+    min-height: 55px;
+  }
+  &:hover {
+    .grsTy {
+      color: $color_white;
+    }
+  }
 }
 
 ._2ilqp {
@@ -12818,6 +12828,7 @@ div._3bqe5 {
   flex-direction: column;
   align-items: stretch;
   flex: 1;
+  margin-bottom: 44px;
   ._FGT65 {
     padding: 0px;
     list-style: none;
@@ -12934,7 +12945,6 @@ div._3bqe5 {
     }
   }
   ._1JesO {
-    color: rgba(255, 255, 255, 0.5);
     padding-bottom: 0;
   }
 }
@@ -21202,7 +21212,6 @@ nav._1R2o8 {
   padding-right: 22px;
   .VDPbh {
     ._1JesO {
-      color: $color_light_blue;
     }
   }
 }

@@ -62,7 +62,7 @@ class PostController extends Controller
         if ($post->fanbase) {
             $bases = Fanbase::where("id", "!=", $post->fanbase->id)
                 ->inRandomOrder()
-                ->orderBy('id', 'asc')->take(3)->get();
+                ->orderBy('id', 'asc')->take(12)->get();
         }
 
         $post->views += 1;
