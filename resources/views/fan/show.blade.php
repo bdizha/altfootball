@@ -7,56 +7,44 @@
 @section('content')
     <div class="sc-jQMNup gOlyXF">
         <div class="sc-bJHhxl kIfuXn">
-            <header class="sc-cbMPqi jmwvyD" style="margin-top: 0px; opacity: 1;">
-                <div class="sc-jtHxuu kMymTC _1KXFt">
-                    <div class="_23p6h">
-                        <img src="{{ $user->cover_x }}" role="presentation" alt="" class="_2PoG-"
-                             style="opacity: 1;display: none">
-                    </div>
-                </div>
-                <div class="sc-gMcBNU bVsJja">
-                    <div class="sc-dYzWWc fZBlIg">
-                        <div class="sc-iLVFha efawYm _1KXFt">
-                            <div class="_23p6h">
-                                <img src="{{ $user->thumb_x }}" role="presentation" alt="" class="_2PoG-" width="165"
-                                     height="165" style="opacity: 1;">
-                            </div>
-                        </div>
-                    </div>
-                    <h1 class="sc-cgzHhG jMqtqW">{{ $user->name }}</h1>
-                </div>
-            </header>
             <div class="sc-TuwoP ciGfof">
                 <div class="sc-cFlXAS bWrukB sc-kafWEX fZwvCP" style="display: block;">
                     <div class="sc-feJyhm keidcv"
-                         style="position: sticky; top: 123px; bottom: auto; height: auto; justify-content: flex-start;">
+                         style="position: sticky; top: 44px; bottom: auto; height: auto; justify-content: flex-start;">
                         <div class="sc-iELTvK dWbSTj">
-                            <section class="sc-hkbPbT bcrVrW">
-                                <div>
-
+                            <div class="sc-gMcBNU bVsJja">
+                                <div class="sc-dYzWWc fZBlIg">
+                                    <div class="sc-iLVFha efawYm _1KXFt">
+                                        <div class="_23p6h">
+                                            <img src="{{ $user->thumb_x }}" role="presentation" alt="" class="_2PoG-"
+                                                 width="165"
+                                                 height="165" style="opacity: 1;">
+                                        </div>
+                                    </div>
                                 </div>
-                            </section>
+                            </div>
                             <div class="sc-iHhHRJ hLRQek">
                                 <section class="sc-dXfzlN glYIFw">
                                     <div class="sc-isBZXS cvlUzR">
-                                        <div class="sc-cJSrbW hDKkOF">
+                                        <div class="sc-cJSrbW">
                                             <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
-                                                <span class="sc-hmzhuo gqKiYI" data-reactid="107">Fanbase</span>
-                                                <span class="sc-frDJqD lXCHc" data-reactid="108">Leader</span>
+                                                <span class="sc-frDJqD lXCHc"
+                                                      data-reactid="108">{{ $user->name }}</span>
                                             </div>
                                         </div>
-                                        <a class="sc-aewfc bCHmiu" href="/u/{{ $user->slug }}">
-                                            <div class="sc-iIHjhz cxzHMn sc-jTzLTM kGoDGv">
-                                                <div class="sc-fjdhpX dAAOAM">
-                                                    <div class="_38L6D" style="padding-bottom: 100%;">
-                                                        <img alt="" role="presentation"
-                                                             src="https://graph.facebook.com/10211548695939804/picture?type=square&amp;width=200&amp;height=200"
-                                                             class="_214e9 b00q8">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <span class="sc-jHZirH glCfih">{{ $user->name }}</span>
-                                        </a>
+                                    </div>
+                                </section>
+                                <section class="sc-dXfzlN glYIFw">
+                                    <div class="sc-isBZXS cvlUzR">
+                                        <div class="_YU783">
+                                            Bio
+                                        </div>
+                                        <div class="_76TYH">
+                                            @if(empty($user->bio))
+                                                {{ "A huge football enthusiast. Lively discussions and some occasional banter..." }}
+                                            @endif
+                                            {{ $user->bio }}
+                                        </div>
                                     </div>
                                 </section>
                                 <section class="sc-dXfzlN glYIFw">
@@ -101,7 +89,18 @@
                                     <div class="sc-dvpmds jHgdae">
                                         <div class="sc-cJSrbW hDKkOF">
                                             <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
-                                                <span class="sc-hmzhuo gqKiYI" data-reactid="107">Members</span>
+                                                <span class="sc-hmzhuo gqKiYI" data-reactid="107">Fanbases</span>
+                                            </div>
+                                        </div>
+                                        <div class="_1ht8_">
+                                            <div class="_1ht8_">
+                                                <div class="_3FaZ4">
+                                                    <div class="owl-carousel owl-five owl-theme">
+                                                        @foreach($user->fanbases as $k => $base)
+                                                            @include('fanbase.base')
+                                                        @endforeach
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

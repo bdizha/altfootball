@@ -7312,11 +7312,20 @@ form .M13JP:focus {
   }
 }
 
+.hLRQek {
+  overflow: hidden;
+}
+
+._YU783 {
+  color: rgba(0, 50, 75, 0.55);
+  margin-bottom: 11px;
+}
+
 ._26DkX {
   border-top: 1px solid rgba(56, 82, 119, 0.15);
   border-bottom: 1px solid rgba(56, 82, 119, 0.15);
   padding-bottom: 28px;
-  background: #16223b;
+  background: transparent;
 }
 
 ._26DkX ._1e4LX {
