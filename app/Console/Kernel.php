@@ -14,7 +14,8 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\FetchContent::class,
-        Commands\Misc::class
+        Commands\Misc::class,
+        Commands\AddComment::class
     ];
 
     /**

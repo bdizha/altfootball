@@ -81,7 +81,7 @@ class SkySportsJob extends NewsJob
                     $post['user_id'] = $u->id;
 
                     $summary = $data->filter('meta[property="og:description"]')->attr('content');
-                    $image = $data->filter('.widge-figure__body img')->attr('data-src');
+                    $image = $data->filter('img.auto-size__target')->attr('data-src');
 
                     $post["image"] = $image;
                     $post['title'] = $data->filter('meta[property="og:title"]')->attr('content');
@@ -115,7 +115,7 @@ class SkySportsJob extends NewsJob
                     }
 
                     $content = "";
-                    $data->filter('.article__body p')->each(function (Crawler $node, $i) use (&$content) {
+                    $data->filter('.article__body p, .article__body img')->each(function (Crawler $node, $i) use (&$content) {
                         $content .= "<p>{$node->html()}</p>";
                     });
 

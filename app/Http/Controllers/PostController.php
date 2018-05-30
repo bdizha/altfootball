@@ -69,7 +69,7 @@ class PostController extends Controller
         $post->save();
 
         return view('post.show', [
-            'comments' => json_encode($post->comments->toArray(), JSON_HEX_APOS),
+            'comments' => $post->comments,
             'post' => $post,
             'bases' => $bases,
             'posts' => $posts,

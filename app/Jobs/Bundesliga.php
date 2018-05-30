@@ -100,7 +100,7 @@ class Bundesliga extends NewsJob
 
                         $content = "";
                         $data->filter('.article-body')->each(function (Crawler $node, $i) use (&$content) {
-                            $node->filter('p')->each(function (Crawler $node, $i) use (&$content) {
+                            $node->filter('p, img')->each(function (Crawler $node, $i) use (&$content) {
                                 $content .= "<p>{$node->html()}</p>";
                             });
                         });

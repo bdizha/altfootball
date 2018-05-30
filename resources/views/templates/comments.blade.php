@@ -80,17 +80,9 @@
             <div data-bind="if: comments.length > 0">
                 <comments params='comments: comments, type_id: comments.id, level: 1, root: $root'></comments>
             </div>
-            <!-- ko if: $parent.level() > 0 && $index() === 0 && $parent.isList() == false -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="_1CwzX">
-                <g fill="rgb(153, 173, 183)" fill-rule="evenodd">
-                    <path d="M12.57 6.5H1.54V1.54h1.17A.77.77 0 0 0 2.7 0H.77A.77.77 0 0 0 0 .77v6.46c0 .42.34.77.77.77h11.77l.03-1.5z"></path>
-                    <path d="M13.82 6.7l-4.5-4.5a.77.77 0 1 0-1.08 1.1l3.11 3.12.87.73-.72.84-3.2 3.2a.77.77 0 0 0 1.09 1.1l4.46-4.47c.3-.3.3-.79 0-1.09l-.03-.02"></path>
-                </g>
-            </svg>
-            <!-- /ko -->
         </li>
         <!-- /ko -->
-        <!-- ko if: $parent.level() > 0 -->
+        <!-- ko if: level() > 0 -->
         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13" class="_1CwzX"><g fill="#020302" fill-rule="evenodd"><path d="M12.57 6.5H1.54V1.54h1.17A.77.77 0 0 0 2.7 0H.77A.77.77 0 0 0 0 .77v6.46c0 .42.34.77.77.77h11.77l.03-1.5z"></path><path d="M13.82 6.7l-4.5-4.5a.77.77 0 1 0-1.08 1.1l3.11 3.12.87.73-.72.84-3.2 3.2a.77.77 0 0 0 1.09 1.1l4.46-4.47c.3-.3.3-.79 0-1.09l-.03-.02"></path></g></svg>
         <!-- /ko -->
     </ul>
