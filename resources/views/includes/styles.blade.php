@@ -799,16 +799,6 @@
         overflow: hidden;
     }
 
-    .epAMjP:after {
-        content: '';
-        display: block;
-        position: absolute;
-        background: #d9011c;
-        width: 30px;
-        height: 4px;
-        bottom: 0;
-    }
-
     @media (max-width: 508px) {
         .epAMjP {
             font-size: 30px;
