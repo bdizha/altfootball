@@ -314,7 +314,7 @@ textarea {
 body {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
-  background: #FFFFFF;
+  background: #eef2f5;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -7189,6 +7189,7 @@ form .M13JP:focus {
   border-radius: 5.5px;
   border: 1px solid rgba(125, 160, 177, 0.11);
   box-shadow: 0 2px 2px 0 rgba(132, 131, 145, 0.14), 0 3px 1px -2px rgba(132, 131, 145, 0.12), 0 1px 5px 0 rgba(132, 131, 145, 0.2);
+  background: #FFFFFF;
 }
 
 ._FGT65 ._89GHT ._CFG34 {
@@ -21820,7 +21821,6 @@ nav._1R2o8 {
   position: relative;
   width: 40%;
   padding-top: 40px;
-  background: #FFFFFF;
   border: none;
   border-right: none;
 }
@@ -22605,7 +22605,6 @@ nav._1R2o8 {
 }
 
 .SsCsq {
-  background: #FFFFFF;
   border: none;
 }
 

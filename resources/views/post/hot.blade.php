@@ -3,7 +3,7 @@
         <li class="_89GHT">
             <div class="_CFG34">
                 <a class="_CFR45" href="/p/{{ $p->slug }}">
-                    <img alt="{{ $p->title }}" role="presentation"
+                    <img role="presentation"
                          src="{{ $p->thumb_x }}"
                          class="_214e9 b00q8">
                 </a>
