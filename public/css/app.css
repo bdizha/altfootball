@@ -655,7 +655,7 @@ button {
   width: 14px;
   height: 14px;
   background: #fff;
-  box-shadow: 0 -9px 18px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 -9px 18px 0 rgba(0, 50, 75, 0.45);
   position: absolute;
   left: 0;
 }
@@ -3591,7 +3591,7 @@ form._2rf1 ._1u7op {
   transition: transform 0.4s cubic-bezier(0, 0.42, 0, 1), opacity 0.3s ease-out;
   margin-bottom: 28px;
   background: #FFFFFF;
-  box-shadow: 0 2px 6px 0 rgba(0, 50, 75, 0.55), inset 0 -1px 0 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 2px 6px 0 rgba(0, 50, 75, 0.45), inset 0 -1px 0 0 rgba(0, 50, 75, 0.45);
   overflow: hidden;
 }
 
@@ -4622,7 +4622,7 @@ form._2rf1 ._1u7op {
 
 .YgLNn {
   background-color: #fff;
-  box-shadow: 0 2px 6px 0 rgba(0, 50, 75, 0.55), inset 0 -1px 0 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 2px 6px 0 rgba(0, 50, 75, 0.45), inset 0 -1px 0 0 rgba(0, 50, 75, 0.45);
   overflow: hidden;
 }
 
@@ -6572,7 +6572,7 @@ form._2rf1 ._1u7op {
 
 @media screen and (max-width: 846px) {
   ._26DkX {
-    border-bottom: 12px solid rgba(0, 50, 75, 0.55);
+    border-bottom: 12px solid rgba(0, 50, 75, 0.45);
     padding-bottom: 22px;
   }
 }
@@ -8050,7 +8050,7 @@ form._2rf1 ._1u7op {
   transition: all 0.4s cubic-bezier(0, 0.42, 0, 1);
   background: #FFFFFF;
   margin-bottom: 22px;
-  border-bottom: solid 1px rgba(0, 50, 75, 0.55);
+  border-bottom: solid 1px rgba(0, 50, 75, 0.45);
   padding-bottom: 22px;
 }
 
@@ -8855,7 +8855,7 @@ div._3bqe5 > div {
   left: 0;
   right: 0;
   height: 96px;
-  box-shadow: 0 4px 16px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 4px 16px rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 846px) {

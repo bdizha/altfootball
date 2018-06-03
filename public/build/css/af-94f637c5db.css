@@ -346,22 +346,22 @@ button {
 
 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 :-ms-input-placeholder {
   /* IE 10+ */
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .bnINm {
@@ -405,7 +405,7 @@ button {
   bottom: 0;
   left: 0;
   padding: 0;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
 }
 
 ._1iE2V:after {
@@ -466,7 +466,7 @@ button {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   color: #FFFFFF;
   cursor: pointer;
   padding: 11px 33px;
@@ -636,13 +636,13 @@ button {
 }
 
 ._1OI3o {
-  border-color: rgba(0, 50, 75, 0.55);
-  color: rgba(0, 50, 75, 0.55);
+  border-color: rgba(0, 50, 75, 0.45);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3Ej8o {
   border: 0;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .owl-carousel .owl-stage-outer {
@@ -677,7 +677,7 @@ button {
 ._1zDR7 {
   background: #FFFFFF;
   border: 1px solid #f8f8f8;
-  box-shadow: 0 9px 18px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 9px 18px 0 rgba(0, 50, 75, 0.45);
   width: 300px;
   padding: 28px 28px 0;
   position: fixed;
@@ -711,7 +711,7 @@ button {
 ._34TRY {
   background: #FFFFFF;
   border: 1px solid #f8f8f8;
-  box-shadow: 0 9px 18px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 9px 18px 0 rgba(0, 50, 75, 0.45);
   width: 300px;
   padding: 28px 28px 0;
   position: absolute;
@@ -741,7 +741,7 @@ button {
   width: 16px;
   height: 16px;
   background: #FFFFFF;
-  box-shadow: 0 -9px 18px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 -9px 18px 0 rgba(0, 50, 75, 0.45);
   position: absolute;
   left: 0;
 }
@@ -781,7 +781,7 @@ button {
 }
 
 ._2KljY {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   display: inline-block;
 }
 
@@ -790,11 +790,11 @@ button {
 }
 
 ._2KljY path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 .d25Pz {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._35Phm {
@@ -1144,11 +1144,11 @@ svg:hover g {
 }
 
 .zoflJ {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .zoflJ[disabled] {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1UOSn {
@@ -1210,7 +1210,7 @@ svg:hover g {
   position: absolute;
   right: 0;
   bottom: 0;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
   font-family: "DriveTribe", "Averta", sans-serif;
@@ -1219,7 +1219,7 @@ svg:hover g {
 
 ._1fTaL ._16KIM {
   transform: translateY(-18px) scale(0.85) translateZ(0);
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1fTaL ._2LSh0 {
@@ -1227,7 +1227,7 @@ svg:hover g {
 }
 
 ._2eqbF {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._37XUn {
@@ -1437,7 +1437,7 @@ form ._2Kdch {
 }
 
 ._32tSU:hover g {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._1fDUg,
@@ -1469,11 +1469,11 @@ form ._2Kdch {
 }
 
 ._13Js3:hover path:first-child {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._13Js3:hover path:last-child {
-  stroke: rgba(0, 50, 75, 0.55);
+  stroke: rgba(0, 50, 75, 0.45);
 }
 
 ._1jbho {
@@ -1881,7 +1881,7 @@ form ._2Kdch {
   content: attr(data-stamp);
   border-radius: 0;
   background: rgba(69, 193, 78, 0.95);
-  box-shadow: 0 1px 8px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 1px 8px rgba(0, 50, 75, 0.45);
 }
 
 ._1Gyo9:after {
@@ -1923,7 +1923,7 @@ form ._2Kdch {
 }
 
 ._3nF3e:before {
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   content: "";
   display: block;
   height: 1px;
@@ -1988,7 +1988,7 @@ form ._2Kdch {
 .FSUgb:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -2545,11 +2545,11 @@ form ._2Kdch {
 
 .NOB1F[disabled] {
   cursor: default;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .NOB1F[disabled] svg path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 .NOB1F > svg {
@@ -2560,7 +2560,7 @@ form ._2Kdch {
 ._1mT7f {
   font-size: 16px;
   position: relative;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   cursor: pointer;
   margin-left: 18px;
   display: -ms-flexbox;
@@ -2596,7 +2596,7 @@ form ._2Kdch {
 }
 
 ._26cuW {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -2607,7 +2607,7 @@ form ._2Kdch {
   padding: 22px 0;
   background-color: #FFFFFF;
   border: 1px solid rgba(56, 82, 119, 0.15);
-  box-shadow: 0 0 25px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 0 25px 0 rgba(0, 50, 75, 0.45);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 2;
@@ -2718,7 +2718,7 @@ form ._2Kdch {
 }
 
 ._2YLzg:hover svg > path {
-  stroke: rgba(0, 50, 75, 0.55);
+  stroke: rgba(0, 50, 75, 0.45);
 }
 
 ._2YLzg svg {
@@ -2754,7 +2754,7 @@ form ._2Kdch {
   float: right;
   color: #FFFFFF;
   transition: all 0.15s ease-out;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 14px;
   text-align: left;
@@ -2774,7 +2774,7 @@ form ._2Kdch {
 ._2LRWs {
   border: 0;
   background: #FFFFFF;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-right: 16px;
   text-transform: uppercase;
   font-size: 16px;
@@ -2785,7 +2785,7 @@ form ._2Kdch {
 
 ._2LRWs:hover:enabled {
   background: #FFFFFF;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2A7z5 {
@@ -2801,12 +2801,12 @@ form ._2Kdch {
 }
 
 ._2A7z5 svg:hover path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._168d9 svg path,
 ._168d9:hover svg path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._3hgGE {
@@ -2835,7 +2835,7 @@ form ._2Kdch {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 1px solid rgba(0, 50, 75, 0.55);
+  border: 1px solid rgba(0, 50, 75, 0.45);
 }
 
 .KTIgi {
@@ -2930,7 +2930,7 @@ form ._2Kdch {
 }
 
 ._2ixe- span {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1cT9R,
@@ -2991,7 +2991,7 @@ form ._2Kdch {
 .Xr6ka {
   position: absolute;
   top: 28px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -3015,7 +3015,7 @@ form ._2Kdch {
 
 ._2jMe6 {
   left: 28px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -3138,7 +3138,7 @@ form ._2Kdch {
 }
 
 ._3UVYo {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._2IBdP {
@@ -3171,7 +3171,7 @@ form ._2Kdch {
 ._2IBdP:after {
   color: #FFFFFF;
   content: attr(data-total);
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 22px;
@@ -3302,7 +3302,7 @@ form ._2Kdch {
 
 ._2Ne10 {
   text-transform: uppercase;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._7u1-t {
@@ -3311,7 +3311,7 @@ form ._2Kdch {
   margin-bottom: 7px;
   -ms-flex-align: center;
   align-items: center;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._7u1-t span {
@@ -3388,7 +3388,7 @@ form ._2Kdch {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -3404,16 +3404,16 @@ form ._2Kdch {
 }
 
 ._3ovQm:hover ._2l5oW path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._3ovQm[disabled] {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   cursor: default;
 }
 
 ._3ovQm[disabled] ._2l5oW path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._3pBmx {
@@ -3470,7 +3470,7 @@ form ._2Kdch {
 }
 
 ._2SmsJ:hover svg path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._3cmsY {
@@ -3486,12 +3486,12 @@ form ._2Kdch {
 }
 
 ._3cmsY:hover svg path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._5lS25 {
   font-size: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._22BIt {
@@ -3860,7 +3860,7 @@ form ._2Kdch {
   padding: 16px;
   color: #FFFFFF;
   border-bottom: 1px solid rgba(56, 82, 119, 0.15);
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   /* For browsers that do not support gradients */
   /* For Safari 5.1 to 6.0 */
   /* For Opera 11.1 to 12.0 */
@@ -3961,11 +3961,11 @@ dribbles ._35GH ._34IO {
 }
 
 ._35FcZ:hover path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._35FcZ:hover ._34IO {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._13DRk {
@@ -4049,7 +4049,7 @@ dribbles ._35GH ._34IO {
   font-weight: 700;
   font-size: 35px;
   line-height: 42px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2VJcs,
@@ -4088,7 +4088,7 @@ dribbles ._35GH ._34IO {
   height: 42px;
   border: 1px solid rgba(56, 82, 119, 0.15);
   background: rgba(0, 149, 208, 0.1);
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3bxb0 .e_0uO:after {
@@ -4401,13 +4401,13 @@ dribbles ._35GH ._34IO {
 }
 
 ._3tN0i {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
 }
 
 ._1TdTV {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   padding: 16px;
   background-color: #f8f9fa;
   border: 1px solid rgba(56, 82, 119, 0.15);
@@ -4460,7 +4460,7 @@ dribbles ._35GH ._34IO {
   justify-content: center;
   -ms-flex-align: center;
   align-items: center;
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   width: 96px;
@@ -4512,7 +4512,7 @@ dribbles ._35GH ._34IO {
 .TATrW {
   -ms-flex-align: center;
   align-items: center;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
 }
 
@@ -4546,7 +4546,7 @@ dribbles ._35GH ._34IO {
 
 ._2B25b {
   padding-right: 9px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2B25b:after {
@@ -4555,16 +4555,16 @@ dribbles ._35GH ._34IO {
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._3-2aE {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1XNRF,
 ._3-2aE {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2VAHq {
@@ -4608,7 +4608,7 @@ dribbles ._35GH ._34IO {
 ._3Xf-w ._1XNRF {
   font-size: 16px;
   line-height: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-weight: 400;
 }
 
@@ -4617,7 +4617,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3RTYJ {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-weight: 400;
 }
 
@@ -4732,7 +4732,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2s4xW {
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -4922,7 +4922,7 @@ dribbles ._35GH ._34IO {
 ._1H8gB {
   font-size: 9px;
   line-height: 11px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-transform: uppercase;
 }
 
@@ -4936,7 +4936,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._38OvA._1H8gB {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .eoVae {
@@ -5207,7 +5207,7 @@ dribbles ._35GH ._34IO {
   width: 378px;
   height: 378px;
   margin: 0 auto;
-  border: 8px solid rgba(0, 50, 75, 0.55);
+  border: 8px solid rgba(0, 50, 75, 0.45);
   padding: 26px;
   display: -ms-flexbox;
   display: flex;
@@ -5225,7 +5225,7 @@ dribbles ._35GH ._34IO {
   text-transform: uppercase;
   font-size: 35px;
   line-height: 42px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   position: absolute;
   top: 26px;
   left: 26px;
@@ -5255,7 +5255,7 @@ dribbles ._35GH ._34IO {
   ._2B984 {
     display: -ms-flexbox;
     display: flex;
-    box-shadow: 0 0 50px -4px rgba(0, 50, 75, 0.55);
+    box-shadow: 0 0 50px -4px rgba(0, 50, 75, 0.45);
   }
 
   ._2B984 > svg {
@@ -5467,7 +5467,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._1JesO.disabled {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   opacity: 0.3;
 }
 
@@ -5566,7 +5566,7 @@ dribbles ._35GH ._34IO {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 12px;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   color: #FFFFFF;
   border-radius: 18px;
   margin: 0 auto 44px;
@@ -5699,7 +5699,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2nEcT._393Hg {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._2nEcT > input {
@@ -5733,7 +5733,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3fNy8 {
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   color: #FFFFFF;
 }
 
@@ -5807,7 +5807,7 @@ dribbles ._35GH ._34IO {
     color: #FFFFFF;
     content: attr(data-stamp);
     display: block;
-    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 22px;
@@ -5927,7 +5927,7 @@ dribbles ._35GH ._34IO {
   top: 50%;
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -5959,7 +5959,7 @@ dribbles ._35GH ._34IO {
 .RNhYX:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 28px;
@@ -6262,7 +6262,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._3UGMt {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   width: 76px;
   height: 55px;
   font-family: "DriveTribe", "Averta", sans-serif;
@@ -6475,7 +6475,7 @@ dribbles ._35GH ._34IO {
 ._30tVm {
   width: 64px;
   height: 4px;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
   margin-right: 16px;
   cursor: pointer;
 }
@@ -6509,7 +6509,7 @@ dribbles ._35GH ._34IO {
   left: 0;
   width: 100%;
   height: 90px;
-  box-shadow: 0 11px 25px 11px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 11px 25px 11px rgba(0, 50, 75, 0.45);
   z-index: 2;
 }
 
@@ -6605,7 +6605,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2azBk {
-  color: rgba(0, 50, 75, 0.55) !important;
+  color: rgba(0, 50, 75, 0.45) !important;
 }
 
 @media screen and (max-width: 846px) {
@@ -6647,7 +6647,7 @@ dribbles ._35GH ._34IO {
 }
 
 ._2hv_i {
-  border-color: rgba(0, 50, 75, 0.55);
+  border-color: rgba(0, 50, 75, 0.45);
 }
 
 .p5bDW {
@@ -7094,7 +7094,7 @@ form .M13JP:focus {
 }
 
 ._2LrKA {
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
 }
 
 ._1S4og {
@@ -7131,7 +7131,7 @@ form .M13JP:focus {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-align: center;
   margin-top: 16px;
   margin-bottom: 12px;
@@ -7195,7 +7195,7 @@ form .M13JP:focus {
 ._FGT65 ._89GHT ._CFG34 {
   color: #45c14e;
   fill: #45c14e;
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 40px;
@@ -7277,7 +7277,11 @@ form .M13JP:focus {
 
 ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY {
   font-weight: bold;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
+}
+
+._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY:hover {
+  color: #45c14e;
 }
 
 ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 {
@@ -7286,7 +7290,7 @@ form .M13JP:focus {
 
 ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 ._TYMN3 {
   font-size: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   white-space: nowrap;
 }
 
@@ -7318,7 +7322,7 @@ form .M13JP:focus {
 }
 
 ._YU783 {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-bottom: 11px;
 }
 
@@ -7368,7 +7372,7 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-align: center;
   display: block;
 }
@@ -7377,7 +7381,7 @@ form .M13JP:focus {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-align: center;
   display: block;
   font-size: 55px;
@@ -7605,11 +7609,11 @@ form .M13JP:focus {
 }
 
 ._2tXok {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2tXok[disabled] {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3A9Sb {
@@ -7617,7 +7621,7 @@ form .M13JP:focus {
 }
 
 .ADq5f {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3Cj2a {
@@ -7761,7 +7765,7 @@ form .M13JP:focus {
   line-height: 16px;
   text-transform: uppercase;
   padding-top: 3px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2ljIX {
@@ -7794,14 +7798,14 @@ form .M13JP:focus {
 
 .VICgz ._1jO5_ {
   transform: translateY(-4px) scale(0.85) translateZ(0);
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .bInDy {
   position: absolute;
   right: 0;
   bottom: 9px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
   font-family: "DriveTribe", "Averta", sans-serif;
@@ -7809,7 +7813,7 @@ form .M13JP:focus {
 }
 
 ._15Cw9 {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3SQbI {
@@ -7818,7 +7822,7 @@ form .M13JP:focus {
 
 .HMy0C {
   color: #FFFFFF;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   padding-left: 0;
 }
 
@@ -7862,7 +7866,7 @@ form .M13JP:focus {
   font-size: 16px;
   line-height: 16px;
   text-transform: none;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-top: 16px;
 }
 
@@ -7877,7 +7881,7 @@ form .M13JP:focus {
 }
 
 ._3iCHD {
-  border-bottom-color: rgba(0, 50, 75, 0.55);
+  border-bottom-color: rgba(0, 50, 75, 0.45);
 }
 
 ._1E9Zo input {
@@ -7905,7 +7909,7 @@ form .M13JP:focus {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 12px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-bottom: 9px;
   cursor: pointer;
 }
@@ -8112,7 +8116,7 @@ form .M13JP:focus {
   text-transform: uppercase;
   font-size: 55px;
   line-height: 44px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -8150,7 +8154,7 @@ form .M13JP:focus {
   display: block;
   background: #FFFFFF;
   border: 1px solid rgba(56, 82, 119, 0.15);
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2AwjV svg {
@@ -8160,7 +8164,7 @@ form .M13JP:focus {
 }
 
 ._2AwjV path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -8404,7 +8408,7 @@ form .M13JP:focus {
   font-size: 16px;
   line-height: 18px;
   margin-left: 35px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -8442,7 +8446,7 @@ form .M13JP:focus {
 
 ._3TxDq {
   transform: rotate(180deg) scale(0.7) translateY(-1px);
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
   margin-right: 4px;
 }
 
@@ -8491,7 +8495,7 @@ form .M13JP:focus {
 }
 
 .BB62- {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 18px;
   padding-top: 2px;
@@ -8653,7 +8657,7 @@ form .M13JP:focus {
 .ZQJT_ {
   font-size: 16px;
   line-height: 18px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   padding-top: 2px;
 }
 
@@ -8704,7 +8708,7 @@ form .M13JP:focus {
 ._3Njiy {
   display: -ms-flexbox;
   display: flex;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   -ms-flex-align: center;
   align-items: center;
   font-size: 16px;
@@ -8735,7 +8739,7 @@ form .M13JP:focus {
   width: 2px;
   height: 2px;
   border-radius: 0;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._1AiRW {
@@ -8890,7 +8894,7 @@ form .M13JP:focus {
 ._1RyqV .gEjmr ._CFG34 {
   color: #45c14e;
   fill: #45c14e;
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 40px;
@@ -8928,7 +8932,7 @@ form .M13JP:focus {
 }
 
 ._1RyqV .gEjmr ._56KHY ._GJ585 ._FVT43 {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1RyqV .gEjmr ._56KHY ._GJ585 ._23GTY {
@@ -8974,7 +8978,11 @@ form .M13JP:focus {
 
 ._1RyqV .gEjmr ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY {
   font-weight: bold;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
+}
+
+._1RyqV .gEjmr ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY:hover {
+  color: #45c14e;
 }
 
 ._1RyqV .gEjmr ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 {
@@ -8984,7 +8992,7 @@ form .M13JP:focus {
 
 ._1RyqV .gEjmr ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 ._TYMN3 {
   font-size: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   white-space: nowrap;
 }
 
@@ -9125,7 +9133,7 @@ form .M13JP:focus {
   width: 2px;
   height: 2px;
   border-radius: 0;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._3ZzkS {
@@ -9178,7 +9186,7 @@ form .M13JP:focus {
   width: 2px;
   height: 2px;
   border-radius: 0;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._3bJmr {
@@ -9186,7 +9194,7 @@ form .M13JP:focus {
   font-weight: 700;
   font-size: 16px;
   line-height: 12px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin: 12px 0 9px;
 }
 
@@ -9481,7 +9489,7 @@ form .M13JP:focus {
   ._3IQ6i:after {
     color: #FFFFFF;
     content: attr(data-count);
-    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 22px;
@@ -9514,7 +9522,7 @@ form .M13JP:focus {
   ._3IQ6i:after {
     color: #FFFFFF;
     content: attr(data-count);
-    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 35px;
@@ -9613,7 +9621,7 @@ div._3bqe5 > div {
 
 ._3HP-Q {
   margin-left: 4px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-weight: normal;
 }
 
@@ -9637,7 +9645,7 @@ div._3bqe5 > div {
 ._2Oo2A {
   min-width: calc(33% - 20px);
   text-align: left;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -9687,7 +9695,7 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   color: #FFFFFF;
   padding: 12px 22px;
 }
@@ -9752,7 +9760,7 @@ div._3bqe5 > div {
   left: 0;
   right: 0;
   height: 96px;
-  box-shadow: 0 4px 16px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 4px 16px rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 846px) {
@@ -9954,7 +9962,7 @@ div._3bqe5 > div {
 ._2mthE {
   font-size: 16px;
   line-height: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 846px) {
@@ -10068,7 +10076,7 @@ div._3bqe5 > div {
 }
 
 ._2bd6H {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   transition: color 0.2s ease;
 }
 
@@ -10114,7 +10122,7 @@ div._3bqe5 > div {
   left: -1px;
   width: 92px;
   height: 4px;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
   position: absolute;
 }
 
@@ -10233,6 +10241,17 @@ div._3bqe5 > div {
   margin-bottom: 22px;
 }
 
+._1-sfe ._23FRT {
+  font-size: 18px;
+  color: rgba(0, 50, 75, 0.45);
+  white-space: nowrap;
+  padding: 0;
+}
+
+._1-sfe ._23FRT:hover {
+  color: #45c14e;
+}
+
 @media screen and (max-width: 1158px) {
   ._1-sfe {
     margin: 0 auto;
@@ -10275,7 +10294,7 @@ div._3bqe5 > div {
 
 ._HY8RT {
   position: absolute;
-  border: 1px solid rgba(0, 50, 75, 0.55);
+  border: 1px solid rgba(0, 50, 75, 0.45);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   top: -4px;
@@ -11052,7 +11071,7 @@ div._3bqe5 > div {
   margin-left: auto;
   margin-right: auto;
   padding: 9px 0;
-  box-shadow: 0 11px 25px -10px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 11px 25px -10px rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 1280px) {
@@ -11089,7 +11108,7 @@ div._3bqe5 > div {
 ._3Cj79 {
   padding: 12px 32px;
   margin-left: auto;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   color: #FFFFFF;
   border: 0;
 }
@@ -11234,7 +11253,7 @@ div._3bqe5 > div {
 }
 
 .dqbp5 ._23YI ._1h78h {
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
 }
 
 .dqbp5 ._23YI ._1h78h:hover {
@@ -11704,7 +11723,7 @@ div._3bqe5 > div {
 }
 
 ._3cGe8 {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 18px;
   padding: 22px 0;
@@ -12137,7 +12156,7 @@ div._3bqe5 > div {
   background: #FFFFFF;
   margin-bottom: 22px;
   padding: 16px;
-  box-shadow: 0 1px 4px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 1px 4px 0 rgba(0, 50, 75, 0.45);
 }
 
 ._2XbY_:after {
@@ -12285,7 +12304,7 @@ div._3bqe5 > div {
 }
 
 ._1XEbE .bgTWiC .YkbCv ._74oom ._csp04 ._2jvdf {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1XEbE .bgTWiC .YkbCv ._74oom ._csp04 ._ov9ai {
@@ -12731,7 +12750,7 @@ div._3bqe5 > div {
   line-height: 22px;
   text-transform: uppercase;
   margin-top: 16px;
-  filter: drop-shadow(0 2px 5px rgba(0, 50, 75, 0.55));
+  filter: drop-shadow(0 2px 5px rgba(0, 50, 75, 0.45));
 }
 
 @media screen and (max-width: 508px) {
@@ -12825,7 +12844,7 @@ div._3bqe5 > div {
 }
 
 ._23g2_:hover {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._23g2_:hover svg path {
@@ -12975,7 +12994,7 @@ div._3bqe5 > div {
 }
 
 ._1fuqz {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -12987,7 +13006,7 @@ div._3bqe5 > div {
 }
 
 .A57di {
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   color: #FFFFFF;
 }
 
@@ -13022,7 +13041,7 @@ div._3bqe5 > div {
   margin-left: 3px;
   margin-top: 3px;
   font-weight: 400;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -13135,7 +13154,7 @@ div._3bqe5 > div {
 }
 
 ._12g8o {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .DdJUj {
@@ -13283,7 +13302,7 @@ div._3bqe5 > div {
   margin-bottom: 22px;
   padding-top: 35px;
   padding-bottom: 22px;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (min-width: 922px) {
@@ -13464,7 +13483,7 @@ div._3bqe5 > div {
 ._pRC7:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 28px;
@@ -13490,7 +13509,7 @@ div._3bqe5 > div {
 }
 
 ._2mbtl {
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
@@ -13609,7 +13628,7 @@ div._3bqe5 > div {
 ._1pgHm {
   text-transform: uppercase;
   padding: 18px 28px;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 846px) {
@@ -13822,7 +13841,7 @@ div._3bqe5 > div {
 .VDPbh ._FGT65 ._89GHT ._CFG34 {
   color: #45c14e;
   fill: #45c14e;
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 40px;
@@ -13888,6 +13907,10 @@ div._3bqe5 > div {
 .VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY {
   font-weight: bold;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY:hover {
+  color: #45c14e;
 }
 
 .VDPbh ._FGT65 ._89GHT ._56KHY ._ETY90 ._89RTY ._43HGJ ._YURM4 {
@@ -14126,7 +14149,7 @@ div._3bqe5 > div {
   ._2_Gw9:after {
     color: #FFFFFF;
     content: attr(data-stamp);
-    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 28px;
@@ -14146,7 +14169,7 @@ div._3bqe5 > div {
   }
 
   .Dpcfa {
-    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -14254,7 +14277,7 @@ div._3bqe5 > div {
   ._2_Gw9:after {
     color: #FFFFFF;
     content: attr(data-stamp);
-    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 35px;
@@ -14433,6 +14456,8 @@ div._3bqe5 > div {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  background: rgba(0, 50, 75, 0.45);
+  padding: 2.75px;
 }
 
 ._38L6D ._HGT78,
@@ -14454,6 +14479,7 @@ div._3bqe5 > div {
 
 ._38L6D img {
   width: 100%;
+  border-radius: 50%;
 }
 
 .owl-carousel .owl-stage-outer {
@@ -14529,7 +14555,7 @@ div._3bqe5 > div {
 }
 
 ._3MRFY {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
   width: 50%;
   max-width: 212px;
 }
@@ -14539,7 +14565,7 @@ div._3bqe5 > div {
 }
 
 ._1T85P {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3H0B3 {
@@ -14575,7 +14601,7 @@ div._3bqe5 > div {
 }
 
 .wEwHk {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._11gfn {
@@ -14625,7 +14651,7 @@ div._3bqe5 > div {
 ._2aiW- {
   margin-left: 3px;
   font-weight: 400;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3hdBv {
@@ -14644,7 +14670,7 @@ div._3bqe5 > div {
   font-size: 18px;
   line-height: 22px;
   background: #FFFFFF;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   padding: 0;
   text-transform: uppercase;
   border-radius: 0;
@@ -14657,7 +14683,7 @@ div._3bqe5 > div {
 }
 
 ._2EVp5 path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -15092,7 +15118,7 @@ div._3bqe5 > div {
 ._1g8z0 {
   font-size: 14px;
   line-height: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1g8z0 a {
@@ -15285,7 +15311,7 @@ div._3bqe5 > div {
 
 ._105Oj {
   display: block;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-top: 4px;
 }
 
@@ -15310,7 +15336,7 @@ div._3bqe5 > div {
   height: 72px;
   z-index: -1;
   background-color: #FFFFFF;
-  box-shadow: 0 11px 25px -10px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 11px 25px -10px rgba(0, 50, 75, 0.45);
   opacity: 0;
   transform: translateY(-30px) translateZ(0);
   transition: all 0.3s ease-out;
@@ -15378,7 +15404,7 @@ div._3bqe5 > div {
 
 ._12L63._36gJx {
   background: #FFFFFF;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._12L63._36gJx ._3VkOf {
@@ -16649,7 +16675,7 @@ div._3bqe5 > div {
 }
 
 .qo5ix ._2LIIc {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .qo5ix ._1gJri:nth-child(odd) {
@@ -16695,7 +16721,7 @@ div._3bqe5 > div {
 
   .qo5ix ._2bU8e ._2LIIc,
   .qo5ix ._2bU8e:nth-child(odd) ._2LIIc {
-    background: linear-gradient(to right, rgba(0, 8, 39, 0.995), rgba(0, 50, 75, 0.55), rgba(69, 193, 78, 0.95));
+    background: linear-gradient(to right, rgba(0, 8, 39, 0.995), rgba(0, 50, 75, 0.45), rgba(69, 193, 78, 0.95));
     border-color: #FFFFFF;
     color: #FFFFFF;
   }
@@ -17115,7 +17141,7 @@ div._3bqe5 > div {
 
 ._3VsO_ {
   margin-left: 3px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2Jxh7 {
@@ -17561,7 +17587,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 44px;
   line-height: 44px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -17607,7 +17633,7 @@ div._3bqe5 > div {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -17671,7 +17697,7 @@ div._3bqe5 > div {
 
 ._2jBYb {
   background: #FFFFFF;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-top: 16px;
 }
 
@@ -17685,7 +17711,7 @@ div._3bqe5 > div {
 }
 
 ._1uw3W {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 22px;
@@ -17805,8 +17831,8 @@ div._3bqe5 > div {
 }
 
 ._3HWOZ {
-  color: rgba(0, 50, 75, 0.55);
-  border-color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
+  border-color: rgba(0, 50, 75, 0.45);
 }
 
 ._3r333 {
@@ -17938,7 +17964,7 @@ div._3bqe5 > div {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  border-bottom: 1px solid rgba(0, 50, 75, 0.55);
+  border-bottom: 1px solid rgba(0, 50, 75, 0.45);
   background: #141C3E;
   color: #FFFFFF;
   cursor: pointer;
@@ -18259,7 +18285,7 @@ div._3bqe5 > div {
 }
 
 .kdNDN:hover svg path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._1Gobq > svg {
@@ -18439,7 +18465,7 @@ div._3bqe5 > div {
 ._3QTtA {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 .EYkMg {
@@ -18584,7 +18610,7 @@ div._3bqe5 > div {
 }
 
 ._3ev6- {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._3ev6- svg {
@@ -18772,7 +18798,7 @@ div._3bqe5 > div {
 ._14tWP {
   font-size: 55px;
   line-height: 55px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin: 64px 0;
 }
 
@@ -18788,7 +18814,7 @@ div._3bqe5 > div {
   line-height: 12px;
   display: -ms-flexbox;
   display: flex;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   color: #FFFFFF;
   width: 222px;
   padding: 22px 0;
@@ -18856,7 +18882,7 @@ div._3bqe5 > div {
 }
 
 ._2z54n {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   display: -ms-flexbox;
   display: flex;
 }
@@ -18900,7 +18926,7 @@ div._3bqe5 > div {
   width: 9px;
   height: 9px;
   border-radius: 9px;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
   margin-right: 16px;
 }
 
@@ -18968,7 +18994,7 @@ div._3bqe5 > div {
 .VGksr:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -19000,7 +19026,7 @@ div._3bqe5 > div {
   .VGksr:after {
     color: #FFFFFF;
     content: attr(data-stamp);
-    font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+    font-family: "DriveTribe", "Averta", sans-serif;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 55px;
@@ -19096,7 +19122,7 @@ div._3bqe5 > div {
 }
 
 ._1dz7N {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 846px) {
@@ -19173,7 +19199,7 @@ div._3bqe5 > div {
 }
 
 ._2-lPc {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -19200,7 +19226,7 @@ div._3bqe5 > div {
 }
 
 ._1dVfa svg path {
-  stroke: rgba(0, 50, 75, 0.55);
+  stroke: rgba(0, 50, 75, 0.45);
 }
 
 ._1dVfa ._1dJLC {
@@ -19225,12 +19251,12 @@ div._3bqe5 > div {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  border: 4px solid rgba(0, 50, 75, 0.55);
+  border: 4px solid rgba(0, 50, 75, 0.45);
   margin: 0 22px;
   padding: 22px 0;
   text-align: center;
   cursor: pointer;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   width: 100%;
 }
 
@@ -19362,7 +19388,7 @@ div._3bqe5 > div {
 ._2UPZy:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -19738,7 +19764,7 @@ nav._1R2o8 {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 18px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   white-space: nowrap;
 }
 
@@ -19778,7 +19804,7 @@ nav._1R2o8 {
 
 ._2CSDm {
   font-weight: 700;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._37mnt {
@@ -19836,7 +19862,7 @@ nav._1R2o8 {
 }
 
 ._21SpA {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   margin-bottom: 9px;
 }
@@ -19921,7 +19947,7 @@ nav._1R2o8 {
 ._2UPZy:after {
   color: #FFFFFF;
   content: attr(data-stamp);
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -20009,7 +20035,7 @@ nav._1R2o8 {
   bottom: 0;
   left: 0;
   right: 0;
-  box-shadow: inset 0 -140px 80px -40px rgba(0, 50, 75, 0.55);
+  box-shadow: inset 0 -140px 80px -40px rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -20320,7 +20346,7 @@ nav._1R2o8 {
     justify-content: center;
     -ms-flex-align: center;
     align-items: center;
-    background-color: rgba(0, 50, 75, 0.55);
+    background-color: rgba(0, 50, 75, 0.45);
     height: 35px;
     z-index: 2;
   }
@@ -20507,7 +20533,7 @@ nav._1R2o8 {
 }
 
 ._4wu2M:hover svg path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._2Ngcr svg {
@@ -20612,7 +20638,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 664px) {
   ._1xaT_ {
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
     font-size: 22px;
     line-height: 22px;
     padding-bottom: 0;
@@ -20750,7 +20776,7 @@ nav._1R2o8 {
   left: 0;
   right: 0;
   background: rgba(69, 193, 78, 0.95);
-  box-shadow: 0 1px 8px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 1px 8px rgba(0, 50, 75, 0.45);
   z-index: 10;
   overflow: hidden;
 }
@@ -20836,7 +20862,7 @@ nav._1R2o8 {
   padding-top: 4px;
   position: relative;
   border-bottom: 4px solid #FFFFFF;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3rBNC:after {
@@ -20865,7 +20891,7 @@ nav._1R2o8 {
 }
 
 ._3TznZ {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2sG6-,
@@ -20958,7 +20984,7 @@ nav._1R2o8 {
 }
 
 ._1MM_D {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._1p_jQ {
@@ -21298,23 +21324,11 @@ nav._1R2o8 {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  width: 33px;
+  height: 33px;
   overflow: hidden;
   margin-right: 11px;
   position: relative;
-}
-
-@media (max-width: 846px) {
-  .dDnmGN {
-    width: 32px;
-    height: 32px;
-  }
-}
-
-.dDnmGN img {
-  border-radius: 5.5px;
-  width: 100%;
 }
 
 .dmJscg {
@@ -21359,7 +21373,7 @@ nav._1R2o8 {
 }
 
 .YkbCv ._74oom ._eeohz {
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-direction: row;
@@ -21367,9 +21381,13 @@ nav._1R2o8 {
   max-width: 100%;
   display: -ms-flexbox;
   display: flex;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-right: 11px;
   font-weight: bold;
+}
+
+.YkbCv ._74oom ._eeohz:hover {
+  color: #45c14e;
 }
 
 .YkbCv ._74oom ._eeohz:after {
@@ -21378,7 +21396,7 @@ nav._1R2o8 {
   width: 2px;
   height: 2px;
   border-radius: 50%;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 .YkbCv ._74oom ._eeohz ._iadoq,
@@ -21411,7 +21429,7 @@ nav._1R2o8 {
 
 .YkbCv ._74oom ._csp04 ._82161 {
   display: inline;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-left: 11px;
   margin-right: 11px;
 }
@@ -21436,10 +21454,10 @@ nav._1R2o8 {
 }
 
 .YkbCv ._74oom ._csp04 ._ov9ai > button {
-  border: 1px solid rgba(0, 50, 75, 0.55);
+  border: 1px solid rgba(0, 50, 75, 0.45);
   line-height: 18px;
   padding: 6px 22px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   display: block;
   font-weight: 700;
   text-transform: uppercase;
@@ -21576,7 +21594,7 @@ nav._1R2o8 {
 .dbBPlH {
   font-size: 16px;
   line-height: 14px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-left: 5px;
 }
 
@@ -21619,7 +21637,7 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .jrQrPO {
@@ -21684,6 +21702,22 @@ nav._1R2o8 {
   font-weight: 400;
   text-transform: uppercase;
   margin-left: 5px;
+  font-size: 35px;
+  line-height: 1.8;
+}
+
+@media (max-width: 847px) {
+  .lXCHc .lXCHc {
+    font-size: 33px;
+    line-height: 33px;
+  }
+}
+
+@media (max-width: 508px) {
+  .lXCHc .lXCHc {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .fTNgKg {
@@ -21696,7 +21730,7 @@ nav._1R2o8 {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-right: 22px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .hcKELX {
@@ -21756,7 +21790,7 @@ nav._1R2o8 {
 }
 
 .jbQyuy {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 14px;
   max-height: 28px;
@@ -22081,6 +22115,10 @@ nav._1R2o8 {
   margin-bottom: 22px;
 }
 
+.gEVQKf:hover .bgTWiC ._38L6D {
+  background: #45c14e;
+}
+
 .gEVQKf ._29Okg .rF2QA {
   padding: 0;
   color: rgba(0, 8, 39, 0.85);
@@ -22374,7 +22412,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 14px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   white-space: nowrap;
   margin-top: 1px;
 }
@@ -22806,7 +22844,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 14px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   white-space: nowrap;
   margin-top: 1px;
 }
@@ -22933,7 +22971,7 @@ nav._1R2o8 {
 }
 
 .cCXHYP {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-align: center;
   padding: 40px 0px 60px;
 }
@@ -22978,7 +23016,7 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .Ymjpr {
@@ -23279,7 +23317,7 @@ nav._1R2o8 {
   font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media (max-width: 1158px) and (min-width: 846px) {
@@ -23329,7 +23367,7 @@ nav._1R2o8 {
 .gscUmG {
   font-size: 16px;
   line-height: 14px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-left: 5px;
 }
 
@@ -23453,7 +23491,7 @@ nav._1R2o8 {
 }
 
 .dDweOi {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 1.4;
   max-height: 64px;
@@ -23899,7 +23937,7 @@ strong {
 
 .iBpMqP .fYnwAL .edZIuC {
   display: inline-block;
-  font-family: "DriveTribe Condensed", "DriveTribe", "Roboto", "Averta", serif;
+  font-family: "DriveTribe", "Averta", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   color: #45c14e;
@@ -27156,12 +27194,9 @@ post {
 }
 
 .glYIFw {
-  padding: 22px;
-  padding: 22px;
+  padding: 0;
   margin-bottom: 11px;
   border-radius: 0;
-  border-bottom: 1px solid rgba(125, 160, 177, 0.25);
-  box-shadow: 0 2px 2px 0 rgba(132, 131, 145, 0.14), 0 3px 1px -2px rgba(132, 131, 145, 0.12), 0 1px 5px 0 rgba(132, 131, 145, 0.2);
   margin-right: -4px;
 }
 

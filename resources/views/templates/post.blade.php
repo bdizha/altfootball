@@ -10,7 +10,10 @@
                     </a>
                     <div class="_76TYH">
                         <a class="_12F3w iAiuJ" data-bind="attr: { href: '/p/' + post.slug }, text: post.title"></a>
-                        <div data-bind="html: post.summary_x, attr: { href: '/p/' + post.slug }"></div>
+                        <div class="_d35FR">
+                            <span data-bind="html: post.summary_x"></span>
+                            <a class="_23FRT" data-bind="html: post.reading_time, attr: { href: '/p/' + post.slug }"></a>
+                        </div>
                         <div class="_1Fx1P _1iE2V _1Ov3j">
                             <div class="_1-sfe CDTi0">
                                 <div class="imgSwy">

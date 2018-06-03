@@ -123,6 +123,45 @@
             <div class="sc-fONwsr gDVFix">
                 <div class="sc-hEsumM jUVmGT">
                     <div class="sc-ktHwxA lhpVsy">
+                        <div class="_TY876">
+                            <div class="sc-cJSrbW hDKkOF">
+                                @include("includes.heading", ["top" => "Just", "title" => "Now"])
+                            </div>
+                            <ol class="_FGT65">
+                                @foreach($posts['top'] as $k => $post)
+                                    <li class="_89GHT">
+                                        <div class="_CFG34">
+                                            @include("svg.outline-filter_" . ($k + 1))
+                                        </div>
+                                        <div class="_56KHY">
+                                            <a class="_GJ585" href="/p/{{ $post->slug }}">
+                                                <h3 class="_23GTY">{{ $post->title }}</h3>
+                                            </a>
+                                            <div class="_ETY90">
+                                                <div class="_89RTY">
+                                                    <div class="_43HGJ">
+                                                        <div class="_23RTY">
+                                                            <div class="_98HTY">
+                                                                <span>Posted in</span>
+                                                                <a class="_GTYKY"
+                                                                   href="/f/{{ $post->fanbase->slug }}">{{ $post->fanbase->camel }}</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="_YURM4">
+                                                            <div class="_TYMN3">
+                                                                <time class="_FVT43">{{ $post->published_at }}</time>
+                                                                <span class="_D45RT"></span>
+                                                                <span class="_23FRT">{{ $post->reading_time }}</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                @endforeach
+                            </ol>
+                        </div>
                         <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc">
                             <a class="sc-cJSrbW hDKkOF" href="/fanbases">
                                 @include("includes.heading", ["top" => "Hot", "title" => "Fanbases"])

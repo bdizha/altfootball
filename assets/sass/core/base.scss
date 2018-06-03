@@ -289,19 +289,19 @@ button {
 }
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 :-ms-input-placeholder { /* IE 10+ */
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .bnINm {
@@ -344,7 +344,7 @@ button {
   bottom: 0;
   left: 0;
   padding: 0;
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
 }
 
 ._1iE2V:after {
@@ -559,7 +559,7 @@ button {
 
 ._3Ej8o {
   border: 0;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .owl-carousel {
@@ -597,7 +597,7 @@ button {
 ._1zDR7 {
   background: $color_white;
   border: 1px solid #f8f8f8;
-  box-shadow: 0 9px 18px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 9px 18px 0 rgba(0, 50, 75, 0.45);
   width: 300px;
   padding: 28px 28px 0;
   position: fixed;
@@ -628,7 +628,7 @@ button {
 ._34TRY {
   background: $color_white;
   border: 1px solid #f8f8f8;
-  box-shadow: 0 9px 18px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 9px 18px 0 rgba(0, 50, 75, 0.45);
   width: 300px;
   padding: 28px 28px 0;
   position: absolute;
@@ -657,7 +657,7 @@ button {
   width: 16px;
   height: 16px;
   background: $color_white;
-  box-shadow: 0 -9px 18px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 -9px 18px 0 rgba(0, 50, 75, 0.45);
   position: absolute;
   left: 0;
 }
@@ -706,7 +706,7 @@ button {
 }
 
 .d25Pz {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._35Phm {
@@ -1056,7 +1056,7 @@ svg {
 .zoflJ {
   color: $color_light_blue;
   &[disabled] {
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -1126,7 +1126,7 @@ svg {
   position: absolute;
   right: 0;
   bottom: 0;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
   font-family: $font_sans;
@@ -1136,7 +1136,7 @@ svg {
 ._1fTaL {
   ._16KIM {
     transform: translateY(-18px) scale(0.85) translateZ(0);
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
   }
   ._2LSh0 {
     opacity: 1;
@@ -1367,7 +1367,7 @@ form {
   height: 100%;
   margin-right: -7px;
   &:hover g {
-    fill: rgba(0, 50, 75, 0.55);
+    fill: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -1393,10 +1393,10 @@ form {
   }
   &:hover path {
     &:first-child {
-      fill: rgba(0, 50, 75, 0.55);
+      fill: rgba(0, 50, 75, 0.45);
     }
     &:last-child {
-      stroke: rgba(0, 50, 75, 0.55);
+      stroke: rgba(0, 50, 75, 0.45);
     }
   }
 }
@@ -1773,7 +1773,7 @@ form {
   content: attr(data-stamp);
   border-radius: 0;
   background: rgba(69, 193, 78, 0.95);;
-  box-shadow: 0 1px 8px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 1px 8px rgba(0, 50, 75, 0.45);
   &:after {
     content: attr(data-stamp);
     font-family: $font_sans;
@@ -1807,7 +1807,7 @@ form {
     right: 18px;
   }
   &:before {
-    background: rgba(0, 50, 75, 0.55);
+    background: rgba(0, 50, 75, 0.45);
     content: "";
     display: block;
     height: 1px;
@@ -1866,7 +1866,7 @@ form {
   &:after {
     color: $color_white;
     content: attr(data-stamp);
-    font-family: $font_serif;
+    font-family: $font_sans;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 18px;
@@ -2361,9 +2361,9 @@ form {
   cursor: pointer;
   &[disabled] {
     cursor: default;
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
     svg path {
-      fill: rgba(0, 50, 75, 0.55);
+      fill: rgba(0, 50, 75, 0.45);
     }
   }
   > svg {
@@ -2418,7 +2418,7 @@ form {
   padding: 22px 0;
   background-color: $color_white;
   border: 1px solid rgba(56, 82, 119, 0.15);
-  box-shadow: 0 0 25px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 0 25px 0 rgba(0, 50, 75, 0.45);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 2;
@@ -2516,7 +2516,7 @@ form {
   &:hover {
     background: $color_white;
     svg > path {
-      stroke: rgba(0, 50, 75, 0.55);
+      stroke: rgba(0, 50, 75, 0.45);
     }
   }
   svg {
@@ -2569,7 +2569,7 @@ form {
 ._2LRWs {
   border: 0;
   background: $color_white;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-right: 16px;
   text-transform: uppercase;
   font-size: 16px;
@@ -2578,7 +2578,7 @@ form {
   padding: 14px 28px;
   &:hover:enabled {
     background: $color_white;
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -2591,14 +2591,14 @@ form {
     transform: translateY(1px);
     margin-right: 9px;
     &:hover path {
-      fill: rgba(0, 50, 75, 0.55);
+      fill: rgba(0, 50, 75, 0.45);
     }
   }
 }
 
 ._168d9 {
   svg path, &:hover svg path {
-    fill: rgba(0, 50, 75, 0.55);
+    fill: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -2712,7 +2712,7 @@ form {
 }
 
 ._2ixe- span {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1cT9R, ._2ixe- span {
@@ -2789,7 +2789,7 @@ form {
 
 ._2jMe6 {
   left: 28px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -2901,7 +2901,7 @@ form {
 }
 
 ._3UVYo {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._2IBdP {
@@ -2929,7 +2929,7 @@ form {
   &:after {
     color: $color_white;
     content: attr(data-total);
-    font-family: $font_serif;
+    font-family: $font_sans;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 22px;
@@ -3050,14 +3050,14 @@ form {
 
 ._2Ne10 {
   text-transform: uppercase;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._7u1-t {
   display: flex;
   margin-bottom: 7px;
   align-items: center;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   span {
     font-size: 16px;
     line-height: 12px;
@@ -3129,7 +3129,7 @@ form {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -3146,13 +3146,13 @@ form {
 
 ._3ovQm {
   &:hover ._2l5oW path {
-    fill: rgba(0, 50, 75, 0.55);
+    fill: rgba(0, 50, 75, 0.45);
   }
   &[disabled] {
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
     cursor: default;
     ._2l5oW path {
-      fill: rgba(0, 50, 75, 0.55);
+      fill: rgba(0, 50, 75, 0.45);
     }
   }
 }
@@ -3207,7 +3207,7 @@ form {
     transform: translateX(10px);
   }
   &:hover svg path {
-    fill: rgba(0, 50, 75, 0.55);
+    fill: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -3222,7 +3222,7 @@ form {
   position: relative;
   text-transform: uppercase;
   &:hover svg path {
-    fill: rgba(0, 50, 75, 0.55);
+    fill: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -3758,7 +3758,7 @@ dribbles {
   font-weight: 700;
   font-size: 35px;
   line-height: 42px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2VJcs, ._3vb09 {
@@ -3791,7 +3791,7 @@ dribbles {
     height: 42px;
     border: 1px solid rgba(56, 82, 119, 0.15);
     background: rgba(0, 149, 208, 0.1);
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
     &:after {
       font-size: 16px;
       line-height: 16px;
@@ -4081,13 +4081,13 @@ dribbles {
 }
 
 ._3tN0i {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-family: $font_sans;
   font-weight: 400;
 }
 
 ._1TdTV {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   padding: 16px;
   background-color: $color_gray;
   border: 1px solid rgba(56, 82, 119, 0.15);
@@ -4134,7 +4134,7 @@ dribbles {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: $font_serif;
+  font-family: $font_sans;
   font-weight: 400;
   text-transform: uppercase;
   width: 96px;
@@ -4187,7 +4187,7 @@ dribbles {
 
 .TATrW {
   align-items: center;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
 }
 
@@ -4215,23 +4215,23 @@ dribbles {
 
 ._2B25b {
   padding-right: 9px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   &:after {
     margin-left: 9px;
     content: '';
     width: 2px;
     height: 2px;
     border-radius: 50%;
-    background-color: rgba(0, 50, 75, 0.55);
+    background-color: rgba(0, 50, 75, 0.45);
   }
 }
 
 ._3-2aE {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._1XNRF, ._3-2aE {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2VAHq {
@@ -4273,7 +4273,7 @@ dribbles {
 ._3Xf-w ._1XNRF {
   font-size: 16px;
   line-height: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-weight: 400;
   &:hover {
     color: $color_light_green;
@@ -4281,7 +4281,7 @@ dribbles {
 }
 
 ._3RTYJ {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-weight: 400;
 }
 
@@ -4382,7 +4382,7 @@ dribbles {
 }
 
 ._2s4xW {
-  font-family: $font_serif;
+  font-family: $font_sans;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 18px;
@@ -4553,7 +4553,7 @@ dribbles {
 ._1H8gB {
   font-size: 9px;
   line-height: 11px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-transform: uppercase;
 }
 
@@ -4565,7 +4565,7 @@ dribbles {
 ._38OvA {
   color: $color_blue;
   &._1H8gB {
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -4830,7 +4830,7 @@ dribbles {
   width: 378px;
   height: 378px;
   margin: 0 auto;
-  border: 8px solid rgba(0, 50, 75, 0.55);
+  border: 8px solid rgba(0, 50, 75, 0.45);
   padding: 26px;
   display: flex;
   justify-content: center;
@@ -4845,7 +4845,7 @@ dribbles {
   text-transform: uppercase;
   font-size: 35px;
   line-height: 42px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   position: absolute;
   top: 26px;
   left: 26px;
@@ -4873,7 +4873,7 @@ dribbles {
 @media screen and (max-width: 508px) {
   ._2B984 {
     display: flex;
-    box-shadow: 0 0 50px -4px rgba(0, 50, 75, 0.55);
+    box-shadow: 0 0 50px -4px rgba(0, 50, 75, 0.45);
     > svg {
       top: 22px;
     }
@@ -5289,7 +5289,7 @@ dribbles {
   cursor: pointer;
   user-select: none;
   &._393Hg {
-    background-color: rgba(0, 50, 75, 0.55);
+    background-color: rgba(0, 50, 75, 0.45);
   }
   > input {
     display: none;
@@ -5319,7 +5319,7 @@ dribbles {
 }
 
 ._3fNy8 {
-  background: rgba(0, 50, 75, 0.55);
+  background: rgba(0, 50, 75, 0.45);
   color: $color_white;
 }
 
@@ -5384,7 +5384,7 @@ dribbles {
         color: $color_white;
         content: attr(data-stamp);
         display: block;
-        font-family: $font_serif;
+        font-family: $font_sans;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 22px;
@@ -5495,7 +5495,7 @@ dribbles {
   top: 50%;
   color: $color_white;
   content: attr(data-stamp);
-  font-family: $font_serif;
+  font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 35px;
@@ -5525,7 +5525,7 @@ dribbles {
   &:after {
     color: $color_white;
     content: attr(data-stamp);
-    font-family: $font_serif;
+    font-family: $font_sans;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 28px;
@@ -5801,7 +5801,7 @@ dribbles {
 }
 
 ._3UGMt {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   width: 76px;
   height: 55px;
   font-family: $font_sans;
@@ -6002,7 +6002,7 @@ dribbles {
 ._30tVm {
   width: 64px;
   height: 4px;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
   margin-right: 16px;
   cursor: pointer;
   &:last-child {
@@ -6032,7 +6032,7 @@ dribbles {
   left: 0;
   width: 100%;
   height: 90px;
-  box-shadow: 0 11px 25px 11px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 11px 25px 11px rgba(0, 50, 75, 0.45);
   z-index: 2;
 }
 
@@ -6127,7 +6127,7 @@ dribbles {
 }
 
 ._2azBk {
-  color: rgba(0, 50, 75, 0.55) !important;
+  color: rgba(0, 50, 75, 0.45) !important;
 }
 
 @media screen and (max-width: 846px) {
@@ -6167,7 +6167,7 @@ dribbles {
 }
 
 ._2hv_i {
-  border-color: rgba(0, 50, 75, 0.55);
+  border-color: rgba(0, 50, 75, 0.45);
 }
 
 .p5bDW {
@@ -6619,7 +6619,7 @@ form {
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-align: center;
   margin-top: 16px;
   margin-bottom: 12px;
@@ -6680,7 +6680,7 @@ form {
     ._CFG34 {
       color: $color_green;
       fill: $color_green;
-      font-family: $font_serif;
+      font-family: $font_sans;
       font-weight: 400;
       text-transform: uppercase;
       font-size: 40px;
@@ -6759,7 +6759,10 @@ form {
                 font-size: 16px;
                 ._GTYKY {
                   font-weight: bold;
-                  color: rgba(0, 50, 75, 0.55);
+                  color: rgba(0, 50, 75, 0.45);
+                  &:hover {
+                    color: $color_green;
+                  }
                 }
               }
             }
@@ -6854,7 +6857,7 @@ form {
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-align: center;
   display: block;
 }
@@ -6863,7 +6866,7 @@ form {
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-align: center;
   display: block;
   font-size: 55px;
@@ -7079,7 +7082,7 @@ form {
 ._2tXok {
   color: $color_light_blue;
   &[disabled] {
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -7088,7 +7091,7 @@ form {
 }
 
 .ADq5f {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3Cj2a {
@@ -7217,7 +7220,7 @@ form {
     line-height: 16px;
     text-transform: uppercase;
     padding-top: 3px;
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -7250,14 +7253,14 @@ form {
 
 .VICgz ._1jO5_ {
   transform: translateY(-4px) scale(0.85) translateZ(0);
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .bInDy {
   position: absolute;
   right: 0;
   bottom: 9px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   opacity: 0;
   transition: color .2s ease-out, opacity .25s ease-out;
   font-family: $font_sans;
@@ -7318,7 +7321,7 @@ form {
   font-size: 16px;
   line-height: 16px;
   text-transform: none;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-top: 16px;
 }
 
@@ -7333,7 +7336,7 @@ form {
 }
 
 ._3iCHD {
-  border-bottom-color: rgba(0, 50, 75, 0.55);
+  border-bottom-color: rgba(0, 50, 75, 0.45);
 }
 
 ._1E9Zo input {
@@ -7361,7 +7364,7 @@ form {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 12px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-bottom: 9px;
   cursor: pointer;
 }
@@ -7562,7 +7565,7 @@ form {
   text-transform: uppercase;
   font-size: 55px;
   line-height: 44px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -7600,14 +7603,14 @@ form {
   display: block;
   background: $color_white;
   border: 1px solid rgba(56, 82, 119, 0.15);
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   svg {
     float: none;
     transform: scale(1.2) translateY(0);
     margin-left: 44px;
   }
   path {
-    fill: rgba(0, 50, 75, 0.55);
+    fill: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -7837,7 +7840,7 @@ form {
   font-size: 16px;
   line-height: 18px;
   margin-left: 35px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -7874,7 +7877,7 @@ form {
 
 ._3TxDq {
   transform: rotate(180deg) scale(0.7) translateY(-1px);
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
   margin-right: 4px;
 }
 
@@ -7921,7 +7924,7 @@ form {
 }
 
 .BB62- {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 18px;
   padding-top: 2px;
@@ -8069,7 +8072,7 @@ form {
 .ZQJT_ {
   font-size: 16px;
   line-height: 18px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   padding-top: 2px;
 }
 
@@ -8115,7 +8118,7 @@ form {
 
 ._3Njiy {
   display: flex;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   align-items: center;
   font-size: 16px;
   line-height: 12px;
@@ -8141,7 +8144,7 @@ form {
     width: 2px;
     height: 2px;
     border-radius: 0;
-    background-color: rgba(0, 50, 75, 0.55);
+    background-color: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -8282,7 +8285,7 @@ form {
     ._CFG34 {
       color: $color_green;
       fill: $color_green;
-      font-family: $font_serif;
+      font-family: $font_sans;
       font-weight: 400;
       text-transform: uppercase;
       font-size: 40px;
@@ -8316,7 +8319,7 @@ form {
         line-height: 14px;
         font-size: 14px;
         ._FVT43 {
-          color: rgba(0, 50, 75, 0.55);
+          color: rgba(0, 50, 75, 0.45);
         }
         ._23GTY {
           font-weight: 700;
@@ -8357,7 +8360,10 @@ form {
                 font-size: 16px;
                 ._GTYKY {
                   font-weight: bold;
-                  color: rgba(0, 50, 75, 0.55);
+                  color: rgba(0, 50, 75, 0.45);
+                  &:hover {
+                    color: $color_green;
+                  }
                 }
               }
             }
@@ -8506,7 +8512,7 @@ form {
     width: 2px;
     height: 2px;
     border-radius: 0;
-    background-color: rgba(0, 50, 75, 0.55);
+    background-color: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -8555,7 +8561,7 @@ form {
     width: 2px;
     height: 2px;
     border-radius: 0;
-    background-color: rgba(0, 50, 75, 0.55);
+    background-color: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -8564,7 +8570,7 @@ form {
   font-weight: 700;
   font-size: 16px;
   line-height: 12px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin: 12px 0 9px;
   &:after {
     clear: both;
@@ -8828,7 +8834,7 @@ form {
     &:after {
       color: $color_white;
       content: attr(data-count);
-      font-family: $font_serif;
+      font-family: $font_sans;
       font-weight: 400;
       text-transform: uppercase;
       font-size: 22px;
@@ -8860,7 +8866,7 @@ form {
     &:after {
       color: $color_white;
       content: attr(data-count);
-      font-family: $font_serif;
+      font-family: $font_sans;
       font-weight: 400;
       text-transform: uppercase;
       font-size: 35px;
@@ -8952,7 +8958,7 @@ div._3bqe5 {
 
 ._3HP-Q {
   margin-left: 4px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-weight: normal;
 }
 
@@ -9077,7 +9083,7 @@ div._3bqe5 {
     left: 0;
     right: 0;
     height: 96px;
-    box-shadow: 0 4px 16px rgba(0, 50, 75, 0.55);
+    box-shadow: 0 4px 16px rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -9267,7 +9273,7 @@ div._3bqe5 {
 ._2mthE {
   font-size: 16px;
   line-height: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 846px) {
@@ -9415,7 +9421,7 @@ div._3bqe5 {
   left: -1px;
   width: 92px;
   height: 4px;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
   position: absolute;
 }
 
@@ -9519,6 +9525,15 @@ div._3bqe5 {
     border-bottom: 1px solid rgba(125, 160, 177, 0.35);
     padding-bottom: 22px;
     margin-bottom: 22px;
+  }
+  ._23FRT {
+    font-size: 18px;
+    color: rgba(0, 50, 75, 0.45);
+    white-space: nowrap;
+    padding: 0;
+    &:hover {
+      color: $color_green;
+    }
   }
 }
 
@@ -10305,7 +10320,7 @@ div._3bqe5 {
   margin-left: auto;
   margin-right: auto;
   padding: 9px 0;
-  box-shadow: 0 11px 25px -10px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 11px 25px -10px rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 1280px) {
@@ -10470,7 +10485,7 @@ div._3bqe5 {
   }
   ._23YI {
     ._1h78h {
-      background: rgba(0, 50, 75, 0.55);
+      background: rgba(0, 50, 75, 0.45);
       &:hover {
         background: rgba(56, 82, 119, 0.85)
       }
@@ -10924,7 +10939,7 @@ div._3bqe5 {
 }
 
 ._3cGe8 {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 18px;
   padding: 22px 0;
@@ -11335,7 +11350,7 @@ div._3bqe5 {
   background: $color_white;
   margin-bottom: 22px;
   padding: 16px;
-  box-shadow: 0 1px 4px 0 rgba(0, 50, 75, 0.55);
+  box-shadow: 0 1px 4px 0 rgba(0, 50, 75, 0.45);
   &:after {
     clear: both;
     content: "";
@@ -11471,9 +11486,6 @@ div._3bqe5 {
     .YkbCv {
       ._74oom {
         ._eeohz {
-          &:after {
-            //background-color: $color_white;
-          }
           svg {
             path {
               &:nth-child(2) {
@@ -11484,7 +11496,7 @@ div._3bqe5 {
         }
         ._csp04 {
           ._2jvdf {
-            color: rgba(0, 50, 75, 0.55);
+            color: rgba(0, 50, 75, 0.45);
           }
           ._ov9ai {
             display: none;
@@ -11922,7 +11934,7 @@ div._3bqe5 {
   line-height: 22px;
   text-transform: uppercase;
   margin-top: 16px;
-  filter: drop-shadow(0 2px 5px rgba(0, 50, 75, 0.55));
+  filter: drop-shadow(0 2px 5px rgba(0, 50, 75, 0.45));
 }
 
 @media screen and (max-width: 508px) {
@@ -12007,7 +12019,7 @@ div._3bqe5 {
     display: block;
   }
   &:hover {
-    background-color: rgba(0, 50, 75, 0.55);
+    background-color: rgba(0, 50, 75, 0.45);
     svg path {
       fill: $color_white;
     }
@@ -12145,7 +12157,7 @@ div._3bqe5 {
 }
 
 ._1fuqz {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -12186,7 +12198,7 @@ div._3bqe5 {
   margin-left: 3px;
   margin-top: 3px;
   font-weight: 400;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -12287,7 +12299,7 @@ div._3bqe5 {
 }
 
 ._12g8o {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .DdJUj {
@@ -12425,7 +12437,7 @@ div._3bqe5 {
   margin-bottom: 22px;
   padding-top: 35px;
   padding-bottom: 22px;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (min-width: 922px) {
@@ -12583,7 +12595,7 @@ div._3bqe5 {
   &:after {
     color: $color_white;
     content: attr(data-stamp);
-    font-family: $font_serif;
+    font-family: $font_sans;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 28px;
@@ -12609,7 +12621,7 @@ div._3bqe5 {
 }
 
 ._2mbtl {
-  font-family: $font_serif;
+  font-family: $font_sans;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 16px;
@@ -12897,7 +12909,7 @@ div._3bqe5 {
       ._CFG34 {
         color: $color_green;
         fill: $color_green;
-        font-family: $font_serif;
+        font-family: $font_sans;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 40px;
@@ -12948,6 +12960,9 @@ div._3bqe5 {
                   ._GTYKY {
                     font-weight: bold;
                     color: rgba(255, 255, 255, 0.5);
+                    &:hover {
+                      color: $color_green;
+                    }
                   }
                 }
               }
@@ -13162,7 +13177,7 @@ div._3bqe5 {
     &:after {
       color: $color_white;
       content: attr(data-stamp);
-      font-family: $font_serif;
+      font-family: $font_sans;
       font-weight: 400;
       text-transform: uppercase;
       font-size: 28px;
@@ -13180,7 +13195,7 @@ div._3bqe5 {
     filter: saturate(80%) brightness(180%) contrast(105%);
   }
   .Dpcfa {
-    font-family: $font_serif;
+    font-family: $font_sans;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 16px;
@@ -13271,7 +13286,7 @@ div._3bqe5 {
     &:after {
       color: $color_white;
       content: attr(data-stamp);
-      font-family: $font_serif;
+      font-family: $font_sans;
       font-weight: 700;
       text-transform: uppercase;
       font-size: 35px;
@@ -13441,6 +13456,8 @@ div._3bqe5 {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  background: rgba(0, 50, 75, 0.45);
+  padding: 2.75px;
   ._HGT78,
   ._HGT79 {
     display: none;
@@ -13457,6 +13474,7 @@ div._3bqe5 {
   }
   img {
     width: 100%;
+    border-radius: 50%;
   }
 }
 
@@ -13576,7 +13594,7 @@ div._3bqe5 {
 }
 
 .wEwHk {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._11gfn {
@@ -13624,7 +13642,7 @@ div._3bqe5 {
 ._2aiW- {
   margin-left: 3px;
   font-weight: 400;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._3hdBv {
@@ -13643,7 +13661,7 @@ div._3bqe5 {
   font-size: 18px;
   line-height: 22px;
   background: $color_white;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   padding: 0;
   text-transform: uppercase;
   border-radius: 0;
@@ -13653,7 +13671,7 @@ div._3bqe5 {
     margin-left: 16px;
   }
   path {
-    fill: rgba(0, 50, 75, 0.55);
+    fill: rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -14078,7 +14096,7 @@ div._3bqe5 {
 ._1g8z0 {
   font-size: 14px;
   line-height: 16px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   a {
     font-size: 14px;
     color: rgba(255, 255, 255, 0.5);
@@ -14250,7 +14268,7 @@ div._3bqe5 {
 
 ._105Oj {
   display: block;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-top: 4px;
 }
 
@@ -14274,7 +14292,7 @@ div._3bqe5 {
   height: 72px;
   z-index: -1;
   background-color: $color_white;
-  box-shadow: 0 11px 25px -10px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 11px 25px -10px rgba(0, 50, 75, 0.45);
   opacity: 0;
   transform: translateY(-30px) translateZ(0);
   transition: all 0.3s ease-out;
@@ -14333,7 +14351,7 @@ div._3bqe5 {
   }
   &._36gJx {
     background: $color_white;
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
     ._3VkOf {
       position: absolute;
       top: 248px;
@@ -15536,7 +15554,7 @@ div._3bqe5 {
   margin-left: auto;
   margin-right: auto;
   ._2LIIc {
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
   }
   ._1gJri:nth-child(odd) {
     background: $color_white;
@@ -15574,7 +15592,7 @@ div._3bqe5 {
       }
     }
     ._2LIIc, &:nth-child(odd) ._2LIIc {
-      background: linear-gradient(to right, rgba(0, 8, 39, 0.995), rgba(0, 50, 75, 0.55), rgba(69, 193, 78, 0.95));
+      background: linear-gradient(to right, rgba(0, 8, 39, 0.995), rgba(0, 50, 75, 0.45), rgba(69, 193, 78, 0.95));
       border-color: $color_white;
       color: $color_white;
     }
@@ -15941,7 +15959,7 @@ div._3bqe5 {
 
 ._3VsO_ {
   margin-left: 3px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2Jxh7 {
@@ -16354,7 +16372,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 44px;
   line-height: 44px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -16400,7 +16418,7 @@ div._3bqe5 {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 508px) {
@@ -16459,7 +16477,7 @@ div._3bqe5 {
 
 ._2jBYb {
   background: $color_white;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-top: 16px;
 }
 
@@ -16473,7 +16491,7 @@ div._3bqe5 {
 }
 
 ._1uw3W {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 55px;
   line-height: 55px;
   margin-bottom: 22px;
@@ -16592,8 +16610,8 @@ div._3bqe5 {
 }
 
 ._3HWOZ {
-  color: rgba(0, 50, 75, 0.55);
-  border-color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
+  border-color: rgba(0, 50, 75, 0.45);
 }
 
 ._3r333 {
@@ -16720,7 +16738,7 @@ div._3bqe5 {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
-  border-bottom: 1px solid rgba(0, 50, 75, 0.55);
+  border-bottom: 1px solid rgba(0, 50, 75, 0.45);
   background: #141C3E;
   color: $color_white;
   cursor: pointer;
@@ -17007,7 +17025,7 @@ div._3bqe5 {
 }
 
 .kdNDN:hover svg path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._1Gobq > svg {
@@ -17173,7 +17191,7 @@ div._3bqe5 {
 ._3QTtA {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 .EYkMg {
@@ -17302,7 +17320,7 @@ div._3bqe5 {
 }
 
 ._3ev6- {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
   svg {
     height: 16px;
     width: 18px;
@@ -17461,7 +17479,7 @@ div._3bqe5 {
 ._14tWP {
   font-size: 55px;
   line-height: 55px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin: 64px 0;
 }
 
@@ -17535,7 +17553,7 @@ div._3bqe5 {
 }
 
 ._2z54n {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   display: flex;
 }
 
@@ -17642,7 +17660,7 @@ div._3bqe5 {
   &:after {
     color: $color_white;
     content: attr(data-stamp);
-    font-family: $font_serif;
+    font-family: $font_sans;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 35px;
@@ -17673,7 +17691,7 @@ div._3bqe5 {
     &:after {
       color: $color_white;
       content: attr(data-stamp);
-      font-family: $font_serif;
+      font-family: $font_sans;
       font-weight: 400;
       text-transform: uppercase;
       font-size: 55px;
@@ -17766,7 +17784,7 @@ div._3bqe5 {
 }
 
 ._1dz7N {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 @media screen and (max-width: 846px) {
@@ -17841,7 +17859,7 @@ div._3bqe5 {
 }
 
 ._2-lPc {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
@@ -17861,7 +17879,7 @@ div._3bqe5 {
   svg {
     margin-right: 16px;
     path {
-      stroke: rgba(0, 50, 75, 0.55);
+      stroke: rgba(0, 50, 75, 0.45);
     }
   }
   ._1dJLC {
@@ -17887,12 +17905,12 @@ div._3bqe5 {
   font-family: $font_sans;
   font-weight: 700;
   text-transform: uppercase;
-  border: 4px solid rgba(0, 50, 75, 0.55);
+  border: 4px solid rgba(0, 50, 75, 0.45);
   margin: 0 22px;
   padding: 22px 0;
   text-align: center;
   cursor: pointer;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   width: 100%;
 }
 
@@ -18016,7 +18034,7 @@ div._3bqe5 {
 ._2UPZy:after {
   color: $color_white;
   content: attr(data-stamp);
-  font-family: $font_serif;
+  font-family: $font_sans;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 35px;
@@ -18376,7 +18394,7 @@ nav._1R2o8 {
   padding-left: 18px;
   padding-right: 18px;
   padding-top: 18px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   white-space: nowrap
 }
 
@@ -18415,7 +18433,7 @@ nav._1R2o8 {
 
 ._2CSDm {
   font-weight: 700;
-  color: rgba(0, 50, 75, 0.55)
+  color: rgba(0, 50, 75, 0.45)
 }
 
 ._37mnt {
@@ -18472,7 +18490,7 @@ nav._1R2o8 {
 }
 
 ._21SpA {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   margin-bottom: 9px
 }
@@ -18552,7 +18570,7 @@ nav._1R2o8 {
   &:after {
     color: $color_white;
     content: attr(data-stamp);
-    font-family: $font_serif;
+    font-family: $font_sans;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 35px;
@@ -18636,7 +18654,7 @@ nav._1R2o8 {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: inset 0 -140px 80px -40px rgba(0, 50, 75, 0.55);
+    box-shadow: inset 0 -140px 80px -40px rgba(0, 50, 75, 0.45);
   }
 }
 
@@ -18929,7 +18947,7 @@ nav._1R2o8 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 50, 75, 0.55);
+    background-color: rgba(0, 50, 75, 0.45);
     height: 35px;
     z-index: 2;
   }
@@ -19101,7 +19119,7 @@ nav._1R2o8 {
 }
 
 ._4wu2M:hover svg path {
-  fill: rgba(0, 50, 75, 0.55);
+  fill: rgba(0, 50, 75, 0.45);
 }
 
 ._2Ngcr svg {
@@ -19199,7 +19217,7 @@ nav._1R2o8 {
 
 @media screen and (max-width: 664px) {
   ._1xaT_ {
-    color: rgba(0, 50, 75, 0.55);
+    color: rgba(0, 50, 75, 0.45);
     font-size: 22px;
     line-height: 22px;
     padding-bottom: 0;
@@ -19322,7 +19340,7 @@ nav._1R2o8 {
   left: 0;
   right: 0;
   background: rgba(69, 193, 78, 0.95);;
-  box-shadow: 0 1px 8px rgba(0, 50, 75, 0.55);
+  box-shadow: 0 1px 8px rgba(0, 50, 75, 0.45);
   z-index: 10;
   overflow: hidden;
   button, img {
@@ -19397,7 +19415,7 @@ nav._1R2o8 {
   padding-top: 4px;
   position: relative;
   border-bottom: 4px solid $color_white;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   &:after {
     display: none;
   }
@@ -19423,7 +19441,7 @@ nav._1R2o8 {
 }
 
 ._3TznZ {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 ._2sG6-, ._3TznZ {
@@ -19506,7 +19524,7 @@ nav._1R2o8 {
 }
 
 ._1MM_D {
-  background-color: rgba(0, 50, 75, 0.55);
+  background-color: rgba(0, 50, 75, 0.45);
 }
 
 ._1p_jQ {
@@ -19865,19 +19883,11 @@ nav._1R2o8 {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   border-radius: 50%;
-  width: 44px;
-  height: 44px;
+  width: 33px;
+  height: 33px;
   overflow: hidden;
   margin-right: 11px;
   position: relative;
-  @media (max-width: 846px) {
-    width: 32px;
-    height: 32px;
-  }
-  img {
-    border-radius: 5.5px;
-    width: 100%;
-  }
 }
 
 .dmJscg {
@@ -19931,7 +19941,7 @@ nav._1R2o8 {
     font-size: 16px;
     font-weight: 400;
     ._eeohz {
-      font-family: $font_serif;
+      font-family: $font_sans;
       -webkit-box-align: center;
       -webkit-align-items: center;
       -ms-flex-align: center;
@@ -19943,7 +19953,10 @@ nav._1R2o8 {
       flex-direction: row;
       max-width: 100%;
       display: flex;
-      color: rgba(0, 50, 75, 0.55);;
+      color: rgba(0, 50, 75, 0.45);
+      &:hover {
+        color: $color_green;
+      }
       margin-right: 11px;
       font-weight: bold;
       &:after {
@@ -19952,7 +19965,7 @@ nav._1R2o8 {
         width: 2px;
         height: 2px;
         border-radius: 50%;
-        background-color: rgba(0, 50, 75, 0.55);
+        background-color: rgba(0, 50, 75, 0.45);
       }
       ._iadoq, ._iadoq:visited {
         color: #262626;
@@ -19983,7 +19996,7 @@ nav._1R2o8 {
       align-items: baseline;
       ._82161 {
         display: inline;
-        color: rgba(0, 50, 75, 0.55);
+        color: rgba(0, 50, 75, 0.45);
         margin-left: 11px;
         margin-right: 11px;
         @media (max-width: 846px) {
@@ -20146,7 +20159,7 @@ nav._1R2o8 {
 .dbBPlH {
   font-size: 16px;
   line-height: 14px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-left: 5px;
 }
 
@@ -20192,7 +20205,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .jrQrPO {
@@ -20268,6 +20281,20 @@ nav._1R2o8 {
   font-weight: 400;
   text-transform: uppercase;
   margin-left: 5px;
+  font-size: 35px;
+  line-height: 1.8;
+  @media (max-width: 847px) {
+    .lXCHc {
+      font-size: 33px;
+      line-height: 33px;
+    }
+  }
+  @media (max-width: 508px) {
+    .lXCHc {
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
 }
 
 .fTNgKg {
@@ -20345,7 +20372,7 @@ nav._1R2o8 {
 }
 
 .jbQyuy {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 14px;
   max-height: 28px;
@@ -20699,6 +20726,13 @@ nav._1R2o8 {
     margin-top: 0;
     margin-bottom: 22px;
   }
+  &:hover {
+    .bgTWiC {
+      ._38L6D {
+        background: $color_green;
+      }
+    }
+  }
   ._29Okg {
     .rF2QA {
       padding: 0;
@@ -20976,7 +21010,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 14px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   white-space: nowrap;
   margin-top: 1px;
 }
@@ -21475,7 +21509,7 @@ nav._1R2o8 {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
   line-height: 14px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   white-space: nowrap;
   margin-top: 1px;
 }
@@ -21606,7 +21640,7 @@ nav._1R2o8 {
 }
 
 .cCXHYP {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   text-align: center;
   padding: 40px 0px 60px;
 }
@@ -21653,7 +21687,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 .Ymjpr {
@@ -21991,7 +22025,7 @@ nav._1R2o8 {
   font-family: $font_sans;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
 }
 
 @media (max-width: 1158px) and (min-width: 846px) {
@@ -22047,7 +22081,7 @@ nav._1R2o8 {
 .gscUmG {
   font-size: 16px;
   line-height: 14px;
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   margin-left: 5px;
 }
 
@@ -22182,7 +22216,7 @@ nav._1R2o8 {
 }
 
 .dDweOi {
-  color: rgba(0, 50, 75, 0.55);
+  color: rgba(0, 50, 75, 0.45);
   font-size: 16px;
   line-height: 1.4;
   max-height: 64px;
@@ -22665,7 +22699,7 @@ strong {
     }
     .edZIuC {
       display: inline-block;
-      font-family: $font_serif;
+      font-family: $font_sans;
       font-weight: 400;
       text-transform: uppercase;
       color: $color_green;

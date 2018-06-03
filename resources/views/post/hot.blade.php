@@ -17,7 +17,6 @@
                         <div class="_43HGJ">
                             <div class="_23RTY">
                                 <div class="_98HTY">
-                                    <span>By</span>
                                     <a class="_GTYKY"
                                        href="/f/{{ $p->fanbase->slug }}">{{ $p->fanbase->camel }}</a>
                                 </div>
