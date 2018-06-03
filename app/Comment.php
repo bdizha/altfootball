@@ -28,6 +28,11 @@ class Comment extends Model
         return $this->hasOne('App\User', 'id', 'user_id');
     }
 
+    public function post()
+    {
+        return $this->hasOne('App\Post', 'id', 'type_id');
+    }
+
     public function getHasDribbleAttribute()
     {
         if (Auth::check()) {

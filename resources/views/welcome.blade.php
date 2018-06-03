@@ -123,44 +123,51 @@
             <div class="sc-fONwsr gDVFix">
                 <div class="sc-hEsumM jUVmGT">
                     <div class="sc-ktHwxA lhpVsy">
-                        <div class="_TY876">
+                        <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc">
                             <div class="sc-cJSrbW hDKkOF">
                                 @include("includes.heading", ["top" => "Just", "title" => "Now"])
                             </div>
-                            <ol class="_FGT65">
-                                @foreach($posts['top'] as $k => $post)
-                                    <li class="_89GHT">
-                                        <div class="_CFG34">
-                                            @include("svg.outline-filter_" . ($k + 1))
-                                        </div>
-                                        <div class="_56KHY">
-                                            <a class="_GJ585" href="/p/{{ $post->slug }}">
-                                                <h3 class="_23GTY">{{ $post->title }}</h3>
-                                            </a>
-                                            <div class="_ETY90">
-                                                <div class="_89RTY">
-                                                    <div class="_43HGJ">
-                                                        <div class="_23RTY">
-                                                            <div class="_98HTY">
-                                                                <span>Posted in</span>
-                                                                <a class="_GTYKY"
-                                                                   href="/f/{{ $post->fanbase->slug }}">{{ $post->fanbase->camel }}</a>
+                            <div class="_FGNH3">
+                                <ul>
+                                    @foreach($comments as $comment)
+                                        <li i="0" style="opacity: 1; transform: none;">
+                                            <div class="sc-kAKrxA dqaIdP">
+                                                <div class="sc-lhLRcH cAMnJh">
+                                                    <a class="" href="/u/c4OCmWVmRkCUWz2dse6OhQ">
+                                                        <div class="sc-ccvjgv flTOzQ">
+                                                            <div style="padding-bottom:100%" class="_38L6D">
+                                                                <img
+                                                                        class="_214e9"
+                                                                        role="presentation" alt="" style="opacity: 1;"
+                                                                        src="{{ $comment->user->small_x }}">
                                                             </div>
                                                         </div>
-                                                        <div class="_YURM4">
-                                                            <div class="_TYMN3">
-                                                                <time class="_FVT43">{{ $post->published_at }}</time>
-                                                                <span class="_D45RT"></span>
-                                                                <span class="_23FRT">{{ $post->reading_time }}</span>
+                                                    </a>
+                                                    <div class="sc-fNHLbd eKpnnK"></div>
+                                                </div>
+                                                <div class="sc-jMtzgO esAsak">
+                                                    <div class="sc-hSmEHG cJvKyy">
+                                                        <span class="sc-ePDpFu dSujEU">{{ $comment->user->name }} commented</span>
+                                                        <span
+                                                                class="sc-ijhsb dTugOm">“{{ str_limit($comment->content, 66) }}”</span><span
+                                                                class="sc-gohEOc jCxHhU">{{ $comment->published_at }}</span></div>
+                                                    <a class="sc-gKLXLV kAqCvC"
+                                                       href="/p/{{ $comment->post->slug }}#comments">
+                                                        <div class="sc-bvCTgw hURwfF">
+                                                            <div style="padding-bottom:66.66666666666666%"
+                                                                 class="_38L6D">
+                                                                <img class="_214e9" role="presentation"
+                                                                     alt="" style="opacity: 1;"
+                                                                     src="{{ $comment->post->thumb_x }}">
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                        <h4 class="sc-fjdPjP fBHwJY">{{ $comment->post->title }}</h4></a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                @endforeach
-                            </ol>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
                         </div>
                         <div class="sc-feJyhm XncZB sc-gGBfsJ dWPmPc">
                             <a class="sc-cJSrbW hDKkOF" href="/fanbases">

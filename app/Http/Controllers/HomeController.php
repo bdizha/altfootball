@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Comment;
 use App\Fanbase;
 use App\Post;
 use App\Tag;
@@ -48,9 +49,17 @@ class HomeController extends Controller
             ->limit(6)
             ->get();
 
+        $comments = Comment::with('user')
+            ->with('post')
+            ->where("content", "!=", "")
+            ->orderBy('created_at', 'desc')
+            ->take(5)
+            ->get();
+
         return view('welcome', [
             'bases' => $bases,
             'posts' => $posts,
+            'comments' => $comments,
             'tags' => $tags,
             'fans' => $fans,
             'user' => $this->getUserArray(),
