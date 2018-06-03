@@ -79,6 +79,8 @@ class Comment extends Model
 
         $updatedAt = str_replace("hours", "h", $updatedAt);
         $updatedAt = str_replace("hour", "h", $updatedAt);
+        $updatedAt = str_replace("seconds", "s", $updatedAt);
+        $updatedAt = str_replace("second", "s", $updatedAt);
         $updatedAt = str_replace("minutes", "m", $updatedAt);
         $updatedAt = str_replace("minute", "m", $updatedAt);
         $updatedAt = str_replace("weeks", "w", $updatedAt);
