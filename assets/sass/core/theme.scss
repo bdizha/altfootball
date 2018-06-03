@@ -3242,10 +3242,10 @@
 }
 
 .glYIFw {
-  padding: 0;
-  margin-bottom: 11px;
+  padding: 0 0 22px;
+  margin-bottom: 22px;
   border-radius: 0;
-  margin-right: -4px;
+  border-bottom: 1px solid rgba(125, 160, 177, 0.25);
   .bCHmiu {
     margin-bottom: 0;
   }
@@ -3655,7 +3655,7 @@
   background: transparent;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 22px 22px;
   img {
     border-radius: 50%;
   }

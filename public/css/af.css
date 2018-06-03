@@ -5367,6 +5367,14 @@ dribbles ._35GH ._34IO {
   opacity: 1;
 }
 
+._38Ked ._38L6D {
+  border-radius: 5.5px;
+}
+
+._38Ked ._38L6D img {
+  border-radius: 5.5px;
+}
+
 @media screen and (max-width: 846px) {
   ._38Ked {
     width: 160px;
@@ -7327,19 +7335,22 @@ form .M13JP:focus {
 }
 
 ._26DkX {
-  border-top: 1px solid rgba(56, 82, 119, 0.15);
-  border-bottom: 1px solid rgba(56, 82, 119, 0.15);
-  padding-bottom: 28px;
+  padding-bottom: 0;
   background: transparent;
 }
 
 ._26DkX ._1e4LX {
-  margin-bottom: 9px;
-  padding-bottom: 18px;
+  margin-bottom: 11px;
+  padding-bottom: 22px;
 }
 
-._26DkX ._3MbTo {
-  color: #FFFFFF;
+._26DkX .jomFZs {
+  display: inline-block;
+  margin: 44px auto 0;
+}
+
+._3LeFV ._2zNwx {
+  padding-top: 0;
 }
 
 @media screen and (max-width: 846px) {
@@ -8977,7 +8988,6 @@ form .M13JP:focus {
 }
 
 ._1RyqV .gEjmr ._56KHY ._ETY90 ._89RTY ._43HGJ ._23RTY ._98HTY ._GTYKY {
-  font-weight: bold;
   color: rgba(0, 50, 75, 0.45);
 }
 
@@ -21671,16 +21681,6 @@ nav._1R2o8 {
   overflow-x: hidden;
 }
 
-.hDKkOF:after {
-  content: '';
-  display: block;
-  position: absolute;
-  background: rgba(255, 21, 65, 0.85);
-  width: 40px;
-  height: 4px;
-  bottom: 0;
-}
-
 @media (max-width: 508px) {
   .hDKkOF {
     font-size: 22px;
@@ -27194,10 +27194,10 @@ post {
 }
 
 .glYIFw {
-  padding: 0;
-  margin-bottom: 11px;
+  padding: 0 0 22px;
+  margin-bottom: 22px;
   border-radius: 0;
-  margin-right: -4px;
+  border-bottom: 1px solid rgba(125, 160, 177, 0.25);
 }
 
 .glYIFw .bCHmiu {
@@ -27568,7 +27568,7 @@ post {
   background: transparent;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0 22px 22px;
 }
 
 .fZBlIg img {

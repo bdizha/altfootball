@@ -4974,6 +4974,12 @@ dribbles {
       opacity: 1;
     }
   }
+  ._38L6D {
+    border-radius: 5.5px;
+    img{
+      border-radius: 5.5px;
+    }
+  }
 }
 
 @media screen and (max-width: 846px) {
@@ -6814,16 +6820,21 @@ form {
 }
 
 ._26DkX {
-  border-top: 1px solid rgba(56, 82, 119, 0.15);
-  border-bottom: 1px solid rgba(56, 82, 119, 0.15);
-  padding-bottom: 28px;
+  padding-bottom: 0;
   background: transparent;
   ._1e4LX {
-    margin-bottom: 9px;
-    padding-bottom: 18px;
+    margin-bottom: 11px;
+    padding-bottom: 22px;
   }
-  ._3MbTo {
-    color: $color_white;
+  .jomFZs {
+    display: inline-block;
+    margin: 44px auto 0;
+  }
+}
+
+._3LeFV {
+  ._2zNwx {
+    padding-top: 0;
   }
 }
 
@@ -8359,7 +8370,6 @@ form {
               ._98HTY {
                 font-size: 16px;
                 ._GTYKY {
-                  font-weight: bold;
                   color: rgba(0, 50, 75, 0.45);
                   &:hover {
                     color: $color_green;
@@ -20248,16 +20258,6 @@ nav._1R2o8 {
   -ms-flex-align: center;
   align-items: center;
   overflow-x: hidden;
-}
-
-.hDKkOF:after {
-  content: '';
-  display: block;
-  position: absolute;
-  background: $color_red;
-  width: 40px;
-  height: 4px;
-  bottom: 0;
 }
 
 @media (max-width: 508px) {

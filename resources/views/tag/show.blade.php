@@ -18,9 +18,11 @@
             </div>
         @endif
         <div class="_26DkX">
-            <h3 class="_3MbTo">Top Fanbases</h3>
             <div class="_1SVpA _2QjgM">
-                <div class="">
+                <div class="sc-cJSrbW hDKkOF">
+                    @include("includes.heading", ["top" => "Top", "title" => "Fanbases"])
+                </div>
+                <div class="_UI74S">
                     <div class="_1ht8_">
                         <div class="_3FaZ4">
                             <div class="owl-carousel owl-theme">
@@ -36,9 +38,11 @@
                         <div class="_28Zwg LYLB_" style="transform: scaleX(0) translateZ(0px);"></div>
                     </div>
                 </div>
+                <div class="sc-cJSrbW hDKkOF">
+                    @include("includes.heading", ["top" => "Top", "title" => "Posts"])
+                </div>
             </div>
         </div>
-        <h3 class="_1BusK _3MbTo">Top Posts</h3>
         <div id="feed" class="_2zNwx">
             <div class="sc-itybZL QJDdz">
                 <div class="sc-dTdPqK hQzEkt">
