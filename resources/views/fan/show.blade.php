@@ -134,19 +134,9 @@
                         </div>
                     </nav>
                     <div class="sc-dPPMrM bJPofi">
-                        <div class="sc-rBLzX SsCsq">
-                            <nav class="_sc-imABML hnPypn">
-                                <button class="zxDoM undefined">
-                                    Stories
-                                </button>
-                                <button class="_3UwsA zxDoM">
-                                    Chat
-                                </button>
-                            </nav>
-                            <div class="sc-itybZL QJDdz">
-                                <div class="sc-dTdPqK hQzEkt">
-                                    <posts params="page: 0, fanbase: {{ $user->fanbase_id }}, show_callback: openItem"></posts>
-                                </div>
+                        <div class="sc-cJSrbW hDKkOF">
+                            <div class="sc-ksYbfQ dbOCGf" data-reactid="106">
+                                <span class="sc-hmzhuo gqKiYI" data-reactid="107">Stories</span>
                             </div>
                         </div>
                     </div>

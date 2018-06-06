@@ -4976,7 +4976,7 @@ dribbles {
   }
   ._38L6D {
     border-radius: 5.5px;
-    img{
+    img {
       border-radius: 5.5px;
     }
   }
@@ -7046,6 +7046,7 @@ form {
   }
   &._3UwsA {
     opacity: 0.4;
+    display: none;
   }
 }
 
@@ -11496,6 +11497,9 @@ div._3bqe5 {
     .YkbCv {
       ._74oom {
         ._eeohz {
+          &:after {
+            display: none;
+          }
           svg {
             path {
               &:nth-child(2) {
@@ -11503,8 +11507,12 @@ div._3bqe5 {
               }
             }
           }
+          &:hover {
+            color: $color_white;
+          }
         }
         ._csp04 {
+          display: none;
           ._2jvdf {
             color: rgba(0, 50, 75, 0.45);
           }
@@ -11520,6 +11528,7 @@ div._3bqe5 {
       }
     }
   }
+
   ._1DRo {
     ._38L6D {
       ._214e9 {
@@ -11527,6 +11536,7 @@ div._3bqe5 {
       }
     }
   }
+
 }
 
 .ZE8ka {

@@ -10,7 +10,7 @@
     <div class="sc-epnACN YkbCv">
         <div class="_74oom">
             <a class="_eeohz" href="/f/{{ $post->fanbase->slug }}">
-                <span>{{ str_limit($post->fanbase->camel, 15) }}</span>
+                <span>{{ str_limit($post->fanbase->camel, 33) }}</span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48"
                      class="_1z7Hy">
                     <g id="surface1">

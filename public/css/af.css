@@ -7577,6 +7577,7 @@ form .M13JP:focus {
 
 .zxDoM._3UwsA {
   opacity: 0.4;
+  display: none;
 }
 
 .SsCsq .zxDoM:hover {
@@ -12309,8 +12310,20 @@ div._3bqe5 > div {
   right: 22px;
 }
 
+._1XEbE .bgTWiC .YkbCv ._74oom ._eeohz:after {
+  display: none;
+}
+
 ._1XEbE .bgTWiC .YkbCv ._74oom ._eeohz svg path:nth-child(2) {
   fill: #45c14e;
+}
+
+._1XEbE .bgTWiC .YkbCv ._74oom ._eeohz:hover {
+  color: #FFFFFF;
+}
+
+._1XEbE .bgTWiC .YkbCv ._74oom ._csp04 {
+  display: none;
 }
 
 ._1XEbE .bgTWiC .YkbCv ._74oom ._csp04 ._2jvdf {
@@ -24435,8 +24448,8 @@ post {
 
 .ffPLas {
   height: 35px;
-  padding-right: 15px;
-  margin-right: 15px;
+  padding-right: 0;
+  margin-right: 0;
   font-family: "DriveTribe", "Roboto Condensed", "Averta", sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
@@ -24446,6 +24459,7 @@ post {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+  border-right: none;
 }
 
 .ffPLas a {
